@@ -1,0 +1,193 @@
+{
+  "scope": "Attack/Hit/Defeat front_r only",
+  "clips": [
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Attack",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "action": {
+        "label": "Right straight punch",
+        "poses": "1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.",
+        "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+      },
+      "editable": "source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+      "editableSha256": "5b6b23e7815b099b0bd2670ba28dcb0a0f3490cb212e74908d84ccc35d0ebc3b",
+      "sourceRow": "source/animations-v1/Attack/front_r/sheet.png",
+      "sourceRowSha256": "2797bec81a1db35437f20b2a808fcbc36bab3abdc7431d324dc46a7cf98564c4",
+      "sourceOrigin": "characters/orc-01-brawler/source/combat-front-v1/attack-corrected-v3.png",
+      "sourceOriginSha256": "a63d1f214b6455f10cb224e942b995c783c53d9ea4f559683001b75dd486aa35",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_00.png",
+          "sha256": "c9b18a23bab801236f147e5c1c9f5164e4013407721b51142790b664f0f023c1",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_01.png",
+          "sha256": "c80022b85fbc5943918a8f4f7617b4691412eef7894a72b143aa1a37e3176029",
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_02.png",
+          "sha256": "40b56951f0e7369d61a7b717d97cc7d161aa00e00b03b798cc4bedebd7fc74db",
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_03.png",
+          "sha256": "d80f64ecbf92895e337213b8498b4684aa89fdb1b62ab248ea9d96dd65bb9a44",
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_04.png",
+          "sha256": "9fb0ed4f1dd89d3b9c1edc0d30c2c5948b66ef817609a7a1dd784d844570ab15",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Hit",
+      "direction": "front_r",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "action": {
+        "label": "Hit"
+      },
+      "editable": "source/animations-v1/Hit/front_r/hit_front_r.aseprite",
+      "editableSha256": "fe4a4fbc3c8c5a2f1841e950a5ef9144b4391cedc49e9ea2549d5956e3aa03d6",
+      "sourceRow": "source/animations-v1/Hit/front_r/sheet.png",
+      "sourceRowSha256": "5f47fafd18cf4674fc12e7db9f00415bca6c8bef4dd6560f9c98527850c64e8d",
+      "sourceOrigin": "characters/orc-01-brawler/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "78ea27d42746dd2b90d861a8f334c4f760d2ca3145a6cffea99b82fdc06832c9",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_00.png",
+          "sha256": "88e53d8145b8c524445dc1ef1f621bd420c8b76937e75abe7b212a48a31db1fd",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_01.png",
+          "sha256": "e1753161541bf7b2ccf2849ce480db77a136bfadd319e034913caf50a79641b3",
+          "top": 40,
+          "bottom": 126,
+          "contentHeight": 87,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_02.png",
+          "sha256": "a44a5a2918a1ac1eaaf091561b7bd8c70ee1e75195e0d25821303950e8fd4363",
+          "top": 26,
+          "bottom": 126,
+          "contentHeight": 101,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Defeat",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "action": {
+        "label": "Defeat"
+      },
+      "editable": "source/animations-v1/Defeat/front_r/defeat_front_r.aseprite",
+      "editableSha256": "93adf0f854a32eb5102250ace2235a7b1557e14d65f647626baa50ab3fc98d38",
+      "sourceRow": "source/animations-v1/Defeat/front_r/sheet.png",
+      "sourceRowSha256": "8f4132858eac6305848305d62c33f2cb59a22710da9b01abec4acf07127222fe",
+      "sourceOrigin": "characters/orc-01-brawler/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "78ea27d42746dd2b90d861a8f334c4f760d2ca3145a6cffea99b82fdc06832c9",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_00.png",
+          "sha256": "1338202000a830a5ba52f02b2d70b838d603bc94aa5de0ee6e1724e636eebd0d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_01.png",
+          "sha256": "40b356abf70a0ad918cc174a043d84e4779d39c4ba7a5f6d5fe693c6fc3bad52",
+          "top": 45,
+          "bottom": 126,
+          "contentHeight": 82,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_02.png",
+          "sha256": "b2fcb931ccb759c1eede51a95be750b55c65e3048a8e8211ff5d3fdddfb02e12",
+          "top": 55,
+          "bottom": 126,
+          "contentHeight": 72,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_03.png",
+          "sha256": "7aade8855a670208e61e31f379d1e5768c31cca6986dd20d1831277a45c91a4d",
+          "top": 76,
+          "bottom": 126,
+          "contentHeight": 51,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_04.png",
+          "sha256": "02e76844d1749156356cc07c0a84cef127064158562c6e044efb0a02cfc79161",
+          "top": 88,
+          "bottom": 126,
+          "contentHeight": 39,
+          "partialAlpha": 0
+        }
+      ]
+    }
+  ],
+  "newFrames": 13,
+  "approvedLocomotionUnchanged": 40,
+  "FAIL": 0,
+  "fullInventoryComplete": false
+}

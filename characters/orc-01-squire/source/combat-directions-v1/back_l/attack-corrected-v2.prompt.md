@@ -1,0 +1,11 @@
+Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Squire in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw FIVE Attack figures in ONE horizontal row, no other rows. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.
+
+Attack5 chronological: 1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.
+CRITICAL ANATOMY: The small iron cap covers the anatomical LEFT shoulder, which MUST NOT drive the strike. Raise and swing the plain russet anatomical RIGHT sleeve. The capped LEFT arm stays low guarding, never raised overhead. Keep the cap attached to the same shoulder.
+
+
+
+OUTFIT: Simple quilted russet gambeson, short undyed oat tabard, narrow brown belt, modest small iron shoulder cap on the left, plain leather wrist guards and sturdy brown boots. An inexperienced practical militia squire; no elaborate heavy armor, heraldry or royal uniform.
+Same mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.
+
+Full bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 5 separate complete figures; FIVE Attack figures in ONE horizontal row, no other rows. Camera back_l, all aimed SCREEN LEFT.

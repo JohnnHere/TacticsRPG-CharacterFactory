@@ -1,0 +1,23 @@
+{
+  "id": "orc-01-apprentice-mage",
+  "job": "Apprentice Mage",
+  "direction": "back_l",
+  "folder": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l",
+  "prompt": "Draw FIVE Apprentice Mage UNARMED RIGHT punches in BACK-LEFT camera in one horizontal row. Reference1 is the approved OUTFIT/CAMERA. Reference2 is the EXACT five-pose skeleton and anatomical arm guide (ignore ALL its gray armor). Preserve reference2 joint angles EXACTLY: the NEAR LEFT arm with its approved sleeve HANGS DOWN beside the hip in ALL FIVE poses, never extends horizontally. The FAR anatomical RIGHT arm starts at the image-RIGHT shoulder, coils behind the torso, and punches across IN FRONT of the chest towards screen LEFT. From this BACK view the right arm is mostly HIDDEN by the back/head; only its far fist emerges beside the head on screen LEFT during pose3. The right upper arm stays along the RIGHT EDGE of the back. Do NOT replace this occluded right punch with an easy visible left jab. No raised near-left boxing guard: left sleeve arm remains hanging DOWN, its fist visible at lower-left hip, just like reference2. Five chronology poses: ready; far right arm coils; far right punch; far right retracts; ready. Head/back stay in exactly approved BACK LEFT camera, no chest shown. CostumeONLY reference1: exact approved Apprentice Mage garments, color, straps, pouches, sleeves and boots. NO Squire tabard, NO iron shoulder cap and NO Warrior armor. The near anatomical LEFT arm hangs DOWN with its approved sleeve, not armor. NO metal forearm plates/knee armor/Warrior scarf/sash/spikes. Same bald mature olive Orc, robust proportions, upper-left light, crisp own-outfit square pixels, dark outline. Exactly five complete separate full-body figures with gaps and generous transparent margins, no cutoffs; first figure100 logical px tall, maxwidth116. Empty closed fists, no weapon/object/VFX. True transparent background, no shadow/floor/haze/text. Do not mirror. Bald scalp, no hood or hair.",
+  "references": [
+    {
+      "file": "characters/orc-01-apprentice-mage/source/directions-v1/back_l/native-4x.png",
+      "sha256": "cbf6b0948d4e8712fe2ba01f4e3d08cdd4a098ad3eec60e992555e44688bc725"
+    },
+    {
+      "file": "characters/orc-unarmed-back_l-detailed-guide-v2.png",
+      "sha256": "709044eaef2152167bf738f160f6e17054122e41873ee4ddbe7e117f291821ea"
+    }
+  ],
+  "palette": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native.png",
+  "base": "characters/orc-01-apprentice-mage/sprites/Directions/orc_01_apprentice_mage_dir_back_l.png",
+  "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+  "supplementVersion": "v2",
+  "contract": "config/equipment-actions-v1.json",
+  "purpose": "Corrected anatomical right punch or raised hood"
+}

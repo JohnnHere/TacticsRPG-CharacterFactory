@@ -1,0 +1,32 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-combat-hit-defeat-pose-guide-v1.png",
+      "sha256": "6e4f5a82ef1b2516697180adfb3d76ee4e6afdba4399cc87ea76b8dcc010beec"
+    },
+    {
+      "file": "characters/orc-01-archer/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "6adeaf4f9f89ecbc8892da917d87b978d6bd03886a49cfb604cbecdd6f9a1976"
+    }
+  ],
+  "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+  "direction": "front_r",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "action": {
+    "label": "Bow draw and release body",
+    "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-7492afbf-92d1-4a4a-b445-590bd39e7f00.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "NATIVE_VALIDATED_AWAITING_CREATOR_COMBAT_FRONT_REVIEW",
+  "sourceSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+  "promptSha256": "da4fe34366eb6a4024983957de1ba44207065d96e182fba22e28ba10beaf18f8"
+}

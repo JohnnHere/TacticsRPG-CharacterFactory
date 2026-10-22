@@ -1,0 +1,66 @@
+{
+  "state": "Attack",
+  "direction": "front_l",
+  "frames": 5,
+  "source": "characters\\orc-01-archer\\source\\animations-v1\\Attack\\front_l\\sheet.png",
+  "sourceSha256": "abd2a560c30821676c228d1171be3950a7a60d57e46c5bd7d82f546c8eb85331",
+  "boxes": [
+    [
+      0,
+      0,
+      361,
+      504
+    ],
+    [
+      350,
+      0,
+      791,
+      502
+    ],
+    [
+      825,
+      0,
+      1289,
+      502
+    ],
+    [
+      1307,
+      0,
+      1755,
+      502
+    ],
+    [
+      1790,
+      0,
+      2154,
+      504
+    ]
+  ],
+  "xBoundsOverlap": true,
+  "separateComponentsVisuallyReviewed": true,
+  "durationMs": 90,
+  "loop": false,
+  "method": "Separate authored poses + native grid reconstruction + integer registration",
+  "uniqueRgbaFrames": 5,
+  "artisticApproval": "PENDING_CREATOR",
+  "reports": [
+    "attack_front_l_00.json",
+    "attack_front_l_01.json",
+    "attack_front_l_02.json",
+    "attack_front_l_03.json",
+    "attack_front_l_04.json"
+  ],
+  "layerName": "orc-01-archer Attack front_l - weaponless body raster",
+  "action": {
+    "label": "Bow draw and release body",
+    "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "requestedContentHeights": [
+    100,
+    100,
+    100,
+    100,
+    100
+  ]
+}

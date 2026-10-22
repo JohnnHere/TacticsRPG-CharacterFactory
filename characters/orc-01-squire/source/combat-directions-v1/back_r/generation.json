@@ -1,0 +1,55 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+      "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+    },
+    {
+      "file": "characters/orc-01-squire/source/directions-v1/back_r/native-4x.png",
+      "sha256": "74a634859e82234f4fb8cbde01defc3ae21a69b5e3c1a0fbe923587bc90e642a"
+    },
+    {
+      "file": "characters/orc-01-squire/source/combat-directions-v1/approved-front-combat.png",
+      "sha256": "8df5c2dd085faee36a7f88b752a40a8815623e7dfbc5a65763088623137814f0"
+    }
+  ],
+  "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+  "direction": "back_r",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-8715b34d-f276-442a-b6ae-125b3105b62d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "ATTACK_REJECTED_CAMERA_OR_HANDEDNESS",
+  "sourceSha256": "4547020491bd31a482a87a3a794b1ea921688f1fba65ac2183810c52445b325c",
+  "promptSha256": "2c7004dca43f26a56216d95ac8c2eb9477af4b1ac1f6a4ba01b40c347327382c",
+  "corrections": [
+    {
+      "provider": "OpenAI image_gen built-in",
+      "model": "not exposed by tool",
+      "source": "attack-corrected-v2.png",
+      "promptFile": "attack-corrected-v2.prompt.md",
+      "references": [
+        {
+          "file": "characters/orc-01-squire/source/directions-v1/back_r/native-4x.png",
+          "sha256": "74a634859e82234f4fb8cbde01defc3ae21a69b5e3c1a0fbe923587bc90e642a"
+        }
+      ],
+      "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+      "direction": "back_r",
+      "states": {
+        "Attack": 5
+      },
+      "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-56b7fb57-e59b-4383-b217-16d30610d9c6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "status": "SOURCE_PENDING_NATIVE_AND_VISUAL_CHECK",
+      "state": "Attack",
+      "sourceSha256": "167cf7f846e1b9123b0199d0b14da7a88b24d0a05239bd2d3f2a4133bf9a8582",
+      "promptSha256": "c8563c77a221a28831933c7415c8b19e7ae24e7672485d44756283badd75bfa3"
+    }
+  ]
+}

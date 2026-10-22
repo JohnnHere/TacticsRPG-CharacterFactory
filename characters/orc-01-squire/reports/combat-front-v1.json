@@ -1,0 +1,193 @@
+{
+  "scope": "Attack/Hit/Defeat front_r only",
+  "clips": [
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Attack",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "action": {
+        "label": "Melee swing body",
+        "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+        "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+      },
+      "editable": "source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+      "editableSha256": "61a2482a10f6557fb2ba4ad8a855279da43268e55c4a3967be01e6dc8e391799",
+      "sourceRow": "source/animations-v1/Attack/front_r/sheet.png",
+      "sourceRowSha256": "ded847f0517549ea7aa947b78beaa7cb2026fae682a4c245432a76686676ac53",
+      "sourceOrigin": "characters/orc-01-squire/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "232e9b68064c79198a9f495d2d3c5508648412ef7632130611454b1f78b42958",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_00.png",
+          "sha256": "fa10539f559c569ef98d72e2ab22eb7d082b71d0b59fa74d1489f1e73e791645",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_01.png",
+          "sha256": "c94661230596757b4073895ff3608ee8844eed15023eab7302d4b3156439adb0",
+          "top": 12,
+          "bottom": 126,
+          "contentHeight": 115,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_02.png",
+          "sha256": "75ce904160e92cc530a98bde001b875361aab064be59b858bb54565da0c1f945",
+          "top": 21,
+          "bottom": 126,
+          "contentHeight": 106,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_03.png",
+          "sha256": "d47d89d7171d2b73c1db1888aa4de9325436fec4e9db2b21765d75188e20f714",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_04.png",
+          "sha256": "6dcdeca825722404f5b6fed40d8d05d9e59092c95a4e6a0f59eb0925f97687f2",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Hit",
+      "direction": "front_r",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "action": {
+        "label": "Hit"
+      },
+      "editable": "source/animations-v1/Hit/front_r/hit_front_r.aseprite",
+      "editableSha256": "4d57c813536e65da6b6e36d256a8bd506e8cca0db2e56d8f5357677f811eb94c",
+      "sourceRow": "source/animations-v1/Hit/front_r/sheet.png",
+      "sourceRowSha256": "c59b3fe119d93a16d3f1166af9808d02828f1ff47a2321f3978ba779588257e4",
+      "sourceOrigin": "characters/orc-01-squire/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "232e9b68064c79198a9f495d2d3c5508648412ef7632130611454b1f78b42958",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_00.png",
+          "sha256": "eaa333b15fa0038dc6b771091c02f3c8446851b808f82313fb226a32f62b1d0e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_01.png",
+          "sha256": "4807f84b71375216b0418752f289577f123c1b509175d466f4d5326ea0f29036",
+          "top": 42,
+          "bottom": 126,
+          "contentHeight": 85,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_02.png",
+          "sha256": "4bd48d868de3b1567d4f7a4b79baaeb897d336e695a0947d0405998829a6d58a",
+          "top": 31,
+          "bottom": 126,
+          "contentHeight": 96,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Defeat",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "action": {
+        "label": "Defeat"
+      },
+      "editable": "source/animations-v1/Defeat/front_r/defeat_front_r.aseprite",
+      "editableSha256": "a7bb652aa196c473ba9c3acc4320d06bff23fee7028ca87c787226e4ce0b7f6d",
+      "sourceRow": "source/animations-v1/Defeat/front_r/sheet.png",
+      "sourceRowSha256": "7bf982ec367aa81f2b5f7e832f890bd12f93359153334b3faead56b64eae8ff5",
+      "sourceOrigin": "characters/orc-01-squire/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "232e9b68064c79198a9f495d2d3c5508648412ef7632130611454b1f78b42958",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_00.png",
+          "sha256": "8530428461e0ea6c807f6c70f65440728d24e33792dd70ab8c525bfab75b9c66",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_01.png",
+          "sha256": "5d7438eefaf82dd3cab9d6c04ec6312abfe981e1c3d0911b092d9e8133e7cf5c",
+          "top": 44,
+          "bottom": 126,
+          "contentHeight": 83,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_02.png",
+          "sha256": "8004d591c024ccdcf92e4072b7b3aa5772dadf824075c6c435b3479c80ebb163",
+          "top": 58,
+          "bottom": 126,
+          "contentHeight": 69,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_03.png",
+          "sha256": "a648d41b0bba814c7b54bc2c9a911e4f6e6b7ca56fa89d457991da83b8be12f6",
+          "top": 77,
+          "bottom": 126,
+          "contentHeight": 50,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_04.png",
+          "sha256": "221f4b03681d4714397c90acdcba4855f5e41f3264ef81c3608392fcf57f9dcc",
+          "top": 88,
+          "bottom": 126,
+          "contentHeight": 39,
+          "partialAlpha": 0
+        }
+      ]
+    }
+  ],
+  "newFrames": 13,
+  "approvedLocomotionUnchanged": 40,
+  "FAIL": 0,
+  "fullInventoryComplete": false
+}

@@ -1,0 +1,27 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-01-brawler/source/directions-v1/back_r/native-4x.png",
+      "sha256": "14a37fd2451b48856afadaff4a64bccb419e29261a2ef47a4799d08e40364828"
+    },
+    {
+      "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+      "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+    }
+  ],
+  "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+  "direction": "back_r",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-c089f544-e258-4c08-9b65-db7e117531f2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "SOURCE_PENDING_NATIVE_AND_VISUAL_CHECK",
+  "sourceSha256": "e4f45716a4a9a75f0e3e1b5dc76e5e9b38ae273bdd52984a5c220cab912bf3d6",
+  "promptSha256": "2c11062951870964c5e54f310e5b899062f6fa026664d70584f1ca4f36cad01e"
+}

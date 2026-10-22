@@ -1,0 +1,52 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by image_gen",
+  "source": "source/directions-v1/sheet.png",
+  "promptFile": "source/directions-v1/sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "fbd9340db2ac6c16bc802e742a2e819e934564dc81ee53fbfe90fe3d4754719e"
+    },
+    {
+      "file": "characters/orc-01-apprentice-mage/concepts/outfit-concept-v1.png",
+      "sha256": "abfe0774f1459b22cb4a033c2ba0fd39280f535f2cba163456387eb9fce99ae1"
+    },
+    {
+      "file": "characters/orc-direction-pose-guide-v1.png",
+      "sha256": "72c656773b24f1547c11f00262f4b959e435a4efb145ea8d705493303e2743d2"
+    }
+  ],
+  "conceptDigest": "ca615e62134dccff439d687766fd1192e826b53b3d82e687af982f70554f22e8",
+  "approvedFrontSha256": "387bc0fc4a085428c4b091d465ebdf7c3aecc75351380eaf64875fc41702c1fe",
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-163fb32f-46dd-423c-856f-c79be6e89d72.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "sourceSelectionStatus": "PARTIAL_SOURCE_WITH_CORRECTED_VIEW",
+  "corrections": [
+    {
+      "direction": "back_l",
+      "promptFile": "source/directions-v1/back_l-corrected.prompt.md",
+      "source": "source/directions-v1/back_l-corrected.png",
+      "references": [
+        {
+          "file": "characters/orc-01/source/pixel-grid-v1/back_l-native-4x.png",
+          "sha256": "b4e011b7ad1acb18f676e348632fb0cc1084457b2a01047c8bdaba32ce013a17"
+        },
+        {
+          "file": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native-4x.png",
+          "sha256": "fbd9340db2ac6c16bc802e742a2e819e934564dc81ee53fbfe90fe3d4754719e"
+        },
+        {
+          "file": "characters/orc-01-apprentice-mage/source/directions-v1/sheet.png",
+          "sha256": "8fc3b97a24a4700f184bb5d87c1ef08ed6993408c0912238acfbf5b811b86a1c"
+        }
+      ],
+      "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-43abf51d-f5cf-4dc7-b48b-9197b4b86932.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reason": "Original third figure repeated back_r rotation; accepted first two figures only",
+      "sourceSha256": "cbe78c877db9f8803b7ce7e9dc72b2bc5a061baaebde258a90e193bae632c163",
+      "promptSha256": "3c3f2a2d7b01a8e5601c5044d6194cfb625756d5a3ad678aa921abf0517df088"
+    }
+  ],
+  "artisticReview": "PENDING_CREATOR_FOUR_VIEWS",
+  "sourceSha256": "8fc3b97a24a4700f184bb5d87c1ef08ed6993408c0912238acfbf5b811b86a1c",
+  "promptSha256": "4a32f85dbf36d50772d98c2bbf6ab1955ce0e03d611c2b2d98ac46e24ccbc67b"
+}

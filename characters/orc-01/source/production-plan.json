@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-19",
+  "character": "orc-01",
+  "selectedConcept": "concepts/orc-01-warrior-concept-07.png",
+  "conceptApproval": "Criador: Gostei do orc warrior concept 07. Agora produza todos os assets necessários para incluí-lo no jogo",
+  "scope": "Produção local dos assets; integração Unity separada",
+  "inventory": {
+    "fallback": 1,
+    "directions": [
+      "front_r",
+      "front_l",
+      "back_r",
+      "back_l"
+    ],
+    "framesPerDirection": {
+      "Idle": 4,
+      "Walk": 6,
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "totalBodyPng": 97
+  },
+  "currentBatch": "97 PNGs aprovados pelo criador e exportados localmente",
+  "reviewSequence": [
+    "base front_r",
+    "quatro vistas",
+    "Idle front_r",
+    "Walk front_r",
+    "demais vistas Idle e Walk",
+    "Attack Hit Defeat front_r",
+    "demais vistas de combate",
+    "consistência full",
+    "integração e PlayMode"
+  ],
+  "weapon": {
+    "status": "REQUIRES_EXTENSION",
+    "design": "TBD; machado de uma mão é apenas proposta",
+    "dependencies": [
+      "pacote de arma independente",
+      "anchors por quadro",
+      "oclusão",
+      "invocação por equipamento e ação",
+      "overlay no runtime"
+    ]
+  },
+  "runtime": {
+    "status": "NOT_RUN",
+    "dependencies": [
+      "registro multi-personagem UnitVisuals",
+      "associação da unidade ao visual",
+      "import Unity e PlayMode"
+    ]
+  },
+  "latestRequest": "Faça a produção de todos os assets do orc nesta classe. Quero assets de produção.",
+  "productionStatus": "EXPORTED_APPROVED",
+  "acceptedProductionPng": 97,
+  "requiredProductionPng": 97,
+  "latestToolAuthorization": "Você tem livre acesso para usar quaisquer linguagens de programação, dependencias, ferramentas gratuitas e etc etc, pode instalar o que for preciso. Encontre uma forma de gerar os assets de produção e execute",
+  "technicallyValidProductionCandidates": 97,
+  "remainingAnimationPng": 0,
+  "nextRequired": "Integracao Unity como tarefa separada; Gate 3 somente apos PlayMode real",
+  "method": "new image_gen sprite sources + Pixel Art Fixer forced target grid + native palette and registration",
+  "animationFrames": 92,
+  "animatedEditableClips": 20,
+  "staticEditableSources": 4,
+  "baseApproval": "Aprovo a base e as quatro vistas; continue as animações.",
+  "consistencyApproval": "Aprovo o conjunto completo; exporte o pacote.",
+  "verification": "reports/animation-assets-verification.json",
+  "exportBuild": "9b89aad88c27de68",
+  "exportPath": "dist/orc-01/9b89aad88c27de68",
+  "actionExtension": {
+    "status": "APPROVED_AND_EXPORTED_LOCAL",
+    "contract": "docs/EQUIPMENT_AND_ACTIONS.md",
+    "inventory": "characters/orc-equipment-actions-v1.json",
+    "basicUnarmed": "REUSE_EXISTING_BODY",
+    "otherUnarmedDirectionsMissing": 0,
+    "legacyAssetsUnchanged": true,
+    "supplementExportImplemented": true,
+    "legacyExportIncludes": false,
+    "export": "dist/orc-01/actions-a256d0fa8844d002"
+  },
+  "next": "Independent weapon/projectile/VFX assets and proven bindings; Unity integration separate",
+  "localExport": {
+    "id": "orc-01",
+    "job": "Warrior",
+    "build": "actions-a256d0fa8844d002",
+    "path": "dist/orc-01/actions-a256d0fa8844d002",
+    "baselineBuild": "9b89aad88c27de68",
+    "baselinePath": "dist/orc-01/9b89aad88c27de68",
+    "nativePng": 97,
+    "unarmedFrameReferences": 20,
+    "newUnarmedPng": 0,
+    "editables": 24,
+    "files": 129,
+    "verification": "ALL_STAGED_SHA256_MATCH",
+    "gate3": "NOT_RUN",
+    "runtimeImplemented": false
+  }
+}

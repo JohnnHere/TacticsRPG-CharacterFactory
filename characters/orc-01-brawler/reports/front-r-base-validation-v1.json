@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "characterId": "orc-01-brawler",
+  "stage": "base",
+  "createdAt": "2026-10-19T12:20:49.054Z",
+  "summary": {
+    "PASS": 10,
+    "FAIL": 0,
+    "WARNING": 1,
+    "NOT_RUN": 1,
+    "REQUIRES_HUMAN_REVIEW": 1
+  },
+  "measurements": [
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "sha256": "572f3f1f53b841e3fe5e5555f13faf94d9078ee7534a5980c44fe7bf55cf7fe6",
+      "width": 128,
+      "height": 128,
+      "left": 33,
+      "right": 94,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12882,
+      "partial": 0,
+      "colorCount": 47
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "sha256": "572f3f1f53b841e3fe5e5555f13faf94d9078ee7534a5980c44fe7bf55cf7fe6",
+      "width": 128,
+      "height": 128,
+      "left": 33,
+      "right": 94,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12882,
+      "partial": 0,
+      "colorCount": 47
+    }
+  ],
+  "checks": [
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "check": "naming",
+      "status": "PASS",
+      "detail": "Nome e inventario conforme ficha."
+    },
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "128x128"
+    },
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "check": "rgba",
+      "status": "PASS",
+      "detail": "PNG tipo=6; profundidade=8; requerido RGBA 8-bit."
+    },
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "check": "content",
+      "status": "PASS",
+      "detail": "altura=100, transparentes=12882"
+    },
+    {
+      "file": "Directions/orc_01_brawler_dir_front_r.png",
+      "check": "ground",
+      "status": "PASS",
+      "detail": "bottom=126; alvo=126; origem no topo."
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "naming",
+      "status": "PASS",
+      "detail": "Nome e inventario conforme ficha."
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "128x128"
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "rgba",
+      "status": "PASS",
+      "detail": "PNG tipo=6; profundidade=8; requerido RGBA 8-bit."
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "content",
+      "status": "PASS",
+      "detail": "altura=100, transparentes=12882"
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "ground",
+      "status": "PASS",
+      "detail": "bottom=126; alvo=126; origem no topo."
+    },
+    {
+      "file": "orc_01_brawler_mvp1_static_128.png",
+      "check": "duplicate",
+      "status": "WARNING",
+      "detail": "Pixels identicos a Directions/orc_01_brawler_dir_front_r.png."
+    },
+    {
+      "file": ".",
+      "check": "art",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "detail": "Identidade entre vistas, anatomia, silhueta, clusters, luz, mao dominante e loop."
+    },
+    {
+      "file": ".",
+      "check": "unity",
+      "status": "NOT_RUN",
+      "detail": "Import/Resources.Load/PlayMode nao executados."
+    }
+  ]
+}

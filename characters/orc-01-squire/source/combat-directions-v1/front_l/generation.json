@@ -1,0 +1,31 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+      "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+    },
+    {
+      "file": "characters/orc-01-squire/source/directions-v1/front_l/native-4x.png",
+      "sha256": "216733fb91200062867cebe6a8043dff3bc7ef26af741da2d5f2121da811de89"
+    },
+    {
+      "file": "characters/orc-01-squire/source/combat-directions-v1/approved-front-combat.png",
+      "sha256": "8df5c2dd085faee36a7f88b752a40a8815623e7dfbc5a65763088623137814f0"
+    }
+  ],
+  "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+  "direction": "front_l",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-2c77c861-8490-44ad-b888-717acbac9c76.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "REJECTED_CAMERA_IN_MULTIPLE_STATES",
+  "sourceSha256": "5d2116c72174cab02020011335df3b8b0949d6b9ff1d6d7ae497e3a5250ad32d",
+  "promptSha256": "841d37a496ee9b68e0cb193e1c8f2baaf3d81646e873ca89323c1d36b2c69f16"
+}

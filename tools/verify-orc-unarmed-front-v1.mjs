@@ -1,0 +1,23 @@
+import fs from 'node:fs';import path from 'node:path';import {ROOT,hash,json,readJSON,loadCharacter,approval} from '../src/core.mjs';import {decode,measure} from '../src/images.mjs';
+const read=f=>readJSON(path.join(ROOT,f)),stamp=f=>hash(fs.readFileSync(path.join(ROOT,f))),registry=read('characters/orc-equipment-actions-v1.json');
+const original=read('characters/orc-basic-complete-validation-v1.json'),warrior=read('characters/orc-basic-shared-source-index.json');
+for(const c of original.clips){for(const f of c.frameFiles)if(stamp(`characters/${c.id}/${f.file}`)!==f.sha256)throw Error('Legacy animation changed');if(stamp(`characters/${c.id}/${c.editable}`)!==c.editableSha256)throw Error('Legacy editable changed');}
+for(const f of [...warrior.files,...warrior.editables])if(stamp(f.file)!==f.sha256)throw Error('Approved Warrior changed');
+const classes=[];
+for(const c of registry.characters){
+ const {spec,dir}=loadCharacter(c.id);if(!approval(spec,dir,'base')||!approval(spec,dir,'concept'))throw Error('Approved base/concept changed');
+ const active=c.unarmed.front_r,reuse=active.status==='REUSE_EXISTING_BODY';let editable=active.editable,strip=active.strip;
+ if(reuse){if(c.id==='orc-01'){const e=warrior.editables.find(e=>e.state==='Attack'&&e.direction==='front_r');editable=e.file;}else{const e=read('characters/orc-combat-front-editor-v1.json').clips.find(e=>e.id===c.id&&e.state==='Attack');editable=e.editable;}strip=path.posix.dirname(editable)+'/native-strip.png';active.editable=editable;active.editableSha256=stamp(editable);active.strip=strip;}
+ else{
+  const g=read(active.generation),folder=path.posix.dirname(active.generation);if(stamp(`${folder}/${g.source}`)!==g.sourceSha256||stamp(`${folder}/${g.promptFile}`)!==g.promptSha256)throw Error('Unarmed source/prompt changed');for(const r of g.references)if(stamp(r.file)!==r.sha256)throw Error('Unarmed reference changed');
+  if(stamp(editable)!==active.editableSha256)throw Error('Unarmed editable changed');const ed=read(active.editorData),exported=decode(path.join(ROOT,active.editorSheet)).image,palettePath=read('characters/orc-unarmed-front-batch-v1.json').find(b=>b.id===c.id).palette,pal=decode(path.join(ROOT,palettePath)).image,palette=new Set();for(let p=0;p<pal.data.length;p+=4)if(pal.data[p+3])palette.add(pal.data.subarray(p,p+3).toString('hex'));
+  for(let i=0;i<5;i++){const f=active.frames[i],d=decode(path.join(ROOT,f.file)),m=measure(d.image),report=read(f.processingReport),native=path.posix.dirname(f.processingReport)+`/attack_front_r_${String(i).padStart(2,'0')}.png`;if(stamp(native)!==f.sha256||d.sha256!==f.sha256||d.colorType!==6||m.width!==128||m.height!==128||m.partial||m.bottom!==126||report.outputSha256!==f.sha256||stamp(report.source)!==report.sourceSha256)throw Error('Unarmed processing/native mismatch');for(let p=0;p<d.image.data.length;p+=4)if(d.image.data[p+3]&&!palette.has(d.image.data.subarray(p,p+3).toString('hex')))throw Error('Unarmed palette drift');const ef=ed.frames[i];if(ef.duration!==90)throw Error('Unarmed editor timing mismatch');for(let y=0;y<128;y++){const es=((ef.frame.y+y)*exported.width+ef.frame.x)*4;if(!d.image.data.subarray(y*512,(y+1)*512).equals(exported.data.subarray(es,es+512)))throw Error('Unarmed editor RGBA mismatch');}}
+ }
+ const clips={Attack:{durationMs:90,frames:active.frames.map(f=>f.file.replace(/^characters\//,'')),strip:strip.replace(/^characters\//,''),editable:editable.replace(/^characters\//,'')}};
+ classes.push({id:c.id,job:c.job,reuse,label:'Ataque básico desarmado',base:`${c.id}/sprites/Directions/${c.id.replaceAll('-','_')}_dir_front_r.png`,clips});
+ const reviewFile=path.join(dir,'source/unarmed-front-v1-review.json'),existing=fs.existsSync(reviewFile)?readJSON(reviewFile):null;
+ if(existing?.status==='APPROVED_BY_CREATOR'){for(const f of existing.frames)if(stamp(f.file)!==f.sha256)throw Error('Approved unarmed changed');if(stamp(existing.editable)!==existing.editableSha256)throw Error('Approved unarmed editable changed');}
+ else json(reviewFile,{status:reuse?'REUSED_EXISTING_APPROVED_BODY_FRONT':'PENDING_CREATOR_FRONT_BATCH',preview:'characters/review-orc-unarmed-front-v1.html',actionProfile:'basic.unarmed',frames:active.frames,editable,editableSha256:stamp(editable),weaponOverlay:false});
+}
+json(path.join(ROOT,'characters/orc-equipment-actions-v1.json'),registry);json(path.join(ROOT,'characters/orc-unarmed-front-review-data-v1.json'),{classes,counts:{Attack:5},durations:{Attack:90},summary:{newPng:30,reusedFrontPng:10,newEditables:6,legacyPngAndEditablesUnchanged:true,FAIL:0}});
+console.log('Unarmed front_r:30 new PNGs/6 editables verified;10 existing approved frames reused; legacy bodies/sources unchanged.');

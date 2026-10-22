@@ -1,0 +1,18 @@
+Create ONE square pixel-art locomotion animation production source sheet for the SAME Orc Archer, containing exactly THIRTY separate full-body poses in SIX horizontal rows. Use reference1 for motion and camera ONLY: it has neutral grey silhouettes and no outfit. Reference2 has THREE creator-approved native outfit views, ordered FRONT LEFT, BACK RIGHT, BACK LEFT. Reference3 shows the approved SUBTLE front-right Idle cycle, for restrained breathing amplitude and pixel style only. Keep the exact outfit and accessories from each corresponding view in reference2.
+
+EXACT SIX ROWS, SIX equal cells across, one aligned full-body character per occupied cell:
+Row1 = FRONT LEFT Idle: FOUR subtly distinct breathing poses in cells1-4, cells5-6 TRANSPARENT EMPTY.
+Row2 = FRONT LEFT Walk: SIX chronological walking poses in cells1-6.
+Row3 = BACK RIGHT Idle: FOUR subtly distinct breathing poses in cells1-4, cells5-6 TRANSPARENT EMPTY.
+Row4 = BACK RIGHT Walk: SIX chronological walking poses in cells1-6.
+Row5 = BACK LEFT Idle: FOUR subtly distinct breathing poses in cells1-4, cells5-6 TRANSPARENT EMPTY.
+Row6 = BACK LEFT Walk: SIX chronological walking poses in cells1-6.
+TOTAL exactly30 figures:4+6+4+6+4+6. No seventh row. All same character scale and baseline within their cells. Plenty of transparent gaps between rows and bodies. Never overlap, crop, duplicate poses or fill blank cells. Do not draw labels, text, arrows, grid or dividers. Follow reference1 layout exactly.
+
+CAMERA: FRONT LEFT is three-quarter face and chest looking towards screen LEFT. BACK RIGHT shows three-quarter back and occiput, shoulders/boots directed screen RIGHT, never full face or chest. BACK LEFT shows three-quarter back and occiput directed screen LEFT. Maintain camera for every frame in its pair of rows. These are three independently drawn viewpoints, NOT mirrored images: keep anatomical accessory placement and upper-left light coherent.
+
+IDLE4: quiet neutral exhale; tiny inhale; tiny peak; quiet exhale. Chest expansion at peak at most ONE logical pixel per side beyond neutral. Never balloon chest, shrug, spread arms or alter anatomy. Feet planted, hands calm, maximum one logical pixel of shoulder/head bob. Four genuinely distinct drawings; loop back to1.
+WALK6: use corresponding six guide poses with alternating legs and counter-swinging empty arms, including BOTH halves of a complete step cycle. Right foot forward, transfer/pass, left step through, left foot forward, transfer/pass, right step through towards1. Torso facing fixed, cloth follows subtly. Do not mirror poses to make second half. Preserve accessory sides.
+
+OUTFIT: Fitted moss-green sleeveless leather jerkin, ochre narrow sash, a diagonal leather baldric with small flat utility pouch, compact brown leather trousers and boots, reinforced left forearm archery bracer and right fingerless hand wrap. No quiver, arrows, bow or ammunition. Agile marksman outfit with exposed robust biceps, no hood or cape.
+Same bald mature fierce olive Orc, broad nose, lower tusks in front view, compact robust100-pixel-high native anatomy. Keep exposed scalp entirely bald; no hair. Exact rear garment, straps, shoulder pieces, bags and belt placement from approved views. Do not copy Warrior armor from motion silhouettes. No held/carried/sheathed weapons, bows, quivers, shields, staffs, props or effects. Square chunky logical pixels, limited48-color style matching native references, clean clusters and dark one-pixel outline, no smooth painted texture, blur or antialiasing. True transparent background, no floor/shadows/halo/checkerboard. Each pose full-body with hands and boots fully visible, same size throughout. SIX ROWS only,4/6/4/6/4/6 figures.

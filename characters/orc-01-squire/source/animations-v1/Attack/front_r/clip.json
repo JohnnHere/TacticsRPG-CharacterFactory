@@ -1,0 +1,66 @@
+{
+  "state": "Attack",
+  "direction": "front_r",
+  "frames": 5,
+  "source": "characters\\orc-01-squire\\source\\animations-v1\\Attack\\front_r\\sheet.png",
+  "sourceSha256": "ded847f0517549ea7aa947b78beaa7cb2026fae682a4c245432a76686676ac53",
+  "boxes": [
+    [
+      0,
+      43,
+      233,
+      338
+    ],
+    [
+      298,
+      0,
+      553,
+      339
+    ],
+    [
+      604,
+      32,
+      856,
+      346
+    ],
+    [
+      887,
+      58,
+      1162,
+      346
+    ],
+    [
+      1213,
+      45,
+      1443,
+      338
+    ]
+  ],
+  "xBoundsOverlap": false,
+  "separateComponentsVisuallyReviewed": false,
+  "durationMs": 90,
+  "loop": false,
+  "method": "Separate authored poses + native grid reconstruction + integer registration",
+  "uniqueRgbaFrames": 5,
+  "artisticApproval": "PENDING_CREATOR",
+  "reports": [
+    "attack_front_r_00.json",
+    "attack_front_r_01.json",
+    "attack_front_r_02.json",
+    "attack_front_r_03.json",
+    "attack_front_r_04.json"
+  ],
+  "layerName": "orc-01-squire Attack front_r - weaponless body raster",
+  "action": {
+    "label": "Melee swing body",
+    "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "requestedContentHeights": [
+    100,
+    115,
+    106,
+    98,
+    99
+  ]
+}

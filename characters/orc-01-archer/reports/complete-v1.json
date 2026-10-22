@@ -1,0 +1,1210 @@
+{
+  "scope": "Body/clothing: five animation states, four independent views",
+  "clips": [
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "526ef33753ed0b43ba16d87e96ed1889eb8813ac4a8ddc9832d8b4985c3f8c56",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "c54e63afc98d5d9f1e40e5cf61357825df073fd6bdba61c7d5d98766cb4cceeb",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "f56586d12500e5b468554e885ee599a2218b62a48da4d6ce118005b71e020f20",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "32ec63ecdbc913628f2b93954c6df375b405ee418bca5db40cac1c32311db5fe",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "1ab8557a23174d0851d79f73d719339df97bdd3a33dfbb59cab12dc6fbe06e06",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "d9895685e967864a42edec0865e8f24dcb32e43b15551d36013cf4c920e02deb",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "2661a25795b91231d74d1938174f24f6aa6a96f02460a50273149fc719bfd50c",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "0cdc7de7f1ff6538d3f743ef483d72e645863418a42324ce292c7f949413c1a0",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "2940b34354f6908939d38aba3e992a769cec7a92f93092fe034b898eb623908c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "49916442577482e91e978f11219b94ea16d385638486e83c4837475c8ed01dd5",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "ce8562c84d7f92ef677aad130eccb6689f0f31ed04b2d4844cba71e244349b72",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "256eebfd3cfcca75ab913de5176c96486f874bf2129b6d02f3a61bf4a65f6041",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "5f3c91cc493c2e1a79d2e2c793791ce31d782d6f80d36db8fbdfece7a56a838e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "fbed4df3d7a005bb99cc37181db90489455848ce554ad2add319c050aceea2ee",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Attack",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "action": {
+        "label": "Bow draw and release body",
+        "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+        "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+      },
+      "editable": "source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+      "editableSha256": "cd6c4a6e8610f64b95ada29092e34a2fa73da28a5546107b33a925e16a153465",
+      "sourceRow": "source/animations-v1/Attack/front_r/sheet.png",
+      "sourceRowSha256": "b41c7c5e170b981902cd8890ba4e762ee05cd632b5d4fe92dbbb9a7dbef820cd",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_00.png",
+          "sha256": "877b909a17482d011e783e04064029b4c9efb2855234ed7be4d72e3de2600080",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_01.png",
+          "sha256": "16eb83f0bb9908b831de434d23f58d3e8ee5ca4a522de19a690751f94405179d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_02.png",
+          "sha256": "80d9a14ba412e8c195b7724b79aac54fcf51eae3d64373bf59281ea6ba24e00f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_03.png",
+          "sha256": "4529402b8a68132b658fda51e0c468055f43ecafbdb8d1ebeccbf56982067c0e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_04.png",
+          "sha256": "5d53f89202a32b208f0acb5af2f634378c4d4109fa6d6e295a260c546e7480f7",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Hit",
+      "direction": "front_r",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "action": {
+        "label": "Hit"
+      },
+      "editable": "source/animations-v1/Hit/front_r/hit_front_r.aseprite",
+      "editableSha256": "2a70031c86e753c71345a8c6ea5eb5ec9fcaa83292249aa507aaf340ae4529ed",
+      "sourceRow": "source/animations-v1/Hit/front_r/sheet.png",
+      "sourceRowSha256": "a12649c4278a97373970e5ba20108fc362702ad68e6c9fb89dee2ae020211fa0",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_00.png",
+          "sha256": "479b6d9762c31fcf80c6e976528f210b4611062a69271e0dcb936f86928af1bb",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_01.png",
+          "sha256": "eae925b9243fd69d4d7266d56db27ee758f5a18c1eed05136a217ef023dde230",
+          "top": 41,
+          "bottom": 126,
+          "contentHeight": 86,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_02.png",
+          "sha256": "a3bea3ea5bdec79eff17e387d68ec9d6cea9a4dee4807e816990bbd15699272f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Defeat",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "action": {
+        "label": "Defeat"
+      },
+      "editable": "source/animations-v1/Defeat/front_r/defeat_front_r.aseprite",
+      "editableSha256": "00ffc8c5905062efa392c5c9be7fe79416fcfa20873cf696087c1b634dc461ac",
+      "sourceRow": "source/animations-v1/Defeat/front_r/sheet.png",
+      "sourceRowSha256": "5818c7200ee1b7be59390f2de1286ac7be65286c9d26a70cd96bd5d86e29fbd0",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_00.png",
+          "sha256": "c3d7b6b8bb1e6af1241b5d74f6e93679498009a17acbbd8ad289a19aae2164e2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_01.png",
+          "sha256": "ec1981aeec1dd6c5094b56c27d996ba0aced6ba2ba72041fb97b9d5145da897f",
+          "top": 45,
+          "bottom": 126,
+          "contentHeight": 82,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_02.png",
+          "sha256": "46c64a255c2d4216774dbb4cd4e9df3520061e585bdcb27ded0cdb4d03dba181",
+          "top": 63,
+          "bottom": 126,
+          "contentHeight": 64,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_03.png",
+          "sha256": "68d7693883e3764e3633e25db53442ac6641aab6795ec415053a8928b8aa98eb",
+          "top": 79,
+          "bottom": 126,
+          "contentHeight": 48,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_04.png",
+          "sha256": "d778ca344907bebd60560af0ce89773e169ef035bf5c617e4287b5daf073cd02",
+          "top": 92,
+          "bottom": 126,
+          "contentHeight": 35,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "427945fe11c553b50a4fd76a511a00df2d5c87717bdc5c53d77e147c2fb30f03",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "3668eef6975dbeec29324e550f26aa6aa8a88dbc95d6076438119c1b15354f50",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "d19b77e7e97a33bd63eae701708a78ae6dba360dd787e1a8760db223e495f1dc",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "8a43c8403c6f3d21b4d261be13a5908f4b2a206e880ca351a00cd5c934761070",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "33699b8b7d0a4f20904db768647479b84c183b392154bdfc10cb79bc80380eb2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "5eb5870ea723812af4ef1deaf171eff79659c6074fbc1a6e3210526228b69c01",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "24cd37698aa43b55755f45db90f11da833b3b2c2cde42b2385b19c969c86e8cf",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "7c966c93e34d8d2ed00332edd24246443f21b3a9799ecd7631110013d16d8d5f",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "af482eea8dfca3d09d79fa1a8588731022b0523f81c0356fcd8d3dcd776e7b70",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "e777b67a67ace894b46cf5a2c0d5a4416bb9cd808e91c44d167dbc0ca2a032ad",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "949f5259b026d5bdfce9b9233fcd73ab08fb9b98634203ad9ba64ae672be63ac",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "98ef7141c3464feeda946debed254921a3dd8fdb6aaf03018f98a9f39128de40",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "922f940b97e0ad29fe842e092c386efa858fedba3cf3e94d2226416eaed15bde",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "eabbbc6d64dda7b6ed7585eda257be7d455dc54cf11afc0c5143c26bfaa3505b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Attack",
+      "direction": "front_l",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "editable": "source/animations-v1/Attack/front_l/attack_front_l.aseprite",
+      "editableSha256": "cc7808a157a4cd35011bbed741db7869544525ebac3587f4b61f0fc19693bcdc",
+      "sourceRow": "source/animations-v1/Attack/front_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_front_l_00.png",
+          "sha256": "1f3135848db1f16e8f5704440a08561d715924c10afbedce180d2e93fb083a08",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_l_01.png",
+          "sha256": "2c301af96a45fa66d7a74e2de4873cfc6b8dfa770feac83a44852335abaee3f2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_l_02.png",
+          "sha256": "2b76ea19cea6f6d90436e929961029bf56d6476ca3fdfaa67aee8b757fa705d1",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_l_03.png",
+          "sha256": "5e8702baac27fc43c6f540f31f52bcfcecbc892731031dc7357adda47273764f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_l_04.png",
+          "sha256": "7c039701d0e8cd01009ee3d6491f1935893419540af2e12c1e86eedfb1100947",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "abd2a560c30821676c228d1171be3950a7a60d57e46c5bd7d82f546c8eb85331",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v2/front_l/attack-reuse-v4.png",
+      "sourceOriginSha256": "3225ca40aa4f930e8c824ad36c294571b57285c3282531e600da39c6449f14f8",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Hit",
+      "direction": "front_l",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "editable": "source/animations-v1/Hit/front_l/hit_front_l.aseprite",
+      "editableSha256": "24c7bb4e67329f75e317d043ea96eec8fff56588d0ff9121cb27899feb4c6d3c",
+      "sourceRow": "source/animations-v1/Hit/front_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_front_l_00.png",
+          "sha256": "b3e0010d3054f4bd4057be8fed1664cb4bf8b311a9e723b7a3e1dad2afd3c39f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_l_01.png",
+          "sha256": "d52ace51ce06849c019638962347808cf1bccaf59345098722538ae11573ef83",
+          "top": 41,
+          "bottom": 126,
+          "contentHeight": 86,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_l_02.png",
+          "sha256": "c0d26fbf482d69ea6d3428089dd08761cf4b8d92bb9cafe3e269bc30303d0e73",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "0a762556c3226546ac1a801409b02ff44682db725fd78277d911a64f7a7dcb8a",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v2/front_l/sheet.png",
+      "sourceOriginSha256": "1d7e034d47194072fbb9771b211cf8e803643b2e440173c55d739741c3aa3fc7",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Defeat",
+      "direction": "front_l",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "editable": "source/animations-v1/Defeat/front_l/defeat_front_l.aseprite",
+      "editableSha256": "de166305a0fab13ff8c0d717222b49a9a4fc252773ec0610e53c740a36de64db",
+      "sourceRow": "source/animations-v1/Defeat/front_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_l_00.png",
+          "sha256": "8ff3e8cfa1a3e8f6307d658f46b291765b66bdfc9a9b2fc1f6778560a7cfd335",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_l_01.png",
+          "sha256": "c224bdf1866310978192a134272c0d805f3f5a2deb65c89a32873cd9cc655850",
+          "top": 39,
+          "bottom": 126,
+          "contentHeight": 88,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_l_02.png",
+          "sha256": "cc88176f5cd98f2eaff3a93cc8d4c9d87f238c73e98ee6b0b038a7b81d32e89e",
+          "top": 61,
+          "bottom": 126,
+          "contentHeight": 66,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_l_03.png",
+          "sha256": "895a79edff6d497124a651af2abad23ff64cd6c44c5293bd6f4ab5dfdec48d0e",
+          "top": 84,
+          "bottom": 126,
+          "contentHeight": 43,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_l_04.png",
+          "sha256": "5409e24777688981ba2d4ec63b2bc321a1248398b1259049a91de945a9e7ae6f",
+          "top": 88,
+          "bottom": 126,
+          "contentHeight": 39,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "e29455bfea7969ba1d5fc5231ce82c36cd3f6157ee42ce679b191e0f993f807e",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v2/front_l/sheet.png",
+      "sourceOriginSha256": "1d7e034d47194072fbb9771b211cf8e803643b2e440173c55d739741c3aa3fc7",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "66d10c5c09cc7ab65d28d13a3137d215ce49eee46c14dc9adc432d4168a0f954",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "0150c3542c06e51b7c9c6b772588ebc091e1ea4b013267df087c36e013b40010",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "8b37cd10f24a928ef99e6a41e90ee29d47f17d770aecd0a2bd9ce974058c86be",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "0d3a5b6f0dcb8b1c5d3786aaf34f070c42be0023523cb1da60bed2b34ecfe31d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "9d2169220dfdd4e4e9e035a6f3775d8b53302bbe23b3191e714d57c6ae7be663",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "55258537c7d1bfa38ba62ae2580080f3e0e3e8a75421411108592d14062f2fd8",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "dd8819bfaced038aca27ea3dd8b44e370eb2404a7faa2c7c547dd31e36e7f7d6",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "1592b9dcb892b704bc64b796592ab09a90b208579399416d3f9c078ad14024d5",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "d08206b93b73728e7936f0ed9ac83a9be64361b2e9bdced5dd7b3de451615b20",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "4c7e4cdd86bd6b2fed24691bdb0527a11e81a9a1f368d9c3d58f74b445f25692",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "5fbc70a763c7c142c7a5cc81deb0e6e5e40a0a10389873b72d02415de01f91f0",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "71c448ca586158e64c1b8f7a455b73f64259bed70be55e708f0e85b7885a6184",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "e86672e7e0c1f6604961d74f60df48568d47751a53f5accb801c133d5b44b58f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "15643feb73cf5f4629ba202bd9779a6ad49d31e72c8e82c06c07927d14ac4c45",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Attack",
+      "direction": "back_r",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "editable": "source/animations-v2/Attack/back_r/attack_back_r.aseprite",
+      "editableSha256": "d060d20a669b80a9a52e5872d961a09cee2aa8d7b2b8eca2b2147249b1c3f51b",
+      "sourceRow": "source/animations-v2/Attack/back_r/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_back_r_00.png",
+          "sha256": "547f77fce3288964a77088446c6716b3c6e81bac25b6181b26f4c6ad08c89ce2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_r_01.png",
+          "sha256": "9b7d2df2efa5d54670040a147a36bbc0c8975cf5435ff33f1ea20722841476fd",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_r_02.png",
+          "sha256": "ab8fced4381c77ac5a70e8a8cdbd40e8156392d0515331761276ee1acf97800c",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_r_03.png",
+          "sha256": "0f8bfd8841cbff6516cf2654f17d96aae80b00e910787792b05c8e055a736d61",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_r_04.png",
+          "sha256": "0e078061207d5a6e4e9564dd187d41d57589bd04835ef2edced8f860b6aaab34",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "84c5fc83522e9b8b452fc4c0a48720f0cffb1c44afaae097917af9595f213dc0",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_r/attack-twist-v5.png",
+      "sourceOriginSha256": "daa6a4b3b07c98489cab2ca94fde4e40909eaca67507b1bae1c0e032fc00811c",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Hit",
+      "direction": "back_r",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "editable": "source/animations-v1/Hit/back_r/hit_back_r.aseprite",
+      "editableSha256": "95252b5cd61c9595b0145592852fc06d8af800f75c7f14bcdf8bcf8266b3c610",
+      "sourceRow": "source/animations-v1/Hit/back_r/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_back_r_00.png",
+          "sha256": "7e3abf38ec48a3f8a5bedd1ab99827baf0e78306c244b0242cd49a028a146d7a",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_back_r_01.png",
+          "sha256": "df96bc326276804f0410e820337cf9c5f453b9363f70da4e4227ab23ce463117",
+          "top": 43,
+          "bottom": 126,
+          "contentHeight": 84,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_back_r_02.png",
+          "sha256": "1d3eec3cce7542517968a7646f555b10834d60755bc185a1a46fefa37184aeda",
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "ed8f66b26859379a1e5b931542b00cdada949781ae11d8ee71a3e164e2a603df",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_r/sheet.png",
+      "sourceOriginSha256": "4548d7d0aa00685da3e48525f211a179aeb6922233fede649d54d00e77f9dd9b",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Defeat",
+      "direction": "back_r",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "editable": "source/animations-v1/Defeat/back_r/defeat_back_r.aseprite",
+      "editableSha256": "ffb08e7290d0c64939279dc4283789de7761286631953867fec88dfa85fdec24",
+      "sourceRow": "source/animations-v1/Defeat/back_r/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_r_00.png",
+          "sha256": "80b673d7b8be3b2c6501dba05175b509de21f61c9a2093cf3c91ad7011de2971",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_r_01.png",
+          "sha256": "9844992405d9ea2ad3c1ca86c87074b5ec1717eff6d26677cacea687640163fc",
+          "top": 42,
+          "bottom": 126,
+          "contentHeight": 85,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_r_02.png",
+          "sha256": "d1fae50f40ab595cd9c0367187d0bd3dc36b5bbfd71d46123c6b93717aef66f5",
+          "top": 56,
+          "bottom": 126,
+          "contentHeight": 71,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_r_03.png",
+          "sha256": "8bbf39b55296da931397a97dda078f2a971621b37b01c93b8281a3dfb3101b8e",
+          "top": 77,
+          "bottom": 126,
+          "contentHeight": 50,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_r_04.png",
+          "sha256": "c8881374c9bb6f26f3b197dd0bf095f7517c5a73ff0a9bf8f05d8a8a9cb81098",
+          "top": 88,
+          "bottom": 126,
+          "contentHeight": 39,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "a9a43788ceae7a228d93c360a94db256b569ed6a3deba49e56308fa0d377049b",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_r/sheet.png",
+      "sourceOriginSha256": "4548d7d0aa00685da3e48525f211a179aeb6922233fede649d54d00e77f9dd9b",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "ab18703238921db3dbb0b7073563c2bc98dd12b24c8cb8da0e1aed2d32f25a08",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "233880b893065a97898419e22d54aa89caa405a190d976f7e3d04293fc466d99",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "f3ddf5bcbe31e7511f4df131b2302475874a505eb065623ccffb03a91fcc2a15",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "558cc71473990ca04e5e71f5c3757093bbee52b11b48ac46e3fb88931083cd76",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "04524b94b07c878132f60a70dd53e3c6c2bce62956b0b0d925c8c39421fd7ac6",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "83b2a800ad0a7da6768a9ff6499baab1910993b48b3aa3e65d16d9d824e16182",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "f64aa5c22c875900758fcd38c49ff6e0e83ebcccf33d3bcf629bb5a2764d848e",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "ce54b96bd9573e5ab730659fca283e42b37b3cae9e99654e7540635a5e601a14",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "e9a97b8087c39cd00b8c8ce8e6d0d3f9f102874191bd6c24632898adbcbfa702",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "b8571dde7dcdd10963be34448c3581927f1088485830f442e27d3c0248995e3f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "1b73e621a5722fae5d43093b9feecd6a11b25ebae5fc35b249e7c4d04b95233b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "27ba9acc09b7952d78cc684012b89b9b7f88eb8953c5356d8737d0eaa359fd0f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "d07934e811556727dfff4d7367ad5c786a68ca94b14531ee7d681c7e4ad32f1d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "1e04b89ef72f3982d3f98d5bf4b5fa9a6904b6478a7376da534c400675df50b8",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ],
+      "loop": true
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Attack",
+      "direction": "back_l",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "editable": "source/animations-v1/Attack/back_l/attack_back_l.aseprite",
+      "editableSha256": "2f43768a7ba817c1cdbb158cc69acd202d7fb2088b998cd4615ab9790f476823",
+      "sourceRow": "source/animations-v1/Attack/back_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_back_l_00.png",
+          "sha256": "bcb65dca9a77ea027adcc7adfe7049c14f6c9c36dd3e1b0f7761252b54d79027",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_l_01.png",
+          "sha256": "ccf7c205b205618098dd63743e1324ade2d05036274554c498d7fb88ea146c0b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_l_02.png",
+          "sha256": "9a32f7be267d1ff93c9f5a1f13fa117cc6a4aee5493d9fe93a81bc3aad3ee0e3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_l_03.png",
+          "sha256": "1ff0a325616b1cb9a61a763fa6bf8446367becc8928d96b223be8d591ea76fa8",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_back_l_04.png",
+          "sha256": "6fb325018aa77838bffdb2ff9059dc5dd16ce3ce3fdfa9d0aa42ceaa88569660",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "316d66c365c82ca1d8163deb477ae8c5fd51c5a4afff0c0897fbeafde5f7811a",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_l/attack-corrected-v2.png",
+      "sourceOriginSha256": "e4972df1915c410d3d28b44ad29fe2029ef82d21f03023ec3f3aa6b73337a6aa",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Hit",
+      "direction": "back_l",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "editable": "source/animations-v1/Hit/back_l/hit_back_l.aseprite",
+      "editableSha256": "e51c2cfe9817f1a820dd672c31f27c4917bfd2e4a09af5d4204717438617cd26",
+      "sourceRow": "source/animations-v1/Hit/back_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_back_l_00.png",
+          "sha256": "9f65e4b493469625a5bfe20181499bf810533d82ce61bcda200b4bdd163a10b8",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_back_l_01.png",
+          "sha256": "5665de3e79a0fb74b6b3676085842eb8786394ff5af5943eaec7e584c716e353",
+          "top": 45,
+          "bottom": 126,
+          "contentHeight": 82,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_back_l_02.png",
+          "sha256": "e04d9c684d44b04928de5d57fb96e81664d1ef96388e3aaa3eb67031dd655883",
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "33636772c9882f256471d6217abd970a20b8d2f59c723a615f9f2c8ae0cd6b82",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_l/sheet.png",
+      "sourceOriginSha256": "a5f88c0110f22b29b1fb88b66a75312aa3a9ea29fbd26148a9a8ffb2cb1744eb",
+      "sourceProvenanceHashes": "PASS"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Defeat",
+      "direction": "back_l",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "editable": "source/animations-v1/Defeat/back_l/defeat_back_l.aseprite",
+      "editableSha256": "abb5e8369ccf5025a2b220d3b27ad13407cc020afd5b1d5c5be5870d8d991ae1",
+      "sourceRow": "source/animations-v1/Defeat/back_l/sheet.png",
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_l_00.png",
+          "sha256": "b588e54d90044c91b86103c6372a143c32e00720a19d6c2d9172e14242d96059",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_l_01.png",
+          "sha256": "c573a506121b5e7a79bfaf8898610c39178ec84ab4989d2807d6b34d96d68acf",
+          "top": 41,
+          "bottom": 126,
+          "contentHeight": 86,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_l_02.png",
+          "sha256": "ffeffca25ecfef74563affa2c5210dce0894a9dbd48c84bef5b8cfd439bc5e27",
+          "top": 66,
+          "bottom": 126,
+          "contentHeight": 61,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_l_03.png",
+          "sha256": "c12f5d6ca0ad87eb65b47a162bfb075e19bc538dffb8bb819f9ed0b05b2d82ab",
+          "top": 86,
+          "bottom": 126,
+          "contentHeight": 41,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_back_l_04.png",
+          "sha256": "e2d78d62eeda21f702fbfe35deaf0a5cbf2f9003534d41542910e8de706b6484",
+          "top": 93,
+          "bottom": 126,
+          "contentHeight": 34,
+          "partialAlpha": 0
+        }
+      ],
+      "sourceRowSha256": "12d1cc76f77179a7fa538c66375fc9aba042e8e31173788127bd38825d1155ea",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-directions-v1/back_l/sheet.png",
+      "sourceOriginSha256": "a5f88c0110f22b29b1fb88b66a75312aa3a9ea29fbd26148a9a8ffb2cb1744eb",
+      "sourceProvenanceHashes": "PASS"
+    }
+  ],
+  "nativePng": 97,
+  "animationFrames": 92,
+  "activeEditableSources": 24,
+  "FAIL": 0,
+  "artisticConsistency": "PENDING_CREATOR",
+  "weaponsAndVfx": "SEPARATE_REQUIRES_EXTENSION",
+  "unityIntegration": "NOT_RUN"
+}

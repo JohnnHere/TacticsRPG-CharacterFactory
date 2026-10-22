@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "characterId": "orc-01",
+  "stage": "base",
+  "createdAt": "2026-10-19T05:10:45.047Z",
+  "summary": {
+    "PASS": 5,
+    "FAIL": 0,
+    "WARNING": 0,
+    "NOT_RUN": 1,
+    "REQUIRES_HUMAN_REVIEW": 1
+  },
+  "measurements": [
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 95,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12561,
+      "partial": 0,
+      "colorCount": 46
+    }
+  ],
+  "checks": [
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "check": "naming",
+      "status": "PASS",
+      "detail": "Nome e inventario conforme ficha."
+    },
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "128x128"
+    },
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "check": "rgba",
+      "status": "PASS",
+      "detail": "PNG tipo=6; profundidade=8; requerido RGBA 8-bit."
+    },
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "check": "content",
+      "status": "PASS",
+      "detail": "altura=100, transparentes=12561"
+    },
+    {
+      "file": "orc_01_mvp1_static_128.png",
+      "check": "ground",
+      "status": "PASS",
+      "detail": "bottom=126; alvo=126; origem no topo."
+    },
+    {
+      "file": ".",
+      "check": "art",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "detail": "Identidade entre vistas, anatomia, silhueta, clusters, luz, mao dominante e loop."
+    },
+    {
+      "file": ".",
+      "check": "unity",
+      "status": "NOT_RUN",
+      "detail": "Import/Resources.Load/PlayMode nao executados."
+    }
+  ]
+}

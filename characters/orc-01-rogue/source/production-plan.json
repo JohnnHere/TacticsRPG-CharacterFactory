@@ -1,0 +1,194 @@
+{
+  "source": "orc-01",
+  "sameIndividual": true,
+  "status": "COMPLETE_BODY_CONSISTENCY_REVIEW",
+  "targetNativePng": 97,
+  "completedNativePng": 97,
+  "sharedSourceIndex": "../orc-basic-shared-source-index.json",
+  "reuseAssessment": [
+    {
+      "component": "individual body/face and reference contract",
+      "category": "REUSE_DIRECT",
+      "evidence": "orc-01 concept/base/consistency approvals + exact reference hashes",
+      "adaptation": "Preserve identityId, face, bald scalp, skin, dominant right hand and robust proportions; no new individual",
+      "artRisk": "Image edits may drift identity; compare against approved Warrior",
+      "technicalRisk": "Existing Warrior frames are flattened: hidden body beneath armor is unavailable",
+      "dependencies": [
+        "approved orc-01"
+      ],
+      "validation": "REFERENCE_APPROVED; VARIANT_PENDING_REVIEW"
+    },
+    {
+      "component": "Idle Walk Hit Defeat timing, ground and pose references",
+      "category": "REUSE_ADAPTED",
+      "evidence": "orc-01 97 approved native PNGs and 20 verified editable animation clips",
+      "adaptation": "Reuse pose/registration/timing reference; redraw changed clothes per frame. Reuse exact exposed-body pixels only after registered masks demonstrate compatibility",
+      "artRisk": "Long robes/mantles alter silhouette and occlusion",
+      "technicalRisk": "No layered naked-body source or automatic clothing rig exists",
+      "dependencies": [
+        "variant concept approval",
+        "native base and views approval",
+        "registered clothing/body layers"
+      ],
+      "validation": "PLANNED_NOT_DEMONSTRATED"
+    },
+    {
+      "component": "job outfit",
+      "category": "CREATE_NEW",
+      "evidence": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+      "adaptation": "Creator requested darker stealth silhouette: charcoal open-front hood, fitted matte near-black long-sleeved cloth/leather, soft shoulders without pauldron, narrow blackened buckle, flat utility pouches, short charcoal hip panels, slim dark trousers and soft boots; no Warrior armor, long red tabard or visible weapons. Same face and bald Orc under hood.",
+      "artRisk": "Candidate Job language needs creator approval",
+      "technicalRisk": "Keep four independent views and original pixel registration",
+      "dependencies": [
+        "Gate 1"
+      ],
+      "validation": "CONCEPT_PENDING"
+    },
+    {
+      "component": "Attack and job-specific actions",
+      "category": "CREATE_NEW",
+      "evidence": "Warrior has a right-hand body strike; JOB_CATALOG describes different Job roles",
+      "adaptation": "Author role-specific body action; Warrior punch is not archery, healing or spellcasting",
+      "artRisk": "Action must read correctly without embedded weapons",
+      "technicalRisk": "Cast and synchronized shooting require playback/runtime extensions",
+      "dependencies": [
+        "native base approval",
+        "action design"
+      ],
+      "validation": "NOT_RUN"
+    },
+    {
+      "component": "Unity registration and separate weapons",
+      "category": "REQUIRES_EXTENSION",
+      "evidence": "docs/UNITY.md",
+      "adaptation": "No changes to sibling game; future separate integration",
+      "artRisk": "Validate weapon contact and occlusion in game later",
+      "technicalRisk": "UnitVisuals registry/overlays not implemented",
+      "dependencies": [
+        "authorized integration",
+        "PlayMode"
+      ],
+      "validation": "NOT_RUN"
+    }
+  ],
+  "next": "Independent weapon/projectile/VFX assets and proven bindings; Unity integration separate",
+  "weaponAssets": "SEPARATE_REQUIRES_EXTENSION",
+  "unityIntegration": "NOT_RUN",
+  "uniqueNativePoses": 4,
+  "frontBaseApproval": {
+    "date": "2026-10-19",
+    "scope": "first native front_r only",
+    "decision": "approved",
+    "reviewer": "Criador",
+    "evidence": "2026-10-19: Aprovo as sete bases; produza as outras vistas. Resposta explicita a review-orc-native-bases-v1.html; aprovacao parcial front_r, nao Gate base completo ou animacoes.",
+    "file": "source/native-base-v1/front_r-native.png",
+    "sha256": "d0b55c4a17aeb95d45d38c91f7bf5e55320850ce61520aa1c6a7fd0b34d33e64",
+    "conceptDigest": "1e731b9014ea4d8c72e60bd540496591447626fcaa837268cffcc84de0a674a4",
+    "fullBaseGate": "NOT_YET_REVIEWED"
+  },
+  "remainingAnimationPng": 0,
+  "animationFrames": 92,
+  "animatedEditables": 20,
+  "walkFrontR": "APPROVED_BY_CREATOR",
+  "idleFrontR": "APPROVED_BY_CREATOR_V2",
+  "locomotion": "APPROVED_BY_CREATOR_FOUR_VIEWS",
+  "combatFrontReuse": [
+    {
+      "category": "REUSE_DIRECT",
+      "component": "timing/native palette/contracts/tools",
+      "validation": "91 native frame contract + palette + hashes and editor roundtrip PASS"
+    },
+    {
+      "category": "REUSE_ADAPTED",
+      "component": "Hit/Defeat Warrior pose guide",
+      "evidence": "../../orc-combat-hit-defeat-pose-guide-v1.json",
+      "validation": "New outfit poses independently authored; source comparisons in native-review.png"
+    },
+    {
+      "category": "CREATE_NEW",
+      "component": "Job-specific Attack front_r poses",
+      "validation": "Technical PASS; creator review pending"
+    },
+    {
+      "category": "REQUIRES_EXTENSION",
+      "component": "weapons,projectiles,VFX,job runtime events",
+      "validation": "NOT_IMPLEMENTED"
+    }
+  ],
+  "actionExtension": {
+    "status": "APPROVED_AND_EXPORTED_LOCAL",
+    "contract": "docs/EQUIPMENT_AND_ACTIONS.md",
+    "inventory": "characters/orc-equipment-actions-v1.json",
+    "basicUnarmed": "FOUR_NATIVE_BODY_CLIPS_VERIFIED",
+    "otherUnarmedDirectionsMissing": 0,
+    "legacyAssetsUnchanged": true,
+    "review": "characters/review-orc-actions-complete-v1.html",
+    "legacyExportIncludes": false,
+    "supplementExportImplemented": true,
+    "export": "dist/orc-01-rogue/actions-f53c7646dfc4cfce"
+  },
+  "unarmedReuseAssessment": [
+    {
+      "category": "REUSE_DIRECT",
+      "component": "128RGBA8/ground126, own approved palette, timing, extraction, LibreSprite roundtrip and viewer controls",
+      "evidence": "characters/orc-unarmed-complete-validation-v1.json",
+      "adaptation": "No approved body frames altered",
+      "risk": "Body files do not prove weapon bindings",
+      "dependencies": [
+        "approved native base"
+      ],
+      "validation": "Native hashes/palette/editor checks PASS"
+    },
+    {
+      "category": "REUSE_ADAPTED",
+      "component": "Approved Warrior physical punch poses",
+      "evidence": "characters/orc-unarmed-back_l-detailed-guide-v2.json and neutral guides",
+      "adaptation": "Image generation redraws own approved clothing using actual pose guides",
+      "risk": "Garment continuity and far-right-arm occlusion require creator review",
+      "dependencies": [
+        "own approved directions",
+        "Warrior approved punch references"
+      ],
+      "validation": "Technical PASS and creator final approval recorded in characters/orc-actions-complete-approval-v1.json"
+    },
+    {
+      "category": "CREATE_NEW",
+      "component": "20 native unarmed PNG and 4 editable clips",
+      "evidence": "characters/orc-unarmed-complete-validation-v1.json",
+      "adaptation": "Versioned supplement; legacy Attack preserved",
+      "risk": "No separated body/garment raster layers",
+      "dependencies": [
+        "complete consistency approval"
+      ],
+      "validation": "Native RGBA/duration PASS"
+    },
+    {
+      "category": "REQUIRES_EXTENSION",
+      "component": "Unity equipment selection/weapon rendering and action loading",
+      "evidence": "docs/EQUIPMENT_AND_ACTIONS.md",
+      "adaptation": "Supplement local export implemented and verified; no Unity writes",
+      "risk": "Unity runtime lacks explicit unarmed state and supplemental action loading",
+      "dependencies": [
+        "authorized integration",
+        "PlayMode"
+      ],
+      "validation": "NOT_IMPLEMENTED"
+    }
+  ],
+  "localExport": {
+    "id": "orc-01-rogue",
+    "job": "Rogue",
+    "build": "actions-f53c7646dfc4cfce",
+    "path": "dist/orc-01-rogue/actions-f53c7646dfc4cfce",
+    "baselineBuild": "c87e686f7f4e24e7",
+    "baselinePath": "dist/orc-01-rogue/c87e686f7f4e24e7",
+    "nativePng": 117,
+    "unarmedFrameReferences": 20,
+    "newUnarmedPng": 20,
+    "editables": 28,
+    "files": 153,
+    "verification": "ALL_STAGED_SHA256_MATCH",
+    "gate3": "NOT_RUN",
+    "runtimeImplemented": false
+  }
+}

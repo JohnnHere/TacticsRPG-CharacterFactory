@@ -1,0 +1,32 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-combat-hit-defeat-pose-guide-v1.png",
+      "sha256": "6e4f5a82ef1b2516697180adfb3d76ee4e6afdba4399cc87ea76b8dcc010beec"
+    },
+    {
+      "file": "characters/orc-01-squire/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "a5856691d2663e0e6a3fbcf54dc9452a8c58342c7089b4950cfb0a01762c731d"
+    }
+  ],
+  "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+  "direction": "front_r",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "action": {
+    "label": "Melee swing body",
+    "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-63694556-7ae8-4b19-87a7-3a752f24cca1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "NATIVE_VALIDATED_AWAITING_CREATOR_COMBAT_FRONT_REVIEW",
+  "sourceSha256": "232e9b68064c79198a9f495d2d3c5508648412ef7632130611454b1f78b42958",
+  "promptSha256": "160fec7641ae821e138c207c60aa27af4cab94959ce00621847889de9a0630b4"
+}

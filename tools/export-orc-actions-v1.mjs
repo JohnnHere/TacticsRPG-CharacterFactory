@@ -1,0 +1,37 @@
+import fs from 'node:fs';import path from 'node:path';
+import {ROOT,hash,json,readJSON,loadCharacter,approval,digest,inside,write,files,slash} from '../src/core.mjs';import {run} from '../src/cli.mjs';import {planUnarmedExport} from '../src/action-export.mjs';
+const read=f=>readJSON(inside(ROOT,f)),stamp=f=>hash(fs.readFileSync(inside(ROOT,f))),legacy=read('characters/orc-basic-complete-validation-v1.json'),unarmed=read('characters/orc-unarmed-complete-validation-v1.json'),registry=read('characters/orc-equipment-actions-v1.json'),warrior=read('characters/orc-basic-shared-source-index.json');
+const packages=[];
+for(const c of registry.characters){
+ const {spec,dir}=loadCharacter(c.id);for(const gate of ['concept','base','consistency'])if(!approval(spec,dir,gate))throw Error('Current gate absent: '+c.id+' '+gate);
+ const review=read(`characters/${c.id}/source/unarmed-complete-v1-review.json`),clips=unarmed.clips.filter(r=>r.id===c.id);
+ for(const r of clips){const active=c.unarmed[r.direction];if(JSON.stringify(r.frames)!==JSON.stringify(active.frames)||r.editableSha256!==active.editableSha256||active.artisticReview!=='APPROVED_BY_CREATOR_COMPLETE')throw Error('Active selection differs from approved export');}
+ const plan=planUnarmedExport(ROOT,c.id,review,clips);
+ run(['export','--id',c.id]);
+ const baselineBuild=hash(JSON.stringify({content:digest(spec,dir,'consistency'),reviews:readJSON(path.join(dir,'reviews.json'))})).slice(0,16),baseline=`dist/${c.id}/${baselineBuild}`,baselineRoot=`${baseline}/Assets/Resources/Characters/${c.id}`,baseManifest=read(`${baselineRoot}/factory-manifest.json`);
+ if(baseManifest.sourceDigest!==digest(spec,dir,'consistency'))throw Error('Baseline digest differs');
+ const sources=c.id==='orc-01'?[...warrior.editables.map(e=>({file:e.file,sha256:e.sha256})),...['front-r','front_l','back_r','back_l'].map(d=>{const file=`characters/orc-01/source/pixel-grid-v1/orc-01-warrior-${d}.aseprite`;return {file,sha256:stamp(file)};})]:read(`characters/${c.id}/source/complete-v1/review.json`).editables.map(e=>({file:`characters/${c.id}/${e.file}`,sha256:e.sha256}));
+ for(const clip of clips)if(!clip.reuse)sources.push({file:clip.editable,sha256:clip.editableSha256});
+ for(const s of sources)if(stamp(s.file)!==s.sha256)throw Error('Source changed');
+ const build='actions-'+hash(JSON.stringify({baselineBuild,body:digest(spec,dir,'consistency'),action:plan.manifest,sources,contracts:['config/equipment-actions-v1.json','docs/EQUIPMENT_AND_ACTIONS.md'].map(f=>[f,stamp(f)]),exporter:stamp('src/action-export.mjs'),packager:stamp('tools/export-orc-actions-v1.mjs')})).slice(0,16),dest=`dist/${c.id}/${build}`,root=`${dest}/Assets/Resources/Characters/${c.id}`;
+ if(!fs.existsSync(inside(ROOT,dest))){
+  for(const file of files(inside(ROOT,baseline))){const rel=slash(path.relative(inside(ROOT,baseline),file));write(inside(ROOT,`${dest}/${rel}`),fs.readFileSync(file));}
+  for(const f of plan.copies)write(inside(ROOT,`${root}/${f.path}`),fs.readFileSync(inside(ROOT,f.source)));
+  for(const s of sources){const rel=slash(path.relative(dir,inside(ROOT,s.file)));if(!rel.startsWith('source/'))throw Error('Editable outside source');write(inside(ROOT,`${dest}/Source/${rel.slice(7)}`),fs.readFileSync(inside(ROOT,s.file)));}
+  const nativeFiles=files(inside(ROOT,root)).filter(f=>f.endsWith('.png')).map(f=>({path:slash(path.relative(inside(ROOT,root),f)),sha256:hash(fs.readFileSync(f))}));
+  json(inside(ROOT,`${root}/factory-actions.json`),{...plan.manifest,id:c.id,build,baselineBuild,legacyAttack:{state:'Attack',description:c.id==='orc-01'?'Approved original physical punch':legacy.classes.find(r=>r.id===c.id).action,scope:'Approved body gesture only; no weapon/projectile/VFX binding implied'},hitReaction:{state:'Hit',equipmentIndependent:true,directions:['front_r','front_l','back_r','back_l'],framesPerDirection:3,durationMs:80,loop:false,scope:'Shared body reaction for armed/unarmed; overlays must be hidden by future runtime on interruption'},abilityInventory:'Job body gestures are not a complete list of talent abilities; ability-specific casting/VFX requires explicit mappings/assets'});
+  json(inside(ROOT,`${root}/factory-manifest.json`),{...baseManifest,build,baselineBuild,supplement:'factory-actions.json',files:nativeFiles,runtimeImplemented:false,runtimeRegistration:'REQUIRES_EXTENSION: character registry, equipment-aware actions and supplement loading; weapon bindings absent'});
+  json(inside(ROOT,`${dest}/source-manifest.json`),sources.map(s=>({original:s.file,path:'Source/'+slash(path.relative(dir,inside(ROOT,s.file))).slice(7),sha256:s.sha256})));
+  write(inside(ROOT,`${dest}/ACTIONS.md`),'# Orc body and unarmed production export\n\nThis local package contains the approved 97-PNG baseline and explicit basic.unarmed in factory-actions.json. New action PNGs live in Actions/basic-unarmed/v1; reused Warrior/Brawler punches reference Animations/Attack, without duplicate PNGs. Source/ contains selected native .aseprite files. Hit is a body reaction shared with armed/unarmed states. Attack remains the original Job body gesture; spell/weapon bindings and individual talent effects are not implied.\n\nNo Unity project was changed. Current game does not load these action manifests; explicit unarmed gameplay, visual selection, equipment overlays and event integration require separate implementation. Weapons/projectiles/VFX/sockets remain pending. Gate3/PlayMode NOT_RUN.\n');
+  write(inside(ROOT,`${dest}/EQUIPMENT_AND_ACTIONS.md`),fs.readFileSync(inside(ROOT,'docs/EQUIPMENT_AND_ACTIONS.md')));
+ }
+ const manifest=read(`${root}/factory-manifest.json`);if(manifest.build!==build)throw Error('Existing build metadata differs');
+ // Verify the staged package, including reused Attack frames resolved inside this package.
+ for(const f of manifest.files)if(stamp(`${root}/${f.path}`)!==f.sha256)throw Error('Staged PNG hash mismatch');
+ const actions=read(`${root}/factory-actions.json`);for(const clip of Object.values(actions.directions))for(const f of clip.frames)if(stamp(`${root}/${f.path}`)!==f.sha256)throw Error('Staged action frame missing or changed');
+ for(const f of read(`${dest}/source-manifest.json`))if(stamp(`${dest}/${f.path}`)!==f.sha256)throw Error('Staged editable mismatch');
+ const inventory=files(inside(ROOT,dest)).filter(f=>!f.endsWith(path.sep+'package-hashes.json')).map(f=>({path:slash(path.relative(inside(ROOT,dest),f)),sha256:hash(fs.readFileSync(f))}));
+ if(fs.existsSync(inside(ROOT,`${dest}/package-hashes.json`))){if(JSON.stringify(read(`${dest}/package-hashes.json`))!==JSON.stringify(inventory))throw Error('Immutable package changed');}else json(inside(ROOT,`${dest}/package-hashes.json`),inventory);
+ packages.push({id:c.id,job:c.job,build,path:dest,baselineBuild,baselinePath:baseline,nativePng:manifest.files.length,unarmedFrameReferences:20,newUnarmedPng:plan.copies.length,editables:sources.length,files:inventory.length,verification:'ALL_STAGED_SHA256_MATCH',gate3:'NOT_RUN',runtimeImplemented:false});console.log(c.id+': '+manifest.files.length+' PNGs, '+sources.length+' selected editables; staged hashes PASS');
+}
+json(inside(ROOT,'reports/orc-actions-export-v1.json'),{packages,summary:{characters:packages.length,nativePng:packages.reduce((n,p)=>n+p.nativePng,0),unarmedFrameReferences:160,newUnarmedPng:120,reusedUnarmedPng:40,editables:packages.reduce((n,p)=>n+p.editables,0),FAIL:0},artisticApproval:'characters/orc-actions-complete-approval-v1.json',unityIntegration:'NOT_RUN',weaponBindingsProven:0});

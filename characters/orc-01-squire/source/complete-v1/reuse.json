@@ -1,0 +1,25 @@
+{
+  "sourceCharacter": "orc-01",
+  "individual": "SAME_INDIVIDUAL",
+  "REUSE_DIRECT": [
+    "Approved concept and four-view native bases",
+    "Own-outfit47/48-color palette",
+    "Approved40 locomotion frames and13 front combat frames, bytes unchanged",
+    "128px canvas, ground126, timing, naming, editor writer and verified extraction pipeline"
+  ],
+  "REUSE_ADAPTED": [
+    {
+      "component": "Attack/back_l",
+      "evidence": "characters/orc-01-squire/source/combat-directions-v1/back_l/attack-corrected-v2.png",
+      "adaptation": "New image_gen clothing rendering from the valid Squire motion reference where applicable; no assumed shared body layer",
+      "validation": "Actual independent drawings, own palette, editor RGBA and durations verified; creator consistency pending"
+    }
+  ],
+  "CREATE_NEW": "273 directional combat poses across seven outfits; exact generated source selection and reference hashes recorded per frame",
+  "REQUIRES_EXTENSION": [
+    "Layered clothing runtime",
+    "Independent weapons/projectiles/VFX",
+    "Synchronized casting/shooting and UnitVisuals integration"
+  ],
+  "risk": "Flattened raster cels; AI motion-reference reuse does not guarantee pixel-identical anatomy or a clothing rig"
+}

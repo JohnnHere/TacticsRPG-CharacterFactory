@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "character": "orc-01",
+  "method": "new image_gen sprite sources + Pixel Art Fixer forced target grid + native palette and registration",
+  "toolchain": {
+    "uv": "0.13.1",
+    "python": "3.12.15",
+    "pixelfixerCommit": "ef376e57e1c272633ca2dbf5f29ec3fcf6596465",
+    "libresprite": "1.3",
+    "processor": "tools/recover-native-sprite.py",
+    "processorSha256": "a5c15dd84f141d81b2db6d58079267cf9ab0d3243ec596c20e85aa4358ee9947"
+  },
+  "nativeCandidates": [
+    {
+      "file": "sprites/orc_01_mvp1_static_128.png",
+      "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 95,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12561,
+      "partial": 0,
+      "colorCount": 46
+    },
+    {
+      "file": "sprites/Directions/orc_01_dir_front_r.png",
+      "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 95,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12561,
+      "partial": 0,
+      "colorCount": 46
+    },
+    {
+      "file": "sprites/Directions/orc_01_dir_front_l.png",
+      "sha256": "beaba42d466979b9bc3c510a8aedf8b521c840605b3cd718a1da7916f5acf0e6",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 96,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12620,
+      "partial": 0,
+      "colorCount": 46
+    },
+    {
+      "file": "sprites/Directions/orc_01_dir_back_l.png",
+      "sha256": "694632dc2f26cc5cecf1b748208bce86114c909292da7f3d4b92424b5d72ded8",
+      "width": 128,
+      "height": 128,
+      "left": 33,
+      "right": 93,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12699,
+      "partial": 0,
+      "colorCount": 44
+    },
+    {
+      "file": "sprites/Directions/orc_01_dir_back_r.png",
+      "sha256": "7462660eee50bb6f40f55b2b518ccfe41c2fb26893e35ff2e0051234da059fdd",
+      "width": 128,
+      "height": 128,
+      "left": 32,
+      "right": 94,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12901,
+      "partial": 0,
+      "colorCount": 45
+    }
+  ],
+  "verification": {
+    "factoryTests": {
+      "passed": 6,
+      "failed": 0
+    },
+    "baseValidation": "reports/base-validation-v1.json",
+    "directionsValidation": "reports/directions-validation-v1.json",
+    "editorRoundtrip": "4/4 sources export identical RGBA pixels",
+    "sourceReplay": "front_r reconstruction rerun produces byte-identical PNG",
+    "artistReview": "PENDING_CREATOR",
+    "unity": "NOT_RUN"
+  },
+  "inventory": {
+    "technicallyValidCandidates": 5,
+    "requiredBodyPng": 97,
+    "missingAnimationPng": 92
+  },
+  "knownWarnings": [
+    "Fallback intentionally identical to front_r static"
+  ],
+  "pending": [
+    "Creator base/directions review before animations",
+    "Idle front_r, Walk front_r, remaining directions and combat batches",
+    "Full consistency approval and export",
+    "Separate weapon asset/runtime overlay extension",
+    "Unity integration and PlayMode"
+  ]
+}

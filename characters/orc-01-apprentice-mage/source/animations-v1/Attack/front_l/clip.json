@@ -1,0 +1,66 @@
+{
+  "state": "Attack",
+  "direction": "front_l",
+  "frames": 5,
+  "source": "characters\\orc-01-apprentice-mage\\source\\animations-v1\\Attack\\front_l\\sheet.png",
+  "sourceSha256": "e203da6194c9cf7ee4c7869d9c9f2c10116e0682519c684f6f2a7881d7eeebe1",
+  "boxes": [
+    [
+      0,
+      0,
+      218,
+      313
+    ],
+    [
+      315,
+      14,
+      552,
+      313
+    ],
+    [
+      559,
+      31,
+      880,
+      315
+    ],
+    [
+      879,
+      31,
+      1200,
+      315
+    ],
+    [
+      1252,
+      7,
+      1470,
+      318
+    ]
+  ],
+  "xBoundsOverlap": true,
+  "separateComponentsVisuallyReviewed": true,
+  "durationMs": 90,
+  "loop": false,
+  "method": "Separate authored poses + native grid reconstruction + integer registration",
+  "uniqueRgbaFrames": 5,
+  "artisticApproval": "PENDING_CREATOR",
+  "reports": [
+    "attack_front_l_00.json",
+    "attack_front_l_01.json",
+    "attack_front_l_02.json",
+    "attack_front_l_03.json",
+    "attack_front_l_04.json"
+  ],
+  "layerName": "orc-01-apprentice-mage Attack front_l - weaponless body raster",
+  "action": {
+    "label": "Offensive cast body",
+    "poses": "1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "requestedContentHeights": [
+    100,
+    96,
+    91,
+    91,
+    99
+  ]
+}

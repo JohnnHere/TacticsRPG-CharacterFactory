@@ -1,0 +1,22 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "attack-corrected-v2.png",
+  "promptFile": "attack-corrected-v2.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-01-archer/source/directions-v1/back_l/native-4x.png",
+      "sha256": "425bbbed4855ed3f0df0f36e07eb8d61860767186df73f3f23015f127adf3892"
+    }
+  ],
+  "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+  "direction": "back_l",
+  "states": {
+    "Attack": 5
+  },
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-7e4a5fbe-38d2-4bc6-af3a-7bdb1e586e26.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "SOURCE_PENDING_NATIVE_AND_VISUAL_CHECK",
+  "state": "Attack",
+  "sourceSha256": "e4972df1915c410d3d28b44ad29fe2029ef82d21f03023ec3f3aa6b73337a6aa",
+  "promptSha256": "049dd978a224856f5d1b9b68ff50cf82df6aa2eb6c40620d6654c25893860834"
+}

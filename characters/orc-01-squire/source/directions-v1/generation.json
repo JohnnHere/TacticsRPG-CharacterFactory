@@ -1,0 +1,44 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by image_gen",
+  "source": "source/directions-v1/sheet.png",
+  "promptFile": "source/directions-v1/sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-01-squire/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "a5856691d2663e0e6a3fbcf54dc9452a8c58342c7089b4950cfb0a01762c731d"
+    },
+    {
+      "file": "characters/orc-01-squire/concepts/outfit-concept-v1.png",
+      "sha256": "7b35ac5df2665d87df3c66522a1d886d2271d9854a94e6c18edf1282bc71b418"
+    }
+  ],
+  "conceptDigest": "658ab85d3375302dca77e0db7f9fa00009d82ef9266572ec2fad35b6034b1e6d",
+  "approvedFrontSha256": "2adad1e1707368600a3458f2574f12ae086be0ad7e053d160e6e642d1715fbd5",
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-7e3ae636-17da-4926-a2d2-ca148867a30a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "sourceSelectionStatus": "PARTIAL_SOURCE_WITH_CORRECTED_VIEW",
+  "corrections": [
+    {
+      "direction": "front_l",
+      "promptFile": "source/directions-v1/front_l-corrected.prompt.md",
+      "source": "source/directions-v1/front_l-corrected.png",
+      "references": [
+        {
+          "file": "characters/orc-01/source/pixel-grid-v1/front_l-native-4x.png",
+          "sha256": "63ef203acd4e4bc8721c7170ed2d509419f441bce794cdf0afe327e4bf15c610"
+        },
+        {
+          "file": "characters/orc-01-squire/source/native-base-v1/front_r-native-4x.png",
+          "sha256": "a5856691d2663e0e6a3fbcf54dc9452a8c58342c7089b4950cfb0a01762c731d"
+        }
+      ],
+      "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-78ecea28-5246-4548-bf94-a739f725d21a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reason": "Original left figure repeated front_r orientation; accepted original rear two figures only",
+      "sourceSha256": "402b857c17db59b280d81b873ba4bae3e50a2f292a61c51f45021fade94c23e3",
+      "promptSha256": "a7381c601880406cd2a6cc6e87e4cb1c03afcc50580750014f471d209028e586"
+    }
+  ],
+  "artisticReview": "PENDING_CREATOR_FOUR_VIEWS",
+  "sourceSha256": "7aed6790accbcb660eba53ccd0fb495cb82d9035655cbcda1079860f8fe22fdc",
+  "promptSha256": "4ed8fe4ddec25f9670553df6ff7a174514fada49a112c0c0da4fd8fb801900eb"
+}

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {ROOT,loadCharacter,approval,json,hash} from '../src/core.mjs';
+const jobs=['squire','archer','apprentice-mage','acolyte','scout','brawler','rogue'];
+const batches=[];
+for(const job of jobs){
+ const id=`orc-01-${job}`,{spec,dir}=loadCharacter(id);
+ const gate=approval(spec,dir,'concept');if(!gate)throw Error(`Creator concept approval required: ${id}`);
+ const folder=path.join(dir,'source/native-base-v1');fs.mkdirSync(folder,{recursive:true});
+ let prompt=`Use case: newly authored native-sprite artwork, MAGNIFIED PIXEL GRID SOURCE for a 2D tactical RPG. Produce ONE first static front_r base, not an animation sheet. Reference 1 is the CREATOR-APPROVED ${spec.job.name} OUTFIT CONCEPT: preserve its specific clothes, silhouette, colors and the same individual. Reference 2 is the approved Warrior NATIVE SPRITE enlarged 4x, authoritative for tactical proportions, exact body scale, head size, pose and facing ONLY; do not copy its Warrior plate armor or red tabard. Draw NEW coarse native pixel clusters to represent the outfit, do not resize the concept illustration.\n\nMake it look like a genuine 128x128 sprite enlarged 8x using nearest-neighbor. Each logical pixel is one LARGE CLEAR SQUARE, hard staircase contours, one logical pixel outline, 32-48 color palette, broad intentional material clusters, NO fine texture, no smooth gradients, no antialiasing or subpixel features. Whole character approximately 100 logical pixels tall, 60-70 logical pixels wide; transparent logical canvas128x128, logical top around27 and boots on logical ground126. Keep the exact compact robust Orc anatomy and head-to-body ratio of the native Warrior, bald grey-olive scalp, fierce heavy brow, small orange eyes, flat broad nose, angular jaw, pointed ears and two ivory lower tusks. Keep head completely visible and bald. Three-quarter FRONT facing SCREEN RIGHT, neutral planted stance like native Warrior, right-handed, both EMPTY hands lowered, upper-left lighting.\n\nJOB OUTFIT: ${spec.outfit.description}\n\nThe approved concept's outfit takes priority over Warrior clothing. Retain simple readable native-pixel equivalents of its characteristic details; do not invent extra plate armor or a cape. No weapon held, worn, sheathed or carried; no bow, arrows, quiver, shield, staff, VFX or props. No scene, ground shadow, text, grid lines or halo. TRUE TRANSPARENT background and generous empty margin. Output is a new sprite source for explicit target-grid reconstruction and native finishing, never a high-resolution concept masquerading as a sprite. Make chunky native pixel art rather than painting a detailed illustration.`;
+ if(job==='rogue')prompt=prompt.replace('Keep head completely visible and bald.','Preserve the approved Rogue v2 raised open hood, face fully visible; the Orc is bald underneath, no hair.');
+ const promptFile=`characters/${id}/source/native-base-v1/front_r-generated.prompt.md`;
+ fs.writeFileSync(path.join(ROOT,promptFile),prompt+'\n');
+ batches.push({id,job:spec.job.name,folder:`characters/${id}/source/native-base-v1`,promptFile,prompt,conceptApprovalDigest:gate.digest,references:[`characters/${id}/concepts/outfit-concept-${job==='rogue'?'v2':'v1'}.png`,'characters/orc-01/source/pixel-grid-v1/front-r-native-4x.png'].map(file=>({file,sha256:hash(fs.readFileSync(path.join(ROOT,file)))}))});
+}
+json(path.join(ROOT,'characters/orc-native-base-batch-v1.json'),batches);
+console.log(`${batches.length} approved-outfit base sources prepared`);

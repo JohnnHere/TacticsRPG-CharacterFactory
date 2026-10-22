@@ -1,0 +1,49 @@
+"""Check real browser controls and every displayed native frame in all four views."""
+from pathlib import Path
+from functools import partial
+from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
+import hashlib,json,threading
+from PIL import Image
+from playwright.sync_api import sync_playwright
+root=Path('.').resolve();manifest=json.loads((root/'characters/orc-locomotion-directions-validation-v1.json').read_text(encoding='utf-8'));expected={}
+for clip in manifest['clips']:
+ for i,f in enumerate(clip['frameFiles']):expected[(clip['id'],clip['direction'],clip['state'],i)]=hashlib.sha256(Image.open(root/'characters'/clip['id']/f['file']).convert('RGBA').tobytes()).hexdigest()
+class Quiet(SimpleHTTPRequestHandler):
+ def log_message(self,*args):pass
+ def do_GET(self):
+  try:super().do_GET()
+  except (ConnectionAbortedError,ConnectionResetError,BrokenPipeError):pass
+server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(root)));threading.Thread(target=server.serve_forever,daemon=True).start();results=[]
+try:
+ with sync_playwright() as p:
+  browser=p.chromium.launch(channel='msedge',headless=True)
+  for mode,url in [('http',f'http://127.0.0.1:{server.server_port}/characters/review-orc-locomotion-directions-v1.html'),('file',(root/'characters/review-orc-locomotion-directions-v1.html').as_uri())]:
+   errors=[];page=browser.new_page(viewport={'width':1600,'height':1100},device_scale_factor=1);page.on('pageerror',lambda e:errors.append(str(e)));page.goto(url,wait_until='networkidle');page.wait_for_function('window.orcLocomotionData && window.orcLocomotionFrame!==undefined')
+   loaded=page.evaluate('''async()=>await Promise.all(orcLocomotionData.classes.flatMap(c=>Object.values(c.clips).flatMap(s=>s.frames)).map(src=>new Promise(resolve=>{const i=new Image;i.onload=()=>resolve({width:i.naturalWidth,height:i.naturalHeight});i.onerror=()=>resolve({error:true});i.src=src})))''');assert len(loaded)==280 and all(i.get('width')==128 and i.get('height')==128 for i in loaded)
+   pixel_checks=0
+   for direction in ['front_l','back_r','back_l','front_r']:
+    page.select_option('#direction',direction)
+    for state,count in [('Idle',4),('Walk',6)]:
+     page.select_option('#state',state);page.wait_for_function('Array.from(document.querySelectorAll("img.strip,img.base")).every(i=>i.complete&&i.naturalWidth>0)')
+     assert all(s==[128*count,128] for s in page.locator('img.strip').evaluate_all('els=>els.map(i=>[i.naturalWidth,i.naturalHeight])'))
+     sources=page.locator('img.base').evaluate_all('els=>els.map(i=>i.getAttribute("src"))');assert all(f'_dir_{direction}.png' in src for src in sources)
+     page.click('#restart');page.wait_for_timeout(80);page.click('#play')
+     for i in range(count):
+      page.locator('#frame').evaluate('(e,v)=>{e.value=v;e.dispatchEvent(new Event("input",{bubbles:true}))}',i);page.wait_for_function(f'window.orcLocomotionFrame==={i}')
+      if mode=='http':
+       pixels=page.evaluate('''async()=>await Promise.all(Array.from(document.querySelectorAll('canvas')).map(async c=>{const a=c.getContext('2d').getImageData(0,0,128,128).data;let bottom=-1,partial=0;for(let y=0;y<128;y++)for(let x=0;x<128;x++){const v=a[(y*128+x)*4+3];if(v)bottom=y;if(v>0&&v<255)partial++}const h=await crypto.subtle.digest('SHA-256',a);return{id:c.id.replace('canvas-',''),bottom,partial,sha256:Array.from(new Uint8Array(h)).map(x=>x.toString(16).padStart(2,'0')).join('')}}))''')
+       for px in pixels:assert px['bottom']==126 and px['partial']==0 and px['sha256']==expected[(px['id'],direction,state,i)],(direction,state,i,px)
+       pixel_checks+=len(pixels)
+     page.locator('#frame').evaluate('(e,v)=>{e.value=v;e.dispatchEvent(new Event("input",{bubbles:true}))}',2 if state=='Idle' else 3);page.wait_for_function(f'window.orcLocomotionFrame==={2 if state=="Idle" else 3}')
+     if mode=='http':page.screenshot(path=str(root/f'characters/orc-locomotion-{direction}-{state.lower()}-browser-v1.png'),full_page=True)
+   for c in manifest['classes']:
+    page.select_option('#classFilter',c['id']);assert page.locator('article:visible').count()==1
+   page.select_option('#classFilter','all')
+   for zoom in ['1','3','2']:
+    page.select_option('#zoom',zoom);assert all(w==128*int(zoom) for w in page.locator('canvas').evaluate_all('els=>els.map(c=>c.getBoundingClientRect().width)'))
+   for speed in ['0.5','2','1']:page.select_option('#speed',speed)
+   page.click('#background');assert 'light' in page.locator('body').get_attribute('class');page.click('#background');assert not errors
+   results.append({'mode':mode,'loadedPng':280,'canvasRgbaHashChecks':pixel_checks if mode=='http' else 'NOT_RUN_FILE_ORIGIN_SECURITY','directions':4,'states':2,'controls':'PASS','baseAndStripDirectionSwitch':'PASS','javascriptErrors':errors});page.close()
+  report={'browser':'Microsoft Edge headless via Playwright','version':browser.version,'results':results,'artisticApproval':'PENDING_CREATOR_NEW_DIRECTIONS','unityPlayMode':'NOT_RUN'};browser.close()
+finally:server.shutdown();server.server_close()
+(root/'characters/orc-locomotion-directions-browser-v1.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('280/280 browser canvas RGBA exact; all four views and controls PASS; server closed.')

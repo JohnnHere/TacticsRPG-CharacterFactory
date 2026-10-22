@@ -1,0 +1,1449 @@
+{
+  "schemaVersion": 1,
+  "contract": "config/equipment-actions-v1.json",
+  "creatorFeedback": "gostei muito; asked equipment documentation audit/standard and basic unarmed attack for all classes",
+  "feedbackIsFinalConsistencyApproval": false,
+  "scope": "Eight Orc outfits including Warrior; explicit basic unarmed action, separate from abilities",
+  "characters": [
+    {
+      "id": "orc-01",
+      "job": "Warrior",
+      "baseApprovalDigest": "1c117c4acbbb264103672cc7ac597488a887f3737dcc48dcdc8300b641b47080",
+      "unarmed": {
+        "front_r": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_r_00.png",
+              "sha256": "7a092041b2cc2431fd7dff7a59152a3bdae70c08a6a52b3323640cf4125c4467"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_r_01.png",
+              "sha256": "b77c506c204d36db5c785528020a2e87ed2afac94698cb79a98d70e303f89c1c"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_r_02.png",
+              "sha256": "a288b436770ccf3c73a26286576f193467c68e32247d95a60340b0f0d5c89ea0"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_r_03.png",
+              "sha256": "aeff3136ed2a3fcb651e493fe1d03ff446c52ab9e037a19eb0886be60b639980"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_r_04.png",
+              "sha256": "1b3988eed3abe797db6256e750be4372fcd40d20bd2eea8a5d6126546258cacc"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "reuseEvidence": "Actual four native strips visually inspected; closed-fist physical punch, original approved costume and hashes preserved",
+          "editable": "characters/orc-01/source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+          "editableSha256": "9dcb0d1fc5e4ddf542062e7fd2fcf32178a637b845cd4d1dcd06b6662ff84b57",
+          "strip": "characters/orc-01/source/animations-v1/Attack/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_l_00.png",
+              "sha256": "da4573211336898baf986524c9be44d32becdfab816aed54638495a80b055c1c"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_l_01.png",
+              "sha256": "a4b27a30e322f65fb85b44c8e18c8f897128c3012d62308c237f3c23ad2ccde8"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_l_02.png",
+              "sha256": "ac399ad4db0a039161139c12f290eef8f9fcaa1b20025e59c8f4afec87d02e13"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_l_03.png",
+              "sha256": "bcc4f79e9fe8f834689bf1d7a89738190e934e8cb8566e26c1b7c1fd0011272d"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_front_l_04.png",
+              "sha256": "9f7808256c9729046bbd3b98c5f866b8c66d9460269d3c32714120908fdec617"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "reuseEvidence": "Actual four native strips visually inspected; closed-fist physical punch, original approved costume and hashes preserved",
+          "editable": "characters/orc-01/source/animations-v1/Attack/front_l/attack_front_l.aseprite",
+          "editableSha256": "d3d2a0fa0564a85d9d410897ae0f868625ce556edc61f0c85640fa8fe01c9f19",
+          "strip": "characters/orc-01/source/animations-v1/Attack/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_r_00.png",
+              "sha256": "e6ba1e04af0aa1831f5dc398042e80c42e721d2c5dfce397cbe986443e22c2ef"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_r_01.png",
+              "sha256": "2d9707b2f8bfb8dda9124d7400aee9ce50fe8032b8d4866e4e53c45d8877f6d9"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_r_02.png",
+              "sha256": "813d1e7932760f4005883946aff861a656d16e28e92e69d2327ba5244652d080"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_r_03.png",
+              "sha256": "e94526dd763edb9837b37104168cc8a08ce3097520c4b9d62e44de56c40c1206"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_r_04.png",
+              "sha256": "466800ad1ae13df7b9658f357a2f9a1470c0d11f78e0b8d139f625d55700900f"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "reuseEvidence": "Actual four native strips visually inspected; closed-fist physical punch, original approved costume and hashes preserved",
+          "editable": "characters/orc-01/source/animations-v1/Attack/back_r/attack_back_r.aseprite",
+          "editableSha256": "d3f0574d2bd8ef55b2612ebe06d96cff788bfe283f7b20cc5de70a40ec486e87",
+          "strip": "characters/orc-01/source/animations-v1/Attack/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_l_00.png",
+              "sha256": "6ac2c8e1597342d1ef52fbc903c903b5f85300bfc175469c4aedc68eaa932759"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_l_01.png",
+              "sha256": "1d4bb7d400ab91a86fe72f7ed99d623804f3e7d2363c9f193e728ccc86024ec9"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_l_02.png",
+              "sha256": "35a7882abb891d9be9d67e43e89d33ed264050f5edf6b32d94e74b4e4f8f485d"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_l_03.png",
+              "sha256": "6071c81566539c0076ce4c2d84ad97bf35055b0311409d4408463cba4c3144ba"
+            },
+            {
+              "file": "characters/orc-01/sprites/Animations/Attack/attack_back_l_04.png",
+              "sha256": "f27f9c5fc6eb71e4223383b08cbb523cac9ddc5262e30cbb07143cdfab8c8858"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "reuseEvidence": "Actual four native strips visually inspected; closed-fist physical punch, original approved costume and hashes preserved",
+          "editable": "characters/orc-01/source/animations-v1/Attack/back_l/corrected-v2/attack_back_l.aseprite",
+          "editableSha256": "c7573c659f3db94d70e2704b863679160c3a387a12ece8e8eeaffbbb4d24fdf5",
+          "strip": "characters/orc-01/source/animations-v1/Attack/back_l/corrected-v2/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "Verified closed-fist unarmed punch; all four approved clips reused directly",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_00.png",
+              "sha256": "8b4f032e0bbdb2b10a90dc1eb49ca3c4e3a309da3a18882572470e3a839a6839",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_01.png",
+              "sha256": "879cabebb7c7374ab3da62b6616219cec332155dc115d7be5d1b1e220235b39f",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_02.png",
+              "sha256": "5c413445859ac85ee4525c5c5fd401913068acff921653cb3c14f145d8a4ad48",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_03.png",
+              "sha256": "99dfbd0a620e6efcb06cf6404bfab572ea78f6c121d33655f5fb47f060970558",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_04.png",
+              "sha256": "0540c96876ce2f8822cbf4c594e577561657e89ec0f99baeaa2b910c158054b5",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "fe0facb89a7360aa3aa694293a519621aa8a521c85cb1f582ad27c20e55889ca",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "1a6faabd771cc1457bfcc04f62bcde28fb155725f12cac1bf9cb976298daff8c",
+          "generation": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-squire-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-squire-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-squire/actions/basic-unarmed/v2/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_00.png",
+              "sha256": "9b4178209ec3a8cd2a34f5c8991fb0c532c092de385892d704f7556a7ebfaf14",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_01.png",
+              "sha256": "ae03fcadb9d558559b28f0814ac12d189778c3197e83b810a3f4544411f42e27",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_02.png",
+              "sha256": "b2932ea22abf4d0f437ebd5c4bcfaf14195c4c4a16bcc7957c4d80cf283851ea",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_03.png",
+              "sha256": "77ac521453868947a66ca9d11326e1d51f06462c787b47e9f03021a114f3bd57",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_04.png",
+              "sha256": "d107fb08cda7548a4010e267fe00b062ae48755a1446b587184ea05e81661df4",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "9c0290c03df2f395c8eb43fc90f0f6c577fee81cc1bee381b52a0eace9eb0cbd",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "a8cc750bba9733792fa848157454f914276082dd77ef700d79c8b4eba1e985b9",
+          "generation": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-squire-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-squire-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-squire/actions/basic-unarmed/v2/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "bee7e37e7022b91d4dd5839260464749126b15c28ec56f07cc21b88db32c380e",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "b24418b137515a54fe6b280ff33cb7981d5c39096107566c524e1a29f0896f41",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "1559c0f4f7c4c3a4151012bdc7b620262b4d82f206aa4319fb5f334f489c68dd",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "c4b935a610e205fbc78ccc70c143089606e89dfe69e5b8921ccf72c7c84b63b6",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "14344a21985fe631972a1f218c9a3034eddcca06065479e51ddfd64c724e83d6",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "efdb76848e247159496794f551ec5ba4e5b42967688ec62cf7a1aaa3b5a50384",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "497e5e9f02e3718d1d23f4d2d28e9c17dad2a13549d2a3c1590faaa9a0de3736",
+          "generation": "characters/orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-squire-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-squire-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-squire/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "b099b927047b9a152ff4b816f89c9bc6a6d66d711497ed50f464a617d4ef535b",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "ca33c622c5259dab069ef4688892bb50cfcabeff18e1e57ce9668a87849c2422",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "43b863fa402f630c8ef49f84e6a2ed179ef180940d769214b643775c6ea841e3",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "e3d4a4db5a2ef51ca942d898821bced6e00e859462643aabd963362e25492635",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "518d61fd4002bbb68c13553ea3afa5986022390832e64ccf9d9460fbf68f08f5",
+              "processingReport": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "ea64c6185f49366b3391349c6511f1e3416bffdca27bdbd1b9e82e5fb9d62d18",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "2ed153e32ecf8b45e895ed91afbb85bf0979107b7227af25e61be0d4b2b390ff",
+          "generation": "characters/orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-squire-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-squire-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-squire/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "job-specific attack candidate; unarmed equivalence not proven",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+              "sha256": "abc40bab76fbfd88800b88602715fb87f046036a6e1376dff2611cd459e6171c",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+              "sha256": "f999f0dddb8140395cfd28afe128a51f3ea47a62cc9fdf8d35ed06a76db3dc73",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+              "sha256": "a8c071f995b97758505a88b388b5b7418aa5d1dff997861fc5cf970f486434bd",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+              "sha256": "595dfea91efe7724a87f549c2239ddedc9bb3d0130ce4fcb783cdbc0282438d5",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+              "sha256": "c4e3d57e7fd0d554bf22c10dfc961725487bf18279377a31ee2b6d0b458ecc48",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "ca6773b6ed6e39e2bc767257e122c1b74172d356f7ea87e61487d047c5b74656",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "2b483a3132f723ecbdc6833e56ddd3569a0ffa95a2577a476b0165877ad766a3",
+          "generation": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-archer-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-archer-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-archer/actions/basic-unarmed/v1/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+              "sha256": "582e7b9cd69a23d5d8c04dbf4cb9e7bbf161c6b10108841c6c9fec834ff204ce",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+              "sha256": "6ab07785cb91b6b9da5ded04d2b2c9453255d6553a72cdc4379c6170869f251a",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+              "sha256": "22a20aa27cfa6e6a5b4dd4681f1abf1ba51cb5196ffd713cca88bf0ab7e2fb11",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+              "sha256": "e90b8c70e4abcb7dc59f7f0981513ce9604a1ca85a75262b3332c18e7d8ad5aa",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_04.png",
+              "sha256": "3b88c20d880c4f9c6762d0a518e93b5b22c324ed0c8bf478bcd9ed28bbadb000",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "ef7695c97b9872816d790f1a58fc7510a7795f43af3c737c488d52b1be761893",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "e493441669589dbabecf3d9f50d9c5ea2f94844951a601f854d6316c90ccc30a",
+          "generation": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-archer-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-archer-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-archer/actions/basic-unarmed/v1/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "66e411f39226aec6dd758b6502a83c2ca6213235ef08128e8ad928de421b45a7",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "c6e5437b6dec93e738c9f933fdefd5f692baa07f4fb8cebca5ddc81ba5d3d9a1",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "34cd0ee3da5ca21967a883d416ba8b387a845cbc377f1af6ddace5dbe541d22b",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "9ce7ea046fb53c57f0cdfcecf2ad71b25afccb1c6af0760e575d68be0173fbcc",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "fd08ca60347859ceae047758d0d7996b680897d9c515c3ca48cb420da5915b35",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "55bce59a7255a900e0a29a2b04bbbc3b60ee18f9e4ef2aec3ee29ed5c9dacb9c",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "f3fdc80c32f1fd1618c196668aae185aeef9cbf4e2ca9498d2800aad8c0a7507",
+          "generation": "characters/orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-archer-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-archer-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-archer/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "09c18c11762e6123af6a2937a46a8d9a3b0eaa26b24cae3a41df84b05bf1cb86",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "926b3a4b303e024ac7a7534df529001c8c065f06f7a8442bd1b2d2b225d2848c",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "7511fa1b37c6234e9b528b21b25b8640b0c4b1a34ebea37c77e2c2b6f0dbc561",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "333000bc4d94e43b361dc84a8af86bc600f537d8231e8eb659c0b8a752ee8a84",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "49bcc80457b10aa19b56a263c556d68a1766c5eaf9e4a4717cec4fb9fe9d3eaa",
+              "processingReport": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "a1fdbf7f4b59d77f2e91a4b0c062f317648119b59fb0b9d18fdd74127de02f71",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "384dff44e1a4adcd4288130f3cc564e88de99795418ad431227016e29ed77333",
+          "generation": "characters/orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-archer-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-archer-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-archer/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "bow draw gesture; not basic unarmed",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+              "sha256": "1fe962d1c75b894b44ad627f181df75a2ad7fa564224cf790f89665f7a8613c2",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+              "sha256": "82799b2228c56e974337049baa8ed8803311c3b88aa099c883cc9d0a6f326f03",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+              "sha256": "4307e3adf4d8a7c43a86178d0cf943e2d703808524396a3b61791494722383b7",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+              "sha256": "ee83c612a2bc4d545ba1e09484992e7d24dc36a33186b5ca88e2a0cb973ef15b",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+              "sha256": "e23e7f591c2c53624c991cffdff4632f46d92a229e23ce60e9e524c4f2b21e17",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "1569a87eb1811a165abae7e1491d00922d6bbf5b135990fd92af88f71b72cdcd",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "c357cab61bc69f89ebf5ba2db517cec88561258ad959310908ce0777ccbe1f7f",
+          "generation": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+              "sha256": "8663dc67ac2ddba5e55372fbf736ac5cd5152a4288ee5d0ab31d8e779dfd6ff6",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+              "sha256": "5e312977dd263d0a2adcad561329cc2982e5bccc5ee42c1a660f560b3254fe12",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+              "sha256": "4e00247caf9bed00e6e2be7bf8e973345832c10cf9ef38d7934b150cf1f1c501",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+              "sha256": "762bbb39f2dd00fb69c6792b8b4421d28aaab3dcd68dd02cff14b6e87bea6ced",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_04.png",
+              "sha256": "e9131ae5961e504a02d00438c2a300cd27746639f1cbf62dac4c7ec158821cba",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "a82279b8618445098e60d9030b0f3fa3ccb021e15f7c4552873fd19ba020a90b",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "c531da1e4c6b4642744c1014003a66c12c4b2414eab259afa68cc48d81185aea",
+          "generation": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "74da9388003e3bdb779447bca1365143ae46efdce022f2c35f904682791d6666",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "3161e6f4673dbedf9142a7a271f5893fb289b5bc685a32372cd0f8dbca39d534",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "0c0c8715ac3cb67446bcb84c7bea9aec53498511a39ac1a853daf339b468a4a2",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "7e61699877b96b8f5baa81b04608aacddf4812ba6c6d29a3a5be3b03db0e2e6f",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "3884e46668b7373d50ac1b5cdc41a015aa9920692e71734c391a537a99a5b6a3",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "ad8755eadf3e682f5bf8ee155076c7d41ca28fe7abf1d38f9fd2d9dec88ec645",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "0b7616bf32ca9eef56849a0cfda6eef2ff83d9c2c5defbad5401584dda2b0c76",
+          "generation": "characters/orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "ad5ba083459a74b3e9276475d52c4d60377e8dfc82ff4bcbe48ab2f942f3b3c9",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "e439791a5292578e4656639215b42fd38a8461cd6254557f5358237c8c3fd43b",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "92dea60a94c89c88d3a5121a3c486f090864ba0eeae19164abaacc7fe3458987",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "f6eb56883ba9839e0fb621c987defe64594a3f50dc23940f9e81fb0711fea741",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "b30c917f693e6b03f89f8fae07bfcc784620fef833625caafeda0b7232a7778d",
+              "processingReport": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "b10ed261962df8de88a82b30d4074df1f5aac2bc27c8afd6c222943c1b2f52ec",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "3af1fbf3d9855b4a3adbfbf4a26a8170f1438f1a1af1c68efccbe7779fda4875",
+          "generation": "characters/orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-apprentice-mage-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "offensive cast gesture; not basic unarmed",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "baseApprovalDigest": "40436711d8c0d4b19839bcba45dc82666b9fd85a060fb59a84e7ab0c1221f3b8",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+              "sha256": "d6f5dd781d026708ada45955f5b82e1be92ed90684aac5e131c790608e97ed48",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+              "sha256": "1fa4adfb79d28bdc8be4a1fe5540bd4c17af91923f5bdc075dc6082ebbe30be5",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+              "sha256": "ff41ff5928a724fae20b93ef304a4f7ac8a208acf1232e7c665f785d50bd7547",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+              "sha256": "bfae611b75704dc886615e7efd9b5e38ff7a6400cfd713f90fb57b81cdb15bf6",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+              "sha256": "33a4cd19a45ace9e7a9e41712e864ec6bf38e7162873c82de2485932603a41e0",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "cd2b6d53c4e1384c84912fedc101fd180a1230305aef5890f6ec06904aa37dad",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "a3b334dd33f3752305314cad89d157f7694918c43dcc501492db8932c333b6be",
+          "generation": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-acolyte-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-acolyte-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+              "sha256": "7cbc6e3898d9d3d557ac943659875bca53c5b50ac9809cd4f01c2ec156b556cd",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+              "sha256": "eae7b95c484a1445ffe7a45d91c283eaf26b83ea1116122f3ca2bbe5fefd9096",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+              "sha256": "570c6faba1c3b7802dcc13f3caabf53679335030275b472df399bb1372344aba",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+              "sha256": "011b075db0ebb3cdce480b638ab15403709d64312b2a9a8a53d55e23925a7e03",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_04.png",
+              "sha256": "ba17f6d3b097deb8421cf6d1910213ed6ab0b99405965650aff2ebaa21164e27",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "8a541740f51cad0a0684f23ed4239d74e135f76c178be9104bcaddd9a71e5f00",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "cd8ec449bd7e3c8affd8e51e8501ea16b4e9970e2a4aa9b0bbd23f2ab62f51af",
+          "generation": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-acolyte-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-acolyte-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-acolyte/actions/basic-unarmed/v1/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "9162a56bde902c86f2a32f392b7756e5d9560c241c65d324cd9b6340a7ed4730",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "f28caee30c543b396115b1ffbc84429abda3eee676171928211cc03ee98277c8",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "6a7d1e082ce374a5e25f092196c8c957f7cc48984c5d5800eab3e3ee90e02155",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "47ae0d8ece29a95744c2ff2106e3e189799d46728d3797b341f0de9c15b3a76f",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "f18897fd2558b08a5f2963f2b261b1b2b98a6fc2a96541f1422006112e8ae127",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "1ed362845da906a543079cd07fd0e21e99571588b6be0629ad220189b7f94c8f",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "b9d3b1042ecfb7fd90daac4847e2892d478168678d0fdc34d3643f1d621c778a",
+          "generation": "characters/orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-acolyte-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-acolyte-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-acolyte/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "94e815b57c0bda9a681fb3b6a301da08ea7c9fe22dee6b3a093a17e1e13806a2",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "db23fa9062a2722b52379e41d2a24cabe15eb3ef3d754e201b7e594c8dd7a1cb",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "115eaddee93a7d9349565bf7833a61154149689ddccc766bcc42a2eefe4e8947",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "a1161d9df24fcc2c9c55f6fc9f98ac9d4e34f81c7b2215461f8a4192c4e4e2a8",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "d242fb829ec6ef0528512dcaf68be609829534505890bffd6464c3198b174040",
+              "processingReport": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "79c147da9717225eab515f67e211f0418182632dffc1f33556187ea0ee8492b2",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "cf0d23b2137d4bfead56463605f4d854da9318af567489024b6538040721f459",
+          "generation": "characters/orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-acolyte-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-acolyte-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-acolyte/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "support invocation gesture; not basic unarmed",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "baseApprovalDigest": "e2e986b01b6979b77b257d6964553543e3308035d138ab8ecf4282b8d572cc02",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+              "sha256": "5be2f75b04dfdbd1e8964d948fece77a7a9a67caa9dfa3e7ea04859b2590eb7a",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+              "sha256": "bfd814173392fb8109ae27b40a5bdeae26760e99e2c35e1a26ab47edf51339ca",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+              "sha256": "55220afa866955967d7689bc1e7e68315669cbd46ca0f946e68fbba6b2b81e0e",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+              "sha256": "19ca3c67eca064743d170efdd10e35ca578b2a16ac14f925ecfc5852ac6dbab8",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+              "sha256": "4c0b2a8046e8ef490c723c0308c38d717755e63538a53fad3d3ecf9a72237de7",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "2cea0f4e5ded083c0c280bd8064fce0d4ac2fbcfc18c1a4f6c0e27ebe6dcab67",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "f68b178a30c5c9ef61612d27073aeb56b2950a53556f6175263a21d72f0cf565",
+          "generation": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-rogue-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-rogue-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-rogue/actions/basic-unarmed/v1/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_00.png",
+              "sha256": "6a57bd8ac45e6d5d93ed3438fc3a88086de39234c4f60a867326191871c0e270",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_01.png",
+              "sha256": "92d11fcfd0dde5032d927bf4b28bef8ba653270cb947be50256364bafc8db91f",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_02.png",
+              "sha256": "f3fc494de587a375c7c980f7445449912ce92412918cc5c9e06b40476da5a827",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_03.png",
+              "sha256": "b4828087f16bc3cb5e7a871831d704c5cab5d6f09e8690d1bd3fa226924dddbf",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_04.png",
+              "sha256": "8d50bec3abd5f6b3d801bebd307fefdd1d04418cc1190c050859b568bd555c62",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "91c332630bb3f790297da880a4d6bcf8246debcfdc8565b129a3bda41cdbbd2a",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "1d81cc1867bd78849e9138279db09d90aec9ff44e2f33bd72eff9149bfbd2c4c",
+          "generation": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-rogue-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-rogue-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-rogue/actions/basic-unarmed/v2/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "b3ba87d5755ee8571e5ebf20ce1180795d4d67abca9d793e481eb8dd25c7661c",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "a8ab7a44b18af1785925282bba7f32e334f51a4b58bec66e194c44613a79ad00",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "eae1e158a16678b3343926500cce295c11d7b14119509c2a60e22cbea4593985",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "91c46480d848f522fb3a90e941fc51a180726adeb91645cef1e0df0562fb4e55",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "aaefbf587e0c63b0c852ff83844109e19dd6e1003429024832b7136ca4cd618b",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "a815ef136e053d1202c1c14f2a8954d807777e3176e10f5fdaa769316bdf5b44",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "6228e6b5047e141c0876c26e91f0432955a293367b3fc19ed5b757527ee73ec0",
+          "generation": "characters/orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-rogue-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-rogue-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-rogue/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "350aae97575a4961653ff77aeb62aa623edd54b779dcb9b34edd0df8e96f4ac8",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "2b08a825290cea743abfc75d85135fd240055be8d2e4b60a6c9a0a14251db189",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "fdd49ed9238a11231d223373dee7389639962883ec22345c739ccceaba30f5f6",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "204d2e5533e892031b36ca455363e3e5cb20b8e49788d83ebe9cfde120555571",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "8c536250d281facd6bcef44da520ab1a243d436a8c32f8c07337e155e13a8aeb",
+              "processingReport": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "b7b9a0408d6d6715b41adb88fad7739f8540163f526407c75dd990c15dfe5f15",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "85ab47fe0c117b3320e542b44539e8d3487f9420998b151b15f8f22931d05ea9",
+          "generation": "characters/orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-rogue-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-rogue-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-rogue/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "job-specific attack candidate; unarmed equivalence not proven",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+      "unarmed": {
+        "front_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+              "sha256": "798d082684da6a982f2ef9f0031c5c2a15978a8953931c001a3c6d5e57d6aa34",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+              "sha256": "8e309d649b483d3d774772d8b56a5f3f7bdd7b815c2b40b39f272fd7e6dbdee8",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+              "sha256": "523d23d949e0e7289c4ca464257768bb67b8ccc91e3d1b57ab2b9b4604b7b2ac",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+              "sha256": "62fa4c4ef8624baa8ea4482fb6d30e2ef7352b7b02a025ec42c9bb543d919b98",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+              "sha256": "62b6b67cdcfd676fbafa878aae40d81830ba492108c29e57f23cd12ab3485b75",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite",
+          "editableSha256": "3b322e2c30c992b25e7199102a59d1d9d4f979f20456da1151c3f32417925608",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/sheet.png",
+          "sourceSha256": "ecba7c60748216bc2462f7c46c19bf7ec672100f3ee316dbc78e70998f170052",
+          "generation": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-scout-basic-unarmed-front_r.png",
+          "editorData": "tmp/editor-orc-01-scout-basic-unarmed-front_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-scout/actions/basic-unarmed/v1/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+              "sha256": "1afbef36f2312b22f068b44888eda0ca29ceef8604ce8f2da21a42a0055ce934",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+              "sha256": "fb37bbd39a6938530177e59c6e5c3fc588814428df619d5ebf88773c70913ef7",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+              "sha256": "07cdb40ec3cc018c8de131f8349c9cb95df0d3ffbc9655a3b1a375c23d556b94",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+              "sha256": "9f1c8aec8334cc15998136fc3833a36c8a9ac26be39ad4606bd882df40a7f118",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_04.png",
+              "sha256": "3781cd6e580b4cfb48fd19fcefa899e1a675fe677cb02fef42a6587303fba649",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite",
+          "editableSha256": "01fa2b748aa25c238f1d69137d74e81e1c2fd994acb3595e48330f2cabab6e4c",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/sheet.png",
+          "sourceSha256": "21ef5284601595f7de99e9d67307f0a06aa5e60ed9e9c6ef6a084132d6c842c0",
+          "generation": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-scout-basic-unarmed-front_l.png",
+          "editorData": "tmp/editor-orc-01-scout-basic-unarmed-front_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-scout/actions/basic-unarmed/v1/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+              "sha256": "edb68c41d61bc4c13a384a6cec0fe3ecb2d1f544fd611cff9ee3fe9853e3b176",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_00.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+              "sha256": "df55e0c47e3876d94acefdc7d17c283d1616beb11019ec93dc3f6a2e35c54c4e",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_01.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+              "sha256": "def6831b92d4c29f3b7491f44c40fe3442f9143e55c1c4979a761ce2559024a5",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_02.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+              "sha256": "d1e724eb54838dd10e55cd21c978e0c8db7a7ecbe944f9d3fe84a6560afae4d2",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_03.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+              "sha256": "76448a17294695609f87ad417bce818f83f7cdd754c52951da9751ea946a9fc5",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite",
+          "editableSha256": "5e420807f0d30619498fdae7694f2312e5cf52ad8e616d5ce0de87a14acd2c24",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/sheet.png",
+          "sourceSha256": "546b2d4fcee78704208b9e330565d0770ff93f9946d3d914eb7b686b7310bf41",
+          "generation": "characters/orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/generation.json",
+          "editorSheet": "tmp/editor-orc-01-scout-basic-unarmed-back_r.png",
+          "editorData": "tmp/editor-orc-01-scout-basic-unarmed-back_r.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-scout/actions/basic-unarmed/v1/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "READY_NATIVE_BODY_CANDIDATE",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+              "sha256": "1ff1f02db5b455d25f27e6ff84eeeefd2b10e7a0f4d29e6e953fd596df3e2897",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_00.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+              "sha256": "555bec28b9e19c6ee5512045620c1951d106ea1f16e86ca3304946559d4f245f",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_01.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+              "sha256": "bcc8c861b2af4b5b6749388c169cf0c39ea4ef1e07e34f559843814d05e6fdd3",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_02.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+              "sha256": "ac3412dd2354a1c9aa471cbdb8b836e17ac94537f5d42bda75d9b2f775eca91c",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_03.json"
+            },
+            {
+              "file": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_04.png",
+              "sha256": "195c92eada5b771325b8fcdb4dfef68f153df9f1966bf83186dd988b32546d29",
+              "processingReport": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l_04.json"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite",
+          "editableSha256": "4bc1450fc791bdedb20ca0de2bf01ded022b22f922863c5976b1d6d547278f8f",
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "source": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/sheet.png",
+          "sourceSha256": "32ec1eb990ffec895d43d29978b9c5fe7561124b52ab47093615017ca7cfca62",
+          "generation": "characters/orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/generation.json",
+          "editorSheet": "tmp/editor-orc-01-scout-basic-unarmed-back_l.png",
+          "editorData": "tmp/editor-orc-01-scout-basic-unarmed-back_l.json",
+          "editorRgba": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+          "strip": "characters/orc-01-scout/actions/basic-unarmed/v2/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "job-specific attack candidate; unarmed equivalence not proven",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+      "unarmed": {
+        "front_r": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_r_00.png",
+              "sha256": "c9b18a23bab801236f147e5c1c9f5164e4013407721b51142790b664f0f023c1"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_r_01.png",
+              "sha256": "c80022b85fbc5943918a8f4f7617b4691412eef7894a72b143aa1a37e3176029"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_r_02.png",
+              "sha256": "40b56951f0e7369d61a7b717d97cc7d161aa00e00b03b798cc4bedebd7fc74db"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_r_03.png",
+              "sha256": "d80f64ecbf92895e337213b8498b4684aa89fdb1b62ab248ea9d96dd65bb9a44"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_r_04.png",
+              "sha256": "9fb0ed4f1dd89d3b9c1edc0d30c2c5948b66ef817609a7a1dd784d844570ab15"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-brawler/source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+          "editableSha256": "5b6b23e7815b099b0bd2670ba28dcb0a0f3490cb212e74908d84ccc35d0ebc3b",
+          "strip": "characters/orc-01-brawler/source/animations-v1/Attack/front_r/native-strip.png"
+        },
+        "front_l": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_l_00.png",
+              "sha256": "478c4fbbbbbd2409749b4c40e7d55708af19f86ce7dfd9f272f90d98933bb6e8"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_l_01.png",
+              "sha256": "cedab1d79d713de5c670e8d5959d607d96828e2c1676619d733b98d270e9755e"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_l_02.png",
+              "sha256": "99d70c435824315e34018771c05c372470c5f34652276c9850838d8dbe676ee4"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_l_03.png",
+              "sha256": "0aaca7b21a743d5d2b559399b18b33bb4f84e7a078befdcdb66cf8f9187fb789"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_front_l_04.png",
+              "sha256": "2a0df2315933b407d5983863ddb847527ab29326d978419a449447bbecce81bc"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-brawler/source/animations-v1/Attack/front_l/attack_front_l.aseprite",
+          "editableSha256": "a133e6e046da72d0c511056cdfb42a0cdb4b537c982c9cc3e3e2f79a28fb715b",
+          "strip": "characters/orc-01-brawler/source/animations-v1/Attack/front_l/native-strip.png"
+        },
+        "back_r": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_r_00.png",
+              "sha256": "50023dadfd6723f6a887f5b61365e2662bc07a443a12d2fe14e55bd24fa1a291"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_r_01.png",
+              "sha256": "8d6521d63e84c28140672856cd2a43077b0a8c2f5260a24196af1ef594497064"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_r_02.png",
+              "sha256": "267074559fca50ea7bf93762a0ccb66fb27f831f499f99b09de72b8c765609bb"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_r_03.png",
+              "sha256": "d4246b780a70b7e28660803ea21d45afb69cdc604b52c1bdf6154a739292924d"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_r_04.png",
+              "sha256": "86a44222aebf304aa86dc1fac1cb0d9a96cb82e38f13143c84dd65ade999a51a"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-brawler/source/animations-v1/Attack/back_r/attack_back_r.aseprite",
+          "editableSha256": "6119b405c9fc2997ac4534ff6cffd67bc7cf94e3aea0810668685471594c5e19",
+          "strip": "characters/orc-01-brawler/source/animations-v1/Attack/back_r/native-strip.png"
+        },
+        "back_l": {
+          "status": "REUSE_EXISTING_BODY",
+          "bodyProfile": "basic.unarmed",
+          "frames": [
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_l_00.png",
+              "sha256": "63ac156e625e31a710ba50a793023d4f0477f1a79bdde194e3b597044e917b56"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_l_01.png",
+              "sha256": "e9dfa51fd93ba5e07b4bc06afa26a8ec7d975d74164c9613249cebe5177ec855"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_l_02.png",
+              "sha256": "9e9150f1827249b9baad12aa81144ea212cb5c3506b08a9c64e0db0dafb7e63e"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_l_03.png",
+              "sha256": "59796f521aaf968f84ef625b61605ff7c9e3c6916be9ccc4d6a423334e6390ea"
+            },
+            {
+              "file": "characters/orc-01-brawler/sprites/Animations/Attack/attack_back_l_04.png",
+              "sha256": "ce94c7cb958f292121a2f2faea1d29d9c6f2015d4d051fd48ab681fe8097a4c6"
+            }
+          ],
+          "durationMs": 90,
+          "loop": false,
+          "artisticReview": "APPROVED_BY_CREATOR_COMPLETE",
+          "weaponOverlay": false,
+          "editable": "characters/orc-01-brawler/source/animations-v1/Attack/back_l/attack_back_l.aseprite",
+          "editableSha256": "d801cbc0f102818b17d2e72dd2327367678dc2e8fa3ceaf8159068837e76accb",
+          "strip": "characters/orc-01-brawler/source/animations-v1/Attack/back_l/native-strip.png"
+        }
+      },
+      "legacyAttackSemantics": "unarmed punch",
+      "weaponBindings": {
+        "status": "NEEDS_AUTHORING",
+        "sockets": null,
+        "compositedProof": null
+      },
+      "runtime": "REQUIRES_EXTENSION"
+    }
+  ],
+  "runtimeImplemented": false,
+  "weaponFitProven": false,
+  "exportStatus": "NOT_RUN_SUPPLEMENT",
+  "extensionStatus": "APPROVED_FOR_LOCAL_EXPORT"
+}

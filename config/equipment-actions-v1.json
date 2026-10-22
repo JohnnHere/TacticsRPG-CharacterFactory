@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "contractId": "factory.equipment-actions.v1",
+  "authority": "Local production contract requested by creator; not Unity implementation",
+  "runtimeImplemented": false,
+  "basicAttackResolution": "actual-action-and-equipped-weapon; never Job alone",
+  "unarmedProfile": "basic.unarmed",
+  "weaponlessBodyDoesNotImplyUnarmedAction": true,
+  "unarmedOverlayAllowed": false,
+  "unknownEquippedWeaponPolicy": "MISSING_ASSET; do not silently substitute unarmed/cast",
+  "directions": [
+    "front_r",
+    "front_l",
+    "back_r",
+    "back_l"
+  ],
+  "orcUnarmed": {
+    "framesPerDirection": 5,
+    "durationMs": 90,
+    "loop": false,
+    "width": 128,
+    "height": 128,
+    "groundY": 126,
+    "ppu": 100
+  },
+  "supplementPath": "actions/basic-unarmed/v1/<direction>/",
+  "legacyExportIncludesSupplement": false,
+  "weaponBinding": {
+    "status": "NEEDS_AUTHORING",
+    "coordinateOrigin": "top-left",
+    "integerCoordinates": true,
+    "anatomicalSockets": [
+      "rightGrip",
+      "leftGrip",
+      "bowString",
+      "projectileOrigin"
+    ],
+    "layerOrder": [
+      "weaponBack",
+      "body",
+      "weaponFront",
+      "handFront"
+    ],
+    "mirroringAllowed": false,
+    "requiredEvidence": [
+      "bodyFrameSha256",
+      "weaponFrameSha256",
+      "socketCoordinates",
+      "occlusionMasks",
+      "visibilityInterval",
+      "visualEvents",
+      "compositedPreview",
+      "creatorReview"
+    ]
+  },
+  "gameplay": {
+    "unarmedPower": "TBD_CORE",
+    "unarmedRange": "TBD_CORE",
+    "unarmedAccuracy": "TBD_CORE",
+    "animationEventsApplyDamage": false
+  },
+  "supplementExport": {
+    "implemented": true,
+    "command": "node tools/export-orc-actions-v1.mjs",
+    "completeLocalPackages": true,
+    "normalizedOutput": "Actions/basic-unarmed/v1/<direction>/",
+    "reuse": "Warrior/Brawler refer to existing Animations/Attack paths; no duplicate punch PNGs",
+    "legacyExportStillExcludesSupplement": true,
+    "runtimeImplemented": false
+  }
+}

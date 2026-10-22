@@ -1,0 +1,66 @@
+{
+  "state": "Attack",
+  "direction": "front_l",
+  "frames": 5,
+  "source": "characters\\orc-01-scout\\source\\animations-v1\\Attack\\front_l\\sheet.png",
+  "sourceSha256": "375e05795a5908f0c4b0b34293adb36084ffaf7a221bc590a49235b53423a331",
+  "boxes": [
+    [
+      0,
+      0,
+      220,
+      290
+    ],
+    [
+      264,
+      15,
+      553,
+      290
+    ],
+    [
+      569,
+      9,
+      885,
+      290
+    ],
+    [
+      932,
+      25,
+      1171,
+      290
+    ],
+    [
+      1218,
+      6,
+      1437,
+      290
+    ]
+  ],
+  "xBoundsOverlap": false,
+  "separateComponentsVisuallyReviewed": false,
+  "durationMs": 90,
+  "loop": false,
+  "method": "Separate authored poses + native grid reconstruction + integer registration",
+  "uniqueRgbaFrames": 5,
+  "artisticApproval": "PENDING_CREATOR",
+  "reports": [
+    "attack_front_l_00.json",
+    "attack_front_l_01.json",
+    "attack_front_l_02.json",
+    "attack_front_l_03.json",
+    "attack_front_l_04.json"
+  ],
+  "layerName": "orc-01-scout Attack front_l - weaponless body raster",
+  "action": {
+    "label": "Quick throw body",
+    "poses": "1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "requestedContentHeights": [
+    100,
+    95,
+    97,
+    91,
+    98
+  ]
+}

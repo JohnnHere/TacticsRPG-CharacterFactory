@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "characterId": "orc-01-rogue",
+  "stage": "base",
+  "createdAt": "2026-10-19T12:20:49.523Z",
+  "summary": {
+    "PASS": 10,
+    "FAIL": 0,
+    "WARNING": 1,
+    "NOT_RUN": 1,
+    "REQUIRES_HUMAN_REVIEW": 1
+  },
+  "measurements": [
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "sha256": "d0b55c4a17aeb95d45d38c91f7bf5e55320850ce61520aa1c6a7fd0b34d33e64",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 95,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12727,
+      "partial": 0,
+      "colorCount": 48
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "sha256": "d0b55c4a17aeb95d45d38c91f7bf5e55320850ce61520aa1c6a7fd0b34d33e64",
+      "width": 128,
+      "height": 128,
+      "left": 31,
+      "right": 95,
+      "top": 27,
+      "bottom": 126,
+      "contentHeight": 100,
+      "transparent": 12727,
+      "partial": 0,
+      "colorCount": 48
+    }
+  ],
+  "checks": [
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "check": "naming",
+      "status": "PASS",
+      "detail": "Nome e inventario conforme ficha."
+    },
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "128x128"
+    },
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "check": "rgba",
+      "status": "PASS",
+      "detail": "PNG tipo=6; profundidade=8; requerido RGBA 8-bit."
+    },
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "check": "content",
+      "status": "PASS",
+      "detail": "altura=100, transparentes=12727"
+    },
+    {
+      "file": "Directions/orc_01_rogue_dir_front_r.png",
+      "check": "ground",
+      "status": "PASS",
+      "detail": "bottom=126; alvo=126; origem no topo."
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "naming",
+      "status": "PASS",
+      "detail": "Nome e inventario conforme ficha."
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "128x128"
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "rgba",
+      "status": "PASS",
+      "detail": "PNG tipo=6; profundidade=8; requerido RGBA 8-bit."
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "content",
+      "status": "PASS",
+      "detail": "altura=100, transparentes=12727"
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "ground",
+      "status": "PASS",
+      "detail": "bottom=126; alvo=126; origem no topo."
+    },
+    {
+      "file": "orc_01_rogue_mvp1_static_128.png",
+      "check": "duplicate",
+      "status": "WARNING",
+      "detail": "Pixels identicos a Directions/orc_01_rogue_dir_front_r.png."
+    },
+    {
+      "file": ".",
+      "check": "art",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "detail": "Identidade entre vistas, anatomia, silhueta, clusters, luz, mao dominante e loop."
+    },
+    {
+      "file": ".",
+      "check": "unity",
+      "status": "NOT_RUN",
+      "detail": "Import/Resources.Load/PlayMode nao executados."
+    }
+  ]
+}

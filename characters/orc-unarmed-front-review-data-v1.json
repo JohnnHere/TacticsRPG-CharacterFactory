@@ -1,0 +1,185 @@
+{
+  "classes": [
+    {
+      "id": "orc-01",
+      "job": "Warrior",
+      "reuse": true,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01/sprites/Directions/orc_01_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-squire/sprites/Directions/orc_01_squire_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_00.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_01.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_02.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_03.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-squire/actions/basic-unarmed/v2/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-archer/sprites/Directions/orc_01_archer_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-archer/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-apprentice-mage/sprites/Directions/orc_01_apprentice_mage_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-acolyte/sprites/Directions/orc_01_acolyte_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-rogue/sprites/Directions/orc_01_rogue_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-rogue/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "reuse": false,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-scout/sprites/Directions/orc_01_scout_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-scout/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "reuse": true,
+      "label": "Ataque básico desarmado",
+      "base": "orc-01-brawler/sprites/Directions/orc_01_brawler_dir_front_r.png",
+      "clips": {
+        "Attack": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "Attack": 5
+  },
+  "durations": {
+    "Attack": 90
+  },
+  "summary": {
+    "newPng": 30,
+    "reusedFrontPng": 10,
+    "newEditables": 6,
+    "legacyPngAndEditablesUnchanged": true,
+    "FAIL": 0
+  }
+}

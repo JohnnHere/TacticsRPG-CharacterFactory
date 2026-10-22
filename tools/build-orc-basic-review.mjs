@@ -1,0 +1,54 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {ROOT,loadCharacter,approval,hash,json,readJSON,expectedSlots} from '../src/core.mjs';
+import {decode,measure} from '../src/images.mjs';
+import {run} from '../src/cli.mjs';
+
+const planPath=path.join(ROOT,'characters/orc-basic-classes-plan.json'),plan=readJSON(planPath);
+const parent=loadCharacter('orc-01'),sourceGate=approval(parent.spec,parent.dir,'consistency');
+if(sourceGate?.digest!==plan.sourceConsistencyDigest)throw Error('Warrior changed since planning');
+const sourceManifest=readJSON(path.join(parent.dir,'source/animations-v1/manifest.json'));
+const sourceAssets=readJSON(path.join(parent.dir,'assets.json'));
+const reuse={sourceCharacter:'orc-01',sourceConsistencyDigest:sourceGate.digest,mode:'reference existing approved files, avoid redundant copies',nativeProfile:parent.spec.profile,flatRasterLimitation:'No separated body under Warrior armor; compatibility must be demonstrated after new outfit approval',files:expectedSlots(parent.spec).map(slot=>{
+ const file=`sprites/${slot}`,sha256=hash(fs.readFileSync(path.join(parent.dir,file)));
+ const a=sourceAssets.findLast(a=>a.file===file&&a.sha256===sha256);
+ return {file:`characters/orc-01/${file}`,sha256,processingReport:a?.processingReport?`characters/orc-01/${a.processingReport}`:null};
+}),editables:sourceManifest.clips.map(c=>({state:c.state,direction:c.direction,...c.editable,file:`characters/orc-01/${c.editable.file}`})),artisticBodyPixelReuse:'NOT_YET_DEMONSTRATED',runtimeOverlay:'NOT_IMPLEMENTED'};
+json(path.join(ROOT,'characters/orc-basic-shared-source-index.json'),reuse);
+const records=[];
+const countNative=dir=>{const walk=p=>requireFiles(p);function requireFiles(p){return fs.existsSync(p)?fs.readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?requireFiles(path.join(p,e.name)):[path.join(p,e.name)]):[];}return walk(path.join(dir,'sprites')).filter(p=>p.endsWith('.png')).length;};
+for(const v of plan.variants){
+ const {spec,dir}=loadCharacter(v.id);
+ if(spec.identityId!==parent.spec.identityId||JSON.stringify(spec.appearance)!==JSON.stringify(parent.spec.appearance))throw Error(`Individual drift in spec: ${v.id}`);
+ const nativeCount=countNative(dir);
+ const priorProgress=fs.existsSync(path.join(dir,"source/production-plan.json"))?readJSON(path.join(dir,"source/production-plan.json")):{};
+ const nativeStage=approval(spec,dir,"consistency")?"CONSISTENCY_APPROVED":nativeCount>=97?"CONSISTENCY_REVIEW":nativeCount>5?(priorProgress.status??"ANIMATIONS_IN_PROGRESS"):approval(spec,dir,"base")?"ANIMATIONS_NEXT":nativeCount>=5?"DIRECTIONS_REVIEW":nativeCount?"FRONT_R_BASE_REVIEW":"NOT_STARTED";
+ const file=v.concept?v.concept.replace(`characters/${v.id}/`,''):'concepts/outfit-concept-v1.png',conceptName=path.basename(file,'.png'),d=decode(path.join(dir,file)),m=measure(d.image);
+ const visibleData=Buffer.from(d.image.data);
+ for(let i=3;i<visibleData.length;i+=4)if(visibleData[i]<128)visibleData[i]=0;
+ const visible=measure({...d.image,data:visibleData});
+ if(d.colorType!==6||!m.transparent||visible.left===0||visible.top===0||visible.right===m.width-1||visible.bottom===m.height-1)throw Error(`Invalid concept alpha or visible clipping: ${v.id}`);
+ const metaPath=path.join(dir,`source/${conceptName}.generation.json`),meta=readJSON(metaPath);
+ const prompt=fs.readFileSync(path.join(dir,meta.promptFile),'utf8');
+ for(const r of meta.references)if(hash(fs.readFileSync(path.join(ROOT,r.file)))!==r.sha256)throw Error(`Reference changed: ${r.file}`);
+ Object.assign(meta,{promptSha256:hash(Buffer.from(prompt)),conceptSha256:d.sha256});
+ json(metaPath,meta);
+ const assets=readJSON(path.join(dir,'assets.json'));
+ const a=assets.findLast(a=>a.file===file&&a.sha256===d.sha256);
+ if(!a)throw Error(`Missing imported concept ${v.id}`);
+ Object.assign(a,{generationPromptFile:meta.promptFile,generationPromptSha256:meta.promptSha256,generationReferences:meta.references,generationRecord:`source/${conceptName}.generation.json`,artisticApproval:approval(spec,dir,'concept')?'APPROVED_BY_CREATOR':'PENDING_CREATOR'});
+ json(path.join(dir,'assets.json'),assets);
+ const approved=!!approval(spec,dir,'concept');
+ v.status=approved?'CONCEPT_APPROVED':'CONCEPT_REVIEW';v.nativeStage=nativeStage;v.completedNativePng=nativeCount;v.conceptReport=`reports/${conceptName}.json`;v.concept=`characters/${v.id}/${file}`;v.conceptSha256=d.sha256;
+ const report={id:v.id,job:v.job,concept:file,sha256:d.sha256,rgba8:d.colorType===6&&d.image.depth===8,dimensions:[m.width,m.height],transparentPixels:m.transparent,partialAlphaPixels:m.partial,contentBounds:[m.left,m.top,m.right,m.bottom],visibleBoundsAlphaAtLeast128:[visible.left,visible.top,visible.right,visible.bottom],alphaNote:'Raw concept alpha preserved; partial alpha and faint peripheral pixels allowed in concept, not accepted as native sprite',sameIdentitySpec:true,appearanceMatchesApprovedParent:true,referencesCurrent:true,provenance:'PASS',nativeProductionPng:nativeCount,nativeStage,artisticApproval:approved?'APPROVED_BY_CREATOR':'PENDING',requiredGate:'AGENTS.md Gate 1 before native sprites',sharedSourceIndex:'../orc-basic-shared-source-index.json'};
+ json(path.join(dir,`reports/${conceptName}.json`),report);
+ json(path.join(dir,'source/production-plan.json'),{...(fs.existsSync(path.join(dir,'source/production-plan.json'))?readJSON(path.join(dir,'source/production-plan.json')):{}),source:'orc-01',sameIndividual:true,status:nativeStage,targetNativePng:97,completedNativePng:nativeCount,sharedSourceIndex:'../orc-basic-shared-source-index.json',reuseAssessment:spec.reuseAssessment,next:approved?(nativeCount>5?(priorProgress.next??'Review current animation batch'):nativeCount>=5?'Creator review of four views before animation batches':nativeCount?'Creator review of first native front_r base before expanding other views':'Produce/review native front_r base, then four views'):'Explicit creator review of the outfit concept; no self approval',weaponAssets:'SEPARATE_REQUIRES_EXTENSION',unityIntegration:'NOT_RUN'});
+ records.push(report);
+ run(['preview','--id',v.id]);
+}
+plan.status=records.every(r=>r.artisticApproval==='APPROVED_BY_CREATOR')?(new Set(records.map(r=>r.nativeStage)).size===1?records[0].nativeStage:'MIXED_PROGRESS'):'CONCEPT_REVIEW';plan.completedVariantPng=records.reduce((n,r)=>n+r.nativeProductionPng,0);json(planPath,plan);
+json(path.join(ROOT,'characters/orc-basic-concepts-validation.json'),{variants:records,summary:{concepts:records.length,technicalFailures:0,nativeProductionPng:records.reduce((n,r)=>n+r.nativeProductionPng,0),sharedApprovedWarriorPng:reuse.files.length,sharedAnimatedEditableClips:reuse.editables.length},warriorApprovalCurrent:true,creatorOutfitReview:records.every(r=>r.artisticApproval==='APPROVED_BY_CREATOR')?'APPROVED_BY_CREATOR':'PARTIAL_OR_PENDING',unityIntegration:'NOT_RUN'});
+const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+const cards=[{id:'orc-01',job:'Warrior',concept:'characters/orc-01/concepts/orc-01-warrior-concept-07.png',status:'Aprovado e exportado'},...plan.variants.map(v=>({...v,status:v.status==='CONCEPT_APPROVED'?'Conceito aprovado':'Conceito candidato — revisão pendente'}))];
+fs.writeFileSync(path.join(ROOT,'characters/review-orc-basic-classes-v1.html'),`<!doctype html><html lang="pt-br"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Orc — classes básicas</title><style>body{font:16px system-ui;margin:24px;background:#20222a;color:#eee}h1{margin-bottom:8px}p{max-width:1050px;line-height:1.5}button,select{font:inherit;padding:8px;margin:8px}a{color:#91cfff}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}article{border:1px solid #656875;padding:16px;border-radius:8px}img{display:block;width:100%;height:400px;object-fit:contain;image-rendering:pixelated;background:repeating-conic-gradient(#50525a 0 25%,#373941 0 50%) 0/16px 16px}.light{background:#f4f1e9;color:#222}.light img{background:repeating-conic-gradient(#fff 0 25%,#ddd 0 50%) 0/16px 16px}.light a{color:#065ca4}small{display:block;line-height:1.5}details{margin:20px 0}table{border-collapse:collapse}td,th{border:1px solid #777;padding:10px;text-align:left}</style><h1>Orc — sete novas classes básicas</h1><p>Mesmo indivíduo do Warrior aprovado: rosto, cabeça careca, pele e anatomia preservados como referência. Cada roupa é uma proposta visual de Job. Os sete conceitos e primeiras bases estão aprovados; quatro vistas de cada roupa estão disponíveis para revisão. Animações ainda pendentes.</p><p><strong>Revisão Gate 1:</strong> avaliar identidade do Orc, leitura de classe, silhueta, roupa e materiais. A aprovação do Warrior não aprova automaticamente as roupas novas.</p><button id="background">Trocar fundo</button><label>Mostrar <select id="filter"><option value="all">Todas as classes</option>${cards.map(v=>`<option value="${v.id}">${esc(v.job)}</option>`).join('')}</select></label><main>${cards.map(v=>`<article data-id="${v.id}"><h2>${esc(v.job)}</h2><a href="${v.concept.replace('characters/','')}"><img alt="Orc ${esc(v.job)} — conceito de roupa" src="${v.concept.replace('characters/','')}"></a><p>${esc(v.status)}</p><small>${v.id==='orc-01'?'97 PNGs nativos aprovados':`<a href="${v.id}/preview.html">Pacote e referência</a> · <a href="${v.id}/${v.conceptReport}">Conferência técnica</a>`}</small></article>`).join('')}</main><details><summary>Reaproveitamento e próximos lotes</summary><table><tr><th>Componente</th><th>Tratamento</th></tr><tr><td>Indivíduo, proporções, chão, perfil e ferramentas</td><td>Preservar a referência aprovada e o contrato nativo.</td></tr><tr><td>Idle, Walk, Hit e Defeat</td><td>Reutilizar poses, registro e timing; adaptar roupas e verificar oclusão. Pixels comuns só serão reutilizados quando a compatibilidade for demonstrada.</td></tr><tr><td>Ataques</td><td>Brawler pode adaptar o golpe desarmado. Archer precisa de disparo; Mage/Acolyte de conjuração/suporte; demais Jobs de ação apropriada.</td></tr><tr><td>Armas e Unity</td><td>Armas continuam separadas. Overlay, registro e playback específico exigem extensão; nenhuma integração executada.</td></tr></table><p>O Warrior tem quadros raster completos, sem corpo nu separado sob a armadura. Não há substituição automática de roupa. <a href="orc-basic-shared-source-index.json">Índice compartilhado</a> · <a href="orc-basic-concepts-validation.json">Validação do lote</a></p></details><script>document.querySelector('#background').onclick=()=>document.body.classList.toggle('light');document.querySelector('#filter').onchange=e=>{for(const c of document.querySelectorAll('article'))c.hidden=e.target.value!=='all'&&c.dataset.id!==e.target.value};</script></html>`);
+console.log('7 concepts validated, 97 approved source PNGs indexed; review-orc-basic-classes-v1.html ready');

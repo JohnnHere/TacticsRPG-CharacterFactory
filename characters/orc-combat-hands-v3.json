@@ -1,0 +1,212 @@
+[
+  {
+    "id": "orc-01-archer",
+    "job": "Archer",
+    "folder": "characters/orc-01-archer/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-archer/source/combat-directions-v2/front_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Archer in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter FRONT looking SCREEN LEFT. The anatomical LEFT shoulder is at the RIGHT side of the image, with LEFT arm extending ACROSS THE CHEST towards screen left. RIGHT shoulder is at image LEFT, RIGHT elbow bends backwards to screen right, RIGHT fist draws beside the left-facing cheek. Never aim with the arm attached to the image-left shoulder. Think left-handed position in the image but anatomically right-handed archer.\n\nSequence: 1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-left at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen left, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-archer/source/directions-v1/front_l/native-4x.png",
+        "sha256": "90a7dd2bf81925ec496af1084b0a33c6e9adb7628779176e7a29df1184f41231"
+      },
+      {
+        "file": "characters/orc-01-archer/source/combat-directions-v2/front_l/sheet.png",
+        "sha256": "1d7e034d47194072fbb9771b211cf8e803643b2e440173c55d739741c3aa3fc7"
+      }
+    ],
+    "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Bow draw and release body",
+      "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-archer/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-apprentice-mage",
+    "job": "Apprentice Mage",
+    "folder": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Apprentice Mage in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter BACK looking SCREEN LEFT. Anatomical RIGHT shoulder is on the RIGHT SIDE OF THE IMAGE. The ACTIVE arm MUST start at that image-RIGHT shoulder. Reach that right arm diagonally ACROSS BEHIND/ABOVE THE HEAD towards screen left. Anatomical LEFT shoulder at image LEFT stays LOW, its hand near stomach and mostly hidden. Do NOT extend or lift the image-left upper arm. Viewer sees the active RIGHT upper arm along the RIGHT edge of the back. The fist/palm can reach left only by crossing ABOVE the back/head. Rear shoulder blade muscles and garment back stay visible. Do not turn the chest towards camera.\n\nSequence: 1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-left at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-apprentice-mage/source/directions-v1/back_l/native-4x.png",
+        "sha256": "cbf6b0948d4e8712fe2ba01f4e3d08cdd4a098ad3eec60e992555e44688bc725"
+      },
+      {
+        "file": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_l/sheet.png",
+        "sha256": "ddb1dafc172742a0675da702197476500fbe32fa01c6776b03ed9ff6ab30db01"
+      }
+    ],
+    "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Offensive cast body",
+      "poses": "1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-acolyte",
+    "job": "Acolyte",
+    "folder": "characters/orc-01-acolyte/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-acolyte/source/combat-directions-v2/back_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Acolyte in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter BACK looking SCREEN LEFT. Anatomical RIGHT shoulder is on the RIGHT SIDE OF THE IMAGE. The ACTIVE arm MUST start at that image-RIGHT shoulder. Reach that right arm diagonally ACROSS BEHIND/ABOVE THE HEAD towards screen left. Anatomical LEFT shoulder at image LEFT stays LOW, its hand near stomach and mostly hidden. Do NOT extend or lift the image-left upper arm. Viewer sees the active RIGHT upper arm along the RIGHT edge of the back. The fist/palm can reach left only by crossing ABOVE the back/head. Rear shoulder blade muscles and garment back stay visible. Do not turn the chest towards camera.\n\nSequence: 1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-acolyte/source/directions-v1/back_l/native-4x.png",
+        "sha256": "3b8564b860d3fc573aaa9d9782199730077d986a31adfcc3744cd897708e1fe9"
+      },
+      {
+        "file": "characters/orc-01-acolyte/source/combat-directions-v2/back_l/sheet.png",
+        "sha256": "520b5e20e09766886807be6f7fee585ade7f734e1a1c5245a8d88c7eb034f602"
+      }
+    ],
+    "baseApprovalDigest": "40436711d8c0d4b19839bcba45dc82666b9fd85a060fb59a84e7ab0c1221f3b8",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Support invocation body",
+      "poses": "1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-acolyte/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-rogue",
+    "job": "Rogue",
+    "folder": "characters/orc-01-rogue/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-rogue/source/combat-directions-v2/back_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Rogue in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter BACK looking SCREEN LEFT. Anatomical RIGHT shoulder is on the RIGHT SIDE OF THE IMAGE. The ACTIVE arm MUST start at that image-RIGHT shoulder. Reach that right arm diagonally ACROSS BEHIND/ABOVE THE HEAD towards screen left. Anatomical LEFT shoulder at image LEFT stays LOW, its hand near stomach and mostly hidden. Do NOT extend or lift the image-left upper arm. Viewer sees the active RIGHT upper arm along the RIGHT edge of the back. The fist/palm can reach left only by crossing ABOVE the back/head. Rear shoulder blade muscles and garment back stay visible. Do not turn the chest towards camera.\n\nSequence: 1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-left; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-rogue/source/directions-v1/back_l/native-4x.png",
+        "sha256": "1f58a5edc8b1941ed329385395cd4bd612e013745b5251dad9c11d4f21779266"
+      },
+      {
+        "file": "characters/orc-01-rogue/source/combat-directions-v2/back_l/sheet.png",
+        "sha256": "baf326bbf856e91baf88b7355cec659af37bbb292f0c4c4cdd91ea6e692125b7"
+      }
+    ],
+    "baseApprovalDigest": "e2e986b01b6979b77b257d6964553543e3308035d138ab8ecf4282b8d572cc02",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick thrust body",
+      "poses": "1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-rogue/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-scout",
+    "job": "Scout",
+    "folder": "characters/orc-01-scout/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-scout/source/combat-directions-v2/back_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Scout in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter BACK looking SCREEN LEFT. Anatomical RIGHT shoulder is on the RIGHT SIDE OF THE IMAGE. The ACTIVE arm MUST start at that image-RIGHT shoulder. Reach that right arm diagonally ACROSS BEHIND/ABOVE THE HEAD towards screen left. Anatomical LEFT shoulder at image LEFT stays LOW, its hand near stomach and mostly hidden. Do NOT extend or lift the image-left upper arm. Viewer sees the active RIGHT upper arm along the RIGHT edge of the back. The fist/palm can reach left only by crossing ABOVE the back/head. Rear shoulder blade muscles and garment back stay visible. Do not turn the chest towards camera.\n\nSequence: 1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-left for aim; 3 snap RIGHT arm forward towards screen-left in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-scout/source/directions-v1/back_l/native-4x.png",
+        "sha256": "599213d1a69182ed8e7f7142f4c9946a8f51ba8e59ccc2f2ff7edcefb28a4194"
+      },
+      {
+        "file": "characters/orc-01-scout/source/combat-directions-v2/back_l/sheet.png",
+        "sha256": "b9db88ec4219039a182813cb7129f23e8958ac2b0c6fb707dc7022b4657be4fb"
+      }
+    ],
+    "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick throw body",
+      "poses": "1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-scout/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-brawler",
+    "job": "Brawler",
+    "folder": "characters/orc-01-brawler/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-brawler/source/combat-directions-v2/back_l/attack-hands-v3.prompt.md",
+    "prompt": "Draw FIVE new chronological Attack pixel-art poses of the SAME Orc Brawler in reference1, one horizontal row with generous transparent margins and empty gaps. Correct anatomical handedness is the main purpose. Three-quarter BACK looking SCREEN LEFT. Anatomical RIGHT shoulder is on the RIGHT SIDE OF THE IMAGE. The ACTIVE arm MUST start at that image-RIGHT shoulder. Reach that right arm diagonally ACROSS BEHIND/ABOVE THE HEAD towards screen left. Anatomical LEFT shoulder at image LEFT stays LOW, its hand near stomach and mostly hidden. Do NOT extend or lift the image-left upper arm. Viewer sees the active RIGHT upper arm along the RIGHT edge of the back. The fist/palm can reach left only by crossing ABOVE the back/head. Rear shoulder blade muscles and garment back stay visible. Do not turn the chest towards camera.\n\nSequence: 1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-left with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.\n\nReference1 is the approved outfit and camera. Reference2 is only the current attempted motion: its action ARM IS WRONG and MUST BE RE-DRAWN using the opposite anatomical arm as specified above. Keep its outfit, identity and rear/front camera, but correct the arm connection. Do not copy the erroneous image-left active arm in rear views. Exactly FIVE complete full-body figures with fully visible hands/boots, stable physical scale, logical standing height100 pixels, maximum logical width116 pixels. Especially the Rogue: compact short step, no long stretched rear leg. All hands EMPTY, NO weapon, bow, string, arrow, quiver, dagger, shield, staff, orb, projectile, effect or carried object. Clothing matches approved reference1 exactly. Bald mature robust olive Orc, Rogue's charcoal hood stays raised. Crisp squared chunky pixels, own-outfit palette, dark outline, no AA. True transparent background, no haze/shadow/ground/text. Re-draw anatomy independently; do not mirror an existing image.",
+    "references": [
+      {
+        "file": "characters/orc-01-brawler/source/directions-v1/back_l/native-4x.png",
+        "sha256": "ffc80d8cab8947cd741076c0f83e263553eec08c6cb84e103b428ab1b1f43e59"
+      },
+      {
+        "file": "characters/orc-01-brawler/source/combat-directions-v2/back_l/sheet.png",
+        "sha256": "6534ce12d0303d5520cc795ed33143a1d9d39229c2c34b1f520a18bb1fe477ff"
+      }
+    ],
+    "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Right straight punch",
+      "poses": "1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-brawler/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-hands-v3",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": false
+  }
+]

@@ -1,0 +1,3536 @@
+{
+  "scope": "Idle and Walk four directions, seven same-individual outfits",
+  "classes": [
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "nativePng": 45,
+      "animationFrames": 40
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "nativePng": 45,
+      "animationFrames": 40
+    }
+  ],
+  "clips": [
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "7e664de84a3b3e3db2504b57d78f1fa426a98febe01e407d60573c5654f55e8c",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "811131bd7a01f09ec34a639d7337674ec1adf072771732fb823d17df5664cb4d",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "e3a1ebe5ef1495abfc886e46dab74ad1908ed0c3034df6a1d31fced2fd254c67",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "6038fbd32753c10f250d45c4460e746693078456d0a778b63918ce8517fd4226",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "0612063a0e7015e191c0c1be7575b1caf65310769a4d8684792e1e6f91590716",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "7a6e0ceb2187b4c9860382ece86be4be8f1bb3364a3536cfaf370869a4ecddb5",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "515d8557db9a92578f144ccf0af60f5d0f676e6923a319b3fac1a2a58f9a8737",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "367a3e8970653537a1a601165291912503efe1a77ce469ef9e5943cacf14cdff",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "3df8db74506cfb9330195cbd79b38051c520945d4ebf53147ae364e5436ce60a",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "b72208c5fd482e418f1243024a6fd87c11a4db1c8eb856fe4bede0eabb5a0e72",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "581a0d195b0dafa987eca503b0348b9f75a1f269fdb0980b2152d5c59e0a13cd",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "5543eec2f622d70c1a48dff22353d454b633cbf45e27720fcce64b3e2b45719f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "47c95f38d79be494e261284d8e45e3a858a3ec62c77b73549d138aece8e562a0",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "65ce25e64f00a11cc97bb79ba8004d41178af0bbbef811c5567e137c6a0c99e6",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "d8f1c1433943c265dbe8623ce3b4c117fa32fc14efcdf3d6c08b88b4c23e009b",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "605b8c24aec64ff8db1ca6da31e51be511af6b532fb356c4c0b8c11286d45b81",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "a9207a74fcf9b6f85ac2822e79b7cea1666db0bccbe050e4cd844d1768c0b3f4",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "9167aa7ae10e216951133ec1a95af7e1b08ae63a13b0ae7876c99cec4bf59426",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "f0df5f9d6cb03fc66f2292707b8459a4579e857f18d86dc8c67cc183eb2ba11c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "cef3d3f0fac0a4b9ba920910693f574da1b441fcbfccaa41e57b1ab0dbfe27fe",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "d5e313e6ee33cbf72f3bf13f54341bdf8584ef8c8868a19dc29b2f135ac6a332",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "e841d372bf429bf0eabde7a4b51f6e9c439fff997292acc2740b961a2a805239",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "e989b0e4bd7567e413f98552ebad876165c7d3a1787de1511499bd450033b992",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "a22e4e507be3f5fb62342980788fc5d28fe1c33944cbe3e729ff811283997e8e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "77592e947bc941235d902362d608d47fd90d07f005cdf8e6e560691917aeadbb",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "9ef2b936549bdbc548aca91702cc6e0b438fa67becdc552e321dc8f1dfd8af37",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "838dbaeb8e6950df61149eb4a3a387bcc9c9abe9f53945713af1f58153a6acb2",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "0023ebbc899b061a8746cea1a3bf1355e6df1ca142b006f38263d6be3502c1af",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "56fdb6ed53692a007b1cf11ff8932d7adc4bb477fd686c648318aa65c3547ead",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "ce84c205630341ebce0de44262301681a7c51d002dda692013189dfedeea8cff",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "f834178a2b27b1103ec2fa6ed57ae6614d44b0ab878c918fa8485ba6a467f399",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "60039b3fdd7960f1af50c7062fa94ac10252f5c2416a5d687fde58639e287697",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "aabb2adf9eaff6b153ee654cceb59a9235f0d2696d4b2bef22363f8fdbca53d9",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "caca65f222d8a529eef6237a83883962eb096173f698a9a6e52d8c0881efaca8",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "454a7d7f2d279827293ed46f0d77d036784e085408c77e65322826dd617464f7",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "f297951228feb2217ad9fbea7a9388c0d5b47ff65a30422194035e387f48a8f9",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "dfa5b532fc5723be5a1ca16de16ce50f1744ed531d59e81d524beec90d06c7fa",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "a263dec056832af97737b1549e3da9066c2ef83d05e6191e5d7eae3415738814",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "90f597c7e8cb8fa169945fc9ab6eff8afdd81ed02821b19e9ebb600dd4c8c460",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "44a79173c504494e38b70eb325ac8ab2f57bd53d08a8a90386f9e5d67e8e4ad0",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "b042c9a51bd16c9fe53432432b97719b2c2f389530db8a53a1f10c65131ff964",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "97dcbe3cca765b87b4cc211466093efb9faa180f406c86606ba01065185ad30e",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "b17e33650cb4b16c21989eff4962d0e9a8c364cfb17b35a1126b38b19628f9fd",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "9d3ae8dfd0e564186ce1689afb5a9ce4c92b382ee7e94c0a09ecf0c5f78de0dd",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "5276a11c9acfd884dfe59dcc2cbba5079702f475af9ebc01a56bfb7a695cd282",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "09240e3943956f820f62012c17d7077268960b6b9ac5dc3ff7b8fa3a1596c749",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "b5728219a32efec8f01fbe316711692f3bab334caa5dadc6674519a519a2df79",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "b30b85554faa76d717d8bd8797c77a5a065e6097980a22d04be1655454735658",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "81d3250b4d6f1a0dc1b1bf9cf0042f7359d35f60077d82acb5d6e2f5b2412710",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "84542b893aecb8dc9ad0caba3869e148d4131b91f20c956b194ef0e0f4e1548d",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-squire/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "fae7e78899bea0797b79f1a5ccc7ab07f5c0765f0c011b486e000b2fa62f047c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "b211b9c06b9b7fc75e388a870d79ecdaa9e8fb1630283185ae5e47b155a33c21",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "891306cc74a8c1f0f9d55e2a72d6d6e3a6710129e0344143c18b000d1de8144e",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "69d766611e77ae12b0518e617771e37fdd41c7a79f2e23480897139ab0a1a9b6",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "d99868731ea8967b7ec22255358b8eef654cda114d22ab615be04deffb3938ef",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "a495bced4d3a93b30af6c67a520aef6315d3a013203c98e84cc263d0a78acd75",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "526ef33753ed0b43ba16d87e96ed1889eb8813ac4a8ddc9832d8b4985c3f8c56",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "c54e63afc98d5d9f1e40e5cf61357825df073fd6bdba61c7d5d98766cb4cceeb",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "f56586d12500e5b468554e885ee599a2218b62a48da4d6ce118005b71e020f20",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "32ec63ecdbc913628f2b93954c6df375b405ee418bca5db40cac1c32311db5fe",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "1ab8557a23174d0851d79f73d719339df97bdd3a33dfbb59cab12dc6fbe06e06",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "d9895685e967864a42edec0865e8f24dcb32e43b15551d36013cf4c920e02deb",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "2661a25795b91231d74d1938174f24f6aa6a96f02460a50273149fc719bfd50c",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "0cdc7de7f1ff6538d3f743ef483d72e645863418a42324ce292c7f949413c1a0",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "2940b34354f6908939d38aba3e992a769cec7a92f93092fe034b898eb623908c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "49916442577482e91e978f11219b94ea16d385638486e83c4837475c8ed01dd5",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "ce8562c84d7f92ef677aad130eccb6689f0f31ed04b2d4844cba71e244349b72",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "256eebfd3cfcca75ab913de5176c96486f874bf2129b6d02f3a61bf4a65f6041",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "5f3c91cc493c2e1a79d2e2c793791ce31d782d6f80d36db8fbdfece7a56a838e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "fbed4df3d7a005bb99cc37181db90489455848ce554ad2add319c050aceea2ee",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "427945fe11c553b50a4fd76a511a00df2d5c87717bdc5c53d77e147c2fb30f03",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "3668eef6975dbeec29324e550f26aa6aa8a88dbc95d6076438119c1b15354f50",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "d19b77e7e97a33bd63eae701708a78ae6dba360dd787e1a8760db223e495f1dc",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "8a43c8403c6f3d21b4d261be13a5908f4b2a206e880ca351a00cd5c934761070",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "33699b8b7d0a4f20904db768647479b84c183b392154bdfc10cb79bc80380eb2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "5eb5870ea723812af4ef1deaf171eff79659c6074fbc1a6e3210526228b69c01",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "24cd37698aa43b55755f45db90f11da833b3b2c2cde42b2385b19c969c86e8cf",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "7c966c93e34d8d2ed00332edd24246443f21b3a9799ecd7631110013d16d8d5f",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "af482eea8dfca3d09d79fa1a8588731022b0523f81c0356fcd8d3dcd776e7b70",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "e777b67a67ace894b46cf5a2c0d5a4416bb9cd808e91c44d167dbc0ca2a032ad",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "949f5259b026d5bdfce9b9233fcd73ab08fb9b98634203ad9ba64ae672be63ac",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "98ef7141c3464feeda946debed254921a3dd8fdb6aaf03018f98a9f39128de40",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "922f940b97e0ad29fe842e092c386efa858fedba3cf3e94d2226416eaed15bde",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "eabbbc6d64dda7b6ed7585eda257be7d455dc54cf11afc0c5143c26bfaa3505b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "66d10c5c09cc7ab65d28d13a3137d215ce49eee46c14dc9adc432d4168a0f954",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "0150c3542c06e51b7c9c6b772588ebc091e1ea4b013267df087c36e013b40010",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "8b37cd10f24a928ef99e6a41e90ee29d47f17d770aecd0a2bd9ce974058c86be",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "0d3a5b6f0dcb8b1c5d3786aaf34f070c42be0023523cb1da60bed2b34ecfe31d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "9d2169220dfdd4e4e9e035a6f3775d8b53302bbe23b3191e714d57c6ae7be663",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "55258537c7d1bfa38ba62ae2580080f3e0e3e8a75421411108592d14062f2fd8",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "dd8819bfaced038aca27ea3dd8b44e370eb2404a7faa2c7c547dd31e36e7f7d6",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "1592b9dcb892b704bc64b796592ab09a90b208579399416d3f9c078ad14024d5",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "d08206b93b73728e7936f0ed9ac83a9be64361b2e9bdced5dd7b3de451615b20",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "4c7e4cdd86bd6b2fed24691bdb0527a11e81a9a1f368d9c3d58f74b445f25692",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "5fbc70a763c7c142c7a5cc81deb0e6e5e40a0a10389873b72d02415de01f91f0",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "71c448ca586158e64c1b8f7a455b73f64259bed70be55e708f0e85b7885a6184",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "e86672e7e0c1f6604961d74f60df48568d47751a53f5accb801c133d5b44b58f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "15643feb73cf5f4629ba202bd9779a6ad49d31e72c8e82c06c07927d14ac4c45",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "ab18703238921db3dbb0b7073563c2bc98dd12b24c8cb8da0e1aed2d32f25a08",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "233880b893065a97898419e22d54aa89caa405a190d976f7e3d04293fc466d99",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "f3ddf5bcbe31e7511f4df131b2302475874a505eb065623ccffb03a91fcc2a15",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "558cc71473990ca04e5e71f5c3757093bbee52b11b48ac46e3fb88931083cd76",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "04524b94b07c878132f60a70dd53e3c6c2bce62956b0b0d925c8c39421fd7ac6",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "83b2a800ad0a7da6768a9ff6499baab1910993b48b3aa3e65d16d9d824e16182",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "f64aa5c22c875900758fcd38c49ff6e0e83ebcccf33d3bcf629bb5a2764d848e",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "ce54b96bd9573e5ab730659fca283e42b37b3cae9e99654e7540635a5e601a14",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-archer/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "e9a97b8087c39cd00b8c8ce8e6d0d3f9f102874191bd6c24632898adbcbfa702",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "b8571dde7dcdd10963be34448c3581927f1088485830f442e27d3c0248995e3f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "1b73e621a5722fae5d43093b9feecd6a11b25ebae5fc35b249e7c4d04b95233b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "27ba9acc09b7952d78cc684012b89b9b7f88eb8953c5356d8737d0eaa359fd0f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "d07934e811556727dfff4d7367ad5c786a68ca94b14531ee7d681c7e4ad32f1d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "1e04b89ef72f3982d3f98d5bf4b5fa9a6904b6478a7376da534c400675df50b8",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "5dff08d8031eb90ee5b9d010666162e1c502ef413eb0252e3b1857b3963cf570",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "496d270a4d2359ea7460238c78994431c0cd177a18a712fef798944b5e6bfa74",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "b59c8578431c91f7bf577a42991dd8db42f8e93d45f2f678894eb9e122279cf8",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "24986091c0602296651dd67165863d7f8575a1f13e492edcae12f24bf7e6d568",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "ae36ca018389ef503ef6d48079b9a6040bbd83fd0643f69f7cb1f0f18807c77e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "5cc3a942f1fdf979ae8cfd2134a0b1c2a94a5fe746cac3217c0bbfbab49dbb80",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "47f7e9f0c48059945c804654bc5fa9d879c00df75cbedd7c81a9c90b34068312",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "0d5ac414e53cbb7bd94da8b85c14eb1a12023545c964d1a864d0113ef19a7d93",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "08ed2bec59622c69d276309d45a341f7273af4824c996cff0efab881b41be33b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "793f405a9fb90de9204a96a1030fa475f432789bb8db02c429a445fb0c1d78f7",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "ec07692d753ce052c12b6fd9ef1642b55e3a88f400ea944c32c4592bdfc16fdd",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "913a0803d58884a2963b8dd6560e57809f7bf37a8f0f7052a1542243d19a2c4b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "e562868ee07bb421d73561bb906957d152e357b7172ad220d3fd64d3729aae09",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "99622c215b91f760f48827027bb646f4ca3e4edc501dfb652b23d403636aed1a",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "0b8b09cb8516ddc87bfbc345e3d152a2ab2c8475a938bb6907290933d6727c2f",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "89b10e15bd9059462ae09542e6fe8ce042486edae90f7fa02c86564cb309c909",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "b4e8d06001b478b4a8077c8c649814fa505c04ed64d0bb6b83b84e86bbc7b60b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "ba0401c60ac02f5de90ee03227ada331ac3e5e488218ed92d2d36a01d1306c31",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "1e777390d952845beff8151e98414b565619ac77a521a61c06b7a19c1ef50452",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "960f56f4ae7ad14aad20f5fc2595b42a2a585cbafdadf0aeba9623ee4cc8092c",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "a06ea0cf8882a55a695894bdd94ca4f269c1ec94a58db8b4e9b50fd99965c6ae",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "7237b9b1b46183ae87419be94b22e4cc4151b6f44f764995c8a7ff9e765352ce",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "1c2ece1995d4c55485edd34931f0942a2602f1ddb8892e5d93fe248b49ee7964",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "d092070570f62fb568df375d95046f63b559ac07f816f9fa050cf0c03a012f9d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "988a5f8fc699bc1946d63002d1e462086e950a1ce6bd2d362627749e26775b13",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "1173ef02146eae057e58654bd2eac7803db8b5d379ea018bafc4f918f81e9eef",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "ab8de037587f02f3fef455054a01ffa98746c5f24b428e97278a85663c9baf2c",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "c0809eb624c91847b4098f9be61bfe0b7fe7bf721ea490de43acd9602dee2780",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "6e861f242afcdc408532ba38f0a297c1efa8b177429c6c5ca779d2d535872e0e",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "f9d8043ef6598e3a9932942cbe1dc40f9b18db4d482130db3e2b073c0fd5035e",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "16cd011fa0cf7fbff2aefe4756658277685af5264ad26d21ef781c665487c994",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "b53c9a869ee15b0ba596ee695cf7f5741fa2ba9884fbaef91d19c9b66ef9c911",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "9efe710fdb960aa23b1edcb5f9fcc7416355f6a72308c68b565f3b73e66e8522",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "c785d8fe9959d9b3aa217cd888c7a62ece114d21fae893bae9b6d5c2146904fa",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "f21d65e4de814f8e1dc90b61edab17457bbfd9664247ca26a30d09c33197fef8",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "4c087be1036feea47ffff3f7576f5d104eac90e21b29f82594e98e89698e0049",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "15372cc1f261f17158ebda0c8840170f7c049375d3c8fdd52666e04970209658",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "9e7ea6f78ece615c1f2c287340df95a526932671cf3248f1e3668d2f603b048a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "5e5f77ac1c9e33a3892ec75f1fe5f4a2a0baa12bbd11d0d386cbdcc243b47804",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "0775072897216b6a3e60cc6f9bc9b2fb3a1fa41289bd28960b19db029bf4742d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "5e4e3407a59d85651e47088010e346654c6f137e24b32280aa7adc62d1d2ac28",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "28097435b1a7a196dbb689a09bdd03337f5b55186be90e767b9b70f69ee52fdf",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "5b7431ab7d1cfaaea2785de17e114cdc1d4e4ef6ee624590b75b92ae51aa2383",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "f09500250a4306e317aff978ffce104c1a597addea74d4774d0284b78b097521",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "9ffa989123f25424ef2f2c7a3463c980be12b4fd27462d175ab034c96df51f93",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "352acf5e7286654b362a338b7bd48625b5bcef7bf12d5b79be930582438d0223",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "9bf18dc1adecc15facc2a03249cd3c5bd54e8f78bdce50703e01ebefa6a379b3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "15a7e759bd00ef01e07c4fdc6faef353b02ef0c5a0c9e09c25820410f93e0cac",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "b823b7feb40744bc9ae8ef92e7b6ab9d415c4c9e2eff36c94e5aaf58effd466f",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "12be251d091b6b835749a3ff7be463af8e269fb74e9247280a8d6ff4719d35b2",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-apprentice-mage/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "3a97b7cfbd4995acf8253d3a3701b56496a109256fcc528ccfc50eaaa05cb4ed",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "0bf3107c26b869c1a1c09be5ac95ff010554101da31aab14f5ba7fe1de1cd7ab",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "f71bade20b147c00e39cf548e41ba61b20d6096ecf2175ef3e1826907acfd611",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "385b81c268eb9f2bc4f29f944043983767ed0baf3628a5237bbb14da7df6d184",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "5ee3db26dbcae74d0c0a7f266eebf9d43738719f2b233b59830e5e7a8d05b471",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "61803436586d7cf0d0930ff2bf632997c996e9b97c02fd3ecb238893d47e16a7",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "36a59efb8c53bc086e43db1c88dce2c2806c3c8b4479221240f65c34cbff8f11",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "9194e08ad8435884c4ca51cb79d3621b5e78bbca99cff2c731952939a616e3c0",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "4ca6fb79bb10708dc753340cb1732a2ddd3bc2f3d25ead459f1fe24e386f2a9c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "b876a5c28193a70aeb94221c6a13f36aa6fddc2739023a0c464d0b915a418b0f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "944c95c92a326376ad6d835c421e6c78495ac03b93d950ad5c3875a4e8a9d3f8",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "fdf2bd8e65b6c1962cc23757a5cd546aef8fba381401ff2fa6fc3e8bd6411c08",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "b2570b610ce74952f8434f9ead72f7c899617ba29de8608e2ba50b9da64ac152",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "c4c3b68f450799e550cf44c1424c168807c3e836fbd9a723f1aeeed046156ee9",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "e5d22a8b6650634758e7d91ab697201992673fe27194e6d908fcba606b79911b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "45d94e41367c4725e674b067ad0176806456420654a9a16a4765cb81ad31189f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "df2a8898832637a3e6c7d0111327963b99f93aff1e3b8353a9503915a1226ee8",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "9c128eb3e40604f75200ab96021624374e078472c3671ba4f755787c92af8e31",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "2b8a6c838cd13a3a092d6485a149f8ecf3cd762800870cea09f189c1c24ddbdf",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "7bc120a2b8e83b3d718208a57e65325442b4d19806f0d4fc309b3486a730a1db",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "56cfde94383e4d779d559d3de062cdc63ebf50714ce3596113733ede5b7d2590",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "9bc37ad2b3f489cef08c9db932cb30321ea7e76a94c18c20729d0b8c870abd08",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "3e862fe29b445904e6d71558cf04eda694a882eb9a0f687005cf97e85208927d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "fd23beaf2e31fa58b38966b030d13323823a7ce0bc96accfc8195f3e11bb63ea",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "072c52c8ca7752e01e82a1022f50d3e336c7661f9f9392bdb98b55e935a20eb2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "1ae1168d7395c0e22f8d91160bde59ab1189440482052094242726f8e713552b",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "f82b98465120fe6a6f8f3331509bc9d4223412e876a5fc23bea9bed1fd9e1669",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "f97f6ba02a0bbedddfe6ce88a2f4556e11c5f577b20cf28d971d891473e7fe50",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "f376390bac28fad96b4514c4845a2f0f0fadfada837ff8ee76ca34b8de496c65",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "6671a6fb1a01d694a0632e1987b86c3a37764a5fe82bec6daaf99c7e76cdbbf7",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "211b11dde01920ee38633b6f16bae9f748ffb955fca5445527cf9545dcbd28b5",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "477f098f72e0dfc1d95090bbc3d0ffced37cdc887b70476a58dc766c6e3775c3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "4180c77748e7abd7dfcb921200ec49bb40abbea3df5a5e866e07e269f6433262",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "ee85d88a80a2f78857af3d83bbd93020e3e55a338e430af8ba3b946d5cf433e5",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "9bd7be056ff4ff1355a0907914b90baa7cd582c9dc49707fce1ffba7f94e8d61",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "b7a0426dc4e6f6cc640a5ccea3b0745a96063cbbfe29397e7cb8be216aad8f8f",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "b6d774d09791e08b15d67ad45434ea1220a459b047a5c29e7b164f1568d86b95",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "39e6986ff6afb249e9090cdd5cf8799feab4b7914bb76fdbb12a6760a338dab5",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "20d93700fe60023c18569fc9e7640093587549ecb168bb74a1bd8b51f685cd3e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "22af0f8e51f320dd1e3b81b356bc9d1a68408167ef98ad7ae3f4d7596ca131d1",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "eb915630d2a2974fb98e3ee958b1c2c676039ae34878ad3b429afb4197f5de92",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "1baf8128e1b20825e73bacd4081f84103e4ce361ad227e0b2c3f2e5c6bb2b9d4",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "b7e5a6d3172d9790ff0bfed402df33d3acac74eadc5d38f15f29ed880a0de995",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "4a4eb582b2b45407eb761d803376e5ed866f2de13c440a530d785c43474efdbf",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "c0edcd9ad02db294d6cd5d022ccef9abecedf6eca67168d0430b5cb0d0971809",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "d9b64d78f203975328fe0dce1790ecd1f253ec5f8842b930d3a5b790d4ae6ecf",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "61da2f5ce1f534044d5b920a6c7cb423466cd8538b9a0469f3e42a53e59a1664",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "00ce7b8489fa15095b9953e5c676621682b38e4919042cbaf28643181fa7995a",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "f00febb03e31f93c02aa7cc5105f7c79fc1387492df5a35a5abc5c9c604dcc57",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "7aa08fb217ff3975b48123d74d670b6575ab862f2c4e439272e8fd873dbe2042",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "f45d1c42c7b760c2753c90343b2f292d98fec45b0d9290377f181fa939882ffc",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "dd35a88bc7952e38b7e78e41d82fc4e22afa6c8361d1be3e7f7d7f42d9084ec7",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "1afa74d20bd5703ba67863b6b230a398587c75e2af51ca984e319525c69fde19",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "fe49881520a4a420c8753fe1b14e304e1e11a9e1b343352ef8ff8c8be85ed3a4",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "98dff3d8da4dbe00d9d7744f64cb62f530e157f83de9d53a014e7b3d5ea1460c",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "234de1663c7b64838b5c69883e388951a329536e17bf6e23994e0356d45fb13c",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-acolyte/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "3946948b58c2e27010d41523f639c930c596ec4654d8418f441a6979245e81aa",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "555950ad1a675d96cc93982c7043fd99377b9e9e5db762c5531ca9a8f181607b",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "88d24002b3e07ed0ce44a2a769dcf4ecdc9c2ea92003294b8ca409e3c527c062",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "3acae95dc6da0bed0ec9835f66f342abc7f9610f2afd068711d4764ec44d5da7",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "7ffe9df3d2342b6e1bc608c13ad1c38e4c72d2af8c086f09d29c25490ef2a38a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "36e1eac4a70d5da8dc432892d6ab1da07b5a827db84fa4ea0c7b3bbe1bfc0cd0",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "c57df763ab7dd6cf1e6a6fbc23466a5d2043eb5f76489ba4d541dc39b02f15c0",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "7a73d512184d5056f29d1fe5d5008c59b239d256efebe0e31f856af1a22cfb72",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "69eac95afdebfb15ffba24d51132f307ab5ec75098552d57dfb4e03a5efee6ff",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "39ab75cc0db33ecbc416b9f90b17011b984fa50e17e48c2626d4ac69054fecb5",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "dd6ea637ed5f5e632c5e025957d7b92a1ff77e14f94c2b2314cdcecf386aae1d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "6c40a0d458db284aa81a72a702dba67567db0ec7624ef4996525a7c65e3e74de",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "8fd15e13709b77e0b56de85a61bb336733f4f052ee2dc63edd309bfbabe4f693",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "3fc256a3d1a370e49d902477b5b74918f26bf302f09ce08838de252fc20722df",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "b7191af4eb88bd3d73d36518ad128b4ea24e737ab4547ace451cb766d3d83258",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "67fe945887286e80693c373bd258bc4b458e8f95ba08ec468032b86d2bf8abbf",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "e430debda29c6d3c711eced9a556bcb40fa8aed8c3847dec845e51292813ef28",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "75bf1f702d95e6e8f63cc4797d685da8b9264e6b7a48deca661df9c342c48e41",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "f6e3358e6b6d3bbe926066d7d7824fa781f82b644ac408a300cdb074afa8512d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "5e2b62cbc141a5a17554c1e90eaec556bdbaea67b67751bb308eb230e856cd8a",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "7a051785416a4c5cd579c6470d5b6fb626a12a7993f4c6187e706abd5326f9a8",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "54c93668cc29b0e8f48ae74bab2694d09de6dc771e6176be58869fefe7f9001f",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "b41690a6eaaff76bcf73162387940f4c703a42fdfb6c0c790c2719816a574fb2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "12892dd5e1b231684d59547b7fbe0c59a063cae5ba0a29ff87a3dbc143f37dee",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "41535575b4282d80a276c1a4d006c7002272ae025898f0836aa7caa304af729e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "8f0d8a8c43ea8da5653128f1765ea70b926e287432737d4544c2d5a817c5da63",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "ea89aea81dcd3de6540cd6bb38f4a823556d183fc8bf6f15c330a468907e1276",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "f9105465161f6f9e15253e03ba4746b0f9b198e0fe0d229011a19a79248e7cda",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "92c6af5c906652e1e6652ebf210d8bbb84decfccba51b1e7f6fb0a1d944d7b44",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "903ba4c508ad3a79031e280ba254b5f062101313f45a463fd94f091b68d49049",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "d422a055a58d20468554c83060d50d923aeae93ab84555a484888f2d7458ed63",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "bb6dcd6c314f5b398e8237ec53f520f41ed28e2eeae5ae084cb0d985d06bf438",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "00b45b2cb937b95b1711ca4d231b145d43bd6ba73a0635dd17e8593506d950ee",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "049a02c18fa422c61828657f1d251aff1abe00c51fb03e15e38caaae1cb5f986",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "920a8daa439a4723ea6d2d05179592649fc6d72b9fc40184b3c0c9c353544809",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "879622c9909955b11c87df8c8609baebdebe4eaf74e345b5e3ee10c7d0df4958",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "42f89aa7b67735f8e845f96eb20b2b7b8b20c5736a7450077ff76dee7b1a6e91",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "21fa37f090df64636c143020e0a7e350a9d9bae8d9aef215e787d91fc89060ce",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "259b5848e2b7d6a9fff6304cf43254c99140d13d6c8bc6ba3b7ddbcd8aa756f3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "2313af2a99ad8fe3e704fdfbb411f1def9278fbb0a349147be807a53cde697ea",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "0ab73acc7223014477a1e47c8265d09b5e10999182d902e3a8b60b79e01cce50",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "dd692feb9b4a935be44adf75b1ac42b1e2f87143954423ae7bf67baa4d49a7e3",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "81d415a4aae2e8c0d1704a232b929d321c2daf414de51ad49803b81b936aab82",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "5ac0e18ffb44f02a2bb5a8df4948e09322284307f7d124ee3e83524087255357",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "682b5aa08226f7833302563b0ecd11fe56d3a83a281b285e3815c94210c34229",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "bd86902cf3c0d7d083a634ea100674a2246e2657c191c95ce1c8ec4fce887b18",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "fb6db297a3e2584fe46f24c862fb9c958fe8dc9242c511c1c09a22d58abc1616",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "ec9081b1883de67c19f0604c5681c25c83b3280c218d7ea758a6f7b3317dab88",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "5698bc7a0bca5f01800e9e3487bd2783d823448f1ad714ddeaa640d23729cb5f",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "cd35bb1c7c88b322b1d1687a5865b74786b0a29d9c1532dfea12afdd3964b44b",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "bb395160d64c0343ada99e8519fc6efa5e89a67cc26afd1860918f40c0ef0d26",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "48a7421bf92f762a7011d33cd8c05391f9cfec462894dc7d0dade149a9d5c8f7",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "dfd8ec8c20ab27ff98357c20eadb41604bdbfff90ab7d39f82c5f299b049a3ff",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "63061af69c6c51a2b6c00885cd9a8548d3482a036304e8c2b2e7df51f588fff0",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "3c6cbcb4479a5fb5c6ba20125d1c8534c1fc61856ca3296870394d203a49dc34",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "9993e91619a731b587f1e0c5777d0301f6a03a1d5a18bd26b0408b3028ef63bc",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-rogue/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 48,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "1021b646c006b229afa3aa37bb15df4d84f03d353d2d72ff8433f5bcb44d7b54",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "9f9cb854d3b18597b5bb61bfaef777d3e75940d0f3dc85edca2962fe9deacb32",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "bb3762db892a85a7ba1f824854c48d6dd9b239c967aa013a92af5b99c62bc4e1",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "bd28b3f7ef116af0cf125f30a1b47d5ce37c55b432236adee96a04fb575cff89",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "193513a12f4f4f83ab7d91aa03efb6044db1cb3842987885ad163e635b586abd",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "ccce4f7760c73b55b11768ff1acb7a7983b085b8553cac835728a160eaba0c36",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "10c9860c742a50d34753b0af8a1c6429c6d39ea51cc1cd6673f73cf0b6aa3cd1",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "5ce45c1df3255d7d81a9c96c0a04b2f574d0c8d600197fb437053642efdee671",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "9ce57ff34d8c97bfb7b9bc01530b963a0d594dae1edac23223e20bb73a47bd8d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "a7545d807e4e0f82c8f8c39efccf6f49e78c449227a7879ee6639a2734409382",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "8f2e97ac4ba30920e4e41ad44bb8d1f703bb10d8f91ee134fac4ea8f3626da1c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "e100f6132a9601b43307243b522fff26132aded95c975eed17c0187ce962fe7a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "dca6aa3fcf12b6a97d199f386bc8b6c92a0d6f0fcb6cf808fd33aef7190aa1a5",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "292e2944d08716c0a2f6241c6f2e2720bfa7ad31a5a3d07d482fe35f43d8c4b1",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "f0fbc3f051d617d8a3ca22ac0d0562c6530868ac0de0f0a9cbeb04633acaba7b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "b2278e4ed25127b3ff173db6d296363e52b4f70de76b69d6550a66356e418a0d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "9a7168033d710f38efaed9a00b01474d04643093bcbb44c55a89b9e18c5a1c43",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "2cdec7718a10128d8cd2e933374d4e560fcd52ec5e4e1b686da85c4db0a8317b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "b2cd8160b6f375bf3c5f595bdc29054e20ccc2ecb82e84f2cb2f5b135ac09a10",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "57561ac1a5130a0f7a0b362149ac9be1de722f586e23350d2d0ba36b7ce0a8ea",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "275ae315993391c5bc40d46c98af6b2a27365a89acf4364891b932e1f180b109",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "1d6e114255336b8c6e0ae6341296f25d01e1ff18656eca5f169943f30c526d35",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "009af7fa0d23335a8f46f3b2457a2ab199ec6308668aaa93dc7873238fa068e5",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "c81d97c3a7a048f55ebae8148d9fe0cd07f9792077a14cd53dff2bdf9a9d35c0",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "9f32c10679848e6d3315a6e54a8e831a039f46dfe2bb7ae46f5c0bd7c8d00e61",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "81ace273767b6c94884a56d5ef819f9cff0ab0ec759429de7359996aa87b77bc",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "9841d0a1170b6d4699d007edf0883629ac62a5cd5d92caacc1765e6f2b977d1f",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "9755a1b47325871945eae462e7f56ab9862af7fd41480af9c9b65f68078c395f",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "03ab0365986963b3bd15e0fbf3e0038c48abf558bdde07614b6d3a1a5945f312",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "d00ed72536b1839d82ef8a2c68620668a96fc4b7b3bffb21fc9a9ebf6ed5d552",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "eb31088cc73fa9008fea4e77c76a43e281020543d8ce4e00028ac4f2d36bb0ea",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "ea64946b39f0f24bb97e04ffe307719b101b9bf5f3bc72f3a7ebfe5c72e5327b",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "461e9f4f3b1f131d24700d897eee6b63c48c7d80c056dc9b1b8bc4212cc38b8e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "88d0350dba00df7e0132628245d027a26e500a59ac32c667fd7b4d3a36ab76db",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "edc0016021011c8e3425659238056f8479eb49632fce2723d168da0428ebb90c",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "ff7bbadb91af7e57bd4911e8c6e05c7e6d4f18e4f1731ec5f0f0ea6f1ca8e3a6",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "85537364013666a52985c061a8296b70b8e18fb3ad4a9addde872d5472de0d9c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "895ddceb9dc5385d083325784c111174f8e661aae5fd25de44ffed2bcb21f526",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "8476f76833562c4a835ef5fd236ce195c834413dda9c3ab2f26fee07f35e38c3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "c31b84ebf8fd1d713c6d31523a2fcebf32b4f52e18461dcae292b68fa0bdf491",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "58437742784060c055b78d7b50837b3e391e8d7f848e0631aa8ee9088726a7a1",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "c099d4f9d17dcf4b69f4045e3b4a3097a967043b51fdd569a2a4226ed0272e51",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "864bd91628bcdbb80aa338d45a578e10400aae012dd192609ba6454233a76070",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "c91406702bba43158bb6ec9d8690b6ceee824089a716ecc868f26403e12ba534",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "328ba5cad4509ed33af85551b5a1404636ca492c0970bdb17b3e0ef7237c05fb",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "4558bf7d37bf85180dd10420f898304b8f7727db5ebf676adf57c957f56499fb",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "3d11a49b1e328c7b2d27009f7db31e6b063650aed45a09119287d2ac4ad22073",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "c1545ce331ba9c5200e7319fe5082f652e072d90b7273e9c138bedb1f702c9ce",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "78748b76d56450f9d59786a9ac848fb079214c9ba1a9099152aeba1a7541102f",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "e1f4ac5940d58007d973418da9e10d727dc6e5522c5c34ca27e02877202f10f4",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "7a41c9bcdaee8bc5d23bf50f81b25d459739d05a1dd307af78423491b7e6e533",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "2e3400915756c0036684f0523981b5b3fef1956e6398199c6112bd54997a794a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "7577365dacff882a5d0d388c72ca71e894a00687b5a8772e283c94afd4af5033",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "ce7367a46ab5917832233cb36ffbba853647869a02e42ba967d6184d129c9017",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "2fc8cfd05bc76e111b41edf5c0ba7726945cb84049d0dea838b34f43b8b74cd9",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "8b85fc3d0ac844d51437133205722e6ec258f747ce0eb5647077715186901da8",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-scout/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "f6a23d0b47c253b2e24e04116763125e153977a9f5e2fef3a4d179b4331c0dd5",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "285b0f6e15ab27060bed50bcd445d5df4c4e5b6c0ff3764094314d5a061cd23a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "121cd24293cdf54430b6456d8d9ce4bd208e2f9f7b7b4dc21fd8bd41fd155e99",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "25349330c0f26960a791dcfc8ba9b847464956f274b6826f96a1de08bb6bd5cc",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "2372358ab27cc15268d006ffc01c726e5a45876596682ebd7904bec658b03826",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "1f7ede916921d1369ac4cfc61aa4356432ab91abef87175f7d7b41160681713e",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Idle",
+      "direction": "front_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_r/idle_front_r.aseprite",
+      "editableSha256": "4d58b6104a2f284bc23695ab63c748e6dead8a03d395c293b428ac940e06d8c8",
+      "sourceRow": "source/animations-v1/Idle/front_r/sheet.png",
+      "sourceRowSha256": "593f0ac272f0f70037e9f3784c79d3fb83efc7d51a3b1c0948dfed9a3f01617f",
+      "sourcePrompt": "source/animations-v1/Idle/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_00.png",
+          "sha256": "1fb5c1bbc1addcdd59d457f1549eeb00a91d2ad36337017bde054bcd90edc5e8",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_01.png",
+          "sha256": "d0093803aee738310fe077dc96d0e2e0523d3d8f5627f3696c5100a11acc691e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_02.png",
+          "sha256": "706c7ba78bedd58a29df57fffe99d5b2c822a701b6df150e7082b379d55803ed",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_r_03.png",
+          "sha256": "e7d114ef72dfa2b22c3e6298db242a52b43d24e50085f299de337cb91392e33d",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Walk",
+      "direction": "front_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_r/walk_front_r.aseprite",
+      "editableSha256": "6d6b04f306a86150b74cbfdc14e699afb2d08cffd504dd37a5b9666651bd1e18",
+      "sourceRow": "source/animations-v1/Walk/front_r/sheet.png",
+      "sourceRowSha256": "1b253a048691b40e4e6a0c3f430c73bfbc8cf9631f5bf44d594300ac20dea2ce",
+      "sourcePrompt": "source/animations-v1/Walk/front_r/sheet.prompt.md",
+      "sourceOrigin": "See front_r approved mixed-source provenance",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_00.png",
+          "sha256": "c59e5cd56f3631aac4a4362977319f25e5a6f661d50901fc3755e4c7c1336dba",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_01.png",
+          "sha256": "0ef30a787fb9046a35dba9da961db8b916deb56d06e913aad8defb75c58a710a",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_02.png",
+          "sha256": "fcc54edab513d3ec8b888d29187d512692aa7d9a555c4f74c1f4f1740933a1ae",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_03.png",
+          "sha256": "11ae4640df0cd80a1e7829c17b028f0ea28904b5bbd5b3e1fb2b64488ca9aae2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_04.png",
+          "sha256": "6658b10d4edb0ea41e4a75b70339f6a61a6fff903ce575295890c1491ef92d12",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_r_05.png",
+          "sha256": "81db04570a3cbe9b675694c343c5c5571a1c74d55a061191bf8f257fefaef565",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Idle",
+      "direction": "front_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/front_l/idle_front_l.aseprite",
+      "editableSha256": "7c0c90f2058316effb37d5c8da3091ec95da2ca2451c7a3c7b95efadc1481afe",
+      "sourceRow": "source/animations-v1/Idle/front_l/sheet.png",
+      "sourceRowSha256": "8dd0d40658301b3c83871b8da6840aa28656bf70c93991c7cc0bdf1be6f0380c",
+      "sourcePrompt": "source/animations-v1/Idle/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_00.png",
+          "sha256": "6ac89b14c3786bd454db937534c49975dd32177637660a027ec6e27d4ce5f6fa",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_01.png",
+          "sha256": "981bbfc5121a2b98920b0f681fc00481732342ece1426da08f5079be35ad4847",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_02.png",
+          "sha256": "a00103d09536b53a452b6620b5a51bedb077966e558fffa874e352ccaa500cff",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_front_l_03.png",
+          "sha256": "473f30cad81311067e2583a8c703c16b9525c14766cefc8648425513e1e0aa9b",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Walk",
+      "direction": "front_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/front_l/walk_front_l.aseprite",
+      "editableSha256": "566173ed5c381d742fb02015dfb9e398d6905fd2a38b99fa4ec77396d185d2e8",
+      "sourceRow": "source/animations-v1/Walk/front_l/sheet.png",
+      "sourceRowSha256": "450688644757d5d31748454ae6555ace89fb93b5056d04e8fe6f655799e97941",
+      "sourcePrompt": "source/animations-v1/Walk/front_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/front_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_00.png",
+          "sha256": "c63bfcfa8c9da36c2bdafc5031a8e9d4947707b6f0ca507b8dee66698c7cbcfb",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_01.png",
+          "sha256": "f40d140d26958acba99731ca8f08d13a516c1f9eeb399cfc9285f8ec9a428220",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_02.png",
+          "sha256": "53af47196bf0c976dfb0f9fca93c0f649f8bfd4749d61f9c1d24464f4a0ebc41",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_03.png",
+          "sha256": "d5ae0981c75abdc3264b92421e6f61f4dabdc5229b893375634123854a975012",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_04.png",
+          "sha256": "ed4a85bf069e2c70281ccc0b751575bf5d041a2b8a8d374c0d437c655fe1d2fe",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_front_l_05.png",
+          "sha256": "6fc045b302c498ebd14788f1abf8044849f458e08481e58391234f0a0ab758f9",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Idle",
+      "direction": "back_r",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_r/idle_back_r.aseprite",
+      "editableSha256": "2ce8debd71b16294f76f227179ab8d5710d55c47a6893ca6e7664693e484ddee",
+      "sourceRow": "source/animations-v1/Idle/back_r/sheet.png",
+      "sourceRowSha256": "f50195fe716c84840c5313cb2c088d1d35b497412e67088125b509e8021c68dc",
+      "sourcePrompt": "source/animations-v1/Idle/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_00.png",
+          "sha256": "da01252621754596cace2f4cc68b0979130ec7e704aaa6015e95b6c2f6a46e84",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_01.png",
+          "sha256": "773df586b97037e95490251b109a2a0bde8d1f2d49f16e9553175861932db2b7",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_02.png",
+          "sha256": "c16e008aee35128b0f94cb54b01cac936935958d2fc00649d1060b98ddb00476",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_r_03.png",
+          "sha256": "2da70beb6b8891696c1d2efca27994376ba8e507fd2cfa00929cd21b2ee7d14e",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Walk",
+      "direction": "back_r",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_r/walk_back_r.aseprite",
+      "editableSha256": "5e1e1d2dfeaae858d2ba7b3feeaab13bb5dfbf1125f0405e5fe5320564cfafbb",
+      "sourceRow": "source/animations-v1/Walk/back_r/sheet.png",
+      "sourceRowSha256": "5ecec785b38fa893173278fa23c4ef5bf6686d2c57770d5242ce597909ee2483",
+      "sourcePrompt": "source/animations-v1/Walk/back_r/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/back_r/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_00.png",
+          "sha256": "dbf791cb187b3de689a8f55b6e45a61ae033383ba821b2a7bb4ed58e87a00701",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_01.png",
+          "sha256": "ff587553bc89427776b6338233d48e47e1ebd1879588e4df72f1bb8b8b22d0ea",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_02.png",
+          "sha256": "dee066059fc1252227d54a5e32bdd9199124eecbd79b1f0e57550219d90a61ce",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_03.png",
+          "sha256": "77715bdc3cdbee7bd604ee7367e593013a297344f018718e35eb1fad21d990c3",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_04.png",
+          "sha256": "cbe9c4b14b5c1f15ef8a47971d4d0054335d9a13924eaa8deb3b6406a4c4cf83",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_r_05.png",
+          "sha256": "5bfc3550c5443566918c9a13eb22a15dba35ea8a3701099a75f45f7af87a61df",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Idle",
+      "direction": "back_l",
+      "frames": 4,
+      "durationMs": 240,
+      "editable": "source/animations-v1/Idle/back_l/idle_back_l.aseprite",
+      "editableSha256": "34ff644fdb7cb3fb1f58d0ef862576d4a9e4a44dcb5df844b245a35ed89789a7",
+      "sourceRow": "source/animations-v1/Idle/back_l/sheet.png",
+      "sourceRowSha256": "8684976363d4b001d7503f8b1133e2a0fbe60d71dc21f54290c7b9aaef530699",
+      "sourcePrompt": "source/animations-v1/Idle/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_00.png",
+          "sha256": "5250cbf738c1e6e2920c03da67585ab72e5e97230670046808b656e0f801962c",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_01.png",
+          "sha256": "2f4951066c5d70019e8ebe2604c8cc4ac947576074bde87c12c8f01fdb532564",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_02.png",
+          "sha256": "33dc047474c18ed79b0e9fa3e074fc28a98b2320e852ac3f506b3c95becbc793",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Idle/idle_back_l_03.png",
+          "sha256": "15a3dc255be59a1b659114a12f3a39ac0523787a4bd866b8950913f058a8bf35",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "state": "Walk",
+      "direction": "back_l",
+      "frames": 6,
+      "durationMs": 73,
+      "editable": "source/animations-v1/Walk/back_l/walk_back_l.aseprite",
+      "editableSha256": "b44f09d0c65edf33c7b79de2af2653b0f5dc828237f7cec0d686b4d7a3fac59c",
+      "sourceRow": "source/animations-v1/Walk/back_l/sheet.png",
+      "sourceRowSha256": "1945622232172475cf3803875a20fd5913d89c07a589f77f9d89ce766ca90de8",
+      "sourcePrompt": "source/animations-v1/Walk/back_l/sheet.prompt.md",
+      "sourceOrigin": "characters/orc-01-brawler/source/locomotion-directions-v1/back_l/sheet.png",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "APPROVED_BY_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_00.png",
+          "sha256": "772d94c7cf6f6f44f4d39cdd4607afeead1158790f1f87da9114a55d495f98ce",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_01.png",
+          "sha256": "bc4228646e67aec231f10fb48b1264b173b970bb482fb4383cc2db01dd503f83",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_02.png",
+          "sha256": "ccfaafa5a3b6ea6dc5dfbd30f4b73479f5fecaf373f60a3f336cab44dc39218b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_03.png",
+          "sha256": "c8d684237a9d8be694f2fa77bcb737f4983b8af7bb76b601247a3c672fe7a6c5",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_04.png",
+          "sha256": "ed969028d4e13cf5a4eb5bd3db1250b24ed8ccccbe9b3b604b69ce2389245460",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Walk/walk_back_l_05.png",
+          "sha256": "7c5c807572d566b4faeff0a3231b3894fb06aea45736b479736387164d3fb13b",
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "partialAlpha": 0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "newAnimationFrames": 210,
+    "newAnimatedEditables": 42,
+    "allLocomotionFrames": 280,
+    "allAnimatedEditables": 56,
+    "totalVariantNativePng": 315,
+    "totalVariantEditableSources": 84,
+    "approvedFrontFramesUnchanged": 70,
+    "remainingAnimationFrames": 364,
+    "fullInventoryComplete": false,
+    "FAIL": 0
+  },
+  "artisticReview": "APPROVED_BY_CREATOR_FOUR_VIEWS",
+  "unityIntegration": "NOT_RUN",
+  "currentInventoryReport": "orc-combat-front-validation-v1.json"
+}

@@ -1,0 +1,632 @@
+[
+  {
+    "id": "squire",
+    "name": "Squire",
+    "category": "Básica",
+    "role": "Versátil",
+    "affinities": "Humano,Half Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "warrior",
+    "name": "Warrior",
+    "category": "Básica",
+    "role": "Dano físico",
+    "affinities": "Orc,Minotauro,Ogro",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "category": "Básica",
+    "role": "Distância",
+    "affinities": "Wood Elf,Felino / Catfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "apprentice-mage",
+    "name": "Apprentice Mage",
+    "category": "Básica",
+    "role": "Magia",
+    "affinities": "Elf,Mystical Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "acolyte",
+    "name": "Acolyte",
+    "category": "Básica",
+    "role": "Suporte",
+    "affinities": "Humano,Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "category": "Básica",
+    "role": "Mobilidade",
+    "affinities": "Goblin,Felino / Catfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "scout",
+    "name": "Scout",
+    "category": "Básica",
+    "role": "Reconhecimento",
+    "affinities": "Wood Elf,Centauro",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "brawler",
+    "name": "Brawler",
+    "category": "Básica",
+    "role": "Combate desarmado",
+    "affinities": "Orc,Troll",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "knight",
+    "name": "Knight",
+    "category": "Intermediária",
+    "role": "Tanque",
+    "affinities": "Anão,Humano",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "monk",
+    "name": "Monk",
+    "category": "Intermediária",
+    "role": "Dano/suporte",
+    "affinities": "Humano,Orc",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "thief",
+    "name": "Thief",
+    "category": "Intermediária",
+    "role": "Utilidade",
+    "affinities": "Goblin,Felino / Catfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "category": "Intermediária",
+    "role": "Distância/terreno",
+    "affinities": "Wood Elf,Centauro",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "category": "Intermediária",
+    "role": "Companheiro animal",
+    "affinities": "Wood Elf,Felino / Catfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "black-mage",
+    "name": "Black Mage",
+    "category": "Intermediária",
+    "role": "Dano mágico",
+    "affinities": "Mystical Elf,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "white-mage",
+    "name": "White Mage",
+    "category": "Intermediária",
+    "role": "Cura/proteção",
+    "affinities": "Elf,Humano",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "elementalist",
+    "name": "Elementalist",
+    "category": "Intermediária",
+    "role": "Controle elemental",
+    "affinities": "Dragonborn,Lizardfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "alchemist",
+    "name": "Alchemist",
+    "category": "Intermediária",
+    "role": "Itens/apoio",
+    "affinities": "Gnomo,Goblin",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "venomancer",
+    "name": "Venomancer",
+    "category": "Intermediária",
+    "role": "Venenos e desgaste",
+    "affinities": "Lizardfolk,Goblin,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "engineer",
+    "name": "Engineer",
+    "category": "Intermediária",
+    "role": "Dispositivos",
+    "affinities": "Gnomo,Constructo / Golem",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "category": "Intermediária",
+    "role": "Buffs",
+    "affinities": "Sátiro / Fauno,Humano",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "shaman",
+    "name": "Shaman",
+    "category": "Intermediária",
+    "role": "Natureza/controle",
+    "affinities": "Troll,Sátiro / Fauno,Wood Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "spearman",
+    "name": "Spearman",
+    "category": "Intermediária",
+    "role": "Alcance físico",
+    "affinities": "Centauro,Lizardfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "berserker",
+    "name": "Berserker",
+    "category": "Intermediária",
+    "role": "Risco/dano",
+    "affinities": "Orc,Minotauro",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "geomancer",
+    "name": "Geomancer",
+    "category": "Intermediária",
+    "role": "Terreno",
+    "affinities": "Wood Elf,Anão",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle",
+    "category": "Intermediária",
+    "role": "Debuffs",
+    "affinities": "Moon Elf,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "mystic-knight",
+    "name": "Mystic Knight",
+    "category": "Intermediária",
+    "role": "Híbrido",
+    "affinities": "Dragonborn,Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "samurai",
+    "name": "Samurai",
+    "category": "Avançada",
+    "role": "Técnica física",
+    "affinities": "Humano,High Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "ninja",
+    "name": "Ninja",
+    "category": "Avançada",
+    "role": "Mobilidade/assassinato",
+    "affinities": "Felino / Catfolk,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "dragoon",
+    "name": "Dragoon",
+    "category": "Avançada",
+    "role": "Lança/salto",
+    "affinities": "Dragonborn,Harpia / Aviário",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "paladin",
+    "name": "Paladin",
+    "category": "Avançada",
+    "role": "Defesa sagrada",
+    "affinities": "Humano,Anão",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "dark-knight",
+    "name": "Dark Knight",
+    "category": "Avançada",
+    "role": "Sacrifício/trevas",
+    "affinities": "Dark Elf,Half-Demon",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "red-mage",
+    "name": "Red Mage",
+    "category": "Avançada",
+    "role": "Híbrido magia",
+    "affinities": "Half Elf,Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "time-mage",
+    "name": "Time Mage",
+    "category": "Avançada",
+    "role": "Controle temporal",
+    "affinities": "Moon Elf,Mystical Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "summoner",
+    "name": "Summoner",
+    "category": "Avançada",
+    "role": "Múltiplas invocações",
+    "affinities": "Mystical Elf,Elf,Half Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "category": "Avançada",
+    "role": "Demônio principal",
+    "affinities": "Demon,Half-Demon",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "affliction-master",
+    "name": "Affliction Master",
+    "category": "Avançada",
+    "role": "**Mestre de DoT**: múltiplas aflições, propagação e controle",
+    "affinities": "Dark Elf,Undead,Vampiro,Half-Demon",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "necromancer",
+    "name": "Necromancer",
+    "category": "Avançada",
+    "role": "Cadáveres",
+    "affinities": "Undead,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "beastmaster",
+    "name": "Beastmaster",
+    "category": "Avançada",
+    "role": "Controle feras",
+    "affinities": "Felino / Catfolk,Wood Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "category": "Avançada",
+    "role": "Metamorfose natural",
+    "affinities": "Wood Elf,Sátiro / Fauno",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "runesmith",
+    "name": "Runesmith",
+    "category": "Avançada",
+    "role": "Encantamento/equipamento",
+    "affinities": "Anão,Gnomo",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "templar",
+    "name": "Templar",
+    "category": "Avançada",
+    "role": "Antimagia",
+    "affinities": "Humano,High Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "assassin",
+    "name": "Assassin",
+    "category": "Avançada",
+    "role": "Eliminação",
+    "affinities": "Dark Elf,Goblin",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "sniper",
+    "name": "Sniper",
+    "category": "Avançada",
+    "role": "Alcance extremo",
+    "affinities": "Wood Elf,Centauro",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "spellblade",
+    "name": "Spellblade",
+    "category": "Avançada",
+    "role": "Híbrido ofensivo",
+    "affinities": "Elf,Dragonborn",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "battle-cleric",
+    "name": "Battle Cleric",
+    "category": "Avançada",
+    "role": "Suporte de linha",
+    "affinities": "Anão,Humano",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "warden",
+    "name": "Warden",
+    "category": "Avançada",
+    "role": "Defesa de terreno",
+    "affinities": "Anão,Constructo / Golem",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "illusionist",
+    "name": "Illusionist",
+    "category": "Avançada",
+    "role": "Engano",
+    "affinities": "Moon Elf,Sátiro / Fauno",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "blood-mage",
+    "name": "Blood Mage",
+    "category": "Avançada",
+    "role": "Magia de sacrifício",
+    "affinities": "Vampiro,Half-Demon",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "stormcaller",
+    "name": "Stormcaller",
+    "category": "Avançada",
+    "role": "Clima/eletricidade",
+    "affinities": "Harpia / Aviário,Merfolk / Aquático",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "tidecaller",
+    "name": "Tidecaller",
+    "category": "Avançada",
+    "role": "Água/controle",
+    "affinities": "Merfolk / Aquático,Lizardfolk",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "artificer",
+    "name": "Artificer",
+    "category": "Avançada",
+    "role": "Autômatos/engenharia",
+    "affinities": "Gnomo,Constructo / Golem",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "duelist",
+    "name": "Duelist",
+    "category": "Avançada",
+    "role": "Esgrima",
+    "affinities": "Humano,High Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "chronomancer",
+    "name": "Chronomancer",
+    "category": "Secreta",
+    "role": "Tempo avançado",
+    "affinities": "Moon Elf,Mystical Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "grand-summoner",
+    "name": "Grand Summoner",
+    "category": "Secreta",
+    "role": "Mestre das invocações",
+    "affinities": "Mystical Elf,Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "lich",
+    "name": "Lich",
+    "category": "Secreta",
+    "role": "Morte avançada",
+    "affinities": "Undead",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "demonologist",
+    "name": "Demonologist",
+    "category": "Secreta",
+    "role": "Pacto supremo",
+    "affinities": "Demon,Half-Demon",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "dragon-sage",
+    "name": "Dragon Sage",
+    "category": "Secreta",
+    "role": "Ascendência dracônica",
+    "affinities": "Dragonborn",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "spirit-warden",
+    "name": "Spirit Warden",
+    "category": "Secreta",
+    "role": "Espíritos e proteção",
+    "affinities": "Troll,Wood Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "void-weaver",
+    "name": "Void Weaver",
+    "category": "Secreta",
+    "role": "Espaço/controle",
+    "affinities": "Mystical Elf,Dark Elf",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "royal-strategist",
+    "name": "Royal Strategist",
+    "category": "Secreta",
+    "role": "Comando político",
+    "affinities": "High Elf,Humano",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "sword-saint",
+    "name": "Sword Saint",
+    "category": "Única",
+    "role": "Espadachim lendário",
+    "affinities": "Variável",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "herald-of-ash",
+    "name": "Herald of Ash",
+    "category": "Única",
+    "role": "Avatar de cinzas",
+    "affinities": "Variável",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  },
+  {
+    "id": "moon-oracle",
+    "name": "Moon Oracle",
+    "category": "Única",
+    "role": "Oráculo lunar",
+    "affinities": "Variável",
+    "source": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+    "status": "source-design-not-runtime",
+    "approvedVisualRecipe": null
+  }
+]

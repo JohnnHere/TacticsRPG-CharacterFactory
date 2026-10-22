@@ -1,0 +1,193 @@
+{
+  "scope": "Attack/Hit/Defeat front_r only",
+  "clips": [
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Attack",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 90,
+      "loop": false,
+      "action": {
+        "label": "Bow draw and release body",
+        "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+        "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+      },
+      "editable": "source/animations-v1/Attack/front_r/attack_front_r.aseprite",
+      "editableSha256": "cd6c4a6e8610f64b95ada29092e34a2fa73da28a5546107b33a925e16a153465",
+      "sourceRow": "source/animations-v1/Attack/front_r/sheet.png",
+      "sourceRowSha256": "b41c7c5e170b981902cd8890ba4e762ee05cd632b5d4fe92dbbb9a7dbef820cd",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_00.png",
+          "sha256": "877b909a17482d011e783e04064029b4c9efb2855234ed7be4d72e3de2600080",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_01.png",
+          "sha256": "16eb83f0bb9908b831de434d23f58d3e8ee5ca4a522de19a690751f94405179d",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_02.png",
+          "sha256": "80d9a14ba412e8c195b7724b79aac54fcf51eae3d64373bf59281ea6ba24e00f",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_03.png",
+          "sha256": "4529402b8a68132b658fda51e0c468055f43ecafbdb8d1ebeccbf56982067c0e",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Attack/attack_front_r_04.png",
+          "sha256": "5d53f89202a32b208f0acb5af2f634378c4d4109fa6d6e295a260c546e7480f7",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Hit",
+      "direction": "front_r",
+      "frames": 3,
+      "durationMs": 80,
+      "loop": false,
+      "action": {
+        "label": "Hit"
+      },
+      "editable": "source/animations-v1/Hit/front_r/hit_front_r.aseprite",
+      "editableSha256": "2a70031c86e753c71345a8c6ea5eb5ec9fcaa83292249aa507aaf340ae4529ed",
+      "sourceRow": "source/animations-v1/Hit/front_r/sheet.png",
+      "sourceRowSha256": "a12649c4278a97373970e5ba20108fc362702ad68e6c9fb89dee2ae020211fa0",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_00.png",
+          "sha256": "479b6d9762c31fcf80c6e976528f210b4611062a69271e0dcb936f86928af1bb",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_01.png",
+          "sha256": "eae925b9243fd69d4d7266d56db27ee758f5a18c1eed05136a217ef023dde230",
+          "top": 41,
+          "bottom": 126,
+          "contentHeight": 86,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Hit/hit_front_r_02.png",
+          "sha256": "a3bea3ea5bdec79eff17e387d68ec9d6cea9a4dee4807e816990bbd15699272f",
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "partialAlpha": 0
+        }
+      ]
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "state": "Defeat",
+      "direction": "front_r",
+      "frames": 5,
+      "durationMs": 120,
+      "loop": false,
+      "action": {
+        "label": "Defeat"
+      },
+      "editable": "source/animations-v1/Defeat/front_r/defeat_front_r.aseprite",
+      "editableSha256": "00ffc8c5905062efa392c5c9be7fe79416fcfa20873cf696087c1b634dc461ac",
+      "sourceRow": "source/animations-v1/Defeat/front_r/sheet.png",
+      "sourceRowSha256": "5818c7200ee1b7be59390f2de1286ac7be65286c9d26a70cd96bd5d86e29fbd0",
+      "sourceOrigin": "characters/orc-01-archer/source/combat-front-v1/sheet.png",
+      "sourceOriginSha256": "2241c9b0c482a2358e9390300db9b530ba28a1fe3d5f06a87a47aaa7ca9a731e",
+      "paletteColors": 47,
+      "nativeContract": "PASS",
+      "paletteSubset": "PASS",
+      "sourceProvenanceHashes": "PASS",
+      "editorRoundtrip": "ALL_RGBA_AND_DURATIONS_IDENTICAL",
+      "artisticReview": "PENDING_CREATOR",
+      "frameFiles": [
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_00.png",
+          "sha256": "c3d7b6b8bb1e6af1241b5d74f6e93679498009a17acbbd8ad289a19aae2164e2",
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_01.png",
+          "sha256": "ec1981aeec1dd6c5094b56c27d996ba0aced6ba2ba72041fb97b9d5145da897f",
+          "top": 45,
+          "bottom": 126,
+          "contentHeight": 82,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_02.png",
+          "sha256": "46c64a255c2d4216774dbb4cd4e9df3520061e585bdcb27ded0cdb4d03dba181",
+          "top": 63,
+          "bottom": 126,
+          "contentHeight": 64,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_03.png",
+          "sha256": "68d7693883e3764e3633e25db53442ac6641aab6795ec415053a8928b8aa98eb",
+          "top": 79,
+          "bottom": 126,
+          "contentHeight": 48,
+          "partialAlpha": 0
+        },
+        {
+          "file": "sprites/Animations/Defeat/defeat_front_r_04.png",
+          "sha256": "d778ca344907bebd60560af0ce89773e169ef035bf5c617e4287b5daf073cd02",
+          "top": 92,
+          "bottom": 126,
+          "contentHeight": 35,
+          "partialAlpha": 0
+        }
+      ]
+    }
+  ],
+  "newFrames": 13,
+  "approvedLocomotionUnchanged": 40,
+  "FAIL": 0,
+  "fullInventoryComplete": false
+}

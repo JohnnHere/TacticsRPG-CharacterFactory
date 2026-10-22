@@ -1,0 +1,30 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-locomotion-back_r-silhouettes-v1.png",
+      "sha256": "3064356213cbd41c8509890ab424535b66db97b0712ee27e07431739fded8e78"
+    },
+    {
+      "file": "characters/orc-01-scout/source/directions-v1/back_r/native-4x.png",
+      "sha256": "5cbb7161dff4265e3f4984c7e7fb1e59adbb0de2dc5173034a9aeafcd61ff61d"
+    },
+    {
+      "file": "characters/orc-01-scout/source/locomotion-directions-v1/approved-idle-front.png",
+      "sha256": "d58425057b89ef6080e7dddeab029f6a372f799539e13ef8cad8e8f30a4304df"
+    }
+  ],
+  "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-0a376881-8de0-4f66-84b1-6d544a5604e6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "direction": "back_r",
+  "states": {
+    "Idle": 4,
+    "Walk": 6
+  },
+  "status": "NATIVE_VALIDATED_AWAITING_CREATOR_LOCOMOTION_DIRECTIONS_REVIEW",
+  "sourceSha256": "57eb0d25bb291f04c609dfb589eb39f2ee79387e65ad05a9aa75c26a45008371",
+  "promptSha256": "f66c7d746704c5919b24864846100040a2aab76422e5eecba13dc02ffe19ac2d"
+}

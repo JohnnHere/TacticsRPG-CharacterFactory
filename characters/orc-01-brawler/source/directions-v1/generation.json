@@ -1,0 +1,44 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by image_gen",
+  "source": "source/directions-v1/sheet.png",
+  "promptFile": "source/directions-v1/sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-direction-pose-guide-v1.png",
+      "sha256": "72c656773b24f1547c11f00262f4b959e435a4efb145ea8d705493303e2743d2"
+    },
+    {
+      "file": "characters/orc-01-brawler/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "9410ca257c8dfb427dd3b2e3051f2b51ec536f9e93c98aa4b8e6fc850e158d40"
+    },
+    {
+      "file": "characters/orc-01-brawler/concepts/outfit-concept-v1.png",
+      "sha256": "2d3417413b94d4db3dcb2aed6667a22dcd3657ef00d567e401df9d2942daadf6"
+    }
+  ],
+  "conceptDigest": "294d17c42e94b2c1133ec4b26eaa9f74034e7995037c39f2b600a4993dc528d0",
+  "approvedFrontSha256": "572f3f1f53b841e3fe5e5555f13faf94d9078ee7534a5980c44fe7bf55cf7fe6",
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-3e3bccf6-fc2d-4b3b-adf1-808d686edd85.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "sourceSelectionStatus": "PARTIAL_SOURCE_WITH_CORRECTED_VIEW",
+  "corrections": [
+    {
+      "direction": "back_l",
+      "promptFile": "source/directions-v1/back_l-corrected.prompt.md",
+      "source": "source/directions-v1/back_l-corrected.png",
+      "references": [
+        {
+          "file": "characters/orc-01-brawler/source/directions-v1/back_l-to-edit.png",
+          "sha256": "b3dd32eb8ad2d33a9bec135484d9c15ac10bc1a85f7083fe93e24bcbef03a956"
+        }
+      ],
+      "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-535c79b9-441d-4261-bfd6-e86b92b6ce68.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reason": "Original back_l swapped sash tie hip; generated edit keeps knot at anatomical left hip",
+      "sourceSha256": "f6a9e2cb167c14b98461d1ee2efa2136f0d62bccbb6de50a1fc02a43878b4477",
+      "promptSha256": "3be366458a3804208c7f1a9ecba65a74eed4cdbbffa2da020c4c34a4dc755af2"
+    }
+  ],
+  "artisticReview": "PENDING_CREATOR_FOUR_VIEWS",
+  "sourceSha256": "cbffc9cb8a8f01b0f4c374ee848ba11846e0b044107a46dd85fa464925d3a69a",
+  "promptSha256": "934a40ccf0cb4bbe6de027ecba0c34775812c3e730d89784b0156d35a2577be1"
+}

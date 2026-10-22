@@ -1,0 +1,2324 @@
+{
+  "classes": [
+    {
+      "id": "orc-01",
+      "job": "Warrior",
+      "label": "Soco físico original",
+      "base": "orc-01/sprites/Directions/orc_01_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Walk/front_r/curated-v2/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Walk/front_r/curated-v2/walk_front_r.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/back_l/corrected-v2/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/back_l/corrected-v2/attack_back_l.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01/source/animations-v1/Attack/back_l/corrected-v2/native-strip.png",
+          "editable": "orc-01/source/animations-v1/Attack/back_l/corrected-v2/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-squire",
+      "job": "Squire",
+      "label": "Golpe corpo a corpo",
+      "base": "orc-01-squire/sprites/Directions/orc_01_squire_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-squire/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-squire/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-squire/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-squire/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-squire/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-squire/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_00.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_01.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_02.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_03.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-squire/actions/basic-unarmed/v2/front_r/native-strip.png",
+          "editable": "orc-01-squire/source/action-clips-v2/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_00.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_01.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_02.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_03.png",
+            "orc-01-squire/actions/basic-unarmed/v2/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-squire/actions/basic-unarmed/v2/front_l/native-strip.png",
+          "editable": "orc-01-squire/source/action-clips-v2/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-squire/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-squire/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-squire/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-squire/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-squire/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-squire/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-archer",
+      "job": "Archer",
+      "label": "Preparar e soltar disparo",
+      "base": "orc-01-archer/sprites/Directions/orc_01_archer_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v2/Attack/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v2/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-archer/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-archer/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-archer/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-archer/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-archer/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-archer/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-archer/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-archer/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+            "orc-01-archer/actions/basic-unarmed/v1/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-archer/actions/basic-unarmed/v1/front_l/native-strip.png",
+          "editable": "orc-01-archer/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-archer/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-archer/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-archer/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-archer/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-archer/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-archer/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "job": "Apprentice Mage",
+      "label": "Conjuração ofensiva",
+      "base": "orc-01-apprentice-mage/sprites/Directions/orc_01_apprentice_mage_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-apprentice-mage/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-apprentice-mage/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/actions/basic-unarmed/v1/front_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-apprentice-mage/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-apprentice-mage/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-acolyte",
+      "job": "Acolyte",
+      "label": "Invocação de suporte",
+      "base": "orc-01-acolyte/sprites/Directions/orc_01_acolyte_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-acolyte/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-acolyte/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/actions/basic-unarmed/v1/front_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-acolyte/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-acolyte/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-acolyte/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-acolyte/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-acolyte/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-acolyte/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-rogue",
+      "job": "Rogue",
+      "label": "Estocada rápida",
+      "base": "orc-01-rogue/sprites/Directions/orc_01_rogue_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-rogue/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-rogue/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-rogue/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-rogue/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-rogue/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-rogue/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-rogue/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-rogue/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_00.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_01.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_02.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_03.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-rogue/actions/basic-unarmed/v2/front_l/native-strip.png",
+          "editable": "orc-01-rogue/source/action-clips-v2/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-rogue/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-rogue/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-rogue/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-rogue/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-rogue/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-rogue/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-scout",
+      "job": "Scout",
+      "label": "Arremesso rápido",
+      "base": "orc-01-scout/sprites/Directions/orc_01_scout_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-scout/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-scout/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-scout/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-scout/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-scout/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-scout/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_r/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-scout/actions/basic-unarmed/v1/front_r/native-strip.png",
+          "editable": "orc-01-scout/source/action-clips-v1/basic-unarmed/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+            "orc-01-scout/actions/basic-unarmed/v1/front_l/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-scout/actions/basic-unarmed/v1/front_l/native-strip.png",
+          "editable": "orc-01-scout/source/action-clips-v1/basic-unarmed/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+            "orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+            "orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+            "orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+            "orc-01-scout/actions/basic-unarmed/v1/back_r/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-scout/actions/basic-unarmed/v1/back_r/native-strip.png",
+          "editable": "orc-01-scout/source/action-clips-v1/basic-unarmed/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_00.png",
+            "orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_01.png",
+            "orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_02.png",
+            "orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_03.png",
+            "orc-01-scout/actions/basic-unarmed/v2/back_l/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-scout/actions/basic-unarmed/v2/back_l/native-strip.png",
+          "editable": "orc-01-scout/source/action-clips-v2/basic-unarmed/back_l/attack_back_l.aseprite"
+        }
+      }
+    },
+    {
+      "id": "orc-01-brawler",
+      "job": "Brawler",
+      "label": "Soco de direita",
+      "base": "orc-01-brawler/sprites/Directions/orc_01_brawler_dir_front_l.png",
+      "clips": {
+        "Idle_front_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_r_03.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Idle/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Idle/front_r/idle_front_r.aseprite"
+        },
+        "Walk_front_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_03.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_04.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_r_05.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Walk/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Walk/front_r/walk_front_r.aseprite"
+        },
+        "Attack_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Hit_front_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_r_02.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Hit/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Hit/front_r/hit_front_r.aseprite"
+        },
+        "Defeat_front_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_r_03.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Defeat/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Defeat/front_r/defeat_front_r.aseprite"
+        },
+        "Idle_front_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_l_02.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_front_l_03.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Idle/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Idle/front_l/idle_front_l.aseprite"
+        },
+        "Walk_front_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_02.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_03.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_04.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_front_l_05.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Walk/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Walk/front_l/walk_front_l.aseprite"
+        },
+        "Attack_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Hit_front_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_front_l_02.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Hit/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Hit/front_l/hit_front_l.aseprite"
+        },
+        "Defeat_front_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_l_02.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_l_03.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_front_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Defeat/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Defeat/front_l/defeat_front_l.aseprite"
+        },
+        "Idle_back_r": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_r_02.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_r_03.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Idle/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Idle/back_r/idle_back_r.aseprite"
+        },
+        "Walk_back_r": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_02.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_03.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_04.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_r_05.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Walk/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Walk/back_r/walk_back_r.aseprite"
+        },
+        "Attack_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Hit_back_r": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_r_02.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Hit/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Hit/back_r/hit_back_r.aseprite"
+        },
+        "Defeat_back_r": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_r_02.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_r_03.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Defeat/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Defeat/back_r/defeat_back_r.aseprite"
+        },
+        "Idle_back_l": {
+          "durationMs": 240,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_l_02.png",
+            "orc-01-brawler/sprites/Animations/Idle/idle_back_l_03.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Idle/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Idle/back_l/idle_back_l.aseprite"
+        },
+        "Walk_back_l": {
+          "durationMs": 73,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_02.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_03.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_04.png",
+            "orc-01-brawler/sprites/Animations/Walk/walk_back_l_05.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Walk/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Walk/back_l/walk_back_l.aseprite"
+        },
+        "Attack_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        },
+        "Hit_back_l": {
+          "durationMs": 80,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Hit/hit_back_l_02.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Hit/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Hit/back_l/hit_back_l.aseprite"
+        },
+        "Defeat_back_l": {
+          "durationMs": 120,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_l_02.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_l_03.png",
+            "orc-01-brawler/sprites/Animations/Defeat/defeat_back_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Defeat/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Defeat/back_l/defeat_back_l.aseprite"
+        },
+        "Unarmed_front_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/front_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/front_r/attack_front_r.aseprite"
+        },
+        "Unarmed_front_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_front_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/front_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/front_l/attack_front_l.aseprite"
+        },
+        "Unarmed_back_r": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_r_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/back_r/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/back_r/attack_back_r.aseprite"
+        },
+        "Unarmed_back_l": {
+          "durationMs": 90,
+          "frames": [
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_00.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_01.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_02.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_03.png",
+            "orc-01-brawler/sprites/Animations/Attack/attack_back_l_04.png"
+          ],
+          "strip": "orc-01-brawler/source/animations-v1/Attack/back_l/native-strip.png",
+          "editable": "orc-01-brawler/source/animations-v1/Attack/back_l/attack_back_l.aseprite"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "Idle": 4,
+    "Walk": 6,
+    "Attack": 5,
+    "Unarmed": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "durations": {
+    "Idle": 240,
+    "Walk": 73,
+    "Attack": 90,
+    "Unarmed": 90,
+    "Hit": 80,
+    "Defeat": 120
+  }
+}

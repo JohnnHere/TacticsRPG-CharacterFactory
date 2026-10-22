@@ -1,0 +1,31 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by tool",
+  "source": "sheet.png",
+  "promptFile": "sheet.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+      "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+    },
+    {
+      "file": "characters/orc-01-archer/source/directions-v1/front_l/native-4x.png",
+      "sha256": "90a7dd2bf81925ec496af1084b0a33c6e9adb7628779176e7a29df1184f41231"
+    },
+    {
+      "file": "characters/orc-01-archer/source/combat-directions-v1/approved-front-combat.png",
+      "sha256": "10ddd11837a7d6cef41fc5cde580577a983b565581b5124f7e8399462675467a"
+    }
+  ],
+  "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+  "direction": "front_l",
+  "states": {
+    "Attack": 5,
+    "Hit": 3,
+    "Defeat": 5
+  },
+  "returnedImagePath": "C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-056b2497-9335-4ac7-aacc-eb5c8839de9d.png",
+  "sourceSha256": "c79531895e792b0948ef8c721f91410405738551e828c2139e0821168629e0b8",
+  "promptSha256": "5d790c3da1fb500a54954cff51e5a6c4b822f8602d55665ac27b125c49fd39ae",
+  "status": "REJECTED_CAMERA_IN_MULTIPLE_STATES"
+}

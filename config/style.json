@@ -1,0 +1,30 @@
+{
+  "id": "tactics-core-v1",
+  "status": "derived-from-source-approved-direction",
+  "anchor": "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+  "anchorRole": "Linguagem visual global; nao copiar identidade, roupa ou paleta do Hero para outras racas.",
+  "pilotRole": "Human Warrior Pilot representa Hero no sandbox; referencia de implementacao e leitura, nao protagonista definitivo nem padrao universal.",
+  "medium": "sprites 2D em pixel art refinada, em mapa tatico 3D (apresentacao 2.5D/HD-2D inspirada)",
+  "principles": [
+    "Proporcoes compactas taticas, maturidade, silhueta legivel no zoom do jogo.",
+    "Clusters intencionais, materiais distintos, luz coerente com a ancora observada, detalhe controlado.",
+    "Raca, individuo, Job, cultura, faccao, equipamento e forma sao eixos independentes.",
+    "Sem espelhamento entre vistas; preservar mao dominante e assimetrias.",
+    "Conceitos e sprites base do personagem ficam sem armas; armas sao assets separados, exibidos somente quando equipados e invocados por uma acao.",
+    "Conceito e sprite nativo sao entregas diferentes. Reduzir conceito nao cria sprite pronto.",
+    "Camadas 2D precisam de canvas, registro e timeline identicos; sobrepor imagens arbitrarias nao produz roupa compativel.",
+    "Cores de pele, presas, cultura e ornamentacao racial ausentes nas fontes permanecem TBD/proposta.",
+    "Gera-se conceito, depois base nativa, depois vistas, depois animacoes por lotes revisados."
+  ],
+  "inspirations": [
+    {"name":"Final Fantasy Tactics", "use":"Leitura tatica, silhueta de Job, personagens pixel art 2D em arenas 3D."},
+    {"name":"World of Warcraft", "use":"Linguagem de armadura e arquetipos claros, fantasia rica com exagero controlado."},
+    {"name":"Tolkien", "use":"Tom medieval-fantastico serio, heroico e culturas verossimeis."},
+    {"name":"Triangle Strategy / HD-2D", "use":"Apresentacao 2D com profundidade de cenario; nao implica modelar personagens 3D."}
+  ],
+  "baselineProfile": {
+    "width":128, "height":128, "groundY":126, "ppu":100,
+    "counts":{"Idle":4,"Walk":6,"Attack":5,"Hit":3,"Defeat":5},
+    "note":"Baseline do piloto humanoide 1 tile; anatomias diferentes exigem perfil e revisao. Walk atual usa 3 quadros/tile."
+  }
+}

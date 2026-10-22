@@ -1,0 +1,66 @@
+{
+  "state": "Attack",
+  "direction": "front_l",
+  "frames": 5,
+  "source": "characters\\orc-01-rogue\\source\\animations-v1\\Attack\\front_l\\sheet.png",
+  "sourceSha256": "3a963d10a8391125f4c25ec410b6cb0382796731aebf722178533253744f80b5",
+  "boxes": [
+    [
+      0,
+      5,
+      419,
+      460
+    ],
+    [
+      440,
+      0,
+      825,
+      461
+    ],
+    [
+      774,
+      3,
+      1296,
+      461
+    ],
+    [
+      1247,
+      3,
+      1748,
+      459
+    ],
+    [
+      1791,
+      3,
+      2146,
+      461
+    ]
+  ],
+  "xBoundsOverlap": true,
+  "separateComponentsVisuallyReviewed": true,
+  "durationMs": 90,
+  "loop": false,
+  "method": "Separate authored poses + native grid reconstruction + integer registration",
+  "uniqueRgbaFrames": 5,
+  "artisticApproval": "PENDING_CREATOR",
+  "reports": [
+    "attack_front_l_00.json",
+    "attack_front_l_01.json",
+    "attack_front_l_02.json",
+    "attack_front_l_03.json",
+    "attack_front_l_04.json"
+  ],
+  "layerName": "orc-01-rogue Attack front_l - weaponless body raster",
+  "action": {
+    "label": "Quick thrust body",
+    "poses": "1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.",
+    "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+  },
+  "requestedContentHeights": [
+    100,
+    101,
+    101,
+    100,
+    101
+  ]
+}

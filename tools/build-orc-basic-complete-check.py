@@ -1,0 +1,16 @@
+from pathlib import Path
+p=Path('tools/check-orc-combat-front-preview.py').read_text(encoding='utf-8')
+p=p.replace('orc-combat-front-validation-v1.json','orc-basic-complete-validation-v1.json').replace('review-orc-combat-front-v1.html','review-orc-basic-complete-v1.html')
+p=p.replace("(clip['id'],clip['state'],i)","(clip['id'],clip['state'],clip['direction'],i)")
+p=p.replace('==91','==644').replace("'loadedAnimationPng':91","'loadedAnimationPng':644")
+start=p.index("            for state,count in [('Attack'")
+end=p.index("            page.select_option('#state','Defeat');page.uncheck",start)
+block=p[start:end].replace("for state,count in [('Attack',5),('Hit',3),('Defeat',5)]", "for state,count in [('Idle',4),('Walk',6),('Attack',5),('Hit',3),('Defeat',5)]")
+block=block.replace("(px['id'],state,i)","(px['id'],state,direction,i)")
+block=block.replace("if mode=='http':page.screenshot", "if mode=='http' and state in ['Attack','Defeat'] and direction!='front_r':page.screenshot")
+block=block.replace("orc-combat-front-{state.lower()}","orc-basic-complete-{direction}-{state.lower()}")
+p=p[:start]+"            for direction in ['front_r','front_l','back_r','back_l']:\n                page.select_option('#direction',direction)\n"+'\n'.join('    '+line for line in block.rstrip().split('\n'))+'\n'+p[end:]
+p=p.replace("'states':['Attack','Hit','Defeat']", "'states':['Idle','Walk','Attack','Hit','Defeat'],'directions':['front_r','front_l','back_r','back_l']")
+p=p.replace('orc-combat-front-browser-v1.json','orc-basic-complete-browser-v1.json').replace('PENDING_CREATOR_COMBAT_FRONT_REVIEW','PENDING_CREATOR_COMPLETE_REVIEW')
+p=p.replace('91 PNGs loaded in HTTP and file previews; 91/91 canvas RGBA hashes exact','644 PNGs loaded in HTTP and file previews; 644/644 canvas RGBA hashes exact')
+Path('tools/check-orc-basic-complete-preview.py').write_text(p,encoding='utf-8')

@@ -1,0 +1,782 @@
+[
+  {
+    "id": "orc-01-squire",
+    "job": "Squire",
+    "folder": "characters/orc-01-squire/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-squire/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Squire in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.\nCRITICAL ANATOMY: The small iron cap covers the anatomical LEFT shoulder, which MUST NOT drive the strike. Raise and swing the plain russet anatomical RIGHT sleeve. The capped LEFT arm stays low guarding, never raised overhead. Keep the cap attached to the same shoulder.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Simple quilted russet gambeson, short undyed oat tabard, narrow brown belt, modest small iron shoulder cap on the left, plain leather wrist guards and sturdy brown boots. An inexperienced practical militia squire; no elaborate heavy armor, heraldry or royal uniform.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-squire/source/directions-v1/front_l/native-4x.png",
+        "sha256": "216733fb91200062867cebe6a8043dff3bc7ef26af741da2d5f2121da811de89"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Melee swing body",
+      "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-squire/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-squire",
+    "job": "Squire",
+    "folder": "characters/orc-01-squire/source/combat-directions-v1/back_r",
+    "promptFile": "characters/orc-01-squire/source/combat-directions-v1/back_r/attack-corrected-v2.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Squire in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw FIVE Attack figures in ONE horizontal row, no other rows. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.\nCRITICAL ANATOMY: The small iron cap covers the anatomical LEFT shoulder, which MUST NOT drive the strike. Raise and swing the plain russet anatomical RIGHT sleeve. The capped LEFT arm stays low guarding, never raised overhead. Keep the cap attached to the same shoulder.\n\n\n\nOUTFIT: Simple quilted russet gambeson, short undyed oat tabard, narrow brown belt, modest small iron shoulder cap on the left, plain leather wrist guards and sturdy brown boots. An inexperienced practical militia squire; no elaborate heavy armor, heraldry or royal uniform.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 5 separate complete figures; FIVE Attack figures in ONE horizontal row, no other rows. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-squire/source/directions-v1/back_r/native-4x.png",
+        "sha256": "74a634859e82234f4fb8cbde01defc3ae21a69b5e3c1a0fbe923587bc90e642a"
+      }
+    ],
+    "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Melee swing body",
+      "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-squire/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-corrected-v2",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": true,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-squire",
+    "job": "Squire",
+    "folder": "characters/orc-01-squire/source/combat-directions-v1/back_l",
+    "promptFile": "characters/orc-01-squire/source/combat-directions-v1/back_l/attack-corrected-v2.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Squire in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw FIVE Attack figures in ONE horizontal row, no other rows. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.\nCRITICAL ANATOMY: The small iron cap covers the anatomical LEFT shoulder, which MUST NOT drive the strike. Raise and swing the plain russet anatomical RIGHT sleeve. The capped LEFT arm stays low guarding, never raised overhead. Keep the cap attached to the same shoulder.\n\n\n\nOUTFIT: Simple quilted russet gambeson, short undyed oat tabard, narrow brown belt, modest small iron shoulder cap on the left, plain leather wrist guards and sturdy brown boots. An inexperienced practical militia squire; no elaborate heavy armor, heraldry or royal uniform.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 5 separate complete figures; FIVE Attack figures in ONE horizontal row, no other rows. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-squire/source/directions-v1/back_l/native-4x.png",
+        "sha256": "e7ec1c1d166c40b864c48b066a6086e3a2f14c48effc5f51477cc6d3f85d885b"
+      }
+    ],
+    "baseApprovalDigest": "672cf657fc60e740bb5c83f072b12d3662384f2b08f975458d823c40932f30f2",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Melee swing body",
+      "poses": "1 stable practical guard, empty right fist beside waist; 2 draw RIGHT elbow/forearm up and back above right shoulder with small torso coil; 3 short committed forward step and RIGHT arm overhand diagonal downward strike, left hand guarding; 4 right arm finishes down and across, weight forward; 5 recover compact guard. Anatomical RIGHT arm drives every strike; never punch with left.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-squire/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-corrected-v2",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": true,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-archer",
+    "job": "Archer",
+    "folder": "characters/orc-01-archer/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-archer/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Archer in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-left at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen left, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.\nCRITICAL ANATOMY: Bow mime: anatomically LEFT hand aims fully SCREEN LEFT; RIGHT hand draws next to the jaw facing LEFT. The RIGHT ELBOW must protrude on viewer LEFT side. Do not swap drawing/aiming arms. Both aiming and drawing wrists can project towards the same screen side, but elbows bind to the correct shoulders.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Fitted moss-green sleeveless leather jerkin, ochre narrow sash, a diagonal leather baldric with small flat utility pouch, compact brown leather trousers and boots, reinforced left forearm archery bracer and right fingerless hand wrap. No quiver, arrows, bow or ammunition. Agile marksman outfit with exposed robust biceps, no hood or cape.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-archer/source/directions-v1/front_l/native-4x.png",
+        "sha256": "90a7dd2bf81925ec496af1084b0a33c6e9adb7628779176e7a29df1184f41231"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Bow draw and release body",
+      "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-archer/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-archer",
+    "job": "Archer",
+    "folder": "characters/orc-01-archer/source/combat-directions-v1/back_r",
+    "promptFile": "characters/orc-01-archer/source/combat-directions-v1/back_r/attack-corrected-v2.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Archer in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw FIVE Attack figures in ONE horizontal row, no other rows. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.\nCRITICAL ANATOMY: Bow mime: anatomically LEFT hand aims fully SCREEN RIGHT; RIGHT hand draws next to the jaw facing RIGHT. The RIGHT ELBOW must protrude on viewer RIGHT side. Do not swap drawing/aiming arms. Both aiming and drawing wrists can project towards the same screen side, but elbows bind to the correct shoulders.\n\n\n\nOUTFIT: Fitted moss-green sleeveless leather jerkin, ochre narrow sash, a diagonal leather baldric with small flat utility pouch, compact brown leather trousers and boots, reinforced left forearm archery bracer and right fingerless hand wrap. No quiver, arrows, bow or ammunition. Agile marksman outfit with exposed robust biceps, no hood or cape.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 5 separate complete figures; FIVE Attack figures in ONE horizontal row, no other rows. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-archer/source/directions-v1/back_r/native-4x.png",
+        "sha256": "b22daf3f2c315f66701b20527db0f8997f8994066514be7b392a9fdd9aea17df"
+      }
+    ],
+    "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Bow draw and release body",
+      "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-archer/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-corrected-v2",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": true,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ],
+    "animationSourceVersions": {
+      "Attack": "animations-v2"
+    },
+    "replaceUnapprovedStates": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-archer",
+    "job": "Archer",
+    "folder": "characters/orc-01-archer/source/combat-directions-v1/back_l",
+    "promptFile": "characters/orc-01-archer/source/combat-directions-v1/back_l/attack-corrected-v2.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Archer in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw FIVE Attack figures in ONE horizontal row, no other rows. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-left at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen left, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.\nCRITICAL ANATOMY: Bow mime: anatomically LEFT hand aims fully SCREEN LEFT; RIGHT hand draws next to the jaw facing LEFT. The RIGHT ELBOW must protrude on viewer RIGHT side. Do not swap drawing/aiming arms. Both aiming and drawing wrists can project towards the same screen side, but elbows bind to the correct shoulders.\n\n\n\nOUTFIT: Fitted moss-green sleeveless leather jerkin, ochre narrow sash, a diagonal leather baldric with small flat utility pouch, compact brown leather trousers and boots, reinforced left forearm archery bracer and right fingerless hand wrap. No quiver, arrows, bow or ammunition. Agile marksman outfit with exposed robust biceps, no hood or cape.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 5 separate complete figures; FIVE Attack figures in ONE horizontal row, no other rows. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-archer/source/directions-v1/back_l/native-4x.png",
+        "sha256": "425bbbed4855ed3f0df0f36e07eb8d61860767186df73f3f23015f127adf3892"
+      }
+    ],
+    "baseApprovalDigest": "c0b01125c0f3a72867d01de5a501d383fed642465e620f3e2c5d5170947be98a",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Bow draw and release body",
+      "poses": "1 relaxed ready, both hands empty near chest; 2 anatomical LEFT arm extends screen-right at shoulder height while RIGHT hand starts drawing back; 3 LEFT arm fully extended towards screen right, RIGHT fist pulled beside cheek/jaw, shoulders aligned in clear archery full-draw stance; 4 release: LEFT arm remains extended, RIGHT hand follows back past cheek, chest stable; 5 lower arms to ready. Invisible independent bow/arrow will be separate assets later: draw ONLY body and hands, no bow, string, arrow or quiver. A clear bow-draw gesture, never a punch.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-archer/source/native-base-v1/front_r-native.png",
+    "generationName": "attack-corrected-v2",
+    "generationStates": {
+      "Attack": 5
+    },
+    "preserveReactionSource": true,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-apprentice-mage",
+    "job": "Apprentice Mage",
+    "folder": "characters/orc-01-apprentice-mage/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-apprentice-mage/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Apprentice Mage in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-left at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer LEFT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Desaturated indigo knee-length split-front apprentice coat over dark trousers, short broad sleeves with simple faded blue geometric stitched cuffs, ochre cord belt, one small closed leather scroll pouch at hip, plain leather boots. No wizard hat or hood; bald head visible. Modest apprentice, no elaborate archmage armor, no magic effects, staff or wand.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-apprentice-mage/source/directions-v1/front_l/native-4x.png",
+        "sha256": "193158a0e1f2295ef85b45463f5e6b65310e72fcc8b8370e82e5cc95c083bc42"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Offensive cast body",
+      "poses": "1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-apprentice-mage",
+    "job": "Apprentice Mage",
+    "folder": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_r",
+    "promptFile": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_r/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Apprentice Mage in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN RIGHT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Desaturated indigo knee-length split-front apprentice coat over dark trousers, short broad sleeves with simple faded blue geometric stitched cuffs, ochre cord belt, one small closed leather scroll pouch at hip, plain leather boots. No wizard hat or hood; bald head visible. Modest apprentice, no elaborate archmage armor, no magic effects, staff or wand.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-apprentice-mage/source/directions-v1/back_r/native-4x.png",
+        "sha256": "4d7bd185d3c6e5df279ae920a788608553038a032ff6263f519ec4a0d3f2b83a"
+      },
+      {
+        "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+        "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+      }
+    ],
+    "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Offensive cast body",
+      "poses": "1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-apprentice-mage",
+    "job": "Apprentice Mage",
+    "folder": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-apprentice-mage/source/combat-directions-v2/back_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Apprentice Mage in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-left at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Desaturated indigo knee-length split-front apprentice coat over dark trousers, short broad sleeves with simple faded blue geometric stitched cuffs, ochre cord belt, one small closed leather scroll pouch at hip, plain leather boots. No wizard hat or hood; bald head visible. Modest apprentice, no elaborate archmage armor, no magic effects, staff or wand.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-apprentice-mage/source/directions-v1/back_l/native-4x.png",
+        "sha256": "cbf6b0948d4e8712fe2ba01f4e3d08cdd4a098ad3eec60e992555e44688bc725"
+      },
+      {
+        "file": "characters/orc-combat-back_l-reaction-guide-v1.png",
+        "sha256": "6059370fa6f6f2496f41f8ed27fa8f4fd24c379a118ccc6d873faa073b67fdd9"
+      }
+    ],
+    "baseApprovalDigest": "eabca3dabd58a36682941eed8fd7cababa83f1cf987b5a621347c9dda06b3351",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Offensive cast body",
+      "poses": "1 ready with empty hands down; 2 cup BOTH open hands near lower chest gathering energy, elbows bent; 3 torso leans forward and RIGHT open palm extends screen-right at shoulder height, left palm braced at chest; 4 sustain right palm extended with fingers open, left hand lowered; 5 withdraw hands to ready. No effect or orb: readable casting gesture through hands/body only, never punching.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-apprentice-mage/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-acolyte",
+    "job": "Acolyte",
+    "folder": "characters/orc-01-acolyte/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-acolyte/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Acolyte in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.\nCRITICAL ANATOMY: Raise the anatomical RIGHT open palm in blessing. Its shoulder projects viewer LEFT. The left hand rests on heart and is mostly hidden from rear.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Warm off-white split knee-length novice vestment over dark trousers, muted teal shoulder stole with simple angular hem, plain bronze round medallion with an original abstract notch motif, tan rope belt and modest leather boots. Short sleeves show robust green arms. Fantasy healer novice; no real-world religious symbols, no hood, mace, staff or magic effects.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-acolyte/source/directions-v1/front_l/native-4x.png",
+        "sha256": "442fe3b82bd5141fdfe131a42e2a5b42b25c0be18b97f2cf7717eb7438502df2"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "40436711d8c0d4b19839bcba45dc82666b9fd85a060fb59a84e7ab0c1221f3b8",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Support invocation body",
+      "poses": "1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-acolyte/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-acolyte",
+    "job": "Acolyte",
+    "folder": "characters/orc-01-acolyte/source/combat-directions-v2/back_r",
+    "promptFile": "characters/orc-01-acolyte/source/combat-directions-v2/back_r/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Acolyte in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.\nCRITICAL ANATOMY: Raise the anatomical RIGHT open palm in blessing. Its shoulder projects viewer RIGHT. The left hand rests on heart and is mostly hidden from rear.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Warm off-white split knee-length novice vestment over dark trousers, muted teal shoulder stole with simple angular hem, plain bronze round medallion with an original abstract notch motif, tan rope belt and modest leather boots. Short sleeves show robust green arms. Fantasy healer novice; no real-world religious symbols, no hood, mace, staff or magic effects.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-acolyte/source/directions-v1/back_r/native-4x.png",
+        "sha256": "01d78e7ffd9e9b862e61d4995da32e921968716af3d51358797e0822d4de675b"
+      },
+      {
+        "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+        "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+      }
+    ],
+    "baseApprovalDigest": "40436711d8c0d4b19839bcba45dc82666b9fd85a060fb59a84e7ab0c1221f3b8",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Support invocation body",
+      "poses": "1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-acolyte/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-acolyte",
+    "job": "Acolyte",
+    "folder": "characters/orc-01-acolyte/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-acolyte/source/combat-directions-v2/back_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Acolyte in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.\nCRITICAL ANATOMY: Raise the anatomical RIGHT open palm in blessing. Its shoulder projects viewer RIGHT. The left hand rests on heart and is mostly hidden from rear.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Warm off-white split knee-length novice vestment over dark trousers, muted teal shoulder stole with simple angular hem, plain bronze round medallion with an original abstract notch motif, tan rope belt and modest leather boots. Short sleeves show robust green arms. Fantasy healer novice; no real-world religious symbols, no hood, mace, staff or magic effects.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-acolyte/source/directions-v1/back_l/native-4x.png",
+        "sha256": "3b8564b860d3fc573aaa9d9782199730077d986a31adfcc3744cd897708e1fe9"
+      },
+      {
+        "file": "characters/orc-combat-back_l-reaction-guide-v1.png",
+        "sha256": "6059370fa6f6f2496f41f8ed27fa8f4fd24c379a118ccc6d873faa073b67fdd9"
+      }
+    ],
+    "baseApprovalDigest": "40436711d8c0d4b19839bcba45dc82666b9fd85a060fb59a84e7ab0c1221f3b8",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Support invocation body",
+      "poses": "1 calm ready; 2 BOTH hands join near sternum in prayer with slight bowed head; 3 RIGHT open palm rises in a blessing above shoulder while LEFT hand rests over heart; 4 BOTH open palms gently present forward/up at chest height, balanced stance; 5 hands lower to ready. A measured support/blessing invocation, distinct from offensive mage thrust. No glow, symbols, holy icon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-acolyte/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false,
+    "visuallyReviewedOverlappingX": [
+      "Attack"
+    ]
+  },
+  {
+    "id": "orc-01-rogue",
+    "job": "Rogue",
+    "folder": "characters/orc-01-rogue/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-rogue/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Rogue in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-left; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer LEFT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Creator requested darker stealth silhouette: charcoal open-front hood, fitted matte near-black long-sleeved cloth/leather, soft shoulders without pauldron, narrow blackened buckle, flat utility pouches, short charcoal hip panels, slim dark trousers and soft boots; no Warrior armor, long red tabard or visible weapons. Same face and bald Orc under hood.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-rogue/source/directions-v1/front_l/native-4x.png",
+        "sha256": "c17c26801a0451392419bb6bae75231c30dbdf5e78dcc3adaef47272f7420c23"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "e2e986b01b6979b77b257d6964553543e3308035d138ab8ecf4282b8d572cc02",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick thrust body",
+      "poses": "1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-rogue/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-rogue",
+    "job": "Rogue",
+    "folder": "characters/orc-01-rogue/source/combat-directions-v2/back_r",
+    "promptFile": "characters/orc-01-rogue/source/combat-directions-v2/back_r/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Rogue in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN RIGHT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Creator requested darker stealth silhouette: charcoal open-front hood, fitted matte near-black long-sleeved cloth/leather, soft shoulders without pauldron, narrow blackened buckle, flat utility pouches, short charcoal hip panels, slim dark trousers and soft boots; no Warrior armor, long red tabard or visible weapons. Same face and bald Orc under hood.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-rogue/source/directions-v1/back_r/native-4x.png",
+        "sha256": "70aaaedb717fff424cbf74b94486a91f3114e990e41431b4d33df4fec1d97002"
+      },
+      {
+        "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+        "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+      }
+    ],
+    "baseApprovalDigest": "e2e986b01b6979b77b257d6964553543e3308035d138ab8ecf4282b8d572cc02",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick thrust body",
+      "poses": "1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-rogue/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-rogue",
+    "job": "Rogue",
+    "folder": "characters/orc-01-rogue/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-rogue/source/combat-directions-v2/back_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Rogue in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-left; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Creator requested darker stealth silhouette: charcoal open-front hood, fitted matte near-black long-sleeved cloth/leather, soft shoulders without pauldron, narrow blackened buckle, flat utility pouches, short charcoal hip panels, slim dark trousers and soft boots; no Warrior armor, long red tabard or visible weapons. Same face and bald Orc under hood.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-rogue/source/directions-v1/back_l/native-4x.png",
+        "sha256": "1f58a5edc8b1941ed329385395cd4bd612e013745b5251dad9c11d4f21779266"
+      },
+      {
+        "file": "characters/orc-combat-back_l-reaction-guide-v1.png",
+        "sha256": "6059370fa6f6f2496f41f8ed27fa8f4fd24c379a118ccc6d873faa073b67fdd9"
+      }
+    ],
+    "baseApprovalDigest": "e2e986b01b6979b77b257d6964553543e3308035d138ab8ecf4282b8d572cc02",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick thrust body",
+      "poses": "1 low stealth guard with empty hands; 2 crouch slightly and coil RIGHT fist back beside right ribs, left forearm guards; 3 quick low forward lunge with RIGHT arm extending in a precise close stab/thrust towards screen-right; 4 right arm follows through and begins retracting, torso low; 5 return stealth guard. Anatomical RIGHT hand leads. No dagger or other weapon drawn anywhere, including belt or boot.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-rogue/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-scout",
+    "job": "Scout",
+    "folder": "characters/orc-01-scout/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-scout/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Scout in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-left for aim; 3 snap RIGHT arm forward towards screen-left in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer LEFT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Earth-tan reinforced travel vest, short moss-olive shoulder mantle ending above elbows, muted brown split travel skirt over trousers, sturdy boots, small flat map pouch and tightly rolled small blanket at rear belt. Bald head and brutal face remain visible. Rugged outdoors recon silhouette, distinct from the fitted green Archer; no weapon, ammunition, trap, hood or backpack.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-scout/source/directions-v1/front_l/native-4x.png",
+        "sha256": "3ebcdb805eff2e8e452a370734a6d6cd43e3c5dc79a14ada30de96a346155189"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick throw body",
+      "poses": "1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-scout/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-scout",
+    "job": "Scout",
+    "folder": "characters/orc-01-scout/source/combat-directions-v2/back_r",
+    "promptFile": "characters/orc-01-scout/source/combat-directions-v2/back_r/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Scout in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN RIGHT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Earth-tan reinforced travel vest, short moss-olive shoulder mantle ending above elbows, muted brown split travel skirt over trousers, sturdy boots, small flat map pouch and tightly rolled small blanket at rear belt. Bald head and brutal face remain visible. Rugged outdoors recon silhouette, distinct from the fitted green Archer; no weapon, ammunition, trap, hood or backpack.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-scout/source/directions-v1/back_r/native-4x.png",
+        "sha256": "5cbb7161dff4265e3f4984c7e7fb1e59adbb0de2dc5173034a9aeafcd61ff61d"
+      },
+      {
+        "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+        "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+      }
+    ],
+    "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick throw body",
+      "poses": "1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-scout/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-scout",
+    "job": "Scout",
+    "folder": "characters/orc-01-scout/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-scout/source/combat-directions-v2/back_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Scout in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-left for aim; 3 snap RIGHT arm forward towards screen-left in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Earth-tan reinforced travel vest, short moss-olive shoulder mantle ending above elbows, muted brown split travel skirt over trousers, sturdy boots, small flat map pouch and tightly rolled small blanket at rear belt. Bald head and brutal face remain visible. Rugged outdoors recon silhouette, distinct from the fitted green Archer; no weapon, ammunition, trap, hood or backpack.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-scout/source/directions-v1/back_l/native-4x.png",
+        "sha256": "599213d1a69182ed8e7f7142f4c9946a8f51ba8e59ccc2f2ff7edcefb28a4194"
+      },
+      {
+        "file": "characters/orc-combat-back_l-reaction-guide-v1.png",
+        "sha256": "6059370fa6f6f2496f41f8ed27fa8f4fd24c379a118ccc6d873faa073b67fdd9"
+      }
+    ],
+    "baseApprovalDigest": "94d7c2b20bccec2bed8f712785a10c6e8f4d041eae7c2ae2506ea187652d9080",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Quick throw body",
+      "poses": "1 alert ready; 2 RIGHT elbow draws back above shoulder, LEFT arm points screen-right for aim; 3 snap RIGHT arm forward towards screen-right in a clear overhand throwing release with fingers opening; 4 right arm follows diagonally down across torso, weight onto front foot; 5 return alert ready. No thrown object, stone, knife, projectile or trail. A quick ranged utility throw gesture, not bow draw or a boxing jab.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-scout/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-brawler",
+    "job": "Brawler",
+    "folder": "characters/orc-01-brawler/source/combat-directions-v2/front_l",
+    "promptFile": "characters/orc-01-brawler/source/combat-directions-v2/front_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Brawler in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter FRONT facing SCREEN LEFT, face and chest point LEFT in EVERY drawing, never face RIGHT. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-left with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer LEFT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Bare robust olive-green torso with the SAME anatomy and skin tone, worn off-white cloth wraps around wrists, knuckles and lower shins, dark loose knee trousers, a short burnt-red waist sash, simple worn low leather boots. No shoulder plate, chest armor, weapons or new tattoos. Practical unarmed fighter, original proportions, no exaggerated bodybuilder inflation.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera front_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-brawler/source/directions-v1/front_l/native-4x.png",
+        "sha256": "69f6b32b9f1fede88466a56fea8cd4afef2a8d87b4722411f1b7caf1e176908d"
+      },
+      {
+        "file": "characters/orc-combat-front_l-reaction-guide-v1.png",
+        "sha256": "9ba91fe7aa15bb4b2603f67aad3b1f5abcc74a06df5c20ae4042a03f19bb5890"
+      }
+    ],
+    "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+    "direction": "front_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Right straight punch",
+      "poses": "1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-brawler/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-brawler",
+    "job": "Brawler",
+    "folder": "characters/orc-01-brawler/source/combat-directions-v2/back_r",
+    "promptFile": "characters/orc-01-brawler/source/combat-directions-v2/back_r/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Brawler in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN RIGHT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN RIGHT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN RIGHT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Bare robust olive-green torso with the SAME anatomy and skin tone, worn off-white cloth wraps around wrists, knuckles and lower shins, dark loose knee trousers, a short burnt-red waist sash, simple worn low leather boots. No shoulder plate, chest armor, weapons or new tattoos. Practical unarmed fighter, original proportions, no exaggerated bodybuilder inflation.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_r, all aimed SCREEN RIGHT.",
+    "references": [
+      {
+        "file": "characters/orc-01-brawler/source/directions-v1/back_r/native-4x.png",
+        "sha256": "14a37fd2451b48856afadaff4a64bccb419e29261a2ef47a4799d08e40364828"
+      },
+      {
+        "file": "characters/orc-combat-back_r-reaction-guide-v1.png",
+        "sha256": "d2ad81e691e330de8e018b9f33e618fa10783e1227602fb972fabab22a656227"
+      }
+    ],
+    "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+    "direction": "back_r",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Right straight punch",
+      "poses": "1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-brawler/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  },
+  {
+    "id": "orc-01-brawler",
+    "job": "Brawler",
+    "folder": "characters/orc-01-brawler/source/combat-directions-v2/back_l",
+    "promptFile": "characters/orc-01-brawler/source/combat-directions-v2/back_l/sheet.prompt.md",
+    "prompt": "Create a NEW native-style pixel-art animation SOURCE SHEET of the SAME Orc Brawler in reference1. Reference1 alone defines the approved CAMERA, anatomy, outfit, palette and accessories. Draw THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera for EVERY pose: three-quarter BACK facing SCREEN LEFT, back of head and back garment visible, NO CHEST or front face. All attacks aim SCREEN LEFT. Never turn towards the opposite screen side. Do not mirror an image.\n\nAttack5 chronological: 1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-left with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.\nCRITICAL ANATOMY: The anatomical RIGHT arm starts at the shoulder projecting viewer RIGHT and acts towards SCREEN LEFT; the LEFT hand supports/guards. Keep that same action arm in follow-through, never switch arms.\n\nReference2 is ONLY the matching-camera neutral grey Hit3/Defeat5 motion guide. MIDDLE HIT3: backward recoil, absorb impact with bent knees, regain ready. BOTTOM DEFEAT5: upright stagger, buckle knees, kneel supported by hand, tip onto side with curled knees, fully collapsed curled on side. Same physical body size as standing while height decreases; never shrink a standing figure. Match the camera of reference1 throughout all rows, including reactions/falling. No frontal chest in rear views. Final curled body fits logical110-pixel width in128 canvas.\n\nOUTFIT: Bare robust olive-green torso with the SAME anatomy and skin tone, worn off-white cloth wraps around wrists, knuckles and lower shins, dark loose knee trousers, a short burnt-red waist sash, simple worn low leather boots. No shoulder plate, chest armor, weapons or new tattoos. Practical unarmed fighter, original proportions, no exaggerated bodybuilder inflation.\nSame mature brutal olive Orc, bald scalp (or approved raised charcoal hood for Rogue), compact robust body, approved face/proportions. EXACT front/rear garment, straps, belt, pouches and asymmetry from reference1. Body and clothes ONLY, empty hands: NO held/carried/sheathed weapons, bow, bowstring, arrow, quiver, staff, shield, dagger, projectile, orb, effect or other object, even for mimed attack.\n\nFull bodies and boots/hands visible, equal physical scale, large transparent margins/gaps; figures do not touch or overlap, no cropped last figure. Crisp chunky square logical pixels, deliberate clusters, 40-48-color own-outfit native style, dark one-pixel outline, upper-left light, no antialiasing or gradients. TRUE TRANSPARENT background, no floor, shadow, haze, grid, text, labels or scene. Exactly 13 separate complete figures; THIRTEEN figures in THREE rows of FIVE equal cells: TOP5 Attack; MIDDLE3 Hit in first3 cells with final2 cells EMPTY; BOTTOM5 Defeat. Camera back_l, all aimed SCREEN LEFT.",
+    "references": [
+      {
+        "file": "characters/orc-01-brawler/source/directions-v1/back_l/native-4x.png",
+        "sha256": "ffc80d8cab8947cd741076c0f83e263553eec08c6cb84e103b428ab1b1f43e59"
+      },
+      {
+        "file": "characters/orc-combat-back_l-reaction-guide-v1.png",
+        "sha256": "6059370fa6f6f2496f41f8ed27fa8f4fd24c379a118ccc6d873faa073b67fdd9"
+      }
+    ],
+    "baseApprovalDigest": "99862af65e2c1ab7ed0e4849299047f942881c92c160afa8831d693f4fd16635",
+    "direction": "back_l",
+    "states": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "action": {
+      "label": "Right straight punch",
+      "poses": "1 close boxing guard with both empty fists raised; 2 coil RIGHT shoulder and hip backward, left fist protects jaw; 3 explosive straight RIGHT punch towards screen-right with hip/shoulder rotation and planted lead foot; 4 right fist fully extended follow-through, left fist still guarding; 5 retract right fist to guard. Anatomical RIGHT hand punches, never left. No weapon or effects.",
+      "scope": "Body-only animation; no weapon/projectile/VFX runtime implemented"
+    },
+    "palette": "characters/orc-01-brawler/source/native-base-v1/front_r-native.png",
+    "generationName": "sheet",
+    "generationStates": {
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "preserveReactionSource": false
+  }
+]

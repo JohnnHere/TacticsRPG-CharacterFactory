@@ -1,0 +1,21 @@
+{
+  "provider": "OpenAI image_gen built-in",
+  "model": "not exposed by image_gen",
+  "source": "walk-correction-rejected-01.png",
+  "promptFile": "walk-corrected.prompt.md",
+  "references": [
+    {
+      "file": "characters/orc-01-scout/source/locomotion-front-v1/walk-row-to-edit.png",
+      "sha256": "4dddb4ae1beb1451dd9bd6f4544942dcf2d2d437a37ab9d98b2607f7957fc478"
+    },
+    {
+      "file": "characters/orc-01-scout/source/native-base-v1/front_r-native-4x.png",
+      "sha256": "67e51b06bf73d3789c3eb1fecfa8c113d208315a487e552e8579726982d7e0f4"
+    }
+  ],
+  "outputHint": "Generated images are saved to C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518 as C:\\Users\\João Orlando\\.codex\\generated_images\\01a15284-5dff-78d2-94c0-3ff31dc4a518\\exec-0921594c-7c11-441f-82c7-e67d04bf20ea.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "status": "REJECTED_VISUAL",
+  "reason": "Most roll cylinders remained on wrong hip; one frame duplicated roll. No native frames imported from this edit",
+  "sourceSha256": "63de1fc05bb82035b3671d5010f7ceedeeaff635a063305a92a0ab7a78092e93",
+  "promptSha256": "32c0e992e5bc51ef4107532ed3e3351305d75398f85e1a3f3261b94ff4fb3c1c"
+}
