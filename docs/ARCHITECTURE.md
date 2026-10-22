@@ -1,5 +1,9 @@
 # Arquitetura v0.1
 
+## Bridge Aseprite (2026-10-22)
+
+src/aseprite.mjs fornece descoberta/configuracao local, templates/forks, exportacao RGBA/timing/metadados/tilemaps, builds imutaveis, preview e aplicacao transacional de slots baseline. tools/aseprite/bridge.lua usa a API nativa em processo batch separado. Configuracao por ASEPRITE_PATH ou config/aseprite.local.json ignorado; nenhuma dependencia nova. Tipos genericos de assets ficam em assets/<kind>/<id>/source/; builds em dist/editor/<id>/<hash>/. O editor e opcional para os comandos legados. Contrato e limites em [ASEPRITE.md](ASEPRITE.md).
+
 Node.js >=20, modulos ESM e pngjs 7.0.0. JSON como fonte de dados, sem banco, servidor, bundler ou chaves. Tudo local apos npm ci. LibreSprite opcional. Node substitui o Python sugerido na conversa porque esta maquina ja tinha Node utilizavel; contratos JSON e PNG sao portaveis.
 
 src/core.mjs: caminhos confinados, IDs, JSON, inventario e hashes. references.mjs: snapshot, manifestos e catalogos. workflow.mjs: fichas, contexto, prompts e previews. recipes.mjs: receitas raciais/de Job e arquivo de versoes/imagens. images.mjs: PNG, medicao, composicao e validacao. cli.mjs: comandos e gates. config/style.json deriva regras das fontes e nao torna propostas em canone. unity/ contem apenas importador de staging.

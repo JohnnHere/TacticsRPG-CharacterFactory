@@ -1,5 +1,9 @@
 # Character Factory — instrucoes para agentes
 
+## Aseprite integrado
+
+Para autoria/revisao/exportacao 2D, leia docs/ASEPRITE.md. Execute editor-check; o caminho desta maquina fica em config/aseprite.local.json ignorado pelo Git (ou ASEPRITE_PATH). Use editor-fork para preservar a fonte aprovada antes de editar, editor-template para fontes vazias novas, editor-export para builds/preview/metadados e editor-apply para slots baseline com gates/backup. Processos batch --noinapp ocultos permitem trabalhar sem disputar a GUI com o usuario. Exporte apenas arquivos salvos; nao controle a janela aberta quando o usuario estiver usando a maquina. Assets genericos de cenarios/props/efeitos/UI/armas/inimigos usam perfis explicitos; tilemap exportado nao implementa terreno 3D ou overlays no Unity. Auditoria de fontes ativas: node tools/audit-aseprite-production.mjs; exemplos sinteticos: node tools/verify-aseprite-capabilities.mjs. Preserve os gates e os exportadores de acoes existentes.
+
 Objetivo: criar personagens e variantes em sprites 2D de pixel art refinada para TacticsRPG. Leia README.md, docs/VISUAL_IDENTITY.md, docs/WORKFLOW.md, docs/ROADMAP.md e references/manifest.json. Execute doctor. O usuario descartou ComfyUI, personagens modelados em 3D e assinatura de servico especializado em sprites. Use os comandos locais e, quando disponivel, a ferramenta de imagem da conversa. Nenhuma chave de API e necessaria para os comandos desta fabrica.
 
 ## Continuidade e destinos padrao

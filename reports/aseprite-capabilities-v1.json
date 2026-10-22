@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "createdAt": "2026-10-22T05:17:01.565Z",
+  "scope": "SYNTHETIC TEST FIXTURE ONLY; not production art or Unity terrain",
+  "tool": {
+    "status": "AVAILABLE",
+    "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+    "version": "Aseprite 1.3.18.6-x64",
+    "mode": "batch",
+    "windowsHide": true,
+    "steamClient": "--noinapp",
+    "cloudCalls": "none"
+  },
+  "build": "dist/editor/aseprite-capabilities-v1/79f3c0ba22e9ee51e47b",
+  "preview": "dist/editor/aseprite-capabilities-v1/79f3c0ba22e9ee51e47b/preview.html",
+  "summary": {
+    "jobs": 2,
+    "frames": 6,
+    "comparedFrames": 0
+  },
+  "checks": [
+    "frames and durations",
+    "empty frame retained",
+    "layer/tag/slice metadata",
+    "tileset raster export",
+    "tilemap indices and flip flags",
+    "tile dimensions and cel position",
+    "explicit tilesetId/tile index to RGBA PNG mapping"
+  ],
+  "tilemap": {
+    "baseIndex": 1,
+    "cells": [
+      {
+        "flags": 0,
+        "tile": 1,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "flags": 2147483648,
+        "tile": 2,
+        "x": 1,
+        "y": 0
+      }
+    ],
+    "frame": 0,
+    "height": 1,
+    "layer": "Terrain",
+    "tileHeight": 8,
+    "tileWidth": 8,
+    "tileset": "fixture-tiles",
+    "tilesetId": "tileset-1",
+    "width": 2,
+    "x": 8,
+    "y": 8
+  },
+  "tilesets": [
+    {
+      "baseIndex": 1,
+      "id": "tileset-1",
+      "name": "fixture-tiles",
+      "tileHeight": 8,
+      "tileWidth": 8,
+      "tiles": [
+        {
+          "file": "jobs/synthetic-tileset/tilesets/tileset-1/000.png",
+          "index": 0,
+          "paletteFrame": 0,
+          "sha256": "186caefba08caf5cdb224e1b3647d4256df42d3edd69a359deb5ee13d4fd59e4",
+          "rgbaSha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+        },
+        {
+          "file": "jobs/synthetic-tileset/tilesets/tileset-1/001.png",
+          "index": 1,
+          "paletteFrame": 0,
+          "sha256": "4bc17cd2479bbadc4acdc666e22213f1483383d1f25194f83f5b2cf2f78ea8dd",
+          "rgbaSha256": "78e401e0f5ebede800053fbbbb714942a3edd310a0b17c21553999528358ef07"
+        },
+        {
+          "file": "jobs/synthetic-tileset/tilesets/tileset-1/002.png",
+          "index": 2,
+          "paletteFrame": 0,
+          "sha256": "386297f5ae7e0ace48f09a52000bff8d7150ca35dd11ec3c924a6d99ddf3a16b",
+          "rgbaSha256": "5acc1f9e4787b882589656a96a62b319578817f20da564e5c937487115af074d"
+        }
+      ]
+    },
+    {
+      "baseIndex": 1,
+      "id": "tileset-2",
+      "name": "fixture-tiles",
+      "tileHeight": 8,
+      "tileWidth": 8,
+      "tiles": [
+        {
+          "file": "jobs/synthetic-tileset/tilesets/tileset-2/000.png",
+          "index": 0,
+          "paletteFrame": 0,
+          "sha256": "186caefba08caf5cdb224e1b3647d4256df42d3edd69a359deb5ee13d4fd59e4",
+          "rgbaSha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+        },
+        {
+          "file": "jobs/synthetic-tileset/tilesets/tileset-2/001.png",
+          "index": 1,
+          "paletteFrame": 0,
+          "sha256": "186caefba08caf5cdb224e1b3647d4256df42d3edd69a359deb5ee13d4fd59e4",
+          "rgbaSha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+        }
+      ]
+    }
+  ],
+  "tilesetFrames": [
+    {
+      "file": "jobs/synthetic-tileset/frames/000.png",
+      "width": 8,
+      "height": 8
+    },
+    {
+      "file": "jobs/synthetic-tileset/frames/001.png",
+      "width": 8,
+      "height": 8
+    },
+    {
+      "file": "jobs/synthetic-tileset/frames/002.png",
+      "width": 8,
+      "height": 8
+    }
+  ],
+  "unityIntegration": "NOT_RUN"
+}

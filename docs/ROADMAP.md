@@ -1,6 +1,18 @@
 # Evolucao e retomada da Character Factory
 
-Atualizado em 2026-10-19. Este arquivo orienta as proximas etapas entre conversas. O contexto persistente esta em AGENTS.md, docs/, referencias, receitas e pacotes de personagem. Ao abrir esta pasta como projeto, um agente com acesso a esses arquivos deve recuperar esse contexto antes de agir. Em outras ferramentas, anexar handoff/context.md, prompt.md e as imagens listadas.
+## Integracao Aseprite concluida — 2026-10-22
+
+Documentacao de ponta a ponta entregue em docs/ASEPRITE_INTEGRATION_V1.md, com arquitetura, responsabilidades, fluxos de autoria/aplicacao, contratos, evidencias, diagnostico, recuperacao e limites. docs/ASEPRITE.md permanece como guia operacional resumido. A documentacao foi conferida contra o codigo e os relatorios existentes; nenhuma nova alteracao artistica ou Unity nesta etapa.
+
+Pedido do criador: integrar de ponta a ponta o Aseprite instalado via Steam em F:\SteamLibrary\steamapps\common\Aseprite, trabalhando sem disputar o computador. Implementados editor-config/check/template/fork/export/apply, configuracao local ignorada, processos batch ocultos, builds imutaveis com fontes/PNGs/timing/metadados/preview, backup/rollback/idempotencia e gates de personagem. Fontes genericas para environment/prop/effect/ui/weapon/enemy, tilesets e layout tilemap com indices/flags/posicoes exportados. Sem API/assinatura/dependencia nova.
+
+Auditoria real das216 fontes ativas:888 quadros exportados RGBA/timing identicos +8 fallbacks, cobrindo896 PNGs;1112 arquivos originais e oito reviews preservados. Evidencias:reports/aseprite-production-audit-v1.json e reports/aseprite-capabilities-v1.json. Guia de retomada:docs/ASEPRITE.md. Decisao persistente: usar o bridge na autoria/exportacao futura; manter fontes aprovadas via fork e revisoes humanas existentes. O bridge nao cria arte automaticamente nem implementa runtime Unity.
+
+Proxima entrega artistica elegivel: escolher um ajuste real ou novo asset e usar fork/template -> edicao salva -> export/preview -> revisao -> apply quando for baseline de personagem. A autoria em camadas de corpo/roupa ainda precisa de demonstracao artistica; a exportacao de dados 2D de cenario esta pronta, mas conversao para alturas/colisoes/render3D continua extensao especifica do jogo.
+
+Fechamento verificado:13/13 testes PASS; previews Edge headless com888 quadros de producao +6 itens sinteticos RGBA exatos, HTTP/file:// e controles PASS, zero erros JS. Fluxo CLI real fork/export/apply com quatro frames retornou UNCHANGED e preservou assets.json/reviews/PNGs. Copia pronta:characters/orc-01/source/aseprite/idle-front-r-editor-v1/source/orc-01-00.aseprite. Relatorio consolidado:reports/aseprite-integration-v1.json. Nenhuma interacao com mouse/teclado ou escrita Unity.
+
+Atualizado em 2026-10-22. Este arquivo orienta as proximas etapas entre conversas. O contexto persistente esta em AGENTS.md, docs/, referencias, receitas e pacotes de personagem. Ao abrir esta pasta como projeto, um agente com acesso a esses arquivos deve recuperar esse contexto antes de agir. Em outras ferramentas, anexar handoff/context.md, prompt.md e as imagens listadas.
 
 ## Como retomar
 
@@ -78,12 +90,12 @@ Baseline preservada:679 PNGs nativos e168 fontes editaveis (28 estaticas +140 an
 
 ## 4. Melhorias tecnicas que podem acompanhar as revisoes
 
-Estas tarefas sao backlog; as funcoes ainda nao foram implementadas.
+Os itens ainda nao marcados sao backlog; os concluidos possuem evidencia nos documentos vinculados.
 
 - [ ] Comando status: mostrar personagem, revisoes atuais/desatualizadas, arquivos faltantes e proxima acao, derivando os JSONs existentes.
 - [ ] Comparacao visual lado a lado entre versoes/roupas/racas e entre referencias de um mesmo Job.
 - [x] Preview de animacao Orc com cinco estados, quatro vistas sincronizadas, velocidades, scrubbing e pausa; 92 quadros carregados sem erros de JavaScript no Edge. Generalizacao para outros pacotes continua no backlog.
-- [ ] Exportacao assistida do editor 2D e perfis adicionais com contratos explicitos.
+- [x] Exportacao assistida Aseprite com perfis explicitos de autoria, metadados/tilemap e aplicacao baseline com gates; docs/ASEPRITE.md. Perfis que exigem runtime novo continuam bloqueados no exportador Unity.
 - [ ] Preparar migration/versionamento de fichas antes de mudar schemaVersion.
 - [ ] Definir pacote compartilhado de assets de armas e estender o runtime para exibi-las separadamente somente quando equipadas e invocadas por uma acao; validar encaixe, oclusao e sincronizacao. O contrato visual esta decidido, a implementacao nao.
 

@@ -1,5 +1,7 @@
 # Fluxo de producao e comandos
 
+Autoria e revisao no Aseprite: [guia integrado](ASEPRITE.md). `editor-fork` cria copia de trabalho; `editor-export` entrega build/preview; `editor-apply` aplica slots baseline com gates/backup. `editor-template` organiza fontes novas e assets genericos. O bridge usa modo batch sem controlar a GUI e exige arquivos salvos. Revisoes artisticas e integracao Unity seguem os marcos abaixo.
+
 Execute os comandos a partir da raiz desta fabrica. Alternativa no Windows: `powershell -NoProfile -ExecutionPolicy Bypass -File .\forge.ps1 help`. O Bypass se aplica somente a esse processo; nao e necessario mudar a politica global. Os arquivos usam UTF-8.
 
 ## 1. Ficha

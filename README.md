@@ -1,5 +1,9 @@
 # TacticsRPG Character Factory
 
+[Documentação completa da integração Aseprite](docs/ASEPRITE_INTEGRATION_V1.md) — o que foi implementado, como funciona, exemplos de ponta a ponta, validações, resultados e limites.
+
+**Aseprite integrado (Steam ou standalone):** configuracao local, templates com camadas, copias de trabalho, exportacao batch de PNGs/timing/metadados/tilemaps, preview e aplicacao nos slots de personagem com backup/gates. [Guia e comandos](docs/ASEPRITE.md). Verifique com `node src/cli.mjs editor-check`. Auditoria real:216 fontes,888 quadros RGBA identicos +8 fallbacks, cobrindo896 PNGs. O mesmo bridge atende assets de cenarios, props, efeitos, UI, inimigos e armas com perfis proprios.
+
 Fabrica de pacotes de criacao, revisao e exportacao de **personagens 2D em pixel art**. Criada para manter a identidade visual entre racas, individuos e roupas de Jobs ao longo do tempo. Todo o trabalho local usa arquivos editaveis e versionados. Os comandos funcionam sem assinatura, login ou chamadas a APIs.
 
 A criacao artistica pode acontecer pela ferramenta de imagem disponivel na conversa com o agente, usando o pacote gerado pela fabrica, ou por trabalho 2D em um editor como LibreSprite. Os comandos preparam contexto, organizam os resultados e compoem pecas existentes; imagens novas e animacoes precisam de autoria e revisao visual. Nesta versao nao ha gerador autonomo de quadros nem autenticacao automatica em ChatGPT/Google.

@@ -8,9 +8,16 @@ import { syncReferences, verifyReferences } from './references.mjs';
 import { createCharacter, prepare, preview } from './workflow.mjs';
 import { decode, validate, composite, savePNG } from './images.mjs';
 import { saveRecipe, reviewRecipe } from './recipes.mjs';
+import { checkAseprite, configureAseprite, createEditorTemplate, forkEditorSources, exportAseprite, applyCharacterBuild } from './aseprite.mjs';
 
 const help=`Character Factory 0.1 — sprites 2D / Node >=20
   doctor
+  editor-config --input "CAMINHO/Aseprite.exe"
+  editor-check
+  editor-template --manifest config/aseprite-template.example.json
+  editor-fork --manifest CAMINHO/editor.json --name revisao-v2 [--job JOB] [--id PERSONAGEM]
+  editor-export --manifest CAMINHO/editor.json
+  editor-apply --id orc-01 --build dist/editor/ID/BUILD [--force]
   sync --source ../TacticsRPG [--accept-update]
   catalog --kind races|jobs
   new --id orc-01 --race Orc --job Warrior
@@ -52,16 +59,22 @@ function required(o,...keys) {for(const key of keys) if(!o[key]) throw Error(`Pa
 
 export function run(argv=process.argv.slice(2)) {
   const [command='help',...rest]=argv;
-  const names=['id','race','job','from','source','kind','purpose','state','input','name','provider','model','slot','stage','manifest','gate','decision','reviewer','evidence'];
+  const names=['id','race','job','from','source','kind','purpose','state','input','name','provider','model','slot','stage','manifest','gate','decision','reviewer','evidence','build'];
   const {values:o}=parseArgs({args:rest,options:{...Object.fromEntries(names.map(n=>[n,{type:'string'}])),force:{type:'boolean'},'accept-update':{type:'boolean'},help:{type:'boolean'}},strict:true});
   if(command==='help'||o.help) return console.log(help);
+  if(command==='editor-config') {required(o,'input');console.log(JSON.stringify(configureAseprite(o.input),null,2));return;}
+  if(command==='editor-check') {const result=checkAseprite();console.log(JSON.stringify(result,null,2));return result.status==='AVAILABLE'?0:1;}
   if(command==='sync') {required(o,'source'); return console.log(JSON.stringify(syncReferences(o.source,o['accept-update']),null,2));}
   const errors=verifyReferences();
   if(command==='doctor') {
-    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Pacotes para ferramentas de imagem da conversa; nenhum endpoint/API cobrado configurado.',editor:'LibreSprite opcional; nao requerido para comandos locais.'},null,2));
+    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Pacotes para ferramentas de imagem da conversa; nenhum endpoint/API cobrado configurado.',editor:checkAseprite(),editorPolicy:'Aseprite/LibreSprite opcionais. editor-check exige Aseprite; comandos existentes continuam locais.'},null,2));
     return errors.length?1:0;
   }
   if(errors.length) throw Error('Referencias ausentes/alteradas. Execute doctor e sync antes de prosseguir.');
+  if(command==='editor-template') {required(o,'manifest');console.log(JSON.stringify(createEditorTemplate(o.manifest),null,2));return;}
+  if(command==='editor-fork') {required(o,'manifest','name');console.log(JSON.stringify(forkEditorSources(o.manifest,o.name,{jobId:o.job,characterId:o.id}),null,2));return;}
+  if(command==='editor-export') {required(o,'manifest');const result=exportAseprite(o.manifest,{onProgress:p=>{if(p.completed%10===0||p.completed===p.total)console.error(`Aseprite ${p.completed}/${p.total}: ${p.id}`);}});console.log(JSON.stringify({status:result.status,path:result.path,preview:result.path+'/preview.html',reused:result.reused,summary:result.summary},null,2));return;}
+  if(command==='editor-apply') {required(o,'id','build');console.log(JSON.stringify(applyCharacterBuild(o.id,o.build,o.force),null,2));return;}
   if(command==='catalog') {if(!['races','jobs'].includes(o.kind)) throw Error('--kind races|jobs'); console.log(JSON.stringify(readJSON(path.join(ROOT,'catalogs',o.kind+'.json')),null,2));return;}
   if(command==='new') {required(o,'id','race','job');createCharacter(o.id,o.race,o.job);console.log(`Criado: characters/${o.id}/handoff/prompt.md`);return;}
   if(command==='outfit') {required(o,'id','from','job');const parent=loadCharacter(o.from);createCharacter(o.id,parent.spec.race.id,o.job,o.from);console.log(`Roupa candidata criada: ${o.id}; identidade preservada de ${o.from}.`);return;}

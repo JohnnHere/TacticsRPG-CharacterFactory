@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "status": "COMPLETE_FACTORY_AUTHORING_AND_EXPORT",
+  "createdAt": "2026-10-22T05:19:18.048Z",
+  "tool": {
+    "status": "AVAILABLE",
+    "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+    "version": "Aseprite 1.3.18.6-x64",
+    "mode": "batch",
+    "windowsHide": true,
+    "steamClient": "--noinapp",
+    "cloudCalls": "none"
+  },
+  "commands": [
+    "editor-config",
+    "editor-check",
+    "editor-template",
+    "editor-fork",
+    "editor-export",
+    "editor-apply"
+  ],
+  "assetKinds": [
+    "character",
+    "enemy",
+    "environment",
+    "prop",
+    "effect",
+    "ui",
+    "weapon"
+  ],
+  "tests": {
+    "command": "npm.cmd test",
+    "passed": 13,
+    "failed": 0,
+    "skipped": 0
+  },
+  "production": {
+    "jobs": 216,
+    "frames": 888,
+    "comparedFrames": 888,
+    "fallbacks": 8,
+    "productionPng": 896,
+    "originalFilesPreserved": 1112,
+    "creatorReviewFilesPreserved": 8,
+    "elapsedMs": 47926,
+    "build": "dist/editor/orc-production-aseprite-v1/dcbb8fa6c7a9e7abf846",
+    "preview": "dist/editor/orc-production-aseprite-v1/dcbb8fa6c7a9e7abf846/preview.html"
+  },
+  "browser": [
+    {
+      "scope": "production",
+      "status": "PASS",
+      "exactRgbaFrames": 888,
+      "clips": 216,
+      "http": "PASS",
+      "fileDisplay": "PASS",
+      "controlsAndRapidSelection": "PASS",
+      "jsErrors": [],
+      "screenshot": "reports/aseprite-production-preview-v1.png",
+      "build": "dist/editor/orc-production-aseprite-v1/dcbb8fa6c7a9e7abf846"
+    },
+    {
+      "scope": "capabilities",
+      "status": "PASS",
+      "exactRgbaFrames": 6,
+      "clips": 2,
+      "http": "PASS",
+      "fileDisplay": "PASS",
+      "controlsAndRapidSelection": "PASS",
+      "jsErrors": [],
+      "screenshot": "reports/aseprite-capabilities-preview-v1.png",
+      "build": "dist/editor/aseprite-capabilities-v1/79f3c0ba22e9ee51e47b"
+    }
+  ],
+  "workingCopy": {
+    "source": "characters/orc-01/source/aseprite/idle-front-r-editor-v1/source/orc-01-00.aseprite",
+    "manifest": "characters/orc-01/source/aseprite/idle-front-r-editor-v1/editor.json",
+    "build": "dist/editor/idle-front-r-editor-v1/057ef806ae29b0ab94f0",
+    "applyResult": {
+      "status": "UNCHANGED",
+      "frames": 4
+    }
+  },
+  "implementation": [
+    {
+      "file": "src/aseprite.mjs",
+      "sha256": "e305525262c9b371b7880a85f0684b963aab7a6df3b253ca2325b4f06fff63d5"
+    },
+    {
+      "file": "src/cli.mjs",
+      "sha256": "d5a8d782810dbbb52d8f29d9ef19072d963303e0933a5434c2be9dbadade6592"
+    },
+    {
+      "file": "tools/aseprite/bridge.lua",
+      "sha256": "78d1fbc01262520e53012c7ca0088713ec9caf451a20b06107a0a6fb71621fb9"
+    },
+    {
+      "file": "test/aseprite.test.mjs",
+      "sha256": "709aa15fda819d9d5043734ec0a988848334f133bddda398cb02c18b9fa6a74c"
+    },
+    {
+      "file": "test/fixtures/aseprite.lua",
+      "sha256": "b246d080b1b2d4980add13625b3a2e25b670bfa1fadde888cf259ad86965f9d2"
+    }
+  ],
+  "evidence": [
+    "reports/aseprite-production-audit-v1.json",
+    "reports/aseprite-capabilities-v1.json",
+    "reports/aseprite-character-flow-v1.json",
+    "reports/aseprite-preview-validation-v1.json"
+  ],
+  "documentation": "docs/ASEPRITE.md",
+  "runtimeIntegration": "NOT_RUN; 3D terrain and equipment rendering remain game extensions",
+  "desktopInteraction": "NONE; batch and headless verification",
+  "newRuntimeDependencies": 0,
+  "newCloudServices": 0,
+  "artisticApprovalsChanged": false,
+  "reuseAssessment": [
+    {
+      "component": "approved editable art and review gates",
+      "category": "REUSE_DIRECT",
+      "evidence": "216 selected source manifests and preserved hashes",
+      "adaptation": "Independent saved working copies, existing baseline slots",
+      "risk": "Art edits require new creator review",
+      "dependencies": [
+        "source-manifest.json",
+        "character.json",
+        "reviews.json"
+      ],
+      "validation": "888 identical RGBA frames, 8 matching fallbacks"
+    },
+    {
+      "component": "editor bridge and generic asset pipeline",
+      "category": "CREATE_NEW",
+      "evidence": "src/aseprite.mjs and tools/aseprite/bridge.lua",
+      "adaptation": "Hidden local batch processes with explicit profiles and immutable outputs",
+      "risk": "Version changes require capability checks",
+      "dependencies": [
+        "Aseprite >=1.3 <2",
+        "existing Node/pngjs"
+      ],
+      "validation": "13 tests and 894 exact browser-rendered frames"
+    },
+    {
+      "component": "Unity terrain and weapon overlays",
+      "category": "REQUIRES_EXTENSION",
+      "evidence": "docs/ARCHITECTURE.md and docs/EQUIPMENT_AND_ACTIONS.md",
+      "adaptation": "Per-game runtime import and presentation implementation",
+      "risk": "2D layout export does not prove 3D gameplay/occlusion",
+      "dependencies": [
+        "separate authorized Unity task"
+      ],
+      "validation": "NOT_RUN"
+    }
+  ],
+  "technicalDocumentation": "docs/ASEPRITE_INTEGRATION_V1.md",
+  "documentationUpdatedAt": "2026-10-22T05:24:02.785Z"
+}
