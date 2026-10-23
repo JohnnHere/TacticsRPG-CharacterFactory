@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-01-archer-production-v4",
+  "kind": "character",
+  "characterId": "orc-01-archer",
+  "jobs": [
+    {
+      "id": "orc-01-archer-00",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-00.aseprite",
+      "sourceSha256": "c0ff3cd427d63928cdb81d643ebb6ccd1ed08d0cf96171547bcd52d3e6048286",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 1,
+        "durationsMs": [
+          100
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/sprites/Directions/orc_01_archer_dir_front_r.png"
+      ],
+      "targets": [
+        "Directions/orc_01_archer_dir_front_r.png"
+      ]
+    },
+    {
+      "id": "orc-01-archer-01",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-01.aseprite",
+      "sourceSha256": "b95c18a2b6c3409a6eff338a5557ffa68c99bb0868cc0c4ec91ff0b998e7b4d4",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 1,
+        "durationsMs": [
+          100
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/sprites/Directions/orc_01_archer_dir_front_l.png"
+      ],
+      "targets": [
+        "Directions/orc_01_archer_dir_front_l.png"
+      ]
+    },
+    {
+      "id": "orc-01-archer-02",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-02.aseprite",
+      "sourceSha256": "3eb1c3b2603470e3671baddd859994ec5098d4f3d098fee83b19fb1d71203a0d",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 1,
+        "durationsMs": [
+          100
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/sprites/Directions/orc_01_archer_dir_back_r.png"
+      ],
+      "targets": [
+        "Directions/orc_01_archer_dir_back_r.png"
+      ]
+    },
+    {
+      "id": "orc-01-archer-03",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-03.aseprite",
+      "sourceSha256": "51dc7deb6073ee1aef24bf0cb78e4fb033a4ec2e5398c01673d61d824ce00946",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 1,
+        "durationsMs": [
+          100
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/sprites/Directions/orc_01_archer_dir_back_l.png"
+      ],
+      "targets": [
+        "Directions/orc_01_archer_dir_back_l.png"
+      ]
+    },
+    {
+      "id": "orc-01-archer-04",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-04.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 4,
+        "durationsMs": [
+          240,
+          240,
+          240,
+          240
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_r/frames/03.png"
+      ],
+      "targets": [
+        "Animations/Idle/idle_front_r_00.png",
+        "Animations/Idle/idle_front_r_01.png",
+        "Animations/Idle/idle_front_r_02.png",
+        "Animations/Idle/idle_front_r_03.png"
+      ],
+      "sourceSha256": "c4161f436df8c1bd6ca5595417623cbf11d60e979c204ad3b537ad053e7557ab"
+    },
+    {
+      "id": "orc-01-archer-05",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-05.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 6,
+        "durationsMs": [
+          73,
+          73,
+          73,
+          73,
+          73,
+          73
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/04.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_r/frames/05.png"
+      ],
+      "targets": [
+        "Animations/Walk/walk_front_r_00.png",
+        "Animations/Walk/walk_front_r_01.png",
+        "Animations/Walk/walk_front_r_02.png",
+        "Animations/Walk/walk_front_r_03.png",
+        "Animations/Walk/walk_front_r_04.png",
+        "Animations/Walk/walk_front_r_05.png"
+      ],
+      "sourceSha256": "f285e5a701cf00939cf239bbb76d6c548346e083a7cecd8186b10fc6d71eba61"
+    },
+    {
+      "id": "orc-01-archer-06",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-06.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_r/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Attack/attack_front_r_00.png",
+        "Animations/Attack/attack_front_r_01.png",
+        "Animations/Attack/attack_front_r_02.png",
+        "Animations/Attack/attack_front_r_03.png",
+        "Animations/Attack/attack_front_r_04.png"
+      ],
+      "sourceSha256": "ce7226dd7e6d14a5d8811604b8141cc1f2684716981299f31e818b2845fa2f30"
+    },
+    {
+      "id": "orc-01-archer-07",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-07.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_r/frames/02.png"
+      ],
+      "targets": [
+        "Animations/Hit/hit_front_r_00.png",
+        "Animations/Hit/hit_front_r_01.png",
+        "Animations/Hit/hit_front_r_02.png"
+      ],
+      "sourceSha256": "62f21a6156fb4964f808d8e60d19799b4eb06c4d205bc40428da8e6e555304af"
+    },
+    {
+      "id": "orc-01-archer-08",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-08.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_r/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Defeat/defeat_front_r_00.png",
+        "Animations/Defeat/defeat_front_r_01.png",
+        "Animations/Defeat/defeat_front_r_02.png",
+        "Animations/Defeat/defeat_front_r_03.png",
+        "Animations/Defeat/defeat_front_r_04.png"
+      ],
+      "sourceSha256": "1dcad00433297effe5428de7eb5720c72c38f2b0f0ff07c9ca3d534eefc5fef9"
+    },
+    {
+      "id": "orc-01-archer-09",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-09.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 4,
+        "durationsMs": [
+          240,
+          240,
+          240,
+          240
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-front_l/frames/03.png"
+      ],
+      "targets": [
+        "Animations/Idle/idle_front_l_00.png",
+        "Animations/Idle/idle_front_l_01.png",
+        "Animations/Idle/idle_front_l_02.png",
+        "Animations/Idle/idle_front_l_03.png"
+      ],
+      "sourceSha256": "5a1f15bd6fba6a2df7803e6d1ffc289023be6380b77a5309190b058657bf4ab0"
+    },
+    {
+      "id": "orc-01-archer-10",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-10.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 6,
+        "durationsMs": [
+          73,
+          73,
+          73,
+          73,
+          73,
+          73
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/04.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-front_l/frames/05.png"
+      ],
+      "targets": [
+        "Animations/Walk/walk_front_l_00.png",
+        "Animations/Walk/walk_front_l_01.png",
+        "Animations/Walk/walk_front_l_02.png",
+        "Animations/Walk/walk_front_l_03.png",
+        "Animations/Walk/walk_front_l_04.png",
+        "Animations/Walk/walk_front_l_05.png"
+      ],
+      "sourceSha256": "82e90e9a8fecfaa55ddf81252342f8c47fcc3d88fac67ac32eb97ec2b0e2ffa5"
+    },
+    {
+      "id": "orc-01-archer-11",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-11.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-front_l/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Attack/attack_front_l_00.png",
+        "Animations/Attack/attack_front_l_01.png",
+        "Animations/Attack/attack_front_l_02.png",
+        "Animations/Attack/attack_front_l_03.png",
+        "Animations/Attack/attack_front_l_04.png"
+      ],
+      "sourceSha256": "bf99a01e256ecce096d13d755985b73174c707547a2714652eeedc5440a3c7f9"
+    },
+    {
+      "id": "orc-01-archer-12",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-12.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-front_l/frames/02.png"
+      ],
+      "targets": [
+        "Animations/Hit/hit_front_l_00.png",
+        "Animations/Hit/hit_front_l_01.png",
+        "Animations/Hit/hit_front_l_02.png"
+      ],
+      "sourceSha256": "e7630fa392d028883991686003593b68838ffa16099ce678e310eef0f2af091a"
+    },
+    {
+      "id": "orc-01-archer-13",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-13.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-front_l/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Defeat/defeat_front_l_00.png",
+        "Animations/Defeat/defeat_front_l_01.png",
+        "Animations/Defeat/defeat_front_l_02.png",
+        "Animations/Defeat/defeat_front_l_03.png",
+        "Animations/Defeat/defeat_front_l_04.png"
+      ],
+      "sourceSha256": "706f8f2b3790e532a606bdc17581649449d882cdbd4d690ac64e3d3304c5365c"
+    },
+    {
+      "id": "orc-01-archer-14",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-14.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 4,
+        "durationsMs": [
+          240,
+          240,
+          240,
+          240
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_r/frames/03.png"
+      ],
+      "targets": [
+        "Animations/Idle/idle_back_r_00.png",
+        "Animations/Idle/idle_back_r_01.png",
+        "Animations/Idle/idle_back_r_02.png",
+        "Animations/Idle/idle_back_r_03.png"
+      ],
+      "sourceSha256": "c691c198bf2d325145903afd6f92104548081f51f1edcdd07a9a18fcf0c60e60"
+    },
+    {
+      "id": "orc-01-archer-15",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-15.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 6,
+        "durationsMs": [
+          73,
+          73,
+          73,
+          73,
+          73,
+          73
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/04.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_r/frames/05.png"
+      ],
+      "targets": [
+        "Animations/Walk/walk_back_r_00.png",
+        "Animations/Walk/walk_back_r_01.png",
+        "Animations/Walk/walk_back_r_02.png",
+        "Animations/Walk/walk_back_r_03.png",
+        "Animations/Walk/walk_back_r_04.png",
+        "Animations/Walk/walk_back_r_05.png"
+      ],
+      "sourceSha256": "f1933b12c41252ead963a6e13a8b8b42bf3dee65ef2cd253a1ee13433af8b64d"
+    },
+    {
+      "id": "orc-01-archer-16",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-16.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_r/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Attack/attack_back_r_00.png",
+        "Animations/Attack/attack_back_r_01.png",
+        "Animations/Attack/attack_back_r_02.png",
+        "Animations/Attack/attack_back_r_03.png",
+        "Animations/Attack/attack_back_r_04.png"
+      ],
+      "sourceSha256": "7208636b42050b42e17dc6b767565de576168d649f77a8d73447572f6344d87d"
+    },
+    {
+      "id": "orc-01-archer-17",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-17.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_r/frames/02.png"
+      ],
+      "targets": [
+        "Animations/Hit/hit_back_r_00.png",
+        "Animations/Hit/hit_back_r_01.png",
+        "Animations/Hit/hit_back_r_02.png"
+      ],
+      "sourceSha256": "49f70b258b8f9445af3f5c5b4dee84e13195ae2532dfddb5f7467a0fb4881690"
+    },
+    {
+      "id": "orc-01-archer-18",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-18.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_r/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Defeat/defeat_back_r_00.png",
+        "Animations/Defeat/defeat_back_r_01.png",
+        "Animations/Defeat/defeat_back_r_02.png",
+        "Animations/Defeat/defeat_back_r_03.png",
+        "Animations/Defeat/defeat_back_r_04.png"
+      ],
+      "sourceSha256": "2db43238247b08b10f932cab2f184b2f29b0d6305f8064db5fb53953bf6a0d6b"
+    },
+    {
+      "id": "orc-01-archer-19",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-19.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 4,
+        "durationsMs": [
+          240,
+          240,
+          240,
+          240
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/idle-back_l/frames/03.png"
+      ],
+      "targets": [
+        "Animations/Idle/idle_back_l_00.png",
+        "Animations/Idle/idle_back_l_01.png",
+        "Animations/Idle/idle_back_l_02.png",
+        "Animations/Idle/idle_back_l_03.png"
+      ],
+      "sourceSha256": "a45c8f4fdf3e029732946e1179275f8d96390df3c82155bbc60185127af483cb"
+    },
+    {
+      "id": "orc-01-archer-20",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-20.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 6,
+        "durationsMs": [
+          73,
+          73,
+          73,
+          73,
+          73,
+          73
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/04.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/walk-back_l/frames/05.png"
+      ],
+      "targets": [
+        "Animations/Walk/walk_back_l_00.png",
+        "Animations/Walk/walk_back_l_01.png",
+        "Animations/Walk/walk_back_l_02.png",
+        "Animations/Walk/walk_back_l_03.png",
+        "Animations/Walk/walk_back_l_04.png",
+        "Animations/Walk/walk_back_l_05.png"
+      ],
+      "sourceSha256": "2c161d5cbe131b46fb22f446d68f7e261cdc1bc239aa87754d700b283fcceeb6"
+    },
+    {
+      "id": "orc-01-archer-21",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-21.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/attack-back_l/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Attack/attack_back_l_00.png",
+        "Animations/Attack/attack_back_l_01.png",
+        "Animations/Attack/attack_back_l_02.png",
+        "Animations/Attack/attack_back_l_03.png",
+        "Animations/Attack/attack_back_l_04.png"
+      ],
+      "sourceSha256": "9bd6c9a84b436f9032fe78212179c0790f1bdc28d275be6be727597856267922"
+    },
+    {
+      "id": "orc-01-archer-22",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-22.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/hit-back_l/frames/02.png"
+      ],
+      "targets": [
+        "Animations/Hit/hit_back_l_00.png",
+        "Animations/Hit/hit_back_l_01.png",
+        "Animations/Hit/hit_back_l_02.png"
+      ],
+      "sourceSha256": "af7ec4b1df17429b8fc8d477fe530a92f6c880b9cef4cd71997d617c4ab5ba72"
+    },
+    {
+      "id": "orc-01-archer-23",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-23.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/defeat-back_l/frames/04.png"
+      ],
+      "targets": [
+        "Animations/Defeat/defeat_back_l_00.png",
+        "Animations/Defeat/defeat_back_l_01.png",
+        "Animations/Defeat/defeat_back_l_02.png",
+        "Animations/Defeat/defeat_back_l_03.png",
+        "Animations/Defeat/defeat_back_l_04.png"
+      ],
+      "sourceSha256": "9b7346adf607a8492aee93a82f09df5fa4a26d074e8b41cf5aa6bd6f1151d2cd"
+    },
+    {
+      "id": "orc-01-archer-24",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-24.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_r/frames/04.png"
+      ],
+      "sourceSha256": "3213026f1187eea5db2caf25ada438fbec0598a1dac1a11e50d5c6842534ea23"
+    },
+    {
+      "id": "orc-01-archer-25",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-25.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-front_l/frames/04.png"
+      ],
+      "sourceSha256": "1a6a67c0d47b350666ca89d79ebb7440df28f6cc452810b2da6d882740f98036"
+    },
+    {
+      "id": "orc-01-archer-26",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-26.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_r/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_r/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_r/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_r/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_r/frames/04.png"
+      ],
+      "sourceSha256": "69c6a6427a297da92e36a4a342ff70e370d404a81e549e23ef69e25735dd0e1f"
+    },
+    {
+      "id": "orc-01-archer-27",
+      "source": "characters/orc-01-archer/source/aseprite/orc-production-v4/source/orc-01-archer-27.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_l/frames/00.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_l/frames/01.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_l/frames/02.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_l/frames/03.png",
+        "characters/orc-01-archer/source/aseprite/orc-production-v4/clips/unarmed-back_l/frames/04.png"
+      ],
+      "sourceSha256": "998430e67afa8c58d329849636659a35f310c56efebc90bf30cffd4cbef05630"
+    }
+  ]
+}

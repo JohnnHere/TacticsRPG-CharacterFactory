@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-v2-to-v4-retouch",
+  "kind": "character",
+  "characterId": "orc-01-aseprite-v4",
+  "jobs": [
+    {
+      "id": "attack-front-r",
+      "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack.aseprite",
+      "sourceSha256": "bd54e0127bb0dfd717f09daa7d91e177ef66f47befee72fc2b4590e1b829e0fc",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_00.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_01.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_02.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_03.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_04.png"
+      ]
+    },
+    {
+      "id": "hit-front-r",
+      "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit.aseprite",
+      "sourceSha256": "491747fdfa8fcb7c3e9a50ed706856dfe3876b47154400726388541d4406ebbc",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_00.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_01.png",
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_02.png"
+      ]
+    },
+    {
+      "id": "concept-front-r",
+      "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept.aseprite",
+      "sourceSha256": "e604c154c93970dd8b82e778ba0c764bc29f93997f9d9ffe68b9dd71b24671e8",
+      "profile": {
+        "width": 1254,
+        "height": 1254,
+        "frames": 1,
+        "durationsMs": [
+          100
+        ],
+        "groundY": null,
+        "alpha": "any",
+        "requireContent": true,
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png"
+      ]
+    }
+  ]
+}

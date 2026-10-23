@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-01-aseprite-v3",
+  "identityId": "cd362b7a-e190-4e5b-aa7c-54970cfd8353",
+  "name": "Orc Warrior — autoria nativa Aseprite v3",
+  "status": "candidate",
+  "createdAt": "2026-10-22T06:05:46.260Z",
+  "styleId": "tactics-core-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Dano físico (papel do Job Warrior)",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Concept-07 escolhido e aprovado pelo criador em 2026-10-19: Orc adulto de feição bestial e brutal, testa pesada, focinho/nariz largo e achatado, maxilar anguloso, olhos ferozes e presas inferiores grandes e irregulares; expressão tensa, agressiva e battle-hardened, sem serenidade humana. Identidade deste indivíduo; não universalizar como cânone de todos os Orcs.",
+    "hair": "Careca, couro cabeludo totalmente nu; preservar sobrancelhas escuras, conforme concept-07 escolhido pelo criador em 2026-10-19.",
+    "ageImpression": "Adulto",
+    "body": "Compacto, ombros largos e musculatura robusta, com proporção tática legível dentro do perfil de 1 tile; não copiar o corpo humanoide do piloto.",
+    "palette": [
+      "verde-oliva acinzentado",
+      "ferro escuro",
+      "couro castanho gasto",
+      "vermelho queimado"
+    ],
+    "dominantHand": "right",
+    "asymmetries": [
+      "mão dominante direita, vazia no conceito base",
+      "proteção de ombro assimétrica"
+    ],
+    "lighting": "Proposta de luz superior esquerda, com clusters e contraste alinhados à âncora; direção ainda candidata."
+  },
+  "outfit": {
+    "id": "warrior-candidate",
+    "description": "Proposta candidata: proteção de ferro escuro e couro, faixa curta vermelho queimado e um ombro reforçado. Conceito/base sem armas, escudo ou capa; ainda sem receita visual aprovada.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Possível machado de batalha de uma mão como asset independente, ainda não criado; aparece somente equipado e invocado por ação."
+  },
+  "styleRecipes": [],
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": 126,
+    "ppu": 100,
+    "counts": {
+      "Idle": 4,
+      "Walk": 6,
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "note": "Baseline do piloto humanoide 1 tile; anatomias diferentes exigem perfil e revisao. Walk atual usa 3 quadros/tile."
+  },
+  "references": [
+    {
+      "path": "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+      "role": "global-style-anchor"
+    },
+    {
+      "character": "orc-01-refinement-v2",
+      "role": "same-individual-body-and-face",
+      "sourceDigest": "a68160e2c23bbdf6b828c138b0bc42d931c1cd17b06a9ee7140681451b88583f"
+    }
+  ],
+  "derivedFrom": {
+    "character": "orc-01-refinement-v2",
+    "purpose": "same-approved-design-reauthored-in-Aseprite",
+    "mustPreserve": [
+      "identityId",
+      "race",
+      "appearance"
+    ],
+    "conceptApprovalAtCreation": true
+  },
+  "reuseAssessment": [
+    {
+      "component": "Individual identity and approved outfit",
+      "category": "REUSE_DIRECT",
+      "evidence": "Approved V2 concept and creator statement in conversation 2026-10-22.",
+      "adaptation": "Visual reference only; no raster imported.",
+      "artRisk": "New explicit drawings may deviate in face and proportions.",
+      "technicalRisk": "No live approved slot modified.",
+      "dependencies": [
+        "V2 approved reference"
+      ],
+      "validation": "PENDING_CREATOR",
+      "productionImpact": "New isolated study."
+    },
+    {
+      "component": "Native pixel artwork and poses",
+      "category": "CREATE_NEW",
+      "evidence": "characters/orc-01-aseprite-v3/source/aseprite/author-orc-v3.lua",
+      "adaptation": "Native 128px original drawings, material shading and action silhouettes in Aseprite.",
+      "artRisk": "Simpler shading and anatomy than V2; quality is not guaranteed by editor choice.",
+      "technicalRisk": "Check compositing, bounds, palette, exact export and cels.",
+      "dependencies": [
+        "Aseprite Lua runtime"
+      ],
+      "validation": "TECHNICAL_PASS_ART_REVIEW_PENDING",
+      "productionImpact": "Concept1 + Attack5 + Hit3 regional layered frames."
+    },
+    {
+      "component": "Timing and review exporter",
+      "category": "REUSE_DIRECT",
+      "evidence": "V2 durations and src/aseprite.mjs.",
+      "adaptation": "Same counts and total action time for equal comparison.",
+      "artRisk": "Timing alone cannot establish better motion.",
+      "technicalRisk": "Variable timings are not proven in Unity.",
+      "dependencies": [],
+      "validation": "EDITOR_EXPORT_PASS",
+      "productionImpact": "Review only."
+    },
+    {
+      "component": "Equipment rig / runtime",
+      "category": "REQUIRES_EXTENSION",
+      "evidence": "Regional layers do not form a complete body/clothing rig; UnitVisuals still WarriorPilot.",
+      "adaptation": "Requires independent bodies, equipment sockets, occlusion and runtime integration.",
+      "artRisk": "Hidden anatomy is not finished.",
+      "technicalRisk": "No runtime implemented.",
+      "dependencies": [
+        "Artist review",
+        "Unity extension task"
+      ],
+      "validation": "NOT_RUN",
+      "productionImpact": "No Unity writes."
+    }
+  ],
+  "authoringPolicy": {
+    "master": "Aseprite",
+    "method": "Agent-authored explicit pixel drawings executed by Aseprite Lua",
+    "noImageGeneration": true,
+    "externalRasterInputs": 0,
+    "approval": "PENDING_CREATOR"
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "status": "TECHNICAL_PASS_ART_REVIEW_PENDING",
+  "createdAt": "2026-10-22T12:17:59.188Z",
+  "masterTool": "Aseprite Steam",
+  "method": "Fork approved V2; preserve original cels in hidden reference layer; copy approved neutral into action return; local pixel retouch inside editor.",
+  "externalImageGenerationCalls": 0,
+  "externalRasterEditing": 0,
+  "inheritedPixels": "V2 image_gen origin retained; V4 is a retouch, not a wholly new Aseprite drawing.",
+  "script": {
+    "file": "characters/orc-01-aseprite-v4/source/aseprite/retouch-v2-to-v4.lua",
+    "sha256": "41df2316099d31d004ca5af1a3fd9525420d4b2e793c2cda23b6d330235211f1"
+  },
+  "sourceFiles": [
+    {
+      "file": "characters/orc-01-refinement-v2/concepts/warrior-refinement-v2.png",
+      "sha256": "ed6479e45e88731f9e23f28eb4ebc5bf889eeacdeb471edda2260eb2368923c0"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_00.png",
+      "sha256": "2681713d7a044a481e66fd9631b103534249d7dc9378423dd3dd5d03d28d997d"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_01.png",
+      "sha256": "c4a8e501e2c5d6b7df34425bfc4fe125e1d9624ea55677b85df980d81ea1c9c0"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_02.png",
+      "sha256": "659230140ebf13ab092e826c703e90a690bf79e717fb1b73613662f085cf176d"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_03.png",
+      "sha256": "ba920945ee387b2526326079f84bc6580e2cbcc82cc1f5034d041d854de85493"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_04.png",
+      "sha256": "4915abff62c2634b3191d712f6ff0941017dcc591ea442f1dd958c0961943f5b"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_00.png",
+      "sha256": "2f1ac7c055655c3b0264f90d0eaa194f30c6a22ed962733c6f4f2ddb5e697212"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_01.png",
+      "sha256": "b247a73f11b9350170ce9324e950e1e1c280c0a5365efa860c936bb7d6131170"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_02.png",
+      "sha256": "300f081ad49b7efd04811b6183ff026a04f6f0a2a09ac16963bf7a668df0f00a"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r.aseprite",
+      "sha256": "3ad72eed1464ae5713a5a43cb72109832e3f798e14b11acf7f0c70fa8abdd46e"
+    },
+    {
+      "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r.aseprite",
+      "sha256": "9d7289e930b13e57ad4f33c3751c01fa06d456582f732da2803a59d04ebe7cf7"
+    }
+  ],
+  "protectedProductionFiles": 1151,
+  "sourceFilesUnchanged": true,
+  "referenceCheck": "PASS: 9 hidden V2 reference cels pixel-identical; masters not modified",
+  "elapsedMs": 5904,
+  "analysis": [
+    {
+      "id": "attack",
+      "frames": [
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_00.png",
+          "sha256": "18ef9a869e771430d1a1cae1a4dac5608ee99ecc36b3224fd708b71e61402551",
+          "rgbaSha256": "32039b11f827609a9dd169d2b70ecf88dc0c4575d0431009e6793dfbd5df2376",
+          "width": 128,
+          "height": 128,
+          "left": 29,
+          "right": 94,
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "transparent": 12361,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 477,
+          "alphaChanged": 0,
+          "opaquePixels": 4023,
+          "meanRgbDelta": 0.17036946614583334,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 2,
+            "localPaint": 10,
+            "nearBlackCleanup": 465
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_01.png",
+          "sha256": "69e5b5d2137a4c28c9868f5531628bdc3ad7dc32415e658d57c9d5900f3a2b39",
+          "rgbaSha256": "f8493b4a1a40c5f5f267900e9e5c9f339973e2f3cd1544960f8565246282c194",
+          "width": 128,
+          "height": 128,
+          "left": 11,
+          "right": 94,
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "transparent": 12155,
+          "partial": 0,
+          "colorCount": 37,
+          "changedPixels": 525,
+          "alphaChanged": 0,
+          "opaquePixels": 4229,
+          "meanRgbDelta": 0.16017659505208334,
+          "oldPaletteColors": 46,
+          "newPaletteColors": 37,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 1,
+            "localPaint": 4,
+            "nearBlackCleanup": 520
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_02.png",
+          "sha256": "e6639e796b6b815a0c235d3e8b9d20e860b3194928dedf352ce12a21d3b20c4d",
+          "rgbaSha256": "4ec6b15d5fd883fdd7d72b79582cbbd5f4e220f25a8aad113a0ec9e0e7e05076",
+          "width": 128,
+          "height": 128,
+          "left": 15,
+          "right": 117,
+          "top": 29,
+          "bottom": 126,
+          "contentHeight": 98,
+          "transparent": 12080,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 557,
+          "alphaChanged": 0,
+          "opaquePixels": 4304,
+          "meanRgbDelta": 0.15681966145833334,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 2,
+            "localPaint": 2,
+            "nearBlackCleanup": 553
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_03.png",
+          "sha256": "683e75abe20b54078f45c895063f02671b73f50712243c367516562d4b06c7a9",
+          "rgbaSha256": "2692e794d372eb494f74366a2f14dba999a87cb9930f7d08504491a79b5ac707",
+          "width": 128,
+          "height": 128,
+          "left": 17,
+          "right": 95,
+          "top": 28,
+          "bottom": 126,
+          "contentHeight": 99,
+          "transparent": 12343,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 526,
+          "alphaChanged": 0,
+          "opaquePixels": 4041,
+          "meanRgbDelta": 0.16481526692708334,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 2,
+            "localPaint": 4,
+            "nearBlackCleanup": 520
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/attack/attack_front_r_04.png",
+          "sha256": "18ef9a869e771430d1a1cae1a4dac5608ee99ecc36b3224fd708b71e61402551",
+          "rgbaSha256": "32039b11f827609a9dd169d2b70ecf88dc0c4575d0431009e6793dfbd5df2376",
+          "width": 128,
+          "height": 128,
+          "left": 29,
+          "right": 94,
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "transparent": 12361,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 2608,
+          "alphaChanged": 195,
+          "opaquePixels": 4023,
+          "meanRgbDelta": 4.901713053385417,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": true,
+            "eyeCorrections": 2,
+            "localPaint": 10,
+            "nearBlackCleanup": 465
+          }
+        }
+      ]
+    },
+    {
+      "id": "hit",
+      "frames": [
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_00.png",
+          "sha256": "e173a13cf81994d256f3959f8d6342961cf010fd4eef0c472d40370bfdb9bc3d",
+          "rgbaSha256": "9dd49f41c639502ce095407398b1d1afa44fcbb5f141163c176c9c68be9be6e4",
+          "width": 128,
+          "height": 128,
+          "left": 41,
+          "right": 115,
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "transparent": 12308,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 494,
+          "alphaChanged": 0,
+          "opaquePixels": 4076,
+          "meanRgbDelta": 0.13751220703125,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 2,
+            "localPaint": 7,
+            "nearBlackCleanup": 485
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_01.png",
+          "sha256": "47d0597d22c98ceb63df149a52a960325aa5b25eec12b32020cc39a3d518ec4a",
+          "rgbaSha256": "73329b2a0c4758980fe013621a35542993f71124ae71b37bfea773c4dbc4025f",
+          "width": 128,
+          "height": 128,
+          "left": 18,
+          "right": 92,
+          "top": 30,
+          "bottom": 126,
+          "contentHeight": 97,
+          "transparent": 12195,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 648,
+          "alphaChanged": 0,
+          "opaquePixels": 4189,
+          "meanRgbDelta": 0.2027587890625,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [],
+          "edits": {
+            "canonicalNeutralReuse": false,
+            "eyeCorrections": 1,
+            "localPaint": 6,
+            "nearBlackCleanup": 641
+          }
+        },
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/hit/hit_front_r_02.png",
+          "sha256": "18ef9a869e771430d1a1cae1a4dac5608ee99ecc36b3224fd708b71e61402551",
+          "rgbaSha256": "32039b11f827609a9dd169d2b70ecf88dc0c4575d0431009e6793dfbd5df2376",
+          "width": 128,
+          "height": 128,
+          "left": 29,
+          "right": 94,
+          "top": 27,
+          "bottom": 126,
+          "contentHeight": 100,
+          "transparent": 12361,
+          "partial": 0,
+          "colorCount": 36,
+          "changedPixels": 3724,
+          "alphaChanged": 479,
+          "opaquePixels": 4023,
+          "meanRgbDelta": 11.176045735677084,
+          "oldPaletteColors": 45,
+          "newPaletteColors": 36,
+          "newColors": [
+            "beac5c"
+          ],
+          "edits": {
+            "canonicalNeutralReuse": true,
+            "eyeCorrections": 2,
+            "localPaint": 10,
+            "nearBlackCleanup": 465
+          }
+        }
+      ]
+    },
+    {
+      "id": "concept",
+      "frames": [
+        {
+          "file": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+          "sha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+          "rgbaSha256": "6e373df17addd70c40f8ba1a632bc44d33079158d21af87bcaa1ae0c07cd02a4",
+          "width": 1254,
+          "height": 1254,
+          "left": 286,
+          "right": 1000,
+          "top": 76,
+          "bottom": 1211,
+          "contentHeight": 1136,
+          "transparent": 1096169,
+          "partial": 475676,
+          "colorCount": 88342,
+          "changedPixels": 39108,
+          "alphaChanged": 39102,
+          "opaquePixels": 476347,
+          "meanRgbDelta": 0.3544879670540713,
+          "oldPaletteColors": 88697,
+          "newPaletteColors": 88342,
+          "newColors": [],
+          "edits": {
+            "faceAndBodyRedraw": false,
+            "lowAlphaFringeCleanup": 39102,
+            "selectiveMetalPixels": 6
+          }
+        }
+      ]
+    }
+  ],
+  "build": {
+    "path": "dist/editor/orc-v2-to-v4-retouch/2256ba7a47d165f0dbea",
+    "preview": "dist/editor/orc-v2-to-v4-retouch/2256ba7a47d165f0dbea/preview.html",
+    "summary": {
+      "jobs": 3,
+      "frames": 9,
+      "comparedFrames": 9
+    }
+  },
+  "sameFrameCountsAndDurations": true,
+  "canonicalNeutralExact": true,
+  "approval": "PENDING_CREATOR",
+  "UnityIntegration": "NOT_RUN"
+}

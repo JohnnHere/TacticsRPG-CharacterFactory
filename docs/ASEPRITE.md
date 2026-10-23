@@ -1,5 +1,13 @@
 # Aseprite na Character Factory
 
+Producao Orc vigente: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md), com [ponteiro de selecao](../reports/orc-production-current.json). O auditor abaixo detecta a revisao ativa; a manifestacao V1 e seus builds sao historicos. Para novas edicoes, usar o editor.json V4 da propria roupa como entrada de editor-fork.
+
+## Politica de autoria vigente — 2026-10-22
+
+Para aprimorar arte ja aprovada, usar fork e retoques sobre os pixels aprovados. A candidata [V4 sobre V2](../reports/orc-aseprite-v4/review.html) preserva o desenho, com referencias V2 ocultas nos masters e [documentacao auditavel](../reports/orc-aseprite-retouch-v4.md). O redesenho simplificado V3 nao e um modelo de qualidade a reutilizar.
+
+Por decisao do criador, toda producao artistica acontece no Aseprite e a fonte `.aseprite` salva e mestre. PNGs sao derivados. Autoria por Lua no runtime do editor e permitida e deve ser identificada como programatica. Nao usar geracao de imagens ou processamento raster externo para produzir arte nova sem nova instrucao explicita. Legados mantem procedencia; importar uma imagem gerada nao a transforma em autoria original Aseprite. Metadados, testes e previews externos sao permitidos sem alteracao da arte. Caso real: [V3 versus V2](../reports/orc-aseprite-v3/review.html), [procedencia](../reports/orc-aseprite-authorship-v3.json).
+
 Para a explicação completa da entrega, arquitetura, ciclo dos arquivos, evidências e recuperação de falhas, consulte [Integração Aseprite — documentação de ponta a ponta](ASEPRITE_INTEGRATION_V1.md). Este arquivo é o guia operacional resumido.
 
 Integracao local implementada em 2026-10-22 para Aseprite 1.3.x, inclusive Steam. Usa Node/pngjs existentes, sem dependencia nova ou API. Executa processos separados com `--batch --noinapp`, janela oculta e timeout. Nao controla mouse/teclado nem acessa buffers nao salvos. Salve no editor antes de exportar.

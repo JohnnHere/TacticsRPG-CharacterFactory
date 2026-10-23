@@ -1,0 +1,109 @@
+{
+  "provider": "image_gen",
+  "mode": "built-in",
+  "model": "Not disclosed by tool",
+  "artisticApproval": "PENDING_CREATOR",
+  "generatedAt": "2026-10-22T05:47:12.888Z",
+  "concept": {
+    "prompt": "Use case: identity-preserve / pixel art concept refinement. Image 1 is the ONLY character edit target, the approved bald Orc Warrior. Image 2 is global PIXEL ART STYLE only; do not copy its human anatomy, sword, armor or palette. Image 3 is the existing native Orc sprite for silhouette and readability context. Produce ONE full-body refined concept of exactly the same individual in the same three-quarter front-right neutral standing pose, transparent background. Preserve bald head, heavy black brows, fierce amber eyes, wide flattened nose, broad angular jaw and two large lower ivory tusks. Preserve muscular compact tactical proportions, olive ochre green skin, dark iron chest armor and diagonal leather straps, burnt red neckcloth and hanging red tabard, brown leather belt/hip pieces, iron shin guards and brown boots. Anatomical LEFT shoulder and forearm carry the asymmetric spiked iron armor (viewer right); anatomical RIGHT upper arm is exposed with leather wrist bracer. Hands empty, no weapons carried, sheathed or held. Improve only pixel craft: deliberate blocky pixel clusters, restrained material highlights, clear face planes and knuckle shapes, less noisy texture, clean silhouette, controlled upper-left light, dark separation between red cloth and leather/iron. Mature bestial face, practical worn materials, refined tactical RPG pixel art. Sharp discrete color planes, no soft painting gradients, no glossy 3D, no chibi, no hair, no additional equipment, no text, no ground shadow. All body in frame with comfortable transparent margin. This is a high resolution review CONCEPT, not a native production sprite.",
+    "references": [
+      "characters/orc-01/concepts/orc-01-warrior-concept-07.png",
+      "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+      "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png"
+    ],
+    "file": "characters/orc-01-refinement-v2/concepts/warrior-refinement-v2.png",
+    "sha256": "ed6479e45e88731f9e23f28eb4ebc5bf889eeacdeb471edda2260eb2368923c0",
+    "referenceHashes": [
+      {
+        "file": "characters/orc-01/concepts/orc-01-warrior-concept-07.png",
+        "sha256": "5c2c5294b7bf849d3fc3a80bc4b9dd36748cb321668e0d16c9158660bc5a00f4"
+      },
+      {
+        "file": "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+        "sha256": "fce6a91051b5e8c4ce85841045fa8ce6df24949c8e610b18259eec2e85452de7"
+      },
+      {
+        "file": "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png",
+        "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa"
+      }
+    ]
+  },
+  "Attack": {
+    "prompt": "Create a new authored pixel-art ANIMATION SPRITE SHEET, exactly FIVE separate full-body poses in ONE horizontal row with generous transparent gaps, no labels, transparent background. The reference is the EXISTING APPROVED Orc Warrior design, not a redesign. Keep exactly same bald bestial olive green Orc, huge lower tusks, dark iron chest and anatomical LEFT spiked shoulder armor, burnt red neckcloth and tabard, brown leather, armored shins, bare anatomical right upper arm. All five figures face screen RIGHT in a consistent front-right three-quarter camera, same scale, head shape, outfit, anatomy, light and pixel-grid size. Native target approximately 100 pixels body height, refined low-resolution pixel art clusters, NO smooth painting. Empty bare hands, no weapon/effects. Action: forceful anatomical RIGHT bare-hand straight punch. Pose1 grounded neutral beginning, both feet planted, hands near waist; pose2 short anticipation, right bare fist pulled back to right hip, torso coiled away from target, left armored arm protects chest; pose3 explosive impact, right bare fist fully extended toward screen right at chest height, clear fist silhouette, torso rotated but head still readable three-quarter, weight onto front leg, left armored arm guarding; pose4 deceleration and right elbow retracting halfway, cloth settles behind movement; pose5 balanced return matching pose1 silhouette and body scale. No overhead hammer strike, no left-arm punch, no knee/foot cutoffs, no duplicated poses, no ground shadows, no text, no frame borders. Keep all drawings distinctly separated horizontally, equal standing ground line, clean binary transparency. Author actual different poses, do not deform a pasted static image.",
+    "references": [
+      "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png",
+      "characters/orc-01/concepts/orc-01-warrior-concept-07.png"
+    ],
+    "source": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/authored-sheet.png",
+    "sourceSha256": "48c95d258a9b75e3aadfb58f7031358e62af18cde763ea90d9bfdb7c7ba12ad8",
+    "editable": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r.aseprite",
+    "nativeFrames": [
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_00.png",
+        "sha256": "2681713d7a044a481e66fd9631b103534249d7dc9378423dd3dd5d03d28d997d"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_01.png",
+        "sha256": "c4a8e501e2c5d6b7df34425bfc4fe125e1d9624ea55677b85df980d81ea1c9c0"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_02.png",
+        "sha256": "659230140ebf13ab092e826c703e90a690bf79e717fb1b73613662f085cf176d"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_03.png",
+        "sha256": "ba920945ee387b2526326079f84bc6580e2cbcc82cc1f5034d041d854de85493"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_04.png",
+        "sha256": "4915abff62c2634b3191d712f6ff0941017dcc591ea442f1dd958c0961943f5b"
+      }
+    ],
+    "reconstruction": "Existing extract-animation-sheet.py: independent authored poses, forced native grid, shared approved palette, integer registration. Not hand drawn. No concept reduced into production.",
+    "referenceHashes": [
+      {
+        "file": "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png",
+        "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa"
+      },
+      {
+        "file": "characters/orc-01/concepts/orc-01-warrior-concept-07.png",
+        "sha256": "5c2c5294b7bf849d3fc3a80bc4b9dd36748cb321668e0d16c9158660bc5a00f4"
+      }
+    ]
+  },
+  "Hit": {
+    "prompt": "New authored pixel art HIT REACTION animation sprite sheet. Exactly THREE separate full-body drawings in ONE horizontal row, generous transparent gaps, same ground line, no labels, transparent background. Reference is existing APPROVED bald Orc Warrior, preserve individual/gear not redesign: heavy brows, two large tusks, olive green skin, muscular compact tactical proportions, anatomical LEFT spiked iron shoulder and left forearm armor (viewer right), dark iron chest leather crossed strap, burnt red scarf/tabard, leather hips, metal shins brown boots. Anatomical RIGHT exposed upper arm leather wrist, hands empty. Camera front-right three-quarter facing screen RIGHT in ALL THREE POSES, no turning to opposite view. Native target 100 pixels body height, clean discrete low-resolution pixel clusters, restrained highlights, consistent exact head scale and gear design across poses. Pose1 IMMEDIATE IMPACT: torso recoils backwards subtly, chin up slightly, hands lift in involuntary flinch; feet remain firmly planted. Pose2 ABSORB: knees compress, chest hunches inward, bare right forearm crosses belly while armored left arm lifts guard, head dips but face visible, no giant whole-body scaling. Pose3 RECOVER: rises to neutral grounded stance, shoulders settle, both hands lowered like reference. Clear physical weight without exaggerated flailing, no spinning, no weapons/effects, no damage symbols, no blood, no shadows/text/frame borders. Keep boots complete and characters separated. Actually author three different drawings for these poses.",
+    "references": [
+      "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png",
+      "characters/orc-01/concepts/orc-01-warrior-concept-07.png"
+    ],
+    "source": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/authored-sheet.png",
+    "sourceSha256": "1ba8aeef5554c3784c8216a630cf563c8f28d268bd33a16994cc5dd88d7a46eb",
+    "editable": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r.aseprite",
+    "nativeFrames": [
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_00.png",
+        "sha256": "2f1ac7c055655c3b0264f90d0eaa194f30c6a22ed962733c6f4f2ddb5e697212"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_01.png",
+        "sha256": "b247a73f11b9350170ce9324e950e1e1c280c0a5365efa860c936bb7d6131170"
+      },
+      {
+        "file": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_02.png",
+        "sha256": "300f081ad49b7efd04811b6183ff026a04f6f0a2a09ac16963bf7a668df0f00a"
+      }
+    ],
+    "reconstruction": "Existing extract-animation-sheet.py: independent authored poses, forced native grid, shared approved palette, integer registration. Not hand drawn. No concept reduced into production.",
+    "referenceHashes": [
+      {
+        "file": "characters/orc-01/sprites/Directions/orc_01_dir_front_r.png",
+        "sha256": "4ab34328cbffdc202be34d252f714301f217df5cd7349aed3f35c380e9684eaa"
+      },
+      {
+        "file": "characters/orc-01/concepts/orc-01-warrior-concept-07.png",
+        "sha256": "5c2c5294b7bf849d3fc3a80bc4b9dd36748cb321668e0d16c9158660bc5a00f4"
+      }
+    ]
+  }
+}

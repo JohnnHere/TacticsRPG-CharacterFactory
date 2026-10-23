@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "status": "APPLIED",
+  "createdAt": "2026-10-22T12:42:31.048Z",
+  "evidence": {
+    "at": "2026-10-22T12:33:42.919Z",
+    "reviewer": "Criador",
+    "quote": "legal, vamos aplicar a V4 do Aseprite nas animações de todos os Orcs que criamos, para sedimentarmos as pequenas melhorias e podermos partir para as próximas implementações com uma ótima referência de arte",
+    "scope": "Approval of V4 animation study and authorization to propagate compatible retouches to all eight Orc outfits/four views; preserve individual/outfit/action; no in-game approval",
+    "type": "CREATOR_AUTHORIZED_PROPAGATION",
+    "method": "Approved V4 direct for Warrior front_r Attack/Hit; other animations reuse their own outfit/view, V4 near-black consolidation mapped to nearest existing own ink, action closing-pose reuse and V4 timing. Local V4 eye/material coordinates not copied to other anatomy/poses.",
+    "preview": "reports/orc-production-v4/review.html",
+    "technicalEvidence": "reports/orc-production-v4-check.json",
+    "scopeLimit": "Approved propagation only. Existing concepts/bases unchanged. No creator in-game review; no new weapon bindings."
+  },
+  "applications": [
+    {
+      "id": "orc-01",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01/source/aseprite-history/5de6145ea83696305a2f-EycOyT",
+        "next": "node src/cli.mjs preview --id orc-01"
+      },
+      "build": "dist/editor/orc-01-production-v4/5e501a6f97e9a3578fa4",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": true,
+      "consistencyDigest": "e9eb08c25ba63e14fdaabaae3a522fb516f0ea3731fa77e2b9ab9f66de5b3381"
+    },
+    {
+      "id": "orc-01-squire",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-squire/source/aseprite-history/8df6dce6b50219ac63c5-kjPYYk",
+        "next": "node src/cli.mjs preview --id orc-01-squire"
+      },
+      "build": "dist/editor/orc-01-squire-production-v4/95bfb19f730a95113344",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "1f12d2e01236455258fe044b6469f7d632636820ae4310bb29b6db4b02bf4791"
+    },
+    {
+      "id": "orc-01-archer",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-archer/source/aseprite-history/7c741e0c782022c8a672-UVGHbY",
+        "next": "node src/cli.mjs preview --id orc-01-archer"
+      },
+      "build": "dist/editor/orc-01-archer-production-v4/ab07a17cf24d0f6792b0",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "a59a97da68595fd0d9f2e10c766f6e40a5f1f60412016cff78b1ff4825902441"
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-apprentice-mage/source/aseprite-history/9bf2ff430ed7166f8525-t56KIl",
+        "next": "node src/cli.mjs preview --id orc-01-apprentice-mage"
+      },
+      "build": "dist/editor/orc-01-apprentice-mage-production-v4/fa6cb76246a7811cee4c",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "b2a8e59073b262e2e6995e90f433698ccce12af6d443cc523e0074065343106a"
+    },
+    {
+      "id": "orc-01-acolyte",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-acolyte/source/aseprite-history/6da1115f8515835d3255-buH2yC",
+        "next": "node src/cli.mjs preview --id orc-01-acolyte"
+      },
+      "build": "dist/editor/orc-01-acolyte-production-v4/196e9be44c07f2ed3d09",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "b7a832f921f6b7cb374c34c64fb9125f3d033fb5d851ca119acd65fdf774a5e4"
+    },
+    {
+      "id": "orc-01-rogue",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-rogue/source/aseprite-history/31c3f4a77869e23cfdca-aY69pu",
+        "next": "node src/cli.mjs preview --id orc-01-rogue"
+      },
+      "build": "dist/editor/orc-01-rogue-production-v4/d54db286257c6620808f",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "a7f06e3c32254767159f7958a379813e3c460f8ecc30e08d20f5b08392804a4c"
+    },
+    {
+      "id": "orc-01-scout",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-scout/source/aseprite-history/7cf9977112891068f015-z2EU09",
+        "next": "node src/cli.mjs preview --id orc-01-scout"
+      },
+      "build": "dist/editor/orc-01-scout-production-v4/aa619e220038dc0ab220",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": false,
+      "consistencyDigest": "2b721506220230b718cfc21fd16bd11093d3a9fca22871d78946ea2d545fa34e"
+    },
+    {
+      "id": "orc-01-brawler",
+      "baseline": {
+        "status": "APPLIED_REVIEW_REQUIRED",
+        "frames": 92,
+        "backup": "characters/orc-01-brawler/source/aseprite-history/03c118a214a2971c0b3b-Q5pHUI",
+        "next": "node src/cli.mjs preview --id orc-01-brawler"
+      },
+      "build": "dist/editor/orc-01-brawler-production-v4/b99f08166473d933b5db",
+      "validation": {
+        "PASS": 489,
+        "FAIL": 0,
+        "WARNING": 9,
+        "NOT_RUN": 1,
+        "REQUIRES_HUMAN_REVIEW": 1
+      },
+      "supplementFrames": 20,
+      "supplementSourceReuse": true,
+      "consistencyDigest": "b6933f704f3b0d8dd7d5739350d2f90064f94a996d8945d403df4aed4b449bf1"
+    }
+  ],
+  "supplementReviews": [
+    {
+      "id": "orc-01",
+      "file": "characters/orc-01/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-squire",
+      "file": "characters/orc-01-squire/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-archer",
+      "file": "characters/orc-01-archer/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-apprentice-mage",
+      "file": "characters/orc-01-apprentice-mage/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-acolyte",
+      "file": "characters/orc-01-acolyte/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-rogue",
+      "file": "characters/orc-01-rogue/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-scout",
+      "file": "characters/orc-01-scout/source/aseprite/orc-production-v4/unarmed-review.json"
+    },
+    {
+      "id": "orc-01-brawler",
+      "file": "characters/orc-01-brawler/source/aseprite/orc-production-v4/unarmed-review.json"
+    }
+  ],
+  "preservedProtectedFiles": 475,
+  "protectedFilesTotal": 1227,
+  "originalMasterFilesPreserved": 216,
+  "animationSourceFiles": 184,
+  "activeNativePng": 896,
+  "animatedPng": 856,
+  "staticPngUnchanged": 40,
+  "conceptsUnchanged": true,
+  "unityIntegration": "NOT_RUN",
+  "gate3": "NOT_APPROVED",
+  "rollbackSnapshot": "reports/orc-production-v4-before"
+}

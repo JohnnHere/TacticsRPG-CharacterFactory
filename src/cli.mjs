@@ -34,7 +34,7 @@ const help=`Character Factory 0.1 — sprites 2D / Node >=20
   review --id orc-01 --gate concept|base|consistency|in-game --decision approved|changes_requested --reviewer NOME --evidence TEXTO
   export --id orc-01
   demo
-Comandos nao geram arte sem ferramenta/autor externo. prepare cria pacote pronto para uma LLM com geracao de imagens.
+prepare cria contexto para autoria no Aseprite, ferramenta mestre. PNGs sao derivados; comandos de preparo nao desenham arte automaticamente.
 Exit 0: comando concluido; 1: falha tecnica/validacao; 2: uso invalido ou gate pendente.
 `;
 
@@ -67,7 +67,7 @@ export function run(argv=process.argv.slice(2)) {
   if(command==='sync') {required(o,'source'); return console.log(JSON.stringify(syncReferences(o.source,o['accept-update']),null,2));}
   const errors=verifyReferences();
   if(command==='doctor') {
-    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Pacotes para ferramentas de imagem da conversa; nenhum endpoint/API cobrado configurado.',editor:checkAseprite(),editorPolicy:'Aseprite/LibreSprite opcionais. editor-check exige Aseprite; comandos existentes continuam locais.'},null,2));
+    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Toda autoria artistica no Aseprite, inclusive Lua documentado. Nenhuma geracao externa automatica.',editor:checkAseprite(),editorPolicy:'Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade.'},null,2));
     return errors.length?1:0;
   }
   if(errors.length) throw Error('Referencias ausentes/alteradas. Execute doctor e sync antes de prosseguir.');

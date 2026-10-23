@@ -10,10 +10,11 @@ export function resolveActionProfile({actionKind,equippedWeaponKind,abilityVisua
  if(actionKind==='ability'&&typeof abilityVisualProfile==='string'&&abilityVisualProfile.startsWith('ability.'))return abilityVisualProfile;
  throw Error('Action/ability requires an explicit visual profile');
 }
-export function checkFrameHashes(root,frames){
+export function checkFrameHashes(root,frames,{closingPoseRepeat=false}={}){
  if(!Array.isArray(frames)||frames.length!==5)throw Error('Unarmed Orc clip requires five actual frames');
  const hashes=new Set();
  for(const f of frames){const file=inside(root,f.file);if(!fs.existsSync(file)||hash(fs.readFileSync(file))!==f.sha256)throw Error('Frame absent or SHA256 changed');hashes.add(f.sha256);}
- if(hashes.size!==5)throw Error('Duplicate unarmed poses');
+ const closes=frames[0].sha256===frames[4].sha256;
+ if(closingPoseRepeat ? (!closes||hashes.size!==4) : hashes.size!==5)throw Error('Duplicate unarmed poses or invalid declared closing pose');
  return true;
 }

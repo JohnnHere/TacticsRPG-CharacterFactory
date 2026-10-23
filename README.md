@@ -1,5 +1,11 @@
 # TacticsRPG Character Factory
 
+**Laboratório visual Orc (2026-10-23):** Orc clássico medieval, principalmente Warcraft e também Tolkien; cinco propostas no Aseprite para escolha do criador e refinamento. O agente assume paleta/luz/textura. [Direção artística](docs/ORC_ART_LAB.md) · [Comparar propostas](reports/orc-art-lab-v5/review.html). Seleção artística pendente; V4 continua ativa.
+
+**Referência atual dos Orcs: Aseprite V4 aplicada nas oito roupas e quatro vistas.** [Comparar animações antes × V4](reports/orc-production-v4/review.html) · [Documentação, fontes e recuperação](docs/ORC_ASEPRITE_V4.md) · [Pacotes e ZIP atuais](reports/orc-production-v4-export.json). São 896 PNGs ativos e 216 masters selecionados, com a autorização do criador registrada. Entregas V1/V2/V3 abaixo são histórico; consulte `reports/orc-production-current.json` para retomar. Integração Unity e Gate em jogo permanecem pendentes.
+
+**Decisao vigente do criador (2026-10-22): toda producao artistica no Aseprite.** Conceitos, sprites e animacoes usam `.aseprite` como fonte mestre, inclusive autoria Lua documentada. Ferramentas externas ficam para metadados, validacao e previews; nao geram nem editam arte nova sem nova instrucao explicita. As secoes historicas sobre geracao de imagem nao sao o fluxo padrao atual. [Comparacao V2 × autoria Aseprite V3](reports/orc-aseprite-v3/review.html).
+
 [Documentação completa da integração Aseprite](docs/ASEPRITE_INTEGRATION_V1.md) — o que foi implementado, como funciona, exemplos de ponta a ponta, validações, resultados e limites.
 
 **Aseprite integrado (Steam ou standalone):** configuracao local, templates com camadas, copias de trabalho, exportacao batch de PNGs/timing/metadados/tilemaps, preview e aplicacao nos slots de personagem com backup/gates. [Guia e comandos](docs/ASEPRITE.md). Verifique com `node src/cli.mjs editor-check`. Auditoria real:216 fontes,888 quadros RGBA identicos +8 fallbacks, cobrindo896 PNGs. O mesmo bridge atende assets de cenarios, props, efeitos, UI, inimigos e armas com perfis proprios.

@@ -7,6 +7,9 @@ import { decode } from '../src/images.mjs';
 import { inspectAseprite, exportAseprite } from '../src/aseprite.mjs';
 
 const stamp=f=>hash(fs.readFileSync(inside(ROOT,f)));
+if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))){
+  await import('./audit-orc-production-v4.mjs');
+}else{
 const packages=readJSON(inside(ROOT,'reports/orc-actions-export-v1.json')).packages;
 const equipment=readJSON(inside(ROOT,'characters/orc-equipment-actions-v1.json'));
 const manifest={schemaVersion:1,id:'orc-production-aseprite-v1',kind:'character',jobs:[]};
@@ -51,3 +54,4 @@ for(const [file,sha256] of protectedFiles)if(stamp(file)!==sha256)throw Error('O
 for(const r of reviews)if(stamp(`characters/${r.id}/reviews.json`)!==r.sha256)throw Error('Revisao alterada.');
 const report={schemaVersion:1,status:'PASS',createdAt:now(),tool:build.tool,build:build.path,preview:build.path+'/preview.html',summary:{...build.summary,fallbacks: fallbacks.length,productionPng:build.summary.comparedFrames+fallbacks.length,originalFilesPreserved:protectedFiles.size,creatorReviewFilesPreserved:reviews.length},elapsedMs:Math.round(performance.now()-start),reused:build.reused,fallbacks,characterReviews:reviews,unityIntegration:'NOT_RUN',artisticApprovalsChanged:false};
 json(inside(ROOT,'reports/aseprite-production-audit-v1.json'),report);console.log(JSON.stringify(report,null,2));
+}

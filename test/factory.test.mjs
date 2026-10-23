@@ -63,6 +63,10 @@ test('fluxo CLI protege gates, registra roupas, exporta baseline e invalida revi
   const recipeDir=inside(path.join(ROOT,'recipes/jobs'),name);
   try {
     ok(cli('new','--id',name,'--race','Humano','--job','Warrior'));
+    const handoffPrompt=fs.readFileSync(path.join(dir,'handoff/prompt.md'),'utf8');
+    assert.match(handoffPrompt,/TODA a producao de arte deve acontecer no Aseprite/);
+    assert.match(handoffPrompt,/Nao usar image_gen/);
+    assert.doesNotMatch(handoffPrompt,/Se image_gen estiver disponivel, usar/);
     assert.equal(cli('new','--id',name,'--race','Orc','--job','Warrior').status,2);
     assert.equal(cli('export','--id',name).status,2);
     const input=path.join(temp,'fixture.png');savePNG(input,bitmap());

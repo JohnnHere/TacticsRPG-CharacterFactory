@@ -17,6 +17,9 @@
   "orcUnarmed": {
     "framesPerDirection": 5,
     "durationMs": 90,
+    "durationsMs": [80, 110, 50, 90, 120],
+    "durationMsMeaning": "Legacy average fallback; explicit per-clip durationsMs are authoritative in Aseprite V4",
+    "closingPoseRepeatPolicy": "Allowed only when declared in the clip, approval-bound and exactly frame 4 equals frame 0; middle poses must remain distinct",
     "loop": false,
     "width": 128,
     "height": 128,
@@ -61,7 +64,9 @@
   },
   "supplementExport": {
     "implemented": true,
-    "command": "node tools/export-orc-actions-v1.mjs",
+    "command": "node tools/export-orc-production-v4.mjs",
+    "historicalCommand": "node tools/export-orc-actions-v1.mjs (V1 selection only)",
+    "activeProduction": "reports/orc-production-current.json",
     "completeLocalPackages": true,
     "normalizedOutput": "Actions/basic-unarmed/v1/<direction>/",
     "reuse": "Warrior/Brawler refer to existing Animations/Attack paths; no duplicate punch PNGs",

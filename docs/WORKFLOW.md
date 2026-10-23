@@ -1,5 +1,13 @@
 # Fluxo de producao e comandos
 
+Os oito Orcs agora usam a [revisao Aseprite V4](ORC_ASEPRITE_V4.md), autorizada pelo criador e selecionada em `reports/orc-production-current.json`. Reutilizar as fontes ativas por fork. Avaliar compatibilidade de corpo, roupa, vista e acao antes de adaptar; os ajustes locais do Warrior nao sao coordenadas universais. Os pacotes novos preservam tempos por quadro e os originais permanecem historicos. Consulte o guia V4 para auditoria, exportacao e recuperacao.
+
+## Ferramenta mestre — decisao de 2026-10-22
+
+Toda autoria artistica acontece no **Aseprite**: conceito, desenho de sprites, poses, animacoes, paletas e acabamento. A fonte `.aseprite` e autoritativa; PNGs e folhas sao derivados da exportacao. Scripts Lua executados dentro do Aseprite sao autoria programatica permitida e precisam de procedencia; nao sao desenho manual nem uma IA generativa do editor. Novas geracoes image_gen e edicoes/reconstrucoes raster externas dependem de nova instrucao explicita do criador. Ferramentas externas podem montar previews e fazer validacoes sem mudar a arte. Instrucoes antigas abaixo sobre ferramentas externas descrevem o historico; esta decisao prevalece. Legados aprovados nao mudam de procedencia por serem abertos no editor.
+
+Experimento comparativo inteiramente no editor: [Aseprite V3 versus V2](../reports/orc-aseprite-v3/review.html). As camadas regionais desse estudo ainda nao equivalem a um rig de equipamento reutilizavel completo.
+
 Autoria e revisao no Aseprite: [guia integrado](ASEPRITE.md). `editor-fork` cria copia de trabalho; `editor-export` entrega build/preview; `editor-apply` aplica slots baseline com gates/backup. `editor-template` organiza fontes novas e assets genericos. O bridge usa modo batch sem controlar a GUI e exige arquivos salvos. Revisoes artisticas e integracao Unity seguem os marcos abaixo.
 
 Execute os comandos a partir da raiz desta fabrica. Alternativa no Windows: `powershell -NoProfile -ExecutionPolicy Bypass -File .\forge.ps1 help`. O Bypass se aplica somente a esse processo; nao e necessario mudar a politica global. Os arquivos usam UTF-8.

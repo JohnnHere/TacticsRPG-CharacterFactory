@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-01-art-lab-v5",
+  "identityId": "cd362b7a-e190-4e5b-aa7c-54970cfd8353",
+  "name": "Orc Warrior — laboratório visual / cinco direções",
+  "status": "candidate",
+  "createdAt": "2026-10-23T03:13:45.902Z",
+  "styleId": "tactics-core-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Dano físico (papel do Job Warrior)",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "visual-study",
+  "appearance": {
+    "face": "Concept-07 escolhido e aprovado pelo criador em 2026-10-19: Orc adulto de feição bestial e brutal, testa pesada, focinho/nariz largo e achatado, maxilar anguloso, olhos ferozes e presas inferiores grandes e irregulares; expressão tensa, agressiva e battle-hardened, sem serenidade humana. Identidade deste indivíduo; não universalizar como cânone de todos os Orcs.",
+    "hair": "Careca, couro cabeludo totalmente nu; preservar sobrancelhas escuras, conforme concept-07 escolhido pelo criador em 2026-10-19.",
+    "ageImpression": "Adulto",
+    "body": "Compacto, ombros largos e musculatura robusta, com proporção tática legível dentro do perfil de 1 tile; não copiar o corpo humanoide do piloto.",
+    "palette": [
+      "Cinco paletas candidatas; ver source/art-lab-render.json"
+    ],
+    "dominantHand": "right",
+    "asymmetries": [
+      "mão dominante direita, vazia no conceito base",
+      "proteção de ombro assimétrica"
+    ],
+    "lighting": "Luz superior esquerda herdada; novas placas com planos, bordas e volume candidatos."
+  },
+  "outfit": {
+    "id": "warrior-five-directions-candidate",
+    "description": "Cinco estudos do mesmo Orc: ferro de clã, veterano de fronteira, basalto, bronze/ocre e ferro de campanha. Escolha pendente do criador.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Nenhuma arma desenhada, carregada ou embainhada."
+  },
+  "styleRecipes": [],
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": 126,
+    "ppu": 100,
+    "counts": {
+      "Idle": 4,
+      "Walk": 6,
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "note": "Baseline do piloto humanoide 1 tile; anatomias diferentes exigem perfil e revisao. Walk atual usa 3 quadros/tile."
+  },
+  "references": [
+    {
+      "path": "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+      "role": "global-style-anchor"
+    },
+    {
+      "path": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+      "role": "approved-individual-anatomy-and-pose"
+    },
+    {
+      "path": "docs/ORC_ART_LAB.md",
+      "role": "latest-creator-direction"
+    }
+  ],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Face, anatomy, pose and inherited drawing",
+      "category": "REUSE_DIRECT",
+      "evidence": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+      "adaptation": "Retain the approved bald Orc identity and anatomical structure.",
+      "artRisk": "Inherited design language persists; originality is not established by editor choice.",
+      "technicalRisk": "1254px concept is not a native runtime sprite.",
+      "dependencies": [
+        "V4 approved concept"
+      ],
+      "validation": "Visual comparison; hidden reference verified separately.",
+      "productionImpact": "No production substitution."
+    },
+    {
+      "component": "Material treatment and palette",
+      "category": "REUSE_ADAPTED",
+      "evidence": "tools/aseprite/orc-art-lab-v5.lua",
+      "adaptation": "Five material ramps applied within Aseprite, inherited lighting and texture retained.",
+      "artRisk": "Small-scale material separation still needs creator review.",
+      "technicalRisk": "No palette or anatomy universalization.",
+      "dependencies": [
+        "Aseprite saved masters"
+      ],
+      "validation": "Exact saved-master export.",
+      "productionImpact": "Candidate concepts only."
+    },
+    {
+      "component": "Shoulder armour, reinforcement, motifs and accents",
+      "category": "CREATE_NEW",
+      "evidence": "Five independent armour-construction layers in saved masters.",
+      "adaptation": "Original shapes, overlaps, rivets, repair panels and limited face accents.",
+      "artRisk": "New armour and inherited body require further artistic refinement after choice.",
+      "technicalRisk": "Native sprites and four views need their own production.",
+      "dependencies": [
+        "Creator selects and approves refined concept"
+      ],
+      "validation": "TECHNICAL_PASS_ART_REVIEW_PENDING",
+      "productionImpact": "Do not propagate unapproved candidates."
+    }
+  ],
+  "artExploration": {
+    "date": "2026-10-23",
+    "studyOf": "orc-01",
+    "baseline": "aseprite-v4",
+    "goal": "Orc clássico medieval; principalmente Warcraft e também Tolkien; identidade própria e um jogo com alma.",
+    "creatorDelegates": [
+      "palette",
+      "lighting",
+      "materials",
+      "texture"
+    ],
+    "candidateSelection": null,
+    "approval": "PENDING_CREATOR",
+    "sameIndividual": true,
+    "conceptsOnly": true
+  }
+}

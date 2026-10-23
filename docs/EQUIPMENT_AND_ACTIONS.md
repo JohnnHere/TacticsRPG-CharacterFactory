@@ -1,5 +1,7 @@
 # Equipamentos e animacoes de acao — contrato da fabrica v1
 
+Adendo vigente de arte Orc: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md). Os clipes ativos trazem duracoes por quadro `[80,110,50,90,120]`ms e fechamento intencional na pose inicial, ambos vinculados ao fingerprint da aprovacao. `durationMs:90` permanece somente a media/fallback legado; a lista explicita prevalece na autoria/exportacao. Duplicatas intermediarias continuam bloqueadas. Selecao em `reports/orc-production-current.json`, exportador atual `node tools/export-orc-production-v4.mjs`; V1 abaixo descreve a entrega historica. Runtime variavel/equipamento segue pendente.
+
 Data:2026-10-19. Criado a pedido do criador apos auditoria das documentacoes e do codigo atual dos dois repositorios. Este e o padrao de producao da fabrica e de handoff para integracao. Nao descreve funcionalidade ja implementada no Unity. Fontes e SHA256: [auditoria](../reports/equipment-source-audit-v1.json).
 
 ## O que ja existia e o que faltava

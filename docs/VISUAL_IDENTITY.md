@@ -1,5 +1,7 @@
 # Identidade visual
 
+Direção Orc reafirmada pelo criador em 2026-10-23: Orc clássico medieval, **principalmente World of Warcraft e também Tolkien**. O agente assume propostas de luz, textura e paleta; apresentar cinco opções concretas para escolha e refinamento usando o Warrior como laboratório. Objetivo: identidade própria e um jogo com alma, fugindo do aspecto genérico de IA. [Decisão e critérios completos](ORC_ART_LAB.md). As alternativas ainda não substituem a âncora nem a produção V4.
+
 O alvo e personagem 2D em pixel art refinada, legivel em batalha tatica. A apresentacao pode combinar sprites com o mapa 3D do Unity (2.5D e inspiracao HD-2D). HD-2D descreve uma apresentacao visual; nao transforma personagem em modelo 3D. Esta fabrica trabalha com PNGs e fontes artisticas 2D.
 
 ## Autoridade

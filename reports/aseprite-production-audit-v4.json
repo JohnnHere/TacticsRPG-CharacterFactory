@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "createdAt": "2026-10-22T12:43:17.175Z",
+  "revision": "aseprite-v4",
+  "characters": 8,
+  "selectedMasters": 216,
+  "originalMastersPreserved": 216,
+  "exportedFramesExact": 888,
+  "fallbacks": 8,
+  "activeNativePng": 896,
+  "currentConceptBaseConsistencyGates": 24,
+  "unarmedDirections": 32,
+  "approvedV4FramesExact": 8,
+  "unityIntegration": "NOT_RUN",
+  "gate3": "NOT_APPROVED",
+  "browser": {
+    "status": "PASS",
+    "clips": 192,
+    "nativeFrameReferences": 896,
+    "referenceFramesExact": 896,
+    "browserCanvasComparisonsExact": 1792,
+    "javaScriptErrors": [],
+    "browser": "155.0.4283.62",
+    "checks": [
+      "All native frames RGBA128/binary alpha/ground126",
+      "Existing own outfit palettes; only approved near-black edits outside explicit return and direct V4",
+      "All action returns exact canonical own pose; all durations verified",
+      "Warrior front_r Attack/Hit pixel-identical to approved V4",
+      "All 192 clips rendered exactly in browser; file and HTTP; controls exercised"
+    ],
+    "artisticApproval": "CREATOR_AUTHORIZED_PROPAGATION; technical checks are not independent artistic approval"
+  }
+}

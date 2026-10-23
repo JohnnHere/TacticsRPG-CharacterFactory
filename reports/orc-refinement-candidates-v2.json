@@ -1,0 +1,72 @@
+{
+  "status": "APPROVED_BY_CREATOR_NOT_APPLIED",
+  "concept": "characters/orc-01-refinement-v2/concepts/warrior-refinement-v2.png",
+  "clips": [
+    {
+      "state": "Attack",
+      "direction": "front_r",
+      "before": [
+        "characters/orc-01/sprites/Animations/Attack/attack_front_r_00.png",
+        "characters/orc-01/sprites/Animations/Attack/attack_front_r_01.png",
+        "characters/orc-01/sprites/Animations/Attack/attack_front_r_02.png",
+        "characters/orc-01/sprites/Animations/Attack/attack_front_r_03.png",
+        "characters/orc-01/sprites/Animations/Attack/attack_front_r_04.png"
+      ],
+      "after": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_02.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_03.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_04.png"
+      ],
+      "beforeDurationsMs": [
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "afterDurationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "artisticApproval": "APPROVED_BY_CREATOR"
+    },
+    {
+      "state": "Hit",
+      "direction": "front_r",
+      "before": [
+        "characters/orc-01/sprites/Animations/Hit/hit_front_r_00.png",
+        "characters/orc-01/sprites/Animations/Hit/hit_front_r_01.png",
+        "characters/orc-01/sprites/Animations/Hit/hit_front_r_02.png"
+      ],
+      "after": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_02.png"
+      ],
+      "beforeDurationsMs": [
+        80,
+        80,
+        80
+      ],
+      "afterDurationsMs": [
+        50,
+        100,
+        90
+      ],
+      "artisticApproval": "APPROVED_BY_CREATOR"
+    }
+  ],
+  "manifest": "characters/orc-01/source/aseprite/combat-refinement-v2/editor.json",
+  "limitations": [
+    "Only front_r Attack and Hit pilots. No other direction or Job rewritten.",
+    "Concept v2 requires Gate 1 before any production sprites based on it.",
+    "Native reconstruction is lossy and needs visual approval; baseline remains authoritative.",
+    "No weapons, events, sockets, Unity registration or runtime timing implemented."
+  ],
+  "creatorApproval": "characters/orc-01-refinement-v2/reports/creator-approval-v2.json"
+}

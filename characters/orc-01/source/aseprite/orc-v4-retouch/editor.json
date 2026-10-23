@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-v4-retouch",
+  "kind": "character",
+  "characterId": "orc-01",
+  "jobs": [
+    {
+      "id": "attack-front-r",
+      "source": "characters/orc-01/source/aseprite/orc-v4-retouch/source/attack-front-r.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      }
+    },
+    {
+      "id": "hit-front-r",
+      "source": "characters/orc-01/source/aseprite/orc-v4-retouch/source/hit-front-r.aseprite",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "PENDING_CREATOR",
+  "baseline": "V2 approved by creator; prior image_gen art + external reconstruction",
+  "candidate": "V3 original pixel authorship in Aseprite Lua; 0 imported art pixels",
+  "concept": {
+    "before": "characters/orc-01-refinement-v2/concepts/warrior-refinement-v2.png",
+    "after": "characters/orc-01-aseprite-v3/concepts/aseprite-native-v3.png",
+    "beforeResolution": [
+      1254,
+      1254
+    ],
+    "afterResolution": [
+      128,
+      128
+    ],
+    "note": "V2 is a high-resolution concept. V3 is a native pixel concept study; not identical authoring resolution."
+  },
+  "clips": [
+    {
+      "state": "Attack",
+      "direction": "front_r",
+      "before": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_02.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_03.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_04.png"
+      ],
+      "after": [
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/attack/attack_front_r_00.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/attack/attack_front_r_01.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/attack/attack_front_r_02.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/attack/attack_front_r_03.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/attack/attack_front_r_04.png"
+      ],
+      "beforeDurationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "afterDurationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ]
+    },
+    {
+      "state": "Hit",
+      "direction": "front_r",
+      "before": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_02.png"
+      ],
+      "after": [
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/hit/hit_front_r_00.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/hit/hit_front_r_01.png",
+        "characters/orc-01-aseprite-v3/source/aseprite/authored/hit/hit_front_r_02.png"
+      ],
+      "beforeDurationsMs": [
+        50,
+        100,
+        90
+      ],
+      "afterDurationsMs": [
+        50,
+        100,
+        90
+      ]
+    }
+  ],
+  "sourceReport": "reports/orc-aseprite-authorship-v3.json",
+  "build": {
+    "path": "dist/editor/orc-aseprite-authorship-v3/2ad73df784482070f621",
+    "preview": "dist/editor/orc-aseprite-authorship-v3/2ad73df784482070f621/preview.html",
+    "summary": {
+      "jobs": 3,
+      "frames": 9,
+      "comparedFrames": 9
+    }
+  },
+  "layers": [
+    "01 Rear cloth",
+    "02 Far leg and boot",
+    "03 Near leg and boot",
+    "04 Torso and cuirass",
+    "05 Left armored arm",
+    "06 Neckcloth",
+    "07 Head and face",
+    "08 Belt and tabard",
+    "09 Right bare arm"
+  ],
+  "approval": "PENDING_CREATOR",
+  "limitations": [
+    "This demonstrates agent-authored Lua pixel craft in Aseprite, not the maximum artistic quality of the editor or a built-in image generator.",
+    "Nine regional layers, not a complete reusable equipment rig. Removing armor does not expose a finished nude body.",
+    "Concept is native 128x128; V2 concept is high resolution. Compare native combat at equal resolution.",
+    "Only front_r concept/Attack/Hit study; not a new complete production character.",
+    "No runtime Unity or weapons/events/bindings implemented."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-combat-refinement-v2",
+  "kind": "character",
+  "characterId": "orc-01",
+  "jobs": [
+    {
+      "id": "attack-front-r",
+      "source": "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r.aseprite",
+      "sourceSha256": "3ad72eed1464ae5713a5a43cb72109832e3f798e14b11acf7f0c70fa8abdd46e",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          80,
+          110,
+          50,
+          90,
+          120
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_02.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_03.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Attack/attack_front_r_04.png"
+      ]
+    },
+    {
+      "id": "hit-front-r",
+      "source": "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r.aseprite",
+      "sourceSha256": "9d7289e930b13e57ad4f33c3751c01fa06d456582f732da2803a59d04ebe7cf7",
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 3,
+        "durationsMs": [
+          50,
+          100,
+          90
+        ],
+        "groundY": 126,
+        "alpha": "binary",
+        "requireContent": true,
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_00.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_01.png",
+        "characters/orc-01/source/aseprite/combat-refinement-v2/Hit/hit_front_r_02.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-01",
+  "identityId": "cd362b7a-e190-4e5b-aa7c-54970cfd8353",
+  "name": "orc-01",
+  "status": "candidate",
+  "createdAt": "2026-10-18T22:29:57.986Z",
+  "styleId": "tactics-core-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Dano físico (papel do Job Warrior)",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Concept-07 escolhido e aprovado pelo criador em 2026-10-19: Orc adulto de feição bestial e brutal, testa pesada, focinho/nariz largo e achatado, maxilar anguloso, olhos ferozes e presas inferiores grandes e irregulares; expressão tensa, agressiva e battle-hardened, sem serenidade humana. Identidade deste indivíduo; não universalizar como cânone de todos os Orcs.",
+    "hair": "Careca, couro cabeludo totalmente nu; preservar sobrancelhas escuras, conforme concept-07 escolhido pelo criador em 2026-10-19.",
+    "ageImpression": "Adulto",
+    "body": "Compacto, ombros largos e musculatura robusta, com proporção tática legível dentro do perfil de 1 tile; não copiar o corpo humanoide do piloto.",
+    "palette": [
+      "verde-oliva acinzentado",
+      "ferro escuro",
+      "couro castanho gasto",
+      "vermelho queimado"
+    ],
+    "dominantHand": "right",
+    "asymmetries": [
+      "mão dominante direita, vazia no conceito base",
+      "proteção de ombro assimétrica"
+    ],
+    "lighting": "Proposta de luz superior esquerda, com clusters e contraste alinhados à âncora; direção ainda candidata."
+  },
+  "outfit": {
+    "id": "warrior-candidate",
+    "description": "Proposta candidata: proteção de ferro escuro e couro, faixa curta vermelho queimado e um ombro reforçado. Conceito/base sem armas, escudo ou capa; ainda sem receita visual aprovada.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Possível machado de batalha de uma mão como asset independente, ainda não criado; aparece somente equipado e invocado por ação."
+  },
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": 126,
+    "ppu": 100,
+    "counts": {
+      "Idle": 4,
+      "Walk": 6,
+      "Attack": 5,
+      "Hit": 3,
+      "Defeat": 5
+    },
+    "note": "Baseline do piloto humanoide 1 tile; anatomias diferentes exigem perfil e revisao. Walk atual usa 3 quadros/tile."
+  },
+  "references": [
+    {
+      "path": "references/tacticsrpg/Docs/Art/References/character_style_anchor_v1.png",
+      "role": "global-style-anchor"
+    }
+  ],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "rendering/reference contract",
+      "category": "REUSE_DIRECT",
+      "evidence": "Docs/ART_DIRECTION.md + ancora",
+      "adaptation": "Aplicar ao novo corpo; revisar em escala de jogo."
+    },
+    {
+      "component": "race anatomy/face",
+      "category": "CREATE_NEW",
+      "evidence": "RACES.md fornece perfil, sem modelo racial aprovado.",
+      "adaptation": "Criar rosto, pele e anatomia próprios a partir do perfil Orc Robusto; cor de pele e presas permanecem propostas visuais.",
+      "artRisk": "Anatomia, presas e cor ainda não têm referência racial aprovada; revisar contra a âncora e evitar exagero cartunesco.",
+      "technicalRisk": "Confirmar leitura dentro do perfil 128x128/groundY 126; anatomia excepcional exigiria perfil novo.",
+      "dependencies": [],
+      "validation": "NOT_RUN",
+      "productionImpact": "Conceito precisa de aprovação antes da primeira vista nativa."
+    },
+    {
+      "component": "job outfit",
+      "category": "CREATE_NEW",
+      "evidence": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+      "adaptation": "Usar a silhueta física do Warrior em roupa/corpo candidatos próprios do indivíduo; corpo sem arma, arma como asset independente invocado por ação.",
+      "artRisk": "Identidade de classe deve permanecer entre racas.",
+      "technicalRisk": "Overlay, encaixe, oclusão e sincronização de arma não são suportados pelo runtime atual.",
+      "dependencies": [],
+      "validation": "NOT_RUN",
+      "productionImpact": "Conceito não é sprite; refazer em pixels nativos após Gate 1."
+    },
+    {
+      "component": "Unity registration",
+      "category": "REQUIRES_EXTENSION",
+      "evidence": "UnitVisuals fixa WarriorPilot.",
+      "adaptation": "Registro multi-personagem externo a esta fabrica.",
+      "validation": "NOT_RUN"
+    }
+  ],
+  "selectedConcept": {
+    "file": "concepts/orc-01-warrior-concept-07.png",
+    "sha256": "5c2c5294b7bf849d3fc3a80bc4b9dd36748cb321668e0d16c9158660bc5a00f4",
+    "evidence": "Gostei do orc warrior concept 07. Agora produza todos os assets necessários para incluí-lo no jogo",
+    "date": "2026-10-19"
+  }
+}
