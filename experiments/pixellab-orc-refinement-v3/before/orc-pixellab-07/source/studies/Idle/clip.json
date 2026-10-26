@@ -1,0 +1,73 @@
+{
+  "state": "Idle",
+  "provider": "Aseprite",
+  "tool": "Aseprite Lua torso microanimation over original PixelLab concept",
+  "model": "NOT_APPLICABLE_LOCAL_EDITOR",
+  "prompt": "Creator requested a more restrained Idle. Local Aseprite edit: face and feet fixed, one pixel torso lift/compression with held poses.",
+  "frameCount": 8,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/00.png",
+      "durationMs": 320,
+      "sha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+      "pose": "rest"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/01.png",
+      "durationMs": 160,
+      "sha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+      "pose": "rest"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/02.png",
+      "durationMs": 160,
+      "sha256": "3ad6761c6b26f6ddf1aa689ff8b0bdc5dfbeeeddfd49b9d2aad446bf5237e646",
+      "pose": "shallow-inhale"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/03.png",
+      "durationMs": 320,
+      "sha256": "3ad6761c6b26f6ddf1aa689ff8b0bdc5dfbeeeddfd49b9d2aad446bf5237e646",
+      "pose": "shallow-inhale"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/04.png",
+      "durationMs": 320,
+      "sha256": "3ad6761c6b26f6ddf1aa689ff8b0bdc5dfbeeeddfd49b9d2aad446bf5237e646",
+      "pose": "shallow-inhale"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/05.png",
+      "durationMs": 160,
+      "sha256": "3ad6761c6b26f6ddf1aa689ff8b0bdc5dfbeeeddfd49b9d2aad446bf5237e646",
+      "pose": "shallow-inhale"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/06.png",
+      "durationMs": 160,
+      "sha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+      "pose": "rest"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Idle/07.png",
+      "durationMs": 320,
+      "sha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+      "pose": "rest"
+    }
+  ],
+  "input": "characters/orc-pixellab-07/concepts/concept-selected.png",
+  "inputSha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+  "master": "characters/orc-pixellab-07/source/aseprite/idle-study.aseprite",
+  "masterSha256": "69a6faa3d38f218ac2108159fa15202f64c17f166b16a8ab48578ab91cbe7d25",
+  "sourceProvider": "PixelLab",
+  "revision": "refinement-v2",
+  "authorshipScript": "tools/aseprite/refine-pixellab-idle.lua",
+  "headLockY": 36,
+  "waistCutY": 94,
+  "maximumTorsoDisplacementPx": 1,
+  "lockedFaceDifferences": 0,
+  "lockedLowerBodyDifferences": 0,
+  "playbackTiming": "1920 ms restrained breathing cycle; authored holds are intentional.",
+  "credits": "No new cloud generation for this Idle; reuses its own PixelLab concept.",
+  "artisticApproval": "PENDING_CREATOR"
+}

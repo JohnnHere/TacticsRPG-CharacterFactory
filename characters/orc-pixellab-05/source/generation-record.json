@@ -1,0 +1,205 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "Create S-XL image (pro)",
+  "model": "Pro",
+  "prompt": "Original highly detailed medieval dark-fantasy tactical RPG pixel art. A towering adult male orc shock infantry veteran, inspired by the intimidating organized Uruk-hai archetype of Tolkien and the strong silhouette clarity of Warcraft. Tall long-legged powerful anatomy, broad angular shoulders, deep chest, narrow waist, thick neck, roughly seven-head proportions; imposing and battle-hardened, not squat or rounded. Ash-grey skin, severe scarred angular face, pronounced brow, uneven blunt tusks, short coarse black hair. Elaborate functional blackened iron armor: overlapping angular breastplate panels with a raised central ridge, layered articulated pauldrons, riveted neck guard, segmented vambraces, small chainmail at joints, lamellar hip tassets, reinforced knee plates and armored boots. Distinct steel bevels, fasteners, leather straps, worn edge highlights, restrained dents and scratches; carefully shaded large metal planes remain readable. Dark gunmetal, cold steel edges, oxblood cloth and aged brown leather. Brutal disciplined infantry presence, chin slightly lowered and gaze challenging. Both hands empty and relaxed beside the body. Entire figure from head to both complete boots, front three-quarter standing view, centered in a 128x128 transparent canvas with clear margin on every side. Crisp deliberate pixel clusters, rich material detail and controlled contrast. No held, carried or sheathed weapon, shield, scenery, text, franchise insignia or named character.",
+  "seed": "381091172.0",
+  "inputImages": [],
+  "styleImages": [],
+  "referenceImages": [],
+  "targetPalette": "No",
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "blankAsepriteMaster": "source/aseprite/concept-raw.aseprite",
+  "blankMasterSha256": "2c1a496bbb06848a0a4c180ed7f2809d7711f986233a5c0a1dd64b1e39c76dc2",
+  "status": "CORRECTIVE_STUDIES_PENDING_CREATOR",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "sha256": "df35cea36b508a379eb2e9c30c19c1653c139033892419a576771ec9cdb4dfc5",
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "a9ac7ea109ab750d0913d287f12d2bda1465de30e42af26e7bda83805e36c3ab"
+    }
+  ],
+  "animations": [
+    {
+      "state": "Idle",
+      "frames": 5,
+      "clip": "characters/orc-pixellab-05/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/infante-idle-balanced-v3/source/infante-idle-balanced.aseprite",
+      "masterSha256": "976f5088dfaa84130c5f48edc2077060c2c4c3500e56ac5503ce1c9d0f2808f9",
+      "revision": "infante-idle-balanced-v3"
+    },
+    {
+      "state": "Walk",
+      "frames": 16,
+      "clip": "characters/orc-pixellab-05/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/walk-study.aseprite",
+      "masterSha256": "385e0c771260800e314c3e9ea6d0f808a00b3168a717db23d2266293240b4bfe",
+      "revision": "refinement-v4"
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "UI advertised 10–25 generations per Create image (Pro) request; actual account debit NOT_EXPOSED",
+  "artisticApproval": "PENDING_CREATOR",
+  "outputMethod": "New frame",
+  "requestSettings": {
+    "modelName": "generate_image_new",
+    "seed": "739052271.0",
+    "outputMethod": "New frame",
+    "paletteChoice": "No",
+    "noBackground": true,
+    "styleOptions": {
+      "color_palette": true,
+      "detail": true,
+      "outline": true,
+      "shading": true
+    },
+    "styleImageDisplay": "",
+    "referenceImagesDisplay": []
+  },
+  "requestSettingsAttempts": [
+    {
+      "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A heavy adult male orc shock infantryman in the broad organized Uruk-hai tradition of Tolkien-inspired medieval fantasy: dense powerful torso, thick neck, squared scarred face, heavy brow, blunt tusks, ash-grey skin with a cold undertone, close-cropped black hair. Functional dark gunmetal armor assembled from broad overlapping plates, iron rivets, rough dark-red waist cloth and utilitarian leather bindings. Militaristic, disciplined and intimidating, not a green heroic warrior. Strong broad silhouette with visible legs and boots. Original high-detail medieval fantasy tactical RPG pixel art, crisp deliberate pixel clusters and rich material texture, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. No franchise insignia or recognizable named character details; original individual.",
+      "model_name": "pixen",
+      "seed": "0",
+      "view": "none",
+      "direction": "south",
+      "detail": "highly detailed",
+      "outline": "selective outline",
+      "init_image": "No",
+      "init_image_strength": 150,
+      "output_method": "New frame",
+      "no_background": true,
+      "image_size": {
+        "height": 128,
+        "width": 128
+      }
+    },
+    {
+      "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A heavy adult male orc shock infantryman in the broad organized Uruk-hai tradition of Tolkien-inspired medieval fantasy: dense powerful torso, thick neck, squared scarred face, heavy brow, blunt tusks, ash-grey skin with a cold undertone, close-cropped black hair. Functional dark gunmetal armor assembled from broad overlapping plates, iron rivets, rough dark-red waist cloth and utilitarian leather bindings. Militaristic, disciplined and intimidating, with a distinct broad silhouette. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, deliberate clean pixel clusters and rich metal/leather texture, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. No franchise insignia or recognizable named character details; original individual.",
+      "model_name": "generate_pixelart_flux",
+      "seed": "0",
+      "view": "none",
+      "direction": "south",
+      "detail": "highly detailed",
+      "outline": "single color black outline",
+      "init_image": "No",
+      "init_image_strength": 150,
+      "output_method": "New frame",
+      "no_background": true,
+      "image_size": {
+        "height": 64,
+        "width": 64
+      },
+      "shading": "basic shading",
+      "isometric": false,
+      "oblique_projection": false
+    }
+  ],
+  "attempts": [
+    {
+      "tool": "Create Image S-XL (New, Pixen)",
+      "model": "pixen",
+      "request": "source/pixellab-results/attempt-001-blocked-request.json",
+      "outcome": "BLOCKED_FREE_TIER",
+      "output": null
+    },
+    {
+      "tool": "Create medium-extra large image (PixFlux V3)",
+      "model": "generate_pixelart_flux",
+      "request": "source/pixellab-results/attempt-002-blocked-request.json",
+      "outcome": "BLOCKED_FREE_TIER",
+      "output": null
+    }
+  ],
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "requestHistoryCopy": "source/pixellab-results/Concept/request.json",
+  "outputSeed": "381091172.0",
+  "revision": "refinement-v2",
+  "previousRevision": "experiments/pixellab-orc-refinement-v2/before/orc-pixellab-05",
+  "archiveFolder": "2026-10-23_14-46-39 - Create S-XL image (pro) - 025",
+  "requestHistory": "20261023144639.json",
+  "alternatives": [
+    {
+      "file": "source/pixellab-results/Concept/revision-v2/0.png",
+      "selected": false,
+      "sha256": "52d674b9d49fdb7f0eda6a5081bb36ad51797e6e875cc058fd1c8451354ffa1f"
+    },
+    {
+      "file": "source/pixellab-results/Concept/revision-v2/1.png",
+      "selected": true,
+      "sha256": "432cb7850dc09244a44ce575468475a3aa1844d78afdaa50bd85c2ac8f72ea60"
+    },
+    {
+      "file": "source/pixellab-results/Concept/revision-v2/2.png",
+      "selected": false,
+      "sha256": "abac7ad547746a534858489b80792a4fd7e678f4de44277c30b52f2fe2faba5d"
+    },
+    {
+      "file": "source/pixellab-results/Concept/revision-v2/3.png",
+      "selected": false,
+      "sha256": "49be5c1c267c9be23c02f286ea84ba991eac2c7132959092b1dfefb6bd938b6b"
+    }
+  ],
+  "seedEvidence": "Official request history updated after completion",
+  "refinement": {
+    "revision": "refinement-v2",
+    "before": "experiments/pixellab-orc-refinement-v2/before/orc-pixellab-05",
+    "report": "reports/orc-pixellab-refinement-v2.md",
+    "review": "reports/orc-pixellab-refinement-v2/review.html",
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "historicalFailure": {
+    "message": "High load for free tier; provider temporarily limited free-tier requests.",
+    "requests": [
+      "source/pixellab-results/attempt-001-blocked-request.json",
+      "source/pixellab-results/attempt-002-blocked-request.json"
+    ],
+    "output": null,
+    "actualDebit": "NOT_EXPOSED"
+  },
+  "currentRevision": "refinement-v4",
+  "license": "Pro explicitly confirmed by creator; tool/model recorded independently",
+  "review": "reports/orc-pixellab-refinement-v4/review.html",
+  "editorRetouch": {
+    "tool": "Aseprite Lua specific pixel retouch",
+    "script": "tools/aseprite/refine-infante-scalp-v3.lua",
+    "scope": "Bald crown only, x52..79/y0..11; face and armor outside that region exactly preserved",
+    "source": "experiments/pixellab-orc-refinement-v3/before/orc-pixellab-05/concepts/concept-selected.png",
+    "generatedConceptModel": "PixelLab Pro",
+    "retouchModel": "NOT_APPLICABLE_EDITOR"
+  },
+  "idleFinishing": {
+    "script": "tools/aseprite/balance-infante-idle-v3.lua",
+    "sourceFrames": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "method": "Whole original poses selected around resting stance; no pixel changes, scaling, torso compression or image blending. Intermediate excursion and cadence.",
+    "headExcursionPx": 2,
+    "newCloudCalls": 0,
+    "newGenerationCharges": 0
+  },
+  "idleCandidates": [
+    {
+      "revision": "infante-idle-balanced-v3",
+      "clip": "characters/orc-pixellab-05/source/studies/IdleCandidates/balanced-v3/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/infante-idle-balanced-v3/source/infante-idle-balanced.aseprite",
+      "selected": true,
+      "artisticApproval": "APPROVED_CREATOR_IDLE_REFERENCE"
+    }
+  ],
+  "idleStandard": "config/idle-art-standard-v1.json",
+  "idleApproval": "Approval of this shown one-view Idle and its artistic direction as future Idle reference. Not all directions/characters, runtime or other gates."
+}

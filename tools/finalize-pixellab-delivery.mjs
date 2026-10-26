@@ -1,0 +1,36 @@
+// Synchronize factual delivery documentation after all six studies pass checks.
+import fs from 'node:fs';
+const read=p=>fs.readFileSync(p,'utf8');
+const write=(p,s)=>fs.writeFileSync(p,s);
+const review=JSON.parse(read('reports/pixellab-orcs-review-check.json'));
+const bridge=JSON.parse(read('reports/pixellab-master-roundtrip.json'));
+if(review.status!=='PASS'||review.animationStudies!==6||review.exactCanvasComparisons!==51||bridge.status!=='PASS'||bridge.summary.comparedFrames!==51)throw Error('Delivery evidence incomplete');
+let doc=read('docs/PIXELLAB_ASEPRITE.md');
+doc=doc.replace('Geração real em verificação, não confundir painel aberto com conta habilitada ou resultado entregue.','Funcionamento comprovado por uma geração Pro (quatro saídas, três selecionadas) e seis animações reais de oito quadros. Há nove mestres de revisão e 51 quadros exportados/comparados pelo bridge; a prévia também passou em 51 comparações RGBA.');
+const a=doc.indexOf('Pacotes preparados sem consulta a arte legada:');
+const b=doc.indexOf('\n\n## Retorno',a);
+doc=doc.slice(0,a)+`Pacotes entregues sem consulta a arte legada: **orc-pixellab-01 — Veterano da Vanguarda**, **orc-pixellab-02 — Quebra-Linhas**, **orc-pixellab-03 — Campeão de Bronze**. São três indivíduos candidatos, não roupas do Orc atual. Os rótulos iniciais do planejamento foram substituídos pelos nomes das saídas reais em selected-candidates.json. Os quatro resultados brutos foram preservados. Cada handoff contém apenas seu próprio conceito novo. Uma única requisição Create image Pro gerou quatro propostas 128×128; seis requisições Animate with Text (v3) geraram Idle e Walk, oito quadros por clipe. Os modelos/seed/prompts reais estão em source/generation-record.json e source/studies/<estado>/clip.json. Custos anunciados: Pro 10–25 gerações por requisição e animação 1–8; débito efetivo NOT_EXPOSED. Não houve compra.
+
+## Operação em segundo plano e entrega
+
+1. Abrir a extensão oficial no Aseprite. Uma nova geração ainda exige sua interface; esta integração não expõe uma API headless autenticada.
+2. Ativar Edit > PixelLab > Generation queue > Queue new generations in the background. Usar Continue in background na requisição em andamento; as seguintes entram na fila. Não fechar o Aseprite durante o processamento.
+3. Para cada personagem, abrir seu conceito e definir explicitamente Set start frame. O painel reutiliza a última entrada e precisa ser atualizado ao trocar de indivíduo. Não selecionar um quadro vazio ou arte antiga. Para Idle/Walk do mesmo conceito, manter essa entrada e substituir apenas a ação.
+4. O complemento grava o resultado local em generation_history. jobs.json relaciona número da fila, personagem, ação e histórico real. node tools/poll-pixellab-jobs.mjs recolhe resultados concluídos sem ocupar mouse/teclado. Somente PNGs de saída e campos permitidos de procedência são importados; configurações e credenciais não são copiadas.
+5. O importador verifica que 0.png é exatamente o conceito daquele personagem. Lua dentro do Aseprite monta o mestre bruto (entrada + oito saídas), o mestre de estudo (oito saídas) e exporta PNGs sem alterar pixels. O tempo de revisão, 100 ms por quadro, foi definido na fábrica: o arquivo PNG do provedor não expõe timing.
+6. node tools/build-pixellab-orc-review.mjs monta reports/pixellab-orcs-independent-v1/review.html. Permite comparar conceitos, Idle/Walk, escala nativa/ampliada, fundos, pausa e quadro a quadro. node tools/export-pixellab-review.mjs exporta os nove mestres via bridge para dist/editor; manifesto em experiments/pixellab-independent-orc-v1/editor.json. Não escreve slots de produção.
+7. Verificação da apresentação: tmp/pixel-venv/Scripts/python.exe tools/check-pixellab-review.py. Folhas de inspeção: tools/pixellab-motion-contact.py. Esses comandos montam apresentação e conferem pixels; não geram arte.
+
+Locais por candidato: concepts/concept-selected.png, source/aseprite/concept-selected.aseprite, source/aseprite/idle-study.aseprite, source/aseprite/walk-study.aseprite, source/studies/Idle e Walk (00–07.png e clip.json). Originais da extensão em source/pixellab-results; versões brutas preservadas. Evidências: reports/pixellab-jobs-status.json, pixellab-master-roundtrip.json, pixellab-orcs-review-check.json e pixellab-orcs-independent-v1.json.
+
+Leitura artística inicial: as três opções têm anatomia robusta, rostos expressivos e armaduras legíveis. A exploração varia sobretudo paleta, cabelo e armadura; ainda não demonstra três linguagens artísticas radicalmente diferentes. Os movimentos têm poses reais, mas há oscilação de detalhes de mãos/armadura e ajustes de apoio/fechamento do ciclo a revisar. São estudos brutos, não clipes finais. A extensão acelera propostas e movimentos; o Aseprite continua necessário para curadoria, registro, acabamento e consistência. Economia de tokens e custo monetário não foram medidos; não prometer economia com base apenas nesta demonstração.
+`+doc.slice(b);
+write('docs/PIXELLAB_ASEPRITE.md',doc);
+fs.copyFileSync('docs/PIXELLAB_ASEPRITE.md','../TacticsRPG/Docs/Art/PIXELLAB_ASEPRITE.md');
+const note='**Entrega PixelLab — 2026-10-23:** três conceitos independentes e seis estudos Idle/Walk (48 quadros de movimento), com mestres Aseprite e revisão interativa em reports/pixellab-orcs-independent-v1/review.html. Exportação dos nove mestres e prévia: 51/51 comparações RGBA. Aguardando escolha artística; V4 continua selecionada e Unity não foi integrado. Próximo: escolher uma opção e refinar silhueta, materiais, mãos, apoio e fechamento dos ciclos antes de expandir vistas/classes.';
+for(const p of ['docs/ROADMAP.md','handoff/AGENT_CONTEXT.md']){let s=read(p);const n=s.indexOf('\n');s=s.slice(0,n+1)+'\n'+note+'\n'+s.slice(n+1);write(p,s);}
+let r=read('README.md').replace('extensão oficial instalada, ativação em verificação.','extensão oficial operacional; três conceitos e seis estudos Idle/Walk entregues. [Comparar opções](reports/pixellab-orcs-independent-v1/review.html).');write('README.md',r);
+for(const p of ['../TacticsRPG/Docs/Art/CHARACTER_PIPELINE.md','../TacticsRPG/Docs/GameDesign/DESIGN_DECISIONS.md']){let s=read(p);const n=s.indexOf('\n');s=s.slice(0,n+1)+'\n'+note+' Os relatórios e mestres ficam no repositório irmão TacticsRPG-CharacterFactory.\n'+s.slice(n+1);write(p,s);}
+const p='experiments/pixellab-independent-orc-v1/experiment.json',e=JSON.parse(read(p));e.status='THREE_CONCEPTS_SIX_CANDIDATE_ANIMATIONS_DELIVERED';e.animationStudies=6;e.motionFrames=48;e.proposedCanvas.status='GENERATED_AND_VERIFIED';e.review='reports/pixellab-orcs-independent-v1/review.html';write(p,JSON.stringify(e,null,2)+'\n');
+write('reports/pixellab-integration-operational.json',JSON.stringify({status:'OPERATIONAL_DELIVERED',date:'2026-10-23',extension:'PixelLab 0.4.130',editor:'Aseprite 1.3.18.6 Steam',conceptRequests:1,rawConcepts:4,selectedConcepts:3,animationRequests:6,animationStudies:6,motionFrames:48,savedReviewMasters:9,masterRoundtrip:bridge,presentation:review,backgroundGeneration:'Official extension queue enabled; submissions use GUI',legacyArtworkInputs:[],creditsDebit:'NOT_EXPOSED',tokenSavings:'NOT_MEASURED',artisticApproval:'PENDING_CREATOR',UnityIntegration:'NOT_RUN'},null,2)+'\n');
+console.log('Delivery documentation synchronized in factory and main project.');

@@ -1,0 +1,157 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "Create Image S-XL (New, Pixen)",
+  "model": "pixen",
+  "prompt": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from bald head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A lean, athletic adult male orc veteran, strong shoulders, defined waist, long mobile legs and arms, bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. Short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor, carefully strapped brown leather and practical boots. Agile and disciplined, not bulky. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, crisp deliberate pixel clusters, restrained green and red palette, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Entire silhouette visible with clear margin on every side. New individual; do not copy pixels, face, armor, or pose from any existing Orc.",
+  "seed": "1288353400.0",
+  "inputImages": [],
+  "styleImages": [],
+  "referenceImages": [],
+  "targetPalette": "No",
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "blankAsepriteMaster": "source/aseprite/concept-raw.aseprite",
+  "blankMasterSha256": "2c1a496bbb06848a0a4c180ed7f2809d7711f986233a5c0a1dd64b1e39c76dc2",
+  "status": "CONCEPT_AND_CANDIDATE_MOTION_AVAILABLE",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "source": "source/pixellab-results/Concept/0.png",
+      "sha256": "f541e7fb136fd34b0c451be52fcef20af9175ebd1d70d5a1adf1ac7817625c8c",
+      "measurements": {
+        "width": 128,
+        "height": 128,
+        "left": 17,
+        "right": 111,
+        "top": 5,
+        "bottom": 121,
+        "contentHeight": 117,
+        "transparent": 9714,
+        "partial": 0,
+        "colorCount": 30
+      },
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "1404cfe5847cb15f1d1378234f888f4e804436dcf88752f12b7753910b2fa539",
+      "request": "../../../AppData/Roaming/Aseprite/extensions/pixellab/request_history/pixen/20261023100436.json",
+      "alternateAttempts": [
+        {
+          "file": "source/pixellab-results/Concept/attempt-001-cropped.png",
+          "sha256": "4ecb334dbd80aab7b88b6c1feb0c4be6de741f74aec8ac8071350aff0016ab68",
+          "status": "WRONG_FRAMING_NOT_SELECTED",
+          "request": "source/pixellab-results/Concept/attempt-001-request.json"
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "state": "Idle",
+      "clip": "characters/orc-pixellab-04/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-04/source/aseprite/idle-study.aseprite",
+      "frames": 8,
+      "seed": "755769002.0"
+    },
+    {
+      "state": "Walk",
+      "clip": "characters/orc-pixellab-04/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-04/source/aseprite/walk-study.aseprite",
+      "frames": 8,
+      "seed": "0"
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "PixelLab UI advertised 1 generation per S-XL image. Two S-XL files were generated; actual account debit NOT_EXPOSED.",
+  "artisticApproval": "PENDING_CREATOR",
+  "outputMethod": "New frame",
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "attempts": [
+    {
+      "tool": "Create image (Pro)",
+      "model": "Pro",
+      "outcome": "BLOCKED_FREE_TIER",
+      "message": "High load for free tier; temporary limit.",
+      "output": null
+    },
+    {
+      "tool": "Create image (Pro Flash)",
+      "model": "Pro Flash",
+      "outcome": "BLOCKED_FREE_TIER",
+      "message": "High load for free tier; temporary limit.",
+      "output": null
+    },
+    {
+      "tool": "Create Image S-XL (New, Pixen)",
+      "model": "pixen",
+      "seed": "2162580420.0",
+      "outcome": "GENERATED_WRONG_FRAMING",
+      "output": "source/pixellab-results/Concept/attempt-001-cropped.png",
+      "message": "Cropped around the thighs; preserved for comparison and provenance.",
+      "requestSettings": {
+        "description": "A lean, athletic adult male orc warrior: tall compact frame, strong but not bulky shoulders, defined waist and long mobile limbs. Bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. A short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor and carefully strapped brown leather. Nimble veteran rather than a hulking tank. The silhouette should read as agile and disciplined. Textual direction: the restrained green-and-red palette and veteran warrior role of the currently established Orc V4, reinterpreted as a leaner, athletic and bald individual. Do not copy any specific V4 pixels, face, armor shapes or pose. Original medieval fantasy tactical RPG pixel art character, full body, clear readable silhouette at 128x128, expressive face, rich but controlled material detail with deliberate pixel clusters, three-quarter front view, centered and grounded. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated on transparent background. This is a new individual, not a redesign or variant of any existing character.",
+        "model_name": "pixen",
+        "seed": "2162580420.0",
+        "view": "none",
+        "direction": "south",
+        "detail": "highly detailed",
+        "outline": "selective outline",
+        "init_image": "No",
+        "init_image_strength": 150,
+        "output_method": "New frame",
+        "no_background": true,
+        "image_size": {
+          "height": 64,
+          "width": 64
+        }
+      }
+    },
+    {
+      "tool": "Create Image S-XL (New, Pixen)",
+      "model": "pixen",
+      "seed": "1288353400.0",
+      "outcome": "GENERATED",
+      "output": "source/pixellab-results/Concept/0.png",
+      "selectedConcept": "concepts/concept-selected.png",
+      "requestSettings": {
+        "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from bald head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A lean, athletic adult male orc veteran, strong shoulders, defined waist, long mobile legs and arms, bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. Short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor, carefully strapped brown leather and practical boots. Agile and disciplined, not bulky. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, crisp deliberate pixel clusters, restrained green and red palette, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Entire silhouette visible with clear margin on every side. New individual; do not copy pixels, face, armor, or pose from any existing Orc.",
+        "model_name": "pixen",
+        "seed": "1288353400.0",
+        "view": "none",
+        "direction": "south",
+        "detail": "highly detailed",
+        "outline": "selective outline",
+        "init_image": "No",
+        "init_image_strength": 150,
+        "output_method": "New frame",
+        "no_background": true,
+        "image_size": {
+          "height": 128,
+          "width": 128
+        }
+      }
+    }
+  ],
+  "requestSettings": {
+    "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from bald head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A lean, athletic adult male orc veteran, strong shoulders, defined waist, long mobile legs and arms, bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. Short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor, carefully strapped brown leather and practical boots. Agile and disciplined, not bulky. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, crisp deliberate pixel clusters, restrained green and red palette, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Entire silhouette visible with clear margin on every side. New individual; do not copy pixels, face, armor, or pose from any existing Orc.",
+    "model_name": "pixen",
+    "seed": "1288353400.0",
+    "view": "none",
+    "direction": "south",
+    "detail": "highly detailed",
+    "outline": "selective outline",
+    "init_image": "No",
+    "init_image_strength": 150,
+    "output_method": "New frame",
+    "no_background": true,
+    "image_size": {
+      "height": 128,
+      "width": 128
+    }
+  }
+}

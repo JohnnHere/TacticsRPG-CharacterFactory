@@ -1,6 +1,18 @@
+## Política vigente — Orc principal e armas somente no ataque, 2026-10-25
+
+O Orc principal atual é **orc-v1 / Verde Warcraft**, em characters/orc-v1/. O antigo Orc V4 está descartado e nunca é fonte de restauração ou direção atual. A identidade atual é a referência; poses de ataque defeituosas podem ser substituídas.
+
+Espada/machado ficam **ocultos no Idle, Walk, repouso, inspeção, Hit/Defeat e após a ação**. Aparecem somente no intervalo declarado do Attack. Os pedidos anteriores de Idle/Walk armados e o corte único compartilhado entre Sword/Axe estão **SUPERADOS**. São dois perfis: corte de espada e golpe de machado, reutilizáveis entre itens compatíveis da própria categoria. Sem sacar/embainhar, rig universal ou animação corporal por item.
+
+Guia atual: docs/MAIN_ORC_ONE_HANDED_RESCUE.md; autoridade de identidade: reports/orc-production-current.json. Armas seguem a linguagem visual do jogo, sem obrigação de copiar a paleta/cultura Orc. Aseprite continua mestre; PixelLab autorizado auxilia poses; toda edição/exportação artística é no Aseprite. Esta tarefa não modifica Unity nem concede aprovação artística. **Nos registros anteriores abaixo, toda afirmação conflitante de V4 ativa, nenhuma seleção, arma em Idle/Walk ou movimento universal é histórica e superada.**
+
 # Aseprite na Character Factory
 
-Producao Orc vigente: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md), com [ponteiro de selecao](../reports/orc-production-current.json). O auditor abaixo detecta a revisao ativa; a manifestacao V1 e seus builds sao historicos. Para novas edicoes, usar o editor.json V4 da propria roupa como entrada de editor-fork.
+**Histórico superado — 2026-10-24:** V4 ativa e V4 Reimaginado descartados expressamente. Nenhuma seleção de produção ativa; arquivos abaixo são históricos. Novo Orc Atlético em estudo (`orc-pixellab-11`), referência Ágil autorizada; revisão corrente `reports/orc-current-review/review.html`. Não executar scripts antigos para reativar V4.
+
+Atualização de 2026-10-23: [PixelLab via extensão oficial](PIXELLAB_ASEPRITE.md) autorizado para geração dentro do fluxo Aseprite. Experimento de três Orcs novos Tolkien/Warcraft sem usar a V4 ou referências legadas. O bridge batch usa `ASEPRITE_USER_FOLDER` apenas no subprocesso, apontando para `tmp/aseprite-batch-profile`; assim não carrega extensões de interface, credenciais ou preferências da sessão gráfica. GUI PixelLab usa o perfil normal do usuário. Essa decisão atualiza a restrição antiga a geração externa especificamente para PixelLab.
+
+Produção HISTÓRICA SUPERADA: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md), com [ponteiro de selecao](../reports/orc-production-current.json). O auditor abaixo detecta a revisao ativa; a manifestacao V1 e seus builds sao historicos. Para novas edicoes, usar o editor.json V4 da propria roupa como entrada de editor-fork.
 
 ## Politica de autoria vigente — 2026-10-22
 

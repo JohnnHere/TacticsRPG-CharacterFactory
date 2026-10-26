@@ -67,7 +67,7 @@ export function run(argv=process.argv.slice(2)) {
   if(command==='sync') {required(o,'source'); return console.log(JSON.stringify(syncReferences(o.source,o['accept-update']),null,2));}
   const errors=verifyReferences();
   if(command==='doctor') {
-    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Toda autoria artistica no Aseprite, inclusive Lua documentado. Nenhuma geracao externa automatica.',editor:checkAseprite(),editorPolicy:'Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade.'},null,2));
+    console.log(JSON.stringify({node:process.version,root:ROOT,referenceErrors:errors,cloudCalls:'none',generation:'Aseprite e o mestre. PixelLab pela extensao oficial e opcional e executa geracao em nuvem; este comando nao gera nem chama o servico.',editor:checkAseprite(),editorPolicy:'Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade.'},null,2));
     return errors.length?1:0;
   }
   if(errors.length) throw Error('Referencias ausentes/alteradas. Execute doctor e sync antes de prosseguir.');

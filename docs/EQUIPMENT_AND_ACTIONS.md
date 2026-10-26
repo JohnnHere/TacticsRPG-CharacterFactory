@@ -1,6 +1,20 @@
+## Política vigente — Orc principal e armas somente no ataque, 2026-10-25
+
+O Orc principal atual é **orc-v1 / Verde Warcraft**, em characters/orc-v1/. O antigo Orc V4 está descartado e nunca é fonte de restauração ou direção atual. A identidade atual é a referência; poses de ataque defeituosas podem ser substituídas.
+
+Espada/machado ficam **ocultos no Idle, Walk, repouso, inspeção, Hit/Defeat e após a ação**. Aparecem somente no intervalo declarado do Attack. Os pedidos anteriores de Idle/Walk armados e o corte único compartilhado entre Sword/Axe estão **SUPERADOS**. São dois perfis: corte de espada e golpe de machado, reutilizáveis entre itens compatíveis da própria categoria. Sem sacar/embainhar, rig universal ou animação corporal por item.
+
+Guia atual: docs/MAIN_ORC_ONE_HANDED_RESCUE.md; autoridade de identidade: reports/orc-production-current.json. Armas seguem a linguagem visual do jogo, sem obrigação de copiar a paleta/cultura Orc. Aseprite continua mestre; PixelLab autorizado auxilia poses; toda edição/exportação artística é no Aseprite. Esta tarefa não modifica Unity nem concede aprovação artística. **Nos registros anteriores abaixo, toda afirmação conflitante de V4 ativa, nenhuma seleção, arma em Idle/Walk ou movimento universal é histórica e superada.**
+
+## Decisão vigente — Orc V1 e armas, 2026-10-25
+
+Atualização vigente: lote armado v1 rejeitado. Candidata v2 em `docs/ORC_V1_WEAPONS_V2.md`: armas separadas, Idle armado fixo2,2s, Walk16, Attack12; mesmo corpo/pegada/tempos para itens compatíveis. Armas seguem a linguagem visual do jogo, sem obrigação de copiar design/paleta Orc, pois são reutilizáveis entre raças/classes. Fontes atuais em `characters/orc-v1/source/equipment-current.json`. Infante original fica em Orcs Atuais, para etapa avançada; menção a Arquivo abaixo é histórica. Sem integração Unity.
+
+Criador selecionou Verde Warcraft v3 como **Orc V1**, primeiro jogável para futura integração. Fonte em `characters/orc-v1/`; Infante cinza preservado na biblioteca em Orcs Atuais/05 - Infante de Ferro/. Novos assets de uma mão: Espada do Recruta e Machado de Milícia, seguindo `docs/WEAPON_ART_STANDARD.md`. Golpe composto e Walk completo equipado em uma vista, com mestres/camadas/encaixes; a autorização anterior de Walk armado está SUPERADA: attack-only-v1 agora exige Idle/Walk sem armas. Corpo base e Idle fixo permanecem independentes. Página `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`; documentação `docs/ORC_V1_WEAPONS.md`. São assets/prévias locais, não integração Unity ou aprovação automática dos novos golpes/armas. V4 continua descartada; não confundir seleção para integração futura com produção completa em quatro vistas.
+
 # Equipamentos e animacoes de acao — contrato da fabrica v1
 
-Adendo vigente de arte Orc: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md). Os clipes ativos trazem duracoes por quadro `[80,110,50,90,120]`ms e fechamento intencional na pose inicial, ambos vinculados ao fingerprint da aprovacao. `durationMs:90` permanece somente a media/fallback legado; a lista explicita prevalece na autoria/exportacao. Duplicatas intermediarias continuam bloqueadas. Selecao em `reports/orc-production-current.json`, exportador atual `node tools/export-orc-production-v4.mjs`; V1 abaixo descreve a entrega historica. Runtime variavel/equipamento segue pendente.
+Adendo HISTÓRICO SUPERADO de arte Orc: [Aseprite V4 aplicada](ORC_ASEPRITE_V4.md). Os clipes ativos trazem duracoes por quadro `[80,110,50,90,120]`ms e fechamento intencional na pose inicial, ambos vinculados ao fingerprint da aprovacao. `durationMs:90` permanece somente a media/fallback legado; a lista explicita prevalece na autoria/exportacao. Duplicatas intermediarias continuam bloqueadas. Selecao em `reports/orc-production-current.json`, exportador atual `node tools/export-orc-production-v4.mjs`; V1 abaixo descreve a entrega historica. Runtime variavel/equipamento segue pendente.
 
 Data:2026-10-19. Criado a pedido do criador apos auditoria das documentacoes e do codigo atual dos dois repositorios. Este e o padrao de producao da fabrica e de handoff para integracao. Nao descreve funcionalidade ja implementada no Unity. Fontes e SHA256: [auditoria](../reports/equipment-source-audit-v1.json).
 

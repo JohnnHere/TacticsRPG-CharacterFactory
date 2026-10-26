@@ -1,0 +1,364 @@
+{
+  "category": "Sword",
+  "item": {
+    "id": "recruit-sword",
+    "sprite": "assets/weapons/recruit-sword/sprites/recruit-sword.png",
+    "grip": [
+      32,
+      50
+    ],
+    "category": "Sword"
+  },
+  "profile": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/profile.json",
+  "bodyProfile": {
+    "id": "basic.sword-slash",
+    "character": "orc-v1",
+    "category": "Sword",
+    "direction": "front_r",
+    "canvas": [
+      256,
+      256
+    ],
+    "ppu": 100,
+    "bodyOffset": [
+      64,
+      64
+    ],
+    "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+    "handMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+    "frames": [
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 80,
+        "phase": "rest",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+          "sha256": "3139f80bf66566ef9d5e7ec7b5c98f898ce5c139fd8f65ad8f9e71e49ee91fce"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+          "sha256": "9648b532bf66b7a9ae50cc7bb9af232e0b0ffcc3def5434a037bafbb03349af9"
+        },
+        "durationMs": 100,
+        "phase": "load",
+        "grip": [
+          93,
+          130
+        ],
+        "angle": 270,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+          "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+          "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21"
+        },
+        "durationMs": 130,
+        "phase": "high-guard",
+        "grip": [
+          98,
+          89
+        ],
+        "angle": 345,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": true
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+          "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+          "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c"
+        },
+        "durationMs": 65,
+        "phase": "drive",
+        "grip": [
+          157,
+          112
+        ],
+        "angle": 20,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+          "sha256": "850119977c66eada7b45b2a659b243d326b8541aa39dfcf2e78429d867a1dce2"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+          "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552"
+        },
+        "durationMs": 55,
+        "phase": "crossing",
+        "grip": [
+          158,
+          134
+        ],
+        "angle": 55,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+          "sha256": "506ca0dde932a07e9b2a8511ac0e11947cb96ab208cd80dab403380cccf2c79c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+          "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8"
+        },
+        "durationMs": 95,
+        "phase": "strike-follow-through",
+        "grip": [
+          159,
+          142
+        ],
+        "angle": 100,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+          "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308"
+        },
+        "durationMs": 130,
+        "phase": "recovery",
+        "grip": [
+          110,
+          147
+        ],
+        "angle": 105,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 120,
+        "phase": "return-unarmed",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      }
+    ],
+    "itemContract": {
+      "grip": "Integer local point on actual handle",
+      "scale": 1,
+      "canvas": "Per-item native dimensions; no automatic body regeneration",
+      "category": "Sword",
+      "occlusion": "weaponBack -> body -> weaponFront -> own pose-specific fingers",
+      "compatibility": "One-handed items of this category only; check shaft width, blade/head/guard clearance and camera"
+    },
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "output": "reports/main-orc-weapon-rescue-v3/reuse/Sword",
+  "scope": "REVIEW_ONLY; no production selection, body generation or runtime change",
+  "cloudCalls": 0,
+  "bodyRedraws": 0,
+  "frames": [
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/00.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 80,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+        "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "retainedBodySha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "retainedHandSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "grip": null,
+      "angle": null,
+      "weaponVisible": false
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/01.png",
+      "sha256": "46685047ac29036e8b9b3bcedf14ce7d5ef4ca366d57a6f9857ad972a68ad243",
+      "durationMs": 100,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+        "sha256": "3139f80bf66566ef9d5e7ec7b5c98f898ce5c139fd8f65ad8f9e71e49ee91fce"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+        "sha256": "9648b532bf66b7a9ae50cc7bb9af232e0b0ffcc3def5434a037bafbb03349af9"
+      },
+      "retainedBodySha256": "3139f80bf66566ef9d5e7ec7b5c98f898ce5c139fd8f65ad8f9e71e49ee91fce",
+      "retainedHandSha256": "9648b532bf66b7a9ae50cc7bb9af232e0b0ffcc3def5434a037bafbb03349af9",
+      "grip": [
+        93,
+        130
+      ],
+      "angle": 270,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/02.png",
+      "sha256": "f2fd7701ab53d25f815b93f2f8bf42f31b958dc54c5141435a1a13727c140836",
+      "durationMs": 130,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+        "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+        "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21"
+      },
+      "retainedBodySha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5",
+      "retainedHandSha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21",
+      "grip": [
+        98,
+        89
+      ],
+      "angle": 345,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/03.png",
+      "sha256": "4957b69692562a7d967a9a27c501a17db4f71f36e50c06776cab6fd8a524275f",
+      "durationMs": 65,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+        "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+        "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c"
+      },
+      "retainedBodySha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8",
+      "retainedHandSha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c",
+      "grip": [
+        157,
+        112
+      ],
+      "angle": 20,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/04.png",
+      "sha256": "d5f21e60015800a5c3006533d7cb0707b36dfbb4255d217d00b795a593a19fb9",
+      "durationMs": 55,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+        "sha256": "850119977c66eada7b45b2a659b243d326b8541aa39dfcf2e78429d867a1dce2"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+        "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552"
+      },
+      "retainedBodySha256": "850119977c66eada7b45b2a659b243d326b8541aa39dfcf2e78429d867a1dce2",
+      "retainedHandSha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552",
+      "grip": [
+        158,
+        134
+      ],
+      "angle": 55,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/05.png",
+      "sha256": "fdfb064cebf51c48e809bb423cd1a5f66d1058f83cad82086ddf51220c1e7e97",
+      "durationMs": 95,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+        "sha256": "506ca0dde932a07e9b2a8511ac0e11947cb96ab208cd80dab403380cccf2c79c"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+        "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8"
+      },
+      "retainedBodySha256": "506ca0dde932a07e9b2a8511ac0e11947cb96ab208cd80dab403380cccf2c79c",
+      "retainedHandSha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8",
+      "grip": [
+        159,
+        142
+      ],
+      "angle": 100,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/06.png",
+      "sha256": "4eaafd3ded0e6f4ef9b2e810ea7c0790505cb6476f22101cca483c6f48d7cb6b",
+      "durationMs": 130,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+        "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+        "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308"
+      },
+      "retainedBodySha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf",
+      "retainedHandSha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308",
+      "grip": [
+        110,
+        147
+      ],
+      "angle": 105,
+      "weaponVisible": true
+    },
+    {
+      "png": "reports/main-orc-weapon-rescue-v3/reuse/Sword/07.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 120,
+      "body": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png",
+        "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "retainedBodySha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "retainedHandSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "grip": null,
+      "angle": null,
+      "weaponVisible": false
+    }
+  ],
+  "master": "reports/main-orc-weapon-rescue-v3/reuse/Sword/composition.aseprite"
+}

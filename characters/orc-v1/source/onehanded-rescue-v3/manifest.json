@@ -1,0 +1,52 @@
+{
+  "revision": "main-orc-onehanded-v3",
+  "character": "orc-v1",
+  "sourceTruth": "reports/orc-production-current.json",
+  "direction": "front_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "visibilityPolicy": "attack-only-v1",
+  "armedIdle": false,
+  "armedWalk": false,
+  "profiles": {
+    "Sword": "basic.sword-slash",
+    "Axe": "basic.axe-chop"
+  },
+  "clips": [
+    {
+      "state": "Idle",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite"
+    },
+    {
+      "state": "Walk",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "profile": "basic.sword-slash",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "profile": "basic.axe-chop",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite"
+    }
+  ],
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false
+}

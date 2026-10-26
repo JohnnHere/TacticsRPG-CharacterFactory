@@ -1,0 +1,193 @@
+{
+  "revision": "main-orc-onehanded-entry-v1",
+  "baseline": "characters/orc-v1/source/onehanded-polish-v1",
+  "output": "characters/orc-v1/source/onehanded-entry-v1",
+  "masters": "characters/orc-v1/source/aseprite/onehanded-entry-v1",
+  "sequences": {
+    "Sword": [
+      {
+        "fromCategory": "Sword",
+        "index": 0,
+        "durationMs": 30,
+        "visible": false
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 0,
+        "durationMs": 65,
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "grip": [
+          101,
+          131
+        ],
+        "visible": false,
+        "phase": "body-preparation"
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 0,
+        "durationMs": 35,
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "grip": [
+          101,
+          131
+        ],
+        "visible": true,
+        "angle": 315,
+        "phase": "establish-grip"
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 3,
+        "durationMs": 50,
+        "angle": 330,
+        "phase": "entry-elbow-lift"
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 4,
+        "durationMs": 45,
+        "angle": 340,
+        "phase": "entry-shoulder-coil"
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 3,
+        "durationMs": 65
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 4,
+        "durationMs": 35
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 5,
+        "durationMs": 35
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 6,
+        "durationMs": 100
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 7,
+        "durationMs": 55
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 8,
+        "durationMs": 80
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 9,
+        "durationMs": 45
+      },
+      {
+        "fromCategory": "Sword",
+        "index": 10,
+        "durationMs": 90
+      }
+    ],
+    "Axe": [
+      {
+        "fromCategory": "Axe",
+        "index": 0,
+        "durationMs": 40,
+        "visible": false
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 0,
+        "durationMs": 65,
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "grip": [
+          101,
+          131
+        ],
+        "visible": false,
+        "phase": "body-preparation"
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 0,
+        "durationMs": 35,
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "grip": [
+          101,
+          131
+        ],
+        "visible": true,
+        "angle": 300,
+        "phase": "establish-grip"
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 3,
+        "durationMs": 80
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 4,
+        "durationMs": 155
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 5,
+        "durationMs": 35
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 6,
+        "durationMs": 115
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 7,
+        "durationMs": 110
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 8,
+        "durationMs": 130
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 9,
+        "durationMs": 50
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 10,
+        "durationMs": 90
+      },
+      {
+        "fromCategory": "Axe",
+        "index": 11,
+        "durationMs": 100
+      }
+    ]
+  },
+  "impactIndex": {
+    "Sword": 8,
+    "Axe": 6
+  },
+  "provenance": {
+    "prepMaster": "experiments/main-orc-entry-v1/inputs/prepare-arm.aseprite",
+    "prepSource": "Masked PixelLab Pro Flash on current own neutral; reapply outside-mask in Aseprite, own-finger trace",
+    "actualPrepGripNative": [
+      37,
+      67
+    ],
+    "cloudCalls": 1,
+    "chargedGenerations": 6,
+    "neutralToPrepTravelPx": 17.26,
+    "scope": "entry only; successful strike/recovery preserved; no gameplay changes"
+  }
+}

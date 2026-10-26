@@ -1,0 +1,97 @@
+{
+  "provider": "PixelLab",
+  "tool": "create_image_pro",
+  "prompt": "Original refined medieval fantasy tactical RPG pixel art. A NEW tall adult male Orc elite iron infantry veteran inspired by the fearsome long-haired Uruk-hai of the Lord of the Rings films, with Warcraft silhouette clarity. Match the reference severe imposing scarred angular grey Orc face and detailed blackened iron armor language: riveted articulated pauldrons, gorget, beveled plate cuirass, chainmail joints and segmented leg protection. A little TALLER and LEANER than the reference, long legs, athletic muscular sinewy limbs, narrower waist and flat abdomen, no swollen or fat torso. Long coarse black hair falling to the shoulders and down the back, irregular strands framing the temples, swept away from the eyes, no topknot, no helmet. Imposing disciplined brutal presence. Gunmetal, cold steel edges, dark oxblood cloth and aged brown leather. Full body, complete boots, centered front three-quarter stance facing viewer and slightly right, head aligned with chest. Both hands empty. Native 128x128 transparent canvas, use the height generously while leaving a clear margin; small mature head and elongated proportions convey greater height. Crisp intentional pixel clusters, detailed materials, controlled lighting. No weapon held carried or sheathed, no shield, scenery, franchise symbol, text or named character.",
+  "reference": "characters/orc-pixellab-05/concepts/concept-selected.png",
+  "artisticApproval": "PENDING_CREATOR",
+  "status": "CORRECTIVE_STUDIES_PENDING_CREATOR",
+  "interface": "official MCP HTTP",
+  "pluginVersion": "0.4.130",
+  "model": "Pro",
+  "seed": "NOT_RECORDED",
+  "inputImages": [
+    "characters/orc-pixellab-05/concepts/concept-selected.png"
+  ],
+  "styleImages": [],
+  "referenceImages": [
+    "characters/orc-pixellab-05/concepts/concept-selected.png"
+  ],
+  "targetPalette": "No",
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "outputMethod": "New frame",
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "source": "source/pixellab-results/Concept/0.png",
+      "sha256": "118ddbe7471cda539e3fb9954247f3c092186a6415775ec341e3288cdfa722a9",
+      "measurements": {
+        "width": 128,
+        "height": 128,
+        "left": 34,
+        "right": 97,
+        "top": 6,
+        "bottom": 123,
+        "contentHeight": 118,
+        "transparent": 11807,
+        "partial": 0,
+        "colorCount": 39
+      },
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "9015816915d22a5fc2803738c9de692db23f792f892526a217d5127a4965d40a",
+      "request": null
+    }
+  ],
+  "animations": [
+    {
+      "state": "Idle",
+      "frames": 8,
+      "clip": "characters/orc-pixellab-10/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-10/source/aseprite/idle-study.aseprite",
+      "masterSha256": "3c6cf741e0a15e65fa8d10787a178af03932af62579154d5a50ee3380c0dc0bd",
+      "revision": "refinement-v4"
+    },
+    {
+      "state": "Walk",
+      "frames": 16,
+      "clip": "characters/orc-pixellab-10/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-10/source/aseprite/walk-study.aseprite",
+      "masterSha256": "7f65f70ed3378e2c26c0066e018e8095cb012ed50240369af1664f9a40f4a699",
+      "revision": "refinement-v4"
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "10 generations reported by MCP for four candidates",
+  "selectedOutput": 2,
+  "revision": "refinement-v4",
+  "approval": "PENDING_CREATOR",
+  "currentRevision": "refinement-v4",
+  "review": "reports/orc-pixellab-refinement-v4/review.html",
+  "conceptJobId": "2cd80d7f-c629-47c2-ac13-e5b9330b5a44",
+  "conceptRequest": "experiments/pixellab-orc-refinement-v4/10-Concept-request.json",
+  "conceptResult": "experiments/pixellab-orc-refinement-v4/10-Concept-result.json",
+  "alternatives": [
+    {
+      "file": "source/pixellab-results/Concept/refinement-v4/0.png",
+      "sha256": "0c296cacb0769ebe67668c88ce1104fd0b0f94ca1a02226506c4425cf00042a0"
+    },
+    {
+      "file": "source/pixellab-results/Concept/refinement-v4/1.png",
+      "sha256": "e9d07d8ade3886d87b655373923117bcafa6676f447368c7adbc31a3f3b0163b"
+    },
+    {
+      "file": "source/pixellab-results/Concept/refinement-v4/2.png",
+      "sha256": "118ddbe7471cda539e3fb9954247f3c092186a6415775ec341e3288cdfa722a9"
+    },
+    {
+      "file": "source/pixellab-results/Concept/refinement-v4/3.png",
+      "sha256": "b90a1916177ede88551e5a29df3ce1194c90bfdb248e04bbe46a418c88b8b735"
+    }
+  ]
+}

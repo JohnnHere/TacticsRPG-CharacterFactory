@@ -1,0 +1,712 @@
+{
+  "revision": "main-orc-onehanded-entry-v1",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "front_r",
+  "loop": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "groundY": 190,
+  "frameCount": 13,
+  "master": "Ataque.aseprite",
+  "masterSha256": "d39e171a82e10ffd0ad5b4ead5f08e5f5a7869da074c5e89b519c0213bea6288",
+  "bodyMaster": "Corpo.aseprite",
+  "bodyMasterSha256": "e14923db49345daa43ae995dd0f150cf5d1dd3fe5d93c25903fe6ce0d5aeaf52",
+  "handMaster": "Dedos.aseprite",
+  "handMasterSha256": "eb35d6414c860e9a3ca469117c407a8f4d5939a10576ccf98117112f3515154f",
+  "weapon": {
+    "id": "recruit-sword",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "scale": 1,
+    "source": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+    "sprite": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+    "sourceSha256": "00feddda647f6fbb68d9236c5e5e1972affa2fdb798c19b226382743ecedfc17",
+    "master": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+    "spriteSha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a",
+    "masterSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4"
+  },
+  "frames": [
+    {
+      "png": "Quadros/00.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 30,
+      "phase": "rest",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 0,
+        "ms": 30,
+        "visible": false,
+        "plannedGrip": null,
+        "grip": null,
+        "angle": null,
+        "phase": "rest",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/00.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/00.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/00.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "png": "Quadros/01.png",
+      "sha256": "8d3be327ccfa55511eeb757a5a9ebc37ff6029438192a9e96d3450cd9bdd9045",
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 0,
+        "ms": 65,
+        "visible": false,
+        "plannedGrip": [
+          101,
+          131
+        ],
+        "grip": null,
+        "angle": null,
+        "phase": "body-preparation",
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/00.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/00.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/01.png",
+          "sha256": "8d3be327ccfa55511eeb757a5a9ebc37ff6029438192a9e96d3450cd9bdd9045"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "png": "Quadros/02.png",
+      "sha256": "d7de300266cafa7a1aa61a434f1c242e0959e289949d83fd251dd83940b6bd38",
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        101,
+        131
+      ],
+      "rotationDeg": 315,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 0,
+        "ms": 35,
+        "visible": true,
+        "plannedGrip": [
+          101,
+          131
+        ],
+        "grip": [
+          101,
+          131
+        ],
+        "angle": 315,
+        "phase": "establish-grip",
+        "bodyInput": "experiments/main-orc-entry-v1/inputs/prepare-body.png",
+        "handInput": "experiments/main-orc-entry-v1/inputs/prepare-hand.png",
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/00.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/00.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/02.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/02.png",
+          "sha256": "8d3be327ccfa55511eeb757a5a9ebc37ff6029438192a9e96d3450cd9bdd9045"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/02.png",
+          "sha256": "694d6977587e2b456891d5b36aa306884832e3a849a04d4302bce3cfecd6a424"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/02.png",
+          "sha256": "ddcd8de3ea831b7829231bb708ca0d6296e46e4eb39c67f4dbafac79e83ecccd"
+        }
+      }
+    },
+    {
+      "png": "Quadros/03.png",
+      "sha256": "ea7bb378f984f43ecaa35764102b5b5f46d024a3c0636a57836ca712cf29c060",
+      "durationMs": 50,
+      "phase": "entry-elbow-lift",
+      "weaponVisible": true,
+      "rightGrip": [
+        88,
+        118
+      ],
+      "rotationDeg": 330,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Axe",
+        "index": 3,
+        "ms": 50,
+        "visible": true,
+        "plannedGrip": [
+          88,
+          118
+        ],
+        "grip": [
+          88,
+          118
+        ],
+        "angle": 330,
+        "phase": "entry-elbow-lift",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/03.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/03.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/03.png",
+          "sha256": "365836e859850a4cf26d651074c6e3e520f34d87f00357d90153749c254028c5"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/03.png",
+          "sha256": "4e0301622eb7eedf5684ad5600bb385f48c72e7f2a6d730bed2298988f7554b3"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/03.png",
+          "sha256": "68c5b9a7b23505c362b5b01d92a404ab1a254e0b5501edc003209def4aa483ea"
+        }
+      }
+    },
+    {
+      "png": "Quadros/04.png",
+      "sha256": "c622b0cc033f4ae9409010d7db7a3a6f35b5206a934cdb3b0c186cbfb1abab3a",
+      "durationMs": 45,
+      "phase": "entry-shoulder-coil",
+      "weaponVisible": true,
+      "rightGrip": [
+        98,
+        100
+      ],
+      "rotationDeg": 340,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "sourceMapping": {
+        "from": "Axe",
+        "index": 4,
+        "ms": 45,
+        "visible": true,
+        "plannedGrip": [
+          98,
+          100
+        ],
+        "grip": [
+          98,
+          100
+        ],
+        "angle": 340,
+        "phase": "entry-shoulder-coil",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/04.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/04.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/04.png",
+          "sha256": "dcb93809353bf371fcae5e50780b30a6198ae90f00a9fe4e64954c9c328865d3"
+        },
+        "body": {
+          "png": "Camadas/body/04.png",
+          "sha256": "28e38a389b882baaf5348380cb3bfe37b6969e45956da34b6ee0c94bae9df786"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/04.png",
+          "sha256": "f006272e1826085f140743c5b22aa99482e61e65412cf871fb219297468575ad"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/04.png",
+          "sha256": "6af7830ccc5c8c0664029a3a69b00ce1d2a1184f8914ea58aeeeea663163ae99"
+        }
+      }
+    },
+    {
+      "png": "Quadros/05.png",
+      "sha256": "e9d443cd9fb621611bcfb8544908187beb24a7ce594496add7db17a61cad5144",
+      "durationMs": 65,
+      "phase": "high-guard",
+      "weaponVisible": true,
+      "rightGrip": [
+        98,
+        89
+      ],
+      "rotationDeg": 345,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 3,
+        "ms": 65,
+        "visible": true,
+        "plannedGrip": [
+          98,
+          89
+        ],
+        "grip": [
+          98,
+          89
+        ],
+        "angle": 345,
+        "phase": "high-guard",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/03.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/03.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/05.png",
+          "sha256": "0645bfebfa8f262e9a80d7d516c0b1424e5f688c8e2e5a5a83c8940a99549d70"
+        },
+        "body": {
+          "png": "Camadas/body/05.png",
+          "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/05.png",
+          "sha256": "85b716e820431785baba58fff0831012b21d6cc65c9312ff306c2bd7c98778e1"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/05.png",
+          "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21"
+        }
+      }
+    },
+    {
+      "png": "Quadros/06.png",
+      "sha256": "703e047a49947e64b651886be60a2b7bf76efcbb07762470c8dc315447625c7b",
+      "durationMs": 35,
+      "phase": "drive",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        112
+      ],
+      "rotationDeg": 20,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 4,
+        "ms": 35,
+        "visible": true,
+        "plannedGrip": [
+          157,
+          112
+        ],
+        "grip": [
+          157,
+          112
+        ],
+        "angle": 20,
+        "phase": "drive",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/04.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/04.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/06.png",
+          "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/06.png",
+          "sha256": "827e7b585344a2da32037d7866e9ac43ad42a19d66ba8202d5d32229f0b2a8df"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/06.png",
+          "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c"
+        }
+      }
+    },
+    {
+      "png": "Quadros/07.png",
+      "sha256": "9be8628e5543541f42a76dffbfce23b678046e42cb83737f655230a252c5aaef",
+      "durationMs": 35,
+      "phase": "crossing",
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        134
+      ],
+      "rotationDeg": 55,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 5,
+        "ms": 35,
+        "visible": true,
+        "plannedGrip": [
+          158,
+          134
+        ],
+        "grip": [
+          158,
+          134
+        ],
+        "angle": 55,
+        "phase": "crossing",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/05.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/05.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/07.png",
+          "sha256": "6386a0081d57e2ca1a40e8f7b160b570382395c8f4dd7011043ccf0d9b6a6778"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/07.png",
+          "sha256": "3f583290bce3659fa1f6d08d03d82618b98d2097ad929fa3851f8eea6044d185"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/07.png",
+          "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552"
+        }
+      }
+    },
+    {
+      "png": "Quadros/08.png",
+      "sha256": "59a83c2e76527af3420eafc29015c10e66157e2ec697a5f8def4179ea56e1d7d",
+      "durationMs": 100,
+      "phase": "strike-follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        142
+      ],
+      "rotationDeg": 100,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 6,
+        "ms": 100,
+        "visible": true,
+        "plannedGrip": [
+          159,
+          142
+        ],
+        "grip": [
+          159,
+          142
+        ],
+        "angle": 100,
+        "phase": "strike-follow-through",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/06.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/06.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/08.png",
+          "sha256": "3b73c3cd22f12356f66c5f710020baf916598809205f6b5f770f1dfecc2ecdf7"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/08.png",
+          "sha256": "c6879a2a1d29aa7daf9fdd2c44496fd46ffb9f81a1685e189a1b3136369b6f69"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/08.png",
+          "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8"
+        }
+      }
+    },
+    {
+      "png": "Quadros/09.png",
+      "sha256": "1166b6b0839b48fcf66a2b18e3c410d6b222ea85ddf0a4eeafde1606cc165da5",
+      "durationMs": 55,
+      "phase": "recovery-bridge",
+      "weaponVisible": true,
+      "rightGrip": [
+        129,
+        148
+      ],
+      "rotationDeg": 102,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 7,
+        "ms": 55,
+        "visible": true,
+        "plannedGrip": [
+          129,
+          148
+        ],
+        "grip": [
+          129,
+          148
+        ],
+        "angle": 102,
+        "phase": "recovery-bridge",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/07.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/07.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/09.png",
+          "sha256": "58264c4b6986cb85438891f5f5113149f29b69aa24fae28e5a378bfe0346f355"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/09.png",
+          "sha256": "98a728da71341e3f2ccee8237076bf757b1e77a7c185535e8691ffeb280e85df"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/09.png",
+          "sha256": "e8e0323bb8a254a3f6efcb354d9c9b5fcc7920ff22ed818b1b3827a3a15138a3"
+        }
+      }
+    },
+    {
+      "png": "Quadros/10.png",
+      "sha256": "3fabf69b3012f19f9ba7762c2841a0ca0c0b1019fd9d81da2c151f7d7526df41",
+      "durationMs": 80,
+      "phase": "recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        110,
+        147
+      ],
+      "rotationDeg": 105,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 8,
+        "ms": 80,
+        "visible": true,
+        "plannedGrip": [
+          110,
+          147
+        ],
+        "grip": [
+          110,
+          147
+        ],
+        "angle": 105,
+        "phase": "recovery",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/08.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/08.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/10.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/10.png",
+          "sha256": "d46c673e05894ebe574621bba6cbdda582bf09ecb8549f72018152ac08a7c2c3"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/10.png",
+          "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308"
+        }
+      }
+    },
+    {
+      "png": "Quadros/11.png",
+      "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf",
+      "durationMs": 45,
+      "phase": "action-complete",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 9,
+        "ms": 45,
+        "visible": false,
+        "plannedGrip": null,
+        "grip": null,
+        "angle": null,
+        "phase": "action-complete",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/09.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/09.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/11.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "png": "Quadros/12.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 90,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceMapping": {
+        "from": "Sword",
+        "index": 10,
+        "ms": 90,
+        "visible": false,
+        "plannedGrip": null,
+        "grip": null,
+        "angle": null,
+        "phase": "return-unarmed",
+        "bodyInput": null,
+        "handInput": null,
+        "bodySource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/10.png",
+        "handSource": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/10.png"
+      },
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/12.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ],
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    10
+  ],
+  "hideAfterAction": true,
+  "contactEvent": {
+    "frame": 8,
+    "timeMs": 360,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "baselineRevision": "main-orc-onehanded-polish-v1",
+  "entryPlan": "experiments/main-orc-entry-v1/entry-plan.json",
+  "entryPlanSha256": "c810b4e2c60fef2511cff9fa2dc1994c9cdc0bbcb002e740725ac5ba0dce539e"
+}

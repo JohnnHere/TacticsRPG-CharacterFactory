@@ -1,0 +1,80 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "PixelLab via Aseprite",
+  "model": "Pro",
+  "prompt": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A wiry, underfed adult male orc foot soldier from grim Tolkien-inspired battlefield fantasy: narrow hunched shoulders, long arms, sinewy limbs, bony face, crooked nose, uneven small tusks, long pointed ears, sallow grey-green skin and sparse dark hair. Patched worn leather, scraps of dull iron on only one shoulder and one knee, coarse dark cloth and mismatched bindings. Dusty charcoal, swamp-olive and rust-brown palette, deliberately asymmetrical and rough. A low-ranking survivor with a memorable face and silhouette, not a brute and not a polished champion. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, crisp deliberate pixel clusters and rich worn material detail, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. Original individual; do not reproduce any named character, film design, or franchise emblem.",
+  "seed": "1034265900",
+  "inputImages": [],
+  "styleImages": [],
+  "referenceImages": [],
+  "targetPalette": "No",
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "blankAsepriteMaster": "source/aseprite/concept-raw.aseprite",
+  "blankMasterSha256": "2c1a496bbb06848a0a4c180ed7f2809d7711f986233a5c0a1dd64b1e39c76dc2",
+  "status": "CORRECTIVE_STUDIES_PENDING_CREATOR",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "sha256": "7033eabb708bf62e0e0be01978fcfcb59f41f28b9bf4bb53ce1ad963b22f59b7",
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "701b440d94c1313cd2b96d4da9507d2fcd6c3befc1af7b1b2d973c8a97145fd0"
+    }
+  ],
+  "animations": [
+    {
+      "state": "Walk",
+      "clip": "characters/orc-pixellab-06/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-06/source/aseprite/walk-study.aseprite",
+      "frames": 8,
+      "seed": "0"
+    },
+    {
+      "state": "Idle",
+      "clip": "characters/orc-pixellab-06/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-06/source/aseprite/idle-study.aseprite",
+      "frames": 8,
+      "provider": "PixelLab MCP",
+      "revision": "refinement-v3",
+      "jobId": "17697004-41af-4c11-9233-7e0de5337a4b"
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "UI advertised 10–25 generations per Create image (Pro) request; actual account debit NOT_EXPOSED",
+  "artisticApproval": "PENDING_CREATOR",
+  "outputMethod": "New frame",
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "requestHistoryCopy": "source/pixellab-results/Concept/request.json",
+  "requestSettings": {
+    "modelName": "generate_image_new",
+    "seed": "1034265900.0",
+    "outputMethod": "New frame",
+    "paletteChoice": "No",
+    "noBackground": true,
+    "styleOptions": {
+      "color_palette": true,
+      "detail": true,
+      "outline": true,
+      "shading": true
+    },
+    "styleImageDisplay": "",
+    "referenceImagesDisplay": []
+  },
+  "refinement": {
+    "revision": "refinement-v2",
+    "before": "experiments/pixellab-orc-refinement-v2/before/orc-pixellab-06",
+    "report": "reports/orc-pixellab-refinement-v2.md",
+    "review": "reports/orc-pixellab-refinement-v2/review.html",
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "currentRevision": "refinement-v3",
+  "license": "Pro explicitly confirmed by creator; tool/model recorded independently",
+  "review": "reports/orc-pixellab-refinement-v3/review.html"
+}

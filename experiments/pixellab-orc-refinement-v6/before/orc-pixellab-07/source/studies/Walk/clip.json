@@ -1,0 +1,77 @@
+{
+  "state": "Walk",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official MCP HTTP",
+  "tool": "PixelLab Pro small natural three-quarter head + Aseprite registered composition",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "refinement-v5",
+  "prompt": "Walking in place along a straight path towards the viewer and slightly right, always maintaining the exact front three-quarter orientation of the reference. Clear alternating two-step gait: each knee bends and its boot lifts, swings forward, plants and pushes back, then the other leg does the same. Opposite arm swing, modest stride and small natural weight transfer. Torso stays upright, shoulders level, head chest hips aligned. No sideways drifting, leg crossing, skating, pivoting into profile, or diagonal twisting. Preserve the exact face, proportions and armor. Full body, both boots inside canvas, empty hands, transparency, fixed camera. Loop ends in starting stance.",
+  "jobId": "ecdfe186-48f1-49f2-8349-276c85a69e98",
+  "frameCount": 8,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/00.png",
+      "durationMs": 100,
+      "sha256": "54f3ec2ea34ce5325694a5d4b37363eb757f2f907ec84d31e39cc48df2aec583"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/01.png",
+      "durationMs": 100,
+      "sha256": "4ec54802973300194a516bf9d07be8a516bcb382d9826671c2ce911c7b7786bc"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/02.png",
+      "durationMs": 100,
+      "sha256": "ff1849d03f8b293b28e298805653c3cfbe015b11c52a8416bc6cccbfc103a6f0"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/03.png",
+      "durationMs": 100,
+      "sha256": "4b18a12d9101ffc2b8b7e4608df517a6b5b47b7ccc9f447b12527952875b55a6"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/04.png",
+      "durationMs": 100,
+      "sha256": "62fa41409974e9d07ef9da2bd4e85642f56f7ee81bdcb4b13154b6baf88bfc53"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/05.png",
+      "durationMs": 100,
+      "sha256": "81a6e1333eb9f4e31d9a7e4bb31ac79bbb87931223563641f85d96250c4da39d"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/06.png",
+      "durationMs": 100,
+      "sha256": "54d329de254b3371ef89987c91cebfcbfe4eb08f8911efdce94f2d50238be4a0"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/07.png",
+      "durationMs": 100,
+      "sha256": "2fbe30afb2bc01aed7f069654876b97140f8509f712d267d4a58c9b6f2ebe8b3"
+    }
+  ],
+  "input": "characters/orc-pixellab-07/concepts/concept-selected.png",
+  "inputSha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+  "masterSha256": "cef46ed8a2597e3b6c0994dfb85fbbd99b20e06fa6c650b17c30ea4a2fdfc12f",
+  "rawMaster": "experiments/pixellab-orc-refinement-v4/before/orc-pixellab-07/source/aseprite/walk-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/07-Walk-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/07-Walk-result.json",
+  "archive": "characters/orc-pixellab-07/source/pixellab-results/Walk/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "100 ms per frame authored in Aseprite for review",
+  "artisticApproval": "PENDING_CREATOR",
+  "visualReview": "Agent inspected native poses and side-by-side with Agile: smaller head, mild downward three-quarter gaze, coherent neck; creator approval pending.",
+  "editorRetouch": {
+    "script": "tools/aseprite/apply-natural-head-v5.lua",
+    "plan": "experiments/pixellab-orc-refinement-v5/head-plan.json",
+    "reference": "experiments/pixellab-orc-refinement-v5/preview-1.png",
+    "selectedProOutput": 1,
+    "referenceAgile": "characters/orc-pixellab-04/source/studies/Walk/00.png",
+    "bodyOutsideHeadChanges": 0,
+    "reason": "Creator rejected oversized frontal stare; use Agile proportion and natural gaze angle"
+  }
+}

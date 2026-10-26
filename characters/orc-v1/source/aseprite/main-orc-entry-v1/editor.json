@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "main-orc-entry-v1",
+  "kind": "character",
+  "characterId": "orc-v1",
+  "jobs": [
+    {
+      "id": "sword-attack",
+      "source": "characters/orc-v1/source/aseprite/main-orc-entry-v1/source/sword-attack.aseprite",
+      "profile": {
+        "width": 256,
+        "height": 256,
+        "frames": 11,
+        "durationsMs": [
+          40,
+          45,
+          65,
+          100,
+          35,
+          35,
+          100,
+          55,
+          80,
+          45,
+          90
+        ],
+        "alpha": "binary",
+        "requireTransparency": true,
+        "requireContent": true
+      }
+    },
+    {
+      "id": "axe-attack",
+      "source": "characters/orc-v1/source/aseprite/main-orc-entry-v1/source/axe-attack.aseprite",
+      "profile": {
+        "width": 256,
+        "height": 256,
+        "frames": 12,
+        "durationsMs": [
+          40,
+          50,
+          100,
+          80,
+          155,
+          35,
+          115,
+          110,
+          130,
+          50,
+          90,
+          100
+        ],
+        "alpha": "binary",
+        "requireTransparency": true,
+        "requireContent": true
+      }
+    }
+  ]
+}

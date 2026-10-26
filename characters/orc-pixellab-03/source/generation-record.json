@@ -1,0 +1,68 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "Create image (Pro)",
+  "model": "Pro (UI); generate_image_new (official history)",
+  "prompt": "Full-body adult orc warband veteran for a medieval fantasy tactical RPG. Inspired by the powerful classic orc archetype of World of Warcraft and the grounded medieval atmosphere of Tolkien, with an original design. Imposing robust anatomy, expressive tusked face, braided hair, layered forged armor and weathered leather with purposeful clan craftsmanship. Refined readable pixel art, strong silhouette, three-quarter front view, both hands empty. No weapons held, carried or sheathed, no shield, no scenery, no text. One isolated character on transparent background.",
+  "seed": "960851619.0",
+  "inputImages": [],
+  "styleImages": [],
+  "styleReferenceCount": 0,
+  "targetPalette": "No",
+  "maxColors": 0,
+  "smartColors": false,
+  "noBackground": true,
+  "outputMethod": "New frame",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "status": "CONCEPT_AND_CANDIDATE_MOTION_AVAILABLE",
+  "batch": {
+    "source": "characters/orc-pixellab-01/source/aseprite/concept-raw.aseprite",
+    "sha256": "2662701def7debd92596de29a7e79375e6d9be164937105216186ce7ad08d109",
+    "generatedOutputs": 4,
+    "selectedFrameZeroBased": 4,
+    "selectionReason": "Three visually distinct usable outputs from the same new batch; fourth retained for provenance, not discarded."
+  },
+  "outputs": [
+    {
+      "png": "characters/orc-pixellab-03/concepts/concept-selected.png",
+      "sha256": "ef6f112030b6e47312a97434d41c2284834c2ab3c13c042e6b5fcd9c0757db14",
+      "master": "characters/orc-pixellab-03/source/aseprite/concept-selected.aseprite",
+      "masterSha256": "e358b2963e735c06fd87735c17bcf540dbdbf7ddd22f014d1a71264299521d19",
+      "metrics": {
+        "width": 128,
+        "height": 128,
+        "left": 13,
+        "right": 113,
+        "top": 3,
+        "bottom": 125,
+        "contentHeight": 123,
+        "transparent": 9444,
+        "partial": 0,
+        "colorCount": 39
+      }
+    }
+  ],
+  "elapsedMs": "NOT_EXPOSED",
+  "credits": "UI announces 10–25 generations per batch; actual debit NOT_EXPOSED",
+  "artisticApproval": "PENDING_CREATOR",
+  "animations": [
+    {
+      "state": "Walk",
+      "clip": "characters/orc-pixellab-03/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-03/source/aseprite/walk-study.aseprite",
+      "frames": 8,
+      "seed": "4145839129.0"
+    },
+    {
+      "state": "Idle",
+      "clip": "characters/orc-pixellab-03/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-03/source/aseprite/idle-study.aseprite",
+      "frames": 8,
+      "seed": "3851187503.0"
+    }
+  ]
+}

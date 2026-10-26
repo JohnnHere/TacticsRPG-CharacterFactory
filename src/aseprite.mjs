@@ -40,7 +40,12 @@ export function findAseprite(explicit, env=process.env) {
 }
 
 export function executeAseprite(executable,args,timeout=120000) {
-  const result=spawnSync(executable,['--batch','--noinapp',...args],{cwd:ROOT,windowsHide:true,encoding:'utf8',timeout,maxBuffer:8*1024*1024});
+  // GUI extensions can construct Dialogs during startup and fail in --batch.
+  // A separate documented preferences folder keeps local export deterministic
+  // and leaves PixelLab authentication/UI preferences in the normal profile.
+  const batchUserFolder=path.join(ROOT,'tmp','aseprite-batch-profile');
+  fs.mkdirSync(batchUserFolder,{recursive:true});
+  const result=spawnSync(executable,['--batch','--noinapp',...args],{cwd:ROOT,env:{...process.env,ASEPRITE_USER_FOLDER:batchUserFolder},windowsHide:true,encoding:'utf8',timeout,maxBuffer:8*1024*1024});
   if(result.error || result.status!==0) throw Error(`Aseprite falhou: ${result.error?.message??result.stderr??result.stdout} (exit ${result.status})`);
   if(/Error:|Error creating directory/i.test(result.stderr??'')) throw Error(`Aseprite: ${result.stderr.trim()}`);
   return {stdout:result.stdout,stderr:result.stderr};

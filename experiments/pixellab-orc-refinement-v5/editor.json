@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "pixellab-natural-head-v5",
+  "kind": "enemy",
+  "purpose": "Head correction candidate; no Unity integration",
+  "jobs": [
+    {
+      "id": "orc-07-walk-v5",
+      "source": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+      "sourceSha256": "cef46ed8a2597e3b6c0994dfb85fbbd99b20e06fa6c650b17c30ea4a2fdfc12f",
+      "compare": [
+        "characters/orc-pixellab-07/source/studies/Walk/00.png",
+        "characters/orc-pixellab-07/source/studies/Walk/01.png",
+        "characters/orc-pixellab-07/source/studies/Walk/02.png",
+        "characters/orc-pixellab-07/source/studies/Walk/03.png",
+        "characters/orc-pixellab-07/source/studies/Walk/04.png",
+        "characters/orc-pixellab-07/source/studies/Walk/05.png",
+        "characters/orc-pixellab-07/source/studies/Walk/06.png",
+        "characters/orc-pixellab-07/source/studies/Walk/07.png"
+      ],
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 8,
+        "durationsMs": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "alpha": "any",
+        "requireTransparency": true
+      }
+    }
+  ]
+}

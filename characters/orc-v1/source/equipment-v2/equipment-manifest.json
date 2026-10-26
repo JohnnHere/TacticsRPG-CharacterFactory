@@ -1,0 +1,54 @@
+{
+  "revision": "weapons-v2",
+  "character": "orc-v1",
+  "view": "front_r / south-east",
+  "jobs": [
+    {
+      "weapon": "recruit-sword",
+      "state": "Idle",
+      "clip": "characters/orc-v1/source/equipment-v2/recruit-sword/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-idle.aseprite"
+    },
+    {
+      "weapon": "recruit-sword",
+      "state": "Walk",
+      "clip": "characters/orc-v1/source/equipment-v2/recruit-sword/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-walk.aseprite"
+    },
+    {
+      "weapon": "recruit-sword",
+      "state": "Attack",
+      "clip": "characters/orc-v1/source/equipment-v2/recruit-sword/Attack/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-attack.aseprite"
+    },
+    {
+      "weapon": "militia-axe",
+      "state": "Idle",
+      "clip": "characters/orc-v1/source/equipment-v2/militia-axe/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-idle.aseprite"
+    },
+    {
+      "weapon": "militia-axe",
+      "state": "Walk",
+      "clip": "characters/orc-v1/source/equipment-v2/militia-axe/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-walk.aseprite"
+    },
+    {
+      "weapon": "militia-axe",
+      "state": "Attack",
+      "clip": "characters/orc-v1/source/equipment-v2/militia-axe/Attack/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-attack.aseprite"
+    }
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "rig": "experiments/orc-v1-weapons-v2/binding-rig.json",
+  "runtimeImplemented": false
+}

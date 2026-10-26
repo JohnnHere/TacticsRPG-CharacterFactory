@@ -3,6 +3,7 @@ import fs from 'node:fs';import path from 'node:path';
 import {ROOT,inside,readJSON,json,hash,now,loadCharacter,approval,expectedSlots} from '../src/core.mjs';import {decode,validate} from '../src/images.mjs';
 import {verifyEditorBuild,inspectAseprite} from '../src/aseprite.mjs';import {planUnarmedExport} from '../src/action-export.mjs';
 const read=f=>readJSON(inside(ROOT,f)),stamp=f=>hash(fs.readFileSync(inside(ROOT,f)));
+if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))&&read('reports/orc-production-current.json').revision!=='aseprite-v4')throw Error('V4 discarded by creator: historical approvals cannot reactivate or export it as current production.');
 const active=read('reports/orc-production-current.json'),manifest=read(active.manifest),prepared=read('reports/orc-production-v4-prepared.json'),registry=read('characters/orc-equipment-actions-v1.json');
 const historical=read('reports/aseprite-production-manifest-v1.json');for(const j of historical.jobs)if(stamp(j.source)!==j.sourceSha256)throw Error('Historical master changed');
 let comparedFrames=0,native=0,gateCount=0,supplements=0;

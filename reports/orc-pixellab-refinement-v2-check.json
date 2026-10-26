@@ -1,0 +1,116 @@
+{
+  "createdAt": "2026-10-23T18:47:55.524Z",
+  "status": "PASS",
+  "snapshotFilesPreserved": 241,
+  "masterJobs": 14,
+  "comparedFrames": 94,
+  "bridge": {
+    "status": "PASS",
+    "path": "dist/editor/pixellab-orc-refinement-v2/c8a875ddea4ae3179f7c",
+    "summary": {
+      "jobs": 14,
+      "frames": 94,
+      "comparedFrames": 94
+    }
+  },
+  "idleChecks": [
+    {
+      "id": "orc-pixellab-04",
+      "lockedRegionChanges": 0,
+      "maximumTorsoDisplacementPx": 1,
+      "totalMs": 1920,
+      "heldPoses": "Intentional two-pose shallow breathing; not eight unique generated poses."
+    },
+    {
+      "id": "orc-pixellab-05",
+      "lockedRegionChanges": 0,
+      "maximumTorsoDisplacementPx": 1,
+      "totalMs": 1920,
+      "heldPoses": "Intentional two-pose shallow breathing; not eight unique generated poses."
+    },
+    {
+      "id": "orc-pixellab-06",
+      "lockedRegionChanges": 0,
+      "maximumTorsoDisplacementPx": 1,
+      "totalMs": 1920,
+      "heldPoses": "Intentional two-pose shallow breathing; not eight unique generated poses."
+    },
+    {
+      "id": "orc-pixellab-07",
+      "lockedRegionChanges": 0,
+      "maximumTorsoDisplacementPx": 1,
+      "totalMs": 1920,
+      "heldPoses": "Intentional two-pose shallow breathing; not eight unique generated poses."
+    }
+  ],
+  "walkChecks": [
+    {
+      "id": "orc-pixellab-04",
+      "frames": 16,
+      "before": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 17
+      },
+      "after": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 845
+      },
+      "visualAssessment": "Manual frame contact-sheet review required in addition to this metric."
+    },
+    {
+      "id": "orc-pixellab-05",
+      "frames": 16,
+      "before": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 1026
+      },
+      "after": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 836
+      },
+      "visualAssessment": "Manual frame contact-sheet review required in addition to this metric."
+    },
+    {
+      "id": "orc-pixellab-07",
+      "frames": 16,
+      "before": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 149
+      },
+      "after": {
+        "region": "y=104..127; boot/lower-leg silhouette, not anatomical tracking",
+        "maxAlphaChangedPixels": 720
+      },
+      "visualAssessment": "Manual frame contact-sheet review required in addition to this metric."
+    }
+  ],
+  "infanteConcept": {
+    "before": {
+      "width": 128,
+      "height": 128,
+      "left": 23,
+      "right": 106,
+      "top": 11,
+      "bottom": 123,
+      "contentHeight": 113,
+      "transparent": 10212,
+      "partial": 0,
+      "colorCount": 34
+    },
+    "after": {
+      "width": 128,
+      "height": 128,
+      "left": 22,
+      "right": 105,
+      "top": 2,
+      "bottom": 126,
+      "contentHeight": 125,
+      "transparent": 10152,
+      "partial": 0,
+      "colorCount": 37
+    },
+    "note": "Measurements do not establish artistic quality."
+  },
+  "artisticApproval": "PENDING_CREATOR",
+  "unityIntegration": "NOT_RUN"
+}

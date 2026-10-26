@@ -1,0 +1,1 @@
+import path from 'node:path';import {ROOT} from '../../src/core.mjs';import {executeAseprite,findAseprite} from '../../src/aseprite.mjs';executeAseprite(findAseprite(),['--script-param','root='+ROOT,'--script',path.join(ROOT,'experiments/main-orc-entry-v1/prepare-inputs.lua')]);

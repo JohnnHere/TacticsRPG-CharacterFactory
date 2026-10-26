@@ -1,0 +1,78 @@
+{
+  "state": "Walk",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official native MCP connector",
+  "tool": "animate_with_skeleton_v3",
+  "model": "Skeleton V3 beta",
+  "license": "Creator confirmed Pro",
+  "revision": "athletic-feet-v2",
+  "prompt": "walk",
+  "jobId": "e39a59db-c2c0-4b67-b9ff-ba5e2cc39ced",
+  "frameCount": 8,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/00.png",
+      "durationMs": 100,
+      "sha256": "60aebf924c4be1cada53b92639443e89e01356ca5f147ba4f3b87f292a4c1676"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/01.png",
+      "durationMs": 100,
+      "sha256": "b2821eedb29fcdf703c1d35b79f5c7c8d149c65666123ba9759c73062cfc8ef0"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/02.png",
+      "durationMs": 100,
+      "sha256": "060508fc75b86509af1cdfcd1d74aaaa55a593b0d42644f5f4df159a7798787d"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/03.png",
+      "durationMs": 100,
+      "sha256": "fd8be340a4f5d26e1d0903734ce98044ddcc1ece09087732270ba80e1cb36f83"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/04.png",
+      "durationMs": 100,
+      "sha256": "6389ebd5963b85ab2bb5bbe2ae50194eba25a3f85e925aa869993d983a196ed5"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/05.png",
+      "durationMs": 100,
+      "sha256": "afd9ccb80945da5aed475c0d8d96c6676d59b43971a660216901cb62fa8357b0"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/06.png",
+      "durationMs": 100,
+      "sha256": "4df588a5d44e332a8ae4389c14a2cabb433535df70eb13ad381346b3c129c7bc"
+    },
+    {
+      "png": "characters/orc-pixellab-11/source/studies/Walk/07.png",
+      "durationMs": 100,
+      "sha256": "6447ac2d5d8c8f0b18f968f9bd0569ccca70585a826184313f1d5a75a55d4a5b"
+    }
+  ],
+  "input": "characters/orc-pixellab-11/concepts/concept-selected.png",
+  "inputSha256": "06552875f39f2988f3098164bc4b0c4e7fb2ce1fa9d6ac6e464e65929b378c4b",
+  "firstFrameEchoed": false,
+  "echoExcludedFromPlayback": false,
+  "lastFrame": "No echoed input; exact eight authored poses",
+  "motionGuide": "experiments/pixellab-orc-athletic-v1/walk-motion-plan.json",
+  "master": "characters/orc-pixellab-11/source/aseprite/athletic-feet-v2/source/athletic-walk.aseprite",
+  "masterSha256": "411eaf25dd14f4544c92c9dbab2a048d2f6cbddf47b10294889d897cc712844f",
+  "rawMaster": "characters/orc-pixellab-11/source/aseprite/walk-raw.aseprite",
+  "credits": "3 generations",
+  "request": "experiments/pixellab-orc-athletic-v1/Walk-request.json",
+  "playbackTiming": "100 ms per frame authored in Aseprite for review",
+  "artisticApproval": "PENDING_CREATOR_FOOT_RETOUCH",
+  "editorRetouch": {
+    "tool": "Aseprite Lua",
+    "script": "tools/aseprite/clean-athletic-foot-fringe.lua",
+    "report": "experiments/orc-athletic-feet-v2/retouch.json",
+    "removedExteriorMattePixels": 106,
+    "region": "y >= 98, only four known matte colors connected to external transparency",
+    "posesAndTimingUnchanged": true,
+    "upperBodyPixelsUnchanged": true,
+    "newCloudGenerationCharges": 0,
+    "source": "Original PixelLab Skeleton V3 output, inherited provenance preserved"
+  }
+}

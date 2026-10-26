@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "pixellab-idle-refinement-preflight",
+  "kind": "enemy",
+  "purpose": "Verify hidden reference layer and authored timing without Unity writes",
+  "jobs": [
+    {
+      "id": "idle-04",
+      "source": "characters/orc-pixellab-04/source/aseprite/idle-study.aseprite",
+      "sourceSha256": "d885f204f87bacf15db2600db6527bdd3a3d8e004d76e58796f0ba65eb0ff88c",
+      "compare": [
+        "characters/orc-pixellab-04/source/studies/Idle/00.png",
+        "characters/orc-pixellab-04/source/studies/Idle/01.png",
+        "characters/orc-pixellab-04/source/studies/Idle/02.png",
+        "characters/orc-pixellab-04/source/studies/Idle/03.png",
+        "characters/orc-pixellab-04/source/studies/Idle/04.png",
+        "characters/orc-pixellab-04/source/studies/Idle/05.png",
+        "characters/orc-pixellab-04/source/studies/Idle/06.png",
+        "characters/orc-pixellab-04/source/studies/Idle/07.png"
+      ],
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 8,
+        "durationsMs": [
+          320,
+          160,
+          160,
+          320,
+          320,
+          160,
+          160,
+          320
+        ],
+        "alpha": "any",
+        "requireTransparency": true
+      }
+    }
+  ]
+}

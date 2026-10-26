@@ -1,0 +1,339 @@
+{
+  "revision": "main-orc-onehanded-v3",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "front_r",
+  "loop": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "groundY": 190,
+  "frameCount": 8,
+  "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+  "masterSha256": "34f33676d8fc4f3d8cf04aa7935b7eecac81cdf516b327d9c554d3de0f39f653",
+  "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+  "bodyMasterSha256": "d709610f896208ca6b398dcae6363f7fcf1cade18d5f83d603257d34b98704d5",
+  "handMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+  "handMasterSha256": "f0a2fe4459a0968fdeb170f4b839066a254d5c7ce0c90241cba3e5119d27b862",
+  "weapon": {
+    "id": "recruit-sword",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "scale": 1,
+    "source": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+    "sprite": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+    "sourceSha256": "00feddda647f6fbb68d9236c5e5e1972affa2fdb798c19b226382743ecedfc17",
+    "master": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+    "spriteSha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a",
+    "masterSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4"
+  },
+  "frames": [
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 80,
+      "phase": "rest",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "characters/orc-v1/source/studies/Idle/00.png",
+      "sourceBodySha256": "670bf0e676034b9bbe2bec85209b99c510a88413a1b85624372c911d99f991f6",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+      "sha256": "0ae5282c1ea7a0bf8723935397f4b1fa67ca5200aafcb8229abb8fab2c7396aa",
+      "durationMs": 100,
+      "phase": "load",
+      "weaponVisible": true,
+      "rightGrip": [
+        93,
+        130
+      ],
+      "rotationDeg": 270,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/00.png",
+      "sourceBodySha256": "e8fa36143b4621002826d4f391d0df430fcafe49ff8a208cee66b373720e5296",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+          "sha256": "3139f80bf66566ef9d5e7ec7b5c98f898ce5c139fd8f65ad8f9e71e49ee91fce"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/01.png",
+          "sha256": "5d3618d212e4b1317406ccca2d9e185b0d363e398c1641e18d88c1ba19274c92"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+          "sha256": "9648b532bf66b7a9ae50cc7bb9af232e0b0ffcc3def5434a037bafbb03349af9"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+      "sha256": "e9d443cd9fb621611bcfb8544908187beb24a7ce594496add7db17a61cad5144",
+      "durationMs": 130,
+      "phase": "high-guard",
+      "weaponVisible": true,
+      "rightGrip": [
+        98,
+        89
+      ],
+      "rotationDeg": 345,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/01.png",
+      "sourceBodySha256": "f62a0d369edb8bf7b2952ed66a873291a6b91d6f66d9e0f77cc82360189a77a6",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/02.png",
+          "sha256": "0645bfebfa8f262e9a80d7d516c0b1424e5f688c8e2e5a5a83c8940a99549d70"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+          "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/02.png",
+          "sha256": "85b716e820431785baba58fff0831012b21d6cc65c9312ff306c2bd7c98778e1"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+          "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+      "sha256": "703e047a49947e64b651886be60a2b7bf76efcbb07762470c8dc315447625c7b",
+      "durationMs": 65,
+      "phase": "drive",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        112
+      ],
+      "rotationDeg": 20,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/03.png",
+      "sourceBodySha256": "0337532eafc417e7f08505d3716e00d516c0fb0c7119087244d0066555978477",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+          "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/03.png",
+          "sha256": "827e7b585344a2da32037d7866e9ac43ad42a19d66ba8202d5d32229f0b2a8df"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+          "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+      "sha256": "8af2e625743032332326b57637841a7dd50c781263f46c672e6bd4a2ffff8df7",
+      "durationMs": 55,
+      "phase": "crossing",
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        134
+      ],
+      "rotationDeg": 55,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-strike/raw/00.png",
+      "sourceBodySha256": "9e85499336f725e8c9a326bb3087ca07f4c6937924bbfd9465c03f2a6f201392",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+          "sha256": "850119977c66eada7b45b2a659b243d326b8541aa39dfcf2e78429d867a1dce2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/04.png",
+          "sha256": "3f583290bce3659fa1f6d08d03d82618b98d2097ad929fa3851f8eea6044d185"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+          "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+      "sha256": "1f23a31f8bc47e892e23e7b9a62ce8b887dfe4225f54e4773e96dcc4d08246b1",
+      "durationMs": 95,
+      "phase": "strike-follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        142
+      ],
+      "rotationDeg": 100,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/05.png",
+      "sourceBodySha256": "bf60a09a5c87f4f25f1069bd24a8e0ce213e953bb69607bc30cf4ebf010c45c2",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+          "sha256": "506ca0dde932a07e9b2a8511ac0e11947cb96ab208cd80dab403380cccf2c79c"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/05.png",
+          "sha256": "c6879a2a1d29aa7daf9fdd2c44496fd46ffb9f81a1685e189a1b3136369b6f69"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+          "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+      "sha256": "3fabf69b3012f19f9ba7762c2841a0ca0c0b1019fd9d81da2c151f7d7526df41",
+      "durationMs": 130,
+      "phase": "recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        110,
+        147
+      ],
+      "rotationDeg": 105,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "experiments/main-orc-weapon-rescue-v3/sword-recovery/raw/00.png",
+      "sourceBodySha256": "1fc3dcc2edddd837a72f6140839e836b585625e8769b6459c61fdf45127c9e7f",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/06.png",
+          "sha256": "d46c673e05894ebe574621bba6cbdda582bf09ecb8549f72018152ac08a7c2c3"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+          "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308"
+        }
+      }
+    },
+    {
+      "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png",
+      "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+      "durationMs": 120,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "sourceBody": "characters/orc-v1/source/studies/Idle/00.png",
+      "sourceBodySha256": "670bf0e676034b9bbe2bec85209b99c510a88413a1b85624372c911d99f991f6",
+      "handSource": "Own current posed glove; traced finger and thumb contours, no shared rotated palm patch",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ],
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "hideAfterAction": true,
+  "contactEvent": {
+    "frame": 5,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false
+}

@@ -1,0 +1,17 @@
+{
+  "branch": "feature/integracao-asesprite",
+  "initialStatus": "experiments/main-orc-weapon-rescue-v3/initial-git-status.txt",
+  "warning": "Working tree was already dirty. Diff against HEAD includes earlier work; no commit/reset/stash and no sibling Unity writes.",
+  "currentTrackedDiffSummary": " .gitignore                               |  2 +\n AGENTS.md                                | 44 +++++++++++++++\n README.md                                | 10 +++-\n characters/orc-equipment-actions-v1.json | 16 ++++--\n config/equipment-actions-v1.json         | 48 +++++++++++++++-\n docs/ASEPRITE.md                         | 14 ++++-\n docs/EQUIPMENT_AND_ACTIONS.md            | 16 +++++-\n docs/ORC_ART_LAB.md                      |  4 ++\n docs/ORC_ASEPRITE_V4.md                  |  2 +\n docs/ROADMAP.md                          | 94 ++++++++++++++++++++++++++++++++\n docs/VISUAL_IDENTITY.md                  | 22 ++++++++\n docs/WORKFLOW.md                         | 30 ++++++++++\n handoff/AGENT_CONTEXT.md                 | 38 ++++++++++++-\n reports/orc-production-current.json      | 53 ++++--------------\n src/aseprite.mjs                         |  7 ++-\n src/cli.mjs                              |  2 +-\n src/workflow.mjs                         |  6 +-\n tools/apply-orc-production-v4.mjs        |  1 +\n tools/audit-aseprite-production.mjs      |  7 ++-\n tools/audit-orc-production-v4.mjs        |  1 +\n tools/export-orc-production-v4.mjs       |  1 +\n 21 files changed, 360 insertions(+), 58 deletions(-)\n",
+  "newScope": [
+    "tools/*main-orc*",
+    "tools/aseprite/*main-orc*",
+    "experiments/main-orc-weapon-rescue-v3",
+    "characters/orc-v1/source/onehanded-rescue-v3",
+    "characters/orc-v1/source/aseprite/onehanded-rescue-v3",
+    "assets/weapons/*/source/rescue-v3",
+    "assets/weapons/*/sprites/rescue-v3",
+    "reports/main-orc-weapon-rescue-v3",
+    "docs/MAIN_ORC_ONE_HANDED_RESCUE.md"
+  ]
+}

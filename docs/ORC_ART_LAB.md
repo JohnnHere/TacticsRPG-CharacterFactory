@@ -1,5 +1,9 @@
 # Laboratório visual Orc — direção do criador
 
+**Decisão vigente — 2026-10-24:** V4 ativa e V4 Reimaginado descartados pelo criador; não reutilizar como direção selecionada nem reativar pelos scripts históricos. Arquivos preservados como histórico. Nenhuma seleção de produção ativa. Novo candidato `orc-pixellab-11` (Orc Atlético): parecido com o Ágil, menos armadura, mais musculatura e verde um pouco mais claro. Revisão corrente: `reports/orc-current-review/review.html`. Vigia e Matriarca ficam separados em `ideas/unique-characters-or-npcs/` como ideias futuras de NPC e/ou jogáveis únicos. Esta decisão substitui afirmações históricas de V4 selecionada abaixo.
+
+**Atualização posterior do mesmo dia:** o criador pediu [PixelLab + Aseprite](PIXELLAB_ASEPRITE.md), com três Orcs novos Tolkien/Warcraft e estudos de animação, sem consultar ou usar a V4 e suas artes como referência. O estudo V5 abaixo é histórico da exploração anterior; não deve ser entrada ou condicionamento do novo lote. A escolha entre suas cinco opções deixou de ser o próximo passo imediato.
+
 Decisão expressa em 2026-10-23. O alvo é um **Orc clássico de fantasia medieval, inspirado principalmente em World of Warcraft e também em Tolkien**, dentro da leitura tática e da pixel art refinada do TacticsRPG. Essa hipótese já existia nas referências; o criador a reafirmou. Warcraft orienta presença, anatomia robusta, armaduras e força das formas; Tolkien orienta atmosfera e credibilidade medieval. Designs, símbolos e cultura desenvolvidos para o jogo são próprios.
 
 O criador quer um jogo com alma e deseja fugir de uma aparência genérica de IA. Cabe ao agente assumir a direção de paleta, textura, materiais e luz, apresentar escolhas visuais concretas e explicar suas diferenças. Não exigir que o criador escolha esses parâmetros técnicos antes de ver propostas. Ferramenta ou procedência, por si só, não comprovam identidade ou qualidade artística.

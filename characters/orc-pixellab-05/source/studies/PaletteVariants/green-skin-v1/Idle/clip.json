@@ -1,0 +1,80 @@
+{
+  "state": "Idle",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official MCP HTTP",
+  "tool": "animate_image",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "green-skin-v1",
+  "prompt": "Idle. Natural calm alert breathing, a small coherent rise and fall of shoulders and chest, very slight hand settling. Feet remain planted. Maintain the exact original head direction, face, body proportions, armor and palette throughout. No stepping, turning, squashing, horizontal tearing or disconnected body parts. Keep the entire figure and both boots visible. Empty hands, fixed camera, transparent background. Seamless loop back to the starting stance.",
+  "jobId": "6c7911df-6147-41a0-9cc9-2c2c43ca668f",
+  "frameCount": 5,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/00.png",
+      "durationMs": 400,
+      "sha256": "0ea5faa01de91c2df90fe466e758eb79a965c0c6651488f756bc526e36c29f24"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/01.png",
+      "durationMs": 450,
+      "sha256": "ceca1cab291482172733c9e0123e20a00c50c3313951873052601bad853127ca"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/02.png",
+      "durationMs": 500,
+      "sha256": "743692d230d51af2d3e59bfb2f12432e201c1edbd5f29d21e781058192866723"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/03.png",
+      "durationMs": 450,
+      "sha256": "45400b74f84b220ecc50eadd4c4b9539b381b72d237311c6d6b7ea2d3332e9dd"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/04.png",
+      "durationMs": 400,
+      "sha256": "529c2fb26ddfb8a9c8b3823fd46a2fa4c9178f0862a5e64c12657b2e2d8c83d5"
+    }
+  ],
+  "input": "characters/orc-pixellab-05/concepts/concept-selected.png",
+  "inputSha256": "df35cea36b508a379eb2e9c30c19c1653c139033892419a576771ec9cdb4dfc5",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-05/source/aseprite/green-skin-v1/source/green-idle.aseprite",
+  "masterSha256": "4297fc2ffcf04bea6658b786e5b4df654222668d84e8702b26affd0c581cfc84",
+  "rawMaster": "characters/orc-pixellab-05/source/aseprite/idle-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-result.json",
+  "archive": "characters/orc-pixellab-05/source/pixellab-results/Idle/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "400/450/500/450/400 ms; total 2200 ms",
+  "artisticApproval": "PENDING_CREATOR_PALETTE_VARIANT",
+  "visualReview": {
+    "status": "APPROVED_CREATOR_IDLE_REFERENCE",
+    "evidence": "characters/orc-pixellab-05/source/creator-approval-idle-balanced-v3.json",
+    "scope": "Shown one-view Idle and artistic direction for future Idles; no universal animation parameters or runtime gates."
+  },
+  "editorFinishing": {
+    "script": "tools/aseprite/balance-infante-idle-v3.lua",
+    "sourceFrames": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "method": "Whole original poses selected around resting stance; no pixel changes, scaling, torso compression or image blending. Intermediate excursion and cadence.",
+    "headExcursionPx": 2,
+    "newCloudCalls": 0,
+    "newGenerationCharges": 0
+  },
+  "selectedAsCurrent": false,
+  "creatorApproval": "characters/orc-pixellab-05/source/creator-approval-idle-balanced-v3.json",
+  "sourceIdleApprovalInherited": "Timing and motion only; green palette not yet approved",
+  "paletteRetouch": {
+    "tool": "Aseprite Lua",
+    "script": "tools/aseprite/infante-green-skin-v1.lua",
+    "record": "experiments/infante-green-skin-v1/retouch.json",
+    "cloudCalls": 0
+  }
+}

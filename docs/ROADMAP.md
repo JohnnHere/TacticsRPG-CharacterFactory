@@ -1,4 +1,102 @@
+## Entrada natural de combate — candidato em revisão, 2026-10-25
+
+Novo passe `main-orc-onehanded-entry-v1` parte do último **polimento v1**, preservando-o, para corrigir preparação corporal e primeira pegada. Contexto e fontes em `docs/MAIN_ORC_COMBAT_POLISH.md` (seção atual de entrada) e `experiments/main-orc-entry-v1/entry-plan.json`. Página `Biblioteca de Arte/Estudos Comparativos/Orc principal - Entrada de combate/index.html`. Não é saque/embainhamento: armas somente no ataque, sem Idle/Walk armados. Produção ativa v3 e identidade Orc V1 mantidas; antigo V4 descartado. Próximo marco é a avaliação explícita do criador da entrada refinada; não propagar ou integrar Unity automaticamente. Orquestração e QA independente via Paseo conforme pedido, sem criar QA adicional no DEV.
+
+## Polimento de combate — candidato isolado, 2026-10-25
+
+A correção atual de espada/machado **v3 é uma base viável e melhorada**, preservada e ainda ativa em `characters/orc-v1/source/equipment-current.json`. Novo passe incremental `main-orc-onehanded-polish-v1`, fontes/exports próprios, sem promoção automática: `characters/orc-v1/source/equipment-polish-candidate.json`. Ver `docs/MAIN_ORC_COMBAT_POLISH.md` e `Biblioteca de Arte/Estudos Comparativos/Orc principal - Polimento de combate/index.html`. Preserva armas, identidade Orc V1, Idle/Walk e política de armas somente no ataque. Próximo marco: revisão artística explícita deste candidato pelo criador; não propagar nem integrar Unity antes disso. O antigo Orc V4 permanece descartado.
+
+## Infante de Ferro permanece atual — 2026-10-25
+
+Por decisão explícita do criador, o Infante de Ferro original 05 fica em `Biblioteca de Arte/Orcs Atuais/05 - Infante de Ferro/`, não arquivado. É importante e deve entrar no jogo em estágio mais avançado. Orc V1 (Verde Warcraft) permanece o primeiro jogável selecionado. Ambos preservados e listados em Orcs Atuais. Esta decisão substitui a classificação de arquivo do Infante nas notas anteriores.
+
+## Decisão vigente — Orc V1 e armas, 2026-10-25
+
+Criador selecionou Verde Warcraft v3 como **Orc V1**, primeiro jogável para futura integração. Fonte em `characters/orc-v1/`; Infante cinza preservado na biblioteca em Arquivo de Arte/. Novos assets de uma mão: Espada do Recruta e Machado de Milícia, seguindo `docs/WEAPON_ART_STANDARD.md`. Golpe composto e Walk completo equipado em uma vista, com mestres/camadas/encaixes; esta autorização permite armas visíveis no Walk destas duas combinações e substitui a antiga restrição correspondente. Corpo base e Idle fixo permanecem independentes. Página `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`; documentação `docs/ORC_V1_WEAPONS.md`. São assets/prévias locais, não integração Unity ou aprovação automática dos novos golpes/armas. V4 continua descartada; não confundir seleção para integração futura com produção completa em quatro vistas.
+
+## Infante — verde v3 amostrado de referência oficial, 2026-10-25
+
+Nova opção mais escura, com 16 cores de pele amostradas da imagem oficial do Orc no catálogo de raças de Warcraft. Fonte/coordenadas/hash em `experiments/infante-green-skin-v3/palette.json`. Somente pele retocada no Aseprite; conceito e Idle 2,2 s na quarta opção da comparação da biblioteca. Variantes anteriores preservadas, aguardando avaliação. Relatório `reports/infante-green-skin-v3.md`.
+
+## Infante — verde v2 mais escuro, 2026-10-25
+
+Retoque local de pele no Aseprite, conceito + Idle 2,2 s. Nova opção à direita na comparação de pele da biblioteca; original e verde claro preservados. Fontes `source/studies/PaletteVariants/green-skin-v2/` e `source/aseprite/green-skin-v2/` no 05. Aguarda avaliação; nenhuma seleção automática.
+
+## Infante 05 — estudo de pele verde, 2026-10-25
+
+Variante independente `source/studies/PaletteVariants/green-skin-v1/`, conceito + Idle com padrão fixo preservado. Comparação original/verde em `Biblioteca de Arte/Estudos Comparativos/Infante de Ferro - Pele Verde/index.html`. Retoque seletivo no Aseprite, sem nova geração ou alterações nos originais. Paleta inspirada em Warcraft, aguardando avaliação; não selecionar nem propagar automaticamente. Relatório `reports/infante-green-skin-v1.md`.
+
+## Padrão fixo obrigatório de Idle — 2026-10-25
+
+PADRÃO FIXO OBRIGATÓRIO para criação de personagens e variantes: Idle normal segue o meio-termo aprovado, ID `idle-balanced-v1`, cinco fases com 400/450/500/450/400 ms (2200 ms), intensidade equivalente a 2 px na cabeça de humanoide 128×128. Não criar um padrão por personagem, Job, roupa ou personalidade. Ajustes de encaixe anatômico/escala preservam o mesmo ritmo e sutileza; divergências exigem autorização explícita do criador. Canon: `docs/IDLE_ART_STANDARD.md` e `config/idle-art-standard-v1.json`; biblioteca `PADRAO-DE-IDLE.md`. Baselines e notas históricas permissivas abaixo não prevalecem. Artes existentes não são migradas automaticamente e não há integração Unity neste pedido.
+
 # Evolucao e retomada da Character Factory
+
+## Orc principal — resgate dos ataques concluído para revisão, 2026-10-25
+
+Fonte atual orc-v1, nunca V4. Candidatas: Sword8/775ms e Axe10/1130ms; arma visível somente em intervalos1..6 e1..7. Idle5/2200ms e Walk16/1280ms sem arma, pixels aprovados preservados. Machado47px de altura em vez de75; corpo com poses próprias por categoria, dedos da própria pose e arma independente. Preview antes/depois, pegadas e retorno ao Idle em `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`. Guia `docs/MAIN_ORC_ONE_HANDED_RESCUE.md`; fontes em source/aseprite/onehanded-rescue-v3/. Próximo: criador avaliar naturalidade, peso e pegada antes de qualquer propagação. Sem Unity, outras vistas ou aprovação automática.
+
+
+
+## Histórico rejeitado — armas v2, 2026-10-25
+
+Lote v1 rejeitado e preservado. V2 candidata com armas96×96, Idle armado5 poses/2,2s, Walk16/1,28s e golpe12/1,315s. Corpo, pegada, dedos e relógio compartilhados entre espada/machado compatíveis; não gerar novo corpo a cada item. Esclarecimento do criador: armas seguem a linguagem visual do jogo, não obrigatoriamente o design ou a paleta do Orc; servirão a várias raças/classes. Biblioteca `Personagens Jogaveis/Orc V1/index.html`; guia `docs/ORC_V1_WEAPONS_V2.md`, fontes em experiments/orc-v1-weapons-v2/. Próximo: avaliação artística do criador. Sem integração Unity.
+
+**Terceira opção de Idle Infante 05 — 2026-10-25:** candidata `infante-idle-balanced-v3`, cinco poses completas originais (0,1,5,6,7), cabeça 2 px e ciclo 2,2 s. Comparar três opções em `Biblioteca de Arte/Estudos Comparativos/Infante de Ferro - Idle/index.html`. O sutil permanece atual até escolha do criador. Sem alteração de pixels das poses ou integração Unity.
+
+**Infante de Ferro 05 — Idle sutil, 2026-10-25:** revisão `infante-idle-subtle-v2`, poses originais completas 0,1,6,7, sem alteração raster; oscilação de cabeça 4→1 px, ciclo 1,6→2,8 s. Biblioteca atualizada; antes/depois em `reports/orc-idle-subtle-v2/review.html`. Versões anteriores preservadas. Sem machado ou integração Unity nesta etapa. Próximo: avaliação do criador.
+
+**Biblioteca de Arte — 2026-10-24:** abrir `Biblioteca de Arte/index.html` para navegar pelos oito Orcs atuais, conceito/Idle/Walk e mestres Aseprite. Vigia/Matriarca em `Biblioteca de Arte/Ideias Futuras/`, com a categoria NPC e/ou jogável único. Pés do Atlético limpos localmente no Aseprite (athletic-feet-v2), sem alterar corpo/poses/tempos. Fontes canônicas preservadas. [Relatório](../reports/orc-athletic-feet-v2.md). Nenhuma integração no jogo nesta sessão.
+
+## Orc Atlético entregue — 2026-10-24
+
+Conceito, Idle (8×200 ms) e Walk (8×100 ms) em `characters/orc-pixellab-11/`, mestres PixelLab + Aseprite. Walk usa fases reais do Ágil adaptadas ao próprio corpo em três quartos. Oito candidatos atuais/16 clipes na página `reports/orc-current-review/review.html`; Vigia/Matriarca separados em `ideas/unique-characters-or-npcs/`. V4 ativa e Reimaginado descartados; seleção de produção nula. QA: 17 quadros dos novos mestres, 144 quadros na apresentação e 567 artes anteriores preservadas. Relatório `reports/orc-athletic-v1.md`. Próximo: revisão explícita do criador, sem promover produção ou Unity automaticamente.
+
+**Decisão vigente — 2026-10-24:** V4 ativa e V4 Reimaginado descartados pelo criador; não reutilizar como direção selecionada nem reativar pelos scripts históricos. Arquivos preservados como histórico. Nenhuma seleção de produção ativa. Novo candidato `orc-pixellab-11` (Orc Atlético): parecido com o Ágil, menos armadura, mais musculatura e verde um pouco mais claro. Revisão corrente: `reports/orc-current-review/review.html`. Vigia e Matriarca ficam separados em `ideas/unique-characters-or-npcs/` como ideias futuras de NPC e/ou jogáveis únicos. Esta decisão substitui afirmações históricas de V4 selecionada abaixo.
+
+## Walk V8 — referência própria frontal e movimento adaptado — 2026-10-24
+
+V7 rejeitada pelo criador por cabeça torta e marcha diagonal. Nova candidata: base frontal do próprio 07 via Pro Flash e oito poses Skeleton V3 com fases reais do Ágil adaptadas ao eixo frontal, 100 ms/quadro. Cabeça não foi transplantada. Conceito/Idle do 07 e demais personagens preservados. Comparação sincronizada Ágil × Reimaginado no topo da página canônica, seguida dos 11 conceitos e 18 clipes, inclusive Infante cabeludo. QA: 154 quadros exibidos conferidos pixel a pixel, sem erros JavaScript; isso não concede aprovação artística. A passada frontal é mais contida que a do guia. Próximo: avaliação do criador; seleção V4 e Unity inalterados. Procedência em `reports/orc-pixellab-refinement-v8.md`.
+
+## Walk completo v7 e todos os Orcs juntos — 2026-10-24
+
+Criador rejeitou V6 por pescoço desconexo e marcha oscilando a orientação; autorizou corrigir o ciclo completo. Nova candidata 07: 12 quadros inteiros pelo MCP Skeleton V3, usando só seu próprio conceito, com 18 pontos anotados e poses controlando cabeça/tronco/direção/faixas dos pés. Sem enxerto de cabeça. Empacotamento Aseprite, 90 ms/quadro, 1080 ms/ciclo. Conferência técnica em `reports/orc-pixellab-refinement-v7-check.json`; aprovação artística pendente.
+
+**Revisão canônica de agora em diante:** `reports/orc-pixellab-v4-comparison/review.html`, com todos os 11 conceitos e 18 clipes existentes exibidos simultaneamente (conceito/Idle/Walk). Inclui o Infante cabeludo e Vigia/Matriarca como ideias de únicos jogáveis ou NPCs, sem inventar animações ausentes. Reconstruir com **`node tools/build-orc-all-review.mjs`**, não entregar apenas uma página isolada do reparo. Ponteiro `reports/orc-study-current-review.json`; 158 comparações de pixels na apresentação. Demais artes e aprovação do Soldado preservadas. Próximo: criador avaliar o novo Walk no conjunto; V4 selecionada e Unity continuam inalterados.
+
+## Reimaginado — V5 rejeitada; reparo próprio v6 — 2026-10-24
+
+Criador rejeitou V5 por cabeça alheia, cor incompatível e orientação inadequada. V5 não é referência aprovada. Candidata v6 em `reports/orc-pixellab-refinement-v6/review.html`, usando exclusivamente fontes do próprio 07, paleta original e registro pela base do pescoço/tronco. Corpo, passada, conceito/Idle e outros personagens preservados. Próximo: revisão visual do criador; sem aprovação automática, sem promover cabeça de outro personagem por ela ter sido citada como referência cinética. Procedência completa em `reports/orc-pixellab-refinement-v6.md`.
+
+## Reimaginado — cabeça natural em revisão — 2026-10-24
+
+Criador considerou a cabeça v4 grande e o olhar frontal artificial; pediu referência no Veterano Ágil. Revisão v5 entregue em `reports/orc-pixellab-refinement-v5/review.html`: cabeça menor e levemente inclinada de três quartos, gerada no PixelLab Pro com referências rotuladas do próprio Reimaginado e do Ágil. Composição e registro no Aseprite preservam corpo/passada/tempos; zero pixels alterados fora da máscara de cabeça/pescoço. Conceito/Idle e demais personagens preservados. Próximo: avaliação do criador da nova cabeça; não converter olhar natural em exigência de rosto perfeitamente frontal nem generalizar anatomia da referência a todos os Orcs.
+
+## Ajustes pontuais e Infante cabeludo — 2026-10-23
+
+Feedback do criador registrado: Ágil muito melhor, mas sombra da cabeça tremia; Infante melhor de conceito, com preferência pelos pés da passada anterior; Soldado da Vala aprovado; Reimaginado muito bom, faltando olhar para a direção da marcha. Rodada v4 concluída em `reports/orc-pixellab-refinement-v4/review.html`: sombreamento da cabeça do Ágil estabilizado no Aseprite sem refazer pernas; passada anterior de 16 quadros do Infante restaurada com cabeça sem coque; Reimaginado recebe rosto voltado à frente mantendo corpo/passada. Aprovação do Soldado registrada para conceito e estudos da vista exibida, com hashes, sem ampliar a vistas/ações ausentes ou jogo real.
+
+Novo indivíduo `orc-pixellab-10` (Infante de Ferro — Cabeleira Negra), conceito Pro com referência autorizada de armadura/rosto do 05, proporções mais altas/esguias e cabelo preto longo; Idle 8 e Walk 16 quadros. Não substitui 05. Evidência: 15 mestres/101 quadros, 186 comparações da apresentação, 409 arquivos anteriores preservados; limites de edição de cabeça e preservação dos pés conferidos. Próximo: criador avaliar as três correções e o novo Infante, preservando o Soldado aprovado. Nenhuma integração Unity ou promoção automática de direção/receita.
+
+## Correção visual e MCP PixelLab — retomada em 2026-10-23
+
+Criador rejeitou Idles 04/05/06/07 por deformação e caminhadas 04/07 por execução/orientação inadequada. Refino v2 foi entrega para revisão, não aprovação; os PASS técnicos não validam arte. Rodada v3 preserva snapshot, redesenha Ágil com anatomia atlética e paleta contida, remove coque do Infante preservando rosto/armadura e refaz sete movimentos. MCP oficial configurado e autenticado; guia `docs/PIXELLAB_MCP.md`. Sete animações concluídas pelo MCP com pose inicial/final explícitas e empacotadas no Aseprite. Entrega em `reports/orc-pixellab-refinement-v3/review.html`; 12 mestres/68 quadros, 160 comparações da apresentação e 369 arquivos anteriores preservados. Aguardando avaliação artística do criador. Vigia e Matriarca foram reservados como ideias de personagens únicos jogáveis OU NPCs em `ideas/unique-characters-or-npcs/`. Próximo: avaliar resultados, corrigir defeitos restantes e entregar comparação, mantendo aprovação humana e Unity intacto.
+
+## Refinamento PixelLab + Aseprite — 2026-10-23, pronto para revisão
+
+Retomada concluída: Walk 04/07 refeitos com passos visíveis, 16 quadros; Idles 04/05/06/07 com respiração discreta, duas poses sustentadas em oito quadros. Infante 05 recebeu conceito Pro com armadura mais imponente/detalhada e Walk de 16 quadros compatível. Dois conceitos adicionais independentes: 08 Vigia do Passo e 09 Matriarca da Cinza. Entrega: `reports/orc-pixellab-refinement-v2/review.html`; galeria completa atualizada com dez opções incluindo V4. Relatório: `reports/orc-pixellab-refinement-v2.md`. Bridge PASS: 14 mestres/94 quadros; 241 arquivos anteriores preservados. A primeira caminhada 07 que girava para perfil foi preservada e substituída por nova tentativa com orientação mais estável.
+
+Próximo marco: revisão artística do criador e escolha/refino da direção antes de expandir vistas e ações. Nenhuma nova aprovação inferida, nenhuma integração Unity e nenhuma alteração de direção artística no repositório principal nesta rodada. Os registros abaixo são históricos e não representam os tempos/quantidades dos clipes refinados.
+
+**Entrega PixelLab — 2026-10-23:** três conceitos independentes e seis estudos Idle/Walk (48 quadros de movimento), com mestres Aseprite e revisão interativa em reports/pixellab-orcs-independent-v1/review.html. Exportação dos nove mestres e prévia: 51/51 comparações RGBA. Aguardando escolha artística; V4 continua selecionada e Unity não foi integrado. Próximo: escolher uma opção e refinar silhueta, materiais, mãos, apoio e fechamento dos ciclos antes de expandir vistas/classes.
+
+**Comparação solicitada — 2026-10-23:** `reports/orc-pixellab-v4-comparison/review.html` compara a V4, os três conceitos da primeira rodada e os quatro conceitos desta rodada. Os candidatos 04–07 têm Idle/Walk de oito quadros; a página também mantém os tempos V4 reais. Revisão local interativa; conceitos e movimentos continuam pendentes de aprovação artística.
+
+**Segunda rodada PixelLab + Aseprite — 2026-10-23, concluída para revisão:** quatro candidatos 04–07 com oito estudos Idle/Walk. O quarto foi criado no PixelLab Pro com a V4 apenas como referência de estilo; candidatos 04–06 não receberam imagens de referência. Três pedidos de conceito Pro concluíram sem problema de login. Animações V3 processadas em fila no Aseprite; mestres, PNGs brutos, prompts, hashes e tempos de estudo registrados em cada pacote. `reports/orc-pixellab-round2-status.md` contém o resumo e observações. Débito real da conta não exposto. Todos aguardam aprovação do criador; próximo: escolher/refinar direção e depois atualizar a documentação de identidade visual daqui e do projeto principal. Nenhuma escrita no projeto Unity.
+
+## PixelLab + Aseprite e três Orcs independentes — 2026-10-23
+
+Extensão oficial PixelLab0.4.130 instalada em %APPDATA%/Aseprite/extensions/pixellab; 652 arquivos conferidos, painel carregado no editor e permissões iniciais concluídas pelo criador. Geração textual real, importação para pacotes e mestres Aseprite comprovados na rodada inicial. Protocolo docs/PIXELLAB_ASEPRITE.md; instalação reports/pixellab-extension-install.json. O erro de Dialog em batch foi isolado pelo perfil tmp/aseprite-batch-profile. Nenhum conceito aprovado automaticamente; gate, seleção de produção e integração Unity continuam sob controle do criador.
 
 ## Laboratório Orc e identidade própria — 2026-10-23
 
@@ -197,3 +295,6 @@ O staging local ja esta implementado. O registro multi-personagem e a integracao
 - 2026-10-19: criador aprovou unarmed front_r;90 novos quadros e18 editaveis completaram front_l/back_r/back_l das seis roupas.26 PNGs reais image_gen nesta etapa,18 fontes selecionadas/oito tentativas preservadas: Squire corrigido para remover metal herdado, seis back_l redesenhadas com soco direito distante/oclusao, Rogue front_l com capuz restaurado. Guias de poses reais Warrior/roupas proprias reutilizados sem espelhamento ou alteracao da baseline.32/32 clipes unarmed nativos,160 referencias (120 novas/40 reutilizadas),24 novas fontes; zero quadros faltantes. Paleta/RGBA/proveniencia/roundtrip LibreSprite/hashes PASS; frente aprovada e baseline intactas. Previa final conjunta oito roupas/seis estados/quatro vistas:896 referencias carregadas,896 hashes RGBA canvas exatos HTTP, exibicao file:// e controles PASS, zero erros JS; npm9/9 PASS. Uma revisao final artistica enviada conforme Gate2. Exportacao suplementar ainda exige extensao, Gate consistency/export nao autoaprovados, nenhuma escrita Unity. Evidencias:docs/ORC_UNARMED_DIRECTIONS_V1.md.
 
 - 2026-10-19: criador autorizou continuar se incluido hit normal desarmado; condicao verificada (soco fisico e reacao Hit nas quatro vistas). Sete Gates consistency registrados com evidencia literal, suplemento aprovado por fingerprint, Warrior original intacto. Exportador complementar implementado com bloqueio de aprovacao desatualizada/hashes/canvas/overlay e fontes escolhidas; baseline CLI preservada. Oito builds completos exportados com896 PNGs e216 fontes, hashes conferidos; reexecucao idempotente preservou builds. ZIP10.52MB,1186 entradas, CRC e1184 hashes +README/MANIFEST verificados. Doctor PASS; suite11/11 PASS. Previa/plans/docs atualizados para EXPORTED_LOCAL_BODY_AND_UNARMED. Detalhes e links em docs/ORC_PRODUCTION_EXPORT_V1.md. Armas/VFX/bindings e Unity continuam pendentes, sem escrita no jogo ou Gate3.
+# Refinamento PixelLab v2 em andamento — 2026-10-23
+
+Feedback vigente: Walk 04/07 sem passada legível; Idle 04/07 precisa melhorar; Idle 06 exagerado; conceito 05 precisa de armadura mais detalhada e imponência Uruk-hai. 241 arquivos anteriores preservados por hash. Controle recuperado e Pro habilitado após atualização oficial. Walk 04 PixMiniMax16 concluído; conceito05 revisado; Idles04/05/06/07 ajustados no Aseprite com respiração0/1px e rosto/pés fixos. Walk07 gerando; Walk05 pendente. Pedido adicional: dois conceitos de padrões diferentes, IDs08 Vigia do Passo e09 Matriarca da Cinza, contextos preparados, geração posterior. Retomada exata em `reports/orc-pixellab-refinement-v2-progress.md`; prompts em `experiments/pixellab-orc-refinement-v2/brief.json`. Verificação/entrega final pendentes; sem aprovação artística ou integração Unity.

@@ -1,0 +1,73 @@
+{
+  "state": "Idle",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official MCP HTTP",
+  "tool": "animate_image",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "infante-idle-balanced-v3",
+  "prompt": "Idle. Natural calm alert breathing, a small coherent rise and fall of shoulders and chest, very slight hand settling. Feet remain planted. Maintain the exact original head direction, face, body proportions, armor and palette throughout. No stepping, turning, squashing, horizontal tearing or disconnected body parts. Keep the entire figure and both boots visible. Empty hands, fixed camera, transparent background. Seamless loop back to the starting stance.",
+  "jobId": "6c7911df-6147-41a0-9cc9-2c2c43ca668f",
+  "frameCount": 5,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-05/source/studies/Idle/00.png",
+      "durationMs": 400,
+      "sha256": "68f9c466edd7042230089c957bfcc43689f24061c3128b62559eead92e272378"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/Idle/01.png",
+      "durationMs": 450,
+      "sha256": "ec717d9e34fe87b525669adf7b8cc5334cccc9e07311fe1ee70bebbd534fa43f"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/Idle/02.png",
+      "durationMs": 500,
+      "sha256": "2689636e9b08d6e4021f6719cb8f225cf3c98308f704c9879961c1f512017bd5"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/Idle/03.png",
+      "durationMs": 450,
+      "sha256": "af8bc94fadf8449f616569e4c1ea43635c4ffe2ef28e10249b30f726624864e4"
+    },
+    {
+      "png": "characters/orc-pixellab-05/source/studies/Idle/04.png",
+      "durationMs": 400,
+      "sha256": "b9d19a29d9028decbbcc034fcb1d76289ad89cb9162679f824f608f383c047e0"
+    }
+  ],
+  "input": "characters/orc-pixellab-05/concepts/concept-selected.png",
+  "inputSha256": "df35cea36b508a379eb2e9c30c19c1653c139033892419a576771ec9cdb4dfc5",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-05/source/aseprite/infante-idle-balanced-v3/source/infante-idle-balanced.aseprite",
+  "masterSha256": "976f5088dfaa84130c5f48edc2077060c2c4c3500e56ac5503ce1c9d0f2808f9",
+  "rawMaster": "characters/orc-pixellab-05/source/aseprite/idle-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-result.json",
+  "archive": "characters/orc-pixellab-05/source/pixellab-results/Idle/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "400/450/500/450/400 ms; total 2200 ms",
+  "artisticApproval": "APPROVED_CREATOR_IDLE_REFERENCE",
+  "visualReview": {
+    "status": "APPROVED_CREATOR_IDLE_REFERENCE",
+    "evidence": "characters/orc-pixellab-05/source/creator-approval-idle-balanced-v3.json",
+    "scope": "Shown one-view Idle and artistic direction for future Idles; no universal animation parameters or runtime gates."
+  },
+  "editorFinishing": {
+    "script": "tools/aseprite/balance-infante-idle-v3.lua",
+    "sourceFrames": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "method": "Whole original poses selected around resting stance; no pixel changes, scaling, torso compression or image blending. Intermediate excursion and cadence.",
+    "headExcursionPx": 2,
+    "newCloudCalls": 0,
+    "newGenerationCharges": 0
+  },
+  "selectedAsCurrent": true,
+  "creatorApproval": "characters/orc-pixellab-05/source/creator-approval-idle-balanced-v3.json"
+}

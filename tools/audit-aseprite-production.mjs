@@ -7,7 +7,12 @@ import { decode } from '../src/images.mjs';
 import { inspectAseprite, exportAseprite } from '../src/aseprite.mjs';
 
 const stamp=f=>hash(fs.readFileSync(inside(ROOT,f)));
-if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))){
+if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))&&readJSON(inside(ROOT,'reports/orc-production-current.json')).status==='SELECTED_FOR_FUTURE_INTEGRATION'){
+  const result={status:'SELECTED_NOT_INTEGRATED',character:'orc-v1',revision:'orc-v1-green-warcraft',weaponPreviews:'characters/orc-v1/source/equipment/equipment-manifest.json',fourDirectionProductionReady:false,unityIntegrated:false};json(inside(ROOT,'reports/aseprite-production-audit.json'),result);console.log(JSON.stringify(result));
+}else if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))&&readJSON(inside(ROOT,'reports/orc-production-current.json')).status==='DISCARDED_BY_CREATOR'){
+  const result={status:'NO_ACTIVE_SELECTION',reason:'Creator discarded V4; historical artifacts are preserved but are not current production.',selection:null};
+  json(inside(ROOT,'reports/aseprite-production-audit.json'),result);console.log(JSON.stringify(result));
+}else if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))){
   await import('./audit-orc-production-v4.mjs');
 }else{
 const packages=readJSON(inside(ROOT,'reports/orc-actions-export-v1.json')).packages;

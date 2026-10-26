@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-10",
+  "identityId": "4720e591-072f-4fcf-a2d5-3b0006941e3d",
+  "name": "Infante de Ferro — Cabeleira Negra",
+  "status": "candidate",
+  "createdAt": "2026-10-24T02:30:16.640Z",
+  "styleId": "tactics-core-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Alto, esguio e musculoso — proposta individual"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Novo indivíduo candidato; alternativa adicional ao Infante 05",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "TBD",
+    "ageImpression": "TBD",
+    "body": "Mais alto e um pouco mais magro/musculoso que o Infante 05",
+    "palette": [],
+    "dominantHand": "TBD",
+    "asymmetries": [],
+    "lighting": "Observar a ancora; direcao numerica nao canonizada.",
+    "hair": "Longo preto até os ombros, inspiração Uruk-hai cinematográfico"
+  },
+  "outfit": {
+    "id": "warrior-candidate",
+    "description": "Original refined medieval fantasy tactical RPG pixel art. A NEW tall adult male Orc elite iron infantry veteran inspired by the fearsome long-haired Uruk-hai of the Lord of the Rings films, with Warcraft silhouette clarity. Match the reference severe imposing scarred angular grey Orc face and detailed blackened iron armor language: riveted articulated pauldrons, gorget, beveled plate cuirass, chainmail joints and segmented leg protection. A little TALLER and LEANER than the reference, long legs, athletic muscular sinewy limbs, narrower waist and flat abdomen, no swollen or fat torso. Long coarse black hair falling to the shoulders and down the back, irregular strands framing the temples, swept away from the eyes, no topknot, no helmet. Imposing disciplined brutal presence. Gunmetal, cold steel edges, dark oxblood cloth and aged brown leather. Full body, complete boots, centered front three-quarter stance facing viewer and slightly right, head aligned with chest. Both hands empty. Native 128x128 transparent canvas, use the height generously while leaving a clear margin; small mature head and elongated proportions convey greater height. Crisp intentional pixel clusters, detailed materials, controlled lighting. No weapon held carried or sheathed, no shield, scenery, franchise symbol, text or named character.",
+    "silhouette": "TBD",
+    "palette": [],
+    "materials": [],
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "TBD — asset separado, sem desenho no corpo base"
+  },
+  "styleRecipes": [],
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": 126,
+    "ppu": 100,
+    "counts": {
+      "Idle": 8,
+      "Walk": 16
+    },
+    "note": "Baseline do piloto humanoide 1 tile; anatomias diferentes exigem perfil e revisao. Walk atual usa 3 quadros/tile."
+  },
+  "references": [],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "rendering/reference contract",
+      "category": "REUSE_DIRECT",
+      "evidence": "Docs/ART_DIRECTION.md + ancora",
+      "adaptation": "Aplicar ao novo corpo; revisar em escala de jogo."
+    },
+    {
+      "component": "race anatomy/face",
+      "category": "CREATE_NEW",
+      "evidence": "RACES.md fornece perfil, sem modelo racial aprovado.",
+      "adaptation": "TBD",
+      "artRisk": "TBD",
+      "technicalRisk": "Validar canvas/escala",
+      "dependencies": [],
+      "validation": "NOT_RUN",
+      "productionImpact": "TBD"
+    },
+    {
+      "component": "job outfit",
+      "category": "CREATE_NEW",
+      "evidence": "references/tacticsrpg/Docs/GameDesign/JOB_CATALOG.md",
+      "adaptation": "TBD",
+      "artRisk": "Identidade de classe deve permanecer entre racas.",
+      "technicalRisk": "Camadas por vista/quadro",
+      "dependencies": [],
+      "validation": "NOT_RUN",
+      "productionImpact": "TBD"
+    },
+    {
+      "component": "Unity registration",
+      "category": "REQUIRES_EXTENSION",
+      "evidence": "UnitVisuals fixa WarriorPilot.",
+      "adaptation": "Registro multi-personagem externo a esta fabrica.",
+      "validation": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "PixelLab via Aseprite",
+  "model": "Pro",
+  "prompt": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A heavy adult male orc shock infantryman in the broad organized Uruk-hai tradition of Tolkien-inspired medieval fantasy: dense powerful torso, thick neck, squared scarred face, heavy brow, blunt tusks, ash-grey skin with a cold undertone, close-cropped black hair. Functional dark gunmetal armor assembled from broad overlapping plates, iron rivets, rough dark-red waist cloth and utilitarian leather bindings. Militaristic, disciplined and intimidating, not a green heroic warrior. Strong broad silhouette with visible legs and boots. Original high-detail medieval fantasy tactical RPG pixel art, crisp deliberate pixel clusters and rich material texture, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. No franchise insignia or recognizable named character details; original individual.",
+  "seed": "739052271",
+  "inputImages": [],
+  "styleImages": [],
+  "referenceImages": [],
+  "targetPalette": "No",
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "blankAsepriteMaster": "source/aseprite/concept-raw.aseprite",
+  "blankMasterSha256": "2c1a496bbb06848a0a4c180ed7f2809d7711f986233a5c0a1dd64b1e39c76dc2",
+  "status": "CONCEPT_AND_CANDIDATE_MOTION_AVAILABLE",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "source": "source/pixellab-results/Concept/0.png",
+      "sha256": "0fe5bedd64ded433eb97b6dbb48ae033e3e8a3164995a56cba22f5465100101d",
+      "measurements": {
+        "width": 128,
+        "height": 128,
+        "left": 23,
+        "right": 106,
+        "top": 11,
+        "bottom": 123,
+        "contentHeight": 113,
+        "transparent": 10212,
+        "partial": 0,
+        "colorCount": 34
+      },
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "d8ad1bb71aae6ad5c95015771c979d7fd74529324d319d94598a3b1fdc1a8dff",
+      "request": "../../../AppData/Roaming/Aseprite/extensions/pixellab/request_history/generate_image_new/20261023115544.json"
+    }
+  ],
+  "animations": [
+    {
+      "state": "Idle",
+      "clip": "characters/orc-pixellab-05/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/idle-study.aseprite",
+      "frames": 8,
+      "seed": "0"
+    },
+    {
+      "state": "Walk",
+      "clip": "characters/orc-pixellab-05/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/walk-study.aseprite",
+      "frames": 8,
+      "seed": "0"
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "UI advertised 10–25 generations per Create image (Pro) request; actual account debit NOT_EXPOSED",
+  "artisticApproval": "PENDING_CREATOR",
+  "outputMethod": "New frame",
+  "requestSettings": {
+    "modelName": "generate_image_new",
+    "seed": "739052271.0",
+    "outputMethod": "New frame",
+    "paletteChoice": "No",
+    "noBackground": true,
+    "styleOptions": {
+      "color_palette": true,
+      "detail": true,
+      "outline": true,
+      "shading": true
+    },
+    "styleImageDisplay": "",
+    "referenceImagesDisplay": []
+  },
+  "failure": {
+    "message": "High load for free tier; provider temporarily limited free-tier requests.",
+    "requests": [
+      "source/pixellab-results/attempt-001-blocked-request.json",
+      "source/pixellab-results/attempt-002-blocked-request.json"
+    ],
+    "output": null,
+    "actualDebit": "NOT_EXPOSED"
+  },
+  "requestSettingsAttempts": [
+    {
+      "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A heavy adult male orc shock infantryman in the broad organized Uruk-hai tradition of Tolkien-inspired medieval fantasy: dense powerful torso, thick neck, squared scarred face, heavy brow, blunt tusks, ash-grey skin with a cold undertone, close-cropped black hair. Functional dark gunmetal armor assembled from broad overlapping plates, iron rivets, rough dark-red waist cloth and utilitarian leather bindings. Militaristic, disciplined and intimidating, not a green heroic warrior. Strong broad silhouette with visible legs and boots. Original high-detail medieval fantasy tactical RPG pixel art, crisp deliberate pixel clusters and rich material texture, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. No franchise insignia or recognizable named character details; original individual.",
+      "model_name": "pixen",
+      "seed": "0",
+      "view": "none",
+      "direction": "south",
+      "detail": "highly detailed",
+      "outline": "selective outline",
+      "init_image": "No",
+      "init_image_strength": 150,
+      "output_method": "New frame",
+      "no_background": true,
+      "image_size": {
+        "height": 128,
+        "width": 128
+      }
+    },
+    {
+      "description": "Full-length pixel art character in a 128x128 transparent square: show the entire orc from head to both complete boots, centered as a compact figure with generous transparent space above and below. Pull the camera back; never crop, zoom in, or let any body part touch the frame. A heavy adult male orc shock infantryman in the broad organized Uruk-hai tradition of Tolkien-inspired medieval fantasy: dense powerful torso, thick neck, squared scarred face, heavy brow, blunt tusks, ash-grey skin with a cold undertone, close-cropped black hair. Functional dark gunmetal armor assembled from broad overlapping plates, iron rivets, rough dark-red waist cloth and utilitarian leather bindings. Militaristic, disciplined and intimidating, with a distinct broad silhouette. Original high-detail medieval fantasy tactical RPG pixel art, expressive face, deliberate clean pixel clusters and rich metal/leather texture, front three-quarter standing view. Both hands empty. No weapon held, carried or sheathed, no shield, no text, no scenery, isolated transparent background. Full silhouette visible with clear margin on every side. No franchise insignia or recognizable named character details; original individual.",
+      "model_name": "generate_pixelart_flux",
+      "seed": "0",
+      "view": "none",
+      "direction": "south",
+      "detail": "highly detailed",
+      "outline": "single color black outline",
+      "init_image": "No",
+      "init_image_strength": 150,
+      "output_method": "New frame",
+      "no_background": true,
+      "image_size": {
+        "height": 64,
+        "width": 64
+      },
+      "shading": "basic shading",
+      "isometric": false,
+      "oblique_projection": false
+    }
+  ],
+  "attempts": [
+    {
+      "tool": "Create Image S-XL (New, Pixen)",
+      "model": "pixen",
+      "request": "source/pixellab-results/attempt-001-blocked-request.json",
+      "outcome": "BLOCKED_FREE_TIER",
+      "output": null
+    },
+    {
+      "tool": "Create medium-extra large image (PixFlux V3)",
+      "model": "generate_pixelart_flux",
+      "request": "source/pixellab-results/attempt-002-blocked-request.json",
+      "outcome": "BLOCKED_FREE_TIER",
+      "output": null
+    }
+  ],
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "requestHistoryCopy": "source/pixellab-results/Concept/request.json"
+}

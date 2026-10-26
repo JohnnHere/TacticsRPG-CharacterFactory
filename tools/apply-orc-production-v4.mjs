@@ -7,6 +7,7 @@ import {applyCharacterBuild,verifyEditorBuild} from '../src/aseprite.mjs';
 import {actionFingerprint,planUnarmedExport} from '../src/action-export.mjs';
 import {run} from '../src/cli.mjs';
 const read=f=>readJSON(inside(ROOT,f)),stamp=f=>hash(fs.readFileSync(inside(ROOT,f)));
+if(fs.existsSync(inside(ROOT,'reports/orc-production-current.json'))&&read('reports/orc-production-current.json').revision!=='aseprite-v4')throw Error('V4 discarded by creator: historical approvals cannot reactivate or export it as current production.');
 const prepared=read('reports/orc-production-v4-prepared.json'),check=read('reports/orc-production-v4-check.json');
 if(fs.existsSync(inside(ROOT,'reports/orc-production-v4-applied.json')))throw Error('Already applied: use final verification; do not duplicate approvals.');
 if(check.status!=='PASS'||check.clips!==192||check.javaScriptErrors.length)throw Error('Candidate verification required');

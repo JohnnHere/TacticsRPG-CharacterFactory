@@ -1,0 +1,459 @@
+{
+  "revision": "weapons-v2",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "family": "onehanded-cut-v2",
+  "states": {
+    "Idle": {
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "durationMs": 400,
+          "grip": [
+            36,
+            83
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/01.png",
+          "durationMs": 450,
+          "grip": [
+            36,
+            82
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/02.png",
+          "durationMs": 500,
+          "grip": [
+            36,
+            81
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/03.png",
+          "durationMs": 450,
+          "grip": [
+            36,
+            82
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/04.png",
+          "durationMs": 400,
+          "grip": [
+            36,
+            83
+          ],
+          "angle": 250
+        }
+      ]
+    },
+    "Walk": {
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Walk/00.png",
+          "durationMs": 80,
+          "grip": [
+            36,
+            82
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/01.png",
+          "durationMs": 80,
+          "grip": [
+            34,
+            81
+          ],
+          "angle": 251
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/02.png",
+          "durationMs": 80,
+          "grip": [
+            33,
+            81
+          ],
+          "angle": 252
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/03.png",
+          "durationMs": 80,
+          "grip": [
+            31,
+            82
+          ],
+          "angle": 252
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/04.png",
+          "durationMs": 80,
+          "grip": [
+            31,
+            83
+          ],
+          "angle": 251
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/05.png",
+          "durationMs": 80,
+          "grip": [
+            36,
+            83
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/06.png",
+          "durationMs": 80,
+          "grip": [
+            47,
+            83
+          ],
+          "angle": 249
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/07.png",
+          "durationMs": 80,
+          "grip": [
+            58,
+            82
+          ],
+          "angle": 248
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/08.png",
+          "durationMs": 80,
+          "grip": [
+            64,
+            80
+          ],
+          "angle": 248
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/09.png",
+          "durationMs": 80,
+          "grip": [
+            62,
+            81
+          ],
+          "angle": 249
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/10.png",
+          "durationMs": 80,
+          "grip": [
+            51,
+            84
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/11.png",
+          "durationMs": 80,
+          "grip": [
+            36,
+            83
+          ],
+          "angle": 251
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/12.png",
+          "durationMs": 80,
+          "grip": [
+            32,
+            82
+          ],
+          "angle": 252
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/13.png",
+          "durationMs": 80,
+          "grip": [
+            34,
+            82
+          ],
+          "angle": 251
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/14.png",
+          "durationMs": 80,
+          "grip": [
+            32,
+            82
+          ],
+          "angle": 250
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/15.png",
+          "durationMs": 80,
+          "grip": [
+            33,
+            81
+          ],
+          "angle": 250
+        }
+      ]
+    },
+    "Attack": {
+      "loop": false,
+      "frames": [
+        {
+          "input": "characters/orc-v1/concepts/concept-selected.png",
+          "durationMs": 160,
+          "grip": [
+            35,
+            82
+          ],
+          "angle": 250,
+          "stabilizeGarment": false,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/01.png",
+          "durationMs": 100,
+          "grip": [
+            29,
+            73
+          ],
+          "angle": 270,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/02.png",
+          "durationMs": 100,
+          "grip": [
+            24,
+            54
+          ],
+          "angle": 300,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/03.png",
+          "durationMs": 120,
+          "grip": [
+            33,
+            11
+          ],
+          "angle": 335,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/04.png",
+          "durationMs": 140,
+          "grip": [
+            46,
+            19
+          ],
+          "angle": 350,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/05.png",
+          "durationMs": 60,
+          "grip": [
+            65,
+            24
+          ],
+          "angle": 380,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/06.png",
+          "durationMs": 55,
+          "grip": [
+            78,
+            45
+          ],
+          "angle": 420,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/07.png",
+          "durationMs": 70,
+          "grip": [
+            81,
+            56
+          ],
+          "angle": 460,
+          "stabilizeGarment": true,
+          "armMask": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/08.png",
+          "durationMs": 90,
+          "grip": [
+            69,
+            72
+          ],
+          "angle": 490,
+          "stabilizeGarment": true,
+          "armMask": [
+            [
+              40,
+              55
+            ],
+            [
+              49,
+              52
+            ],
+            [
+              78,
+              69
+            ],
+            [
+              77,
+              81
+            ],
+            [
+              62,
+              81
+            ],
+            [
+              39,
+              64
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/09.png",
+          "durationMs": 120,
+          "grip": [
+            49,
+            80
+          ],
+          "angle": 540,
+          "stabilizeGarment": true,
+          "armMask": [
+            [
+              29,
+              54
+            ],
+            [
+              40,
+              54
+            ],
+            [
+              57,
+              77
+            ],
+            [
+              55,
+              89
+            ],
+            [
+              40,
+              85
+            ],
+            [
+              28,
+              64
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v2/attack/raw/10.png",
+          "durationMs": 120,
+          "grip": [
+            37,
+            81
+          ],
+          "angle": 590,
+          "stabilizeGarment": true,
+          "armMask": [
+            [
+              23,
+              51
+            ],
+            [
+              39,
+              50
+            ],
+            [
+              44,
+              73
+            ],
+            [
+              45,
+              89
+            ],
+            [
+              28,
+              89
+            ],
+            [
+              22,
+              72
+            ]
+          ]
+        },
+        {
+          "input": "characters/orc-v1/concepts/concept-selected.png",
+          "durationMs": 180,
+          "grip": [
+            35,
+            82
+          ],
+          "angle": 610,
+          "stabilizeGarment": false,
+          "armMask": []
+        }
+      ]
+    }
+  },
+  "weapons": {
+    "recruit-sword": {
+      "raw": "experiments/orc-v1-weapons-v2/sword/raw/00.png",
+      "grip": [
+        48,
+        75
+      ],
+      "master": "assets/weapons/recruit-sword/source/v2/recruit-sword.aseprite",
+      "sprite": "assets/weapons/recruit-sword/sprites/v2/recruit-sword.png",
+      "job": "47d29508-88b2-4966-9116-73d3b287ea10",
+      "candidate": 0
+    },
+    "militia-axe": {
+      "raw": "experiments/orc-v1-weapons-v2/axe/raw/01.png",
+      "grip": [
+        36,
+        73
+      ],
+      "master": "assets/weapons/militia-axe/source/v2/militia-axe.aseprite",
+      "sprite": "assets/weapons/militia-axe/sprites/v2/militia-axe.png",
+      "job": "a60c76e5-b809-4f65-89fa-3bec7d879693",
+      "candidate": 1
+    }
+  },
+  "output": "characters/orc-v1/source/equipment-v2",
+  "masters": "characters/orc-v1/source/aseprite/equipment-v2",
+  "reference": "characters/orc-v1/concepts/concept-selected.png",
+  "layers": [
+    "body",
+    "palmBack",
+    "weapon",
+    "fingersFront"
+  ],
+  "stylePolicy": "Global game pixel/material/light treatment; no racial or Orc palette requirement."
+}

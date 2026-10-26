@@ -1,0 +1,156 @@
+{
+  "status": "AUDITED_BEFORE_ART_CHANGES",
+  "character": {
+    "status": "SELECTED_FOR_FUTURE_INTEGRATION",
+    "revision": "orc-v1-green-warcraft",
+    "characterId": "orc-v1",
+    "sourceCharacter": "orc-pixellab-05",
+    "selectedVariant": "green-skin-v3",
+    "creatorQuote": "a que vamos integrar será a verde warcraft. Chamaremos de Orc V1 para fins de organização, pois será o primeiro jogável.",
+    "firstPlayableCandidate": true,
+    "unityIntegrated": false,
+    "fullDirectionGatesGranted": false,
+    "review": "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+    "historicalV4StillDiscarded": true
+  },
+  "sourceTruth": {
+    "concept": "characters/orc-v1/concepts/concept-selected.png",
+    "master": "characters/orc-v1/source/aseprite/concept-selected.aseprite",
+    "idle": "characters/orc-v1/source/studies/Idle/clip.json",
+    "walk": "characters/orc-v1/source/studies/Walk/clip.json",
+    "rejectedEquipment": "characters/orc-v1/source/equipment-v2/equipment-manifest.json"
+  },
+  "weapons": {
+    "recruit-sword": {
+      "metadata": {
+        "schemaVersion": 1,
+        "id": "recruit-sword",
+        "name": "Espada do Recruta",
+        "hands": 1,
+        "category": "Sword",
+        "description": "Uma mão; lâmina reta de dois gumes com canal central, guarda reta simples, couro castanho costurado, pomo disco. Aço gasto e funcional, sem magia ou ornamentos de alto nível.",
+        "authoring": "PixelLab create_image_pro; imported and finished/exported in Aseprite; not manual drawing",
+        "reference": "Photo supplied inline by creator 2026-10-25: straight fuller sword with leather hilt and disk pommel / simple curved-haft axe. Reference read in conversation; no falsely claimed local photo file.",
+        "canvas": [
+          96,
+          96
+        ],
+        "grip": [
+          48,
+          75
+        ],
+        "ppu": 100,
+        "sprite": "assets/weapons/recruit-sword/sprites/v2/recruit-sword.png",
+        "master": "assets/weapons/recruit-sword/source/v2/recruit-sword.aseprite",
+        "artisticApproval": "PENDING_CREATOR",
+        "bindings": "characters/orc-v1/source/equipment-v2/recruit-sword",
+        "visualDesign": "Global game pixel/material/light treatment; no racial or Orc palette requirement.",
+        "revision": "v2",
+        "sourceSha256": "a48e07f5be3616b71b2a779326d9376972372d0625d3caee99960ca3359d9cd2",
+        "spriteSha256": "1fd7b186984299fba4579c05a7960b371e4fa58ec8f1bef8520d4f9ef1d2646c",
+        "masterSha256": "00feddda647f6fbb68d9236c5e5e1972affa2fdb798c19b226382743ecedfc17",
+        "generation": {
+          "job": "47d29508-88b2-4966-9116-73d3b287ea10",
+          "candidate": 0,
+          "request": "experiments/orc-v1-weapons-v2/sword-pro-request.json"
+        },
+        "compatibility": {
+          "family": "onehanded-cut-v2",
+          "shaftWidthPx": [
+            4,
+            8
+          ],
+          "hand": "right",
+          "bodyRig": "orc-v1-front-r",
+          "requiresNewBodyGenerationForItemSwap": false
+        }
+      },
+      "bbox": [
+        35,
+        7,
+        61,
+        89
+      ],
+      "heightPx": 82,
+      "widthPx": 26
+    },
+    "militia-axe": {
+      "metadata": {
+        "schemaVersion": 1,
+        "id": "militia-axe",
+        "name": "Machado de Milícia",
+        "hands": 1,
+        "category": "Axe",
+        "description": "Uma mão; cabeça simples de ferro de um gume, fio curvo e barba curta, olhal/rebite visível; cabo de madeira curvo com veios e desgaste. Sem crânios, gemas ou adereços mágicos.",
+        "authoring": "PixelLab create_image_pro; imported and finished/exported in Aseprite; not manual drawing",
+        "reference": "Photo supplied inline by creator 2026-10-25: straight fuller sword with leather hilt and disk pommel / simple curved-haft axe. Reference read in conversation; no falsely claimed local photo file.",
+        "canvas": [
+          96,
+          96
+        ],
+        "grip": [
+          36,
+          73
+        ],
+        "ppu": 100,
+        "sprite": "assets/weapons/militia-axe/sprites/v2/militia-axe.png",
+        "master": "assets/weapons/militia-axe/source/v2/militia-axe.aseprite",
+        "artisticApproval": "PENDING_CREATOR",
+        "bindings": "characters/orc-v1/source/equipment-v2/militia-axe",
+        "visualDesign": "Global game pixel/material/light treatment; no racial or Orc palette requirement.",
+        "revision": "v2",
+        "sourceSha256": "be728dff6fc8a41a53afaa7272c72211c85cd169f281fc9fb3677fec565e4e1e",
+        "spriteSha256": "2c410aafbfcaa4c2072d3d07e9852f481ec51c277ba770ab8ebe4189dd88a09b",
+        "masterSha256": "876d02ba3bed78f9d15d2a2b7708ab37256d4d41248e26b9d647fa3ee9ab6558",
+        "generation": {
+          "job": "a60c76e5-b809-4f65-89fa-3bec7d879693",
+          "candidate": 1,
+          "request": "experiments/orc-v1-weapons-v2/axe-pro-request.json"
+        },
+        "compatibility": {
+          "family": "onehanded-cut-v2",
+          "shaftWidthPx": [
+            4,
+            8
+          ],
+          "hand": "right",
+          "bodyRig": "orc-v1-front-r",
+          "requiresNewBodyGenerationForItemSwap": false
+        }
+      },
+      "bbox": [
+        30,
+        11,
+        75,
+        86
+      ],
+      "heightPx": 75,
+      "widthPx": 45
+    }
+  },
+  "findings": {
+    "artwork": "Axe head and haft oversized. Sword hilt/guard need one-hand proportion check.",
+    "body": "V2 skeleton request changes only right-arm joints; torso, shoulder, hips and feet fixed. Garment/legs frozen in composition.",
+    "composition": "Hand-independent angle track 250..610 degrees, common rotated palm/fingers instead of pose-specific anatomy; weapon always front, no perspective views.",
+    "playback": "Same 1315ms family for Sword/Axe, full circular recovery; persistent armed rest/walk conflicts with latest decision.",
+    "preview": "Actual PNGs/timings match canvas; no preview smoothing/scale mismatch explains the artistic failures.",
+    "gates": "Character selected for future integration. reviews.json empty; no full direction/runtime gates. V1 and V2 attacks artistically rejected.",
+    "conflicts": [
+      "AGENTS/ASEPRITE/handoff historical V4 active counts are obsolete; only orc-v1 is current.",
+      "character.json equipmentPreview points to v1 while equipment-current/config point to v2.",
+      "character appearance body still says grey despite selected green masters.",
+      "Persistent armed Idle/Walk and shared Sword/Axe motion explicitly superseded by latest request."
+    ]
+  },
+  "policy": {
+    "Idle": false,
+    "Walk": false,
+    "Rest": false,
+    "Inspection": false,
+    "Attack": "Declared visible interval only",
+    "Hit": false,
+    "Defeat": false,
+    "AfterAttack": false
+  },
+  "scope": "Two separate front_r attack profiles; no Unity, other views or jobs; no automatic artistic approval"
+}

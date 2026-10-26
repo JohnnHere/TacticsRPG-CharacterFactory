@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "infante-green-skin-v1",
+  "kind": "character",
+  "characterId": "orc-pixellab-05",
+  "jobs": [
+    {
+      "id": "green-concept",
+      "source": "characters/orc-pixellab-05/source/aseprite/green-skin-v1/source/green-concept.aseprite",
+      "compare": [
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Concept/concept.png"
+      ],
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 1,
+        "alpha": "any",
+        "requireTransparency": true
+      },
+      "sourceSha256": "a4e6181845ea6445f1bcb531f92dea59cb4194abc6d40cac31e87f9aaa9a53a7"
+    },
+    {
+      "id": "green-idle",
+      "source": "characters/orc-pixellab-05/source/aseprite/green-skin-v1/source/green-idle.aseprite",
+      "compare": [
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/00.png",
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/01.png",
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/02.png",
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/03.png",
+        "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v1/Idle/04.png"
+      ],
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 5,
+        "durationsMs": [
+          400,
+          450,
+          500,
+          450,
+          400
+        ],
+        "alpha": "any",
+        "requireTransparency": true
+      },
+      "sourceSha256": "4297fc2ffcf04bea6658b786e5b4df654222668d84e8702b26affd0c581cfc84"
+    }
+  ]
+}

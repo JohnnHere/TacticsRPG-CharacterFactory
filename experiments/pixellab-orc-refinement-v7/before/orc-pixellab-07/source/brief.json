@@ -1,0 +1,56 @@
+{
+  "id": "orc-pixellab-07",
+  "title": "Veterano V4 Reimaginado",
+  "concept": "Quarta direção PixelLab: releitura V4",
+  "provider": "PixelLab official Aseprite extension",
+  "model": "Pro",
+  "prompt": "Create a fresh, full-body medieval fantasy Orc Warrior concept as a new PixelLab pixel-art interpretation of the supplied V4 style reference. Keep the V4 identity cues recognizable: olive-green skin, mature angular face, heavy brow, small ivory tusks, amber eyes, a crimson neck scarf, dark iron armor with restrained silver highlights, one distinct asymmetrical steel shoulder plate, practical leather straps and a broad belt. Reinterpret the character for a clean, readable tactical RPG sprite: compact athletic build with strong but not bodybuilder proportions, purposeful asymmetry, expressive face, crisp clusters and deliberate pixel edges. Keep the reference palette and material contrast while simplifying noisy micro-detail into clear pixel shapes. The result should feel hand-crafted in Aseprite and use PixelLab’s polished sprite rendering. Show the entire character from head to boots, centered, with breathing room on every side; no cropping. Three-quarter front view, neutral ready stance, both hands empty and visible. No weapon held, carried or sheathed; no shield; no text, props or scenery. Transparent background. One character only. Design a new rendering, do not paste or reproduce the source pixels.New Orc Warrior concept, based on the supplied V4 image as a STYLE reference only. Preserve its olive-green skin, mature angular face, ivory tusks, amber eyes, crimson scarf, dark iron armor with restrained silver and one asymmetrical steel pauldron. Make a lean, athletic, battle-worn tactical RPG warrior with a clear silhouette and readable pixel clusters. PixelLab polished pixel art, crisp deliberate edges, controlled detail, strong material contrast. Full body head to boots, centered in a transparent 128x128 canvas, three-quarter front, neutral stance, both empty hands visible. No weapon, shield, props, scenery, text, crop, or copied source pixels. Create a fresh design.",
+  "inputImages": [
+    {
+      "path": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+      "sha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+      "role": "creator-authorized V4 design/style reference"
+    }
+  ],
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "weaponIndependent": true,
+  "creatorApproval": "PENDING",
+  "generation": {
+    "provider": "PixelLab",
+    "model": "Pro",
+    "seed": "2003306841",
+    "concept": "concepts/concept-selected.png",
+    "master": "source/aseprite/concept-selected.aseprite",
+    "inputImages": [],
+    "styleImages": [
+      {
+        "path": "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png",
+        "sha256": "c9bf918fa3ed5d390dfb169a2bd29732e61bf68871d361ea904766283bffb1ea",
+        "role": "V4 image loaded through Aseprite PixelLab Set style; options copied: palette, outline, detail, shading"
+      }
+    ]
+  },
+  "styleReference": {
+    "usedInUi": true,
+    "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+    "sourceSha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+    "downscaledStyleImage": "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png",
+    "downscaledStyleImageSha256": "c9bf918fa3ed5d390dfb169a2bd29732e61bf68871d361ea904766283bffb1ea",
+    "requestHistoryNote": "Aseprite serializes display Image userdata as null in request-history JSON; installed generate-image-new.lua encodes the selected style image as style_image base64 before sending the request."
+  },
+  "status": "CORRECTIVE_V3_READY_PENDING_CREATOR",
+  "currentRevision": "refinement-v6",
+  "currentConcept": "characters/orc-pixellab-07/concepts/concept-selected.png",
+  "review": "reports/orc-pixellab-refinement-v6/review.html",
+  "motionInterface": "PixelLab official MCP animate_image",
+  "license": "Pro explicitly confirmed by creator; tool/model recorded independently",
+  "artisticApproval": "PENDING_CREATOR",
+  "animations": [
+    "Idle",
+    "Walk"
+  ],
+  "latestConstraint": "V5 rejected for foreign-looking head, palette mismatch and neck angle. Only own Orc 07 sources for head; exact own palette and neck/torso registration. Never condition this repair on Agile imagery."
+}

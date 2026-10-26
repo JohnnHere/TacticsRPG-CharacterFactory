@@ -1,5 +1,7 @@
 # Orcs — referência de produção Aseprite V4
 
+**Decisão vigente — 2026-10-24:** V4 ativa e V4 Reimaginado descartados pelo criador; não reutilizar como direção selecionada nem reativar pelos scripts históricos. Arquivos preservados como histórico. Nenhuma seleção de produção ativa. Novo candidato `orc-pixellab-11` (Orc Atlético): parecido com o Ágil, menos armadura, mais musculatura e verde um pouco mais claro. Revisão corrente: `reports/orc-current-review/review.html`. Vigia e Matriarca ficam separados em `ideas/unique-characters-or-npcs/` como ideias futuras de NPC e/ou jogáveis únicos. Esta decisão substitui afirmações históricas de V4 selecionada abaixo.
+
 Revisão aplicada em 2026-10-22 aos oito pacotes: Warrior, Squire, Archer, Apprentice Mage, Acolyte, Rogue, Scout e Brawler. São roupas do mesmo indivíduo. O criador autorizou: “vamos aplicar a V4 do Aseprite nas animações de todos os Orcs que criamos”. Evidência completa e escopo: [aprovação da propagação](../reports/orc-production-v4-approval.json).
 
 ## Resultado e onde consultar

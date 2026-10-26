@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-25",
+  "revision": "main-orc-onehanded-v3",
+  "character": "orc-v1",
+  "account": "Pro explicitly confirmed by creator",
+  "jobs": [
+    {
+      "tool": "animate_image",
+      "model": "Server animation model, no Pro selector",
+      "job": "ee7824a2-5107-4eee-8f6b-17766f683b83",
+      "generations": 8,
+      "status": "REJECTED",
+      "reason": "Thrust-like body sequence and generated weapon length drift; no production frame selected."
+    },
+    {
+      "tool": "animate_with_skeleton_v3",
+      "model": "Skeleton V3 beta",
+      "job": "a24e803e-5fb7-44e6-b357-82455d0bc6fa",
+      "generations": 3,
+      "status": "SELECTED_WITH_FINISHING",
+      "usedRawPoses": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "discardedPoses": [
+        2,
+        7
+      ]
+    },
+    {
+      "tool": "inpaint_image_pro_flash",
+      "model": "Pro Flash",
+      "job": "9150a6bb-758c-4a8a-9be2-fd34b38c361f",
+      "generations": 6,
+      "status": "SELECTED_WITH_ASEPRITE_RESIDUE_CLEANUP",
+      "region": "Sword recovery, generated blade removed from hip/cloth; glove kept outside mask"
+    },
+    {
+      "tool": "inpaint_image_pro_flash",
+      "model": "Pro Flash",
+      "job": "5916387f-266d-4bf6-b628-e31fb1857972",
+      "generations": 6,
+      "status": "SELECTED_WITH_ASEPRITE_RESIDUE_CLEANUP",
+      "region": "Sword crossing pose, blade/guard/pommel removed while protecting actual fist"
+    },
+    {
+      "tool": "animate_with_skeleton_v3",
+      "model": "Skeleton V3 beta",
+      "job": "508388e5-5ef9-4830-b11a-46aec2c6bdff",
+      "generations": 3,
+      "status": "SELECTED",
+      "usedRawPoses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "discardedPoses": [
+        8
+      ]
+    }
+  ],
+  "totalChargedGenerations": 26,
+  "newSkeletonEstimateCalls": 0,
+  "estimateReuse": "Earlier Orc V1 joint estimate reused only after SHA256 equality of input image was verified. No V4 artwork used.",
+  "failedValidationBeforeJob": "Initial animate_image prompt exceeded 1000 chars; rejected before job creation; no charge reported. Corrected request saved separately.",
+  "axeFreeAnimationRequest": "Prepared but NOT_SUBMITTED; no charge",
+  "newWeaponGenerationCalls": 0,
+  "weaponArt": "Inherited official PixelLab Pro v2 sources, safely revised by components in Aseprite; not new AI weapon artwork and not hand drawing",
+  "bodyArt": "Whole-body poses drawn by PixelLab from current Orc only, final rest from approved Idle phase0. Controlled pose guide is authoring data, not a runtime skeleton/IK framework.",
+  "asepriteFinishing": [
+    "Independent blade/hilt/guard and head/haft proportion edits",
+    "Per-pose weapon cleanup and two mask-constrained Pro Flash repairs",
+    "One 5x13 clone from the same repaired hip region removes remaining old guard; no torso freeze",
+    "Near boot soles restored from the same Orc approved boot where source pose hit raw canvas boundary",
+    "Finger/thumb contours traced from each own posed glove, preserving original pixel colors",
+    "Separate body/weaponBack/weaponFront/handFront layers with per-frame attachment and visibility",
+    "All editable masters and final raster exports in hidden isolated Aseprite batch"
+  ],
+  "externalRasterArtworkEdits": false,
+  "runtimeImplemented": false,
+  "unityModified": false,
+  "artisticApproval": "PENDING_CREATOR",
+  "independentArtisticReview": "Not performed; agent visual inspection only",
+  "activeManifest": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+  "preview": "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+  "scripts": {
+    "tools/compose-main-orc-item.mjs": "005da38f3c66dea00bb9962616a3183f8fd2072dc3e8e30c49cc3480eaa3e8cd",
+    "tools/compose-main-orc-rescue.mjs": "333060c995b1fad01d82059fb58e3527921b6ef4b041b626da360534ed63d6cf",
+    "tools/finalize-main-orc-rescue.mjs": "78976773dc8f37c32a7cc7722e5245ae7bedfa146749f872560634a1e3f0db2a",
+    "tools/prepare-main-orc-cleanup.mjs": "be49ae97d207e362db45e4a8043b61b4973cd2de54c386587af2cca38aaaa5b2",
+    "tools/prepare-main-orc-profiles.mjs": "0cdcf7dea8966e6c1a973553891d665e16f9a9263228dd34f9acca98dd0f8181",
+    "tools/prepare-main-orc-rescue.mjs": "e8dd2b4fae046615f524baefe422ca21ef07d759161e7e8f3e921a73bd5c6e1e",
+    "tools/aseprite/compose-compatible-main-orc-item.lua": "405a9179d0ef1e61c388c8c537704962c378cb36539740096704dd828661546f",
+    "tools/aseprite/compose-main-orc-rescue.lua": "325fca17a264a17fff62b5f17460183243fdfda842e260955869aaec98bddc12",
+    "tools/aseprite/prepare-main-orc-cleanup.lua": "8833d4ae399b31c8e4a23b91693922bf598fcdf6c20c12c36fccbb7b952347e5",
+    "tools/aseprite/prepare-main-orc-rescue.lua": "17527f155eaa0031f879c24e89653659926d9db5ee041b75ce7c56e4a8ebd4fd"
+  },
+  "protectedArtFiles": 9669
+}

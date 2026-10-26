@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "main-orc-timing-only-study",
+  "kind": "character",
+  "characterId": "orc-v1",
+  "jobs": [
+    {
+      "id": "sword-timing-only",
+      "source": "experiments/main-orc-polish-v1/timing-only/sword.aseprite",
+      "profile": {
+        "width": 256,
+        "height": 256,
+        "frames": 8,
+        "durationsMs": [
+          40,
+          65,
+          100,
+          35,
+          35,
+          100,
+          80,
+          90
+        ],
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png"
+      ]
+    },
+    {
+      "id": "axe-timing-only",
+      "source": "experiments/main-orc-polish-v1/timing-only/axe.aseprite",
+      "profile": {
+        "width": 256,
+        "height": 256,
+        "frames": 10,
+        "durationsMs": [
+          40,
+          100,
+          80,
+          155,
+          35,
+          115,
+          110,
+          130,
+          90,
+          100
+        ],
+        "alpha": "binary",
+        "requireTransparency": true
+      },
+      "compare": [
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/00.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/01.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/02.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/03.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/04.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/05.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/06.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/07.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/08.png",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/09.png"
+      ]
+    }
+  ]
+}

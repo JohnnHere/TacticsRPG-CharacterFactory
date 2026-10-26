@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-onehanded-entry-v1",
+  "createdAt": "2026-10-25T20:17:52-03:00",
+  "context": "Correção pós-QA do construtor da página de preview. A QA independente apontou que o construtor assumia que o diretório histórico já existia; o agente anterior foi interrompido antes de aplicar a correção. Arte, clipes, mestres e demais fontes do candidato permanecem congelados e intocados.",
+  "rootCause": "tools/build-main-orc-rescue-review.py criava 'Biblioteca de Arte/Historico de Entregas/Orc V1 - Armas v2' copiando experiments/<experimento>/previous-review quando o diretório histórico não existia. Essa fonte só existe no workspace do resgate v3 (experiments/main-orc-weapon-rescue-v3/previous-review); nos modos --entry (e --polish) ela não existe, então o build --entry só funcionava se o diretório histórico já estivesse presente — FileNotFoundError em árvore limpa.",
+  "correction": "Guard do bootstrap histórico restrito ao modo padrão (resgate v3): 'if not POLISH and not h.exists()' -> 'if not POLISH and not ENTRY and not h.exists()'. Menor mudança possível; nenhum modo legado alterado, nenhum asset artístico alterado, nenhum diretório histórico criado pelo modo --entry.",
+  "files": {
+    "changed": ["tools/build-main-orc-rescue-review.py"],
+    "added": ["test/preview-entry.test.mjs", "experiments/main-orc-entry-v1/preview-builder-fix.json", "docs/MAIN_ORC_COMBAT_POLISH.md (nota curta de correção pós-QA)"]
+  },
+  "hashes": {
+    "tools/build-main-orc-rescue-review.py": {
+      "qaReviewed": "6b3f874dc91a99a6422630c8c0172aedeb7c0f16280430bac5c4654f08ae6cd0",
+      "corrected": "935f4e3e963c7ec12076af5657f8bd9adaace3b84a77746d7f52d1b79086619b"
+    }
+  },
+  "validation": [
+    "node --test --test-concurrency=1: 15/15 PASS (14 anteriores + 1 nova regressão executável do construtor --entry sem diretório histórico)",
+    "Teste de sensibilidade (sandbox descartável, não versionado): com o guard pré-correção o build --entry falha com FileNotFoundError em experiments/main-orc-entry-v1/previous-review; com o guard corrigido passa e não cria Historico de Entregas",
+    "Rebuild real com o construtor corrigido (tmp/pixel-venv/Scripts/python.exe tools/build-main-orc-rescue-review.py --entry): árvore da página de revisão byte a byte idêntica ao pacote congelado (202/202 arquivos, sha256 8e63e10490076450c782d7bce1bf58eddaa45eec5c063489fb055fe2afe62b01); todos os arquivos e árvores do qa-package.json inalterados, exceto o próprio construtor",
+    "node tools/entry-main-orc.mjs verify: PASS sem falhas (candidato intocado)"
+  ],
+  "status": "CORRECTED; PENDING INDEPENDENT QA RE-REVIEW OF THIS FILE AND PENDING_CREATOR ARTISTIC APPROVAL",
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false
+}

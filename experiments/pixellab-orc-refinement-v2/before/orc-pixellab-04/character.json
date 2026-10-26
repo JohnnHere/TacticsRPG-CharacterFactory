@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-04",
+  "identityId": "73141e29-0e22-40ac-ad94-ced99bc295c3",
+  "name": "Veterano Ágil",
+  "status": "candidate",
+  "createdAt": "2026-10-23T12:53:21.498Z",
+  "styleId": "pixellab-orc-contrast-study-v2",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto (variações individuais candidatas)"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Estudo independente de Orc Warrior",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Proposta PixelLab pendente",
+    "hair": "Descrito no prompt; candidato",
+    "ageImpression": "Adulto",
+    "body": "A lean, athletic adult male orc warrior: tall compact frame, strong but not bulky shoulders, defined waist and long mobile limbs. Bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. A short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor and carefully strapped brown leather. Nimble veteran rather than a hulking tank. The silhouette should read as agile and disciplined.",
+    "palette": [],
+    "dominantHand": "TBD após resultado",
+    "asymmetries": [],
+    "lighting": "PixelLab candidato"
+  },
+  "outfit": {
+    "id": "orc-pixellab-04-candidate",
+    "description": "A lean, athletic adult male orc warrior: tall compact frame, strong but not bulky shoulders, defined waist and long mobile limbs. Bald scalp, angular olive-green face, pronounced brow, small ivory tusks and focused amber eyes. A short muted crimson neck wrap, one restrained steel shoulder plate, fitted dark iron chest armor and carefully strapped brown leather. Nimble veteran rather than a hulking tank. The silhouette should read as agile and disciplined. Textual direction: the restrained green-and-red palette and veteran warrior role of the currently established Orc V4, reinterpreted as a leaner, athletic and bald individual. Do not copy any specific V4 pixels, face, armor shapes or pose.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Asset separado; mãos vazias"
+  },
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": null,
+    "ppu": 100,
+    "counts": {
+      "Idle": 8,
+      "Walk": 8
+    },
+    "note": "Estudos candidatos; ainda não é contrato de runtime."
+  },
+  "references": [],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Character identity, silhouette, face, palette, outfit and poses",
+      "category": "CREATE_NEW",
+      "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+      "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+      "artRisk": "The model may converge on the first round despite different prompts.",
+      "technicalRisk": "Animation and small-scale readability remain review studies.",
+      "dependencies": [
+        "Installed PixelLab extension and authenticated account"
+      ],
+      "validation": "NOT_RUN",
+      "productionImpact": "No current candidate, approval, or production asset is replaced."
+    },
+    {
+      "component": "Aseprite masters, export and review tools",
+      "category": "REUSE_DIRECT",
+      "evidence": "Existing local Aseprite bridge and packaging workflow.",
+      "adaptation": "New independent IDs and source paths.",
+      "artRisk": "Technical export does not prove artistic quality.",
+      "technicalRisk": "None beyond normal preview checks.",
+      "dependencies": [
+        "Aseprite 1.3+"
+      ],
+      "validation": "NOT_RUN",
+      "productionImpact": "Candidate review only."
+    }
+  ],
+  "artExploration": {
+    "experiment": "pixellab-independent-orc-round2-v1",
+    "inputImages": [],
+    "styleReferences": [],
+    "legacyPixels": false,
+    "textualInspirations": [
+      "Tolkien",
+      "World of Warcraft"
+    ],
+    "candidateAnimationsAuthorized": true,
+    "selection": null
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "character": "orc-v1",
+  "baselineRevision": "main-orc-onehanded-v3",
+  "sourceTruth": {
+    "revision": "main-orc-onehanded-v3",
+    "manifest": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+    "presentationPolicy": "attack-only-v1",
+    "artisticApproval": "PENDING_CREATOR",
+    "supersedes": "Rejected v1/v2; current task forbids armed Idle/Walk and a universal Sword/Axe attack",
+    "review": "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+    "runtimeImplemented": false
+  },
+  "recording": "No new recording attached. Audit uses actual current exports and existing real1x/0.25x preview captures.",
+  "scope": "Targeted polish only; current v3 remains baseline until creator accepts candidate. No weapon redesign, runtime, new rig or new framework.",
+  "frames": {
+    "Sword": [
+      {
+        "frame": 0,
+        "classification": "KEEP",
+        "reason": "Preserve exact current unarmed neutral.",
+        "durationMs": 80,
+        "grip": null,
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 1,
+        "classification": "TRANSITION_FIX",
+        "reason": "Usable load pose; establish grip before the arm is already displaced.",
+        "durationMs": 100,
+        "grip": [
+          93,
+          130
+        ],
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 2,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep guard artwork; shorten hold to produce compact anticipation.",
+        "durationMs": 130,
+        "grip": [
+          98,
+          89
+        ],
+        "handTravelFromPreviousPx": 41.3,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 3,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep drive silhouette; the63px spacing can serve fast acceleration when this hold is shortened.",
+        "durationMs": 65,
+        "grip": [
+          157,
+          112
+        ],
+        "handTravelFromPreviousPx": 63.32,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 4,
+        "classification": "MINOR_POLISH",
+        "reason": "Keep crossing; inspect wrist/guard overlap on actual composite.",
+        "durationMs": 55,
+        "grip": [
+          158,
+          134
+        ],
+        "handTravelFromPreviousPx": 22.02,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 5,
+        "classification": "MINOR_POLISH",
+        "reason": "Small masked body correction for hip/leading knee/shoulder commitment; preserve head, feet and glove.",
+        "durationMs": 95,
+        "grip": [
+          159,
+          142
+        ],
+        "handTravelFromPreviousPx": 8.06,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 6,
+        "classification": "TRANSITION_FIX",
+        "reason": "49px single recovery retraction: try current same-Orc Axe7 as bridge, then retime.",
+        "durationMs": 130,
+        "grip": [
+          110,
+          147
+        ],
+        "handTravelFromPreviousPx": 49.25,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      },
+      {
+        "frame": 7,
+        "classification": "TRANSITION_FIX",
+        "reason": "Keep neutral pixels; settle with weapon briefly before hiding on identical body.",
+        "durationMs": 120,
+        "grip": null,
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite"
+      }
+    ],
+    "Axe": [
+      {
+        "frame": 0,
+        "classification": "KEEP",
+        "reason": "Keep neutral.",
+        "durationMs": 80,
+        "grip": null,
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/00.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 1,
+        "classification": "TRANSITION_FIX",
+        "reason": "Keep low-load art; short in-action grip establishment.",
+        "durationMs": 120,
+        "grip": [
+          93,
+          134
+        ],
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/01.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 2,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep lift; remove uniform rhythm.",
+        "durationMs": 110,
+        "grip": [
+          88,
+          118
+        ],
+        "handTravelFromPreviousPx": 16.76,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/02.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 3,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep cocked shoulder; deliberate accent before commitment.",
+        "durationMs": 170,
+        "grip": [
+          98,
+          100
+        ],
+        "handTravelFromPreviousPx": 20.59,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/03.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 4,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep release; shorten70ms mid-motion pause.",
+        "durationMs": 70,
+        "grip": [
+          146,
+          119
+        ],
+        "handTravelFromPreviousPx": 51.62,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/04.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 5,
+        "classification": "MINOR_POLISH",
+        "reason": "Masked hip/knee/shoulder polish and distinct impact emphasis; retain corrected weapon/hand.",
+        "durationMs": 70,
+        "grip": [
+          148,
+          143
+        ],
+        "handTravelFromPreviousPx": 24.08,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/05.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 6,
+        "classification": "TIMING_ONLY",
+        "reason": "Keep follow-through art, retime deceleration.",
+        "durationMs": 120,
+        "grip": [
+          138,
+          148
+        ],
+        "handTravelFromPreviousPx": 11.18,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/06.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 7,
+        "classification": "MINOR_POLISH",
+        "reason": "Keep source pose, check near-leg head clearance and wrist.",
+        "durationMs": 150,
+        "grip": [
+          129,
+          148
+        ],
+        "handTravelFromPreviousPx": 9.0,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/07.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 8,
+        "classification": "TRANSITION_FIX",
+        "reason": "Keep settle art; weapon currently disappears while arm is not neutral.",
+        "durationMs": 100,
+        "grip": null,
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/08.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      },
+      {
+        "frame": 9,
+        "classification": "KEEP",
+        "reason": "Keep exact neutral; coherent action boundary before hide.",
+        "durationMs": 140,
+        "grip": null,
+        "handTravelFromPreviousPx": null,
+        "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/09.png",
+        "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite"
+      }
+    ]
+  },
+  "minimumPlan": [
+    "Retiming study with identical pixels before body edits",
+    "Two limited impact-body retouches, no face/foot/hand regeneration",
+    "Reuse current same-Orc Axe7 as Sword recovery transition only if visually compatible",
+    "Short attack-onset and finish grip poses, not armed Idle/Walk",
+    "Reuse existing preview/compositor, distinct category profiles and actual timing",
+    "Independent visual QA on exported candidates, no automatic creator approval"
+  ],
+  "outcomeNotes": {
+    "timingStudy": "Real identical-pixel timing-only Aseprite exports tested first; improves cadence but cannot remove the49px Sword recovery gap or create body commitment.",
+    "boundaries": "Final candidate adds identical-body on/off transition frames; no weapon extended over neutral Axe hip, no arbitrary depth flip.",
+    "noRecording": "No new playtest recording was attached to this request; source frames and saved playback captures were inspected."
+  }
+}

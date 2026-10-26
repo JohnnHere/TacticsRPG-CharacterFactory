@@ -1,0 +1,55 @@
+{
+  "revision": "main-orc-onehanded-polish-v1",
+  "baselineRevision": "main-orc-onehanded-v3",
+  "character": "orc-v1",
+  "direction": "front_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "ppu": 100,
+  "experiment": "experiments/main-orc-polish-v1",
+  "output": "characters/orc-v1/source/onehanded-polish-v1",
+  "masters": "characters/orc-v1/source/aseprite/onehanded-polish-v1",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "clips": [
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "clip": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-polish-v1/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "clip": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-polish-v1/axe-attack.aseprite"
+    },
+    {
+      "state": "Idle",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite"
+    },
+    {
+      "state": "Walk",
+      "clip": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite"
+    }
+  ],
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "selection": "REVIEW_ONLY; equipment-current remains v3"
+}

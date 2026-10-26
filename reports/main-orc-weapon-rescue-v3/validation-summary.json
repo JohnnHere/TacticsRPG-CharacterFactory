@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "pipeline": {
+    "command": "node --test --test-concurrency=1",
+    "passed": 14,
+    "failed": 0,
+    "initialParallelRun": {
+      "passed": 13,
+      "failed": 1,
+      "issue": "Windows EPERM moving temporary test build; exact contention source unconfirmed",
+      "evidence": "tmp/aseprite/test-editor-d70e8f508a-normal-0w4onG/failure.json"
+    }
+  },
+  "artifacts": "reports/main-orc-weapon-rescue-v3/check.json",
+  "library": "reports/art-library-check.json",
+  "finalHashVerification": {
+    "protectedPriorArt": 9669,
+    "lockedCurrentMasters": 10,
+    "portableCopies": 157
+  },
+  "reusableReplacementFrames": 18,
+  "oldArmedIdleWalkAbsentFromCurrentFolders": true,
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false
+}

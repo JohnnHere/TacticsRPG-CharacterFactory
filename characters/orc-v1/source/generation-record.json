@@ -1,0 +1,34 @@
+{
+  "identity": "Same Infante 05 selected green Warcraft variant, named Orc V1 by creator",
+  "conceptAndIdleSource": "characters/orc-pixellab-05/source/studies/PaletteVariants/green-skin-v3/variant.json",
+  "walkSource": "characters/orc-pixellab-05/source/studies/Walk/clip.json",
+  "walkRetouch": "tools/aseprite/orc-v1-green-walk.lua",
+  "weaponsAuthoring": "tools/aseprite/orc-v1-weapons.lua, original Aseprite Lua pixel art",
+  "composition": "tools/aseprite/compose-orc-v1-weapons.lua",
+  "bodyAttackGeneration": {
+    "provider": "PixelLab official native MCP",
+    "tool": "animate_image",
+    "model": "Server method has no model selector; do not call it Pro model",
+    "account": "Creator confirmed Pro license",
+    "usedJob": "0f57f3ac-cabf-4fca-8884-b291cb7ba6e3",
+    "usedCostGenerations": 2,
+    "rejectedJob": "a810f375-afbc-40a8-be13-2dbc40a92d82",
+    "rejectedCostGenerations": 2,
+    "rejectedReason": "No clearly readable strike, mostly arm preparation. Raw result retained for provenance.",
+    "totalThisTaskGenerations": 4,
+    "usedBodyRetouch": "Generated short blade in frames 4/5 removed locally in Aseprite; same clearer one-handed cut reused with different weapon arcs/cadences."
+  },
+  "gripAnnotation": "Manually visually reviewed fist positions per native frame; skin-color metadata analysis helped find glove neighborhoods, not bounding-box socket inference.",
+  "sourcesAndReview": "experiments/orc-v1-weapons-v1/composition-plan.json",
+  "newWeaponApproval": "PENDING_CREATOR",
+  "unityIntegrated": false,
+  "legacyEquipmentFieldsDescribe": "v1, rejected by creator; retained for provenance",
+  "currentEquipment": {
+    "revision": "main-orc-onehanded-v3",
+    "manifest": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+    "policy": "attack-only-v1",
+    "provenance": "experiments/main-orc-weapon-rescue-v3/production-record.json",
+    "artisticApproval": "PENDING_CREATOR",
+    "runtimeImplemented": false
+  }
+}

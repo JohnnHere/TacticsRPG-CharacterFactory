@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "id": "onehanded-cut-v2",
+  "anatomy": "orc-v1",
+  "view": "front_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "hand": "right",
+  "localItemContract": {
+    "canvas": [
+      96,
+      96
+    ],
+    "shaftWidthPx": [
+      4,
+      8
+    ],
+    "grip": "Per-item integer anchor on actual handle",
+    "orientation": "Blade/head toward local negative Y",
+    "depth": "body -> palmBack -> weapon -> fingersFront"
+  },
+  "states": {
+    "Idle": {
+      "loop": true,
+      "master": "Idle/body.aseprite",
+      "frames": [
+        {
+          "grip": [
+            100,
+            147
+          ],
+          "angle": 250,
+          "durationMs": 400,
+          "body": "Idle/body/00.png",
+          "palmBack": "Idle/palmBack/00.png",
+          "fingersFront": "Idle/fingersFront/00.png"
+        },
+        {
+          "grip": [
+            100,
+            146
+          ],
+          "angle": 250,
+          "durationMs": 450,
+          "body": "Idle/body/01.png",
+          "palmBack": "Idle/palmBack/01.png",
+          "fingersFront": "Idle/fingersFront/01.png"
+        },
+        {
+          "grip": [
+            100,
+            145
+          ],
+          "angle": 250,
+          "durationMs": 500,
+          "body": "Idle/body/02.png",
+          "palmBack": "Idle/palmBack/02.png",
+          "fingersFront": "Idle/fingersFront/02.png"
+        },
+        {
+          "grip": [
+            100,
+            146
+          ],
+          "angle": 250,
+          "durationMs": 450,
+          "body": "Idle/body/03.png",
+          "palmBack": "Idle/palmBack/03.png",
+          "fingersFront": "Idle/fingersFront/03.png"
+        },
+        {
+          "grip": [
+            100,
+            147
+          ],
+          "angle": 250,
+          "durationMs": 400,
+          "body": "Idle/body/04.png",
+          "palmBack": "Idle/palmBack/04.png",
+          "fingersFront": "Idle/fingersFront/04.png"
+        }
+      ]
+    },
+    "Walk": {
+      "loop": true,
+      "master": "Walk/body.aseprite",
+      "frames": [
+        {
+          "grip": [
+            100,
+            146
+          ],
+          "angle": 250,
+          "durationMs": 80,
+          "body": "Walk/body/00.png",
+          "palmBack": "Walk/palmBack/00.png",
+          "fingersFront": "Walk/fingersFront/00.png"
+        },
+        {
+          "grip": [
+            98,
+            145
+          ],
+          "angle": 251,
+          "durationMs": 80,
+          "body": "Walk/body/01.png",
+          "palmBack": "Walk/palmBack/01.png",
+          "fingersFront": "Walk/fingersFront/01.png"
+        },
+        {
+          "grip": [
+            97,
+            145
+          ],
+          "angle": 252,
+          "durationMs": 80,
+          "body": "Walk/body/02.png",
+          "palmBack": "Walk/palmBack/02.png",
+          "fingersFront": "Walk/fingersFront/02.png"
+        },
+        {
+          "grip": [
+            95,
+            146
+          ],
+          "angle": 252,
+          "durationMs": 80,
+          "body": "Walk/body/03.png",
+          "palmBack": "Walk/palmBack/03.png",
+          "fingersFront": "Walk/fingersFront/03.png"
+        },
+        {
+          "grip": [
+            95,
+            147
+          ],
+          "angle": 251,
+          "durationMs": 80,
+          "body": "Walk/body/04.png",
+          "palmBack": "Walk/palmBack/04.png",
+          "fingersFront": "Walk/fingersFront/04.png"
+        },
+        {
+          "grip": [
+            100,
+            147
+          ],
+          "angle": 250,
+          "durationMs": 80,
+          "body": "Walk/body/05.png",
+          "palmBack": "Walk/palmBack/05.png",
+          "fingersFront": "Walk/fingersFront/05.png"
+        },
+        {
+          "grip": [
+            111,
+            147
+          ],
+          "angle": 249,
+          "durationMs": 80,
+          "body": "Walk/body/06.png",
+          "palmBack": "Walk/palmBack/06.png",
+          "fingersFront": "Walk/fingersFront/06.png"
+        },
+        {
+          "grip": [
+            122,
+            146
+          ],
+          "angle": 248,
+          "durationMs": 80,
+          "body": "Walk/body/07.png",
+          "palmBack": "Walk/palmBack/07.png",
+          "fingersFront": "Walk/fingersFront/07.png"
+        },
+        {
+          "grip": [
+            128,
+            144
+          ],
+          "angle": 248,
+          "durationMs": 80,
+          "body": "Walk/body/08.png",
+          "palmBack": "Walk/palmBack/08.png",
+          "fingersFront": "Walk/fingersFront/08.png"
+        },
+        {
+          "grip": [
+            126,
+            145
+          ],
+          "angle": 249,
+          "durationMs": 80,
+          "body": "Walk/body/09.png",
+          "palmBack": "Walk/palmBack/09.png",
+          "fingersFront": "Walk/fingersFront/09.png"
+        },
+        {
+          "grip": [
+            115,
+            148
+          ],
+          "angle": 250,
+          "durationMs": 80,
+          "body": "Walk/body/10.png",
+          "palmBack": "Walk/palmBack/10.png",
+          "fingersFront": "Walk/fingersFront/10.png"
+        },
+        {
+          "grip": [
+            100,
+            147
+          ],
+          "angle": 251,
+          "durationMs": 80,
+          "body": "Walk/body/11.png",
+          "palmBack": "Walk/palmBack/11.png",
+          "fingersFront": "Walk/fingersFront/11.png"
+        },
+        {
+          "grip": [
+            96,
+            146
+          ],
+          "angle": 252,
+          "durationMs": 80,
+          "body": "Walk/body/12.png",
+          "palmBack": "Walk/palmBack/12.png",
+          "fingersFront": "Walk/fingersFront/12.png"
+        },
+        {
+          "grip": [
+            98,
+            146
+          ],
+          "angle": 251,
+          "durationMs": 80,
+          "body": "Walk/body/13.png",
+          "palmBack": "Walk/palmBack/13.png",
+          "fingersFront": "Walk/fingersFront/13.png"
+        },
+        {
+          "grip": [
+            96,
+            146
+          ],
+          "angle": 250,
+          "durationMs": 80,
+          "body": "Walk/body/14.png",
+          "palmBack": "Walk/palmBack/14.png",
+          "fingersFront": "Walk/fingersFront/14.png"
+        },
+        {
+          "grip": [
+            97,
+            145
+          ],
+          "angle": 250,
+          "durationMs": 80,
+          "body": "Walk/body/15.png",
+          "palmBack": "Walk/palmBack/15.png",
+          "fingersFront": "Walk/fingersFront/15.png"
+        }
+      ]
+    },
+    "Attack": {
+      "loop": false,
+      "master": "Attack/body.aseprite",
+      "frames": [
+        {
+          "grip": [
+            99,
+            146
+          ],
+          "angle": 250,
+          "durationMs": 160,
+          "body": "Attack/body/00.png",
+          "palmBack": "Attack/palmBack/00.png",
+          "fingersFront": "Attack/fingersFront/00.png"
+        },
+        {
+          "grip": [
+            93,
+            137
+          ],
+          "angle": 270,
+          "durationMs": 100,
+          "body": "Attack/body/01.png",
+          "palmBack": "Attack/palmBack/01.png",
+          "fingersFront": "Attack/fingersFront/01.png"
+        },
+        {
+          "grip": [
+            88,
+            118
+          ],
+          "angle": 300,
+          "durationMs": 100,
+          "body": "Attack/body/02.png",
+          "palmBack": "Attack/palmBack/02.png",
+          "fingersFront": "Attack/fingersFront/02.png"
+        },
+        {
+          "grip": [
+            97,
+            75
+          ],
+          "angle": 335,
+          "durationMs": 120,
+          "body": "Attack/body/03.png",
+          "palmBack": "Attack/palmBack/03.png",
+          "fingersFront": "Attack/fingersFront/03.png"
+        },
+        {
+          "grip": [
+            110,
+            83
+          ],
+          "angle": 350,
+          "durationMs": 140,
+          "body": "Attack/body/04.png",
+          "palmBack": "Attack/palmBack/04.png",
+          "fingersFront": "Attack/fingersFront/04.png"
+        },
+        {
+          "grip": [
+            129,
+            88
+          ],
+          "angle": 380,
+          "durationMs": 60,
+          "body": "Attack/body/05.png",
+          "palmBack": "Attack/palmBack/05.png",
+          "fingersFront": "Attack/fingersFront/05.png"
+        },
+        {
+          "grip": [
+            142,
+            109
+          ],
+          "angle": 420,
+          "durationMs": 55,
+          "body": "Attack/body/06.png",
+          "palmBack": "Attack/palmBack/06.png",
+          "fingersFront": "Attack/fingersFront/06.png"
+        },
+        {
+          "grip": [
+            145,
+            120
+          ],
+          "angle": 460,
+          "durationMs": 70,
+          "body": "Attack/body/07.png",
+          "palmBack": "Attack/palmBack/07.png",
+          "fingersFront": "Attack/fingersFront/07.png"
+        },
+        {
+          "grip": [
+            133,
+            136
+          ],
+          "angle": 490,
+          "durationMs": 90,
+          "body": "Attack/body/08.png",
+          "palmBack": "Attack/palmBack/08.png",
+          "fingersFront": "Attack/fingersFront/08.png"
+        },
+        {
+          "grip": [
+            113,
+            144
+          ],
+          "angle": 540,
+          "durationMs": 120,
+          "body": "Attack/body/09.png",
+          "palmBack": "Attack/palmBack/09.png",
+          "fingersFront": "Attack/fingersFront/09.png"
+        },
+        {
+          "grip": [
+            101,
+            145
+          ],
+          "angle": 590,
+          "durationMs": 120,
+          "body": "Attack/body/10.png",
+          "palmBack": "Attack/palmBack/10.png",
+          "fingersFront": "Attack/fingersFront/10.png"
+        },
+        {
+          "grip": [
+            99,
+            146
+          ],
+          "angle": 610,
+          "durationMs": 180,
+          "body": "Attack/body/11.png",
+          "palmBack": "Attack/palmBack/11.png",
+          "fingersFront": "Attack/fingersFront/11.png"
+        }
+      ]
+    }
+  },
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false
+}

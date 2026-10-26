@@ -1,0 +1,41 @@
+{
+  "baseline": "characters/orc-v1/source/onehanded-polish-v1",
+  "baselineMasters": "characters/orc-v1/source/aseprite/onehanded-polish-v1",
+  "output": "characters/orc-v1/source/onehanded-entry-v1",
+  "masters": "characters/orc-v1/source/aseprite/onehanded-entry-v1",
+  "experiment": "experiments/main-orc-entry-v1",
+  "revision": "main-orc-onehanded-entry-v1",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "ppu": 100,
+  "visibility": "attack-only-v1",
+  "activeSelectionUnchanged": true,
+  "prohibited": [
+    "Unity writes",
+    "commits",
+    "imagegen",
+    "external raster edits",
+    "full regeneration",
+    "weapon changes",
+    "new QA agents"
+  ],
+  "art": {
+    "owner": "orchestrator",
+    "newPoseInputs": "experiments/main-orc-entry-v1/inputs/*.aseprite or *.png exported in Aseprite",
+    "noCloudCallsByDev": true
+  },
+  "devScope": [
+    "tools/entry-main-orc.mjs",
+    "tools/aseprite/entry-main-orc.lua",
+    "experiments/main-orc-entry-v1/check-entry.py",
+    "existing review builder minimal --entry option"
+  ],
+  "qaOwner": "orchestrator via Paseo cline-glm-api glm-5.3 after integration"
+}

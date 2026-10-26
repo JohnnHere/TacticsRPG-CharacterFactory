@@ -1,0 +1,71 @@
+{
+  "state": "Walk",
+  "provider": "PixelLab",
+  "interface": "official MCP HTTP",
+  "tool": "animate_image",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "refinement-v3",
+  "prompt": "Walking in place along a straight path towards the viewer and slightly right, always maintaining the exact front three-quarter orientation of the reference. Clear alternating two-step gait: each knee bends and its boot lifts, swings forward, plants and pushes back, then the other leg does the same. Opposite arm swing, modest stride and small natural weight transfer. Torso stays upright, shoulders level, head chest hips aligned. No sideways drifting, leg crossing, skating, pivoting into profile, or diagonal twisting. Preserve the exact face, proportions and armor. Full body, both boots inside canvas, empty hands, transparency, fixed camera. Loop ends in starting stance.",
+  "jobId": "ecdfe186-48f1-49f2-8349-276c85a69e98",
+  "frameCount": 8,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/00.png",
+      "durationMs": 100,
+      "sha256": "7677228fd8ad20baa584eb6651a57457e895bb3a561fdd23ac55ae371d357c46"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/01.png",
+      "durationMs": 100,
+      "sha256": "8036a61401aae48e5fc1186d5d6b56712d643a09b68f9b4861697b9a7362b36e"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/02.png",
+      "durationMs": 100,
+      "sha256": "1bd8702b03dfafc9e47744d41748c7318cddab56e890d7d86ef33c4e9eeae245"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/03.png",
+      "durationMs": 100,
+      "sha256": "3e87e4c6541b2f270ff98edb296fc6e48a54efffa50da0c20f1d48670bb10756"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/04.png",
+      "durationMs": 100,
+      "sha256": "bcdae6388d21269ec60f33fd82b7c74a8ad31f77e48f90d45b51e2b5f1f6974c"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/05.png",
+      "durationMs": 100,
+      "sha256": "2149692307fd57ff2e85bb88eadbfedeb2b055a6867dd48bdf6a9d6a1b3453de"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/06.png",
+      "durationMs": 100,
+      "sha256": "880ccfd80d16f848b0ad0f281b4fe199203b5c45ef555036227c917b0958cdaa"
+    },
+    {
+      "png": "characters/orc-pixellab-07/source/studies/Walk/07.png",
+      "durationMs": 100,
+      "sha256": "30a5be286d6d346d5d8fc227f45345f768fd48965d08cf47d8d36b2761ad5221"
+    }
+  ],
+  "input": "characters/orc-pixellab-07/concepts/concept-selected.png",
+  "inputSha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+  "masterSha256": "bf0f842f6613523fb15517e02f7343965723ebf4d1c8bbd3c1adc3c8ceec5f59",
+  "rawMaster": "characters/orc-pixellab-07/source/aseprite/walk-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/07-Walk-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/07-Walk-result.json",
+  "archive": "characters/orc-pixellab-07/source/pixellab-results/Walk/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "100 ms per frame authored in Aseprite for review",
+  "artisticApproval": "PENDING_CREATOR",
+  "visualReview": {
+    "status": "AGENT_INSPECTED_CANDIDATE",
+    "evidence": "Native frame contact sheet and review page; no regional torso distortion; gait alternates; creator approval pending."
+  }
+}

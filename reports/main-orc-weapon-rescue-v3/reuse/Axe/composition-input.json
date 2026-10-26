@@ -1,0 +1,234 @@
+{
+  "category": "Axe",
+  "item": {
+    "id": "militia-axe",
+    "sprite": "assets/weapons/militia-axe/sprites/militia-axe.png",
+    "grip": [
+      32,
+      49
+    ],
+    "category": "Axe"
+  },
+  "profile": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/profile.json",
+  "bodyProfile": {
+    "id": "basic.axe-chop",
+    "character": "orc-v1",
+    "category": "Axe",
+    "direction": "front_r",
+    "canvas": [
+      256,
+      256
+    ],
+    "ppu": 100,
+    "bodyOffset": [
+      64,
+      64
+    ],
+    "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite",
+    "handMaster": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-hand-front.aseprite",
+    "frames": [
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/00.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 80,
+        "phase": "rest",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/01.png",
+          "sha256": "35da7b01712c58a449da059d297b9f5682c48e7697d16dd904f44b54006435b6"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/01.png",
+          "sha256": "f45576d9803d831f3e5916cd43722211809d8bcf2e446f7d0c866475f5864bea"
+        },
+        "durationMs": 120,
+        "phase": "load",
+        "grip": [
+          93,
+          134
+        ],
+        "angle": 300,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/02.png",
+          "sha256": "365836e859850a4cf26d651074c6e3e520f34d87f00357d90153749c254028c5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/02.png",
+          "sha256": "68c5b9a7b23505c362b5b01d92a404ab1a254e0b5501edc003209def4aa483ea"
+        },
+        "durationMs": 110,
+        "phase": "raise",
+        "grip": [
+          88,
+          118
+        ],
+        "angle": 325,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/03.png",
+          "sha256": "28e38a389b882baaf5348380cb3bfe37b6969e45956da34b6ee0c94bae9df786"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/03.png",
+          "sha256": "6af7830ccc5c8c0664029a3a69b00ce1d2a1184f8914ea58aeeeea663163ae99"
+        },
+        "durationMs": 170,
+        "phase": "cocked-shoulder",
+        "grip": [
+          98,
+          100
+        ],
+        "angle": 350,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": true
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/04.png",
+          "sha256": "95666dc145336a653e3fc59b1fa1c1f7f19121865bbe02593655ed15faccd668"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/04.png",
+          "sha256": "8fbfc88dcabf0aa6f9d5c1d5055d72098d463add82cc965d4615c3bfbc2100ef"
+        },
+        "durationMs": 70,
+        "phase": "release",
+        "grip": [
+          146,
+          119
+        ],
+        "angle": 35,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/05.png",
+          "sha256": "64bc472c9916e5e0ba53f02aa60776a06655e8f9fd7f0463735ab759dcaba92c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/05.png",
+          "sha256": "61a15912e948d5debe0098caf2a9dddec698ae46fae3222738eface39b4d181e"
+        },
+        "durationMs": 70,
+        "phase": "impact",
+        "grip": [
+          148,
+          143
+        ],
+        "angle": 85,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/06.png",
+          "sha256": "428b4410dd48c1a3e8e803b72099cee46415a7e4dc0ac9da8ac6d90f15ac6443"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/06.png",
+          "sha256": "e529b7620a74a7f7ba15a70036f352df261fcc02b3e7189c4b6fe57be85be7e5"
+        },
+        "durationMs": 120,
+        "phase": "follow-through",
+        "grip": [
+          138,
+          148
+        ],
+        "angle": 90,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/07.png",
+          "sha256": "58264c4b6986cb85438891f5f5113149f29b69aa24fae28e5a378bfe0346f355"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/07.png",
+          "sha256": "e8e0323bb8a254a3f6efcb354d9c9b5fcc7920ff22ed818b1b3827a3a15138a3"
+        },
+        "durationMs": 150,
+        "phase": "recovery",
+        "grip": [
+          129,
+          148
+        ],
+        "angle": 80,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/08.png",
+          "sha256": "cd9b68496439f733e6001cc905ea091dd325d5e9a563aac81c81df4ac059e35b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 100,
+        "phase": "after-attack-settle",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/09.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 140,
+        "phase": "return-unarmed",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      }
+    ],
+    "itemContract": {
+      "grip": "Integer local point on actual handle",
+      "scale": 1,
+      "canvas": "Per-item native dimensions; no automatic body regeneration",
+      "category": "Axe",
+      "occlusion": "weaponBack -> body -> weaponFront -> own pose-specific fingers",
+      "compatibility": "One-handed items of this category only; check shaft width, blade/head/guard clearance and camera"
+    },
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "output": "reports/main-orc-weapon-rescue-v3/reuse/Axe",
+  "scope": "REVIEW_ONLY; no production selection, body generation or runtime change"
+}

@@ -1,0 +1,649 @@
+{
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "bodyGroundY": 190,
+  "weapons": {
+    "recruit-sword": {
+      "source": "assets/weapons/recruit-sword/sprites/recruit-sword.png",
+      "grip": [
+        32,
+        50
+      ]
+    },
+    "militia-axe": {
+      "source": "assets/weapons/militia-axe/sprites/militia-axe.png",
+      "grip": [
+        32,
+        49
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "weapon": "recruit-sword",
+      "state": "Walk",
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Walk/00.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            82
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/01.png",
+          "durationMs": 80,
+          "rightGrip": [
+            34,
+            81
+          ],
+          "rotationDeg": 227,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/02.png",
+          "durationMs": 80,
+          "rightGrip": [
+            33,
+            81
+          ],
+          "rotationDeg": 228,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/03.png",
+          "durationMs": 80,
+          "rightGrip": [
+            31,
+            82
+          ],
+          "rotationDeg": 228,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/04.png",
+          "durationMs": 80,
+          "rightGrip": [
+            31,
+            83
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/05.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            83
+          ],
+          "rotationDeg": 224,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/06.png",
+          "durationMs": 80,
+          "rightGrip": [
+            47,
+            83
+          ],
+          "rotationDeg": 222,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/07.png",
+          "durationMs": 80,
+          "rightGrip": [
+            58,
+            82
+          ],
+          "rotationDeg": 220,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/08.png",
+          "durationMs": 80,
+          "rightGrip": [
+            64,
+            80
+          ],
+          "rotationDeg": 219,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/09.png",
+          "durationMs": 80,
+          "rightGrip": [
+            62,
+            81
+          ],
+          "rotationDeg": 220,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/10.png",
+          "durationMs": 80,
+          "rightGrip": [
+            51,
+            84
+          ],
+          "rotationDeg": 222,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/11.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            83
+          ],
+          "rotationDeg": 224,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/12.png",
+          "durationMs": 80,
+          "rightGrip": [
+            32,
+            82
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/13.png",
+          "durationMs": 80,
+          "rightGrip": [
+            34,
+            82
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/14.png",
+          "durationMs": 80,
+          "rightGrip": [
+            32,
+            82
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/15.png",
+          "durationMs": 80,
+          "rightGrip": [
+            33,
+            81
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-walk.aseprite",
+      "output": "characters/orc-v1/source/equipment/recruit-sword/Walk"
+    },
+    {
+      "weapon": "recruit-sword",
+      "state": "Attack",
+      "loop": false,
+      "contactFrame": 5,
+      "frames": [
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/0.png",
+          "durationMs": 140,
+          "rightGrip": [
+            36,
+            84
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/1.png",
+          "durationMs": 90,
+          "rightGrip": [
+            35,
+            84
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/2.png",
+          "durationMs": 120,
+          "rightGrip": [
+            20,
+            75
+          ],
+          "rotationDeg": 285,
+          "depth": "back",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/3.png",
+          "durationMs": 120,
+          "rightGrip": [
+            16,
+            65
+          ],
+          "rotationDeg": 325,
+          "depth": "back",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/4.png",
+          "durationMs": 65,
+          "rightGrip": [
+            80,
+            70
+          ],
+          "rotationDeg": 405,
+          "depth": "front",
+          "cleanup": [
+            [
+              85,
+              69,
+              112,
+              74
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/5.png",
+          "durationMs": 80,
+          "rightGrip": [
+            78,
+            68
+          ],
+          "rotationDeg": 475,
+          "depth": "front",
+          "cleanup": [
+            [
+              82,
+              65,
+              110,
+              71
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/6.png",
+          "durationMs": 110,
+          "rightGrip": [
+            20,
+            69
+          ],
+          "rotationDeg": 530,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/7.png",
+          "durationMs": 130,
+          "rightGrip": [
+            29,
+            80
+          ],
+          "rotationDeg": 570,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/8.png",
+          "durationMs": 170,
+          "rightGrip": [
+            36,
+            84
+          ],
+          "rotationDeg": 585,
+          "depth": "front",
+          "cleanup": []
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-attack.aseprite",
+      "output": "characters/orc-v1/source/equipment/recruit-sword/Attack"
+    },
+    {
+      "weapon": "militia-axe",
+      "state": "Walk",
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Walk/00.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            82
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/01.png",
+          "durationMs": 80,
+          "rightGrip": [
+            34,
+            81
+          ],
+          "rotationDeg": 227,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/02.png",
+          "durationMs": 80,
+          "rightGrip": [
+            33,
+            81
+          ],
+          "rotationDeg": 228,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/03.png",
+          "durationMs": 80,
+          "rightGrip": [
+            31,
+            82
+          ],
+          "rotationDeg": 228,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/04.png",
+          "durationMs": 80,
+          "rightGrip": [
+            31,
+            83
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/05.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            83
+          ],
+          "rotationDeg": 224,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/06.png",
+          "durationMs": 80,
+          "rightGrip": [
+            47,
+            83
+          ],
+          "rotationDeg": 222,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/07.png",
+          "durationMs": 80,
+          "rightGrip": [
+            58,
+            82
+          ],
+          "rotationDeg": 220,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/08.png",
+          "durationMs": 80,
+          "rightGrip": [
+            64,
+            80
+          ],
+          "rotationDeg": 219,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/09.png",
+          "durationMs": 80,
+          "rightGrip": [
+            62,
+            81
+          ],
+          "rotationDeg": 220,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/10.png",
+          "durationMs": 80,
+          "rightGrip": [
+            51,
+            84
+          ],
+          "rotationDeg": 222,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/11.png",
+          "durationMs": 80,
+          "rightGrip": [
+            36,
+            83
+          ],
+          "rotationDeg": 224,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/12.png",
+          "durationMs": 80,
+          "rightGrip": [
+            32,
+            82
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/13.png",
+          "durationMs": 80,
+          "rightGrip": [
+            34,
+            82
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/14.png",
+          "durationMs": 80,
+          "rightGrip": [
+            32,
+            82
+          ],
+          "rotationDeg": 226,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/15.png",
+          "durationMs": 80,
+          "rightGrip": [
+            33,
+            81
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-walk.aseprite",
+      "output": "characters/orc-v1/source/equipment/militia-axe/Walk"
+    },
+    {
+      "weapon": "militia-axe",
+      "state": "Attack",
+      "loop": false,
+      "contactFrame": 5,
+      "frames": [
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/0.png",
+          "durationMs": 180,
+          "rightGrip": [
+            36,
+            84
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/1.png",
+          "durationMs": 100,
+          "rightGrip": [
+            35,
+            84
+          ],
+          "rotationDeg": 225,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/2.png",
+          "durationMs": 140,
+          "rightGrip": [
+            20,
+            75
+          ],
+          "rotationDeg": 280,
+          "depth": "back",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/3.png",
+          "durationMs": 170,
+          "rightGrip": [
+            16,
+            65
+          ],
+          "rotationDeg": 325,
+          "depth": "back",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/4.png",
+          "durationMs": 75,
+          "rightGrip": [
+            80,
+            70
+          ],
+          "rotationDeg": 390,
+          "depth": "front",
+          "cleanup": [
+            [
+              85,
+              69,
+              112,
+              74
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/5.png",
+          "durationMs": 100,
+          "rightGrip": [
+            78,
+            68
+          ],
+          "rotationDeg": 465,
+          "depth": "front",
+          "cleanup": [
+            [
+              82,
+              65,
+              110,
+              71
+            ]
+          ]
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/6.png",
+          "durationMs": 150,
+          "rightGrip": [
+            20,
+            69
+          ],
+          "rotationDeg": 520,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/7.png",
+          "durationMs": 170,
+          "rightGrip": [
+            29,
+            80
+          ],
+          "rotationDeg": 565,
+          "depth": "front",
+          "cleanup": []
+        },
+        {
+          "input": "experiments/orc-v1-weapons-v1/axe-attack/raw/8.png",
+          "durationMs": 200,
+          "rightGrip": [
+            36,
+            84
+          ],
+          "rotationDeg": 585,
+          "depth": "front",
+          "cleanup": []
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-attack.aseprite",
+      "output": "characters/orc-v1/source/equipment/militia-axe/Attack"
+    }
+  ],
+  "sourceBodyAuthoring": "PixelLab official MCP animate_image axe-action job; short generated blade removed in Aseprite. Sword-action generation rejected for insufficient strike. Both weapon swings adapt the clearer whole-body cut with distinct weapon arcs/timing.",
+  "sourceWalkAuthoring": "Original Infante 16-frame footwork, selected green palette applied in Aseprite; original preserved.",
+  "gripAuthoring": "Manually inspected anatomical right-hand fist locations, not inferred from sprite bounding boxes."
+}

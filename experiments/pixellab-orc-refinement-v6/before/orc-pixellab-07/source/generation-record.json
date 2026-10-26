@@ -1,0 +1,109 @@
+{
+  "provider": "PixelLab",
+  "interface": "official-Aseprite-extension",
+  "pluginVersion": "0.4.130",
+  "tool": "PixelLab via Aseprite",
+  "model": "Pro",
+  "prompt": "Create a fresh, full-body medieval fantasy Orc Warrior concept as a new PixelLab pixel-art interpretation of the supplied V4 style reference. Keep the V4 identity cues recognizable: olive-green skin, mature angular face, heavy brow, small ivory tusks, amber eyes, a crimson neck scarf, dark iron armor with restrained silver highlights, one distinct asymmetrical steel shoulder plate, practical leather straps and a broad belt. Reinterpret the character for a clean, readable tactical RPG sprite: compact athletic build with strong but not bodybuilder proportions, purposeful asymmetry, expressive face, crisp clusters and deliberate pixel edges. Keep the reference palette and material contrast while simplifying noisy micro-detail into clear pixel shapes. The result should feel hand-crafted in Aseprite and use PixelLab’s polished sprite rendering. Show the entire character from head to boots, centered, with breathing room on every side; no cropping. Three-quarter front view, neutral ready stance, both hands empty and visible. No weapon held, carried or sheathed; no shield; no text, props or scenery. Transparent background. One character only. Design a new rendering, do not paste or reproduce the source pixels.New Orc Warrior concept, based on the supplied V4 image as a STYLE reference only. Preserve its olive-green skin, mature angular face, ivory tusks, amber eyes, crimson scarf, dark iron armor with restrained silver and one asymmetrical steel pauldron. Make a lean, athletic, battle-worn tactical RPG warrior with a clear silhouette and readable pixel clusters. PixelLab polished pixel art, crisp deliberate edges, controlled detail, strong material contrast. Full body head to boots, centered in a transparent 128x128 canvas, three-quarter front, neutral stance, both empty hands visible. No weapon, shield, props, scenery, text, crop, or copied source pixels. Create a fresh design.",
+  "seed": "2003306841",
+  "inputImages": [],
+  "styleImages": [
+    {
+      "path": "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png",
+      "sha256": "c9bf918fa3ed5d390dfb169a2bd29732e61bf68871d361ea904766283bffb1ea",
+      "role": "V4 image loaded through Aseprite PixelLab Set style; options copied: palette, outline, detail, shading"
+    }
+  ],
+  "referenceImages": [],
+  "targetPalette": "No",
+  "copyStylePalette": true,
+  "copyOutlineStyle": true,
+  "copyDetailLevel": true,
+  "copyShadingTechnique": true,
+  "noBackground": true,
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "blankAsepriteMaster": "source/aseprite/concept-raw.aseprite",
+  "blankMasterSha256": "2c1a496bbb06848a0a4c180ed7f2809d7711f986233a5c0a1dd64b1e39c76dc2",
+  "sourceReferenceSha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+  "status": "CORRECTIVE_STUDIES_PENDING_CREATOR",
+  "cost": "Not exposed by extension",
+  "outputMethod": "New frame",
+  "detail": "highly detailed",
+  "outline": "selective outline",
+  "direction": "south",
+  "outputs": [
+    {
+      "file": "concepts/concept-selected.png",
+      "sha256": "c7955547c4153e064706f5f91f9fa97d6c420cdffdbe52840d26b6b02b9b9ac6",
+      "master": "source/aseprite/concept-selected.aseprite",
+      "masterSha256": "7a2ff09f0fe241bfe055c458b9017abb5e89da1cd1856eec95e8780c8afe9fe0"
+    }
+  ],
+  "animations": [
+    {
+      "state": "Idle",
+      "frames": 8,
+      "clip": "characters/orc-pixellab-07/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-07/source/aseprite/idle-study.aseprite",
+      "masterSha256": "095c57ed78fae7a3d969ebf1dd6b3e8ae2fc70e0262defa2f9195ca9a1fdfc5a",
+      "revision": "refinement-v3"
+    },
+    {
+      "state": "Walk",
+      "revision": "refinement-v5",
+      "clip": "characters/orc-pixellab-07/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+      "masterSha256": "cef46ed8a2597e3b6c0994dfb85fbbd99b20e06fa6c650b17c30ea4a2fdfc12f",
+      "frames": 8
+    }
+  ],
+  "elapsedMs": "NOT_RECORDED",
+  "credits": "UI advertised 10–25 generations per Create image (Pro) request; actual account debit NOT_EXPOSED",
+  "plannedPrompt": "Create a fresh, full-body medieval fantasy Orc Warrior concept as a new PixelLab pixel-art interpretation of the supplied V4 reference image. Keep the V4 identity cues recognizable: olive-green skin, mature angular face, heavy brow, small ivory tusks, amber eyes, a crimson neck scarf, dark iron armor with restrained silver highlights, one distinct asymmetrical steel shoulder plate, practical leather straps and a broad belt. Reinterpret the character for a clean, readable tactical RPG sprite: compact athletic build with strong but not bodybuilder proportions, purposeful asymmetry, expressive face, crisp clusters and deliberate pixel edges. Keep the reference palette and material contrast while simplifying noisy micro-detail into clear pixel shapes. The result should feel hand-crafted in Aseprite and use PixelLab’s polished sprite rendering. Show the entire character from head to boots, centered, with breathing room on every side; no cropping. Three-quarter front view, neutral ready stance, both hands empty and visible. No weapon held, carried or sheathed; no shield; no text, props or scenery. Transparent background. One character only. Design a new rendering, do not paste or reproduce the source pixels.",
+  "styleConditioning": {
+    "usedInUi": true,
+    "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+    "sourceSha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+    "downscaledStyleImage": "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png",
+    "downscaledStyleImageSha256": "c9bf918fa3ed5d390dfb169a2bd29732e61bf68871d361ea904766283bffb1ea",
+    "requestHistoryNote": "Aseprite serializes display Image userdata as null in request-history JSON; installed generate-image-new.lua encodes the selected style image as style_image base64 before sending the request."
+  },
+  "requestHistoryCopy": "source/pixellab-results/Concept/request.json",
+  "requestSettings": {
+    "modelName": "generate_image_new",
+    "seed": "2003306841.0",
+    "outputMethod": "New frame",
+    "paletteChoice": "No",
+    "noBackground": true,
+    "styleOptions": {
+      "color_palette": true,
+      "detail": true,
+      "outline": true,
+      "shading": true
+    },
+    "referenceImagesDisplay": [],
+    "historyStyleImageDisplay": null
+  },
+  "refinement": {
+    "revision": "refinement-v2",
+    "before": "experiments/pixellab-orc-refinement-v2/before/orc-pixellab-07",
+    "report": "reports/orc-pixellab-refinement-v2.md",
+    "review": "reports/orc-pixellab-refinement-v2/review.html",
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "currentRevision": "refinement-v5",
+  "license": "Pro explicitly confirmed by creator; tool/model recorded independently",
+  "review": "reports/orc-pixellab-refinement-v5/review.html",
+  "artisticApproval": "PENDING_CREATOR",
+  "headCorrection": {
+    "referenceAgile": "characters/orc-pixellab-04/source/studies/Walk/00.png",
+    "tool": "create_image_pro",
+    "jobId": "06c04c2d-2aa3-4a6b-8d50-114acc333518",
+    "selectedOutput": 1,
+    "maskAndRegistration": "experiments/pixellab-orc-refinement-v5/head-plan.json",
+    "approval": "PENDING_CREATOR"
+  }
+}

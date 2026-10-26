@@ -1,0 +1,1166 @@
+{
+  "revision": "main-orc-onehanded-v3",
+  "character": "orc-v1",
+  "direction": "front_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "ppu": 100,
+  "output": "characters/orc-v1/source/onehanded-rescue-v3",
+  "masters": "characters/orc-v1/source/aseprite/onehanded-rescue-v3",
+  "reference": "characters/orc-v1/source/studies/Idle/00.png",
+  "profiles": {
+    "Sword": {
+      "id": "basic.sword-slash",
+      "weapon": {
+        "id": "recruit-sword",
+        "grip": [
+          48,
+          66
+        ],
+        "canvas": [
+          96,
+          96
+        ],
+        "scale": 1,
+        "source": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+        "sprite": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+        "sourceSha256": "00feddda647f6fbb68d9236c5e5e1972affa2fdb798c19b226382743ecedfc17"
+      },
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "phase": "rest",
+          "durationMs": 80,
+          "grip": null,
+          "angle": 0,
+          "visible": false,
+          "hand": [],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/00.png",
+          "phase": "load",
+          "durationMs": 100,
+          "grip": [
+            29,
+            66
+          ],
+          "angle": 270,
+          "visible": true,
+          "hand": [
+            [
+              [
+                24,
+                63
+              ],
+              [
+                28,
+                62
+              ],
+              [
+                29,
+                66
+              ],
+              [
+                26,
+                69
+              ],
+              [
+                23,
+                67
+              ]
+            ],
+            [
+              [
+                28,
+                65
+              ],
+              [
+                34,
+                65
+              ],
+              [
+                34,
+                68
+              ],
+              [
+                30,
+                70
+              ],
+              [
+                26,
+                68
+              ]
+            ]
+          ],
+          "cleanup": [
+            [
+              [
+                14,
+                63
+              ],
+              [
+                24,
+                63
+              ],
+              [
+                24,
+                72
+              ],
+              [
+                14,
+                72
+              ]
+            ],
+            [
+              [
+                35,
+                58
+              ],
+              [
+                41,
+                58
+              ],
+              [
+                41,
+                72
+              ],
+              [
+                35,
+                72
+              ]
+            ]
+          ],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/01.png",
+          "phase": "high-guard",
+          "durationMs": 130,
+          "grip": [
+            34,
+            25
+          ],
+          "angle": 345,
+          "visible": true,
+          "hand": [
+            [
+              [
+                29,
+                22
+              ],
+              [
+                33,
+                21
+              ],
+              [
+                35,
+                25
+              ],
+              [
+                34,
+                29
+              ],
+              [
+                30,
+                28
+              ]
+            ],
+            [
+              [
+                34,
+                23
+              ],
+              [
+                38,
+                23
+              ],
+              [
+                39,
+                26
+              ],
+              [
+                35,
+                27
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": true
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/03.png",
+          "phase": "drive",
+          "durationMs": 65,
+          "grip": [
+            93,
+            48
+          ],
+          "angle": 20,
+          "visible": true,
+          "hand": [
+            [
+              [
+                90,
+                44
+              ],
+              [
+                94,
+                44
+              ],
+              [
+                96,
+                47
+              ],
+              [
+                95,
+                51
+              ],
+              [
+                91,
+                52
+              ],
+              [
+                89,
+                49
+              ]
+            ],
+            [
+              [
+                94,
+                47
+              ],
+              [
+                98,
+                47
+              ],
+              [
+                98,
+                50
+              ],
+              [
+                95,
+                52
+              ]
+            ]
+          ],
+          "cleanup": [
+            [
+              [
+                86,
+                0
+              ],
+              [
+                97,
+                0
+              ],
+              [
+                97,
+                39
+              ],
+              [
+                101,
+                40
+              ],
+              [
+                101,
+                45
+              ],
+              [
+                82,
+                45
+              ],
+              [
+                82,
+                40
+              ],
+              [
+                86,
+                39
+              ]
+            ],
+            [
+              [
+                92,
+                56
+              ],
+              [
+                99,
+                56
+              ],
+              [
+                99,
+                64
+              ],
+              [
+                92,
+                64
+              ]
+            ]
+          ],
+          "footShift": 5,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-strike/raw/00.png",
+          "phase": "crossing",
+          "durationMs": 55,
+          "grip": [
+            94,
+            70
+          ],
+          "angle": 55,
+          "visible": true,
+          "hand": [
+            [
+              [
+                88,
+                67
+              ],
+              [
+                92,
+                65
+              ],
+              [
+                95,
+                67
+              ],
+              [
+                96,
+                71
+              ],
+              [
+                93,
+                74
+              ],
+              [
+                89,
+                73
+              ]
+            ],
+            [
+              [
+                94,
+                68
+              ],
+              [
+                98,
+                69
+              ],
+              [
+                98,
+                73
+              ],
+              [
+                95,
+                75
+              ]
+            ]
+          ],
+          "cleanup": [
+            [
+              [
+                99,
+                55
+              ],
+              [
+                127,
+                15
+              ],
+              [
+                128,
+                15
+              ],
+              [
+                128,
+                39
+              ],
+              [
+                106,
+                68
+              ]
+            ]
+          ],
+          "footShift": 4,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-posed/raw/05.png",
+          "phase": "strike-follow-through",
+          "durationMs": 95,
+          "grip": [
+            95,
+            78
+          ],
+          "angle": 100,
+          "visible": true,
+          "hand": [
+            [
+              [
+                90,
+                74
+              ],
+              [
+                94,
+                73
+              ],
+              [
+                97,
+                76
+              ],
+              [
+                96,
+                80
+              ],
+              [
+                92,
+                82
+              ],
+              [
+                89,
+                79
+              ]
+            ],
+            [
+              [
+                95,
+                76
+              ],
+              [
+                99,
+                77
+              ],
+              [
+                99,
+                81
+              ],
+              [
+                96,
+                83
+              ]
+            ]
+          ],
+          "cleanup": [
+            [
+              [
+                101,
+                66
+              ],
+              [
+                128,
+                66
+              ],
+              [
+                128,
+                80
+              ],
+              [
+                101,
+                80
+              ]
+            ]
+          ],
+          "footShift": 3,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/sword-recovery/raw/00.png",
+          "phase": "recovery",
+          "durationMs": 130,
+          "grip": [
+            46,
+            83
+          ],
+          "angle": 105,
+          "visible": true,
+          "hand": [
+            [
+              [
+                41,
+                80
+              ],
+              [
+                44,
+                78
+              ],
+              [
+                48,
+                79
+              ],
+              [
+                48,
+                84
+              ],
+              [
+                45,
+                87
+              ],
+              [
+                41,
+                86
+              ]
+            ],
+            [
+              [
+                45,
+                81
+              ],
+              [
+                48,
+                81
+              ],
+              [
+                48,
+                85
+              ],
+              [
+                45,
+                87
+              ]
+            ]
+          ],
+          "cleanup": [
+            [
+              [
+                31,
+                79
+              ],
+              [
+                41,
+                79
+              ],
+              [
+                41,
+                88
+              ],
+              [
+                31,
+                88
+              ]
+            ]
+          ],
+          "footShift": 1,
+          "behind": false,
+          "cloneSelf": {
+            "source": [
+              54,
+              75,
+              5,
+              13
+            ],
+            "target": [
+              49,
+              75
+            ]
+          }
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "phase": "return-unarmed",
+          "durationMs": 120,
+          "grip": null,
+          "angle": 0,
+          "visible": false,
+          "hand": [],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        }
+      ]
+    },
+    "Axe": {
+      "id": "basic.axe-chop",
+      "weapon": {
+        "id": "militia-axe",
+        "grip": [
+          36,
+          55
+        ],
+        "canvas": [
+          96,
+          96
+        ],
+        "scale": 1,
+        "source": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+        "sprite": "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png",
+        "sourceSha256": "876d02ba3bed78f9d15d2a2b7708ab37256d4d41248e26b9d647fa3ee9ab6558"
+      },
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "phase": "rest",
+          "durationMs": 80,
+          "grip": null,
+          "angle": 0,
+          "visible": false,
+          "hand": [],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/00.png",
+          "phase": "load",
+          "durationMs": 120,
+          "grip": [
+            29,
+            70
+          ],
+          "angle": 300,
+          "visible": true,
+          "hand": [
+            [
+              [
+                24,
+                66
+              ],
+              [
+                29,
+                65
+              ],
+              [
+                32,
+                68
+              ],
+              [
+                32,
+                72
+              ],
+              [
+                28,
+                74
+              ],
+              [
+                24,
+                71
+              ]
+            ],
+            [
+              [
+                29,
+                67
+              ],
+              [
+                34,
+                68
+              ],
+              [
+                34,
+                72
+              ],
+              [
+                30,
+                74
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/01.png",
+          "phase": "raise",
+          "durationMs": 110,
+          "grip": [
+            24,
+            54
+          ],
+          "angle": 325,
+          "visible": true,
+          "hand": [
+            [
+              [
+                20,
+                50
+              ],
+              [
+                24,
+                49
+              ],
+              [
+                28,
+                51
+              ],
+              [
+                28,
+                55
+              ],
+              [
+                24,
+                58
+              ],
+              [
+                20,
+                56
+              ]
+            ],
+            [
+              [
+                25,
+                52
+              ],
+              [
+                29,
+                52
+              ],
+              [
+                29,
+                56
+              ],
+              [
+                25,
+                58
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/02.png",
+          "phase": "cocked-shoulder",
+          "durationMs": 170,
+          "grip": [
+            34,
+            36
+          ],
+          "angle": 350,
+          "visible": true,
+          "hand": [
+            [
+              [
+                30,
+                32
+              ],
+              [
+                34,
+                31
+              ],
+              [
+                38,
+                33
+              ],
+              [
+                38,
+                37
+              ],
+              [
+                34,
+                39
+              ],
+              [
+                30,
+                37
+              ]
+            ],
+            [
+              [
+                35,
+                33
+              ],
+              [
+                39,
+                34
+              ],
+              [
+                39,
+                38
+              ],
+              [
+                35,
+                40
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": true
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/03.png",
+          "phase": "release",
+          "durationMs": 70,
+          "grip": [
+            82,
+            55
+          ],
+          "angle": 35,
+          "visible": true,
+          "hand": [
+            [
+              [
+                77,
+                51
+              ],
+              [
+                81,
+                49
+              ],
+              [
+                85,
+                51
+              ],
+              [
+                86,
+                55
+              ],
+              [
+                82,
+                58
+              ],
+              [
+                78,
+                57
+              ]
+            ],
+            [
+              [
+                83,
+                52
+              ],
+              [
+                87,
+                53
+              ],
+              [
+                87,
+                57
+              ],
+              [
+                83,
+                59
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/04.png",
+          "phase": "impact",
+          "durationMs": 70,
+          "grip": [
+            84,
+            79
+          ],
+          "angle": 85,
+          "visible": true,
+          "hand": [
+            [
+              [
+                79,
+                75
+              ],
+              [
+                83,
+                74
+              ],
+              [
+                87,
+                76
+              ],
+              [
+                87,
+                80
+              ],
+              [
+                83,
+                83
+              ],
+              [
+                79,
+                81
+              ]
+            ],
+            [
+              [
+                84,
+                76
+              ],
+              [
+                88,
+                77
+              ],
+              [
+                88,
+                81
+              ],
+              [
+                84,
+                83
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/05.png",
+          "phase": "follow-through",
+          "durationMs": 120,
+          "grip": [
+            74,
+            84
+          ],
+          "angle": 90,
+          "visible": true,
+          "hand": [
+            [
+              [
+                69,
+                80
+              ],
+              [
+                73,
+                78
+              ],
+              [
+                77,
+                80
+              ],
+              [
+                78,
+                84
+              ],
+              [
+                74,
+                87
+              ],
+              [
+                70,
+                86
+              ]
+            ],
+            [
+              [
+                75,
+                81
+              ],
+              [
+                79,
+                82
+              ],
+              [
+                79,
+                86
+              ],
+              [
+                75,
+                88
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/06.png",
+          "phase": "recovery",
+          "durationMs": 150,
+          "grip": [
+            65,
+            84
+          ],
+          "angle": 80,
+          "visible": true,
+          "hand": [
+            [
+              [
+                60,
+                80
+              ],
+              [
+                64,
+                78
+              ],
+              [
+                68,
+                80
+              ],
+              [
+                69,
+                84
+              ],
+              [
+                65,
+                87
+              ],
+              [
+                61,
+                86
+              ]
+            ],
+            [
+              [
+                66,
+                81
+              ],
+              [
+                70,
+                82
+              ],
+              [
+                70,
+                86
+              ],
+              [
+                66,
+                88
+              ]
+            ]
+          ],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "experiments/main-orc-weapon-rescue-v3/axe-posed/raw/07.png",
+          "phase": "after-attack-settle",
+          "durationMs": 100,
+          "grip": null,
+          "angle": 0,
+          "visible": false,
+          "hand": [],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "phase": "return-unarmed",
+          "durationMs": 140,
+          "grip": null,
+          "angle": 0,
+          "visible": false,
+          "hand": [],
+          "cleanup": [],
+          "footShift": null,
+          "behind": false
+        }
+      ]
+    }
+  },
+  "base": {
+    "Idle": {
+      "state": "Idle",
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Idle/00.png",
+          "durationMs": 400
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/01.png",
+          "durationMs": 450
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/02.png",
+          "durationMs": 500
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/03.png",
+          "durationMs": 450
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Idle/04.png",
+          "durationMs": 400
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/idle-study.aseprite"
+    },
+    "Walk": {
+      "state": "Walk",
+      "loop": true,
+      "frames": [
+        {
+          "input": "characters/orc-v1/source/studies/Walk/00.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/01.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/02.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/03.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/04.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/05.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/06.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/07.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/08.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/09.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/10.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/11.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/12.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/13.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/14.png",
+          "durationMs": 80
+        },
+        {
+          "input": "characters/orc-v1/source/studies/Walk/15.png",
+          "durationMs": 80
+        }
+      ],
+      "master": "characters/orc-v1/source/aseprite/walk-study.aseprite"
+    }
+  },
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1"
+}

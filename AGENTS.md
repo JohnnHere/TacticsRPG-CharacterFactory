@@ -1,4 +1,56 @@
+## Entrada natural de combate — candidato em revisão, 2026-10-25
+
+Novo passe `main-orc-onehanded-entry-v1` parte do último **polimento v1**, preservando-o, para corrigir preparação corporal e primeira pegada. Contexto e fontes em `docs/MAIN_ORC_COMBAT_POLISH.md` (seção atual de entrada) e `experiments/main-orc-entry-v1/entry-plan.json`. Página `Biblioteca de Arte/Estudos Comparativos/Orc principal - Entrada de combate/index.html`. Não é saque/embainhamento: armas somente no ataque, sem Idle/Walk armados. Produção ativa v3 e identidade Orc V1 mantidas; antigo V4 descartado. Próximo marco é a avaliação explícita do criador da entrada refinada; não propagar ou integrar Unity automaticamente. Orquestração e QA independente via Paseo conforme pedido, sem criar QA adicional no DEV.
+
+## Polimento de combate — candidato isolado, 2026-10-25
+
+A correção atual de espada/machado **v3 é uma base viável e melhorada**, preservada e ainda ativa em `characters/orc-v1/source/equipment-current.json`. Novo passe incremental `main-orc-onehanded-polish-v1`, fontes/exports próprios, sem promoção automática: `characters/orc-v1/source/equipment-polish-candidate.json`. Ver `docs/MAIN_ORC_COMBAT_POLISH.md` e `Biblioteca de Arte/Estudos Comparativos/Orc principal - Polimento de combate/index.html`. Preserva armas, identidade Orc V1, Idle/Walk e política de armas somente no ataque. Próximo marco: revisão artística explícita deste candidato pelo criador; não propagar nem integrar Unity antes disso. O antigo Orc V4 permanece descartado.
+
+## Política vigente — Orc principal e armas somente no ataque, 2026-10-25
+
+O Orc principal atual é **orc-v1 / Verde Warcraft**, em characters/orc-v1/. O antigo Orc V4 está descartado e nunca é fonte de restauração ou direção atual. A identidade atual é a referência; poses de ataque defeituosas podem ser substituídas.
+
+Espada/machado ficam **ocultos no Idle, Walk, repouso, inspeção, Hit/Defeat e após a ação**. Aparecem somente no intervalo declarado do Attack. Os pedidos anteriores de Idle/Walk armados e o corte único compartilhado entre Sword/Axe estão **SUPERADOS**. São dois perfis: corte de espada e golpe de machado, reutilizáveis entre itens compatíveis da própria categoria. Sem sacar/embainhar, rig universal ou animação corporal por item.
+
+Guia atual: docs/MAIN_ORC_ONE_HANDED_RESCUE.md; autoridade de identidade: reports/orc-production-current.json. Armas seguem a linguagem visual do jogo, sem obrigação de copiar a paleta/cultura Orc. Aseprite continua mestre; PixelLab autorizado auxilia poses; toda edição/exportação artística é no Aseprite. Esta tarefa não modifica Unity nem concede aprovação artística. **Nos registros anteriores abaixo, toda afirmação conflitante de V4 ativa, nenhuma seleção, arma em Idle/Walk ou movimento universal é histórica e superada.**
+
+## Armas pertencem à linguagem visual do jogo — 2026-10-25
+
+Esclarecimento explícito do criador: armas não precisam seguir à risca o design, a paleta ou a cultura do Orc. São equipamentos compartilháveis entre classes e raças. Evitar aparência de outro jogo pela coerência de pixel, contorno, luz, materiais, contraste, escala e acabamento, não por impor armadura/paleta Orc a todos os itens. Ver docs/WEAPON_ART_STANDARD.md. Separar asset da arma de corpo e movimento; reutilizar a mesma pegada/animação dentro de uma família compatível. Bindings anatômicos precisam de revisão própria. O primeiro lote armado v1 foi rejeitado; testes técnicos não equivalem a pegada convincente ou aprovação artística. V2 rejeitada e superada; guia atual docs/MAIN_ORC_ONE_HANDED_RESCUE.md. Não reativar Idle/Walk armados.
+
+## Infante de Ferro permanece atual — 2026-10-25
+
+Por decisão explícita do criador, o Infante de Ferro original 05 fica em `Biblioteca de Arte/Orcs Atuais/05 - Infante de Ferro/`, não arquivado. É importante e deve entrar no jogo em estágio mais avançado. Orc V1 (Verde Warcraft) permanece o primeiro jogável selecionado. Ambos preservados e listados em Orcs Atuais. Esta decisão substitui a classificação de arquivo do Infante nas notas anteriores.
+
+## Decisão vigente — Orc V1 e armas, 2026-10-25
+
+Criador selecionou Verde Warcraft v3 como **Orc V1**, primeiro jogável para futura integração. Fonte em `characters/orc-v1/`; Infante cinza preservado na biblioteca em Orcs Atuais/05 - Infante de Ferro/. Novos assets de uma mão: Espada do Recruta e Machado de Milícia, seguindo `docs/WEAPON_ART_STANDARD.md`. Golpe composto e Walk completo equipado em uma vista, com mestres/camadas/encaixes; a autorização anterior de Walk armado está SUPERADA: attack-only-v1 agora exige Idle/Walk sem armas. Corpo base e Idle fixo permanecem independentes. Página `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`; documentação `docs/ORC_V1_WEAPONS.md`. São assets/prévias locais, não integração Unity ou aprovação automática dos novos golpes/armas. V4 continua descartada; não confundir seleção para integração futura com produção completa em quatro vistas.
+
+## Padrão fixo obrigatório de Idle — 2026-10-25
+
+PADRÃO FIXO OBRIGATÓRIO para criação de personagens e variantes: Idle normal segue o meio-termo aprovado, ID `idle-balanced-v1`, cinco fases com 400/450/500/450/400 ms (2200 ms), intensidade equivalente a 2 px na cabeça de humanoide 128×128. Não criar um padrão por personagem, Job, roupa ou personalidade. Ajustes de encaixe anatômico/escala preservam o mesmo ritmo e sutileza; divergências exigem autorização explícita do criador. Canon: `docs/IDLE_ART_STANDARD.md` e `config/idle-art-standard-v1.json`; biblioteca `PADRAO-DE-IDLE.md`. Baselines e notas históricas permissivas abaixo não prevalecem. Artes existentes não são migradas automaticamente e não há integração Unity neste pedido.
+
+# Terceira candidata de Idle — 2026-10-25
+
+Infante 05 tem opção adicional independente `source/studies/IdleCandidates/balanced-v3/clip.json`, 2 px/2,2 s, não selecionada. Comparação das três versões em `Biblioteca de Arte/Estudos Comparativos/Infante de Ferro - Idle/index.html`; fonte em `source/aseprite/infante-idle-balanced-v3/`. Idle sutil continua atual até escolha explícita. Não interpretar pedido de terceira opinião como aprovação para substituir a seleção.
+
+# Idle Infante de Ferro — 2026-10-25
+
+Idle 05 vigente em `source/studies/Idle/clip.json`: quatro poses completas de menor amplitude, ciclo 2800 ms, mestre indicado em `source/aseprite/infante-idle-subtle-v2/`. Fonte anterior de oito quadros é histórica. Não usar compressão regional de tronco. Biblioteca atualizada; comparar em `reports/orc-idle-subtle-v2/review.html`. Sem produção de machado ou integração Unity neste acabamento.
+
+# Consulta de arte — 2026-10-24
+
+Biblioteca de consulta/entrega em `Biblioteca de Arte/index.html`, organizada por Orc, Conceito, Idle, Walk e Mestres Aseprite. Vigia/Matriarca separados em `Biblioteca de Arte/Ideias Futuras/` e pacotes canônicos em `ideas/unique-characters-or-npcs/`. Gerar/atualizar cópias com `tools/build-art-library.py`; fontes canônicas continuam em characters/ e ideas/, com procedência/hashes. Atlético Walk vigente: fork `source/aseprite/athletic-feet-v2/`, indicado em clip.json; não retornar à fonte original com matte claro. Apenas limpeza local dos pés, oito poses/100 ms preservadas. Criador avaliou bem os estudos e pediu preparar organização antes de futuro teste em jogo; não integrar Unity nesta tarefa.
+
+# Decisão vigente — 2026-10-24, substitui seleção V4 anterior
+
+Criador descartou completamente a V4 ativa e o V4 Reimaginado (`orc-pixellab-07`). Não reutilizar, promover, exibir como opção corrente ou reativar automaticamente. Arquivos históricos ficam preservados; `reports/orc-production-current.json` registra nenhuma seleção ativa, sem substituto aprovado. Novo candidato `orc-pixellab-11`, Orc Atlético, deriva autorizadamente do Ágil: menos armadura, mais músculos, verde ligeiramente mais claro. Vigia/Matriarca permanecem separados em `ideas/unique-characters-or-npcs/` para NPCs e/ou jogáveis únicos. Revisão corrente em `reports/orc-current-review/review.html`.
+
 # Character Factory — instrucoes para agentes
+
+## PixelLab + Aseprite — pedido vigente de 2026-10-23
+
+Criador autorizou instalar e usar a extensão oficial PixelLab no Aseprite. Essa autorização atualiza a restrição anterior a serviços/geração externa especificamente para PixelLab via Aseprite. Leia docs/PIXELLAB_ASEPRITE.md. Experimento atual: **três Orcs novos**, inspirados em Tolkien e principalmente World of Warcraft, sem consultar nem condicionar com V4, seus conceitos, a âncora, Hero, V5, paletas ou receitas legadas. Canvas vazio, texto e nenhuma imagem de entrada. Pode criar estudos candidatos de animações básicas antes da escolha, por autorização expressa deste pedido; isso não concede Gate1/Gate2 nem seleção de produção. A V4 era selecionada naquele experimento histórico; foi posteriormente DESCARTADA. Nesta experiência, não usar o handoff/prepare padrão que injeta referências antigas. Credenciais ficam só na instalação local; não versionar o pacote da extensão, configurações de conta ou tokens. Geração PixelLab é em nuvem, mestre salvo/edição/exportação no Aseprite; não confundir com desenho manual. Exportação batch usa perfil separado em tmp/aseprite-batch-profile para não executar plugins de interface.
 
 ## Direção Orc reafirmada — 2026-10-23
 

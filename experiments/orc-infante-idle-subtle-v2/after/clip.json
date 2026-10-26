@@ -1,0 +1,67 @@
+{
+  "state": "Idle",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official MCP HTTP",
+  "tool": "animate_image",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "infante-idle-subtle-v2",
+  "prompt": "Idle. Natural calm alert breathing, a small coherent rise and fall of shoulders and chest, very slight hand settling. Feet remain planted. Maintain the exact original head direction, face, body proportions, armor and palette throughout. No stepping, turning, squashing, horizontal tearing or disconnected body parts. Keep the entire figure and both boots visible. Empty hands, fixed camera, transparent background. Seamless loop back to the starting stance.",
+  "jobId": "6c7911df-6147-41a0-9cc9-2c2c43ca668f",
+  "frameCount": 4,
+  "frames": [
+    {
+      "png": "experiments/orc-infante-idle-subtle-v2/after/00.png",
+      "durationMs": 650,
+      "sha256": "68f9c466edd7042230089c957bfcc43689f24061c3128b62559eead92e272378"
+    },
+    {
+      "png": "experiments/orc-infante-idle-subtle-v2/after/01.png",
+      "durationMs": 750,
+      "sha256": "ec717d9e34fe87b525669adf7b8cc5334cccc9e07311fe1ee70bebbd534fa43f"
+    },
+    {
+      "png": "experiments/orc-infante-idle-subtle-v2/after/02.png",
+      "durationMs": 750,
+      "sha256": "af8bc94fadf8449f616569e4c1ea43635c4ffe2ef28e10249b30f726624864e4"
+    },
+    {
+      "png": "experiments/orc-infante-idle-subtle-v2/after/03.png",
+      "durationMs": 650,
+      "sha256": "b9d19a29d9028decbbcc034fcb1d76289ad89cb9162679f824f608f383c047e0"
+    }
+  ],
+  "input": "characters/orc-pixellab-05/concepts/concept-selected.png",
+  "inputSha256": "df35cea36b508a379eb2e9c30c19c1653c139033892419a576771ec9cdb4dfc5",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-05/source/aseprite/infante-idle-subtle-v2/source/infante-idle-subtle.aseprite",
+  "masterSha256": "d62c6a58ee76ead984bad5e932d89f8b2aaee6b7fe8264f663819c7c01ca6af9",
+  "rawMaster": "characters/orc-pixellab-05/source/aseprite/idle-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/05-Idle-result.json",
+  "archive": "characters/orc-pixellab-05/source/pixellab-results/Idle/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "650/750/750/650 ms; 2800 ms full breathing cycle",
+  "artisticApproval": "PENDING_CREATOR_SUBTLE_IDLE",
+  "visualReview": {
+    "status": "AGENT_INSPECTED_CANDIDATE",
+    "evidence": "Native frame contact sheet and review page; no regional torso distortion; gait alternates; creator approval pending."
+  },
+  "editorFinishing": {
+    "script": "tools/aseprite/subtle-infante-idle-v2.lua",
+    "method": "Retain whole original poses 0,1,6,7 nearest resting stance; remove deep breathing excursion; author slower breath timing in Aseprite. No scaling, compression, blending, raster changes or isolated body-piece paste.",
+    "sourceFrames": [
+      0,
+      1,
+      6,
+      7
+    ],
+    "originalCycleMs": 1600,
+    "newCycleMs": 2800,
+    "headVerticalExcursionBeforePx": 4,
+    "headVerticalExcursionAfterPx": 1,
+    "before": "experiments/orc-infante-idle-subtle-v2/before",
+    "newCloudCalls": 0
+  }
+}

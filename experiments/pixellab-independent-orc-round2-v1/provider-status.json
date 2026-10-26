@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-23",
+  "status": "CONCEPTS_AND_IDLE_WALK_STUDIES_GENERATED_PENDING_CREATOR_REVIEW",
+  "provider": "PixelLab official Aseprite extension",
+  "successful": [
+    {
+      "candidate": "orc-pixellab-04",
+      "model": "Pixen (S-XL)",
+      "concept": "characters/orc-pixellab-04/concepts/concept-selected.png",
+      "animations": {
+        "Idle": {
+          "frames": 8,
+          "history": "20261023121928.json",
+          "archive": "2026-10-23_12-19-28 - Animate with Text (v3) - 017",
+          "master": "characters/orc-pixellab-04/source/aseprite/idle-study.aseprite"
+        },
+        "Walk": {
+          "frames": 8,
+          "history": "20261023122731.json",
+          "archive": "2026-10-23_12-27-31 - Animate with Text (v3) - 018",
+          "master": "characters/orc-pixellab-04/source/aseprite/walk-study.aseprite"
+        }
+      },
+      "conditioning": "Text-only; no image conditioning"
+    },
+    {
+      "candidate": "orc-pixellab-05",
+      "model": "PixelLab Pro",
+      "concept": "characters/orc-pixellab-05/concepts/concept-selected.png",
+      "animations": {
+        "Idle": {
+          "frames": 8,
+          "history": "20261023123056.json",
+          "archive": "2026-10-23_12-38-41 - Animate with Text (v3) - 019",
+          "master": "characters/orc-pixellab-05/source/aseprite/idle-study.aseprite"
+        },
+        "Walk": {
+          "frames": 8,
+          "history": "20261023123143.json",
+          "archive": "2026-10-23_12-46-47 - Animate with Text (v3) - 020",
+          "master": "characters/orc-pixellab-05/source/aseprite/walk-study.aseprite"
+        }
+      },
+      "conditioning": "Text-only; no image conditioning"
+    },
+    {
+      "candidate": "orc-pixellab-06",
+      "model": "PixelLab Pro",
+      "concept": "characters/orc-pixellab-06/concepts/concept-selected.png",
+      "animations": {
+        "Idle": {
+          "frames": 8,
+          "history": "20261023123420.json",
+          "archive": "2026-10-23_12-54-23 - Animate with Text (v3) - 021",
+          "master": "characters/orc-pixellab-06/source/aseprite/idle-study.aseprite"
+        },
+        "Walk": {
+          "frames": 8,
+          "history": "20261023123426.json",
+          "archive": "2026-10-23_13-02-07 - Animate with Text (v3) - 022",
+          "master": "characters/orc-pixellab-06/source/aseprite/walk-study.aseprite"
+        }
+      },
+      "conditioning": "Text-only; no image conditioning"
+    },
+    {
+      "candidate": "orc-pixellab-07",
+      "model": "PixelLab Pro",
+      "concept": "characters/orc-pixellab-07/concepts/concept-selected.png",
+      "animations": {
+        "Idle": {
+          "frames": 8,
+          "history": "20261023123506.json",
+          "archive": "2026-10-23_13-10-28 - Animate with Text (v3) - 023",
+          "master": "characters/orc-pixellab-07/source/aseprite/idle-study.aseprite"
+        },
+        "Walk": {
+          "frames": 8,
+          "history": "20261023123512.json",
+          "archive": "2026-10-23_13-22-40 - Animate with Text (v3) - 024",
+          "master": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite"
+        }
+      },
+      "conditioning": "V4 style sample loaded through PixelLab Set style"
+    }
+  ],
+  "historicalFreeTierBlocks": [
+    {
+      "candidate": "orc-pixellab-04",
+      "tools": [
+        "Create image (Pro)",
+        "Create image (Pro Flash)"
+      ],
+      "outcome": "BLOCKED_FREE_TIER_BEFORE_SUBSCRIPTION"
+    },
+    {
+      "candidate": "orc-pixellab-05",
+      "tools": [
+        "Create Image S-XL (New, Pixen)",
+        "Create medium-extra large image (PixFlux V3)"
+      ],
+      "outcome": "BLOCKED_FREE_TIER_BEFORE_SUBSCRIPTION"
+    }
+  ],
+  "cost": {
+    "uiAdvertisedGenerationsPerProImageRequest": "10–25",
+    "proImageRequestsCompleted": 3,
+    "uiAdvertisedGenerationsPerV3AnimationRequest": "1–8",
+    "v3AnimationRequestsCompleted": 8,
+    "pixenConceptRequestsCompleted": 2,
+    "actualAccountDebit": "NOT_EXPOSED",
+    "uiAdvertisedGenerationsPerPixenImageRequest": 1,
+    "pixenAlternateAttempts": 1,
+    "selectedPixenConcepts": 1
+  },
+  "account": {
+    "subscription": "PixelLab Pro (creator reported)",
+    "authenticated": true,
+    "verification": "Three PixelLab Pro image requests completed in the official Aseprite extension without a login blocker."
+  },
+  "styleConditioning": [
+    {
+      "candidate": "orc-pixellab-07",
+      "source": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+      "derived": "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png",
+      "sha256": "c9bf918fa3ed5d390dfb169a2bd29732e61bf68871d361ea904766283bffb1ea"
+    }
+  ],
+  "legacyPixelConditioning": "Candidates 04–06 were generated without image inputs. Candidate 07 used only the V4 style sample through Aseprite PixelLab Set style; generated concept is a fresh output.",
+  "waiting": [],
+  "unityIntegration": "NOT_RUN",
+  "artisticApproval": "PENDING_CREATOR"
+}

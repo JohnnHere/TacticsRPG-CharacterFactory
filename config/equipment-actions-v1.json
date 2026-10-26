@@ -17,7 +17,13 @@
   "orcUnarmed": {
     "framesPerDirection": 5,
     "durationMs": 90,
-    "durationsMs": [80, 110, 50, 90, 120],
+    "durationsMs": [
+      80,
+      110,
+      50,
+      90,
+      120
+    ],
     "durationMsMeaning": "Legacy average fallback; explicit per-clip durationsMs are authoritative in Aseprite V4",
     "closingPoseRepeatPolicy": "Allowed only when declared in the clip, approval-bound and exactly frame 4 equals frame 0; middle poses must remain distinct",
     "loop": false,
@@ -54,7 +60,17 @@
       "visualEvents",
       "compositedPreview",
       "creatorReview"
-    ]
+    ],
+    "supersededArmedWalkAuthorization": {
+      "date": "2026-10-25",
+      "character": "orc-v1",
+      "weapons": [
+        "recruit-sword",
+        "militia-axe"
+      ],
+      "scope": "Explicit creator request for visible one-hand weapon Walk loops; body remains weapon-independent.",
+      "status": "SUPERSEDED_BY_ATTACK_ONLY_V1"
+    }
   },
   "gameplay": {
     "unarmedPower": "TBD_CORE",
@@ -71,6 +87,34 @@
     "normalizedOutput": "Actions/basic-unarmed/v1/<direction>/",
     "reuse": "Warrior/Brawler refer to existing Animations/Attack paths; no duplicate punch PNGs",
     "legacyExportStillExcludesSupplement": true,
+    "runtimeImplemented": false,
+    "scope": "HISTORICAL_V4_ONLY; command is guarded and not the current Orc V1 export path"
+  },
+  "selectedVisual": {
+    "characterId": "orc-v1",
+    "revision": "orc-v1-green-warcraft",
+    "status": "SELECTED_FOR_FUTURE_INTEGRATION",
+    "previewBindings": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+    "view": "front_r only",
+    "runtimeImplemented": false
+  },
+  "oneHandedPresentation": {
+    "id": "attack-only-v1",
+    "authority": "Creator latest explicit rescue task, 2026-10-25",
+    "scope": "Current one-handed melee sword and axe",
+    "hiddenStates": [
+      "Idle",
+      "Walk",
+      "Rest",
+      "Inspection",
+      "Hit",
+      "Defeat",
+      "AfterAttack"
+    ],
+    "visibleState": "Attack",
+    "visibleInterval": "Per-profile frame interval only",
+    "armedIdleWalkAllowed": false,
+    "drawingSheathingRequired": false,
     "runtimeImplemented": false
   }
 }

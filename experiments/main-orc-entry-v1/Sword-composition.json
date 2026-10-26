@@ -1,0 +1,294 @@
+{
+  "category": "Sword",
+  "item": {
+    "id": "recruit-sword",
+    "sprite": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+    "grip": [
+      48,
+      66
+    ],
+    "category": "Sword"
+  },
+  "profile": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/profile.json",
+  "bodyProfile": {
+    "id": "basic.sword-slash",
+    "character": "orc-v1",
+    "category": "Sword",
+    "direction": "front_r",
+    "canvas": [
+      256,
+      256
+    ],
+    "bodyOffset": [
+      64,
+      64
+    ],
+    "groundY": 190,
+    "ppu": 100,
+    "bodyMaster": "characters/orc-v1/source/aseprite/onehanded-entry-v1/sword-body.aseprite",
+    "handMaster": "characters/orc-v1/source/aseprite/onehanded-entry-v1/sword-hand-front.aseprite",
+    "frames": [
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/00.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 30,
+        "phase": "rest",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/01.png",
+          "sha256": "8d3be327ccfa55511eeb757a5a9ebc37ff6029438192a9e96d3450cd9bdd9045"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 65,
+        "phase": "body-preparation",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/02.png",
+          "sha256": "8d3be327ccfa55511eeb757a5a9ebc37ff6029438192a9e96d3450cd9bdd9045"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/02.png",
+          "sha256": "ddcd8de3ea831b7829231bb708ca0d6296e46e4eb39c67f4dbafac79e83ecccd"
+        },
+        "durationMs": 35,
+        "phase": "establish-grip",
+        "grip": [
+          101,
+          131
+        ],
+        "angle": 315,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/03.png",
+          "sha256": "365836e859850a4cf26d651074c6e3e520f34d87f00357d90153749c254028c5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/03.png",
+          "sha256": "68c5b9a7b23505c362b5b01d92a404ab1a254e0b5501edc003209def4aa483ea"
+        },
+        "durationMs": 50,
+        "phase": "entry-elbow-lift",
+        "grip": [
+          88,
+          118
+        ],
+        "angle": 330,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/04.png",
+          "sha256": "28e38a389b882baaf5348380cb3bfe37b6969e45956da34b6ee0c94bae9df786"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/04.png",
+          "sha256": "6af7830ccc5c8c0664029a3a69b00ce1d2a1184f8914ea58aeeeea663163ae99"
+        },
+        "durationMs": 45,
+        "phase": "entry-shoulder-coil",
+        "grip": [
+          98,
+          100
+        ],
+        "angle": 340,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": true
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/05.png",
+          "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/05.png",
+          "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21"
+        },
+        "durationMs": 65,
+        "phase": "high-guard",
+        "grip": [
+          98,
+          89
+        ],
+        "angle": 345,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": true
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/06.png",
+          "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/06.png",
+          "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c"
+        },
+        "durationMs": 35,
+        "phase": "drive",
+        "grip": [
+          157,
+          112
+        ],
+        "angle": 20,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/07.png",
+          "sha256": "6386a0081d57e2ca1a40e8f7b160b570382395c8f4dd7011043ccf0d9b6a6778"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/07.png",
+          "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552"
+        },
+        "durationMs": 35,
+        "phase": "crossing",
+        "grip": [
+          158,
+          134
+        ],
+        "angle": 55,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/08.png",
+          "sha256": "3b73c3cd22f12356f66c5f710020baf916598809205f6b5f770f1dfecc2ecdf7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/08.png",
+          "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8"
+        },
+        "durationMs": 100,
+        "phase": "strike-follow-through",
+        "grip": [
+          159,
+          142
+        ],
+        "angle": 100,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/09.png",
+          "sha256": "58264c4b6986cb85438891f5f5113149f29b69aa24fae28e5a378bfe0346f355"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/09.png",
+          "sha256": "e8e0323bb8a254a3f6efcb354d9c9b5fcc7920ff22ed818b1b3827a3a15138a3"
+        },
+        "durationMs": 55,
+        "phase": "recovery-bridge",
+        "grip": [
+          129,
+          148
+        ],
+        "angle": 102,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/10.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/10.png",
+          "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308"
+        },
+        "durationMs": 80,
+        "phase": "recovery",
+        "grip": [
+          110,
+          147
+        ],
+        "angle": 105,
+        "scale": 1,
+        "weaponVisible": true,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/11.png",
+          "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 45,
+        "phase": "action-complete",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      },
+      {
+        "body": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/body/12.png",
+          "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "durationMs": 90,
+        "phase": "return-unarmed",
+        "grip": null,
+        "angle": null,
+        "scale": 1,
+        "weaponVisible": false,
+        "weaponBehindBody": false
+      }
+    ],
+    "itemContract": {
+      "grip": "Integer local point on actual handle",
+      "scale": 1,
+      "canvas": "Per-item native dimensions; no automatic body regeneration",
+      "category": "Sword",
+      "occlusion": "weaponBack -> body -> weaponFront -> own pose-specific fingers",
+      "compatibility": "One-handed items of this category only; check shaft width, blade/head/guard clearance and camera"
+    },
+    "artisticApproval": "PENDING_CREATOR",
+    "revision": "main-orc-onehanded-entry-v1",
+    "baselineRevision": "main-orc-onehanded-polish-v1"
+  },
+  "output": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack",
+  "scope": "ISOLATED_ENTRY_CANDIDATE from entry-plan.json; no active selection, runtime or gameplay change"
+}

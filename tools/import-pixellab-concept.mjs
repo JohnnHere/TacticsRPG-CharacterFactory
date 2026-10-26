@@ -1,0 +1,33 @@
+// Preserve a PixelLab result and create its editable native Aseprite master.
+import fs from 'node:fs';
+import path from 'node:path';
+import {parseArgs} from 'node:util';
+import {ROOT,loadCharacter,hash,write,json,slash,now} from '../src/core.mjs';
+import {decode,measure} from '../src/images.mjs';
+import {findAseprite,executeAseprite,inspectAseprite} from '../src/aseprite.mjs';
+
+const {values}=parseArgs({options:{id:{type:'string'},input:{type:'string'},model:{type:'string'},seed:{type:'string'},request:{type:'string'}}});
+if(!values.id||!values.input)throw Error('Usage: node tools/import-pixellab-concept.mjs --id orc-pixellab-04 --input path/to/0.png [--model pixen --seed 123 --request path/to/request.json]');
+const {dir,spec}=loadCharacter(values.id);
+if(spec.status!=='candidate')throw Error('Importacao limitada a personagem candidate.');
+const input=path.resolve(values.input),decoded=decode(input),m=measure(decoded.image);
+if(decoded.image.width!==128||decoded.image.height!==128||decoded.colorType!==6||decoded.image.depth!==8)throw Error(`PixelLab result must be native RGBA8 128x128; got ${m.width}x${m.height}, colorType=${decoded.colorType}, depth=${decoded.image.depth}.`);
+if(!m.contentHeight||!m.transparent)throw Error('Concept must contain opaque pixels and transparent background.');
+const concept=path.join(dir,'concepts','concept-selected.png');
+const raw=path.join(dir,'source','pixellab-results','Concept','0.png');
+const master=path.join(dir,'source','aseprite','concept-selected.aseprite');
+for(const p of [concept,raw,master])if(fs.existsSync(p))throw Error(`Preserving existing asset; choose a new concept id/path: ${slash(path.relative(ROOT,p))}`);
+fs.mkdirSync(path.dirname(concept),{recursive:true});fs.mkdirSync(path.dirname(raw),{recursive:true});fs.mkdirSync(path.dirname(master),{recursive:true});
+write(concept,fs.readFileSync(input));write(raw,fs.readFileSync(input));
+const executable=findAseprite();
+executeAseprite(executable,[concept,'--save-as',master]);
+const fileInfo=inspectAseprite(master);
+if(fileInfo.width!==128||fileInfo.height!==128||fileInfo.frames!==1)throw Error(`Aseprite master mismatch: ${JSON.stringify(fileInfo)}`);
+const assetsPath=path.join(dir,'assets.json');const assets=JSON.parse(fs.readFileSync(assetsPath,'utf8'));
+for(const [kind,file] of [['concept',concept],['aseprite-source',master]])assets.push({at:now(),kind,file:slash(path.relative(dir,file)),sha256:hash(fs.readFileSync(file)),provider:kind==='concept'?'PixelLab':'Aseprite',model:values.model??'NOT_RECORDED',sourceFile:slash(path.relative(dir,raw)),sourceSha256:hash(fs.readFileSync(raw)),promptUsage:'Recorded in source/generation-record.json; no image conditioning.'});
+json(assetsPath,assets);
+const recordPath=path.join(dir,'source','generation-record.json');const record=JSON.parse(fs.readFileSync(recordPath,'utf8'));
+record.provider='PixelLab';record.interface='official-Aseprite-extension';record.pluginVersion='0.4.130';record.tool=values.model==='pixen'?'Create Image S-XL (New, Pixen)':'PixelLab via Aseprite';record.model=values.model??'NOT_RECORDED';record.seed=values.seed??'NOT_RECORDED';record.inputImages=[];record.styleImages=[];record.referenceImages=[];record.targetPalette='No';record.noBackground=true;record.canvas={width:128,height:128};record.outputMethod='New frame';record.detail='highly detailed';record.outline='selective outline';record.direction='south';record.status='CONCEPT_GENERATED_PENDING_CREATOR_REVIEW';record.outputs=[{file:'concepts/concept-selected.png',source:'source/pixellab-results/Concept/0.png',sha256:hash(fs.readFileSync(concept)),measurements:m,master:'source/aseprite/concept-selected.aseprite',masterSha256:hash(fs.readFileSync(master)),request:values.request?slash(path.relative(ROOT,path.resolve(values.request))):null}];record.animations=[];record.elapsedMs='NOT_RECORDED';record.credits='UI advertised 1 generation per image; actual account debit NOT_EXPOSED';
+json(recordPath,record);
+const briefPath=path.join(dir,'source','brief.json');const brief=JSON.parse(fs.readFileSync(briefPath,'utf8'));brief.generation={provider:'PixelLab',model:record.model,seed:record.seed,request:record.outputs[0].request,master:slash(path.relative(dir,master)),concept:'concepts/concept-selected.png',inputImages:[]};json(briefPath,brief);
+console.log(JSON.stringify({status:record.status,id:values.id,concept:slash(path.relative(ROOT,concept)),master:slash(path.relative(ROOT,master)),measurements:m,sha256:hash(fs.readFileSync(concept))},null,2));

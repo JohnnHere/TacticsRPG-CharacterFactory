@@ -1,0 +1,173 @@
+{
+  "createdAt": "2026-10-23T17:33:30.327Z",
+  "status": "REVIEW_READY_PENDING_CREATOR",
+  "provider": "PixelLab official Aseprite extension",
+  "scope": "Refine Walk and Idle 04/07, restrained Idle 06, redesign 05 armor/presence and match its Idle/Walk to the new concept.",
+  "concept05": {
+    "prompt": "Original highly detailed medieval dark-fantasy tactical RPG pixel art. A towering adult male orc shock infantry veteran, inspired by the intimidating organized Uruk-hai archetype of Tolkien and the strong silhouette clarity of Warcraft. Tall long-legged powerful anatomy, broad angular shoulders, deep chest, narrow waist, thick neck, roughly seven-head proportions; imposing and battle-hardened, not squat or rounded. Ash-grey skin, severe scarred angular face, pronounced brow, uneven blunt tusks, short coarse black hair. Elaborate functional blackened iron armor: overlapping angular breastplate panels with a raised central ridge, layered articulated pauldrons, riveted neck guard, segmented vambraces, small chainmail at joints, lamellar hip tassets, reinforced knee plates and armored boots. Distinct steel bevels, fasteners, leather straps, worn edge highlights, restrained dents and scratches; carefully shaded large metal planes remain readable. Dark gunmetal, cold steel edges, oxblood cloth and aged brown leather. Brutal disciplined infantry presence, chin slightly lowered and gaze challenging. Both hands empty and relaxed beside the body. Entire figure from head to both complete boots, front three-quarter standing view, centered in a 128x128 transparent canvas with clear margin on every side. Crisp deliberate pixel clusters, rich material detail and controlled contrast. No held, carried or sheathed weapon, shield, scenery, text, franchise insignia or named character.",
+    "status": "GENERATED_SELECTED_PENDING_CREATOR",
+    "inputImages": [],
+    "styleImages": [],
+    "submittedPrompt": "Original highly detailed medieval dark-fantasy tactical RPG pixel art. A towering adult male orc shock infantry veteran, inspired by the intimidating organized Uruk-hai archetype of Tolkien and the strong silhouette clarity of Warcraft. Tall long-legged powerful anatomy, broad angular shoulders, deep chest, narrow waist, thick neck, roughly seven-head proportions; imposing and battle-hardened, not squat or rounded. Ash-grey skin, severe scarred angular face, pronounced brow, uneven blunt tusks, short coarse black hair. Elaborate functional blackened iron armor: overlapping angular breastplate panels with a raised central ridge, layered articulated pauldrons, riveted neck guard, segmented vambraces, small chainmail at joints, lamellar hip tassets, reinforced knee plates and armored boots. Distinct steel bevels, fasteners, leather straps, worn edge highlights, restrained dents and scratches; carefully shaded large metal planes remain readable. Dark gunmetal, cold steel edges, oxblood cloth and aged brown leather. Brutal disciplined infantry presence, chin slightly lowered and gaze challenging. Both hands empty and relaxed beside the body. Entire figure from head to both complete boots, front three-quarter standing view, centered in a 128x128 transparent canvas with clear margin on every side. Crisp deliberate pixel clusters, rich material detail and controlled contrast. No held, carried or sheathed weapon, shield, scenery, text, franchise insignia or named character.",
+    "requestHistory": "20261023144639.json",
+    "model": "generate_image_new",
+    "archive": "2026-10-23_14-46-39 - Create S-XL image (pro) - 025",
+    "seed": "381091172.0",
+    "requestedFrameCount": null,
+    "submittedAt": "2026-10-23T17:48:40.982Z",
+    "selectedOutput": 1,
+    "concept": "characters/orc-pixellab-05/concepts/concept-selected.png"
+  },
+  "jobs": [
+    {
+      "id": "orc-pixellab-04",
+      "state": "Walk",
+      "prompt": "Walking in place through one complete clear two-step walk cycle. The legs drive the action: left leg reaches forward and plants while the right leg extends behind; right heel lifts, knee bends and the right boot swings visibly off the ground past the support leg; then reverse the legs for the second step. Alternate contact, down, passing and up poses. Each boot must visibly travel forward and backward and lift several pixels during its swing, rather than remain anchored. Moderate natural stride, opposite arm swing and slight weight transfer. Preserve the character design, armor, face, palette and three-quarter facing while freely articulating hips, knees and ankles. Fixed camera, centered full body, both boots visible, empty hands, no weapons, transparent background. Seamless cycle returning to its initial contact pose.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-04/concepts/concept-selected.png",
+      "submittedPrompt": "Walking in place through one complete clear two-step walk cycle. The legs drive the action: left leg reaches forward and plants while the right leg extends behind; right heel lifts, knee bends and the right boot swings visibly off the ground past the support leg; then reverse the legs for the second step. Alternate contact, down, passing and up poses. Each boot must visibly travel forward and backward and lift several pixels during its swing, rather than remain anchored. Moderate natural stride, opposite arm swing and slight weight transfer. Preserve the character design, armor, face, palette and three-quarter facing while freely articulating hips, knees and ankles. Fixed camera, centered full body, both boots visible, empty hands, no weapons, transparent background. Seamless cycle returning to its initial contact pose.",
+      "requestHistory": "20261023144200.json",
+      "model": "generate_animate_pixminimax",
+      "archive": "2026-10-23_14-42-00 - Animate with text (PixMiniMax) - 001",
+      "seed": "125660601.0",
+      "requestedFrameCount": 16,
+      "submittedAt": "2026-10-23T17:48:40.888Z",
+      "clip": "characters/orc-pixellab-04/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-04/source/aseprite/walk-study.aseprite",
+      "frames": 16,
+      "method": "Animate with text (PixMiniMax)"
+    },
+    {
+      "id": "orc-pixellab-04",
+      "state": "Idle",
+      "prompt": "Idle. A calm alert standing guard, breathing slowly and shallowly. Only a tiny expansion of the chest and a subtle settling of the shoulders; the head stays almost still. Both feet remain firmly planted in the exact same ground positions. Arms hang relaxed. Keep the same facing, face, anatomy, armor and palette. No stepping, turning, crouching, head gestures, rocking or exaggerated body bob. A restrained seamless breathing loop, full body, empty hands, transparent background, fixed camera.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-04/concepts/concept-selected.png",
+      "method": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "newCloudCalls": 0,
+      "clip": "characters/orc-pixellab-04/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-04/source/aseprite/idle-study.aseprite",
+      "frames": 8
+    },
+    {
+      "id": "orc-pixellab-07",
+      "state": "Walk",
+      "prompt": "Walking in place through one complete clear two-step walk cycle. The legs drive the action: left leg reaches forward and plants while the right leg extends behind; right heel lifts, knee bends and the right boot swings visibly off the ground past the support leg; then reverse the legs for the second step. Alternate contact, down, passing and up poses. Each boot must visibly travel forward and backward and lift several pixels during its swing, rather than remain anchored. Moderate natural stride, opposite arm swing and slight weight transfer. Preserve the character design, armor, face, palette and three-quarter facing while freely articulating hips, knees and ankles. Fixed camera, centered full body, both boots visible, empty hands, no weapons, transparent background. Seamless cycle returning to its initial contact pose.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-07/concepts/concept-selected.png",
+      "submittedPrompt": "Walking in place, always facing down-right (south-east), in the same front three-quarter view as the reference. Hips, chest and head keep this original facing throughout the entire loop. No turning or rotation into a side view. Alternate two clear steps: one boot lifts with a bent knee, swings forward, plants and pushes back while the other boot passes it; then exchange the legs. Visible foot travel and opposite arm swing, moderate stride, slight vertical weight shift. Keep the original face, armor design and colors stable. Full body and both boots inside the canvas, centered on the same ground anchor, empty hands, transparent background, locked camera. End in the starting contact phase for a seamless loop.",
+      "requestHistory": "20261023151458.json",
+      "model": "generate_animate_pixminimax",
+      "archive": "2026-10-23_15-14-58 - Animate with text (PixMiniMax) - 003",
+      "seed": "1714613318.0",
+      "requestedFrameCount": 16,
+      "submittedAt": "2026-10-23T18:15:44.171Z",
+      "attempts": [
+        {
+          "requestHistory": "20261023145631.json",
+          "model": "generate_animate_pixminimax",
+          "archive": "2026-10-23_14-56-31 - Animate with text (PixMiniMax) - 002",
+          "submittedPrompt": "Walking in place through one complete clear two-step walk cycle. The legs drive the action: left leg reaches forward and plants while the right leg extends behind; right heel lifts, knee bends and the right boot swings visibly off the ground past the support leg; then reverse the legs for the second step. Alternate contact, down, passing and up poses. Each boot must visibly travel forward and backward and lift several pixels during its swing, rather than remain anchored. Moderate natural stride, opposite arm swing and slight weight transfer. Preserve the character design, armor, face, palette and three-quarter facing while freely articulating hips, knees and ankles. Fixed camera, centered full body, both boots visible, empty hands, no weapons, transparent background. Seamless cycle returning to its initial contact pose.",
+          "seed": "0",
+          "status": "REJECTED_DIRECTION_DRIFT",
+          "preservedAt": "characters/orc-pixellab-07/source/iterations/refinement-v2-walk-turning-attempt"
+        }
+      ],
+      "requestSettings": {
+        "cameraView": "low top-down",
+        "direction": "south-east",
+        "frameCount": 16
+      },
+      "clip": "characters/orc-pixellab-07/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+      "frames": 16,
+      "method": "Animate with text (PixMiniMax)"
+    },
+    {
+      "id": "orc-pixellab-07",
+      "state": "Idle",
+      "prompt": "Idle. A calm alert standing guard, breathing slowly and shallowly. Only a tiny expansion of the chest and a subtle settling of the shoulders; the head stays almost still. Both feet remain firmly planted in the exact same ground positions. Arms hang relaxed. Keep the same facing, face, anatomy, armor and palette. No stepping, turning, crouching, head gestures, rocking or exaggerated body bob. A restrained seamless breathing loop, full body, empty hands, transparent background, fixed camera.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-07/concepts/concept-selected.png",
+      "method": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "newCloudCalls": 0,
+      "clip": "characters/orc-pixellab-07/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-07/source/aseprite/idle-study.aseprite",
+      "frames": 8
+    },
+    {
+      "id": "orc-pixellab-06",
+      "state": "Idle",
+      "prompt": "Idle. A calm alert standing guard, breathing slowly and shallowly. Only a tiny expansion of the chest and a subtle settling of the shoulders; the head stays almost still. Both feet remain firmly planted in the exact same ground positions. Arms hang relaxed. Keep the same facing, face, anatomy, armor and palette. No stepping, turning, crouching, head gestures, rocking or exaggerated body bob. A restrained seamless breathing loop, full body, empty hands, transparent background, fixed camera.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-06/concepts/concept-selected.png",
+      "method": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "newCloudCalls": 0,
+      "clip": "characters/orc-pixellab-06/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-06/source/aseprite/idle-study.aseprite",
+      "frames": 8
+    },
+    {
+      "id": "orc-pixellab-05",
+      "state": "Idle",
+      "prompt": "Idle. A calm alert standing guard, breathing slowly and shallowly. Only a tiny expansion of the chest and a subtle settling of the shoulders; the head stays almost still. Both feet remain firmly planted in the exact same ground positions. Arms hang relaxed. Keep the same facing, face, anatomy, armor and palette. No stepping, turning, crouching, head gestures, rocking or exaggerated body bob. A restrained seamless breathing loop, full body, empty hands, transparent background, fixed camera.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-05/concepts/concept-selected.png",
+      "method": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "newCloudCalls": 0,
+      "clip": "characters/orc-pixellab-05/source/studies/Idle/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/idle-study.aseprite",
+      "frames": 8
+    },
+    {
+      "id": "orc-pixellab-05",
+      "state": "Walk",
+      "prompt": "Walking in place through one complete clear two-step walk cycle. The legs drive the action: left leg reaches forward and plants while the right leg extends behind; right heel lifts, knee bends and the right boot swings visibly off the ground past the support leg; then reverse the legs for the second step. Alternate contact, down, passing and up poses. Each boot must visibly travel forward and backward and lift several pixels during its swing, rather than remain anchored. Moderate natural stride, opposite arm swing and slight weight transfer. Preserve the character design, armor, face, palette and three-quarter facing while freely articulating hips, knees and ankles. Fixed camera, centered full body, both boots visible, empty hands, no weapons, transparent background. Seamless cycle returning to its initial contact pose.",
+      "status": "PACKAGED_AND_VISUALLY_CHECKED_PENDING_CREATOR",
+      "input": "characters/orc-pixellab-05/concepts/concept-selected.png",
+      "submittedPrompt": "Walking in place, always facing down-right (south-east), in the same front three-quarter view as the reference. Hips, chest and head keep this original facing throughout the entire loop. No turning or rotation into a side view. Alternate two clear steps: one boot lifts with a bent knee, swings forward, plants and pushes back while the other boot passes it; then exchange the legs. Visible foot travel and opposite arm swing, moderate stride, slight vertical weight shift. Keep the original face, armor design and colors stable. Full body and both boots inside the canvas, centered on the same ground anchor, empty hands, transparent background, locked camera. End in the starting contact phase for a seamless loop.",
+      "requestHistory": "20261023153212.json",
+      "model": "generate_animate_pixminimax",
+      "archive": "2026-10-23_15-32-12 - Animate with text (PixMiniMax) - 004",
+      "seed": "421667699.0",
+      "requestedFrameCount": 16,
+      "submittedAt": "2026-10-23T18:34:23.712Z",
+      "requestSettings": {
+        "cameraView": "low top-down",
+        "direction": "south-east",
+        "frameCount": 16
+      },
+      "clip": "characters/orc-pixellab-05/source/studies/Walk/clip.json",
+      "master": "characters/orc-pixellab-05/source/aseprite/walk-study.aseprite",
+      "frames": 16,
+      "method": "Animate with text (PixMiniMax)"
+    }
+  ],
+  "artisticApproval": "PENDING_CREATOR",
+  "unityIntegration": "NOT_RUN",
+  "actualAccountDebit": "NOT_EXPOSED",
+  "remainingScope": [],
+  "completedAt": "2026-10-23T18:47:50.154Z",
+  "extraConcepts": [
+    {
+      "id": "orc-pixellab-08",
+      "status": "GENERATED_PENDING_CREATOR",
+      "concept": "characters/orc-pixellab-08/concepts/concept-selected.png",
+      "master": "characters/orc-pixellab-08/source/aseprite/concept-selected.aseprite",
+      "archive": "2026-10-23_15-10-52 - Create S-XL image (pro) - 026",
+      "history": "20261023151052.json",
+      "seed": "1480230970.0",
+      "selectedOutput": 0
+    },
+    {
+      "id": "orc-pixellab-09",
+      "status": "GENERATED_PENDING_CREATOR",
+      "concept": "characters/orc-pixellab-09/concepts/concept-selected.png",
+      "master": "characters/orc-pixellab-09/source/aseprite/concept-selected.aseprite",
+      "archive": "2026-10-23_15-18-44 - Create S-XL image (pro) - 027",
+      "history": "20261023151844.json",
+      "seed": "37010633.0",
+      "selectedOutput": 2
+    }
+  ]
+}

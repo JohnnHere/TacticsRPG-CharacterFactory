@@ -1,0 +1,38 @@
+{
+  "orchestrator": "Codex current session; art integration and scope decisions",
+  "dev": {
+    "agentId": "147f2a01-c04c-44b2-babe-eadfbdffbb32",
+    "provider": "opencode-free",
+    "model": "opencode/deepseek-v4.1-flash-free",
+    "thinking": "high",
+    "catalogConfirmed": true,
+    "catalogSources": [
+      "npx -y @getpaseo/cli provider ls --json",
+      "npx -y @getpaseo/cli provider models opencode-free --json"
+    ],
+    "responsibility": "minimal candidate assembler, focused checker, existing preview extension",
+    "lastUsageReported": {
+      "InputTokens": 382074,
+      "OutputTokens": 38537,
+      "CachedTokens": 8557056,
+      "CostUsd": 0
+    },
+    "status": "idle/complete"
+  },
+  "qaPlanned": {
+    "provider": "cline-glm-api",
+    "model": "glm-5.3",
+    "catalogConfirmed": true,
+    "thinking": "not configurable in provider catalog",
+    "responsibility": "mandatory independent review of frozen full integrated package, no extra QA agents"
+  },
+  "parallelism": "one DEV only; orchestrator supplies scoped art/input sequence in non-overlapping files",
+  "deadlinePolicy": "bounded monitoring; no duplicate active turn, preserve progress on failure",
+  "providerDiscoveryNotes": "Generic opencode/cline providers disabled; actual available profiles opencode-free and cline-glm-api used. This is catalog discovery, not a failed DEV execution.",
+  "implementationFindingsResolved": [
+    "hidden handInput precedence fixed before final build",
+    "input confinement uses inside(ROOT, path)",
+    "over-broad audit/pruning proposal removed from implementation"
+  ],
+  "temporaryNotes": "DEV reported creating two QA-only zoom PNGs under an erroneous sibling AppData path and removing only that self-created folder before root preservation checkpoint; no project asset damage,9923 prior art hashes exact. Three small inspection scripts remain in user Temp/opencode, not production."
+}

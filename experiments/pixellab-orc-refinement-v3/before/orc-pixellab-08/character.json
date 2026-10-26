@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-08",
+  "identityId": "ba9751cc-7585-4e76-b3c8-e0374ce7d3fd",
+  "name": "Vigia do Passo",
+  "status": "candidate",
+  "createdAt": "2026-10-23T17:58:51.957Z",
+  "styleId": "pixellab-independent-extra-directions-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Esbelto e mais velho — proposta individual candidata"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Estudo candidato de identidade Orc; Warrior como contexto de roupa, sem classe nova",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "A tall rangy older male Orc borderland veteran, lean sinewy limbs and a small angular head rather than a squat giant torso. Cold slate-blue grey skin, long pointed ears with one torn tip, a weathered hooked nose, unequal small ivory tusks, one clouded eye and a stern watchful expression. Long silver-white hair tied into a practical low braid and a short forked grey beard. A worn ochre leather split riding coat with a high folded collar, irregular stitched repairs, small dark iron fasteners, a fitted quilted charcoal vest, navy wrapped trousers and narrow high leather boots. No massive shoulder plates: one shoulder has a short weather-stained sheepskin drape. Many readable practical seams, folds, buckles and wear marks, with a triangular coat silhouette and a quietly dangerous veteran presence. Desaturated ochre, charcoal, faded navy and cold blue-grey; avoid crimson fabric and bright polished steel.",
+    "ageImpression": "Mais velho",
+    "body": "A tall rangy older male Orc borderland veteran, lean sinewy limbs and a small angular head rather than a squat giant torso. Cold slate-blue grey skin, long pointed ears with one torn tip, a weathered hooked nose, unequal small ivory tusks, one clouded eye and a stern watchful expression. Long silver-white hair tied into a practical low braid and a short forked grey beard. A worn ochre leather split riding coat with a high folded collar, irregular stitched repairs, small dark iron fasteners, a fitted quilted charcoal vest, navy wrapped trousers and narrow high leather boots. No massive shoulder plates: one shoulder has a short weather-stained sheepskin drape. Many readable practical seams, folds, buckles and wear marks, with a triangular coat silhouette and a quietly dangerous veteran presence. Desaturated ochre, charcoal, faded navy and cold blue-grey; avoid crimson fabric and bright polished steel.",
+    "palette": [],
+    "dominantHand": "TBD",
+    "asymmetries": [],
+    "lighting": "Proposta PixelLab independente"
+  },
+  "outfit": {
+    "id": "orc-pixellab-08-candidate",
+    "description": "A tall rangy older male Orc borderland veteran, lean sinewy limbs and a small angular head rather than a squat giant torso. Cold slate-blue grey skin, long pointed ears with one torn tip, a weathered hooked nose, unequal small ivory tusks, one clouded eye and a stern watchful expression. Long silver-white hair tied into a practical low braid and a short forked grey beard. A worn ochre leather split riding coat with a high folded collar, irregular stitched repairs, small dark iron fasteners, a fitted quilted charcoal vest, navy wrapped trousers and narrow high leather boots. No massive shoulder plates: one shoulder has a short weather-stained sheepskin drape. Many readable practical seams, folds, buckles and wear marks, with a triangular coat silhouette and a quietly dangerous veteran presence. Desaturated ochre, charcoal, faded navy and cold blue-grey; avoid crimson fabric and bright polished steel.",
+    "silhouette": "TBD",
+    "palette": [],
+    "materials": [],
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Asset separado; mãos vazias"
+  },
+  "styleRecipes": [],
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": null,
+    "ppu": 100,
+    "counts": {},
+    "note": "Conceito candidato; sem contrato runtime ou animação solicitada nesta etapa."
+  },
+  "references": [],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Identity, anatomy, age, face, silhouette, palette and clothing",
+      "category": "CREATE_NEW",
+      "evidence": "Creator requested two more concepts with visual patterns different from the existing candidates.",
+      "adaptation": "Independent text-only PixelLab generation in Aseprite.",
+      "artRisk": "Compare against the prior nine directions for convergence.",
+      "technicalRisk": "Concept only; production sprites and animation are not implied.",
+      "dependencies": [
+        "Official PixelLab extension and account"
+      ],
+      "validation": "Concept PNG and editable Aseprite master generated; final bridge evidence in reports/orc-pixellab-refinement-v2-check.json; creator review pending."
+    },
+    {
+      "component": "Aseprite import, editable master and review",
+      "category": "REUSE_DIRECT",
+      "evidence": "Existing local editor bridge and candidate review tools.",
+      "adaptation": "New IDs; no inherited art pixels.",
+      "validation": "Concept PNG and editable Aseprite master generated; final bridge evidence in reports/orc-pixellab-refinement-v2-check.json; creator review pending."
+    }
+  ]
+}

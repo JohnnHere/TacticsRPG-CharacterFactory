@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-11",
+  "identityId": "55734551-d044-41e5-a5d6-0f9a4e6a9b3b",
+  "name": "Orc Atlético",
+  "status": "candidate",
+  "createdAt": "2026-10-24T19:39:01.047Z",
+  "styleId": "pixellab-orc-athletic-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Atlético musculoso, cintura estreita, não inchado"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Candidato de direção artística Orc; uma vista, conceito/Idle/Walk",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Careca adulto, angular, presas pequenas, proporção de cabeça natural",
+    "body": "Mais musculoso que o Ágil, deltoides/peitoral/braços definidos, cintura estreita",
+    "hair": "Careca",
+    "palette": [
+      "Verde sálvia ligeiramente mais claro",
+      "Ferro carvão",
+      "Couro castanho"
+    ],
+    "dominantHand": "TBD",
+    "lighting": "Clusters deliberados de luz quente e sombra oliva"
+  },
+  "outfit": {
+    "id": "orc-athletic-candidate",
+    "description": "Proteção parcial: peitoral/abdômen expostos com arnês estreito, ombreira compacta, braçadeiras, proteção curta de quadril, joelheiras e botas. Mais pele visível e mobilidade.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Nenhuma arma integrada; mãos vazias"
+  },
+  "styleRecipes": [],
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": null,
+    "ppu": 100,
+    "counts": {
+      "Idle": 8,
+      "Walk": 8
+    },
+    "note": "Estudos de uma vista, sem contrato Unity ou Gate concedido."
+  },
+  "references": [],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Direção de arte e referência do Ágil",
+      "category": "REUSE_ADAPTED",
+      "evidence": "Pedido explícito: parecido com Ágil, menos cobertura, mais músculos e verde mais claro.",
+      "adaptation": "Edição Pro Flash do conceito 04; novas animações do próprio conceito, sem fontes V4/07.",
+      "dependencies": [
+        "PixelLab Pro",
+        "Aseprite",
+        "Conceito 04 autorizado como referência"
+      ],
+      "artRisk": "Geração pode variar identidade entre quadros; avaliar antes de produção.",
+      "validation": "Inspeção visual, igualdade de pixels no export e revisão do criador",
+      "artisticApproval": "PENDING_CREATOR"
+    }
+  ],
+  "artExploration": {
+    "experiment": "pixellab-orc-athletic-v1",
+    "inputImages": [
+      "characters/orc-pixellab-04/concepts/concept-selected.png"
+    ],
+    "excluded": [
+      "V4 ativa descartada",
+      "V4 Reimaginado descartado"
+    ],
+    "candidateAnimationsAuthorized": true,
+    "selection": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "state": "Walk",
+  "provider": "PixelLab + Aseprite",
+  "interface": "official MCP HTTP",
+  "tool": "PixelLab walk + stable registered head shading",
+  "model": "Server default; this MCP method has no model selector",
+  "license": "Creator confirmed Pro; account active",
+  "revision": "refinement-v4",
+  "prompt": "Walking in place along a straight path towards the viewer and slightly right, always maintaining the exact front three-quarter orientation of the reference. Clear alternating two-step gait: each knee bends and its boot lifts, swings forward, plants and pushes back, then the other leg does the same. Opposite arm swing, modest stride and small natural weight transfer. Torso stays upright, shoulders level, head chest hips aligned. No sideways drifting, leg crossing, skating, pivoting into profile, or diagonal twisting. Preserve the exact face, proportions and armor. Full body, both boots inside canvas, empty hands, transparency, fixed camera. Loop ends in starting stance.",
+  "jobId": "dece5254-abc2-4136-824f-4ea668524cd5",
+  "frameCount": 8,
+  "frames": [
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/00.png",
+      "durationMs": 100,
+      "sha256": "58aa8ed45cbc860d0eeab4a413a49b32a9fe1b68ed23f178796c79e792efb56b"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/01.png",
+      "durationMs": 100,
+      "sha256": "7de19ec3d574f89fc9388497eb143ce48606dcf70391e704e687ab5aff81f0a9"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/02.png",
+      "durationMs": 100,
+      "sha256": "e3b32841ffb2d469d9ae6abe1fe1b73197013d68d2451fee97a678b3fd62ecbe"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/03.png",
+      "durationMs": 100,
+      "sha256": "538804f225484b98fe459c4cb120cfc8511057adee492277e0fd320a48322816"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/04.png",
+      "durationMs": 100,
+      "sha256": "0e7b19bc5a11cc7d18185bbecf302ba9ebfc50dbe5807bfccded09e1f98ae50e"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/05.png",
+      "durationMs": 100,
+      "sha256": "23cecbd103cdb48550e02b6503c988af3389757f52f01e8c7f6a8b2decaf671d"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/06.png",
+      "durationMs": 100,
+      "sha256": "fac013d0ab694db0a191d8eb8c2ad72631cea1cf692729a54292e7f8497c6b62"
+    },
+    {
+      "png": "characters/orc-pixellab-04/source/studies/Walk/07.png",
+      "durationMs": 100,
+      "sha256": "3e452239d46bf0858ab90c6d049892aafa73c31c7941a152835380100dbce2d7"
+    }
+  ],
+  "input": "characters/orc-pixellab-04/concepts/concept-selected.png",
+  "inputSha256": "526e5f737086e1fa6e4dc7b28a713dad6464dc5f0ced82b91777d1968677f7ce",
+  "inputAlphaAndVisibleRgbExact": true,
+  "lastFrame": "Same own concept supplied to pin ending pose",
+  "master": "characters/orc-pixellab-04/source/aseprite/walk-study.aseprite",
+  "masterSha256": "5aec63a715f33e838f95a2ac5487e8046e6c732f8fec9afb9bd6dba101248708",
+  "rawMaster": "experiments/pixellab-orc-refinement-v4/before/orc-pixellab-04/source/aseprite/walk-raw.aseprite",
+  "request": "experiments/pixellab-orc-refinement-v3/mcp/04-Walk-request.json",
+  "result": "experiments/pixellab-orc-refinement-v3/mcp/04-Walk-result.json",
+  "archive": "characters/orc-pixellab-04/source/pixellab-results/Walk/refinement-v3",
+  "credits": "2 generations",
+  "playbackTiming": "100 ms per frame authored in Aseprite for review",
+  "artisticApproval": "PENDING_CREATOR",
+  "visualReview": "Agent inspected head/neck continuity and native pose sheet; creator review pending.",
+  "editorRetouch": {
+    "script": "tools/aseprite/refine-orc-heads-v4.lua",
+    "reference": "experiments/pixellab-orc-refinement-v4/before/orc-pixellab-04/source/studies/Walk/00.png",
+    "rect": {
+      "x": 57,
+      "y": 3,
+      "w": 25,
+      "h": 25
+    },
+    "registration": [
+      {
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 2
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      }
+    ],
+    "body": "No scaling; all pixels outside the registered head rectangle remain from original walk"
+  }
+}

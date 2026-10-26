@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-onehanded-entry-v1",
+  "createdAt": "2026-10-25T23:18:18.755Z",
+  "planSha256": "c810b4e2c60fef2511cff9fa2dc1994c9cdc0bbcb002e740725ac5ba0dce539e",
+  "diagnostic": {
+    "gripStepPx": 24,
+    "angleStepDeg": 90,
+    "maxFrameMs": 600
+  },
+  "summary": {
+    "PASS": 174,
+    "FAIL": 0,
+    "WARNING": 0,
+    "INFO": 4,
+    "NOT_RUN": 2,
+    "REQUIRES_HUMAN_REVIEW": 2
+  },
+  "checks": [
+    {
+      "file": "manifest",
+      "check": "revision",
+      "status": "PASS",
+      "detail": "main-orc-onehanded-entry-v1"
+    },
+    {
+      "file": "manifest",
+      "check": "baseline",
+      "status": "PASS",
+      "detail": "characters/orc-v1/source/onehanded-polish-v1 · main-orc-onehanded-polish-v1"
+    },
+    {
+      "file": "manifest",
+      "check": "selection",
+      "status": "PASS",
+      "detail": "REVIEW_ONLY; equipment-current unchanged"
+    },
+    {
+      "file": "manifest",
+      "check": "approval",
+      "status": "PASS",
+      "detail": "PENDING_CREATOR"
+    },
+    {
+      "file": "manifest",
+      "check": "runtime",
+      "status": "PASS",
+      "detail": "false"
+    },
+    {
+      "file": "manifest",
+      "check": "plan",
+      "status": "PASS",
+      "detail": "montagem usa o plano atual"
+    },
+    {
+      "file": "manifest",
+      "check": "inputs",
+      "status": "PASS",
+      "detail": "hashes dos inputs do plano"
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-current.json",
+      "check": "selection-unchanged",
+      "status": "PASS",
+      "detail": "main-orc-onehanded-v3 · characters/orc-v1/source/onehanded-rescue-v3/manifest.json"
+    },
+    {
+      "file": "Sword",
+      "check": "contract-files",
+      "status": "PASS",
+      "detail": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json · characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/profile.json"
+    },
+    {
+      "file": "Sword",
+      "check": "frame-count",
+      "status": "PASS",
+      "detail": "13/13 vs plano 13"
+    },
+    {
+      "file": "Sword",
+      "check": "masters",
+      "status": "PASS",
+      "detail": "composite, corpo e dedos"
+    },
+    {
+      "file": "Sword",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "256,256 offset 64,64 chão 190 ppu 100"
+    },
+    {
+      "file": "Sword",
+      "check": "visibility-policy",
+      "status": "PASS",
+      "detail": "attack-only-v1"
+    },
+    {
+      "file": "Sword",
+      "check": "weapon-identity",
+      "status": "PASS",
+      "detail": "recruit-sword preservada"
+    },
+    {
+      "file": "Sword",
+      "check": "visible-interval",
+      "status": "PASS",
+      "detail": "[2,10]"
+    },
+    {
+      "file": "Sword",
+      "check": "unarmed-boundaries",
+      "status": "PASS",
+      "detail": "primeiro e último quadro sem arma"
+    },
+    {
+      "file": "Sword",
+      "check": "rest-continuity",
+      "status": "PASS",
+      "detail": "corpo neutro idêntico ao Idle atual nas duas pontas"
+    },
+    {
+      "file": "Sword",
+      "check": "impact",
+      "status": "PASS",
+      "detail": "quadro 8 · 360 ms · evento visual"
+    },
+    {
+      "file": "Sword[0]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "30ms rest vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Sword[0]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[0]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/00.png"
+    },
+    {
+      "file": "Sword[0]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Sword[0]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[1]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "65ms body-preparation vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Sword[1]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[1]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-body.png"
+    },
+    {
+      "file": "Sword[1]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Sword[1]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "35ms establish-grip vis=true grip=[101,131] ang=315 atrás=false"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-body.png"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-hand.png"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[2]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "27 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "50ms entry-elbow-lift vis=true grip=[88,118] ang=330 atrás=false"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/03.png"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/03.png"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[3]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "64 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "45ms entry-shoulder-coil vis=true grip=[98,100] ang=340 atrás=true"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/04.png"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/04.png"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[4]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "59 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "65ms high-guard vis=true grip=[98,89] ang=345 atrás=true"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/03.png"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/03.png"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[5]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "50 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "35ms drive vis=true grip=[157,112] ang=20 atrás=false"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/04.png"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/04.png"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[6]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "40 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "35ms crossing vis=true grip=[158,134] ang=55 atrás=false"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/05.png"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/05.png"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[7]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "55 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "100ms strike-follow-through vis=true grip=[159,142] ang=100 atrás=false"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/06.png"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/06.png"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[8]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "61 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "55ms recovery-bridge vis=true grip=[129,148] ang=102 atrás=false"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/07.png"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/07.png"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[9]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "66 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "80ms recovery vis=true grip=[110,147] ang=105 atrás=false"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/08.png"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/handFront/08.png"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[10]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "52 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Sword[11]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "45ms action-complete vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Sword[11]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[11]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/09.png"
+    },
+    {
+      "file": "Sword[11]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Sword[11]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword[12]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "90ms return-unarmed vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Sword[12]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Sword[12]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/layers/body/10.png"
+    },
+    {
+      "file": "Sword[12]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Sword[12]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Sword",
+      "check": "entry-steps",
+      "status": "INFO",
+      "detail": "[{\"from\":0,\"to\":1,\"phases\":[\"rest\",\"body-preparation\"],\"gripStepPx\":null,\"angleStepDeg\":null},{\"from\":1,\"to\":2,\"phases\":[\"body-preparation\",\"establish-grip\"],\"gripStepPx\":0,\"angleStepDeg\":null},{\"from\":2,\"to\":3,\"phases\":[\"establish-grip\",\"entry-elbow-lift\"],\"gripStepPx\":18.38,\"angleStepDeg\":15},{\"from\":3,\"to\":4,\"phases\":[\"entry-elbow-lift\",\"entry-shoulder-coil\"],\"gripStepPx\":20.59,\"angleStepDeg\":10},{\"from\":4,\"to\":5,\"phases\":[\"entry-shoulder-coil\",\"high-guard\"],\"gripStepPx\":11,\"angleStepDeg\":5},{\"from\":5,\"to\":6,\"phases\":[\"high-guard\",\"drive\"],\"gripStepPx\":63.32,\"angleStepDeg\":35}]"
+    },
+    {
+      "file": "Sword",
+      "check": "timing",
+      "status": "INFO",
+      "detail": "entrada 360 ms · impacto 360 ms · total 730 ms"
+    },
+    {
+      "file": "Sword",
+      "check": "art",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "detail": "anatomia, trajetória, pegada e continuidade dependem do criador; números acima são descritivos"
+    },
+    {
+      "file": "Axe",
+      "check": "contract-files",
+      "status": "PASS",
+      "detail": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json · characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/profile.json"
+    },
+    {
+      "file": "Axe",
+      "check": "frame-count",
+      "status": "PASS",
+      "detail": "12/12 vs plano 12"
+    },
+    {
+      "file": "Axe",
+      "check": "masters",
+      "status": "PASS",
+      "detail": "composite, corpo e dedos"
+    },
+    {
+      "file": "Axe",
+      "check": "canvas",
+      "status": "PASS",
+      "detail": "256,256 offset 64,64 chão 190 ppu 100"
+    },
+    {
+      "file": "Axe",
+      "check": "visibility-policy",
+      "status": "PASS",
+      "detail": "attack-only-v1"
+    },
+    {
+      "file": "Axe",
+      "check": "weapon-identity",
+      "status": "PASS",
+      "detail": "militia-axe preservada"
+    },
+    {
+      "file": "Axe",
+      "check": "visible-interval",
+      "status": "PASS",
+      "detail": "[2,8]"
+    },
+    {
+      "file": "Axe",
+      "check": "unarmed-boundaries",
+      "status": "PASS",
+      "detail": "primeiro e último quadro sem arma"
+    },
+    {
+      "file": "Axe",
+      "check": "rest-continuity",
+      "status": "PASS",
+      "detail": "corpo neutro idêntico ao Idle atual nas duas pontas"
+    },
+    {
+      "file": "Axe",
+      "check": "impact",
+      "status": "PASS",
+      "detail": "quadro 6 · 410 ms · evento visual"
+    },
+    {
+      "file": "Axe[0]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "40ms rest vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Axe[0]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[0]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/00.png"
+    },
+    {
+      "file": "Axe[0]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Axe[0]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[1]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "65ms body-preparation vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Axe[1]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[1]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-body.png"
+    },
+    {
+      "file": "Axe[1]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Axe[1]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "35ms establish-grip vis=true grip=[101,131] ang=300 atrás=false"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-body.png"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "input experiments/main-orc-entry-v1/inputs/prepare-hand.png"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[2]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "27 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "80ms raise vis=true grip=[88,118] ang=325 atrás=false"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/03.png"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/03.png"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[3]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "64 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "155ms cocked-shoulder vis=true grip=[98,100] ang=350 atrás=true"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/04.png"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/04.png"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[4]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "59 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "35ms release vis=true grip=[146,119] ang=35 atrás=false"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/05.png"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/05.png"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[5]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "66 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "115ms impact vis=true grip=[148,143] ang=85 atrás=false"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/06.png"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/06.png"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[6]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "63 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "110ms follow-through vis=true grip=[138,148] ang=90 atrás=false"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/07.png"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/07.png"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[7]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "66 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "130ms recovery vis=true grip=[129,148] ang=80 atrás=false"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/08.png"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/handFront/08.png"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[8]",
+      "check": "grip-fingers",
+      "status": "PASS",
+      "detail": "66 px de luva no raio 6 do grip"
+    },
+    {
+      "file": "Axe[9]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "50ms action-complete vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Axe[9]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[9]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/09.png"
+    },
+    {
+      "file": "Axe[9]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Axe[9]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[10]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "90ms after-attack-settle vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Axe[10]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[10]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/10.png"
+    },
+    {
+      "file": "Axe[10]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Axe[10]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe[11]",
+      "check": "metadata",
+      "status": "PASS",
+      "detail": "100ms return-unarmed vis=false grip=null ang=null atrás=false"
+    },
+    {
+      "file": "Axe[11]",
+      "check": "layers",
+      "status": "PASS",
+      "detail": "4 camadas + composto com hash"
+    },
+    {
+      "file": "Axe[11]",
+      "check": "body-source",
+      "status": "PASS",
+      "detail": "baseline characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/layers/body/11.png"
+    },
+    {
+      "file": "Axe[11]",
+      "check": "hand-source",
+      "status": "PASS",
+      "detail": "camada vazia (sem arma)"
+    },
+    {
+      "file": "Axe[11]",
+      "check": "frame-contract",
+      "status": "PASS",
+      "detail": "chão 190 · alfa parcial 0"
+    },
+    {
+      "file": "Axe",
+      "check": "entry-steps",
+      "status": "INFO",
+      "detail": "[{\"from\":0,\"to\":1,\"phases\":[\"rest\",\"body-preparation\"],\"gripStepPx\":null,\"angleStepDeg\":null},{\"from\":1,\"to\":2,\"phases\":[\"body-preparation\",\"establish-grip\"],\"gripStepPx\":0,\"angleStepDeg\":null},{\"from\":2,\"to\":3,\"phases\":[\"establish-grip\",\"raise\"],\"gripStepPx\":18.38,\"angleStepDeg\":25},{\"from\":3,\"to\":4,\"phases\":[\"raise\",\"cocked-shoulder\"],\"gripStepPx\":20.59,\"angleStepDeg\":25},{\"from\":4,\"to\":5,\"phases\":[\"cocked-shoulder\",\"release\"],\"gripStepPx\":51.62,\"angleStepDeg\":45}]"
+    },
+    {
+      "file": "Axe",
+      "check": "timing",
+      "status": "INFO",
+      "detail": "entrada 410 ms · impacto 410 ms · total 1005 ms"
+    },
+    {
+      "file": "Axe",
+      "check": "art",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "detail": "anatomia, trajetória, pegada e continuidade dependem do criador; números acima são descritivos"
+    },
+    {
+      "file": "Idle",
+      "check": "alias",
+      "status": "PASS",
+      "detail": "Idle idêntico ao baseline"
+    },
+    {
+      "file": "Idle",
+      "check": "weaponless",
+      "status": "PASS",
+      "detail": "sem arma"
+    },
+    {
+      "file": "Walk",
+      "check": "alias",
+      "status": "PASS",
+      "detail": "Walk idêntico ao baseline"
+    },
+    {
+      "file": "Walk",
+      "check": "weaponless",
+      "status": "PASS",
+      "detail": "sem arma"
+    },
+    {
+      "file": "export",
+      "check": "aseprite-build",
+      "status": "PASS",
+      "detail": "dist/editor/main-orc-onehanded-entry-v1/f600aa0675d5e5d3d093 · {\"jobs\":10,\"frames\":98,\"comparedFrames\":98}"
+    },
+    {
+      "file": ".",
+      "check": "unity",
+      "status": "NOT_RUN",
+      "detail": "fora do escopo; nenhuma escrita no projeto Unity"
+    },
+    {
+      "file": ".",
+      "check": "preservation",
+      "status": "NOT_RUN",
+      "detail": "mapa completo de arte anterior validado pelo orquestrador; aqui: hashes de baseline/armas efetivamente reutilizados"
+    },
+    {
+      "file": ".",
+      "check": "artistic-approval",
+      "status": "PENDING_CREATOR",
+      "detail": "validação técnica não é aprovação artística"
+    }
+  ]
+}

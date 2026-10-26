@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-07",
+  "identityId": "7379deab-a507-4bca-acb9-c3b40e03980c",
+  "name": "Veterano V4 Reimaginado",
+  "status": "candidate",
+  "createdAt": "2026-10-23T14:49:32.766Z",
+  "styleId": "pixellab-v4-reinterpretation-v1",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto e atlético (candidato)"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Quarta opção da rodada PixelLab + Aseprite; releitura do Orc Warrior V4",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Releitura de V4: face madura, sobrancelha marcada, presas curtas e olhos âmbar",
+    "hair": "TBD",
+    "ageImpression": "Adulto",
+    "body": "Atlético e compacto, força funcional",
+    "palette": [
+      "verde-oliva",
+      "vermelho carmim",
+      "ferro escuro",
+      "prata contida",
+      "couro castanho"
+    ],
+    "dominantHand": "TBD após resultado",
+    "asymmetries": [
+      "Ombreira metálica assimétrica"
+    ],
+    "lighting": "Candidato PixelLab inspirado nos valores da V4"
+  },
+  "outfit": {
+    "id": "orc-pixellab-07-candidate",
+    "description": "Armadura funcional de ferro escuro, ombreira metálica assimétrica, lenço carmim, tiras de couro e cinto largo.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Asset separado; mãos vazias"
+  },
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": null,
+    "ppu": 100,
+    "counts": {
+      "Idle": 8,
+      "Walk": 12
+    },
+    "note": "Candidatos de uma vista para revisão; tempos e quadros estão nos mestres e clips, sem contrato de runtime."
+  },
+  "references": [
+    {
+      "path": "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png",
+      "role": "creator-requested-design-reference",
+      "sha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f"
+    }
+  ],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Character identity, pose and armor",
+      "category": "CREATE_NEW",
+      "evidence": "New PixelLab generation in a blank Aseprite canvas; the creator requested one V4-inspired option.",
+      "adaptation": "Retain selected visual cues while redesigning the rendering and silhouette; no source pixels pasted.",
+      "artRisk": "Model may reproduce V4 too literally or flatten its distinctive shapes.",
+      "technicalRisk": "Generated concept may need cleanup before any production sprite use.",
+      "dependencies": [
+        "PixelLab Pro extension",
+        "Aseprite blank 128x128 master"
+      ],
+      "validation": "GENERATED_PENDING_CREATOR_REVIEW",
+      "productionImpact": "Candidate comparison only; no production or Unity assets replaced."
+    },
+    {
+      "component": "Palette and material contrast",
+      "category": "REUSE_ADAPTED",
+      "evidence": "V4 style reference: characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png; SHA256 d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f",
+      "adaptation": "Use V4 olive, crimson, dark iron and controlled silver palette cues as PixelLab guidance.",
+      "artRisk": "Palette may overwhelm the new silhouette.",
+      "technicalRisk": "No runtime impact at concept stage.",
+      "dependencies": [
+        "PixelLab style/reference input"
+      ],
+      "validation": "GENERATED_PENDING_CREATOR_REVIEW",
+      "productionImpact": "No active recipe or approval changes."
+    },
+    {
+      "component": "Walk refinement-v2",
+      "category": "CREATE_NEW",
+      "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+      "adaptation": "Animate with text (PixMiniMax)",
+      "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+      "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+      "dependencies": [
+        "Official PixelLab extension and plan",
+        "Own concept"
+      ],
+      "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+      "artisticApproval": "PENDING_CREATOR",
+      "historical": true
+    },
+    {
+      "component": "Idle refinement-v2",
+      "category": "REUSE_ADAPTED",
+      "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+      "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "artRisk": "Two held breathing poses; creator must assess intensity.",
+      "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+      "dependencies": [
+        "Saved own concept",
+        "Aseprite regional edit script"
+      ],
+      "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+      "artisticApproval": "PENDING_CREATOR",
+      "historical": true
+    },
+    {
+      "component": "Corrective v3 motions",
+      "category": "CREATE_NEW",
+      "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+      "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+      "artRisk": "Generated face/material drift and gait require creator review.",
+      "dependencies": [
+        "Authenticated official PixelLab MCP",
+        "Own current concept",
+        "Aseprite"
+      ],
+      "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "component": "Reimaginado Walk v7",
+      "category": "CREATE_NEW",
+      "evidence": "Creator rejected both disconnected neck and side-to-side direction changes in the old body cycle.",
+      "adaptation": "Own unchanged concept reference; twelve manual COCO-18 poses sent to native PixelLab Skeleton V3 MCP; generated whole connected frames, packaged unchanged in Aseprite.",
+      "artRisk": "Skeleton generation is beta; actual gait and identity still require creator evaluation. No universal anatomy or pixel-perfect generative identity claim.",
+      "dependencies": [
+        "Own concept",
+        "PixelLab MCP animate_with_skeleton_v3",
+        "Aseprite"
+      ],
+      "validation": "reports/orc-pixellab-refinement-v7-check.json; reports/orc-all-review-check.json",
+      "artisticApproval": "PENDING_CREATOR"
+    }
+  ],
+  "artExploration": {
+    "experiment": "pixellab-independent-orc-round2-v1",
+    "inputImages": [
+      "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png"
+    ],
+    "styleReferences": [
+      "characters/orc-pixellab-07/source/pixellab-results/Style/v4-style-128.png"
+    ],
+    "referenceSha256": {
+      "characters/orc-01-aseprite-v4/source/aseprite/retouched/concept/concept_front_r_00.png": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f"
+    },
+    "legacyPixels": false,
+    "conceptualInfluence": "Aseprite Orc Warrior V4, explicitly authorized by creator for candidate 07 only.",
+    "textualInspirations": [
+      "World of Warcraft",
+      "Tolkien"
+    ],
+    "candidateAnimationsAuthorized": true,
+    "selection": null
+  },
+  "visualInspirationFrom": {
+    "character": "orc-01-aseprite-v4",
+    "role": "creator-authorized-style-reference-only",
+    "sha256": "d08854d1870db326c99e4211db1565d22fc7371e3f03090ce482368d1163b16f"
+  }
+}

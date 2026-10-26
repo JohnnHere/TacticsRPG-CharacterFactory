@@ -1,0 +1,2550 @@
+{
+  "schemaVersion": 1,
+  "id": "main-orc-onehanded-v3",
+  "kind": "character",
+  "characterId": "orc-v1",
+  "build": "12f9295ca63a54aec5f1",
+  "createdAt": "2026-10-25T09:23:45.211Z",
+  "tool": {
+    "status": "AVAILABLE",
+    "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+    "version": "Aseprite 1.3.18.6-x64",
+    "mode": "batch",
+    "windowsHide": true,
+    "steamClient": "--noinapp",
+    "cloudCalls": "none"
+  },
+  "provenance": {
+    "manifest": {
+      "schemaVersion": 1,
+      "id": "main-orc-onehanded-v3",
+      "kind": "character",
+      "characterId": "orc-v1",
+      "jobs": [
+        {
+          "id": "idle-unarmed",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 5,
+            "durationsMs": [
+              400,
+              450,
+              500,
+              450,
+              400
+            ],
+            "alpha": "binary",
+            "requireTransparency": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Idle/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Idle/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Idle/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Idle/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Idle/04.png"
+          ]
+        },
+        {
+          "id": "walk-unarmed",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 16,
+            "durationsMs": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "alpha": "binary",
+            "requireTransparency": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/07.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/08.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/09.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/10.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/11.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/12.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/13.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/14.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Walk/15.png"
+          ]
+        },
+        {
+          "id": "sword-attack",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+          "sourceSha256": "34f33676d8fc4f3d8cf04aa7935b7eecac81cdf516b327d9c554d3de0f39f653",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 8,
+            "durationsMs": [
+              80,
+              100,
+              130,
+              65,
+              55,
+              95,
+              130,
+              120
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png"
+          ]
+        },
+        {
+          "id": "sword-body",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+          "sourceSha256": "d709610f896208ca6b398dcae6363f7fcf1cade18d5f83d603257d34b98704d5",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 8,
+            "durationsMs": [
+              80,
+              100,
+              130,
+              65,
+              55,
+              95,
+              130,
+              120
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png"
+          ]
+        },
+        {
+          "id": "sword-hand-front",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+          "sourceSha256": "f0a2fe4459a0968fdeb170f4b839066a254d5c7ce0c90241cba3e5119d27b862",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 8,
+            "durationsMs": [
+              80,
+              100,
+              130,
+              65,
+              55,
+              95,
+              130,
+              120
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": false
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png"
+          ]
+        },
+        {
+          "id": "sword-item",
+          "source": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+          "sourceSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4",
+          "profile": {
+            "width": 96,
+            "height": 96,
+            "frames": 1,
+            "alpha": "binary",
+            "requireTransparency": true
+          },
+          "compare": [
+            "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png"
+          ]
+        },
+        {
+          "id": "axe-attack",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite",
+          "sourceSha256": "5a5b0f5f775900888d726520de76205067e24c5be869ef7a672eb2359a909a59",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 10,
+            "durationsMs": [
+              80,
+              120,
+              110,
+              170,
+              70,
+              70,
+              120,
+              150,
+              100,
+              140
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/07.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/08.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/09.png"
+          ]
+        },
+        {
+          "id": "axe-body",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite",
+          "sourceSha256": "006e1b2e9a586ecdc20111b776c8ea6f1307c5ae86b0ec067fffff5d397b004e",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 10,
+            "durationsMs": [
+              80,
+              120,
+              110,
+              170,
+              70,
+              70,
+              120,
+              150,
+              100,
+              140
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": true
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/07.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/08.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/09.png"
+          ]
+        },
+        {
+          "id": "axe-hand-front",
+          "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-hand-front.aseprite",
+          "sourceSha256": "edab61401d5cad4f2025654a9f2393f6f4d1499a10c93ca6f4671cd0a0c14081",
+          "profile": {
+            "width": 256,
+            "height": 256,
+            "frames": 10,
+            "durationsMs": [
+              80,
+              120,
+              110,
+              170,
+              70,
+              70,
+              120,
+              150,
+              100,
+              140
+            ],
+            "alpha": "binary",
+            "requireTransparency": true,
+            "requireContent": false
+          },
+          "compare": [
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/00.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/01.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/02.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/03.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/04.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/05.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/06.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/07.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/08.png",
+            "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/09.png"
+          ]
+        },
+        {
+          "id": "axe-item",
+          "source": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+          "sourceSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+          "profile": {
+            "width": 96,
+            "height": 96,
+            "frames": 1,
+            "alpha": "binary",
+            "requireTransparency": true
+          },
+          "compare": [
+            "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png"
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+        "sha256": "9355d142ee6916e832f32c39d820edbc10b8e2f2d6ce703e1c3132a6bc34e27c"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+        "sha256": "8643d2cdb28f5c84ca9ffc9daceea8685a72bf37b2f224303a3be22a15476ef7"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+        "sha256": "34f33676d8fc4f3d8cf04aa7935b7eecac81cdf516b327d9c554d3de0f39f653"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+        "sha256": "d709610f896208ca6b398dcae6363f7fcf1cade18d5f83d603257d34b98704d5"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+        "sha256": "f0a2fe4459a0968fdeb170f4b839066a254d5c7ce0c90241cba3e5119d27b862"
+      },
+      {
+        "file": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+        "sha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite",
+        "sha256": "5a5b0f5f775900888d726520de76205067e24c5be869ef7a672eb2359a909a59"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite",
+        "sha256": "006e1b2e9a586ecdc20111b776c8ea6f1307c5ae86b0ec067fffff5d397b004e"
+      },
+      {
+        "file": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-hand-front.aseprite",
+        "sha256": "edab61401d5cad4f2025654a9f2393f6f4d1499a10c93ca6f4671cd0a0c14081"
+      },
+      {
+        "file": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+        "sha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f"
+      }
+    ],
+    "version": "Aseprite 1.3.18.6-x64",
+    "bridge": "78d1fbc01262520e53012c7ca0088713ec9caf451a20b06107a0a6fb71621fb9",
+    "exporter": "7cf67124e1f4e3b0b529007e97237fb96e85981cf64570459678d095d050f22b"
+  },
+  "manifest": {
+    "schemaVersion": 1,
+    "id": "main-orc-onehanded-v3",
+    "kind": "character",
+    "characterId": "orc-v1",
+    "jobs": [
+      {
+        "id": "idle-unarmed",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 5,
+          "durationsMs": [
+            400,
+            450,
+            500,
+            450,
+            400
+          ],
+          "alpha": "binary",
+          "requireTransparency": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/04.png"
+        ]
+      },
+      {
+        "id": "walk-unarmed",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 16,
+          "durationsMs": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ],
+          "alpha": "binary",
+          "requireTransparency": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/07.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/08.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/09.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/10.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/11.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/12.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/13.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/14.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/15.png"
+        ]
+      },
+      {
+        "id": "sword-attack",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+        "sourceSha256": "34f33676d8fc4f3d8cf04aa7935b7eecac81cdf516b327d9c554d3de0f39f653",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 8,
+          "durationsMs": [
+            80,
+            100,
+            130,
+            65,
+            55,
+            95,
+            130,
+            120
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png"
+        ]
+      },
+      {
+        "id": "sword-body",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+        "sourceSha256": "d709610f896208ca6b398dcae6363f7fcf1cade18d5f83d603257d34b98704d5",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 8,
+          "durationsMs": [
+            80,
+            100,
+            130,
+            65,
+            55,
+            95,
+            130,
+            120
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png"
+        ]
+      },
+      {
+        "id": "sword-hand-front",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+        "sourceSha256": "f0a2fe4459a0968fdeb170f4b839066a254d5c7ce0c90241cba3e5119d27b862",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 8,
+          "durationsMs": [
+            80,
+            100,
+            130,
+            65,
+            55,
+            95,
+            130,
+            120
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": false
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png"
+        ]
+      },
+      {
+        "id": "sword-item",
+        "source": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+        "sourceSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4",
+        "profile": {
+          "width": 96,
+          "height": 96,
+          "frames": 1,
+          "alpha": "binary",
+          "requireTransparency": true
+        },
+        "compare": [
+          "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png"
+        ]
+      },
+      {
+        "id": "axe-attack",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite",
+        "sourceSha256": "5a5b0f5f775900888d726520de76205067e24c5be869ef7a672eb2359a909a59",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 10,
+          "durationsMs": [
+            80,
+            120,
+            110,
+            170,
+            70,
+            70,
+            120,
+            150,
+            100,
+            140
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/07.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/08.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/09.png"
+        ]
+      },
+      {
+        "id": "axe-body",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite",
+        "sourceSha256": "006e1b2e9a586ecdc20111b776c8ea6f1307c5ae86b0ec067fffff5d397b004e",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 10,
+          "durationsMs": [
+            80,
+            120,
+            110,
+            170,
+            70,
+            70,
+            120,
+            150,
+            100,
+            140
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": true
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/07.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/08.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/09.png"
+        ]
+      },
+      {
+        "id": "axe-hand-front",
+        "source": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-hand-front.aseprite",
+        "sourceSha256": "edab61401d5cad4f2025654a9f2393f6f4d1499a10c93ca6f4671cd0a0c14081",
+        "profile": {
+          "width": 256,
+          "height": 256,
+          "frames": 10,
+          "durationsMs": [
+            80,
+            120,
+            110,
+            170,
+            70,
+            70,
+            120,
+            150,
+            100,
+            140
+          ],
+          "alpha": "binary",
+          "requireTransparency": true,
+          "requireContent": false
+        },
+        "compare": [
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/00.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/01.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/02.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/03.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/04.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/05.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/06.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/07.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/08.png",
+          "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/09.png"
+        ]
+      },
+      {
+        "id": "axe-item",
+        "source": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+        "sourceSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+        "profile": {
+          "width": 96,
+          "height": 96,
+          "frames": 1,
+          "alpha": "binary",
+          "requireTransparency": true
+        },
+        "compare": [
+          "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png"
+        ]
+      }
+    ]
+  },
+  "status": "PASS",
+  "jobs": [
+    {
+      "id": "idle-unarmed",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+        "file": "jobs/idle-unarmed/source.aseprite",
+        "sha256": "9355d142ee6916e832f32c39d820edbc10b8e2f2d6ce703e1c3132a6bc34e27c"
+      },
+      "frames": [
+        {
+          "file": "jobs/idle-unarmed/frames/000.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 400,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/00.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/idle-unarmed/frames/001.png",
+          "sha256": "2519efdddaa044d298d3caf7a628757075dffd4236aaacd39d25d08154ba1e6b",
+          "rgbaSha256": "4a4fe0574b4a2d1cb21e8005a4a6d56758bb569f7d8c4594c109d36deb85c7dd",
+          "durationMs": 450,
+          "width": 256,
+          "height": 256,
+          "left": 84,
+          "right": 170,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 59351,
+          "partial": 0,
+          "colorCount": 51,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/01.png",
+            "sha256": "cedfdec20636a57ad92d8e43de6c233fa5820acb3e43bca3fb7909b3570f4806",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/idle-unarmed/frames/002.png",
+          "sha256": "a7957df07f733a7f4e1ec19ff3d4b40e09cb3f6db9b1f64f5e21b0e0f48bd30e",
+          "rgbaSha256": "e028ff3ecd3dbf643cbe20f556a33289a12b0a58ed59a5bb8314793621a82d3f",
+          "durationMs": 500,
+          "width": 256,
+          "height": 256,
+          "left": 84,
+          "right": 171,
+          "top": 72,
+          "bottom": 190,
+          "contentHeight": 119,
+          "transparent": 59337,
+          "partial": 0,
+          "colorCount": 51,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/02.png",
+            "sha256": "88b023a45f2a2ae7f3e1ae3037a838876aec7b299f8c09874189d76867faeea0",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/idle-unarmed/frames/003.png",
+          "sha256": "2e7c9b7045b92b0f51b33430cd4f06e4f4faf0a6b67ddfac00a6ea669f3199ed",
+          "rgbaSha256": "e2883375901deabc3f00e018014af83fe0295b044ff5337c7524cb7bf0a52acb",
+          "durationMs": 450,
+          "width": 256,
+          "height": 256,
+          "left": 85,
+          "right": 170,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 59329,
+          "partial": 0,
+          "colorCount": 51,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/03.png",
+            "sha256": "806cebbff540b56d29e944691b7d67c4c8b34c9fa91dc2bb8cf143f3027d0e90",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/idle-unarmed/frames/004.png",
+          "sha256": "a1f0a1ac823421e5728b7c6e452e2aa93bbfa9fa349dca2b5e30212506e4de00",
+          "rgbaSha256": "e9146058b53a74a629852c69a68615331f52655ebae4c23a5800bb14060f5ece",
+          "durationMs": 400,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59354,
+          "partial": 0,
+          "colorCount": 55,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/04.png",
+            "sha256": "5595b0cb565b1762f2fc47cd6a03df964079f167f5c6fdf0741a4b5a99bdbe7f",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/idle-unarmed/document.json",
+      "sheetMetadata": "jobs/idle-unarmed/sheet.json"
+    },
+    {
+      "id": "walk-unarmed",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+        "file": "jobs/walk-unarmed/source.aseprite",
+        "sha256": "8643d2cdb28f5c84ca9ffc9daceea8685a72bf37b2f224303a3be22a15476ef7"
+      },
+      "frames": [
+        {
+          "file": "jobs/walk-unarmed/frames/000.png",
+          "sha256": "460072865bc291aa5d8aa47d60290f05d29b90dbf437aa9e917019b11b88da5a",
+          "rgbaSha256": "c4e77218ef7c458b8c9c77fd6c4e62149f503cec21507cc885ed30c20ecee0a2",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 84,
+          "right": 171,
+          "top": 69,
+          "bottom": 187,
+          "contentHeight": 119,
+          "transparent": 59443,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/00.png",
+            "sha256": "d83534a282eeeaf4f1ed6d29e196dc718e2c4c4be8e04360757a503e6080e727",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/001.png",
+          "sha256": "fd7e80ca89b68928a99c455d46fb2f79ddab0b3860e51088a8dd04c5f88abff4",
+          "rgbaSha256": "c0bacd94b71985ab96441dbf6744ecd9728cc94e7f8d3d032344c38410e25ca3",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 83,
+          "right": 174,
+          "top": 69,
+          "bottom": 189,
+          "contentHeight": 121,
+          "transparent": 59545,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/01.png",
+            "sha256": "ce7b178c6ca5a72efe05199bd66ecb6798f86e81f8c945b9ec278e9fb4db47bc",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/002.png",
+          "sha256": "e0e44dc840fcc1de2d25269ef6bcb7071cb92031ec3d93f6daf025a7b3828c79",
+          "rgbaSha256": "ca8787d5d96939f9c44382266b7f64b0eb2597ab499abc821d9cb11d4e93e320",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 81,
+          "right": 174,
+          "top": 70,
+          "bottom": 188,
+          "contentHeight": 119,
+          "transparent": 59817,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/02.png",
+            "sha256": "e46760320f6e6c1fa75dd13686b2301db0040c30e367e9f856a099a14d03c011",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/003.png",
+          "sha256": "92a538a731169f69cc14fb7b73db117ebc9ecf721640efd5045b99cbce9ad3a0",
+          "rgbaSha256": "0d671530c2f47fccbade0f9ccbc9c47925732cecb1a9794d7569930b6fe04a20",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 80,
+          "right": 175,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 59751,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/03.png",
+            "sha256": "94c20d40370e72fdd665058a1854521fb0056e9a4bd53251c7e2d51187c32728",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/004.png",
+          "sha256": "081ee9ab91d79f2a1630c3e1a6820907eb547f7e9164eaec826ce0f965404a10",
+          "rgbaSha256": "a09c09286a32779092345a584d12c05b38eb9df6842a76af8770467fd9ae3ba8",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 82,
+          "right": 173,
+          "top": 70,
+          "bottom": 191,
+          "contentHeight": 122,
+          "transparent": 59753,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/04.png",
+            "sha256": "a416cb287d8fcb394be32472bfa71ebbf00d294e7369dee4584e5a2a8bb5de20",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/005.png",
+          "sha256": "16f3cd2b7d9d89b3fbb936d6925a582e8c4c7b1e4646ef76cc627822bfcf435e",
+          "rgbaSha256": "6fed474f3796ccb7f1590290956b4e7ea2130bdee4fd76213943364849a9f193",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 84,
+          "right": 169,
+          "top": 69,
+          "bottom": 191,
+          "contentHeight": 123,
+          "transparent": 59460,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/05.png",
+            "sha256": "750a4defdbcd06b015d8a7a2525609437e811c474edcb5ca0983df5701206e69",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/006.png",
+          "sha256": "39e7d126a63081daa75b8cfe0be10636fc2eddc3f028171607818ea04cdbe1ee",
+          "rgbaSha256": "96c89206759ca193fadc3f8b38b67865df4fa2c26a60902fc7692af63ad5a239",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 93,
+          "right": 163,
+          "top": 69,
+          "bottom": 190,
+          "contentHeight": 122,
+          "transparent": 59913,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/06.png",
+            "sha256": "e4107418d95a62aa797acc320515f9154d784f87c819c211eea20863f6161a7d",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/007.png",
+          "sha256": "624a341939a61ce71da33d8590b790ec6d93782c3c21bd5549b7bcdc1a479c1c",
+          "rgbaSha256": "1466fe4bf10a7f7f4c5a5992f9c6772753b575c3af26fda3ad5419f979fa754a",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 97,
+          "right": 164,
+          "top": 70,
+          "bottom": 188,
+          "contentHeight": 119,
+          "transparent": 60232,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/07.png",
+            "sha256": "3f053e8dbf4fb37c4048c973912a79067fbace7ed23d618000c29fc912cc080a",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/008.png",
+          "sha256": "ba733f3536c9b56b7a4cce9f868a986c75f991fbf807d61bac0983f73c9c641d",
+          "rgbaSha256": "952219a3d8fe2bc2d931ed09ab68583a7f4fab49d4254222888fcb516cc8081d",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 94,
+          "right": 171,
+          "top": 71,
+          "bottom": 187,
+          "contentHeight": 117,
+          "transparent": 60510,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/08.png",
+            "sha256": "4ff54a7129da03f317b061d09cd6b6ed417d78d62da65d5a4b89a8c9279b840f",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/009.png",
+          "sha256": "09b2a9db08cf29baf2b421c84012e18ef9f92c483d2aee5bb17bbede15fa366c",
+          "rgbaSha256": "782d3d485b2ec034ceefcf35d48e35d8baabfe07ba3563dbd73997b8654b66da",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 93,
+          "right": 166,
+          "top": 71,
+          "bottom": 188,
+          "contentHeight": 118,
+          "transparent": 60334,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/09.png",
+            "sha256": "fef2d652279b169bcdba63731470f7e5cac5384c44b6a96512579d0de94aacca",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/010.png",
+          "sha256": "80daa46362f14ecd67751e69d3a32452c059a6f7c26151f0a70623ba8aadd866",
+          "rgbaSha256": "2c6384f77108cb7905441e19afabae216fe40181e9cd4dc00c456972457cebf1",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 93,
+          "right": 163,
+          "top": 70,
+          "bottom": 188,
+          "contentHeight": 119,
+          "transparent": 59878,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/10.png",
+            "sha256": "fcc49dd920bb32740953c3eda85127373caf7b399763bf3e0c2c8683e92ebfdc",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/011.png",
+          "sha256": "746c35051e65455140456c5601dfebbd500080cb6e2292bc86aadf71c4206f12",
+          "rgbaSha256": "af1261596d20b9c2b279b462a308181d27977db0a9176e824760336c15091516",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 85,
+          "right": 170,
+          "top": 69,
+          "bottom": 187,
+          "contentHeight": 119,
+          "transparent": 59471,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/11.png",
+            "sha256": "45da3eba5d01be44dc584481d73970454ca07096c94cf176644813a5c3bc0235",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/012.png",
+          "sha256": "17384677e2206ed7bcd5bcb0b537aeb50f09be8e9cbf21c25a1c0deddd2d1b09",
+          "rgbaSha256": "6ccd86f902d1e99f2432ea309f2dc38868663a519954c0a433090121eea37ed4",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 83,
+          "right": 174,
+          "top": 69,
+          "bottom": 189,
+          "contentHeight": 121,
+          "transparent": 59547,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/12.png",
+            "sha256": "210eeee73bf8030df68845877934bb16690a669a4895de2917b7789ed727fff3",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/013.png",
+          "sha256": "2ec55dce27c05236e8e1297e769d8d184b1c888b71954408e9bd9fee0b19f380",
+          "rgbaSha256": "46ab90a2615ee585f19a472923b44caeb06ddc5e30b0d5a82891a3937d5be197",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 81,
+          "right": 174,
+          "top": 70,
+          "bottom": 188,
+          "contentHeight": 119,
+          "transparent": 59817,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/13.png",
+            "sha256": "4165c0ee7bbf658221827cc994751888fab38cc6add9eb59bbda4104cc9936b4",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/014.png",
+          "sha256": "164849372c4ab6f3a0939afb594fb7b8bb066dc43f8b3d86fde91663fbfb7c54",
+          "rgbaSha256": "f2bba50d0986bf8f64fd97f10270aa793323c263d5ba1e539a396b0531503436",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 80,
+          "right": 175,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 59753,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/14.png",
+            "sha256": "f0df1bae0c5100ac3bda1b9525bd3749aef6c35822f8247143e2fcbc6e8c07b8",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/walk-unarmed/frames/015.png",
+          "sha256": "9f392bc3f3bcdac104a59256e9f924d8f4f05d77ee3cc7538474dfcf545d1c65",
+          "rgbaSha256": "4e1900778987fbf899784b96d00e54bdcb9cdcdfdef6658f438c5d1689725496",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 82,
+          "right": 173,
+          "top": 70,
+          "bottom": 191,
+          "contentHeight": 122,
+          "transparent": 59759,
+          "partial": 0,
+          "colorCount": 49,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/15.png",
+            "sha256": "74af65f089a7ced4b2794c56def09d455f635a42c7aa468f2c7f1dac0260612d",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/walk-unarmed/document.json",
+      "sheetMetadata": "jobs/walk-unarmed/sheet.json"
+    },
+    {
+      "id": "sword-attack",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+        "file": "jobs/sword-attack/source.aseprite",
+        "sha256": "34f33676d8fc4f3d8cf04aa7935b7eecac81cdf516b327d9c554d3de0f39f653"
+      },
+      "frames": [
+        {
+          "file": "jobs/sword-attack/frames/000.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/00.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/001.png",
+          "sha256": "3ca0b186841598966155238690d7048abdb34f2fb324d3882176be2a8a1b61b6",
+          "rgbaSha256": "6c72ab07c25217b8da81d83532ee142f980edf253d228912d65179a194c8da46",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 34,
+          "right": 169,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 58844,
+          "partial": 0,
+          "colorCount": 44,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/01.png",
+            "sha256": "0ae5282c1ea7a0bf8723935397f4b1fa67ca5200aafcb8229abb8fab2c7396aa",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/002.png",
+          "sha256": "d0af76128593f3e038dbd8ca7eaebf7b1c33a8b8f0eba8d04be07f6d8c6ec031",
+          "rgbaSha256": "960ec3f805f2a143fdafda2d7108ee2855bea6577f9047da1613f3a77c8be264",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 76,
+          "right": 168,
+          "top": 32,
+          "bottom": 190,
+          "contentHeight": 159,
+          "transparent": 58976,
+          "partial": 0,
+          "colorCount": 45,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/02.png",
+            "sha256": "e9d443cd9fb621611bcfb8544908187beb24a7ce594496add7db17a61cad5144",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/003.png",
+          "sha256": "c1c66f8344cc04c3eff50adfa22b9a472513bc4878fc75f104af2530db231d4b",
+          "rgbaSha256": "43054f71e4ac6be23f9ef8824c39757762c20865ec0bb7fc34f96077393720de",
+          "durationMs": 65,
+          "width": 256,
+          "height": 256,
+          "left": 104,
+          "right": 178,
+          "top": 56,
+          "bottom": 190,
+          "contentHeight": 135,
+          "transparent": 60357,
+          "partial": 0,
+          "colorCount": 44,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/03.png",
+            "sha256": "703e047a49947e64b651886be60a2b7bf76efcbb07762470c8dc315447625c7b",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/004.png",
+          "sha256": "369c0e000fa79e5ec23d8339dd80ca4df0535bd885d5a9d995b8b7c12d35c2ee",
+          "rgbaSha256": "9a5e2cf5f5233e4da8e98ba21ddc075434145d185d35c00539cfccebaef40781",
+          "durationMs": 55,
+          "width": 256,
+          "height": 256,
+          "left": 103,
+          "right": 206,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 60372,
+          "partial": 0,
+          "colorCount": 46,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/04.png",
+            "sha256": "8af2e625743032332326b57637841a7dd50c781263f46c672e6bd4a2ffff8df7",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/005.png",
+          "sha256": "4def5fe996149de7f1c5f56579d54632084f9a3a5f7bbcd3ebed5e0d691ef227",
+          "rgbaSha256": "5c0e8d942f71eb0a83f9c28c871cd089040d6d6286e49e32d474c1fa27b413a7",
+          "durationMs": 95,
+          "width": 256,
+          "height": 256,
+          "left": 102,
+          "right": 217,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 60101,
+          "partial": 0,
+          "colorCount": 44,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/05.png",
+            "sha256": "1f23a31f8bc47e892e23e7b9a62ce8b887dfe4225f54e4773e96dcc4d08246b1",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/006.png",
+          "sha256": "e7055cf34ae061ea607b52c87c475b42de6e786e31b512fa1728760316edaa0b",
+          "rgbaSha256": "92c1f0bf11c2b191354c02b2ec58e56558a14d17f15492fe6edff87fc7c36be0",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 97,
+          "right": 168,
+          "top": 72,
+          "bottom": 190,
+          "contentHeight": 119,
+          "transparent": 59790,
+          "partial": 0,
+          "colorCount": 47,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/06.png",
+            "sha256": "3fabf69b3012f19f9ba7762c2841a0ca0c0b1019fd9d81da2c151f7d7526df41",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-attack/frames/007.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/07.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/sword-attack/document.json",
+      "sheetMetadata": "jobs/sword-attack/sheet.json"
+    },
+    {
+      "id": "sword-body",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-body.aseprite",
+        "file": "jobs/sword-body/source.aseprite",
+        "sha256": "d709610f896208ca6b398dcae6363f7fcf1cade18d5f83d603257d34b98704d5"
+      },
+      "frames": [
+        {
+          "file": "jobs/sword-body/frames/000.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/00.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/001.png",
+          "sha256": "0bd0f0e7175e5cf0969346cf85244da4a148b458b6caaf6b5e9c3bfbaefce265",
+          "rgbaSha256": "cd55bec0f70f0959737c9afed417b7713ec76ac0431082137145f11afcd8f757",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 78,
+          "right": 169,
+          "top": 71,
+          "bottom": 190,
+          "contentHeight": 120,
+          "transparent": 59448,
+          "partial": 0,
+          "colorCount": 42,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/01.png",
+            "sha256": "3139f80bf66566ef9d5e7ec7b5c98f898ce5c139fd8f65ad8f9e71e49ee91fce",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/002.png",
+          "sha256": "3d7083b242439fc03c0f0fa56f71b0d607a0a12caf307434c8bea74f5723dae0",
+          "rgbaSha256": "ad81fe9ad004dbc7ed3c2105c2c6a14d66ece76d74ad1fcf7a7214848d7aa294",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 76,
+          "right": 168,
+          "top": 72,
+          "bottom": 190,
+          "contentHeight": 119,
+          "transparent": 59557,
+          "partial": 0,
+          "colorCount": 43,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/02.png",
+            "sha256": "6b3e2392b14cca41317ab92f904c1843ca2aaf8eb814fc07bae99eb00c1c73d5",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/003.png",
+          "sha256": "423c0bb896522f45c0481aba114750b257c8008dbbca9e6a5651190e581ca2b8",
+          "rgbaSha256": "dbdeea1a3b1a0be670720fa9150bd63ba09c8985104e5a9df37255d8aeeec7e2",
+          "durationMs": 65,
+          "width": 256,
+          "height": 256,
+          "left": 104,
+          "right": 162,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 60965,
+          "partial": 0,
+          "colorCount": 42,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/03.png",
+            "sha256": "24bd81289920f689329b90741171870e7c578ba67b4e64b3b097de2c7cb664a8",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/004.png",
+          "sha256": "d7af087f5a7b4cc7cd8850310aacd940f91eb75ba580cc8738e3e5557d02d7df",
+          "rgbaSha256": "decea4cf11c23b6308746aeeb53abbbb6deadefb41e370b5aa4069d79e926472",
+          "durationMs": 55,
+          "width": 256,
+          "height": 256,
+          "left": 103,
+          "right": 181,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 60915,
+          "partial": 0,
+          "colorCount": 44,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/04.png",
+            "sha256": "850119977c66eada7b45b2a659b243d326b8541aa39dfcf2e78429d867a1dce2",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/005.png",
+          "sha256": "420d2e88229dd02dc13d02ef30321eed42cb6f825ae725fe44607842a3205adc",
+          "rgbaSha256": "652609183b1f82d494c9b510b8c0d9d57f8166296bbf845b0321129438c0a57a",
+          "durationMs": 95,
+          "width": 256,
+          "height": 256,
+          "left": 102,
+          "right": 167,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 60673,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/05.png",
+            "sha256": "506ca0dde932a07e9b2a8511ac0e11947cb96ab208cd80dab403380cccf2c79c",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/006.png",
+          "sha256": "bf49d4fd97ab7faf17b4577e639d78006557bb3479a967155ad66c8da69fd31c",
+          "rgbaSha256": "eb44f22dca1940b3f4b5cabb4e2d95f207913834f9586f7770db5cc29dc077fa",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 97,
+          "right": 168,
+          "top": 72,
+          "bottom": 190,
+          "contentHeight": 119,
+          "transparent": 59908,
+          "partial": 0,
+          "colorCount": 45,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/06.png",
+            "sha256": "0d89e0f511fd8d59ab1dfb3d39ce9909e749509028e46b95509b1b52c586fddf",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-body/frames/007.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/body/07.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/sword-body/document.json",
+      "sheetMetadata": "jobs/sword-body/sheet.json"
+    },
+    {
+      "id": "sword-hand-front",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-hand-front.aseprite",
+        "file": "jobs/sword-hand-front/source.aseprite",
+        "sha256": "f0a2fe4459a0968fdeb170f4b839066a254d5c7ce0c90241cba3e5119d27b862"
+      },
+      "frames": [
+        {
+          "file": "jobs/sword-hand-front/frames/000.png",
+          "sha256": "d7a82c85633dad3888d58785831147ac9d4cce18901b31c411828da5919c2201",
+          "rgbaSha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 256,
+          "right": -1,
+          "top": 256,
+          "bottom": -1,
+          "contentHeight": 0,
+          "transparent": 65536,
+          "partial": 0,
+          "colorCount": 0,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/00.png",
+            "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/001.png",
+          "sha256": "a13e2efbd691ee2eca9abf7a304bcde2eab8103e24edfac7eb44940d9c873e49",
+          "rgbaSha256": "5864ce96e5b20111a817ea0c3bbc2916399c834552a89bbc7aba00521c7ca7d7",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 88,
+          "right": 97,
+          "top": 127,
+          "bottom": 133,
+          "contentHeight": 7,
+          "transparent": 65483,
+          "partial": 0,
+          "colorCount": 10,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/01.png",
+            "sha256": "9648b532bf66b7a9ae50cc7bb9af232e0b0ffcc3def5434a037bafbb03349af9",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/002.png",
+          "sha256": "ba40b4d048d4cea090007b8a1171527bac0e48cf906814e5dd7da674e5e96e3f",
+          "rgbaSha256": "aa090b73c039e928105da3d7390d036597ba001e12cc0d07fa0967517d1155da",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 93,
+          "right": 102,
+          "top": 86,
+          "bottom": 92,
+          "contentHeight": 7,
+          "transparent": 65486,
+          "partial": 0,
+          "colorCount": 7,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/02.png",
+            "sha256": "c834132f48ca8e9618da090137d845dc59e6a50ff3f2e3cb6344f02c1d8ddf21",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/003.png",
+          "sha256": "d3bad934d191f2745df76387c71d1ce17446bfb29b6a6424f0c45e833c0e7029",
+          "rgbaSha256": "d12340020751b107df09e353d5ef7f6562118f5adfda62a489bfb1610bb63703",
+          "durationMs": 65,
+          "width": 256,
+          "height": 256,
+          "left": 153,
+          "right": 159,
+          "top": 109,
+          "bottom": 115,
+          "contentHeight": 7,
+          "transparent": 65496,
+          "partial": 0,
+          "colorCount": 10,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/03.png",
+            "sha256": "86817e4191457a09622ded22d17e9fcac7f11e7795f14a7eb80be1ce22a6b52c",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/004.png",
+          "sha256": "fcb3b088991d3aeab0426bd04dfee6d9e0663da5ac517d639aba3c853427657b",
+          "rgbaSha256": "0d55f7347bedf441db6102c1a2a4dbaf62a41014db46ce89a9a7a17632f9ced4",
+          "durationMs": 55,
+          "width": 256,
+          "height": 256,
+          "left": 152,
+          "right": 161,
+          "top": 130,
+          "bottom": 137,
+          "contentHeight": 8,
+          "transparent": 65480,
+          "partial": 0,
+          "colorCount": 12,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/04.png",
+            "sha256": "ccc4bd5bc8f2a0868b27a12fa5d2ee7e4603d8448c5465216bda2d606bef5552",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/005.png",
+          "sha256": "14f5642bbbaee8084e5cf316813fe0ccdc42bbe4cdefd73cfd9def2260b1a87f",
+          "rgbaSha256": "af2686ca3047d75c5b7f4adad30429c55820f92355b2ecefcaa25fc0496927cb",
+          "durationMs": 95,
+          "width": 256,
+          "height": 256,
+          "left": 153,
+          "right": 162,
+          "top": 138,
+          "bottom": 146,
+          "contentHeight": 9,
+          "transparent": 65473,
+          "partial": 0,
+          "colorCount": 13,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/05.png",
+            "sha256": "3d6f42524483663cac9647a4cd8fc864f4d4840e7e002b933a87b7e47077ccb8",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/006.png",
+          "sha256": "f6f9320d393db79677abebc3b5f1817d9fbc6b90fd87553b5cf6ad33638b6aff",
+          "rgbaSha256": "d2b99098cc6a9190a22c027450b39b5dd6f1ec9f8ad400aba874fefca951747f",
+          "durationMs": 130,
+          "width": 256,
+          "height": 256,
+          "left": 105,
+          "right": 111,
+          "top": 143,
+          "bottom": 150,
+          "contentHeight": 8,
+          "transparent": 65484,
+          "partial": 0,
+          "colorCount": 11,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/06.png",
+            "sha256": "757c902cc69e1bfb4cab599fdcc06f7d30f7fdf0afc5762c38445b32fbaf7308",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/sword-hand-front/frames/007.png",
+          "sha256": "d7a82c85633dad3888d58785831147ac9d4cce18901b31c411828da5919c2201",
+          "rgbaSha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 256,
+          "right": -1,
+          "top": 256,
+          "bottom": -1,
+          "contentHeight": 0,
+          "transparent": 65536,
+          "partial": 0,
+          "colorCount": 0,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/layers/handFront/07.png",
+            "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/sword-hand-front/document.json",
+      "sheetMetadata": "jobs/sword-hand-front/sheet.json"
+    },
+    {
+      "id": "sword-item",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+        "file": "jobs/sword-item/source.aseprite",
+        "sha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4"
+      },
+      "frames": [
+        {
+          "file": "jobs/sword-item/frames/000.png",
+          "sha256": "3ec7a57bd5ed918502d983bc62314a84e5527e2d5035b15bfdeb676d1f7676ad",
+          "rgbaSha256": "41d20e76af49b35fa4d3c0da1547da4a09ec8176424694454ad00f8faec6ff33",
+          "durationMs": 100,
+          "width": 96,
+          "height": 96,
+          "left": 35,
+          "right": 60,
+          "top": 7,
+          "bottom": 78,
+          "contentHeight": 72,
+          "transparent": 8510,
+          "partial": 0,
+          "colorCount": 17,
+          "compare": {
+            "file": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+            "sha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/sword-item/document.json",
+      "sheetMetadata": "jobs/sword-item/sheet.json"
+    },
+    {
+      "id": "axe-attack",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite",
+        "file": "jobs/axe-attack/source.aseprite",
+        "sha256": "5a5b0f5f775900888d726520de76205067e24c5be869ef7a672eb2359a909a59"
+      },
+      "frames": [
+        {
+          "file": "jobs/axe-attack/frames/000.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/00.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/001.png",
+          "sha256": "9d59b5769bff47a42829868f929f79b083d738df1b403c91e3e225907e29ab86",
+          "rgbaSha256": "90d7a675efa382277b49cf3e5f145e4fd124a57ab06307261529f8e6a6e3de70",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 61,
+          "right": 169,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 58870,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/01.png",
+            "sha256": "d1a4c822616d4eb7cde2625d108883ff1244e074c97b628fa6d3c22e2fb155af",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/002.png",
+          "sha256": "e461f9b6efe7223174e9e097f401af3d75c67c9239fd074abdc7d84b2c9904c8",
+          "rgbaSha256": "baf082de2107feade6a90a79c4560f2395e625863690e2f0e65033706278b18a",
+          "durationMs": 110,
+          "width": 256,
+          "height": 256,
+          "left": 69,
+          "right": 170,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59070,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/02.png",
+            "sha256": "76457775486cf4e575d6228d77ac75ce94bf1c704a6be1a022b2ec8a80137cae",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/003.png",
+          "sha256": "e71df19c412782b81fbd10bc2f9f212cd932daa1e8d6d2b18d9804fdc2d575d5",
+          "rgbaSha256": "430b35526c23265ded78e130ec8197ec328e2aff582f80f4c1dd399456efd4fb",
+          "durationMs": 170,
+          "width": 256,
+          "height": 256,
+          "left": 76,
+          "right": 168,
+          "top": 56,
+          "bottom": 190,
+          "contentHeight": 135,
+          "transparent": 59183,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/03.png",
+            "sha256": "b8d036e597c011568cbeca458587cde372be16b5028022ffbdb91317cd77bda0",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/004.png",
+          "sha256": "d2912e00bb3cffbee9cb3a9db8c01973c995af5764c434fd9c1f2ce6436617db",
+          "rgbaSha256": "75886e511bceb701868a3f36902be47cab412bfc7b410cafba1848243b7602e0",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 191,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 60369,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/04.png",
+            "sha256": "465f82beb1fa8b7a9cac31e74bf4ae07ba0266b27d7f6e37295b65fe819e9808",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/005.png",
+          "sha256": "6b7fed5c6151d9f5c2888153c70c54abf79ef834afd8ea24f041b2517475e46f",
+          "rgbaSha256": "0c4917d7da0ab42d8e97e40c6cc1604a63339730ee9f1fb0cd581cedf5b9582b",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 190,
+          "top": 76,
+          "bottom": 190,
+          "contentHeight": 115,
+          "transparent": 60723,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/05.png",
+            "sha256": "12cbe480d0c9e48084ad030dcbaa996e94eeddf113894f350c6b15b56f1c96eb",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/006.png",
+          "sha256": "ae05e38ffb1587e01b8bdf88755f00f7d3e17c1fc9a88e714bde0651f3a9bc5a",
+          "rgbaSha256": "93627191fc2402d398e66797b94293939324bc7bafff1344c5378173e387c8de",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 178,
+          "top": 76,
+          "bottom": 190,
+          "contentHeight": 115,
+          "transparent": 60557,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/06.png",
+            "sha256": "5d33e403130d09d3f5ba0f8d60d434c4edb3ce157c1b27cea81b717326ad948b",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/007.png",
+          "sha256": "de15d7829b5a347741da962a54ab9bc0f1bec88454374659b8aad167e0d97628",
+          "rgbaSha256": "d5c850cdb73edc95eac1dac3a5d9ed5771429ebcdfd43f99dc890066737f3553",
+          "durationMs": 150,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 173,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 60184,
+          "partial": 0,
+          "colorCount": 42,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/07.png",
+            "sha256": "3e842498ff9389f24b95de991e27010b092e51d17db52ca889a3c4aeefba2f3d",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/008.png",
+          "sha256": "4dc08e4b721ab0fc2a7d9ad8b9e78c5cf2d46403b3f754b18759f450f37d1379",
+          "rgbaSha256": "d8fcf094e63e984a7448a13e14b6fb9b8fe5601432b023f84dbf7dd3b88b0936",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 89,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59394,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/08.png",
+            "sha256": "cd9b68496439f733e6001cc905ea091dd325d5e9a563aac81c81df4ac059e35b",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-attack/frames/009.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 140,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/09.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/axe-attack/document.json",
+      "sheetMetadata": "jobs/axe-attack/sheet.json"
+    },
+    {
+      "id": "axe-body",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-body.aseprite",
+        "file": "jobs/axe-body/source.aseprite",
+        "sha256": "006e1b2e9a586ecdc20111b776c8ea6f1307c5ae86b0ec067fffff5d397b004e"
+      },
+      "frames": [
+        {
+          "file": "jobs/axe-body/frames/000.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/00.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/001.png",
+          "sha256": "57de1bdde2d0b9bf0c1350467a83df2b0da716d144111e3ceb380cad14df73a2",
+          "rgbaSha256": "88209a2c3d405862453d0229d94e12854dc986ae5c8e24d811cfa088fbc26b16",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 79,
+          "right": 169,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 59324,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/01.png",
+            "sha256": "35da7b01712c58a449da059d297b9f5682c48e7697d16dd904f44b54006435b6",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/002.png",
+          "sha256": "04e9ab32260d1a402213fef5805298a9c9d185f90ba242d790d7b3dbce14b748",
+          "rgbaSha256": "ba2b72821978f1b89ae0788f3823227e598e5a69e23ce18e586f39009b2781c6",
+          "durationMs": 110,
+          "width": 256,
+          "height": 256,
+          "left": 74,
+          "right": 170,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 59536,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/02.png",
+            "sha256": "365836e859850a4cf26d651074c6e3e520f34d87f00357d90153749c254028c5",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/003.png",
+          "sha256": "50adfa274f0a09c586903e82c8aab14bf5d31d45f0f6d08479febd4547a236a4",
+          "rgbaSha256": "171533bb5ef040269b48b73f8db36da4b7e66197c052dc648637c563b983b51d",
+          "durationMs": 170,
+          "width": 256,
+          "height": 256,
+          "left": 76,
+          "right": 168,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 59669,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/03.png",
+            "sha256": "28e38a389b882baaf5348380cb3bfe37b6969e45956da34b6ee0c94bae9df786",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/004.png",
+          "sha256": "ef638ac233f51252715009097f15bc518eb60388b1cc1577ae260fe29a012f2a",
+          "rgbaSha256": "9faca380f6709ff7fb2972b8c91a01a002ee469db49114c273df3b45cd5c965a",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 162,
+          "top": 73,
+          "bottom": 190,
+          "contentHeight": 118,
+          "transparent": 60872,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/04.png",
+            "sha256": "95666dc145336a653e3fc59b1fa1c1f7f19121865bbe02593655ed15faccd668",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/005.png",
+          "sha256": "75ff09c24f00eeec15fc35adb4da61cb62b92962d00596b051edc37eb558a1d2",
+          "rgbaSha256": "6586a2f85c1dbf3934131a994aa6126f859bf54fb34dd011678aa00c5a87dacb",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 162,
+          "top": 76,
+          "bottom": 190,
+          "contentHeight": 115,
+          "transparent": 61202,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/05.png",
+            "sha256": "64bc472c9916e5e0ba53f02aa60776a06655e8f9fd7f0463735ab759dcaba92c",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/006.png",
+          "sha256": "be4190f51f8937e714d2d447ccb676ecc27fc6a6be148ea66b571c899a9f16e7",
+          "rgbaSha256": "df144363ad266c410f74068490446b41d304eae3166c4a877e6387d553df4a27",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 165,
+          "top": 76,
+          "bottom": 190,
+          "contentHeight": 115,
+          "transparent": 60955,
+          "partial": 0,
+          "colorCount": 39,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/06.png",
+            "sha256": "428b4410dd48c1a3e8e803b72099cee46415a7e4dc0ac9da8ac6d90f15ac6443",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/007.png",
+          "sha256": "b60001460a702cd92d0dee4cfc9b7f43edf3ac338a637cb795b8a08f0f745ea7",
+          "rgbaSha256": "76609878093a2da3b2ff6221a42fb8601c9c5cc7b92b0cea795cada5b06ccc7b",
+          "durationMs": 150,
+          "width": 256,
+          "height": 256,
+          "left": 99,
+          "right": 167,
+          "top": 74,
+          "bottom": 190,
+          "contentHeight": 117,
+          "transparent": 60448,
+          "partial": 0,
+          "colorCount": 41,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/07.png",
+            "sha256": "58264c4b6986cb85438891f5f5113149f29b69aa24fae28e5a378bfe0346f355",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/008.png",
+          "sha256": "4dc08e4b721ab0fc2a7d9ad8b9e78c5cf2d46403b3f754b18759f450f37d1379",
+          "rgbaSha256": "d8fcf094e63e984a7448a13e14b6fb9b8fe5601432b023f84dbf7dd3b88b0936",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 89,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59394,
+          "partial": 0,
+          "colorCount": 40,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/08.png",
+            "sha256": "cd9b68496439f733e6001cc905ea091dd325d5e9a563aac81c81df4ac059e35b",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-body/frames/009.png",
+          "sha256": "54bc6772778df893e2b5ccd87a8aab3c865710de9145a13993a27ff19a87fbec",
+          "rgbaSha256": "fda3bce367e07683e08e33dfb30e04394d48cbd5d868c6cde94436110ec90b8a",
+          "durationMs": 140,
+          "width": 256,
+          "height": 256,
+          "left": 86,
+          "right": 169,
+          "top": 70,
+          "bottom": 190,
+          "contentHeight": 121,
+          "transparent": 59353,
+          "partial": 0,
+          "colorCount": 52,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/body/09.png",
+            "sha256": "0a2935c3b472ddc90749af5e233c665fcff50d940ae4e6197ab5cc6a67d2c625",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/axe-body/document.json",
+      "sheetMetadata": "jobs/axe-body/sheet.json"
+    },
+    {
+      "id": "axe-hand-front",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-hand-front.aseprite",
+        "file": "jobs/axe-hand-front/source.aseprite",
+        "sha256": "edab61401d5cad4f2025654a9f2393f6f4d1499a10c93ca6f4671cd0a0c14081"
+      },
+      "frames": [
+        {
+          "file": "jobs/axe-hand-front/frames/000.png",
+          "sha256": "d7a82c85633dad3888d58785831147ac9d4cce18901b31c411828da5919c2201",
+          "rgbaSha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "durationMs": 80,
+          "width": 256,
+          "height": 256,
+          "left": 256,
+          "right": -1,
+          "top": 256,
+          "bottom": -1,
+          "contentHeight": 0,
+          "transparent": 65536,
+          "partial": 0,
+          "colorCount": 0,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/00.png",
+            "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/001.png",
+          "sha256": "e8d599a9b362f3cbfbb4cde144f0f5da3be461de00aae082b2c6c722f006f8aa",
+          "rgbaSha256": "cfcc4f624efeb9896691903d5397ff4c826522373e9a6eab83b09c746a1766f5",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 88,
+          "right": 97,
+          "top": 130,
+          "bottom": 137,
+          "contentHeight": 8,
+          "transparent": 65470,
+          "partial": 0,
+          "colorCount": 8,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/01.png",
+            "sha256": "f45576d9803d831f3e5916cd43722211809d8bcf2e446f7d0c866475f5864bea",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/002.png",
+          "sha256": "0f1303230072b9181a28f340961245b231d4ae3a23bec34e571a92a330accd93",
+          "rgbaSha256": "e76333eb645676283f69a61e6bc8dfb72d5c0a1297d7a1e9a0a9e0dd79c18ab8",
+          "durationMs": 110,
+          "width": 256,
+          "height": 256,
+          "left": 84,
+          "right": 92,
+          "top": 114,
+          "bottom": 121,
+          "contentHeight": 8,
+          "transparent": 65472,
+          "partial": 0,
+          "colorCount": 9,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/02.png",
+            "sha256": "68c5b9a7b23505c362b5b01d92a404ab1a254e0b5501edc003209def4aa483ea",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/003.png",
+          "sha256": "4b46dd2d6f50ed0613825a74bf40ecb212f437cc6ec2e9d4205b09d2f228d14d",
+          "rgbaSha256": "1f398c145f699d6c762c85fd43b01de7969f458b27b70cc701b6b4450646967d",
+          "durationMs": 170,
+          "width": 256,
+          "height": 256,
+          "left": 94,
+          "right": 102,
+          "top": 96,
+          "bottom": 103,
+          "contentHeight": 8,
+          "transparent": 65477,
+          "partial": 0,
+          "colorCount": 8,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/03.png",
+            "sha256": "6af7830ccc5c8c0664029a3a69b00ce1d2a1184f8914ea58aeeeea663163ae99",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/004.png",
+          "sha256": "5d1283dd319cf0d311ff12ea3a81fad4978366b409139d74c0ef38386066bcde",
+          "rgbaSha256": "f5086b54cf857a4549e643d811eed0b0a9a1e815e8635e95e1a978da316e3a28",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 141,
+          "right": 150,
+          "top": 114,
+          "bottom": 122,
+          "contentHeight": 9,
+          "transparent": 65469,
+          "partial": 0,
+          "colorCount": 8,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/04.png",
+            "sha256": "8fbfc88dcabf0aa6f9d5c1d5055d72098d463add82cc965d4615c3bfbc2100ef",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/005.png",
+          "sha256": "e18abfe65a8375ed8801462d459f32e44455c975743e408ef1face4515913f0d",
+          "rgbaSha256": "bf74ddd405562baf6559f431b386c1350ff37343278cd014631c61aa41869f1a",
+          "durationMs": 70,
+          "width": 256,
+          "height": 256,
+          "left": 143,
+          "right": 151,
+          "top": 139,
+          "bottom": 146,
+          "contentHeight": 8,
+          "transparent": 65472,
+          "partial": 0,
+          "colorCount": 18,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/05.png",
+            "sha256": "61a15912e948d5debe0098caf2a9dddec698ae46fae3222738eface39b4d181e",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/006.png",
+          "sha256": "83d1e3f11931c08a1155d511c793f08fdee648037aa62edef065ec3ae5a22dad",
+          "rgbaSha256": "f7d669cfc09c5a299b935662a8068df045b76ec85506e8caa1f810df3b49a0a2",
+          "durationMs": 120,
+          "width": 256,
+          "height": 256,
+          "left": 133,
+          "right": 142,
+          "top": 143,
+          "bottom": 151,
+          "contentHeight": 9,
+          "transparent": 65469,
+          "partial": 0,
+          "colorCount": 14,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/06.png",
+            "sha256": "e529b7620a74a7f7ba15a70036f352df261fcc02b3e7189c4b6fe57be85be7e5",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/007.png",
+          "sha256": "529d13a8fe490b3711529d503a189fdd8b95548d4d3f617083e2a043b0ca6f69",
+          "rgbaSha256": "8e3a8ef7f3ebc594b749ba43bc94785b7f63767270556a3b55c6dc0c9aa51c21",
+          "durationMs": 150,
+          "width": 256,
+          "height": 256,
+          "left": 124,
+          "right": 133,
+          "top": 143,
+          "bottom": 151,
+          "contentHeight": 9,
+          "transparent": 65469,
+          "partial": 0,
+          "colorCount": 15,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/07.png",
+            "sha256": "e8e0323bb8a254a3f6efcb354d9c9b5fcc7920ff22ed818b1b3827a3a15138a3",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/008.png",
+          "sha256": "d7a82c85633dad3888d58785831147ac9d4cce18901b31c411828da5919c2201",
+          "rgbaSha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "durationMs": 100,
+          "width": 256,
+          "height": 256,
+          "left": 256,
+          "right": -1,
+          "top": 256,
+          "bottom": -1,
+          "contentHeight": 0,
+          "transparent": 65536,
+          "partial": 0,
+          "colorCount": 0,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/08.png",
+            "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+            "rgbaIdentical": true
+          },
+          "target": null
+        },
+        {
+          "file": "jobs/axe-hand-front/frames/009.png",
+          "sha256": "d7a82c85633dad3888d58785831147ac9d4cce18901b31c411828da5919c2201",
+          "rgbaSha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "durationMs": 140,
+          "width": 256,
+          "height": 256,
+          "left": 256,
+          "right": -1,
+          "top": 256,
+          "bottom": -1,
+          "contentHeight": 0,
+          "transparent": 65536,
+          "partial": 0,
+          "colorCount": 0,
+          "compare": {
+            "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/layers/handFront/09.png",
+            "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/axe-hand-front/document.json",
+      "sheetMetadata": "jobs/axe-hand-front/sheet.json"
+    },
+    {
+      "id": "axe-item",
+      "tileset": false,
+      "tilesets": [],
+      "source": {
+        "original": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+        "file": "jobs/axe-item/source.aseprite",
+        "sha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f"
+      },
+      "frames": [
+        {
+          "file": "jobs/axe-item/frames/000.png",
+          "sha256": "f0e737184d044d169af9ed57fda6a98319027e4988ce93b3e0a356d9ffe6e3ce",
+          "rgbaSha256": "071884228d9c4fdafe2b34fdf615e84b5a9ae4a78f3b88c408c5e41a1e5e8725",
+          "durationMs": 100,
+          "width": 96,
+          "height": 96,
+          "left": 30,
+          "right": 65,
+          "top": 15,
+          "bottom": 61,
+          "contentHeight": 47,
+          "transparent": 8537,
+          "partial": 0,
+          "colorCount": 17,
+          "compare": {
+            "file": "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png",
+            "sha256": "f573fb9a9264a5d46fc20cdfbebf679cb47cf8944d74a435e25e1d9da795c3a0",
+            "rgbaIdentical": true
+          },
+          "target": null
+        }
+      ],
+      "metadata": "jobs/axe-item/document.json",
+      "sheetMetadata": "jobs/axe-item/sheet.json"
+    }
+  ],
+  "runtimeIntegration": "NOT_RUN",
+  "artisticApproval": "REQUIRES_CREATOR_REVIEW",
+  "summary": {
+    "jobs": 10,
+    "frames": 77,
+    "comparedFrames": 77
+  },
+  "path": "dist/editor/main-orc-onehanded-v3/12f9295ca63a54aec5f1",
+  "reused": true
+}

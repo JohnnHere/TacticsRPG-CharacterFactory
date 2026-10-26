@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-own-head-v6",
+  "kind": "enemy",
+  "purpose": "Localized character-specific head repair, no Unity writes",
+  "jobs": [
+    {
+      "id": "orc-07-walk-v6",
+      "source": "characters/orc-pixellab-07/source/aseprite/walk-study.aseprite",
+      "sourceSha256": "6f5bc6b48edba8acca99a49a3cbbf78cec72f007bd7bfa8c2358229486869c0d",
+      "compare": [
+        "characters/orc-pixellab-07/source/studies/Walk/00.png",
+        "characters/orc-pixellab-07/source/studies/Walk/01.png",
+        "characters/orc-pixellab-07/source/studies/Walk/02.png",
+        "characters/orc-pixellab-07/source/studies/Walk/03.png",
+        "characters/orc-pixellab-07/source/studies/Walk/04.png",
+        "characters/orc-pixellab-07/source/studies/Walk/05.png",
+        "characters/orc-pixellab-07/source/studies/Walk/06.png",
+        "characters/orc-pixellab-07/source/studies/Walk/07.png"
+      ],
+      "profile": {
+        "width": 128,
+        "height": 128,
+        "frames": 8,
+        "durationsMs": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "alpha": "any",
+        "requireTransparency": true
+      }
+    }
+  ]
+}

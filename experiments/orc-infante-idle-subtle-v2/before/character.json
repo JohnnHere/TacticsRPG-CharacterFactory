@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "orc-pixellab-05",
+  "identityId": "9891c3ed-5b4c-44c0-8192-cf7786d8a7ef",
+  "name": "Infante de Ferro",
+  "status": "candidate",
+  "createdAt": "2026-10-23T12:53:21.732Z",
+  "styleId": "pixellab-orc-contrast-study-v2",
+  "race": {
+    "id": "orc",
+    "name": "Orc",
+    "bodyProfile": "Robusto (variações individuais candidatas)"
+  },
+  "job": {
+    "id": "warrior",
+    "name": "Warrior"
+  },
+  "role": "Estudo independente de Orc Warrior",
+  "culture": "TBD",
+  "faction": "TBD",
+  "form": "base",
+  "appearance": {
+    "face": "Proposta PixelLab pendente",
+    "hair": "Careca; coque removido no Aseprite com retoque restrito à coroa da cabeça.",
+    "ageImpression": "Adulto",
+    "body": "Orc mais alto e imponente, pele cinza, pescoço protegido e proporções de infantaria pesada.",
+    "palette": [],
+    "dominantHand": "TBD após resultado",
+    "asymmetries": [],
+    "lighting": "PixelLab candidato"
+  },
+  "outfit": {
+    "id": "orc-pixellab-05-candidate",
+    "description": "Armadura de ferro escuro com gorjal, ombreiras articuladas com pontas, placas chanfradas, rebites, braçadeiras, malha nas juntas e na cintura, couro e pano vinho; mãos vazias.",
+    "equipmentMode": "weapon-independent-base",
+    "weapon": "Asset separado; mãos vazias",
+    "silhouette": "Alta e pesada, com ombros angulares e pernas legíveis."
+  },
+  "profile": {
+    "width": 128,
+    "height": 128,
+    "groundY": null,
+    "ppu": 100,
+    "counts": {
+      "Idle": 8,
+      "Walk": 16
+    },
+    "note": "Candidatos de uma vista para revisão; tempos e quadros estão nos mestres e clips, sem contrato de runtime."
+  },
+  "references": [],
+  "derivedFrom": null,
+  "reuseAssessment": [
+    {
+      "component": "Character identity, silhouette, face, palette, outfit and poses",
+      "category": "CREATE_NEW",
+      "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+      "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+      "artRisk": "The model may converge on the first round despite different prompts.",
+      "technicalRisk": "Animation and small-scale readability remain review studies.",
+      "dependencies": [
+        "Installed PixelLab extension and authenticated account"
+      ],
+      "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+      "productionImpact": "No current candidate, approval, or production asset is replaced."
+    },
+    {
+      "component": "Aseprite masters, export and review tools",
+      "category": "REUSE_DIRECT",
+      "evidence": "Existing local Aseprite bridge and packaging workflow.",
+      "adaptation": "New independent IDs and source paths.",
+      "artRisk": "Technical export does not prove artistic quality.",
+      "technicalRisk": "None beyond normal preview checks.",
+      "dependencies": [
+        "Aseprite 1.3+"
+      ],
+      "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+      "productionImpact": "Candidate review only."
+    },
+    {
+      "component": "Idle refinement-v2",
+      "category": "REUSE_ADAPTED",
+      "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+      "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+      "artRisk": "Two held breathing poses; creator must assess intensity.",
+      "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+      "dependencies": [
+        "Saved own concept",
+        "Aseprite regional edit script"
+      ],
+      "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+      "artisticApproval": "PENDING_CREATOR",
+      "historical": true
+    },
+    {
+      "component": "Walk refinement-v2",
+      "category": "CREATE_NEW",
+      "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+      "adaptation": "Animate with text (PixMiniMax)",
+      "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+      "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+      "dependencies": [
+        "Official PixelLab extension and plan",
+        "Own concept"
+      ],
+      "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+      "artisticApproval": "PENDING_CREATOR",
+      "historical": true
+    },
+    {
+      "component": "Corrective v3 motions",
+      "category": "CREATE_NEW",
+      "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+      "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+      "artRisk": "Generated face/material drift and gait require creator review.",
+      "dependencies": [
+        "Authenticated official PixelLab MCP",
+        "Own current concept",
+        "Aseprite"
+      ],
+      "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+      "artisticApproval": "PENDING_CREATOR"
+    }
+  ],
+  "artExploration": {
+    "experiment": "pixellab-independent-orc-round2-v1",
+    "inputImages": [],
+    "styleReferences": [],
+    "legacyPixels": false,
+    "textualInspirations": [
+      "Tolkien",
+      "World of Warcraft"
+    ],
+    "candidateAnimationsAuthorized": true,
+    "selection": null
+  }
+}

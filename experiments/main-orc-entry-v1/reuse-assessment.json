@@ -1,0 +1,44 @@
+[
+  {
+    "part": "Sword/Axe source artwork",
+    "classification": "REUSE_DIRECT",
+    "evidence": "Current weapon.json + baseline clip weapon hashes; same assets, scale1, no redraw",
+    "risk": "Grips of another asset may have incompatible shaft/guard widths",
+    "validation": "Exact hashes and existing renderer composition"
+  },
+  {
+    "part": "Successful strike/impact/recovery",
+    "classification": "REUSE_DIRECT",
+    "evidence": "entry-plan maps exact baseline body/finger frames, including corrected Sword crossing",
+    "risk": "Cadence shifts artistic impact local timestamps",
+    "validation": "Pixel comparisons and visual playback; no gameplay damage changes"
+  },
+  {
+    "part": "Sword entry bridges",
+    "classification": "REUSE_ADAPTED",
+    "evidence": "Own baseline Axe3/4 body and fingers; Sword orientations330/340; no other character",
+    "risk": "Wrist/guard occlusion requires composite inspection",
+    "validation": "Real preview and grip crops"
+  },
+  {
+    "part": "Arm preparation",
+    "classification": "CREATE_NEW",
+    "evidence": "One masked Pro Flash inpaint over own neutral, frozen pixels imported/retouched in Aseprite; prepare-arm.aseprite",
+    "risk": "Generated anatomy/edge changes",
+    "validation": "Mask/manual cleanup provenance, exact protected regions, source export and visual inspection"
+  },
+  {
+    "part": "Review system",
+    "classification": "REUSE_ADAPTED",
+    "evidence": "Existing review builder, compositor and exporter; optional --entry mode",
+    "risk": "Wrong comparison baseline or stale paths",
+    "validation": "Actual metadata/pixels, local links, normal/slow/step"
+  },
+  {
+    "part": "Dynamic Unity equipment",
+    "classification": "REQUIRES_EXTENSION",
+    "evidence": "Existing factory/runtime contracts; offline composition only",
+    "risk": "Cannot infer runtime compatibility from preview",
+    "validation": "NOT_RUN; no Unity integration in this task"
+  }
+]

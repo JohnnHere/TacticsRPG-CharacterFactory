@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25",
+  "character": "orc-v1",
+  "view": "front_r / south-east only",
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "ppu": 100,
+  "dominantHand": "right",
+  "runtimeImplemented": false,
+  "jobs": [
+    {
+      "state": "Walk",
+      "weapon": "recruit-sword",
+      "clip": "characters/orc-v1/source/equipment/recruit-sword/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-walk.aseprite"
+    },
+    {
+      "state": "Attack",
+      "weapon": "recruit-sword",
+      "clip": "characters/orc-v1/source/equipment/recruit-sword/Attack/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-attack.aseprite"
+    },
+    {
+      "state": "Walk",
+      "weapon": "militia-axe",
+      "clip": "characters/orc-v1/source/equipment/militia-axe/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-walk.aseprite"
+    },
+    {
+      "state": "Attack",
+      "weapon": "militia-axe",
+      "clip": "characters/orc-v1/source/equipment/militia-axe/Attack/clip.json",
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-attack.aseprite"
+    }
+  ]
+}
