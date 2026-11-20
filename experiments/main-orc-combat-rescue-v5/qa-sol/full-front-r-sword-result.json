@@ -1,0 +1,2221 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T14:12:09.952Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "sessionLabel": "qa-sol",
+    "sameReviewer": true,
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false
+  },
+  "verdict": "INCONCLUSIVE",
+  "verdictReason": "Continuous perceptual observation at native/game scale and normal playback speed was not available through this image/screenshot interface. Functional Chromium playback and discrete frame inspection succeeded, but do not establish continuous motion quality.",
+  "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+  "confirmedArtisticBlockingFindings": [],
+  "revisionRequested": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "fullCycleArtisticallyApproved": false,
+  "automaticPropagationAllowed": false,
+  "integrationAllowed": false,
+  "runtimeImplemented": false,
+  "otherQaArtifactsRead": false,
+  "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-sol/",
+  "temporalPerception": {
+    "continuous1xVisuallyObserved": false,
+    "continuousSlowVisuallyObserved": false,
+    "actualChromiumPlaybackExecuted": true,
+    "frameStepAndStaticScreenshotsObserved": true,
+    "staticNativeAndNearGameScaleObserved": true,
+    "limitationIsReviewCapabilityNotProvenArtDefect": true
+  },
+  "remainingGate": "Perceptually observe the exact complete cycle continuously at native128/near-game64 scale and 1x, then slow/frame-step for mechanics. Do not request pixel revisions or regeneration solely because this interface cannot provide that observation.",
+  "inputFreeze": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-cycles-input-freeze.json",
+    "sha256": "465966f8613aaa83f652dd1313094687da43c8a953f03fe776a7512a49291af5"
+  },
+  "scope": "Only complete front_r/Sword13f/730ms candidate after GRIP_FRONT_R_SWORD_FULL_READY",
+  "readinessCheckpointObserved": "GRIP_FRONT_R_SWORD_FULL_READY",
+  "clip": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+    "sha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1"
+  },
+  "frameCount": 13,
+  "totalDurationMs": 730,
+  "readyForOtherGripExpansion": false,
+  "visibleInterval": [
+    2,
+    10
+  ],
+  "hiddenFrames": [
+    0,
+    1,
+    11,
+    12
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "rest",
+      "durationMs": 30,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/00.png",
+        "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/00.png",
+        "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb"
+      },
+      "staticObservation": "Unarmed body/hand pose at rest; equipment layers empty.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/01.png",
+        "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/01.png",
+        "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c"
+      },
+      "staticObservation": "Unarmed body preparation; equipment layers empty.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        103,
+        130
+      ],
+      "rotationDeg": 320,
+      "unwrappedAngleDeg": 320,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/02.png",
+        "sha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/02.png",
+        "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c"
+      },
+      "staticObservation": "Low active glove on image-left covers central hilt; previous static viable grip maintained.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 3,
+      "phase": "anticipation",
+      "durationMs": 50,
+      "weaponVisible": true,
+      "rightGrip": [
+        90,
+        119
+      ],
+      "rotationDeg": 340,
+      "unwrappedAngleDeg": 340,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/03.png",
+        "sha256": "aed632d8fc84d75c42dbb9c7916d900e2a009fc2d60e07b8fb1f3cb5a7400fcf"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/03.png",
+        "sha256": "bf735d58c77942fb199408f70da7f3097e690370d322eb5ad0612df389ec4821"
+      },
+      "staticObservation": "Foreshortened image-left glove connects to bracer/forearm; guard above and pommel below pass through closed leather mass.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 4,
+      "phase": "coil-behind",
+      "durationMs": 45,
+      "weaponVisible": true,
+      "rightGrip": [
+        98,
+        100
+      ],
+      "rotationDeg": 350,
+      "unwrappedAngleDeg": 350,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/04.png",
+        "sha256": "55919e80382a1638e7a9458feb0cc930ada99423cc8c1c5bb114ba7c76920201"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/04.png",
+        "sha256": "64e9675051021be7e4362d71859fda8b91fdd0a8ae4b6eebd0b1f2ad8dfa4e67"
+      },
+      "staticObservation": "Curled raised glove near pauldron is reached by forearm from below-left; hilt crosses leather hand region, not exclusively armor.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 5,
+      "phase": "apex-hold",
+      "durationMs": 65,
+      "weaponVisible": true,
+      "rightGrip": [
+        98,
+        89
+      ],
+      "rotationDeg": 0,
+      "unwrappedAngleDeg": 360,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/05.png",
+        "sha256": "bf640004d70a3fb23d2d157106d53094f58e1bbc9eeb5da9dd21278cbf26a0ee"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/05.png",
+        "sha256": "ed6f6d012aad0cc23a481f8c0ecde3484e6c3cb4df47092da1445c6a562226e3"
+      },
+      "staticObservation": "High fist above wrist and bracer closes around hilt below guard; no floating glove observed.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 6,
+      "phase": "slash-release",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        155,
+        114
+      ],
+      "rotationDeg": 32,
+      "unwrappedAngleDeg": 392,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/06.png",
+        "sha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/06.png",
+        "sha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf"
+      },
+      "staticObservation": "Active right arm crosses chest to the image-right hand; low hip hand remains inactive. Isolated key is not full-motion proof.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 7,
+      "phase": "contact",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        132
+      ],
+      "rotationDeg": 80,
+      "unwrappedAngleDeg": 440,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/07.png",
+        "sha256": "d809f5fd319b5e0f2d37c92dd4570cd0fe584202b6d287324175096ab9dfd72d"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/07.png",
+        "sha256": "263d1aea6670c0d5fc2f47904792ac5a6475fa5fe985d5758db0bbe292fea067"
+      },
+      "staticObservation": "Glove beyond crossing forearm cuff covers central hilt; pommel projects onto cuff region but hilt remains connected through glove.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 8,
+      "phase": "follow-through",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        148
+      ],
+      "rotationDeg": 128,
+      "unwrappedAngleDeg": 488,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/08.png",
+        "sha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/08.png",
+        "sha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6"
+      },
+      "staticObservation": "Low active glove under crossing forearm, distinct from upper overlapping inactive-arm leather; previous static viable grip maintained.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 9,
+      "phase": "recoil",
+      "durationMs": 55,
+      "weaponVisible": true,
+      "rightGrip": [
+        134,
+        147
+      ],
+      "rotationDeg": 118,
+      "unwrappedAngleDeg": 478,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/09.png",
+        "sha256": "1d2494acb22dc174e4fa74f5e4dd48d98a1e7713288caffe821ed269add421d5"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/09.png",
+        "sha256": "7e89ecf20cdbd62e400047f49a21f15111a118eb2e3665ccb2a1b459f55189e1"
+      },
+      "staticObservation": "Active glove retracts below central cuff; opposite image-right fist remains inactive; hilt follows low glove.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 10,
+      "phase": "settle-grip",
+      "durationMs": 80,
+      "weaponVisible": true,
+      "rightGrip": [
+        110,
+        150
+      ],
+      "rotationDeg": 100,
+      "unwrappedAngleDeg": 460,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/10.png",
+        "sha256": "cd3a8ead1921ea6ab086554e59337ff0c1dabc585a993ff4cd5f11ef8120fe55"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/10.png",
+        "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432"
+      },
+      "staticObservation": "Dark glove under hanging bracer, left of red tasset; cloth not used as palm. Pommel-left/guard-right cross glove; low contrast needs motion review.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 11,
+      "phase": "release-grip",
+      "durationMs": 45,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/11.png",
+        "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/11.png",
+        "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432"
+      },
+      "staticObservation": "Equipment/handFront absent; release body preserved.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 12,
+      "phase": "return-to-guard",
+      "durationMs": 90,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/12.png",
+        "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab"
+      },
+      "nativeBodyExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/12.png",
+        "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb"
+      },
+      "staticObservation": "Final unarmed guard; equipment/handFront absent.",
+      "blockingStaticDefectObserved": false
+    }
+  ],
+  "sequenceObservations": {
+    "entryExit": "Weapon absent0/1, appears2..10, disappears11/12 per attack-only policy; no draw/sheath imposed. Perceived pop or naturalness remains unjudged.",
+    "itemPath": "Discrete poses raise blade image-left, pass image-right, descend and recover to more horizontal above ground. This is pose-sequence evidence, not continuous arc approval.",
+    "contact": "Hilt/closed glove/wrist/bracer relationship visually plausible in inspected poses; no transparent separation or exclusively armor-rooted grip found.",
+    "occlusion": "Hand covers central hilt while guard/blade/pommel remain independent outside the grip. Dense F07/F08 arm/cuff/pommel overlap needs temporal review.",
+    "preservation": "13/13 bodies independently ARGB-identical to parent; timing arrays and four saved master headers match parent730ms. No change requested to protected body/timing."
+  },
+  "temporalWatchpoints": [
+    {
+      "frames": [
+        3,
+        4,
+        5
+      ],
+      "reason": "Raised glove/forearm continuity"
+    },
+    {
+      "frames": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "reason": "Rapid cross-body passage and blade acceleration; possible occlusion pops cannot be accepted or rejected from screenshots alone"
+    },
+    {
+      "frames": [
+        7,
+        8
+      ],
+      "reason": "Pommel projection onto cuff and dense overlapping arms"
+    },
+    {
+      "frames": [
+        8,
+        9,
+        10
+      ],
+      "reason": "Wrist reversal, dark glove at recovery and readable connection at tactical scale"
+    },
+    {
+      "frames": [
+        10,
+        11
+      ],
+      "reason": "Weapon disappearance within attack-only contract; assess perceived exit in normal playback"
+    }
+  ],
+  "independentTechnicalChecks": {
+    "sourceHashes": {
+      "name": "full-front-r-sword",
+      "clip": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+        "sha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1"
+      },
+      "frameCount": 13,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "totalDurationMs": 730,
+      "evidenceFiles": [
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/checkpoint.json",
+          "sha256": "ae73a6dac12c2622e5cbe4ac548f70e7f2188d6f91f16d7bbed379a63facfe0a",
+          "role": "submission checkpoint"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/report.md",
+          "sha256": "c4630d753dd87fd3b5ce4fc0d5d92ec7baada685313b7e0b640a46dc6dfb3f34",
+          "role": "producer report"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+          "sha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+          "declaredSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+          "declaredMatches": true,
+          "role": "exact reviewed full clip"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/index.html",
+          "sha256": "1e413514a7f80260ac1ef5838729a5b96cef95f4f5c8aaaaa1423ae5a85cc40a",
+          "role": "original player opened in Chromium"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/composite.aseprite",
+          "sha256": "3ee5755c874ccc007aa7f67af9ea5cc839d2cf98b5c0bee25dbcf0bf9acf6410",
+          "declaredSha256": "3ee5755c874ccc007aa7f67af9ea5cc839d2cf98b5c0bee25dbcf0bf9acf6410",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/body.aseprite",
+          "sha256": "b85c18f315dfed5cb37536398719b18454e59d2d27f49d166d0f0fb3b10deb38",
+          "declaredSha256": "b85c18f315dfed5cb37536398719b18454e59d2d27f49d166d0f0fb3b10deb38",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/native.aseprite",
+          "sha256": "8fab269d162d995ed3acdbbb09b8a03a3750ca5f05d923f35d21c1e55e8a87d7",
+          "declaredSha256": "8fab269d162d995ed3acdbbb09b8a03a3750ca5f05d923f35d21c1e55e8a87d7",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/hand.aseprite",
+          "sha256": "d2c6a911295e08ac057ae81c79ec77d3fcad23cee0d1c769e28c147d165a4fce",
+          "declaredSha256": "d2c6a911295e08ac057ae81c79ec77d3fcad23cee0d1c769e28c147d165a4fce",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/00.png",
+          "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/00.png",
+          "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+          "declaredSha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/00.png",
+          "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/01.png",
+          "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/01.png",
+          "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+          "declaredSha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/01.png",
+          "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/02.png",
+          "sha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+          "declaredSha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/02.png",
+          "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+          "declaredSha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/02.png",
+          "sha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+          "declaredSha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/02.png",
+          "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/02.png",
+          "sha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+          "declaredSha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/02.png",
+          "sha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+          "declaredSha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/03.png",
+          "sha256": "aed632d8fc84d75c42dbb9c7916d900e2a009fc2d60e07b8fb1f3cb5a7400fcf",
+          "declaredSha256": "aed632d8fc84d75c42dbb9c7916d900e2a009fc2d60e07b8fb1f3cb5a7400fcf",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/03.png",
+          "sha256": "bf735d58c77942fb199408f70da7f3097e690370d322eb5ad0612df389ec4821",
+          "declaredSha256": "bf735d58c77942fb199408f70da7f3097e690370d322eb5ad0612df389ec4821",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/03.png",
+          "sha256": "de4cd0ab1e666e17d4668dae3695761a06f602b3c67e57466e85d67162b12d02",
+          "declaredSha256": "de4cd0ab1e666e17d4668dae3695761a06f602b3c67e57466e85d67162b12d02",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/03.png",
+          "sha256": "47a216eca6b44ab20242aba5f4f18a8e5f9f87a2a4147852d263060d0fad3293",
+          "declaredSha256": "47a216eca6b44ab20242aba5f4f18a8e5f9f87a2a4147852d263060d0fad3293",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/03.png",
+          "sha256": "b031278680a5fce1b7b1520af00e6ee7e871766ee8a0190bd662c2049a5f5264",
+          "declaredSha256": "b031278680a5fce1b7b1520af00e6ee7e871766ee8a0190bd662c2049a5f5264",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/03.png",
+          "sha256": "7cc366e6510f2ca8c83fa0608cd2b5e1d499055b88df30bcd8f23f070251d072",
+          "declaredSha256": "7cc366e6510f2ca8c83fa0608cd2b5e1d499055b88df30bcd8f23f070251d072",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/04.png",
+          "sha256": "55919e80382a1638e7a9458feb0cc930ada99423cc8c1c5bb114ba7c76920201",
+          "declaredSha256": "55919e80382a1638e7a9458feb0cc930ada99423cc8c1c5bb114ba7c76920201",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/04.png",
+          "sha256": "64e9675051021be7e4362d71859fda8b91fdd0a8ae4b6eebd0b1f2ad8dfa4e67",
+          "declaredSha256": "64e9675051021be7e4362d71859fda8b91fdd0a8ae4b6eebd0b1f2ad8dfa4e67",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/04.png",
+          "sha256": "1c338dce0e4dc23e9f4dd8d0a45a46c148970c7b655bb09915935328aea93287",
+          "declaredSha256": "1c338dce0e4dc23e9f4dd8d0a45a46c148970c7b655bb09915935328aea93287",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/04.png",
+          "sha256": "259e68c7c4daaccf7df4c54887763e0c68b88589793adda687fb30a96463e11b",
+          "declaredSha256": "259e68c7c4daaccf7df4c54887763e0c68b88589793adda687fb30a96463e11b",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/04.png",
+          "sha256": "41181a45911b41bcd94f909bf29d56b1ee4b0fd578dc3f315b32213c3160382c",
+          "declaredSha256": "41181a45911b41bcd94f909bf29d56b1ee4b0fd578dc3f315b32213c3160382c",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/04.png",
+          "sha256": "87b248f71a8cfe09f1d57b2cc960814098161d95d5b8f9060a8f139b5c5d5d35",
+          "declaredSha256": "87b248f71a8cfe09f1d57b2cc960814098161d95d5b8f9060a8f139b5c5d5d35",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/05.png",
+          "sha256": "bf640004d70a3fb23d2d157106d53094f58e1bbc9eeb5da9dd21278cbf26a0ee",
+          "declaredSha256": "bf640004d70a3fb23d2d157106d53094f58e1bbc9eeb5da9dd21278cbf26a0ee",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/05.png",
+          "sha256": "ed6f6d012aad0cc23a481f8c0ecde3484e6c3cb4df47092da1445c6a562226e3",
+          "declaredSha256": "ed6f6d012aad0cc23a481f8c0ecde3484e6c3cb4df47092da1445c6a562226e3",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/05.png",
+          "sha256": "570638737458aaf6f87eebef9f60f20b5f3380fe13d39470a8a9fb598e45f432",
+          "declaredSha256": "570638737458aaf6f87eebef9f60f20b5f3380fe13d39470a8a9fb598e45f432",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/05.png",
+          "sha256": "0037c29f52bfdd552417f7593f59ab8e48eea5a194a953cf8d92355529ec3905",
+          "declaredSha256": "0037c29f52bfdd552417f7593f59ab8e48eea5a194a953cf8d92355529ec3905",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/05.png",
+          "sha256": "4a2eac56c9e168ebbacf0d33a54bb35c1d6d711b6d47e336baf8a72ecb435321",
+          "declaredSha256": "4a2eac56c9e168ebbacf0d33a54bb35c1d6d711b6d47e336baf8a72ecb435321",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/05.png",
+          "sha256": "60517134a7f1a169cfc8fe15c702c41013c4e6d7e88a1319a42a6a43e58b4e51",
+          "declaredSha256": "60517134a7f1a169cfc8fe15c702c41013c4e6d7e88a1319a42a6a43e58b4e51",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/06.png",
+          "sha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+          "declaredSha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/06.png",
+          "sha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+          "declaredSha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/06.png",
+          "sha256": "142197915f2491ff6103dab140a171be6e593ac8df031c2390565642de448a80",
+          "declaredSha256": "142197915f2491ff6103dab140a171be6e593ac8df031c2390565642de448a80",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/06.png",
+          "sha256": "1d0b88a2ba2772f59f87aeb0dc90e62339c414a11de5f34f1e7b28ca0b3a3687",
+          "declaredSha256": "1d0b88a2ba2772f59f87aeb0dc90e62339c414a11de5f34f1e7b28ca0b3a3687",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/06.png",
+          "sha256": "c864cf36661414f5699da37739b66466c703a4dfe1f2ccd07ff1e47e4330cc6c",
+          "declaredSha256": "c864cf36661414f5699da37739b66466c703a4dfe1f2ccd07ff1e47e4330cc6c",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/06.png",
+          "sha256": "c65a9bb30442f9417b17ce327b00d93f7ab75b582bbae29201119df6ba83189b",
+          "declaredSha256": "c65a9bb30442f9417b17ce327b00d93f7ab75b582bbae29201119df6ba83189b",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/07.png",
+          "sha256": "d809f5fd319b5e0f2d37c92dd4570cd0fe584202b6d287324175096ab9dfd72d",
+          "declaredSha256": "d809f5fd319b5e0f2d37c92dd4570cd0fe584202b6d287324175096ab9dfd72d",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/07.png",
+          "sha256": "263d1aea6670c0d5fc2f47904792ac5a6475fa5fe985d5758db0bbe292fea067",
+          "declaredSha256": "263d1aea6670c0d5fc2f47904792ac5a6475fa5fe985d5758db0bbe292fea067",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/07.png",
+          "sha256": "086d439774824dca199858966175afb9e44e73a07006234424fc3907eb24169d",
+          "declaredSha256": "086d439774824dca199858966175afb9e44e73a07006234424fc3907eb24169d",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/07.png",
+          "sha256": "b8031aa8f5cab79aa57c988503b7cb6e3778f1cdecf77a1646632d054e99b27c",
+          "declaredSha256": "b8031aa8f5cab79aa57c988503b7cb6e3778f1cdecf77a1646632d054e99b27c",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/07.png",
+          "sha256": "0c04c3e04b156c68e836919a3484b375350491082589a01a137f5f8fb6b8188b",
+          "declaredSha256": "0c04c3e04b156c68e836919a3484b375350491082589a01a137f5f8fb6b8188b",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/07.png",
+          "sha256": "40ac892193de36262893137bfb1280626d3460acbe733355c11c9326f73787fc",
+          "declaredSha256": "40ac892193de36262893137bfb1280626d3460acbe733355c11c9326f73787fc",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/08.png",
+          "sha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+          "declaredSha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/08.png",
+          "sha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+          "declaredSha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/08.png",
+          "sha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+          "declaredSha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/08.png",
+          "sha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+          "declaredSha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/08.png",
+          "sha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+          "declaredSha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/08.png",
+          "sha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+          "declaredSha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/09.png",
+          "sha256": "1d2494acb22dc174e4fa74f5e4dd48d98a1e7713288caffe821ed269add421d5",
+          "declaredSha256": "1d2494acb22dc174e4fa74f5e4dd48d98a1e7713288caffe821ed269add421d5",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/09.png",
+          "sha256": "7e89ecf20cdbd62e400047f49a21f15111a118eb2e3665ccb2a1b459f55189e1",
+          "declaredSha256": "7e89ecf20cdbd62e400047f49a21f15111a118eb2e3665ccb2a1b459f55189e1",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/09.png",
+          "sha256": "a75f530402a6d472d28c3a34c742b7de803449fce53c29429410a36a2a71b19a",
+          "declaredSha256": "a75f530402a6d472d28c3a34c742b7de803449fce53c29429410a36a2a71b19a",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/09.png",
+          "sha256": "95793180cbeac91b07961c7c2f885a84c15bb371fbb39f2bfc54ad148480b50b",
+          "declaredSha256": "95793180cbeac91b07961c7c2f885a84c15bb371fbb39f2bfc54ad148480b50b",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/09.png",
+          "sha256": "e9d1015a4b959bd8f0bfccc16cb1e55423c34bf1864b34209b98f67ab8a4e63a",
+          "declaredSha256": "e9d1015a4b959bd8f0bfccc16cb1e55423c34bf1864b34209b98f67ab8a4e63a",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/09.png",
+          "sha256": "c205c135618ea5da2d28e2df0879ca5da08e9381155b9a074eca765b1f18ad3b",
+          "declaredSha256": "c205c135618ea5da2d28e2df0879ca5da08e9381155b9a074eca765b1f18ad3b",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/10.png",
+          "sha256": "cd3a8ead1921ea6ab086554e59337ff0c1dabc585a993ff4cd5f11ef8120fe55",
+          "declaredSha256": "cd3a8ead1921ea6ab086554e59337ff0c1dabc585a993ff4cd5f11ef8120fe55",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/10.png",
+          "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+          "declaredSha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/10.png",
+          "sha256": "2a6e9e841e73848bb73b2f6af4e18844ab38ce34cf212900bd62ee47e181cf76",
+          "declaredSha256": "2a6e9e841e73848bb73b2f6af4e18844ab38ce34cf212900bd62ee47e181cf76",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/10.png",
+          "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/10.png",
+          "sha256": "cc32a17c61a0fdd599f7da014909eeffcfffe5a6a664aa5740292cea9ced6d2d",
+          "declaredSha256": "cc32a17c61a0fdd599f7da014909eeffcfffe5a6a664aa5740292cea9ced6d2d",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/10.png",
+          "sha256": "8d22d8c469c118e6555cded552715d5b97985907bb91a421ad6791c43555c05e",
+          "declaredSha256": "8d22d8c469c118e6555cded552715d5b97985907bb91a421ad6791c43555c05e",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/11.png",
+          "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/11.png",
+          "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+          "declaredSha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/11.png",
+          "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/12.png",
+          "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/12.png",
+          "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+          "declaredSha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponBack layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/12.png",
+          "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+          "declaredMatches": true,
+          "role": "final body layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final weaponFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+          "declaredMatches": true,
+          "role": "final handFront layer"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+          "sha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+          "declaredSha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+          "declaredMatches": true,
+          "role": "protected body and timing parent"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/00.png",
+          "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+          "declaredSha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/01.png",
+          "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+          "declaredSha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/02.png",
+          "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+          "declaredSha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/03.png",
+          "sha256": "19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6",
+          "declaredSha256": "19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/04.png",
+          "sha256": "c74418eabd8e7dc005685a6e3f6b278b6bd6b4689325be3599c97d9e1e90fb64",
+          "declaredSha256": "c74418eabd8e7dc005685a6e3f6b278b6bd6b4689325be3599c97d9e1e90fb64",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/05.png",
+          "sha256": "624c136ba8ff36dfa3f0e1b4d9d1189d316531e4f1e01329a567c13e98646ba6",
+          "declaredSha256": "624c136ba8ff36dfa3f0e1b4d9d1189d316531e4f1e01329a567c13e98646ba6",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/06.png",
+          "sha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2",
+          "declaredSha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/07.png",
+          "sha256": "a5cfc7855fb1fa8b92e45b701a6d90f7d0cfa4f8cad79d09764171e8333ba96d",
+          "declaredSha256": "a5cfc7855fb1fa8b92e45b701a6d90f7d0cfa4f8cad79d09764171e8333ba96d",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/08.png",
+          "sha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+          "declaredSha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/09.png",
+          "sha256": "40c68a7b3d4a56cb493ef561ec147eb74f005072c4614cc0d08d59564766a90e",
+          "declaredSha256": "40c68a7b3d4a56cb493ef561ec147eb74f005072c4614cc0d08d59564766a90e",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/10.png",
+          "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+          "declaredSha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/11.png",
+          "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+          "declaredSha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/12.png",
+          "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+          "declaredSha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+          "declaredMatches": true,
+          "role": "protected parent body input"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/anatomy.json",
+          "sha256": "7ec501fd4fad64905d022bdc7805ce9e4d6f2da936a4843a3e2e0adeeb41075c",
+          "role": "producer anatomical landmarks checked visually"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/all-body-source.png",
+          "sha256": "fb10261ca201a6a4ce0167951271aef42b4da26be36444af15bdc44a128c2fc2",
+          "role": "producer layers-off sequence viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/all-final-frames.png",
+          "sha256": "fa9043a88909f3e9236c19fef7822969349d406350d2a7def50f0743169c7e8d",
+          "role": "producer unmarked final sequence viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/new-grips-final.png",
+          "sha256": "7ce6e4a7ad4c5a3cb7c0f3cb37ec55066377c9d0c58242f6d6b1429870cd86ef",
+          "role": "producer final grip details viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-browser-check.json",
+          "sha256": "7108f4ab5a27e9b68b55f0fea444092f6c29b79312fb2fc8ef3235832e1c390e",
+          "role": "independent functional Chromium playback traces; not continuous perception"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F03-chromium.png",
+          "sha256": "7bee454ec6c1a21dc22a39a3547af0b0d3bcb7bdcb54e730c595b4b67eaf65cd",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F04-chromium.png",
+          "sha256": "aa94fee4cb5d1333d3c5fba82c7a1c9f2ec482a4b6a3f1a08d700854e2d6fc9a",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F05-chromium.png",
+          "sha256": "9fb3c230521f9fd66cbabe29b5e9792b48b4884d2590cd92ce1bc0a2d79c5137",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F07-chromium.png",
+          "sha256": "f0a5b6d238345763061613cd838c32cf37dcc519db94a52167845a1862e90675",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F07-tactical-chromium.png",
+          "sha256": "93f00c50b8cdf3ef5d0610901f01f4255d298a730c6645687aff971d29ae0f6a",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F09-chromium.png",
+          "sha256": "7ee15e08d0496a20aba73cf4a61831745dc79ff11ad1ed1402b8cc7acd6e8966",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F10-chromium.png",
+          "sha256": "ccf003475e4ecb0d4075cb1a7d83219bbb4e4ba342bdbae86f10b86326d6e77e",
+          "role": "independent discrete Chromium screenshot viewed"
+        }
+      ],
+      "declaredHashMismatches": 0,
+      "masterTiming": [
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/composite.aseprite",
+          "frameCount": 13,
+          "durationsMs": [
+            30,
+            65,
+            35,
+            50,
+            45,
+            65,
+            35,
+            35,
+            100,
+            55,
+            80,
+            45,
+            90
+          ],
+          "totalDurationMs": 730
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/body.aseprite",
+          "frameCount": 13,
+          "durationsMs": [
+            30,
+            65,
+            35,
+            50,
+            45,
+            65,
+            35,
+            35,
+            100,
+            55,
+            80,
+            45,
+            90
+          ],
+          "totalDurationMs": 730
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/native.aseprite",
+          "frameCount": 13,
+          "durationsMs": [
+            30,
+            65,
+            35,
+            50,
+            45,
+            65,
+            35,
+            35,
+            100,
+            55,
+            80,
+            45,
+            90
+          ],
+          "totalDurationMs": 730
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/hand.aseprite",
+          "frameCount": 13,
+          "durationsMs": [
+            30,
+            65,
+            35,
+            50,
+            45,
+            65,
+            35,
+            35,
+            100,
+            55,
+            80,
+            45,
+            90
+          ],
+          "totalDurationMs": 730
+        }
+      ],
+      "allMasterTimingsMatch": true,
+      "acceptedKeyReuse": [],
+      "parentTimingMatches": true
+    },
+    "bodyPixels": {
+      "cycle": "full-front-r-sword",
+      "frames": [
+        {
+          "frame": 0,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 13,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": 0
+        },
+        {
+          "frame": 1,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 12,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": 0
+        },
+        {
+          "frame": 2,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 12,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 3,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 4,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 5,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 3,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 6,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 3,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 7,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 8,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 9,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 10,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 11,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 1,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": 0
+        },
+        {
+          "frame": 12,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 13,
+          "parentBodyArgbDelta": 0,
+          "hiddenFrameEquipmentNontransparentPixels": 0
+        }
+      ]
+    },
+    "broadHistoricalAuditRepeated": false,
+    "asepriteReexportRepeated": false,
+    "itemTransformRasterReimplementationRepeated": false
+  },
+  "browserEvidence": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-browser-check.json",
+    "sha256": "7108f4ab5a27e9b68b55f0fea444092f6c29b79312fb2fc8ef3235832e1c390e",
+    "engine": "Installed Microsoft Edge Chromium headless via CDP",
+    "scales": [
+      {
+        "id": "before",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "id": "after",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "id": "grip",
+        "width": 224,
+        "height": 224
+      }
+    ],
+    "tactical": {
+      "state": {
+        "frame": 7,
+        "elapsed": 325,
+        "playing": false,
+        "speed": 0.5,
+        "loop": false
+      },
+      "canvasWidth": 128,
+      "canvasHeight": 128
+    },
+    "traces": [
+      {
+        "speed": 1,
+        "wallMs": 733.0999999642372,
+        "frameIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "terminal": {
+          "frame": 12,
+          "elapsed": 730,
+          "playing": false,
+          "speed": 1,
+          "loop": false
+        }
+      },
+      {
+        "speed": 0.5,
+        "wallMs": 1466.0999999642372,
+        "frameIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "terminal": {
+          "frame": 12,
+          "elapsed": 730,
+          "playing": false,
+          "speed": 0.5,
+          "loop": false
+        }
+      }
+    ],
+    "screenshotsAreDiscrete": true
+  },
+  "evidenceFiles": [
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/checkpoint.json",
+      "sha256": "ae73a6dac12c2622e5cbe4ac548f70e7f2188d6f91f16d7bbed379a63facfe0a",
+      "role": "submission checkpoint"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/report.md",
+      "sha256": "c4630d753dd87fd3b5ce4fc0d5d92ec7baada685313b7e0b640a46dc6dfb3f34",
+      "role": "producer report"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+      "sha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+      "declaredSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+      "declaredMatches": true,
+      "role": "exact reviewed full clip"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/index.html",
+      "sha256": "1e413514a7f80260ac1ef5838729a5b96cef95f4f5c8aaaaa1423ae5a85cc40a",
+      "role": "original player opened in Chromium"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/composite.aseprite",
+      "sha256": "3ee5755c874ccc007aa7f67af9ea5cc839d2cf98b5c0bee25dbcf0bf9acf6410",
+      "declaredSha256": "3ee5755c874ccc007aa7f67af9ea5cc839d2cf98b5c0bee25dbcf0bf9acf6410",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/body.aseprite",
+      "sha256": "b85c18f315dfed5cb37536398719b18454e59d2d27f49d166d0f0fb3b10deb38",
+      "declaredSha256": "b85c18f315dfed5cb37536398719b18454e59d2d27f49d166d0f0fb3b10deb38",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/native.aseprite",
+      "sha256": "8fab269d162d995ed3acdbbb09b8a03a3750ca5f05d923f35d21c1e55e8a87d7",
+      "declaredSha256": "8fab269d162d995ed3acdbbb09b8a03a3750ca5f05d923f35d21c1e55e8a87d7",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/source/hand.aseprite",
+      "sha256": "d2c6a911295e08ac057ae81c79ec77d3fcad23cee0d1c769e28c147d165a4fce",
+      "declaredSha256": "d2c6a911295e08ac057ae81c79ec77d3fcad23cee0d1c769e28c147d165a4fce",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/00.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/00.png",
+      "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+      "declaredSha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/00.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/00.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/00.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/00.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/01.png",
+      "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/01.png",
+      "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredSha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/01.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/01.png",
+      "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/01.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/01.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/02.png",
+      "sha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+      "declaredSha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/02.png",
+      "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredSha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/02.png",
+      "sha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+      "declaredSha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/02.png",
+      "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/02.png",
+      "sha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+      "declaredSha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/02.png",
+      "sha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+      "declaredSha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/03.png",
+      "sha256": "aed632d8fc84d75c42dbb9c7916d900e2a009fc2d60e07b8fb1f3cb5a7400fcf",
+      "declaredSha256": "aed632d8fc84d75c42dbb9c7916d900e2a009fc2d60e07b8fb1f3cb5a7400fcf",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/03.png",
+      "sha256": "bf735d58c77942fb199408f70da7f3097e690370d322eb5ad0612df389ec4821",
+      "declaredSha256": "bf735d58c77942fb199408f70da7f3097e690370d322eb5ad0612df389ec4821",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/03.png",
+      "sha256": "de4cd0ab1e666e17d4668dae3695761a06f602b3c67e57466e85d67162b12d02",
+      "declaredSha256": "de4cd0ab1e666e17d4668dae3695761a06f602b3c67e57466e85d67162b12d02",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/03.png",
+      "sha256": "47a216eca6b44ab20242aba5f4f18a8e5f9f87a2a4147852d263060d0fad3293",
+      "declaredSha256": "47a216eca6b44ab20242aba5f4f18a8e5f9f87a2a4147852d263060d0fad3293",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/03.png",
+      "sha256": "b031278680a5fce1b7b1520af00e6ee7e871766ee8a0190bd662c2049a5f5264",
+      "declaredSha256": "b031278680a5fce1b7b1520af00e6ee7e871766ee8a0190bd662c2049a5f5264",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/03.png",
+      "sha256": "7cc366e6510f2ca8c83fa0608cd2b5e1d499055b88df30bcd8f23f070251d072",
+      "declaredSha256": "7cc366e6510f2ca8c83fa0608cd2b5e1d499055b88df30bcd8f23f070251d072",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/04.png",
+      "sha256": "55919e80382a1638e7a9458feb0cc930ada99423cc8c1c5bb114ba7c76920201",
+      "declaredSha256": "55919e80382a1638e7a9458feb0cc930ada99423cc8c1c5bb114ba7c76920201",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/04.png",
+      "sha256": "64e9675051021be7e4362d71859fda8b91fdd0a8ae4b6eebd0b1f2ad8dfa4e67",
+      "declaredSha256": "64e9675051021be7e4362d71859fda8b91fdd0a8ae4b6eebd0b1f2ad8dfa4e67",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/04.png",
+      "sha256": "1c338dce0e4dc23e9f4dd8d0a45a46c148970c7b655bb09915935328aea93287",
+      "declaredSha256": "1c338dce0e4dc23e9f4dd8d0a45a46c148970c7b655bb09915935328aea93287",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/04.png",
+      "sha256": "259e68c7c4daaccf7df4c54887763e0c68b88589793adda687fb30a96463e11b",
+      "declaredSha256": "259e68c7c4daaccf7df4c54887763e0c68b88589793adda687fb30a96463e11b",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/04.png",
+      "sha256": "41181a45911b41bcd94f909bf29d56b1ee4b0fd578dc3f315b32213c3160382c",
+      "declaredSha256": "41181a45911b41bcd94f909bf29d56b1ee4b0fd578dc3f315b32213c3160382c",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/04.png",
+      "sha256": "87b248f71a8cfe09f1d57b2cc960814098161d95d5b8f9060a8f139b5c5d5d35",
+      "declaredSha256": "87b248f71a8cfe09f1d57b2cc960814098161d95d5b8f9060a8f139b5c5d5d35",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/05.png",
+      "sha256": "bf640004d70a3fb23d2d157106d53094f58e1bbc9eeb5da9dd21278cbf26a0ee",
+      "declaredSha256": "bf640004d70a3fb23d2d157106d53094f58e1bbc9eeb5da9dd21278cbf26a0ee",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/05.png",
+      "sha256": "ed6f6d012aad0cc23a481f8c0ecde3484e6c3cb4df47092da1445c6a562226e3",
+      "declaredSha256": "ed6f6d012aad0cc23a481f8c0ecde3484e6c3cb4df47092da1445c6a562226e3",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/05.png",
+      "sha256": "570638737458aaf6f87eebef9f60f20b5f3380fe13d39470a8a9fb598e45f432",
+      "declaredSha256": "570638737458aaf6f87eebef9f60f20b5f3380fe13d39470a8a9fb598e45f432",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/05.png",
+      "sha256": "0037c29f52bfdd552417f7593f59ab8e48eea5a194a953cf8d92355529ec3905",
+      "declaredSha256": "0037c29f52bfdd552417f7593f59ab8e48eea5a194a953cf8d92355529ec3905",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/05.png",
+      "sha256": "4a2eac56c9e168ebbacf0d33a54bb35c1d6d711b6d47e336baf8a72ecb435321",
+      "declaredSha256": "4a2eac56c9e168ebbacf0d33a54bb35c1d6d711b6d47e336baf8a72ecb435321",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/05.png",
+      "sha256": "60517134a7f1a169cfc8fe15c702c41013c4e6d7e88a1319a42a6a43e58b4e51",
+      "declaredSha256": "60517134a7f1a169cfc8fe15c702c41013c4e6d7e88a1319a42a6a43e58b4e51",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/06.png",
+      "sha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+      "declaredSha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/06.png",
+      "sha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+      "declaredSha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/06.png",
+      "sha256": "142197915f2491ff6103dab140a171be6e593ac8df031c2390565642de448a80",
+      "declaredSha256": "142197915f2491ff6103dab140a171be6e593ac8df031c2390565642de448a80",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/06.png",
+      "sha256": "1d0b88a2ba2772f59f87aeb0dc90e62339c414a11de5f34f1e7b28ca0b3a3687",
+      "declaredSha256": "1d0b88a2ba2772f59f87aeb0dc90e62339c414a11de5f34f1e7b28ca0b3a3687",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/06.png",
+      "sha256": "c864cf36661414f5699da37739b66466c703a4dfe1f2ccd07ff1e47e4330cc6c",
+      "declaredSha256": "c864cf36661414f5699da37739b66466c703a4dfe1f2ccd07ff1e47e4330cc6c",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/06.png",
+      "sha256": "c65a9bb30442f9417b17ce327b00d93f7ab75b582bbae29201119df6ba83189b",
+      "declaredSha256": "c65a9bb30442f9417b17ce327b00d93f7ab75b582bbae29201119df6ba83189b",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/07.png",
+      "sha256": "d809f5fd319b5e0f2d37c92dd4570cd0fe584202b6d287324175096ab9dfd72d",
+      "declaredSha256": "d809f5fd319b5e0f2d37c92dd4570cd0fe584202b6d287324175096ab9dfd72d",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/07.png",
+      "sha256": "263d1aea6670c0d5fc2f47904792ac5a6475fa5fe985d5758db0bbe292fea067",
+      "declaredSha256": "263d1aea6670c0d5fc2f47904792ac5a6475fa5fe985d5758db0bbe292fea067",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/07.png",
+      "sha256": "086d439774824dca199858966175afb9e44e73a07006234424fc3907eb24169d",
+      "declaredSha256": "086d439774824dca199858966175afb9e44e73a07006234424fc3907eb24169d",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/07.png",
+      "sha256": "b8031aa8f5cab79aa57c988503b7cb6e3778f1cdecf77a1646632d054e99b27c",
+      "declaredSha256": "b8031aa8f5cab79aa57c988503b7cb6e3778f1cdecf77a1646632d054e99b27c",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/07.png",
+      "sha256": "0c04c3e04b156c68e836919a3484b375350491082589a01a137f5f8fb6b8188b",
+      "declaredSha256": "0c04c3e04b156c68e836919a3484b375350491082589a01a137f5f8fb6b8188b",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/07.png",
+      "sha256": "40ac892193de36262893137bfb1280626d3460acbe733355c11c9326f73787fc",
+      "declaredSha256": "40ac892193de36262893137bfb1280626d3460acbe733355c11c9326f73787fc",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/08.png",
+      "sha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+      "declaredSha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/08.png",
+      "sha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+      "declaredSha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/08.png",
+      "sha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+      "declaredSha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/08.png",
+      "sha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+      "declaredSha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/08.png",
+      "sha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+      "declaredSha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/08.png",
+      "sha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+      "declaredSha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/09.png",
+      "sha256": "1d2494acb22dc174e4fa74f5e4dd48d98a1e7713288caffe821ed269add421d5",
+      "declaredSha256": "1d2494acb22dc174e4fa74f5e4dd48d98a1e7713288caffe821ed269add421d5",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/09.png",
+      "sha256": "7e89ecf20cdbd62e400047f49a21f15111a118eb2e3665ccb2a1b459f55189e1",
+      "declaredSha256": "7e89ecf20cdbd62e400047f49a21f15111a118eb2e3665ccb2a1b459f55189e1",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/09.png",
+      "sha256": "a75f530402a6d472d28c3a34c742b7de803449fce53c29429410a36a2a71b19a",
+      "declaredSha256": "a75f530402a6d472d28c3a34c742b7de803449fce53c29429410a36a2a71b19a",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/09.png",
+      "sha256": "95793180cbeac91b07961c7c2f885a84c15bb371fbb39f2bfc54ad148480b50b",
+      "declaredSha256": "95793180cbeac91b07961c7c2f885a84c15bb371fbb39f2bfc54ad148480b50b",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/09.png",
+      "sha256": "e9d1015a4b959bd8f0bfccc16cb1e55423c34bf1864b34209b98f67ab8a4e63a",
+      "declaredSha256": "e9d1015a4b959bd8f0bfccc16cb1e55423c34bf1864b34209b98f67ab8a4e63a",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/09.png",
+      "sha256": "c205c135618ea5da2d28e2df0879ca5da08e9381155b9a074eca765b1f18ad3b",
+      "declaredSha256": "c205c135618ea5da2d28e2df0879ca5da08e9381155b9a074eca765b1f18ad3b",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/10.png",
+      "sha256": "cd3a8ead1921ea6ab086554e59337ff0c1dabc585a993ff4cd5f11ef8120fe55",
+      "declaredSha256": "cd3a8ead1921ea6ab086554e59337ff0c1dabc585a993ff4cd5f11ef8120fe55",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/10.png",
+      "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+      "declaredSha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/10.png",
+      "sha256": "2a6e9e841e73848bb73b2f6af4e18844ab38ce34cf212900bd62ee47e181cf76",
+      "declaredSha256": "2a6e9e841e73848bb73b2f6af4e18844ab38ce34cf212900bd62ee47e181cf76",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/10.png",
+      "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/10.png",
+      "sha256": "cc32a17c61a0fdd599f7da014909eeffcfffe5a6a664aa5740292cea9ced6d2d",
+      "declaredSha256": "cc32a17c61a0fdd599f7da014909eeffcfffe5a6a664aa5740292cea9ced6d2d",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/10.png",
+      "sha256": "8d22d8c469c118e6555cded552715d5b97985907bb91a421ad6791c43555c05e",
+      "declaredSha256": "8d22d8c469c118e6555cded552715d5b97985907bb91a421ad6791c43555c05e",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/11.png",
+      "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/11.png",
+      "sha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+      "declaredSha256": "40b61dc4747420b75dc4a44d776136c0ebc0f2ef070ba3183db0f557ef8f2432",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/11.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/11.png",
+      "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredSha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/11.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/11.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/12.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/native/12.png",
+      "sha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+      "declaredSha256": "f69747f5e93ef79206264360746e612ab8097304361509068a3820cbb817ffbb",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponBack/12.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponBack layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/body/12.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredSha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "declaredMatches": true,
+      "role": "final body layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/weaponFront/12.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final weaponFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/layers/handFront/12.png",
+      "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredSha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "declaredMatches": true,
+      "role": "final handFront layer"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+      "sha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+      "declaredSha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+      "declaredMatches": true,
+      "role": "protected body and timing parent"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/00.png",
+      "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+      "declaredSha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/01.png",
+      "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredSha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/02.png",
+      "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredSha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/03.png",
+      "sha256": "19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6",
+      "declaredSha256": "19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/04.png",
+      "sha256": "c74418eabd8e7dc005685a6e3f6b278b6bd6b4689325be3599c97d9e1e90fb64",
+      "declaredSha256": "c74418eabd8e7dc005685a6e3f6b278b6bd6b4689325be3599c97d9e1e90fb64",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/05.png",
+      "sha256": "624c136ba8ff36dfa3f0e1b4d9d1189d316531e4f1e01329a567c13e98646ba6",
+      "declaredSha256": "624c136ba8ff36dfa3f0e1b4d9d1189d316531e4f1e01329a567c13e98646ba6",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/06.png",
+      "sha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2",
+      "declaredSha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/07.png",
+      "sha256": "a5cfc7855fb1fa8b92e45b701a6d90f7d0cfa4f8cad79d09764171e8333ba96d",
+      "declaredSha256": "a5cfc7855fb1fa8b92e45b701a6d90f7d0cfa4f8cad79d09764171e8333ba96d",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/08.png",
+      "sha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+      "declaredSha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/09.png",
+      "sha256": "40c68a7b3d4a56cb493ef561ec147eb74f005072c4614cc0d08d59564766a90e",
+      "declaredSha256": "40c68a7b3d4a56cb493ef561ec147eb74f005072c4614cc0d08d59564766a90e",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/10.png",
+      "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+      "declaredSha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/11.png",
+      "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+      "declaredSha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/12.png",
+      "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+      "declaredSha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4",
+      "declaredMatches": true,
+      "role": "protected parent body input"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/anatomy.json",
+      "sha256": "7ec501fd4fad64905d022bdc7805ce9e4d6f2da936a4843a3e2e0adeeb41075c",
+      "role": "producer anatomical landmarks checked visually"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/all-body-source.png",
+      "sha256": "fb10261ca201a6a4ce0167951271aef42b4da26be36444af15bdc44a128c2fc2",
+      "role": "producer layers-off sequence viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/all-final-frames.png",
+      "sha256": "fa9043a88909f3e9236c19fef7822969349d406350d2a7def50f0743169c7e8d",
+      "role": "producer unmarked final sequence viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/new-grips-final.png",
+      "sha256": "7ce6e4a7ad4c5a3cb7c0f3cb37ec55066377c9d0c58242f6d6b1429870cd86ef",
+      "role": "producer final grip details viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-browser-check.json",
+      "sha256": "7108f4ab5a27e9b68b55f0fea444092f6c29b79312fb2fc8ef3235832e1c390e",
+      "role": "independent functional Chromium playback traces; not continuous perception"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F03-chromium.png",
+      "sha256": "7bee454ec6c1a21dc22a39a3547af0b0d3bcb7bdcb54e730c595b4b67eaf65cd",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F04-chromium.png",
+      "sha256": "aa94fee4cb5d1333d3c5fba82c7a1c9f2ec482a4b6a3f1a08d700854e2d6fc9a",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F05-chromium.png",
+      "sha256": "9fb3c230521f9fd66cbabe29b5e9792b48b4884d2590cd92ce1bc0a2d79c5137",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F07-chromium.png",
+      "sha256": "f0a5b6d238345763061613cd838c32cf37dcc519db94a52167845a1862e90675",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F07-tactical-chromium.png",
+      "sha256": "93f00c50b8cdf3ef5d0610901f01f4255d298a730c6645687aff971d29ae0f6a",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F09-chromium.png",
+      "sha256": "7ee15e08d0496a20aba73cf4a61831745dc79ff11ad1ed1402b8cc7acd6e8966",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-F10-chromium.png",
+      "sha256": "ccf003475e4ecb0d4075cb1a7d83219bbb4e4ba342bdbae86f10b86326d6e77e",
+      "role": "independent discrete Chromium screenshot viewed"
+    }
+  ],
+  "limitations": [
+    "No continuous visual1x or slow playback perception: functional execution and screenshots do not substitute for it",
+    "Historical static F02/F06/F08 judgments do not validate this full cycle",
+    "Bodies and timing remain protected; no static flaw was established that warrants changing them",
+    "No global107-record preservation audit, Aseprite reexport or item-transform reimplementation repeated",
+    "F08 complete equipment judged in256 canvas; native128 is body crop, not full equipment crop"
+  ],
+  "report": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-report.md",
+    "sha256": "f73d37821e5475ba8100f34423f1f9c7ab3c1b48dc490138e3593d2f96e36086"
+  },
+  "nextAction": "Stop and return separate scoped result to Root. Complete continuous perceptual normal-speed review before accepting the full armed cycle or expanding other clips; no specific art revision requested."
+}

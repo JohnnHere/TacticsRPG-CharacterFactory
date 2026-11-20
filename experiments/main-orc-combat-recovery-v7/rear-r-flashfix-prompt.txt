@@ -1,0 +1,28 @@
+# V7 — transplantar bookends normalizados para os dois clipes `back_r`
+
+## Situação
+O flash branco do criador foi diagnosticado: os bookends dos clipes traseiros usam o corpo derivado do Idle, com um highlight de metal claro que os corpos de ataque não têm. Ao voltar ao início da reprodução, o highlight reaparece de uma vez.
+
+Já existe uma versão **normalizada e validada** desses bookends, produzida em `characters/orc-v1/source/combat-recovery-v7/bookends/back_r-sword/layers/body/{00,11}.png` (contagem de pixels claros caiu de 67 para 7 e 5, igual aos quadros vizinhos).
+
+## Fato que simplifica tudo
+Os dois clipes seus (`rear-r/back_r-sword` e `rear-r/back_r-axe`) usam **o mesmo PNG de corpo** em F00 e F11: SHA `245ce5ce71ce…`, idêntico ao V6 e derivado do Idle. Logo a correção é a mesma para os dois.
+
+## Tarefa (mecânica, sem decisão artística nova)
+1. Copie `rear-r/back_r-sword` e `rear-r/back_r-axe` para `characters/orc-v1/source/combat-recovery-v7/rear-r-flashfixed/` (e espelhe a evidência em `experiments/main-orc-combat-recovery-v7/rear-r-flashfixed/`). Não edite `rear-r/` in-place.
+2. Em cada cópia, substitua apenas as camadas de corpo dos bookends (`layers/body/00.png` e `layers/body/11.png`) pelas versões normalizadas de `bookends/back_r-sword/layers/body/{00,11}.png`.
+3. Atualize os derivados desses dois quadros em cada célula: composto 256 (nos bookends o composto é igual ao corpo, pois as camadas de arma são transparentes), recorte nativo 128, `nativeComposite` se o contrato tiver, os `sha256` por camada/quadro e os `nativeSha256`.
+4. Atualize os **mestres `.aseprite`** (`composite`, `body`, `native`) nos dois clipes, no Aseprite batch com o seu perfil, para que os mestres permaneçam a fonte da verdade e continuem reexportando o que o `clip.json` declara.
+5. Regenerar `native-strip` e `composite-strip` e seus hashes.
+6. Preservar absolutamente: durações (950 ms Sword, 1320 ms Axe), número de quadros, todas as outras camadas e quadros, a pegada corrigida, a trajetória, o intervalo armado.
+
+## Verificação obrigatória
+- Contagem de pixels claros (limiar 145) nos bookends de cada clipe deve ficar na faixa dos vizinhos: F00 ≈ 7, F11 ≈ 5; F01 e F10 inalterados.
+- Diff global: nenhum pixel alterado fora de `body/00` e `body/11`.
+- Reabrir e reexportar os mestres e conferir que batem com os PNGs declarados (pixels + timing).
+- Confirmar que os bookends continuam desarmados e o composto do bookend é igual ao corpo.
+
+## Entrega (checkpoint `V7_BACK_R_FLASH_FIXED`)
+- Dois clipes corrigidos, `clip.json` válido com hashes reais, mestres reexportados, tiras novas.
+- `report.md` curto: contagem antes/depois por bookend nos dois clipes, pixels alterados, confirmação de que nada fora dos bookends mudou, e o que preservou.
+- ZERO gerações PixelLab. Preserve `rear-alt/`, `frontal/`, `bookends/`, `rear-r/` e as fontes V5/V6. Sem Unity, sem commits. PARE no checkpoint.

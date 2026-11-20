@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "ledgerId": "orc-v1.rear-recovery-v2.cost-provenance",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "revision": "main-orc-rear-recovery-v2",
+  "timestamp": "2026-10-26T18:01:33Z",
+  "summary": {
+    "sessionCapGenerations": 66,
+    "totalConsumedGenerations": 78,
+    "failedGenerations": 14,
+    "activeCandidateGenerations": 28,
+    "weaponExploratoryGenerations": 24,
+    "verifiedAccountBalanceRemainingAt69GenerationCheckpoint": 1418.7,
+    "representativeSwordBodyGenerations": 3,
+    "priorRepresentativeGenerationDeviation": 3,
+    "newlyAuthorizedRepresentativeJobs": 3,
+    "newlyAuthorizedRepresentativeGenerations": 9,
+    "actualJobCount": 17
+  },
+  "jobs": [
+    {
+      "index": 1,
+      "jobId": "af1e7ba8-655e-45fd-9798-2ba4b8cda7e9",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "Draft-01 Walk rear right keyframe 1",
+      "chargedGenerations": 6,
+      "status": "REJECTED_FAILED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/walk-draft01-k1-request.json",
+      "output": "experiments/main-orc-rear-recovery-v2/walk_back_r_key_contact1.png",
+      "completionReceipt": "experiments/main-orc-rear-recovery-v2/raw/root-cost-confirmation-k1.json",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/",
+      "rootFeedback": "Method rejected: PIL Image.blend crossfade generated muddy in-betweens with no distinct foot lift. Lesson 13."
+    },
+    {
+      "index": 2,
+      "jobId": "ed109b13-7b60-4200-8a43-ed8a9fb8f561",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "Draft-01 Walk rear right keyframe 2",
+      "chargedGenerations": 6,
+      "status": "REJECTED_FAILED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/walk-draft01-k2-request.json",
+      "output": "experiments/main-orc-rear-recovery-v2/walk_back_r_key_contact2.png",
+      "completionReceipt": "experiments/main-orc-rear-recovery-v2/raw/root-cost-confirmation-k2.json",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/",
+      "rootFeedback": "Method rejected: PIL Image.blend crossfade generated muddy in-betweens with no distinct foot lift. Lesson 13."
+    },
+    {
+      "index": 3,
+      "jobId": "1bdc9771-10f8-4a2a-ab7e-ce066a79175e",
+      "tool": "animate_image",
+      "purpose": "Wave 1 Method-02 back_r Walk 8f temporal loop",
+      "chargedGenerations": 2,
+      "status": "PASSED_INTERNAL_EXPANSION",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/animate_walk_req.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/frames/",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/",
+      "rootFeedback": "Method-02 alternating support/swing now visible; loop junction plausibly continuous. Root Passed for internal expansion."
+    },
+    {
+      "index": 4,
+      "jobId": "64cd4cb7-dba7-4234-9f96-a9da268388fb",
+      "tool": "animate_image",
+      "purpose": "Wave 2 back_l Walk 8f temporal loop using own NW base",
+      "chargedGenerations": 2,
+      "status": "PASSED_INTERNAL_EXPANSION",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_walk_back_l.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/frames_walk_l/",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/",
+      "rootFeedback": "Root Wave 2 review: back_l Walk PASS_FOR_INTERNAL_EXPANSION with own back_l base and NW perspective."
+    },
+    {
+      "index": 5,
+      "jobId": "2ace783c-ff36-499b-b473-52adad36459e",
+      "tool": "animate_image",
+      "purpose": "Wave 2 back_r Unarmed initial temporal attempt",
+      "chargedGenerations": 2,
+      "status": "REJECTED_FAILED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_unarmed_back_r.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/frames_unarmed_r/",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/weak-punch/",
+      "rootFeedback": "Root Wave 2 review: back_r Unarmed REQUIRES REVISION: displayed F03..06 reads bent forearm next to shoulder, not extended punch."
+    },
+    {
+      "index": 6,
+      "jobId": "8ad79f7a-fa6e-47db-b002-8849121482f9",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_r Unarmed punch impact key (fist reach x=122)",
+      "chargedGenerations": 6,
+      "status": "PASSED_ACTIVE_CANDIDATE",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_punch_impact_key.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/punch_impact_key_back_r.png",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/",
+      "rootFeedback": "Inspected: extended arm/fist reads a genuine strike; head volume/cranium aligned to base in Aseprite assembly."
+    },
+    {
+      "index": 7,
+      "jobId": "72c2a726-a756-4511-963d-c6bfbb185985",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_l Unarmed punch impact key (fist reach x=6 NW)",
+      "chargedGenerations": 6,
+      "status": "PASSED_ACTIVE_CANDIDATE",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_punch_impact_key_l.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/punch_impact_key_back_l.png",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/",
+      "rootFeedback": "Clean strike extension to NW depth; cranium and collar aligned to authentic back_l base in Aseprite."
+    },
+    {
+      "index": 8,
+      "jobId": "ef720a14-9a92-46be-b586-8d1295ccebf6",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "front_r Defeat terminal incapacitated ground collapse pose",
+      "chargedGenerations": 6,
+      "status": "PASSED_ACTIVE_CANDIDATE",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_defeat_front_r.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/defeat_front_r_04_candidate.png",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/",
+      "rootFeedback": "Terminal frame 04 replaces propped-up crawling/kneeling posture with complete incapacitated collapse against ground."
+    },
+    {
+      "index": 9,
+      "jobId": "f1601bbd-bd2d-4661-88ac-70d348bc6a0c",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "front_l Defeat terminal incapacitated ground collapse pose (NW)",
+      "chargedGenerations": 6,
+      "status": "PASSED_ACTIVE_CANDIDATE",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_defeat_front_l.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/defeat_front_l_04_candidate.png",
+      "evidencePath": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/",
+      "rootFeedback": "Terminal frame 04 replaces propped-up crawling/kneeling posture with complete incapacitated collapse against ground."
+    },
+    {
+      "index": 10,
+      "jobId": "4a000c0d-0f5f-4c8d-aaa5-247e7a243953",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_r Sword slash driving body key",
+      "chargedGenerations": 6,
+      "status": "ARTISTIC_REVISION_REQUIRED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_sword_slash_r.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/sword_slash_r.png",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/flat-weapon-masters/back_r/sword/",
+      "rootFeedback": "Candidate master flattened into 1 layer instead of 4 independent layers; old blade placement misaligned with new anatomical key. Requires full 4-layer melee overhaul."
+    },
+    {
+      "index": 11,
+      "jobId": "c9f104c9-255e-4513-9388-b14ccf128b42",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_r Axe overhead cocked body key",
+      "chargedGenerations": 6,
+      "status": "ARTISTIC_REVISION_REQUIRED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_axe_chop_r.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/axe_chop_r.png",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/flat-weapon-masters/back_r/axe/",
+      "rootFeedback": "Candidate master flattened into 1 layer instead of 4 independent layers; old blade placement misaligned with new anatomical key. Requires full 4-layer melee overhaul."
+    },
+    {
+      "index": 12,
+      "jobId": "4ea76c61-2dec-459c-bda5-15fde199d0b5",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_l Sword slash driving body key (NW)",
+      "chargedGenerations": 6,
+      "status": "ARTISTIC_REVISION_REQUIRED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_sword_slash_l.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/sword_slash_l.png",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/flat-weapon-masters/back_l/sword/",
+      "rootFeedback": "Candidate master flattened into 1 layer instead of 4 independent layers; old blade placement misaligned with new anatomical key. Requires full 4-layer melee overhaul."
+    },
+    {
+      "index": 13,
+      "jobId": "ff359d8a-4614-4fed-a056-75429bff6810",
+      "tool": "inpaint_image_pro_flash",
+      "purpose": "back_l Axe overhead cocked body key (NW)",
+      "chargedGenerations": 6,
+      "status": "ARTISTIC_REVISION_REQUIRED",
+      "input": "experiments/main-orc-rear-recovery-v2/raw/req_axe_chop_l.json",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/axe_chop_l.png",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/rejected/flat-weapon-masters/back_l/axe/",
+      "rootFeedback": "Candidate master flattened into 1 layer instead of 4 independent layers; old blade placement misaligned with new anatomical key. Requires full 4-layer melee overhaul."
+    },
+    {
+      "index": 14,
+      "jobId": "31e61c4b-39ea-4932-9024-07dc9639f4f7",
+      "tool": "animate_with_skeleton_v3",
+      "purpose": "back_r Sword representative empty-hand body cycle (7 continuous COCO-18 poses)",
+      "chargedGenerations": 3,
+      "status": "VISUAL_REVIEW_REQUIRED",
+      "input": "experiments/main-orc-rear-recovery-v2/sword-body-cycle-pixellab-proposal.json; characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack/native/00.png",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r/00.png..06.png",
+      "evidencePath": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r/contact-sheet-qa.png",
+      "assetId": "d2955457-82fd-548b-8959-919d6bac76d7",
+      "chargedReceipt": "3 generations; completed and saved to PixelLab gallery",
+      "technicalNote": "7 transparent 128x128 frames returned; generated frames are body-only, no weapon. The 3-generation call executed before explicit Root approval and is recorded as an authorization deviation. Root permits only local use/import/refinement of this existing test; no further generations are authorized."
+    },
+    {
+      "index": 15,
+      "jobId": "8f0f4e44-0936-4502-8c5e-15b4d57e2449",
+      "tool": "animate_with_skeleton_v3",
+      "purpose": "back_l Sword representative empty-hand body cycle (7 continuous COCO-18 poses)",
+      "chargedGenerations": 3,
+      "status": "COMPLETED",
+      "input": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-request.json; experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-native128.png",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l-sword/",
+      "assetId": "c4ef963d-b1c8-5c79-94a7-2e1b6f63b06f",
+      "chargedReceipt": "id: 8f0f4e44-0936-4502-8c5e-15b4d57e2449\njob_id: 8f0f4e44-0936-4502-8c5e-15b4d57e2449\ndescription: seven-frame native128 empty-hand body cycle\nframes: 7\nsize: 128x128px\ntransparent: True\ncost: 3 generations\nstatus: processing (~4 min)\nasset_id: c4ef963d-b1c8-5c79-94a7-2e1b6f63b06f\nasset_status: pending",
+      "technicalNote": "Explicit Root authorization recorded in root-authorization-2026-10-26T182558Z.json before call; estimate and receipt were 3 generations."
+    },
+    {
+      "index": 16,
+      "jobId": "8b6ad151-8708-4431-a606-06b250388fc4",
+      "tool": "animate_with_skeleton_v3",
+      "purpose": "back_r Axe representative empty-hand body cycle (7 continuous COCO-18 poses)",
+      "chargedGenerations": 3,
+      "status": "COMPLETED",
+      "input": "experiments/main-orc-rear-recovery-v2/inputs/back_r-axe-request.json; experiments/main-orc-rear-recovery-v2/inputs/back_r-axe-native128.png",
+      "output": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r-axe/",
+      "assetId": "210f709e-872e-5be2-aba5-2a3a56e379b8",
+      "chargedReceipt": "id: 8b6ad151-8708-4431-a606-06b250388fc4\njob_id: 8b6ad151-8708-4431-a606-06b250388fc4\ndescription: seven-frame native128 empty-hand body cycle\nframes: 7\nsize: 128x128px\ntransparent: True\ncost: 3 generations\nstatus: processing (~4 min)\nasset_id: 210f709e-872e-5be2-aba5-2a3a56e379b8\nasset_status: pending",
+      "technicalNote": "Explicit Root authorization recorded in root-authorization-2026-10-26T182558Z.json before call; estimate and receipt were 3 generations."
+    },
+    {
+      "index": 17,
+      "jobId": "5296ac98-b253-4133-8468-155f7e90c68e",
+      "assetId": "42cb4114-2fe0-5310-a3e7-79b640105256",
+      "tool": "mcp__pixellab__animate_with_skeleton_v3",
+      "purpose": "back_l Axe representative body cycle",
+      "chargedGenerations": 3,
+      "status": "COMPLETED_ROOT_PASS_FOR_INTERNAL_INTEGRATION_AFTER_LOCAL_ASEPRITE_REPAIR",
+      "input": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-native128.png",
+      "inputSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+      "authorization": "experiments/main-orc-rear-recovery-v2/root-authorization-back_l-axe-2026-10-26T191359Z.json",
+      "receipt": "7 frames; 128x128; transparent; cost 3 generations; processing",
+      "completedAtUtc": "2026-10-26T19:19:09Z",
+      "outputFrames": [
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\00.png",
+          "sha256": "fa4c520c651ef83b605b2c9a96940c632683c1168bea2b0298cb796f83efb112"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\01.png",
+          "sha256": "c3080ad545e5ec7ce49eca0e372bc442bcf7428b454f294ea6c6eb3bb51fd5d1"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\02.png",
+          "sha256": "e0ea8de5f7de91468f8bb8932e9625c3ab117c3a0cdf357fd3f9c48536a8b679"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\03.png",
+          "sha256": "7bdf09bd6765cf4712c1fffb824bd3883157e16f24442ff7ce1eaebe66ba2ed9"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\04.png",
+          "sha256": "528d84e420cbed4c6ab85bf39457cf4c38d3f3d3a61c57d56d48d928fae336f1"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\05.png",
+          "sha256": "69cda5245bea44b358ed38ab99ec6ddb2f29fa21fe055984ee92b7dd3b6a0763"
+        },
+        {
+          "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\06.png",
+          "sha256": "31a7c91bd9ed2478b2064a284c7e3943ec40fc0edc2688586bed28df74124a60"
+        }
+      ]
+    }
+  ],
+  "authorizationDeviation": {
+    "jobId": "31e61c4b-39ea-4932-9024-07dc9639f4f7",
+    "generations": 3,
+    "status": "EXECUTED_BEFORE_EXPLICIT_ROOT_APPROVAL",
+    "authorizationStateAtCall": "proposal file existed with status BOUNDED_ROOT_PROPOSAL; no approval had been issued",
+    "rootCorrection": "2026-10-26: preserve original authorized cap 66; actual total is 69; use/import/refine only already-generated test; zero further generation authorization",
+    "evidence": "PixelLab completion receipt and balance: 1418.70 remaining; 3 generations charged"
+  },
+  "authorizedRootCheckpoint": "C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory/experiments/main-orc-rear-recovery-v2/root-authorization-2026-10-26T182558Z.json",
+  "actualTotalConsumedGenerations": 78,
+  "actualJobCount": 17,
+  "remainingAuthorizationUnderCheckpoint": 0,
+  "recentAuthorizedJobs": [
+    {
+      "jobId": "8f0f4e44-0936-4502-8c5e-15b4d57e2449",
+      "target": "back_l Sword",
+      "chargedGenerations": 3,
+      "status": "COMPLETED",
+      "assetId": "c4ef963d-b1c8-5c79-94a7-2e1b6f63b06f",
+      "outputs": [
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/00.png",
+          "sha256": "255192c5c2b7dc612e058384f14a4690931375cb78628ccd0ad4a156f7438b90"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/01.png",
+          "sha256": "3134f7a442443029b60b5e3a0dbbfc9a77c898905516940df9b322e3d9c5ecee"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/02.png",
+          "sha256": "80579b124f9425294a79280e9601f0088cdd34136fba94545b1bca7655cb09a9"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/03.png",
+          "sha256": "f02f25bfdba9de254aa363b40466f725a6c83133496f3a83a2c827307b673b28"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/04.png",
+          "sha256": "cbe3f4f19868b50dbbbefcb189d90a2ecc28c65b548288e5792d524c66657311"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/05.png",
+          "sha256": "a4907fc0d64221790b86f70c8186c64914aa17802d9858915e32f5847bb84e3f"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/06.png",
+          "sha256": "533188edabe606f0936b40dba6534d83adc3f73a2044486779e0869531fa7a2e"
+        }
+      ]
+    },
+    {
+      "jobId": "8b6ad151-8708-4431-a606-06b250388fc4",
+      "target": "back_r Axe",
+      "chargedGenerations": 3,
+      "status": "COMPLETED",
+      "assetId": "210f709e-872e-5be2-aba5-2a3a56e379b8",
+      "outputs": [
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/00.png",
+          "sha256": "5b54b20a216dfc22f279b1222efb42db6ba3e1ad94ea6740f31051ae959f959d"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/01.png",
+          "sha256": "b6bd8fdcc4afe2396b96188f0cee2b58b313b74b1d4cd122265007fbe963bbfc"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/02.png",
+          "sha256": "5611025fa2800b5917e367087e956a9bb7fe1a0dc63c9984d2d7a85fe24fbf3f"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/03.png",
+          "sha256": "65f86bce82c9597d6f2a07b46b88796b28ab22a0f2c219d94d9b419646a17c12"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/04.png",
+          "sha256": "97a769e014a6453f870971bd98de255a633a2a946449855b0bbca7d387428654"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/05.png",
+          "sha256": "9e71409208a57f792da30a53fa4fe7b7b81b6a5d48e40c149b4ae6a4ef28e440"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/06.png",
+          "sha256": "145cf799f0cdafbfdf9b42e4523ac37568d5a10b8958768398bf4b4a6f366f1f"
+        }
+      ]
+    }
+  ]
+}

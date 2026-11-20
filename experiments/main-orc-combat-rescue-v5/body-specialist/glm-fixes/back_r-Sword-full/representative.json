@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "status": "BODY_BACK_R_SWORD_GLM_FIXES_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Sword",
+  "scope": "GLM body-fixes: F06 flutuantes zerados + malha reconstruida com doadores F05/F07 (prescrito pelo QA); demais frames byte-herdados de repair1",
+  "repairedDefect": "REAR-01-RESIDUAL-A + REAR-01-RESIDUAL-B",
+  "repairedFrame": 6,
+  "clip": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+    "sha256": "aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88"
+  },
+  "master": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256.aseprite",
+    "sha256": "3da678e9b7980074f08a8e0c5a89e22d9b1f771719cc5c9775cc4ecf81438303"
+  },
+  "nativeMaster": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native128.aseprite",
+    "sha256": "acccc22600ce9d3b787dbb77ce02f9078b8382b099b2a7ee97e319437a24e27b"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 730,
+  "acceptedKeyReuse": [
+    {
+      "frameIndex": 3,
+      "keyName": "01-hoist",
+      "source": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/03.png",
+        "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/03.png",
+        "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 4,
+      "keyName": "02-apex",
+      "source": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/04.png",
+        "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/04.png",
+        "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 7,
+      "keyName": "03-impact",
+      "source": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/07.png",
+        "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/07.png",
+        "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    }
+  ],
+  "generationAccounting": {
+    "jobs": [],
+    "repairGenerationsCharged": 0.0,
+    "note": "Reparo cirurgico 100% local no Aseprite via Lua (doadores F05/F07); 0 chamadas PixelLab"
+  }
+}

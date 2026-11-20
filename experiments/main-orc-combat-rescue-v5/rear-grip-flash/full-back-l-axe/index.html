@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Orc V1 (Verde Warcraft) &mdash; back_l/Axe Full Combat Cycle</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 24px;
+    }
+    h1, h2, h3 { color: #58a6ff; }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      background: #238636;
+      color: #ffffff;
+      margin-right: 8px;
+    }
+    .badge-info { background: #1f6feb; }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .player-container {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .canvas-box {
+      background: #090d13;
+      border: 2px solid #30363d;
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .controls {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    button {
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    button:hover { background: #30363d; }
+    button.active { background: #1f6feb; color: #fff; border-color: #388bfd; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid #30363d;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th { background: #21262d; color: #f0f6fc; }
+    tr:hover { background: #1f242c; }
+    .mono { font-family: ui-monospace, monospace; font-size: 12px; }
+    .img-evidence {
+      max-width: 100%;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Orc V1 (Verde Warcraft) &mdash; back_l/Axe Combat Cycle</h1>
+  <p>
+    <span class="badge">REAR_TWO_REMAINING_FULL_READY</span>
+    <span class="badge badge-info">12 FRAMES / 1100ms</span>
+    <span class="badge badge-info">VISIBLE [2, 8]</span>
+    <span class="badge">BODY RGBA DELTA: 0</span>
+    <span class="badge">F03/F04/F07 STRUCTURAL KEYS PRESERVED</span>
+  </p>
+
+  <div class="card">
+    <h2>1. Interactive 12-Frame Combat Player</h2>
+    <div class="player-container">
+      <div>
+        <div id="playerBox" class="canvas-box" style="width: 256px; height: 256px;">
+          <img id="playerImg" src="../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/04.png" style="width: 100%; height: 100%; image-rendering: pixelated;" />
+        </div>
+        <div class="controls">
+          <button id="btnPlay" onclick="togglePlay()">Pause</button>
+          <button onclick="prevFrame()">&larr; Prev</button>
+          <button onclick="nextFrame()">Next &rarr;</button>
+          <span id="frameIndicator" style="font-weight: bold; min-width: 100px;">Frame: F04 (110ms)</span>
+        </div>
+        <div class="controls">
+          <span>Speed:</span>
+          <button class="spd-btn active" onclick="setSpeed(1.0, this)">1x</button>
+          <button class="spd-btn" onclick="setSpeed(0.75, this)">0.75x</button>
+          <button class="spd-btn" onclick="setSpeed(0.5, this)">0.5x</button>
+          <button class="spd-btn" onclick="setSpeed(0.25, this)">0.25x</button>
+        </div>
+        <div class="controls">
+          <span>Zoom:</span>
+          <button class="zm-btn active" onclick="setZoom(1, this)">1x (256px)</button>
+          <button class="zm-btn" onclick="setZoom(2, this)">2x (512px)</button>
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 320px;">
+        <h3>Active Frame Details</h3>
+        <p><strong>Phase:</strong> <span id="curPhase">02-apex</span></p>
+        <p><strong>Duration:</strong> <span id="curDuration">110 ms</span></p>
+        <p><strong>Weapon Status:</strong> <span id="curWeapon">Visible (Angle: 335°, Grip: [129, 74])</span></p>
+        <p><strong>Motion Profile:</strong> <span>overhead chop (F02 (305°) -> F03 (320°) -> F04 (335°) -> F05 (15°) -> F06 (80°) -> F07 (120°) -> F08 (105°))</span></p>
+        <p><strong>Ground Clearance:</strong> <span>Blade edge touches groundY=190 (native 126) exactly at F07 impact without subterranean clipping; rebounds cleanly to y=188 at F08</span></p>
+        <p><strong>Specific Verification:</strong> <span>F02 GLM-repaired closed fist ([151, 84]) with genuine glove wrap; F03/F04/F07 structural keys preserved</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Visual Evidence & Trajectory Verification</h2>
+    <h3>Trajectory Contact Sheet</h3>
+    <img class="img-evidence" src="evidence/trajectory-overview.png" alt="Trajectory Overview" />
+    
+    <h3 style="margin-top: 24px;">4X Zoom &mdash; Right Hand Genuine Glove Envelope (F02..F08)</h3>
+    <img class="img-evidence" src="evidence/active-keyframes-zoom.png" alt="Glove Envelope Zoom" />
+
+    <h3 style="margin-top: 24px;">Tactical Scale Readability (128x128 & 64x64)</h3>
+    <img class="img-evidence" src="evidence/before-after-tactical.png" alt="Tactical Scale" />
+  </div>
+
+  <div class="card">
+    <h2>3. 12-Frame Technical Data & SHA-256 Hashes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Frame</th>
+          <th>Phase</th>
+          <th>Duration</th>
+          <th>Weapon</th>
+          <th>Angle</th>
+          <th>Grip (x, y)</th>
+          <th>Composite 256 Hash</th>
+          <th>Native Composite 128 Hash</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>F00</strong></td>
+          <td>guard</td>
+          <td>70ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19</td>
+          <td class="mono">2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d</td>
+        </tr>
+        <tr>
+          <td><strong>F01</strong></td>
+          <td>load-begin</td>
+          <td>80ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">1391a5311e6e3617cf50e8a6d4f31b5fef48b730eb1617cd1443afc43b3c1bbf</td>
+          <td class="mono">6ad57722c39bcbffc2b81e5b212390c3ba5aed63b633eb4ea898077c265706e5</td>
+        </tr>
+        <tr>
+          <td><strong>F02</strong></td>
+          <td>hoist-begin</td>
+          <td>90ms</td>
+          <td>Visible</td>
+          <td>305°</td>
+          <td>(151, 84)</td>
+          <td class="mono">0084db99136ec3d34655ef105b651ae046129a09eb3a0fddb00763a17a8ababb</td>
+          <td class="mono">7385eb1f590ab33ef752452f49466f1b1d91afe734e04e6ecd28877e6f2ca31a</td>
+        </tr>
+        <tr>
+          <td><strong>F03</strong></td>
+          <td>01-hoist</td>
+          <td>100ms</td>
+          <td>Visible</td>
+          <td>320°</td>
+          <td>(145, 79)</td>
+          <td class="mono">90e3bea13dd34f147f1f5487222cd0de23cbe7726890ca6fc26acf82f31a2336</td>
+          <td class="mono">33652d0f86452b1800918cc16e1820deca134bb8041c83ad085f41e689aebcd1</td>
+        </tr>
+        <tr>
+          <td><strong>F04</strong></td>
+          <td>02-apex</td>
+          <td>110ms</td>
+          <td>Visible</td>
+          <td>335°</td>
+          <td>(129, 74)</td>
+          <td class="mono">8dfd92bc6f961bc939c16cb30445859ca9983cd22b6f2eb3a097754a4a64ec20</td>
+          <td class="mono">4cc91f79b2064dd172595b90a2d5781b688a4d608f1f7b00a4f05f9b54d0e1ee</td>
+        </tr>
+        <tr>
+          <td><strong>F05</strong></td>
+          <td>drop-initiation</td>
+          <td>50ms</td>
+          <td>Visible</td>
+          <td>15°</td>
+          <td>(141, 84)</td>
+          <td class="mono">a40def0ebdbeeb1511f067bf985941190b1ff87dc1834260959a5320a075030e</td>
+          <td class="mono">71d81ab91f7872a14940e1b7a59431b2f9a6330572395e660d96ef514eec0be6</td>
+        </tr>
+        <tr>
+          <td><strong>F06</strong></td>
+          <td>forward-cleave</td>
+          <td>60ms</td>
+          <td>Visible</td>
+          <td>80°</td>
+          <td>(162, 130)</td>
+          <td class="mono">714bfda00a864ec022fd2d937d10aea06274fddd2d066089d3b61cf90de79485</td>
+          <td class="mono">246f0b76126e93fa018f7eb7e5974a8daa398ba38cd75b40d4d35e7d33070832</td>
+        </tr>
+        <tr>
+          <td><strong>F07</strong></td>
+          <td>03-impact</td>
+          <td>110ms</td>
+          <td>Visible</td>
+          <td>120°</td>
+          <td>(153, 146)</td>
+          <td class="mono">9f6e83e84af9200a392d41e9904df7d9b191cd019129439f5cbf6d2a11a6b95e</td>
+          <td class="mono">d28232123c65eef08a8b860d8d4c93c677c6be32ea021d8eaa2613e77f1fb543</td>
+        </tr>
+        <tr>
+          <td><strong>F08</strong></td>
+          <td>recover-low</td>
+          <td>100ms</td>
+          <td>Visible</td>
+          <td>105°</td>
+          <td>(155, 150)</td>
+          <td class="mono">87fd6b0d366949744fc1df9bc4a129f6e1886228b4f3c48acdf1acdb3ef98732</td>
+          <td class="mono">dbb1f7bca826b5210196b26ee4af74dc3a07a0adcc4edb113aadd96f6e4bb0b1</td>
+        </tr>
+        <tr>
+          <td><strong>F09</strong></td>
+          <td>recover-pelvis</td>
+          <td>100ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">c7882462aae760ec2b3803e3711c7b3efc6ec3f7a292ab09e53b7437b5659b8a</td>
+          <td class="mono">d5c31ed503a1fa8804c847adcf8e9e0f6c9fb552017c15b064b4ebf3a053ed3d</td>
+        </tr>
+        <tr>
+          <td><strong>F10</strong></td>
+          <td>recover-guard</td>
+          <td>100ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">684eaa6acec15e62554c4045d0a69c42430c048d626c65a5ea5b69879c07ff03</td>
+          <td class="mono">07b5e84b06466e833b2019bf42dce60e187f7adcb7b13de335a90e7cce9bf1d0</td>
+        </tr>
+        <tr>
+          <td><strong>F11</strong></td>
+          <td>guard-return</td>
+          <td>130ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19</td>
+          <td class="mono">2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const frames = [{"index": 0, "duration": 70, "phase": "guard", "weaponVisible": false, "angle": null, "grip": null, "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/00.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/00.png", "isAcceptedKey": false}, {"index": 1, "duration": 80, "phase": "load-begin", "weaponVisible": false, "angle": null, "grip": null, "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/01.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/01.png", "isAcceptedKey": false}, {"index": 2, "duration": 90, "phase": "hoist-begin", "weaponVisible": true, "angle": 305, "grip": [151, 84], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/02.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/02.png", "isAcceptedKey": false}, {"index": 3, "duration": 100, "phase": "01-hoist", "weaponVisible": true, "angle": 320, "grip": [145, 79], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/03.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/03.png", "isAcceptedKey": true}, {"index": 4, "duration": 110, "phase": "02-apex", "weaponVisible": true, "angle": 335, "grip": [129, 74], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/04.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/04.png", "isAcceptedKey": true}, {"index": 5, "duration": 50, "phase": "drop-initiation", "weaponVisible": true, "angle": 15, "grip": [141, 84], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/05.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/05.png", "isAcceptedKey": false}, {"index": 6, "duration": 60, "phase": "forward-cleave", "weaponVisible": true, "angle": 80, "grip": [162, 130], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/06.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/06.png", "isAcceptedKey": false}, {"index": 7, "duration": 110, "phase": "03-impact", "weaponVisible": true, "angle": 120, "grip": [153, 146], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/07.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/07.png", "isAcceptedKey": true}, {"index": 8, "duration": 100, "phase": "recover-low", "weaponVisible": true, "angle": 105, "grip": [155, 150], "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/08.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/08.png", "isAcceptedKey": false}, {"index": 9, "duration": 100, "phase": "recover-pelvis", "weaponVisible": false, "angle": null, "grip": null, "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/09.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/09.png", "isAcceptedKey": false}, {"index": 10, "duration": 100, "phase": "recover-guard", "weaponVisible": false, "angle": null, "grip": null, "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/10.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/10.png", "isAcceptedKey": false}, {"index": 11, "duration": 130, "phase": "guard-return", "weaponVisible": false, "angle": null, "grip": null, "png256": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/frames/11.png", "nativeComp": "../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/native-composite/11.png", "isAcceptedKey": false}];
+    let curIdx = 4;
+    let isPlaying = true;
+    let speed = 1.0;
+    let timer = null;
+
+    function updateView() {
+      const f = frames[curIdx];
+      document.getElementById('playerImg').src = f.png256;
+      document.getElementById('frameIndicator').innerText = `Frame: F${String(curIdx).padStart(2, '0')} (${f.duration}ms)`;
+      document.getElementById('curPhase').innerText = f.phase;
+      document.getElementById('curDuration').innerText = `${f.duration} ms`;
+      if (f.weaponVisible) {
+        document.getElementById('curWeapon').innerText = `Visible (Angle: ${f.angle}°, Grip: [${f.grip[0]}, ${f.grip[1]}])`;
+      } else {
+        document.getElementById('curWeapon').innerText = `Hidden (outside attack interval)`;
+      }
+    }
+
+    function tick() {
+      if (!isPlaying) return;
+      curIdx = (curIdx + 1) % frames.length;
+      updateView();
+      const nextDur = frames[curIdx].duration / speed;
+      timer = setTimeout(tick, nextDur);
+    }
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      document.getElementById('btnPlay').innerText = isPlaying ? 'Pause' : 'Play';
+      if (isPlaying) {
+        tick();
+      } else if (timer) {
+        clearTimeout(timer);
+      }
+    }
+
+    function prevFrame() {
+      isPlaying = false;
+      document.getElementById('btnPlay').innerText = 'Play';
+      if (timer) clearTimeout(timer);
+      curIdx = (curIdx - 1 + frames.length) % frames.length;
+      updateView();
+    }
+
+    function nextFrame() {
+      isPlaying = false;
+      document.getElementById('btnPlay').innerText = 'Play';
+      if (timer) clearTimeout(timer);
+      curIdx = (curIdx + 1) % frames.length;
+      updateView();
+    }
+
+    function setSpeed(s, btn) {
+      speed = s;
+      document.querySelectorAll('.spd-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if (isPlaying) {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(tick, frames[curIdx].duration / speed);
+      }
+    }
+
+    function setZoom(z, btn) {
+      document.querySelectorAll('.zm-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const box = document.getElementById('playerBox');
+      const sz = 256 * z;
+      box.style.width = sz + 'px';
+      box.style.height = sz + 'px';
+    }
+
+    updateView();
+    timer = setTimeout(tick, frames[curIdx].duration / speed);
+  </script>
+</body>
+</html>

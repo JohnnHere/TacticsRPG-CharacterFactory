@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-rear-recovery-v2",
+  "id": "combat.unarmed-strike-v2",
+  "character": "orc-v1",
+  "state": "Unarmed",
+  "legacySlotState": "Unarmed",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 9,
+  "durationsMs": [
+    40,
+    60,
+    60,
+    50,
+    50,
+    80,
+    60,
+    80,
+    100
+  ],
+  "totalDurationMs": 580,
+  "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/unarmed-attack.aseprite",
+  "masterSha256": "362fde42ad5e5b3b96fee2adae51806b47932927513258316744c0da3b19df05",
+  "nativeMaster": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-back_r.aseprite",
+  "nativeMasterSha256": "7aabeb302650f5c3b647fe9c10be86bc116e938c8baff96798352e74f64b3798",
+  "strip": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native-strip.png",
+  "stripSha256": "7b4c9b16748757d4568d10aa2d26432adfe6afe8f757c9273fb44844232036b5",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": {
+    "frame": 5,
+    "timeMs": 260,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false,
+    "description": "Heavy gauntlet unarmed punch impact extension at frame 5 (260ms)"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "durationMs": 40,
+      "phase": "rest-guard",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/01.png",
+      "sha256": "1a322bb22512234cc7f296995534d44029b83936d5bb9abc6c7eb73466eb3874",
+      "durationMs": 60,
+      "phase": "anticipation-onset",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/02.png",
+      "sha256": "62dc7f25f2722a9fac7526e7c1b82b39157324b92cf50f8055682c5c47092818",
+      "durationMs": 60,
+      "phase": "torso-coil-load",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/03.png",
+      "sha256": "73d948b64346fd6761289413cc6fea52d5e207e5fdeb333516f17683b59dcfcf",
+      "durationMs": 50,
+      "phase": "lunge-drive",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/04.png",
+      "sha256": "63439fa27a65933cc1259d1abe0e58833787b94333390db29eec6ccfa7768b11",
+      "durationMs": 50,
+      "phase": "punch-strike-thrust",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/05.png",
+      "sha256": "2ff95f5c973cd5ac43bc89c4eef5a23879e769de3fbcb0bf151cc2f31e7b8907",
+      "durationMs": 80,
+      "phase": "impact-peak-extension",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/06.png",
+      "sha256": "102135bb8fa99fef4553e77fdcc527fb3cfc59b6bb588f91d82a3c20ea94ce58",
+      "durationMs": 60,
+      "phase": "follow-through-recoil",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/07.png",
+      "sha256": "13338005e92eb739bead09009eea0b3d3919a5a32bbbb5c0356134947e2279d3",
+      "durationMs": 80,
+      "phase": "recovery-return",
+      "groundY": 190,
+      "nativeGroundY": 126
+    },
+    {
+      "index": 8,
+      "png": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/08.png",
+      "sha256": "7c9c62fc1a74f1b568a05dd2b7c7803f187af783948eee28991fc548caa225f3",
+      "durationMs": 100,
+      "phase": "terminal-neutral-rest",
+      "groundY": 190,
+      "nativeGroundY": 126
+    }
+  ]
+}

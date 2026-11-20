@@ -1,0 +1,79 @@
+{
+  "revision": "main-orc-rear-recovery-v2",
+  "character": "orc-v1",
+  "baseline": "complete-v1 b178422e1f7fc19f068c",
+  "generatedAt": "2026-10-26T00:00:00Z",
+  "evidence": [
+    "diagnosis/index.json",
+    "diagnosis/metrics.json",
+    "diagnosis/layers.json",
+    "diagnosis/grip.json",
+    "diagnosis/grids-index.json",
+    "preservation-snapshot.json"
+  ],
+  "reuseInventory": {
+    "cachedProKeyframes": {
+      "location": "experiments/main-orc-complete-v1/pixellab-recovery/",
+      "count": 15,
+      "usableFor": ["good rear base", "rear Defeat"],
+      "reuseDecision": "REUSE_DIRECT",
+      "rationale": "Chaves de base traseira e Defeat traseiro já validadas; não regenerar."
+    },
+    "frontIdleWalkSwordAxe": {
+      "location": "characters/orc-v1/source/complete-v1/front_{r,l}/",
+      "frames": { "Idle": 5, "Walk": 16, "Sword": 13, "Axe": 12 },
+      "reuseDecision": "REUSE_DIRECT",
+      "rationale": "Aprovados anteriormente; byte-idênticos; protegidos por contrato."
+    },
+    "rearStaticBases": {
+      "location": "characters/orc-v1/source/complete-v1/back_{r,l}/",
+      "reuseDecision": "REUSE_DIRECT",
+      "rationale": "Anatomia traseira estática melhorada e aprovada; não repintar."
+    },
+    "rearDefeatBack": {
+      "location": "characters/orc-v1/source/complete-v1/back_{r,l}/Defeat/",
+      "frames": 5,
+      "reuseDecision": "REUSE_DIRECT",
+      "rationale": "Terminal no chão, claramente incapacitado; preservar."
+    },
+    "weaponAssets": {
+      "items": ["recruit-sword", "militia-axe"],
+      "reuseDecision": "REUSE_DIRECT",
+      "rationale": "Assets independentes, attack-only, escala correta; não assar no corpo."
+    },
+    "rearWalkLegsFeet": {
+      "location": "front Walk leg/foot shapes grafted under rear torso",
+      "reuseDecision": "REQUIRES_EXTENSION",
+      "rationale": "Formas frontais de perna/pé incompatíveis com perspectiva de costas; precisam de reconstrução direcionada de membro inferior, não reaproveitamento direto."
+    },
+    "rearWeaponLayers": {
+      "location": "back_{r,l}/Sword|Axe/Attack/layers/",
+      "reuseDecision": "REQUIRES_EXTENSION",
+      "rationale": "weaponFront/weaponBack trocam profundidade sem continuidade de braço; grip salta lateralmente. Precisa reposição de braço/torso + metadados de aderência."
+    },
+    "rearUnarmedPoses": {
+      "location": "back_{r,l}/Unarmed/Attack/",
+      "frames": 5,
+      "reuseDecision": "CREATE_NEW",
+      "rationale": "Poses emprestadas de ataques armados incompatíveis; corpo desaba sem direção de golpe. Não reaproveitar."
+    },
+    "frontDefeatTerminal": {
+      "location": "front_{r,l}/Defeat/",
+      "frames": 5,
+      "reuseDecision": "REQUIRES_EXTENSION",
+      "rationale": "Quedas 0..3 boas; terminal ainda ajoelhado. Apenas terminal frontal precisa correção direcionada."
+    },
+    "frontHit": {
+      "location": "front_{r,l}/Hit/",
+      "frames": 5,
+      "reuseDecision": "REUSE_DIRECT (avaliar)",
+      "rationale": "Reação melhorada; possivelmente exagerada/rápida. Avaliar em 1×/0,75×/0,5× antes de editar; não reconstruir automaticamente."
+    }
+  },
+  "riskNotes": [
+    "Nenhum rebuild completo de 28 clips.",
+    "Nenhum espelhamento de front como rear.",
+    "Nenhum achatamento global/rotação 2D no Defeat.",
+    "Custo de chamadas PixelLab desconhecido neste checkpoint (marcado UNKNOWN em call-proposal)."
+  ]
+}

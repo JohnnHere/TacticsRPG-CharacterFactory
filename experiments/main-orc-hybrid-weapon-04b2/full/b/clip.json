@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "1.0.0",
+  "experimentId": "main-orc-hybrid-weapon-04b2",
+  "pilot": "B2",
+  "variant": "B",
+  "characterId": "orc-v1",
+  "direction": "back_r",
+  "action": "Sword",
+  "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/clip.json",
+  "sourceClipSha256": "25f40ef43d276cb93900c4625c92d5c19303700dfb9b8eb6c819ee0fe9723fe4",
+  "master": "experiments/main-orc-hybrid-weapon-04b2/full/b/composite.aseprite",
+  "masterSha256": "fd9af0f5e74767c26cd04586aafcaa9b6195581b926b5b3343651ec8b7c00c4d",
+  "strip": "experiments/main-orc-hybrid-weapon-04b2/full/b/strip.png",
+  "stripSha256": "25004220025e4f1e87fe7b01dd1e380470d83a64d69b567354902d105489d01e",
+  "canvasSize": [
+    256,
+    256
+  ],
+  "frameCount": 14,
+  "totalDurationMs": 730,
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "contactFrame": 8,
+  "contactTimeMs": 325,
+  "weapon": {
+    "id": "faceted-steel-sword-b",
+    "name": "Espada de Aço Facetada (Variant B)",
+    "sprite": "experiments/main-orc-hybrid-weapon-04b2/variants/sword-b/sword.png",
+    "master": "experiments/main-orc-hybrid-weapon-04b2/variants/sword-b/sword.aseprite",
+    "spriteSha256": "04a160cc57011f71edbbf96573d1e26075a3f33bee989045817938a5ef61ba4a",
+    "masterSha256": "475c9116ceb5fdbd663923443d11e8cfd9d52518059469b5adb1867457f23cfd",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ]
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "composite/00.png",
+      "bodyOnlyFile": "body-only/00.png",
+      "weaponOnlyFile": "weapon-only/00.png",
+      "durationMs": 30,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "declaredRightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ],
+      "sha256": "ce98f5c5b5438e23eddbe05b2778cd8393086a82beb08db7e0936f7fed4608f9"
+    },
+    {
+      "index": 1,
+      "file": "composite/01.png",
+      "bodyOnlyFile": "body-only/01.png",
+      "weaponOnlyFile": "weapon-only/01.png",
+      "durationMs": 65,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "declaredRightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ],
+      "sha256": "acc71423458ffa27871479c57d236b534a3a542f7d0a561c14e8ef359e340f66"
+    },
+    {
+      "index": 2,
+      "file": "composite/02.png",
+      "bodyOnlyFile": "body-only/02.png",
+      "weaponOnlyFile": "weapon-only/02.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        163,
+        131
+      ],
+      "declaredRightGrip": [
+        163,
+        131
+      ],
+      "rotationDeg": 20,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "e96296263940b9d9b188570a4ab185042076a5ce29e4425498a784d668a80d35"
+    },
+    {
+      "index": 3,
+      "file": "composite/03.png",
+      "bodyOnlyFile": "body-only/03.png",
+      "weaponOnlyFile": "weapon-only/03.png",
+      "durationMs": 50,
+      "weaponVisible": true,
+      "rightGrip": [
+        168,
+        98
+      ],
+      "declaredRightGrip": [
+        168,
+        98
+      ],
+      "rotationDeg": 5,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "b55d2fc2b3a2141172badcbf00b7e09b43a566cf6eda22b4a6b5cd18c4753cd8"
+    },
+    {
+      "index": 4,
+      "file": "composite/04.png",
+      "bodyOnlyFile": "body-only/04.png",
+      "weaponOnlyFile": "weapon-only/04.png",
+      "durationMs": 45,
+      "weaponVisible": true,
+      "rightGrip": [
+        162,
+        89
+      ],
+      "declaredRightGrip": [
+        162,
+        89
+      ],
+      "rotationDeg": -10,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "07ef8d46298f706da0f46764183483a61ca6c1c031bb17fbe9a472277569a1ec"
+    },
+    {
+      "index": 5,
+      "file": "composite/05.png",
+      "bodyOnlyFile": "body-only/05.png",
+      "weaponOnlyFile": "weapon-only/05.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        155,
+        86
+      ],
+      "declaredRightGrip": [
+        154.88633236983418,
+        86.10873166958693
+      ],
+      "rotationDeg": -14,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "8ba1abffd1f49c9ea6fd2dee447590cd9dc39ff9a7dc32833fcfefaabfaedcf8"
+    },
+    {
+      "index": 6,
+      "file": "composite/06.png",
+      "bodyOnlyFile": "body-only/06.png",
+      "weaponOnlyFile": "weapon-only/06.png",
+      "durationMs": 30,
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        105
+      ],
+      "declaredRightGrip": [
+        172,
+        105
+      ],
+      "rotationDeg": 25,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "1a84ab6620a28f8eb44ca24a94dd046a40ea34d166cf89722892c230b525e4cb"
+    },
+    {
+      "index": 7,
+      "file": "composite/07.png",
+      "bodyOnlyFile": "body-only/07.png",
+      "weaponOnlyFile": "weapon-only/07.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        179,
+        115
+      ],
+      "declaredRightGrip": [
+        178.60073510670102,
+        114.57960478079794
+      ],
+      "rotationDeg": 83,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "c1a4f4bdcc969a08829deef6fe5478836c86a68dc7cfc4733866fa2df13e1910"
+    },
+    {
+      "index": 8,
+      "file": "composite/08.png",
+      "bodyOnlyFile": "body-only/08.png",
+      "weaponOnlyFile": "weapon-only/08.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        134
+      ],
+      "declaredRightGrip": [
+        172,
+        134
+      ],
+      "rotationDeg": 115,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "5137bc1c9c213c1aebe0b7704b63a95235443f28b1b8cac149dca2ae906ec0e5"
+    },
+    {
+      "index": 9,
+      "file": "composite/09.png",
+      "bodyOnlyFile": "body-only/09.png",
+      "weaponOnlyFile": "weapon-only/09.png",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        169
+      ],
+      "declaredRightGrip": [
+        158,
+        169
+      ],
+      "rotationDeg": 115,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "9df745aeb70b946684f0cbe700c9e64e2b26761fa8362822152076d70fb16947"
+    },
+    {
+      "index": 10,
+      "file": "composite/10.png",
+      "bodyOnlyFile": "body-only/10.png",
+      "weaponOnlyFile": "weapon-only/10.png",
+      "durationMs": 55,
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        155
+      ],
+      "declaredRightGrip": [
+        159,
+        155
+      ],
+      "rotationDeg": 95,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "71f54bdec696e0f379259b401e72d58ad56a27ad5421283bacc29a89ea8873cf"
+    },
+    {
+      "index": 11,
+      "file": "composite/11.png",
+      "bodyOnlyFile": "body-only/11.png",
+      "weaponOnlyFile": "weapon-only/11.png",
+      "durationMs": 80,
+      "weaponVisible": true,
+      "rightGrip": [
+        164,
+        155
+      ],
+      "declaredRightGrip": [
+        164.27860342318323,
+        155.09497366108894
+      ],
+      "rotationDeg": 80,
+      "scale": 1,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "sha256": "9d0eedec947dce30f33a9270cfe9d69b4a9ebec8a067c45ec5f124ff7f6b742b"
+    },
+    {
+      "index": 12,
+      "file": "composite/12.png",
+      "bodyOnlyFile": "body-only/12.png",
+      "weaponOnlyFile": "weapon-only/12.png",
+      "durationMs": 45,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "declaredRightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ],
+      "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb"
+    },
+    {
+      "index": 13,
+      "file": "composite/13.png",
+      "bodyOnlyFile": "body-only/13.png",
+      "weaponOnlyFile": "weapon-only/13.png",
+      "durationMs": 90,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "declaredRightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ],
+      "sha256": "89a105e2c378b98385479950fbb48583e27fab837ba903692d1381acbe25af97"
+    }
+  ]
+}

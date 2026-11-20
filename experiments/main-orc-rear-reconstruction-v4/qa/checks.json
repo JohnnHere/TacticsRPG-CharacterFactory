@@ -1,0 +1,650 @@
+{
+  "freezeSha256": "8f3c0be13e2b6e7d7f3ff4a33807cc1a4cb5519602d1f589d24194808ad49c44",
+  "expectedFreezeSha256": "8f3c0be13e2b6e7d7f3ff4a33807cc1a4cb5519602d1f589d24194808ad49c44",
+  "manifestSha256": "f250f7a11ceb0e851c9a3c34f8c20e75c48da5a04e0a2229933945298aaf4017",
+  "checks": [
+    {
+      "name": "version-freeze sha256",
+      "ok": true,
+      "detail": "8f3c0be13e2b6e7d7f3ff4a33807cc1a4cb5519602d1f589d24194808ad49c44"
+    },
+    {
+      "name": "freeze status flags",
+      "ok": true,
+      "detail": {
+        "status": "ARTISTIC_REVISION_REQUIRED",
+        "eligible": false,
+        "fileCount": 761
+      }
+    },
+    {
+      "name": "freeze inventory hashes",
+      "ok": true,
+      "detail": {
+        "declared": 761,
+        "listed": 761,
+        "missing": 0,
+        "mismatched": 0,
+        "missingSample": [],
+        "mismatchSample": []
+      }
+    },
+    {
+      "name": "manifest hash matches freeze record",
+      "ok": true,
+      "detail": "f250f7a11ceb0e851c9a3c34f8c20e75c48da5a04e0a2229933945298aaf4017"
+    },
+    {
+      "name": "matrix 28/210/8/20",
+      "ok": true,
+      "detail": {
+        "cells": 28,
+        "unique": 28,
+        "frames": 210,
+        "affected": 8,
+        "affectedFrames": 82,
+        "aliases": 20,
+        "aliasFrames": 128
+      }
+    },
+    {
+      "name": "package eligibility",
+      "ok": true,
+      "detail": {
+        "eligibleForIntegration": false,
+        "technicalStatus": "NOT_VERIFIED",
+        "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+        "artisticApproval": "PENDING_CREATOR",
+        "runtimeImplemented": false,
+        "integrationStatus": "PARTIAL_MATERIAL_AND_SCALP_REFINEMENT_DO_NOT_PROMOTE"
+      }
+    },
+    {
+      "name": "keypose and specialist excluded from cells",
+      "ok": true,
+      "detail": "cell payloads contain neither keypose nor specialist"
+    },
+    {
+      "name": "manifest text has no specialist path",
+      "ok": true,
+      "detail": "searched manifest"
+    },
+    {
+      "name": "alias clip hashes match declared parents",
+      "ok": true,
+      "detail": {
+        "bad": []
+      }
+    },
+    {
+      "name": "protected Idle/Hit/rear Defeat are prior aliases",
+      "ok": true,
+      "detail": [
+        {
+          "cell": "front_r/Idle",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "front_r/Hit",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "front_l/Idle",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "front_l/Hit",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_r/Idle",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_r/Hit",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_r/Defeat",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_l/Idle",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_l/Hit",
+          "underV4": false,
+          "hashOk": true
+        },
+        {
+          "cell": "back_l/Defeat",
+          "underV4": false,
+          "hashOk": true
+        }
+      ]
+    },
+    {
+      "name": "frontal Unarmed/Walk/Defeat not forked",
+      "ok": true,
+      "detail": [
+        "front_r/Walk:UNCHANGED_ALIAS",
+        "front_r/Unarmed:UNCHANGED_ALIAS",
+        "front_r/Defeat:UNCHANGED_ALIAS",
+        "front_l/Walk:UNCHANGED_ALIAS",
+        "front_l/Unarmed:UNCHANGED_ALIAS",
+        "front_l/Defeat:UNCHANGED_ALIAS"
+      ]
+    },
+    {
+      "name": "affected alpha-over, native crop, handFront",
+      "ok": true,
+      "detail": {
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "name": "affected timing equals parent",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "hidden weapon/hand layers empty",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "back_r Sword/Axe bodies identical",
+      "ok": true,
+      "detail": {
+        "front_r": false,
+        "front_l": false,
+        "back_r": true,
+        "back_l": false
+      }
+    },
+    {
+      "name": "back_r body deltas equal explicit scalp points",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "non-back_r body pixels unchanged",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "weapon source hashes and unchanged alpha/grip/canvas",
+      "ok": true,
+      "detail": [
+        {
+          "category": "Axe",
+          "rgbaDelta": 346,
+          "alphaEqual": true,
+          "size": [
+            96,
+            96
+          ],
+          "grip": [
+            36,
+            55
+          ],
+          "parentGrip": [
+            36,
+            55
+          ],
+          "spriteHashOk": true,
+          "masterHashOk": true,
+          "parentMasterHashOk": true
+        },
+        {
+          "category": "Sword",
+          "rgbaDelta": 100,
+          "alphaEqual": true,
+          "size": [
+            96,
+            96
+          ],
+          "grip": [
+            48,
+            66
+          ],
+          "parentGrip": [
+            48,
+            66
+          ],
+          "spriteHashOk": true,
+          "masterHashOk": true,
+          "parentMasterHashOk": true
+        }
+      ]
+    },
+    {
+      "name": "input preservation 2939",
+      "ok": true,
+      "detail": {
+        "listed": 2939,
+        "missing": 0,
+        "mismatched": 0,
+        "missingSample": [],
+        "mismatchSample": []
+      }
+    },
+    {
+      "name": "review catalog points at this freeze",
+      "ok": true,
+      "detail": {
+        "revision": "main-orc-rear-reconstruction-v4",
+        "technicalStatus": "NOT_VERIFIED",
+        "packageStatus": "ARTISTIC_REVISION_REQUIRED",
+        "cells": 28,
+        "artisticApproval": "PENDING_CREATOR",
+        "runtimeImplemented": false
+      }
+    },
+    {
+      "name": "review page does not claim creator approval",
+      "ok": true,
+      "detail": "status strings scanned"
+    },
+    {
+      "name": "review page links stale integration report as QA opinion",
+      "ok": true,
+      "detail": "present; this is a labeling defect, not evidence of a completed QA"
+    },
+    {
+      "name": "review copied file count",
+      "ok": true,
+      "detail": {
+        "files": 775
+      }
+    },
+    {
+      "name": "before/after cards present",
+      "ok": true,
+      "detail": {
+        "count": 8,
+        "names": [
+          "back_l_Axe_baseline_strip.png",
+          "back_l_Sword_baseline_strip.png",
+          "back_r_Axe_baseline_strip.png",
+          "back_r_Sword_baseline_strip.png",
+          "front_l_Axe_baseline_strip.png",
+          "front_l_Sword_baseline_strip.png",
+          "front_r_Axe_baseline_strip.png",
+          "front_r_Sword_baseline_strip.png"
+        ]
+      }
+    },
+    {
+      "name": "rejected keypose files exist outside manifest cells",
+      "ok": true,
+      "detail": {
+        "count": 3,
+        "sample": [
+          "characters\\orc-v1\\source\\rear-reconstruction-v4\\keypose-axeR\\descending-study.png",
+          "characters\\orc-v1\\source\\rear-reconstruction-v4\\keypose-axeR\\equipped-descending-study.png",
+          "characters\\orc-v1\\source\\rear-reconstruction-v4\\keypose-axeR\\source-F04.png"
+        ]
+      }
+    },
+    {
+      "name": "unarmed/defeat native partial alpha",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "locomotion and hit durations recorded",
+      "ok": true,
+      "detail": [
+        {
+          "cell": "front_r/Idle",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            400,
+            450,
+            500,
+            450,
+            400
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_r/Idle/clip.json"
+        },
+        {
+          "cell": "front_r/Walk",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 16,
+          "ms": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json"
+        },
+        {
+          "cell": "front_r/Hit",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            45,
+            95,
+            115,
+            95,
+            100
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_r/Hit/clip.json"
+        },
+        {
+          "cell": "front_r/Defeat",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            70,
+            95,
+            115,
+            130,
+            290
+          ],
+          "clip": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/clip.json"
+        },
+        {
+          "cell": "front_l/Idle",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            400,
+            450,
+            500,
+            450,
+            400
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_l/Idle/clip.json"
+        },
+        {
+          "cell": "front_l/Walk",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 16,
+          "ms": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json"
+        },
+        {
+          "cell": "front_l/Hit",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            45,
+            95,
+            115,
+            95,
+            100
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/front_l/Hit/clip.json"
+        },
+        {
+          "cell": "front_l/Defeat",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            70,
+            95,
+            115,
+            130,
+            290
+          ],
+          "clip": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/clip.json"
+        },
+        {
+          "cell": "back_r/Idle",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            400,
+            450,
+            500,
+            450,
+            400
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_r/Idle/clip.json"
+        },
+        {
+          "cell": "back_r/Walk",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 8,
+          "ms": [
+            160,
+            160,
+            160,
+            160,
+            160,
+            160,
+            160,
+            160
+          ],
+          "clip": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/clip.json"
+        },
+        {
+          "cell": "back_r/Hit",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            45,
+            95,
+            115,
+            95,
+            100
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_r/Hit/clip.json"
+        },
+        {
+          "cell": "back_r/Defeat",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            70,
+            95,
+            115,
+            130,
+            290
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json"
+        },
+        {
+          "cell": "back_l/Idle",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            400,
+            450,
+            500,
+            450,
+            400
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_l/Idle/clip.json"
+        },
+        {
+          "cell": "back_l/Walk",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 8,
+          "ms": [
+            160,
+            160,
+            160,
+            160,
+            160,
+            160,
+            160,
+            160
+          ],
+          "clip": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/clip.json"
+        },
+        {
+          "cell": "back_l/Hit",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            45,
+            95,
+            115,
+            95,
+            100
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_l/Hit/clip.json"
+        },
+        {
+          "cell": "back_l/Defeat",
+          "status": "UNCHANGED_ALIAS",
+          "frames": 5,
+          "ms": [
+            70,
+            95,
+            115,
+            130,
+            290
+          ],
+          "clip": "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json"
+        }
+      ]
+    }
+  ],
+  "failed": [],
+  "clipTechnicalStatus": [
+    {
+      "cell": "front_r/Sword",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "front_r/Axe",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "front_l/Sword",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "front_l/Axe",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "back_r/Sword",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "back_r/Axe",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "back_l/Sword",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+      "choreographyChanged": false
+    },
+    {
+      "cell": "back_l/Axe",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+      "choreographyChanged": false
+    }
+  ],
+  "identicalBodies": {
+    "front_r": false,
+    "front_l": false,
+    "back_r": true,
+    "back_l": false
+  },
+  "weaponChecks": [
+    {
+      "category": "Axe",
+      "rgbaDelta": 346,
+      "alphaEqual": true,
+      "size": [
+        96,
+        96
+      ],
+      "grip": [
+        36,
+        55
+      ],
+      "parentGrip": [
+        36,
+        55
+      ],
+      "spriteHashOk": true,
+      "masterHashOk": true,
+      "parentMasterHashOk": true
+    },
+    {
+      "category": "Sword",
+      "rgbaDelta": 100,
+      "alphaEqual": true,
+      "size": [
+        96,
+        96
+      ],
+      "grip": [
+        48,
+        66
+      ],
+      "parentGrip": [
+        48,
+        66
+      ],
+      "spriteHashOk": true,
+      "masterHashOk": true,
+      "parentMasterHashOk": true
+    }
+  ],
+  "reviewFileCount": 775,
+  "continuousPlayback": "NOT_VERIFIED",
+  "note": "Hash and layer checks do not approve choreography, grip, or motion."
+}

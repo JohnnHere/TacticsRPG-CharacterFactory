@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "frames": [
+    {
+      "frame": 0,
+      "bodyOpaqueBounds": [
+        22,
+        8,
+        105,
+        126
+      ],
+      "durationMs": 90
+    },
+    {
+      "frame": 1,
+      "bodyOpaqueBounds": [
+        22,
+        8,
+        113,
+        126
+      ],
+      "durationMs": 80
+    },
+    {
+      "frame": 2,
+      "bodyOpaqueBounds": [
+        22,
+        3,
+        108,
+        126
+      ],
+      "durationMs": 90
+    },
+    {
+      "frame": 3,
+      "bodyOpaqueBounds": [
+        22,
+        2,
+        105,
+        126
+      ],
+      "durationMs": 80
+    },
+    {
+      "frame": 4,
+      "bodyOpaqueBounds": [
+        21,
+        9,
+        123,
+        126
+      ],
+      "durationMs": 100
+    },
+    {
+      "frame": 5,
+      "bodyOpaqueBounds": [
+        22,
+        8,
+        120,
+        126
+      ],
+      "durationMs": 80
+    },
+    {
+      "frame": 6,
+      "bodyOpaqueBounds": [
+        22,
+        8,
+        111,
+        126
+      ],
+      "durationMs": 100
+    },
+    {
+      "frame": 7,
+      "bodyOpaqueBounds": [
+        22,
+        8,
+        105,
+        126
+      ],
+      "durationMs": 110
+    }
+  ],
+  "gifChecks": [
+    {
+      "file": "experiments/main-orc-rear-recovery-v2/back_r-sword-representative-1x.gif",
+      "frameDelaysMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ],
+      "expectedMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ],
+      "sha256": "1c829ba61370b4fa51d576daf033c00d1e2853a3723b370c8cee4d9be56be951"
+    },
+    {
+      "file": "experiments/main-orc-rear-recovery-v2/back_r-sword-representative-075x.gif",
+      "frameDelaysMs": [
+        120,
+        110,
+        120,
+        110,
+        130,
+        110,
+        130,
+        150
+      ],
+      "expectedMs": [
+        120,
+        110,
+        120,
+        110,
+        130,
+        110,
+        130,
+        150
+      ],
+      "sha256": "6e857315b53a4589c84268d08318253615b0f127bf84c4545d65c68c00e4a230"
+    },
+    {
+      "file": "experiments/main-orc-rear-recovery-v2/back_r-sword-representative-05x.gif",
+      "frameDelaysMs": [
+        180,
+        160,
+        180,
+        160,
+        200,
+        160,
+        200,
+        220
+      ],
+      "expectedMs": [
+        180,
+        160,
+        180,
+        160,
+        200,
+        160,
+        200,
+        220
+      ],
+      "sha256": "0af38ed76baef819b698f1e687ed1d6bd6dba94f41d0b0f9f6274b37617232c9"
+    }
+  ],
+  "problems": [],
+  "checks": [
+    "exact four-layer recomposition",
+    "native128 equals body-only crop",
+    "body bounds/ground row measured",
+    "front F02 retains unchanged frames 00/01/03/04 and exports body-only native128",
+    "representative clip paths/frame hashes match metadata",
+    "Aseprite review GIF delays checked"
+  ]
+}

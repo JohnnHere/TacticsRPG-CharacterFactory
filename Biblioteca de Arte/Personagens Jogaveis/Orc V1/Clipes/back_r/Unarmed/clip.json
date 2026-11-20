@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "basic.unarmed",
+  "character": "orc-v1",
+  "state": "Unarmed",
+  "legacySlotState": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    80,
+    110,
+    50,
+    90,
+    120
+  ],
+  "totalDurationMs": 450,
+  "master": "Unarmed.aseprite",
+  "masterSha256": "727874dade365c8401dfcd2758277493942e4c76fa099d8462b07736038f97ba",
+  "nativeMaster": "Unarmed-128.aseprite",
+  "nativeMasterSha256": "980cbf5a62d959d0ae1bbfb5697b0d20a76980e637f30fac428374c5f7e3216b",
+  "strip": "Folha.png",
+  "stripSha256": "09aa9e11cddfa87b9396f67d17ffdf264fdde64db596d88f3f8261c5161895bb",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": {
+    "frame": 2,
+    "timeMs": 190,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "Quadros/00.png",
+      "sha256": "d2780500bcbb2f36ad8c1d0f89c8bfdba4c0101908cbd7a163435211aa9f5827",
+      "nativePng": "Nativo128/00.png",
+      "nativeSha256": "a66e6a38f3217d025564090d3c15a57b4b0cf32297f67b572e0a5475172c543e",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+      "supplementSha256": "a66e6a38f3217d025564090d3c15a57b4b0cf32297f67b572e0a5475172c543e",
+      "durationMs": 80,
+      "phase": "guard-prep",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "Quadros/01.png",
+      "sha256": "ab8df3ca84064d227fb56bcc6cd4826c5486e2701cfa921baadc146fd624a172",
+      "nativePng": "Nativo128/01.png",
+      "nativeSha256": "c8d87f43a9a069aa52fa1593367d963e6957b35455ed33c85ca6b99077fe16cd",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+      "supplementSha256": "c8d87f43a9a069aa52fa1593367d963e6957b35455ed33c85ca6b99077fe16cd",
+      "durationMs": 110,
+      "phase": "shoulder-coil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "Quadros/02.png",
+      "sha256": "7077f82638ef2df1f6a12b3d666c9299f1f7e367e944ac94cd5c27c515b19f73",
+      "nativePng": "Nativo128/02.png",
+      "nativeSha256": "b873acb9b797ff68b991b6cd3eb37e9bcc90d10c14fc9fb90b5b762ee75399a9",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+      "supplementSha256": "b873acb9b797ff68b991b6cd3eb37e9bcc90d10c14fc9fb90b5b762ee75399a9",
+      "durationMs": 50,
+      "phase": "heavy-gauntlet-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "Quadros/03.png",
+      "sha256": "51d623f92ace4ead3f32a8c3c0f5f61e895a3ab0fb3a30b55deaa23e44f3c1ce",
+      "nativePng": "Nativo128/03.png",
+      "nativeSha256": "dcd0681f762f919dd471c78173b3531737e7bf3ee04d0f73f41997a22cd9a978",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+      "supplementSha256": "dcd0681f762f919dd471c78173b3531737e7bf3ee04d0f73f41997a22cd9a978",
+      "durationMs": 90,
+      "phase": "follow-through",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "Quadros/04.png",
+      "sha256": "79ba9f637f763342cadc1d2dde667a104de79523729e51d402244ac7c55d92aa",
+      "nativePng": "Nativo128/04.png",
+      "nativeSha256": "b1c5c2f07248920d9854554141837cae10b0c849a76ac654a0d73527111b5c4e",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+      "supplementSha256": "b1c5c2f07248920d9854554141837cae10b0c849a76ac654a0d73527111b5c4e",
+      "durationMs": 120,
+      "phase": "recovery-settle",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

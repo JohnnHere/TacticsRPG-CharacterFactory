@@ -1,0 +1,81 @@
+{
+  "status": "BODY_BACK_R_AXE_FULL_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "frameCount": 12,
+  "durationMs": 1100,
+  "representative": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/representative.json",
+    "sha256": "50eb4b78aa86a51ea8ea6e81ebaa563f30043a6ca0c306cd2b1d82900b39bb85"
+  },
+  "clip": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+    "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3"
+  },
+  "noWeaponOrGrip": true,
+  "otherRearClipsGenerated": 0,
+  "propagationAllowed": false,
+  "qaCalled": false,
+  "nextAction": "Root submits this exact full back_r/Axe body freeze to SAME independent Sol/Codex7eaec423. Await full-cycle verdict before any other three rear weapon clips.",
+  "generationAccounting": {
+    "jobs": [
+      {
+        "tool": "animate_image",
+        "jobId": "aadca5fb-4042-4c54-9290-1d025019e685",
+        "segment": "descent",
+        "chargedGenerations": 1,
+        "returnedFramesIncludingInput": 5,
+        "request": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/request-descent.json",
+          "sha256": "6d17a93833ffe74acae9e54df5e7f78eb9b1038dfdef6ffb02ccbbb2a7ea6a41"
+        },
+        "completedReceipt": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/poll-descent-03.json",
+          "sha256": "b611e934818816c8d88df337304bbc5e98e9f07377874836553703a561c8edda"
+        }
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "ab74883b-045d-4458-ae80-9b340083e14b",
+        "segment": "entry",
+        "chargedGenerations": 1,
+        "returnedFramesIncludingInput": 5,
+        "request": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/request-entry.json",
+          "sha256": "7741796b9e7d7d81e7ff6d58c5b64fb185989317afc1d31ce54c2706f3b9f56f"
+        },
+        "completedReceipt": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/poll-entry-02.json",
+          "sha256": "4861962dbafe4fcbe747a6573cc81c51b730afd84bc3c8741154cd8f5486d19d"
+        }
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "bef66c10-ac0b-4425-9aef-a36b14cd210e",
+        "segment": "recovery",
+        "chargedGenerations": 1,
+        "returnedFramesIncludingInput": 5,
+        "request": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/request-recovery.json",
+          "sha256": "e48546f115818fe10f2271d1c2a93bb2a0b15d96eb9293eef06e2d946558d55c"
+        },
+        "completedReceipt": {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/poll-recovery-02.json",
+          "sha256": "7e4fffc7d5dc2cdec9d371f3dd0af2eea498b377c17bb23e3fa6fd008a9e18cc"
+        }
+      }
+    ],
+    "totalChargedGenerations": 3,
+    "previousMeasuredBalance": 1370.7,
+    "finalMeasuredBalance": 1367.7,
+    "balanceReceipt": {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/balance-final.json",
+      "sha256": "f7cb146d20cce4c0e39b1125bad51609232f303b9f3a83a7dc031f9fa61e7f84"
+    },
+    "purchases": 0,
+    "subscriptionsChanged": false,
+    "toolModel": "Not selectable by animate_image schema; no model identity inferred"
+  }
+}

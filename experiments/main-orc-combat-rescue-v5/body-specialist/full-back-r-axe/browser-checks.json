@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "name": "all twelve native images load",
+      "pass_": true
+    },
+    {
+      "name": "frame step impact",
+      "pass_": true
+    },
+    {
+      "name": "next frame recovery",
+      "pass_": true
+    },
+    {
+      "name": "previous frame impact",
+      "pass_": true
+    },
+    {
+      "name": "native and tactical sizes",
+      "pass_": true
+    },
+    {
+      "name": "normal 1x clock advances",
+      "pass_": true,
+      "state": {
+        "index": 7,
+        "elapsed": 603.9999999642373,
+        "playing": true,
+        "total": 1100,
+        "speed": 1
+      }
+    },
+    {
+      "name": "one shot terminal hold",
+      "pass_": true,
+      "state": {
+        "index": 11,
+        "elapsed": 1100,
+        "playing": false,
+        "total": 1100,
+        "speed": 1
+      }
+    },
+    {
+      "name": "half speed clock",
+      "pass_": true,
+      "state": {
+        "index": 3,
+        "elapsed": 305.8999999940395,
+        "playing": true,
+        "total": 1100,
+        "speed": 0.5
+      }
+    },
+    {
+      "name": "javascript errors",
+      "pass_": true,
+      "errors": []
+    }
+  ],
+  "allPassed": true,
+  "limitation": "Functional browser and sampled clock checks; not an independent perceptual playback verdict."
+}

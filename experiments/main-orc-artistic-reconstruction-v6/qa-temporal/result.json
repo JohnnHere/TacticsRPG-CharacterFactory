@@ -1,0 +1,77 @@
+{
+  "revision": "main-orc-artistic-reconstruction-v6",
+  "reviewType": "INDEPENDENT_TEMPORAL_VISUAL_QA",
+  "reviewDate": "2026-10-30",
+  "manifest": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+  "manifestSha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+  "pageInspected": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Reconstrucao artistica/index.html",
+  "browserUsed": "Chromium Headless Shell 156.0.8078.4 (Playwright) via CDP/Direct rendering; fallback Edge 156.0.4314.50 verificado",
+  "verdict": "TEMPORAL_PASS",
+  "artisticStatus": "VISUAL_REVIEW_COMPLETED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": true,
+  "executionCounts": {
+    "front_r/Sword": { "playback1xLoops": 4, "playback05xLoops": 2, "steppedFrames": 13, "totalDurationMs": 730 },
+    "front_l/Sword": { "playback1xLoops": 4, "playback05xLoops": 2, "steppedFrames": 13, "totalDurationMs": 730 },
+    "back_r/Sword": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 950 },
+    "back_l/Sword": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 950 },
+    "front_r/Axe": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 1005 },
+    "front_l/Axe": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 1005 },
+    "back_r/Axe": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 1320 },
+    "back_l/Axe": { "playback1xLoops": 3, "playback05xLoops": 1, "steppedFrames": 12, "totalDurationMs": 1320 }
+  },
+  "focalFindings": [
+    {
+      "id": "V6-QA-01",
+      "cell": "front_l/Sword",
+      "frames": [2, 3, 4, 5],
+      "check": "Axila e abertura anatômica em movimento",
+      "status": "CLOSED",
+      "temporalVerdict": "TEMPORAL_PASS",
+      "detail": "A axila lê naturalmente como abertura anatômica com forro/tecido vermelho e sombreamento suave. A transição F02->F03->F04->F05 não apresenta estalo, piscada ou projeção espúria."
+    },
+    {
+      "id": "V6-QA-02",
+      "cell": "back_l/Sword",
+      "frames": [7, 8, 9],
+      "check": "Elevação da lâmina acima do piso (groundY=190) em movimento",
+      "status": "CLOSED",
+      "temporalVerdict": "TEMPORAL_PASS",
+      "detail": "Pontas da lâmina medidas a y=187 (F07), y=185 (F08) e y=173 (F09), respectivamente 3px, 5px e 17px acima do chão. Em movimento 1x e 0,5x a lâmina lê suspensa ao lado da perna, sem sugerir perfuração ou contato com o solo."
+    }
+  ],
+  "artisticEvaluations": {
+    "rearSwords": {
+      "verdict": "PASS",
+      "detail": "Arco de corte contínuo e fluido nas duas vistas traseiras (back_r e back_l). Progressão clara: antecipação (saque do quadril), aceleração (descida rápida em 40ms), impacto bem pontuado (80ms) e follow-through com desaceleração e retorno a desarmado sem teleporte ou membro flutuante."
+    },
+    "rearAxes": {
+      "verdict": "PASS",
+      "detail": "Golpe descendente com forte sensação de peso e participação ativa do corpo inteiro: flexão evidente dos joelhos no impacto (F07-F08), afundamento do tronco e abertura de base. Proporções da cabeça do machado consistentes ao longo do arco."
+    },
+    "directionalCompatibility": {
+      "verdict": "PASS",
+      "detail": "Identidade de técnica coerente entre as vistas traseiras back_r (NE) e back_l (NW), respeitando anatomia própria e iluminação superior-esquerda, sem espelhamento 2D."
+    },
+    "frontalPreservation": {
+      "verdict": "PASS",
+      "detail": "Coreografia frontal de Sword e Axe totalmente preservada. Retoques localizados de eliminação de pixels claros dispersos eliminaram ruídos/piscadas nas bordas."
+    },
+    "tacticalScale64px": {
+      "verdict": "PASS",
+      "detail": "Em escala tática (64x64 e 128x128), a leitura de silhueta, armas e direção do golpe é nítida e funcional para jogabilidade."
+    },
+    "transitions": {
+      "verdict": "PASS",
+      "detail": "Transição Idle -> Attack -> Idle testada nos 8 ataques: armas invisíveis no repouso/guarda, aparecem estritamente no intervalo declarado de ataque e somem na recuperação."
+    }
+  },
+  "openDefects": [],
+  "limitations": "Revisão visual e temporal executada via automação em navegador real (Chromium Headless Shell via Playwright), com inspeção de traces contínuos em rAF e leitura visual direta dos frames e recortes capturados. A aprovação artística final e definitiva é exclusiva do criador.",
+  "artEdited": false,
+  "manifestEdited": false,
+  "unityEdited": false,
+  "pixelLabCalls": 0,
+  "subagentsCreated": 0,
+  "llmCost": "NOT_REPORTED"
+}

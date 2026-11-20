@@ -1,0 +1,55 @@
+DEV PRINCIPAL — reconstrução `back_l` Sword e Axe do Orc V1 (V7). Você é o modelo de maior raciocínio desta rodada; o criador recomendou explicitamente concentrar a maior capacidade nas duas reconstruções `back_l`. Você não é QA nem orquestrador; não crie revisores.
+
+## Por que existe esta rodada
+O candidato V6 (manifesto `characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json`, SHA `5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca`) passou em validação técnica, QA estático e QA temporal — e o **criador rejeitou** mesmo assim. Veredito textual dele sobre o seu alvo:
+
+- `back_l / Sword` — CRÍTICO: "ainda falha em representar um ataque de espada coerente. Em vez de levantar a espada e desferir um golpe reconhecível comparável às outras três direções, o Orc parece atacar de lado." Choreografia incorreta, movimento antinatural, posicionamento de arma inconsistente, continuidade ruim, correspondência inadequada com as outras direções, artefatos de contorno.
+- `back_l / Axe` — CRÍTICO: "severamente antinatural, possivelmente artisticamente pior que o Sword traseiro-esquerdo." Trajetória de arma incorreta, posturas antinaturais, movimento de braço inconsistente, pegada ruim, rigidez excessiva.
+- Flash branco — CRÍTICO: flash branco conspícuo no lado esquerdo durante o Sword Attack traseiro.
+
+Isso significa: **não repita o método que produziu o V6.** No V6 as poses traseiras foram geradas por skeleton_v3 e o resultado lido como corte lateral genérico. O que o criador quer é reconhecer a MESMA técnica de espada nas quatro vistas.
+
+## Critério central (o mais importante da task)
+`front_r`, `front_l`, `back_r` e `back_l` devem comunicar **o mesmo ataque** adaptado à perspectiva. Não espelho de pixels; a mesma ação física reconhecível: preparação → elevação/preparação da arma → participação de tronco/ombro → aceleração → impacto → follow-through → recuperação.
+
+Referências de identidade de técnica: os frontais atuais, que o criador considera satisfatórios —
+- `characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/clip.json` (PROTEGIDO — não altere)
+- `characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Sword-full/clip.json`
+- `characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json`
+- `characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json`
+Estude as FASES e o tempo deles. NÃO copie coordenadas de corpo frontal para vista traseira.
+
+## Escopo e ordem
+1. `back_l / Sword` primeiro (prioridade absoluta).
+2. `back_l / Axe` em seguida, como movimento próprio de machado (massa na cabeça, chop one-handed), não como o corpo do sword com outra arma.
+Pare ANTES de `back_r` (outra sessão cuida) e antes de qualquer frontal.
+
+## Fontes
+- Rejeitado, para auditoria (NÃO editar): `characters/orc-v1/source/artistic-reconstruction-v6/rear/{back_l-sword,back_l-axe}/`.
+- Corpo desarmado de identidade: use a base V1 desarmada que as frentes anteriores já usaram (procure em `characters/orc-v1/source/combat-rescue-v5/` e `artistic-reconstruction-v6/rear/` os corpos `layers/body` e os mestres `body`/`native`), e os raws/proveniência em `experiments/main-orc-artistic-reconstruction-v6/rear/`.
+- Itens independentes: `characters/orc-v1/source/combat-rescue-v5/combat/weapons/{Sword,Axe}/weapon.json`.
+- Lições de falhas anteriores: `docs/RECIPES.md` (seções de 29–30/10) e `docs/MAIN_ORC_COMBAT_POLISH.md`.
+
+## Método exigido
+- Primeiro **auditoria**: classifique os quadros do V6 `back_l` em KEEP / TARGETED_PIXEL_FIX / TIMING_FIX / REAUTHOR_KEYFRAME / REMOVE_OR_REPLACE e registre POR QUE o V6 lê como lateral (ex.: arco no plano horizontal em vez de vertical/diagonal, punho baixo, ombro parado, tronco sem rotação). Essa explicação é a base do novo movimento.
+- Depois defina a técnica em fases explícitas e verifique se cada pose gerada implementa a fase pretendida ANTES de montar o ciclo.
+- Gere poses de corpo INTEIRO desarmado (PixelLab `animate_with_skeleton_v3` com esqueletos explícitos por pose funcionou antes; prompt corporal NUNCA nomeia a arma — nome de equipamento já induziu arma embutida no corpo). Audite cada saída em layers-off.
+- Acabamento e composição **exclusivamente no Aseprite** (Lua), com perfil próprio. Pillow só leitura/medição.
+- Pegada: luva genuína por pose rastreando ombro→cotovelo→antebraço→pulso→palma; sem socket fixo, sem carimbo; a mão deve envolver o cabo visivelmente; guarda/pomo legíveis.
+- Um único item independente por família; nunca assar arma no corpo.
+- Mão DIREITA anatômica dominante na vista traseira-esquerda (ela aparece voltada para o observador) — confirme na pose, não presuma.
+
+## Contratos técnicos
+- Escreva SOMENTE em `characters/orc-v1/source/combat-recovery-v7/rear/` e `experiments/main-orc-combat-recovery-v7/rear/` + perfil `tmp/aseprite-v7-rear-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS.
+- Composto 256×256, body offset [64,64], `groundY` 190; nativo 128×128, `groundY` 126; honre `cel.position`; `nativePng` = recorte do CORPO.
+- Camadas `weaponBack → body → weaponFront → handFront`; arma apenas no intervalo do ataque; bookends 100% transparentes e composto igual ao corpo; zero pixel de arma na camada `body`.
+- Mestres 256/128 salvos, REABERTOS e reexportados com pixels+timing conferidos; `clip.json` com paths/hashes/durações/`visibleInterval`/proveniência; tiras `native-strip` e `composite-strip` também exigidas pelo validador da fábrica.
+- **Check novo desta rodada:** nenhum pixel de `weapon*` abaixo de `groundY` fora do impacto real; e nenhum cluster claro que SURJA e DESAPAREÇA entre quadros vizinhos (padrão de flash) — essa classe foi reprovada pelo criador.
+- PixelLab: medir saldo antes/depois, recibos e seeds preservados, sem compras. Criador autoriza uso necessário; não repita estratégia que já falhou.
+
+## Entrega (checkpoint `V7_BACK_L_REBUILT`)
+- Dois ciclos `back_l` (Sword e Axe) completos, desarmados no bookend, armados apenas no ataque.
+- Preview HTML: 1×, 0,5×, passo, zoom nativo, escala tática, body-only e composto, e comparação lado a lado `back_l` vs o frontal correspondente (é o critério do criador), além de before/after contra o V6 rejeitado.
+- `report.md`: auditoria do V6 com a explicação do "ataque lateral", fases da técnica nova, KEEP vs REAUTHOR por quadro, proveniência de cada pose (job/seed/edição), contabilidade PixelLab com recibos, o que ficou incerto.
+- NUNCA declare aprovado ou "sem defeitos": o criador julga. PARE no checkpoint.

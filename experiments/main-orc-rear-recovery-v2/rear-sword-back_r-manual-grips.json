@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "rear-sword-back_r.manual-grips.v1",
+  "status": "APPROXIMATE_VISUAL_READ_REQUIRES_VERIFY_ADJUST_LOOP",
+  "coordinateSpace": "composite 256x256 (native128 = composite - bodyOffset[64,64])",
+  "readMethod": "agent visual read of qa-zoom/sword-bodies-grid-half0.png / half1.png (32px grid, labels every 64px); uncertainty +/- 8px",
+  "bodySource": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/NN.png",
+  "verifyLoop": "render weapon via transform pointer at targetGrip -> flatten composite -> view 2x -> nudge grip until hilt sits inside fist cluster -> lock value; programmatic check: body layer opaque at rightGrip AND weapon bbox extends past body silhouette",
+  "grips": {
+    "00": [150, 133], "01": [150, 133], "02": [150, 133],
+    "03": [152, 105], "04": [150, 94],  "05": [148, 90],
+    "06": [148, 90],  "07": [150, 96],  "08": [152, 118],
+    "09": [151, 124], "10": [149, 130],
+    "11": [150, 133], "12": [150, 133]
+  },
+  "noWeaponFrames": [0, 1, 11, 12],
+  "weaponVisibleInterval": [2, 10]
+}

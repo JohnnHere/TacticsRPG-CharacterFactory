@@ -1,0 +1,42 @@
+{
+  "revision": "main-orc-rear-recovery-v2",
+  "character": "orc-v1",
+  "baseline": "characters/orc-v1/source/complete-v1",
+  "baselineBuild": "dist/editor/orc-v1-complete-v1/b178422e1f7fc19f068c",
+  "experiment": "experiments/main-orc-rear-recovery-v2",
+  "candidate": "characters/orc-v1/source/rear-recovery-v2",
+  "masters": "characters/orc-v1/source/aseprite/rear-recovery-v2",
+  "preserveExact": [
+    "front_r/front_l Idle",
+    "front_r/front_l Walk",
+    "front_r/front_l Sword",
+    "front_r/front_l Axe",
+    "rear static bases",
+    "rear Defeat when valid",
+    "weapons",
+    "active equipment-current.json"
+  ],
+  "productionOwner": "Paseo ART DEV; source/candidate/scripts/preview/production evidence only",
+  "knowledgeOwner": "Paseo CONTRACT DEV; config/artistic-quality-gates-v1.json, gate validator as necessary, docs/ARTISTIC_QUALITY_GATES.md, WORKFLOW, RECIPES, MAIN_ORC_COMBAT_POLISH, ROADMAP, handoff/AGENT_CONTEXT, AGENTS, specific recipe constraints/tests only",
+  "orchestratorOwner": "routing/contracts, representative visual checkpoints, integration and mandatory final QA",
+  "qaOwner": "Gemini Argon via antigravity after integration; no additional QA agent by DEV",
+  "boundaries": [
+    "No Unity/commits/destructive cleanup",
+    "No entire28clip regeneration",
+    "No global corpse flattening/2D rotation",
+    "No front repaint/mirroring as rear motion",
+    "No creator approval granted",
+    "No arbitrary numeric Hit minima as artistic pass"
+  ],
+  "workflow": [
+    "Verify baseline + tools + preserve originals",
+    "Diagnose exact frames with actual exports",
+    "Representative rear Walk keys then full cycle review before expansion",
+    "Rear unarmed then category-specific weapon keyposes/cycles",
+    "Only confirmed frontal unarmed corrections",
+    "Front terminal Defeat down/incapacitated; keep good falls/rear ends",
+    "Hit assess1x/.75/.5 and practicalscale; defer game-dependent judgment",
+    "Export only changed sources, alias unchanged28coverage; existing viewer",
+    "Freeze integrated package, independentQA and targeted corrections"
+  ]
+}

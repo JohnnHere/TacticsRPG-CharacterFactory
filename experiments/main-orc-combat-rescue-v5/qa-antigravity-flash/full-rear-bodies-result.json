@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T16:15:30Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "model": "Gemini 3.8 Flash (High) via Antigravity",
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false,
+    "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/"
+  },
+  "overallVerdict": "REVISIONS_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "runtimeImplemented": false,
+  "integrationAllowed": false,
+  "automaticPropagationAllowed": false,
+  "scope": {
+    "description": "Evaluation of 4 complete rear unarmed body cycles (Orc V1): 3 newly authored cycles (back_r/Sword, back_l/Sword, back_l/Axe) plus 1 preserved canonical cycle (back_r/Axe)",
+    "producerCheckpoint": "BODY_THREE_FULL_READY",
+    "producerSession": "3c2b5bd7",
+    "clipsInspected": [
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_r-Sword-full/clip.json",
+        "sha256": "aa676dec82400f5d7d9a64823fe4a21963e82387ec98fb58f89a843221edbbc9"
+      },
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/clip.json",
+        "sha256": "6da82bacaeb1b2ebea97adddc62ddc632f0bcf8eb099f11aa3232b6bdf25555f"
+      },
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/clip.json",
+        "sha256": "88ecfde6b588f0c63c5d915a2ad68230e58448c832db6924dec58cdbff288cc9"
+      },
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+        "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3"
+      }
+    ]
+  },
+  "temporalPerception": {
+    "continuous1xVisuallyObserved": false,
+    "discreteFrameByFrameViewed": true,
+    "native128Observed": true,
+    "tactical64Observed": true,
+    "diagnosticZoomObserved": true,
+    "notes": "Direct visual inspection executed via multimodal image decoding on all native strips, composite strips, individual frames, and contact strips. Real-time continuous 1x motion in live engine/browser was not observed in live playback; frame-by-frame and transition progression inspected across all 12 frames per cycle."
+  },
+  "packageVerdicts": {
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_r-Sword-full/clip.json": {
+      "cycleName": "back_r-Sword-full",
+      "direction": "back_r",
+      "category": "Sword",
+      "frameCount": 12,
+      "totalDurationMs": 730,
+      "verdict": "REVISIONS_REQUIRED",
+      "clipSha256": "aa676dec82400f5d7d9a64823fe4a21963e82387ec98fb58f89a843221edbbc9",
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halosExceptF06": 0
+      },
+      "findings": [
+        {
+          "id": "DEFECT-REAR-01",
+          "severity": "HIGH",
+          "frame": "F06 (native/06.png / body256/06.png)",
+          "symptom": "Prominent curved white/light-cyan sword slash swoosh/blade trail baked directly into the unarmed body cel.",
+          "evidence": "272 bright pixels (rgba > 180, 180, 180, 255) forming a curved slash arc from right pauldron (x:105, y:20) down across flank, groin mail, and right leg shin to (x:30, y:110).",
+          "cause": "AI generation bridge for descent intermediate hallucinated a weapon VFX/slash arc on the unarmed body prompt; uncleaned during Aseprite assembly.",
+          "impact": "Violation of layers-off policy and Lesson 15 (weapon contamination). Will produce double-blade / visual ghosting collision when separate equipment layers are composed.",
+          "safeSuggestion": "Cirurgically erase/clean out the 272 bright slash trail pixels in Aseprite batch; restore underlying leg/armor pixels from F05/F07."
+        }
+      ]
+    },
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/clip.json": {
+      "cycleName": "back_l-Axe-full",
+      "direction": "back_l",
+      "category": "Axe",
+      "frameCount": 12,
+      "totalDurationMs": 1100,
+      "verdict": "REVISIONS_REQUIRED",
+      "clipSha256": "88ecfde6b588f0c63c5d915a2ad68230e58448c832db6924dec58cdbff288cc9",
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0
+      },
+      "findings": [
+        {
+          "id": "DEFECT-REAR-02",
+          "severity": "HIGH",
+          "frame": "F02 (native/02.png / body256/02.png)",
+          "symptom": "Complete iron axe head and wooden haft drawn directly on the unarmed body sprite, resting over the right shoulder.",
+          "evidence": "Axe blade profile at x:85..108, y:10..22 and brown haft at x:70..85, y:18..24 held by the right hand.",
+          "cause": "Intermediate generation frame F02 introduced a drawn axe on the body and was incorporated without layers-off scrubbing (identical to legacy QA-02).",
+          "impact": "Direct violation of layers-off policy and Lesson 15. Causes weapon pop-in at F02 and sudden disappearance at F03 (hoist), duplicating silhouette upon equipment attachment.",
+          "safeSuggestion": "Cirurgically erase the axe head and haft in Aseprite; re-author right hand in F02 as an empty clenched leather glove transitioning from F01 to F03."
+        }
+      ]
+    },
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/clip.json": {
+      "cycleName": "back_l-Sword-full",
+      "direction": "back_l",
+      "category": "Sword",
+      "frameCount": 12,
+      "totalDurationMs": 730,
+      "verdict": "REVISIONS_REQUIRED",
+      "clipSha256": "6da82bacaeb1b2ebea97adddc62ddc632f0bcf8eb099f11aa3232b6bdf25555f",
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0
+      },
+      "findings": [
+        {
+          "id": "DEFECT-REAR-03",
+          "severity": "MEDIUM",
+          "frame": "F05 (native/05.png / body256/05.png)",
+          "symptom": "Stray 7-pixel black squiggly filament/antenna protruding vertically into empty air between the right pauldron and right wrist.",
+          "evidence": "Coordinates x:95..96, y:28..33 contain a 7-pixel vertical hook present only in F05 (absent in F04 and F06), causing a 1-frame silhouette pop during descent.",
+          "cause": "AI generation artifact on pauldron contour not cleaned during assembly (resembling legacy QA-04).",
+          "impact": "Medium cosmetic silhouette defect and visual noise.",
+          "safeSuggestion": "Cirurgically erase the 7 stray pixels in Aseprite batch to restore clean negative space between pauldron and wrist."
+        }
+      ]
+    },
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json": {
+      "cycleName": "full-back-r-axe",
+      "direction": "back_r",
+      "category": "Axe",
+      "frameCount": 12,
+      "totalDurationMs": 1100,
+      "verdict": "READY_FOR_REAR_GRIPS",
+      "clipSha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0,
+        "layersOffClean": true,
+        "weaponsDrawnOnTorso": false
+      },
+      "anatomicalEvaluation": {
+        "dominantHand": "RIGHT (screen right in back_r view)",
+        "counterbalance": "Left arm acts as dynamic stabilizer throughout all 12 frames without frozen copy-paste",
+        "heavyImpactPhysics": "Genuine whole-body delivery: neck compresses, knees bend, hips sink into impact at F07",
+        "impactHandSeparation": "Right glove distinctly articulated against hip/thigh (repair1 fix confirmed)",
+        "blockingDefects": "None"
+      },
+      "findings": []
+    }
+  },
+  "generationAccounting": {
+    "productionPixelLabCalls": 0,
+    "costLlm": "Custo LLM não informado",
+    "notes": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado."
+  }
+}

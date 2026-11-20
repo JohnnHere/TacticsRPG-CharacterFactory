@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-rear-grip-flash-F07",
+  "character": "orc-v1",
+  "category": "Axe",
+  "direction": "back_r",
+  "state": "Attack",
+  "representativeOnly": true,
+  "frameCount": 1,
+  "sourceFrameIndices": [
+    7
+  ],
+  "durationsMs": [
+    110
+  ],
+  "totalDurationMs": 110,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "master": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/source/composite.aseprite",
+  "masterSha256": "d2a17c49054bbcb52516b7db6076d9527a674dbc7ee328b6e1352bd7c243fa49",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/source/body-256.aseprite",
+  "bodyMasterSha256": "70be850e6e3190733d68cb1ca2ecdaec59ede7c009a2231e1cf85839dd2d3f96",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/source/body-128.aseprite",
+  "nativeMasterSha256": "9a02dced48998bb29febaa63caa06c17134fc996fc4bdf3b82be4a7665374096",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/source/hand-256.aseprite",
+  "handMasterSha256": "9ff0f6f98d0934991fbee09e65361389dda916bf2f4c1bb4925004b9d73148b4",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "sourceFrameIndex": 7,
+      "durationMs": 110,
+      "phase": "validated-impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        146
+      ],
+      "rotationDeg": 120,
+      "scale": 1,
+      "flipBit": false,
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/composite-256.png",
+      "sha256": "b9b17570db0d8759edf863ca7e48b14f289bc9ae0460bdf6e2235e4ee3d34b9f",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/body-128.png",
+      "nativeSha256": "608119efa4811fe6e9de48001199ea84a5405f171e30ee46911b584a7bd54693",
+      "compositeNativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/composite-native-128.png",
+      "compositeNativeSha256": "7b68137872bb4e08a648ba34aa155cf061d93eb301c89df52f197c98e7e176cb",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/layers/weaponBack.png",
+          "sha256": "b120e23052d443e74dd04bae29ba9dd637f9d0806c4551815f431336d19330e5"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/layers/body.png",
+          "sha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/layers/weaponFront.png",
+          "sha256": "b75fd8dc6c56c6209c6d2805776e8f885b709911148d1d856093c49b6887ab46"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/layers/handFront.png",
+          "sha256": "75d89889b1857e05fba4a1f88b3fc056284e1289a396bedfb5c4658965e231a1"
+        }
+      }
+    }
+  ],
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Mil\u00edcia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.aseprite",
+    "spriteSha256": "11e1b3723e3af44f0311e19600ff28c11bdbd071788add40a074cc2b7093bbeb",
+    "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json"
+  },
+  "itemTransform": {
+    "bodyGrip": [
+      157,
+      146
+    ],
+    "itemGrip": [
+      36,
+      55
+    ],
+    "angleDeg": 120,
+    "unwrappedAngleDeg": 120,
+    "scale": 1,
+    "flipX": false,
+    "bladeGroundContactPoint256": [
+      177,
+      190
+    ],
+    "nativeBladeGroundContactPoint128": [
+      113,
+      126
+    ],
+    "explanation": "At 120 deg, the heavy axe head strikes forward-down, planting its curved edge right onto the ground plane at y=190 (native y=126)."
+  },
+  "anatomyEvidence": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/anatomy.json",
+  "sourceParentClip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+  "sourceParentClipSha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+  "bodyRgbaDelta": 0,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "checkpoint": "REAR_AXE_GRIP_KEYS_READY",
+  "representativeAcceptableForPropagation": false,
+  "propagationPolicy": "DO_NOT_PROPAGATE_UNTIL_SAME_QA_VERDICT_FROM_ROOT",
+  "eligibleForIntegration": false,
+  "provenance": {
+    "authoring": "Aseprite Lua; exact source body and item; hand source traced from actual glove plus local interior highlight/crease pixels",
+    "script": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/author.lua",
+    "scriptSha256": "bc858048da16b9de060cd5f6850c25a102aa0b5724fa06ef1716e08f1c907fd2",
+    "sourceSnapshot": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/input-snapshot.json",
+    "bodyChoreographyChanged": false,
+    "timingChanged": false,
+    "newPixelLabCalls": 0,
+    "runtimeImplemented": false
+  }
+}

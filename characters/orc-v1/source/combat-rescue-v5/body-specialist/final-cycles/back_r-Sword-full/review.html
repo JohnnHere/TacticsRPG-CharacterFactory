@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Orc V1 — back_r / Sword — Full Body Attack Cycle</title>
+<style>
+body { font: 15px system-ui, -apple-system, sans-serif; background: #16181d; color: #e2e8f0; margin: 24px; line-height: 1.5; }
+h1 { margin: 0 0 8px 0; font-size: 22px; color: #f8fafc; }
+.badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-right: 6px; }
+.badge-tech { background: #065f46; color: #34d399; }
+.badge-art { background: #854d0e; color: #fde047; }
+.badge-qa { background: #1e3a8a; color: #93c5fd; }
+.controls { margin: 16px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+button, select { background: #27272a; color: #f4f4f5; border: 1px solid #3f3f46; border-radius: 6px; padding: 8px 14px; font: inherit; cursor: pointer; }
+button:hover, select:hover { background: #3f3f46; }
+.stage { display: flex; gap: 32px; align-items: flex-end; padding: 24px; background: #0f1115; border-radius: 8px; border: 1px solid #27272a; margin: 16px 0; min-height: 420px; }
+img { image-rendering: pixelated; }
+#main { width: 384px; height: 384px; }
+#native { width: 128px; height: 128px; }
+#tactical { width: 64px; height: 64px; }
+figure { margin: 0; text-align: center; }
+figcaption { margin-top: 8px; font-size: 13px; color: #94a3b8; }
+.frames-strip { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.frame-card { background: #1e222b; border: 1px solid #334155; border-radius: 6px; padding: 10px; width: 140px; text-align: center; }
+.frame-card.key-card { border-color: #22c55e; background: #14281f; }
+a { color: #60a5fa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+input[type=range] { width: 600px; max-width: 90vw; accent-color: #3b82f6; }
+.state-box { font-family: monospace; font-size: 15px; color: #38bdf8; margin: 10px 0; }
+</style>
+</head>
+<body>
+<h1>Orc V1 — back_r / Sword — Full Body Attack Cycle</h1>
+<div>
+    <span class="badge badge-tech">TECHNICALLY_COMPLETE</span>
+    <span class="badge badge-art">VISUAL_REVIEW_REQUIRED</span>
+    <span class="badge badge-qa">PENDING_CREATOR</span>
+</div>
+<p style="color:#94a3b8; margin:8px 0 16px 0;">12 frames · 730 ms · Empty-handed layers-off · Accepted QA Keys byte-preserved at F03, F04, F07.</p>
+
+<div class="controls">
+    <button id="play">Play / Pause</button>
+    <button id="replay">Replay</button>
+    <button id="prev">◀ Prev Frame</button>
+    <button id="next">Next Frame ▶</button>
+    <label>Speed:
+        <select id="speed">
+            <option value="1">1.0× Normal</option>
+            <option value="0.5">0.5× Slow</option>
+            <option value="0.25">0.25× Slo-Mo</option>
+        </select>
+    </label>
+    <label><input id="loop" type="checkbox" style="margin-left:8px;"> Loop Animation</label>
+</div>
+
+<div class="stage">
+    <figure>
+        <img id="main" alt="Diagnostic 3x">
+        <figcaption>3× Diagnostic View (384×384)</figcaption>
+    </figure>
+    <figure>
+        <img id="native" alt="Native 1x">
+        <figcaption>1× Native Game Scale (128×128)</figcaption>
+    </figure>
+    <figure>
+        <img id="tactical" alt="Tactical 0.5x">
+        <figcaption>0.5× Tactical View (64×64)</figcaption>
+    </figure>
+</div>
+
+<div class="state-box" id="state"></div>
+<input id="seek" type="range" min="0" max="11" value="0" step="1">
+
+<h2>Complete 12-Frame Sequence</h2>
+<div class="frames-strip">
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/00.png">
+            <figcaption>F00 · 00 guard<br><strong>40 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/01.png">
+            <figcaption>F01 · 01 entry-1<br><strong>60 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/02.png">
+            <figcaption>F02 · 02 entry-2<br><strong>60 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card key-card">
+            <img width="128" height="128" src="native/03.png">
+            <figcaption>F03 · 03 hoist (Key 01) <strong style="color:#4ade80;">[QA KEY]</strong><br><strong>70 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card key-card">
+            <img width="128" height="128" src="native/04.png">
+            <figcaption>F04 · 04 apex (Key 02) <strong style="color:#4ade80;">[QA KEY]</strong><br><strong>70 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/05.png">
+            <figcaption>F05 · 05 descent-1<br><strong>40 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/06.png">
+            <figcaption>F06 · 06 descent-2<br><strong>40 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card key-card">
+            <img width="128" height="128" src="native/07.png">
+            <figcaption>F07 · 07 impact (Key 03) <strong style="color:#4ade80;">[QA KEY]</strong><br><strong>90 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/08.png">
+            <figcaption>F08 · 08 recovery-1<br><strong>70 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/09.png">
+            <figcaption>F09 · 09 recovery-2<br><strong>70 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/10.png">
+            <figcaption>F10 · 10 recovery-3<br><strong>60 ms</strong></figcaption>
+        </figure>
+
+        <figure class="frame-card ">
+            <img width="128" height="128" src="native/11.png">
+            <figcaption>F11 · 11 return-guard<br><strong>60 ms</strong></figcaption>
+        </figure>
+</div>
+
+<div style="margin-top:24px; padding-top:16px; border-top:1px solid #334155; font-size:14px; color:#94a3b8;">
+    <a href="clip.json">clip.json contract</a> · 
+    <a href="representative.json">representative.json</a> · 
+    <a href="native-strip.png">native-strip.png</a> · 
+    <a href="body256-strip.png">body256-strip.png</a> · 
+    <a href="native128.aseprite">native128.aseprite</a> · 
+    <a href="body256.aseprite">body256.aseprite</a>
+</div>
+
+<script>
+const urls = Array.from({length: 12}, (_, i) => `native/${String(i).padStart(2, '0')}.png`);
+const durations = [40, 60, 60, 70, 70, 40, 40, 90, 70, 70, 60, 60];
+const phases = ["00 guard", "01 entry-1", "02 entry-2", "03 hoist (Key 01)", "04 apex (Key 02)", "05 descent-1", "06 descent-2", "07 impact (Key 03)", "08 recovery-1", "09 recovery-2", "10 recovery-3", "11 return-guard"];
+const total = durations.reduce((a, b) => a + b, 0);
+let ix = 0, elapsed = 0, playing = false, last = performance.now();
+const starts = durations.map((_, i) => durations.slice(0, i).reduce((a, b) => a + b, 0));
+
+function draw() {
+    for (const id of ['main', 'native', 'tactical']) {
+        document.getElementById(id).src = urls[ix];
+    }
+    document.getElementById('seek').value = ix;
+    document.getElementById('state').textContent = `Frame ${String(ix).padStart(2, '0')} / 11 · ${phases[ix]} · ${durations[ix]} ms (${starts[ix]}ms - ${starts[ix] + durations[ix]}ms) · ${playing ? '▶ Playing' : '⏸ Paused'}`;
+}
+
+function frameAt(t) {
+    let acc = 0;
+    for (let i = 0; i < durations.length; i++) {
+        acc += durations[i];
+        if (t < acc) return i;
+    }
+    return durations.length - 1;
+}
+
+function setFrame(i) {
+    playing = false;
+    ix = Math.max(0, Math.min(urls.length - 1, i));
+    elapsed = starts[ix];
+    draw();
+}
+
+document.getElementById('play').onclick = () => {
+    if (elapsed >= total) { elapsed = 0; ix = 0; }
+    playing = !playing;
+    last = performance.now();
+    draw();
+};
+
+document.getElementById('replay').onclick = () => {
+    elapsed = 0;
+    ix = 0;
+    playing = true;
+    last = performance.now();
+    draw();
+};
+
+document.getElementById('prev').onclick = () => setFrame(ix - 1);
+document.getElementById('next').onclick = () => setFrame(ix + 1);
+document.getElementById('seek').oninput = e => setFrame(+e.target.value);
+
+function tick(now) {
+    const delta = now - last;
+    last = now;
+    if (playing) {
+        elapsed += delta * +document.getElementById('speed').value;
+        if (elapsed >= total) {
+            if (document.getElementById('loop').checked) {
+                elapsed %= total;
+            } else {
+                elapsed = total;
+                playing = false;
+            }
+        }
+        ix = frameAt(elapsed);
+        draw();
+    }
+    requestAnimationFrame(tick);
+}
+
+for (const u of urls) {
+    const im = new Image();
+    im.src = u;
+}
+draw();
+requestAnimationFrame(tick);
+</script>
+</body>
+</html>

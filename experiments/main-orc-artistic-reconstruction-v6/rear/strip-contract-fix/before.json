@@ -1,0 +1,2238 @@
+{
+  "clips": {
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/clip.json": {
+      "schemaVersion": 1,
+      "revision": "main-orc-artistic-reconstruction-v6-rear",
+      "id": "basic.sword-slash",
+      "character": "orc-v1",
+      "identity": "Verde Warcraft",
+      "direction": "back_l",
+      "category": "Sword",
+      "state": "Attack",
+      "frameCount": 12,
+      "durationsMs": [
+        90,
+        80,
+        80,
+        110,
+        50,
+        40,
+        40,
+        80,
+        100,
+        90,
+        90,
+        100
+      ],
+      "totalDurationMs": 950,
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "master": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/source/composite.aseprite",
+      "masterSha256": "f944e147f1c39d7fe71303d0e068cea4230d9de27b4add61246a09a36cdbf7fe",
+      "nativeMaster": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/source/native.aseprite",
+      "nativeMasterSha256": "5865e030e5e07cccbfa14563574f441c6f305e0efd4376d6135da8e6f4d799fb",
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "oneShot": true,
+      "loop": false,
+      "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "creatorApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "provenance": {
+        "authorScript": "experiments/main-orc-artistic-reconstruction-v6/rear/author.lua",
+        "authorScriptSha256": "b65c0acf13937ae5eb1e51db25f3996e4d5cc0385ac4888891e569b67d0e21aa",
+        "jobId": "61ca245f-d86e-4ca8-a8eb-7886f5732df7",
+        "seed": 61129,
+        "request": "experiments/main-orc-artistic-reconstruction-v6/rear/sword-reference2-request.json",
+        "rawFrames": "experiments/main-orc-artistic-reconstruction-v6/rear/raw-reference2/sword",
+        "method": "PixelLab skeleton_v3 reference2 whole-body poses; Aseprite Lua exterior cleanup, tiny disconnected debris removal, measured per-pose glove occlusion and independent item composition. Bookends inherited V5 unarmed identity. Not manual drawing.",
+        "limitation": "Full-body reference candidate: knuckle volume, stance continuity, projected cutting direction and onset/recovery require creator judgment. See anatomy-plan.json and report.md. The procedural local-arm attempt was rejected and archived."
+      },
+      "frames": [
+        {
+          "durationMs": 90,
+          "index": 0,
+          "phase": "guard",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/00.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/00.png",
+          "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/00.png",
+              "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 1,
+          "phase": "anticipation-load",
+          "provenance": "PixelLab sword reference2 frame 1 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            159,
+            128
+          ],
+          "rotationDeg": 20,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/01.png",
+          "sha256": "a0773c3ed70b4015c6084ace6c545251eabe2718a96ce5a9b4439e1ecf119325",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/01.png",
+          "nativeSha256": "254477ced0ae34cda4cb641d3c0d67b2bec4b9637c668a8e1da1483a67d80640",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/01.png",
+              "sha256": "31eae398f60b95b36f933d991437071ba2c4f076a1eb7e26586a4eac0826adc9"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/01.png",
+              "sha256": "21bc778761cbcd28afc0e72d1bc13293e9252954f30c85c7a27826cdf56722e0"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/01.png",
+              "sha256": "b87e948a3439ac635e3a0816cd35bf13b08d27a37523fc6f9e60dd5447ca27c2"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/01.png",
+              "sha256": "f7ae25b4ce661467cea8e73461a556a47493d0da1d563994516ff42b7684c1ca"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 2,
+          "phase": "anticipation-lift",
+          "provenance": "PixelLab sword reference2 frame 2 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            165,
+            97
+          ],
+          "rotationDeg": 10,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/02.png",
+          "sha256": "cc874361e6ee565d21da87e1cc14b2270a39db6e6f84c6e023380c2446dfcad3",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/02.png",
+          "nativeSha256": "58153b4deb59a7673066efc4ec002238d47833f4c7f28b8dda1886e1f920d15e",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/02.png",
+              "sha256": "68b4cf39b4184a9797f323c8728b7297262d1d5a72fefcb272bb5a3d3fc5bd07"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/02.png",
+              "sha256": "ca7b4c2828c8db9665b7643877d5f8fe08fe871430f7373ddb125a7ae6556320"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/02.png",
+              "sha256": "19d2682d222f558604ccb9aafd4be205bdcbbd9357d5bfeef369a5807acaa4ec"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/02.png",
+              "sha256": "53a1e5010fc8c14ef9b3d03ca72665c6a7a307f423c4161c351929fe9a070894"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 3,
+          "phase": "chamber",
+          "provenance": "PixelLab sword reference2 frame 3 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            159,
+            89
+          ],
+          "rotationDeg": -10,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/03.png",
+          "sha256": "d751cf4ae7d4ee904ee87c5ad8a501e534bcf8e21da06e8c20db604c2b13e1ea",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/03.png",
+          "nativeSha256": "039dcff4da10b5f14df996db8d2b9f7cefa6c18fe5b3fd881583c645362ba987",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/03.png",
+              "sha256": "2757e21918a7ff7c03842c15757f954d7cb5ab2aa461f6a2aeeed668a185ac3b"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/03.png",
+              "sha256": "d95cb3ee5487146ec515b1f9dceecb909b9eab6c61a5bb4c4c58b7ee964909dc"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/03.png",
+              "sha256": "5569cbe605e1b1cace776f75b2b3498a48f92f7c1ffdab568317019bf40d0237"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/03.png",
+              "sha256": "bcd0ffeb48d12e098c5ee2a5af9343c7e2518a2fc71ad746ff8316e484ba435a"
+            }
+          }
+        },
+        {
+          "durationMs": 50,
+          "index": 4,
+          "phase": "loaded-apex",
+          "provenance": "PixelLab sword reference2 frame 4 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            165,
+            97
+          ],
+          "rotationDeg": 30,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/04.png",
+          "sha256": "7183dbb8acd19ec20fe73e5c996132c114e8bddf8562d6c4398181af91a48e1f",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/04.png",
+          "nativeSha256": "1c398a5a0add90bc72bf79ce689a18710375a80bc4268792a28c475467eaa984",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/04.png",
+              "sha256": "4e35ecf9cb54de9aacf421f0edb43b804ebc5fc205eb3e92e38b6b8d4dc329c7"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/04.png",
+              "sha256": "fd4d86fb4dff5192f0b92e04cabd1ec9807bf1f8f5dff1fda8271fdb1dd07cd7"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/04.png",
+              "sha256": "e93ed513eeefc92b8f3fa1d8c6af0359b02ed8c848230f8b98666f179cc41dba"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/04.png",
+              "sha256": "9eb36f8700b5a57c8d5118de56d85c1a3218952fdc5b11c1b85491c7de280d0d"
+            }
+          }
+        },
+        {
+          "durationMs": 40,
+          "index": 5,
+          "phase": "acceleration",
+          "provenance": "PixelLab sword reference2 frame 5 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            175,
+            112
+          ],
+          "rotationDeg": 70,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/05.png",
+          "sha256": "8e27f47a6b7be1b6ffc3d5e5897f2fd59d6f1d5758b089533b93785ed13a0bfe",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/05.png",
+          "nativeSha256": "e3c24d474796e7d37702267dcacc00ea583e75b566194433c00c4f8e0b1f0b25",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/05.png",
+              "sha256": "b58a5e042b7cd45e3f9db373453052bed7371a9faf4f28c6ef319b5c5949448a"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/05.png",
+              "sha256": "4d54fe48114478a29a76628e7c807ca85737310beafd2b3ba4e43c2526223550"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/05.png",
+              "sha256": "395a8e356cc8269fd0bd66d2dc3c17023fcabf2b04ab294f8f2b9b54caef5dfa"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/05.png",
+              "sha256": "5df0f8e6dcf99e781e042062f0d3c6518c44b7c70db022f6477b8daacc95cadd"
+            }
+          }
+        },
+        {
+          "durationMs": 40,
+          "index": 6,
+          "phase": "descent",
+          "provenance": "PixelLab sword reference2 frame 6 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            170,
+            137
+          ],
+          "rotationDeg": 110,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/06.png",
+          "sha256": "657711eb18ca5d7751ebdce7e7573a4cfbfe8f136f46104d59ad7d7c76ce0ab6",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/06.png",
+          "nativeSha256": "9953162466eb52ef9a8cd8fca33105ec81157c0f32d48e80258d8f16b88ff48d",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/06.png",
+              "sha256": "538f827f54991c310ce54fe7500314bd40e2cd0c635be50ebdaa4c39f3feb635"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/06.png",
+              "sha256": "8a80ba3d020fab41e0933d3f395e80af208e0e63a4dae94d2318fff9abda09c7"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/06.png",
+              "sha256": "3d0b849bb3e7d08d9852c8e0d69c0179058921541c3a0ac93221ad5d68f457bb"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/06.png",
+              "sha256": "1fd3b12569e9eeff9d434f975630cd231dbcb82173546f776b7655d002f09f38"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 7,
+          "phase": "impact",
+          "provenance": "PixelLab sword reference2 frame 7 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            158,
+            153
+          ],
+          "rotationDeg": 145,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/07.png",
+          "sha256": "adef474c5bdc0ed195be99c65c5feef2bb7914687a7cf8216534d83f8aa5837f",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/07.png",
+          "nativeSha256": "8f575898a8389bb8ee5b697131303f848168dfc29bffbfea70156aa7c9693229",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/07.png",
+              "sha256": "71b514cd261d5426103afe3ab63b632d4c1fea2b9f49061e6dcd61f948ae72c3"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png",
+              "sha256": "68c51303ce1f5a7af1b2a3fc9386a1ae001904371919e5f266f5670cdca90c7c"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/07.png",
+              "sha256": "fcda01a9c2aed5905cef7eff6968b0fc542b44ff14c79fe8a7697dbeceac0a0e"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/07.png",
+              "sha256": "b78d12db973491c792eb4b9626313a65e842fae0a357e7b44c2ab3b066ad7640"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 8,
+          "phase": "follow-through",
+          "provenance": "PixelLab sword reference2 frame 8 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            149,
+            155
+          ],
+          "rotationDeg": 175,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/08.png",
+          "sha256": "73db9658f98b65916caac8c1bc937008a0179ce59aeed84b0843af0878aa50d9",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/08.png",
+          "nativeSha256": "93642c6140bbcefb049afb54550eca06cdae655f4d82a21edd5533f5b2a97db6",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/08.png",
+              "sha256": "07416619ef52338c9a4299abbe7fd6b60e179d3f79e668f5386505c860bca82b"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/08.png",
+              "sha256": "dfa4a7792bcfc175e4f53f775767c0556ec76ee491115fa7658e213bb4f29797"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/08.png",
+              "sha256": "6a457ae1d702cda9c41d050bbda493cbf0858e53ed5afc8108703b49547619f3"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/08.png",
+              "sha256": "380a239fe364db85e565edb6346d404962ed091aa50c138fa4a773ea78523347"
+            }
+          }
+        },
+        {
+          "durationMs": 90,
+          "index": 9,
+          "phase": "recovery-release",
+          "provenance": "PixelLab sword reference2 frame 9 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            151,
+            152
+          ],
+          "rotationDeg": 185,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/09.png",
+          "sha256": "303b62d605a3101fb3bf6d6fd8dcd3fdb2dfd490295856d4a6ee2fee5194bf1d",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/09.png",
+          "nativeSha256": "931437ea94200003ae2bddc01e2632f5bb8ee158d535dd90d807c034ecaebda7",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/09.png",
+              "sha256": "4767c3165d1d6ea42a359608112a65e8f8334a2c615d69d3d9b341995277de18"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/09.png",
+              "sha256": "9a1bd3825b1cd2d64a23377fecd7b61314b533134dfd1fb6586e67a496a2f752"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/09.png",
+              "sha256": "2d0d017f3fc62976bea4ddc9f71bdc923549a0b461c43cb6f6c1bf5f5ff94c0d"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/09.png",
+              "sha256": "b4887cfdfb471dc12dfaf88297e252313227c68819fe967771b95f99627d7cf6"
+            }
+          }
+        },
+        {
+          "durationMs": 90,
+          "index": 10,
+          "phase": "recovery-settle",
+          "provenance": "PixelLab sword reference2 frame 10 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/10.png",
+          "sha256": "0c937f846d89e60ae7e69cd04030ca40f2864c946150b3bd931e4ab66afffa6e",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/10.png",
+          "nativeSha256": "17e4a3a51ca35fa3d374fbed6ae63116290a1c4b9302f315a6a7e90242643261",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/10.png",
+              "sha256": "0c937f846d89e60ae7e69cd04030ca40f2864c946150b3bd931e4ab66afffa6e"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 11,
+          "phase": "guard-return",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/11.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/11.png",
+          "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/11.png",
+              "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        }
+      ]
+    },
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/clip.json": {
+      "schemaVersion": 1,
+      "revision": "main-orc-artistic-reconstruction-v6-rear",
+      "id": "basic.axe-chop",
+      "character": "orc-v1",
+      "identity": "Verde Warcraft",
+      "direction": "back_l",
+      "category": "Axe",
+      "state": "Attack",
+      "frameCount": 12,
+      "durationsMs": [
+        100,
+        100,
+        110,
+        140,
+        150,
+        60,
+        50,
+        100,
+        140,
+        130,
+        110,
+        130
+      ],
+      "totalDurationMs": 1320,
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "master": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/source/composite.aseprite",
+      "masterSha256": "51843d55994db9d55ef0134db67c4492c0550891cf6783e80e623605265ed23e",
+      "nativeMaster": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/source/native.aseprite",
+      "nativeMasterSha256": "8aa7cb3e326aa6e4c63249b5b2361818b217640eb2511c50b03a5ae636e0f73b",
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "oneShot": true,
+      "loop": false,
+      "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "creatorApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "provenance": {
+        "authorScript": "experiments/main-orc-artistic-reconstruction-v6/rear/author.lua",
+        "authorScriptSha256": "b65c0acf13937ae5eb1e51db25f3996e4d5cc0385ac4888891e569b67d0e21aa",
+        "jobId": "8e309cdd-cd08-45e6-a0d7-2825842e286e",
+        "seed": 62129,
+        "request": "experiments/main-orc-artistic-reconstruction-v6/rear/axe-reference2-request.json",
+        "rawFrames": "experiments/main-orc-artistic-reconstruction-v6/rear/raw-reference2/axe",
+        "method": "PixelLab skeleton_v3 reference2 whole-body poses; Aseprite Lua exterior cleanup, tiny disconnected debris removal, measured per-pose glove occlusion and independent item composition. Bookends inherited V5 unarmed identity. Not manual drawing.",
+        "limitation": "Full-body reference candidate: knuckle volume, stance continuity, projected cutting direction and onset/recovery require creator judgment. See anatomy-plan.json and report.md. The procedural local-arm attempt was rejected and archived."
+      },
+      "frames": [
+        {
+          "durationMs": 100,
+          "index": 0,
+          "phase": "guard",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/00.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/00.png",
+          "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/00.png",
+              "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 1,
+          "phase": "anticipation-load",
+          "provenance": "PixelLab axe reference2 frame 1 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            165,
+            125
+          ],
+          "rotationDeg": 20,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/01.png",
+          "sha256": "318178b530799564bb208114c8f351f566bccfa66a54160559ed84568a2830f3",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/01.png",
+          "nativeSha256": "a4a7ce63ce79049de4f8844cb297716dd4f66c89590de62c80139d244c624708",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/01.png",
+              "sha256": "e2bec69425c160c3d36a1ea1e530fe651ee34427b10bb7efa4f3ef2918a3526b"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png",
+              "sha256": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/01.png",
+              "sha256": "5f884be86eef51fc822c79717730e5da037fce7ee729497eebaecff69ad0abf6"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/01.png",
+              "sha256": "8872342c2400ce4533f4b51d34053dc62e85b57cfff6da64df8322e5dbca857d"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 2,
+          "phase": "anticipation-lift",
+          "provenance": "PixelLab axe reference2 frame 2 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            161,
+            92
+          ],
+          "rotationDeg": -15,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/02.png",
+          "sha256": "48b06af64eae1417000ac4ae33b26ae059d6e4ff8d86107c794feb65e5be458a",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/02.png",
+          "nativeSha256": "c5c11942725040c087ddb21a10b976113923f5eba34a202c077b66374107ab39",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/02.png",
+              "sha256": "8d985318af854037a1d7689765a382dd4b857f264c1b41df787605ffbe9da0e5"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/02.png",
+              "sha256": "0f4221ccb36c7d532ebcf9581ca9ac8a902d1cf13f4e1c3d2c3499c580c7d140"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/02.png",
+              "sha256": "e2e0fd3d16126c46dab1b30a6b697a93edb21567077c9f751b50459615cff112"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/02.png",
+              "sha256": "0521543e2b7351c67b006eb77c5172aa7a04fdc16372313eeea6a472610ff8dc"
+            }
+          }
+        },
+        {
+          "durationMs": 140,
+          "index": 3,
+          "phase": "chamber",
+          "provenance": "PixelLab axe reference2 frame 3 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            151,
+            82
+          ],
+          "rotationDeg": -10,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/03.png",
+          "sha256": "e94c3d53a5a4b3900f4d19a9841b366f8fc20124019e6d121559228a407b2498",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/03.png",
+          "nativeSha256": "686aaae78001ba2b6478f22186a0586f57cc643e7e7af3b5a1906754d97e8b24",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/03.png",
+              "sha256": "56f61c57bf21fbdcf885971c106429ad3ad6aed5fa35f50a41c6e4d3ce96b07c"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/03.png",
+              "sha256": "2179284087db44861df81daa31c7a5efff7448e90ad1087d822ef0243a28b036"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/03.png",
+              "sha256": "32f778db02908abc792d025b918d4ac52f184d4cf614b1a0899113c3d4d8364d"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/03.png",
+              "sha256": "9342aa78172222b840350a97caa619fe93b94abc7fcd05b1a02091e964525a92"
+            }
+          }
+        },
+        {
+          "durationMs": 150,
+          "index": 4,
+          "phase": "loaded-apex",
+          "provenance": "PixelLab axe reference2 frame 4 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            147,
+            82
+          ],
+          "rotationDeg": 0,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/04.png",
+          "sha256": "51e36504def4d68566225fec175898bb5e8c2d0e85346d059e2d6062fad8027a",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/04.png",
+          "nativeSha256": "145555ac4fee3ba327f0fffd1c0d74b30b95e367be4600d28ef9718d37c03ec7",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/04.png",
+              "sha256": "30dafff58dc66599c854d4481581d32ebfb6cc0c2783fa772439a31b1d0feb6b"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/04.png",
+              "sha256": "6eb853137ce7ac0ff094bfddd4a42aab8d6e705185acecaaecceb6a3f7bc58c2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/04.png",
+              "sha256": "cf796df0913746b31b225f7c7e7e388494c6d5a08708732cc0439d3e8ec60b23"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/04.png",
+              "sha256": "bfdf81ba60bb969470694ffeafe5679657ec5938d1ef14b1c17cdccca7dead06"
+            }
+          }
+        },
+        {
+          "durationMs": 60,
+          "index": 5,
+          "phase": "acceleration",
+          "provenance": "PixelLab axe reference2 frame 5 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            162,
+            95
+          ],
+          "rotationDeg": 25,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/05.png",
+          "sha256": "fd3c84afeb02e76ba47ea51699b7041e5c8616241ed3a91f11bb538ab8016229",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/05.png",
+          "nativeSha256": "a3cb62f95add94dbd8828fc5e74c975fb507be2d493ad055a96edb542a3cbf99",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/05.png",
+              "sha256": "93aebe960ccb50006f68cdf0227fb4ef8eaa836c1b23ee9f938d1ed88734d9a2"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/05.png",
+              "sha256": "770544c585d5a000accc986a47c6eb0756226ca93038fe31edeeb1ef4d0410d2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/05.png",
+              "sha256": "38182bae4d219b8263a840357eecaff0a558aaef17e2bfd779e600c59c01adcf"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/05.png",
+              "sha256": "94f25445f3b25a3ac7dcc2a6939f7dc98ef71aeec30f22cde8b574f93180bbc1"
+            }
+          }
+        },
+        {
+          "durationMs": 50,
+          "index": 6,
+          "phase": "descent",
+          "provenance": "PixelLab axe reference2 frame 6 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            170,
+            127
+          ],
+          "rotationDeg": 70,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/06.png",
+          "sha256": "cca5ea0f58a635fab7cba9094e8b5061bec6d51b64248def97c7c78e9d8f7c7c",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/06.png",
+          "nativeSha256": "e2b13959e2440a957f811d5e07b6284d65e4053682360f6796d1854cf9e33052",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/06.png",
+              "sha256": "191d6e9f74cec1cb6dd3d0abbf5a75acb56d78bfe5bfbf2d51c23c25c5c5649c"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/06.png",
+              "sha256": "3a6266d18797cedbb54057ff4680ac891f22063e2144fd1e03384d5ecbee67d6"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/06.png",
+              "sha256": "95bb516e9d9542fddaa763e86672bcd8ceca9636b8a72cc2cfdce8a143862818"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/06.png",
+              "sha256": "8c6b8d8c511be55c406aa4c96590e78af157bc79a6787e86e7591953055994c4"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 7,
+          "phase": "impact",
+          "provenance": "PixelLab axe reference2 frame 7 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            158,
+            153
+          ],
+          "rotationDeg": 120,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/07.png",
+          "sha256": "2fbc2377c3147295991e37f996611dc508c525e6313fd331c36792bb898aee63",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/07.png",
+          "nativeSha256": "24e204fd9b6ada5b94b0b1272e872a4b5072d660526c207c86c495aed96b458e",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/07.png",
+              "sha256": "f00281401a5beca8b2e4c5d56ccc3108927f81e850d6813878db9eb50079f58c"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/07.png",
+              "sha256": "3e55f3c455193b24a69866d88c8bd58dcc196aac34b21a5e2a99b1fde261ae4a"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/07.png",
+              "sha256": "eaa754feaf9aafc05ad06c146516d6c5c890c71112269bd3d0b7b419472157c4"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/07.png",
+              "sha256": "486fac7d925edeb6283855ec4393695ae0fc97896554dba88046d0e374050e67"
+            }
+          }
+        },
+        {
+          "durationMs": 140,
+          "index": 8,
+          "phase": "follow-through",
+          "provenance": "PixelLab axe reference2 frame 8 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            154,
+            155
+          ],
+          "rotationDeg": 150,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/08.png",
+          "sha256": "615a2bafeb8311f9f4b10b2b9a666acd7af43a3bc6f10d9daf0cd8a9aa240cad",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/08.png",
+          "nativeSha256": "ca083e2fd4cff4f8e091f55e7b28c4039c5263cec91e407e9c4ca000176ae59a",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/08.png",
+              "sha256": "524cee2b8de90b72b0e5ffc7a2b0de7de9afd58e5b7d0f3cabecda81fcf0e2c2"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/08.png",
+              "sha256": "8919ec8303842887070a92b82e82f288c5f5c428a7db0c4db30e94f34ed60ec0"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/08.png",
+              "sha256": "5d4152dd4711243b99a43a196e28df21baaa835c2910dbd00291d2a7868e54ec"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/08.png",
+              "sha256": "70a046def4ea172a0d3846eac1f7bbb43c36f702791ee468cace1c6dc57931af"
+            }
+          }
+        },
+        {
+          "durationMs": 130,
+          "index": 9,
+          "phase": "recovery-release",
+          "provenance": "PixelLab axe reference2 frame 9 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            155,
+            148
+          ],
+          "rotationDeg": 160,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/09.png",
+          "sha256": "9046dd731d61732e17704428d664f231b4430762e974a78f4a009190c01315b0",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/09.png",
+          "nativeSha256": "be41a3e8f39d04d30542045f5742f4403b2443c4eb88f4048944844a3c419abd",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/09.png",
+              "sha256": "82aa47aa1f23a08a968c5ab32ae0ede8d8d09362634b27ce726c5952f323ff4e"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/09.png",
+              "sha256": "05b7a2d6efa579d54e05c86161f1a52bc9a4c96c6213f629d6622c25cce0de83"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/09.png",
+              "sha256": "745e466f29d6fd6163863166362a97473a09ff8039698178f32d501df743b516"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/09.png",
+              "sha256": "9c081558757524a3122544c2f2372238f2df46083365143a337206cb1235c9a9"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 10,
+          "phase": "recovery-settle",
+          "provenance": "PixelLab axe reference2 frame 10 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/10.png",
+          "sha256": "012fc15593bb4f8df1d5b0ff4772db2b9ad018c8ec70d87c6c50ed66dcadd910",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/10.png",
+          "nativeSha256": "b648b3221dc23bd11837a97065e0b17267de7ac27172402d36de9134e00088e2",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/10.png",
+              "sha256": "012fc15593bb4f8df1d5b0ff4772db2b9ad018c8ec70d87c6c50ed66dcadd910"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 130,
+          "index": 11,
+          "phase": "guard-return",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/11.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/11.png",
+          "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/11.png",
+              "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        }
+      ]
+    },
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/clip.json": {
+      "schemaVersion": 1,
+      "revision": "main-orc-artistic-reconstruction-v6-rear",
+      "id": "basic.sword-slash",
+      "character": "orc-v1",
+      "identity": "Verde Warcraft",
+      "direction": "back_r",
+      "category": "Sword",
+      "state": "Attack",
+      "frameCount": 12,
+      "durationsMs": [
+        90,
+        80,
+        80,
+        110,
+        50,
+        40,
+        40,
+        80,
+        100,
+        90,
+        90,
+        100
+      ],
+      "totalDurationMs": 950,
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "master": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/source/composite.aseprite",
+      "masterSha256": "8408b39dadcdc0be7e906dd061f8b7e82e3e5eadc03fd09a8eb160e229c64418",
+      "nativeMaster": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/source/native.aseprite",
+      "nativeMasterSha256": "84d059f1883fa2118b2e1a75c71df7ade3d49320630ab6fe78a87ea177513a7c",
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "oneShot": true,
+      "loop": false,
+      "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "creatorApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "provenance": {
+        "authorScript": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/author.lua",
+        "authorScriptSha256": "dfbb1f597e666fe79ff538627f869bf6c42b4abd8c6539027a68473da2853b5c",
+        "jobId": "c96553ff-9ce0-44a2-88fc-0694d1831b03",
+        "seed": 63130,
+        "request": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/sword-request.json",
+        "rawFrames": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/raw/sword",
+        "method": "PixelLab skeleton_v3 Stage D back_r whole-body poses; Aseprite Lua exterior cleanup, tiny disconnected debris removal, measured per-pose glove occlusion and independent item composition. Bookends inherited V5 unarmed identity. Not manual drawing.",
+        "limitation": "Full-body reference candidate: knuckle volume, stance continuity, projected cutting direction and onset/recovery require creator judgment. See anatomy-plan.json and report.md. Boot-contact and knee continuity are specifically reviewed against the V5 back_r defects."
+      },
+      "frames": [
+        {
+          "durationMs": 90,
+          "index": 0,
+          "phase": "guard",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/00.png",
+          "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/00.png",
+              "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 1,
+          "phase": "anticipation-load",
+          "provenance": "PixelLab sword stage-D frame 1 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            163,
+            131
+          ],
+          "rotationDeg": 20,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/01.png",
+          "sha256": "6e3f82173ef8aa18287df8f587537249564d761666be2e538cc77a38106c8c37",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/01.png",
+          "nativeSha256": "4840894080bb08d168007eedf84342545f0f09adb0a846be44fc0ca15025efb2",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/01.png",
+              "sha256": "a50f5f2f064557f70bf0fd1e30018f7e56ebacd7deb9e3958336eb28500e0057"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/01.png",
+              "sha256": "da66823f185f9b0af087adf29fccdd9b9360636e78d89de161df192b9eba7531"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/01.png",
+              "sha256": "2086bfd3760761c2c59bd4c57517e497c3da7abbd778334c96e445daaa4efcc1"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/01.png",
+              "sha256": "5b0f6a88e4e62ca2f383a4fe99d7fa9730ab35d9dbad6c8e616ee06b8a81f719"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 2,
+          "phase": "anticipation-lift",
+          "provenance": "PixelLab sword stage-D frame 2 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            168,
+            98
+          ],
+          "rotationDeg": 5,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/02.png",
+          "sha256": "d1efb7031e552655e336de5b7f1073759230fd82eaa594d5ac0a39dd872fc76b",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/02.png",
+          "nativeSha256": "f1fb2e41627db0359d504ee62dd3ca05ca16276e302af43930aec240a0047d29",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/02.png",
+              "sha256": "7b536be432cad20bea5c1a3f776bd062fa69c1835e785da9e2e8bb2749c0f494"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/02.png",
+              "sha256": "4888c0fdc32445d1d3b08f9ad6c9490b114d5da01cdbb8fb099da1f533af8378"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/02.png",
+              "sha256": "c66a6a088fd8a7e5e2c302baba1aaaa9e39e1191113c260065a7a72bf89adf2b"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/02.png",
+              "sha256": "072a0c6d239b468d0e55d506387c60f752c2ad78d1473ef57733a07c12db3ced"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 3,
+          "phase": "chamber",
+          "provenance": "PixelLab sword stage-D frame 3 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            161,
+            89
+          ],
+          "rotationDeg": -10,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/03.png",
+          "sha256": "44462c8aacb328fb3634fd1c08c7c29907c0333b141a2ec507a205533d5a9caa",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/03.png",
+          "nativeSha256": "d53bc6c4fa23dd717e5521f89e8ded0e07bebda32f4d3d3e071baca56a6cc183",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/03.png",
+              "sha256": "893e79e45dfacf89e6fb954c0f7c72b42269f91059bc2d70cec639a5252a18f0"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/03.png",
+              "sha256": "7e97d7de14b043cdb8d1c7b698936ab00489fd6537c0d4ddca3b69089fffd117"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/03.png",
+              "sha256": "e1cc43e2469e8203502ed03580da6f06b772c78a27d9a6ed84a634d564b68203"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/03.png",
+              "sha256": "cfa791c27d0bb6e3e20eb66e1bcb112a289f38611499a6a680701b0e494e1408"
+            }
+          }
+        },
+        {
+          "durationMs": 50,
+          "index": 4,
+          "phase": "loaded-apex",
+          "provenance": "PixelLab sword stage-D frame 4 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            166,
+            95
+          ],
+          "rotationDeg": 25,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/04.png",
+          "sha256": "3c56ff5378c4b5fd4e73fa3a178b3e5e4f63faf4a792e35af1041fa575048b34",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/04.png",
+          "nativeSha256": "851ea2d1fdacb832977bc42992a25856613d7489e7c87d0d24e292caae343613",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/04.png",
+              "sha256": "70c279ba3d6155ff8a8fbc3a951362d8b99bf47b2c0adc90f18310de573282c7"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/04.png",
+              "sha256": "3727debac6dafbed6d5e9b710e6482e45c6eca8eaf8c03ae06a8bdb2fb122c24"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/04.png",
+              "sha256": "f696dbd475b019c94b149bd08fec470373567010a9377458c9a57bce5db7ca37"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/04.png",
+              "sha256": "3c9fe5e36c8b5aef5146750c78b046c34a52990b3416c591b5495b4899c32942"
+            }
+          }
+        },
+        {
+          "durationMs": 40,
+          "index": 5,
+          "phase": "acceleration",
+          "provenance": "PixelLab sword stage-D frame 5 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            176,
+            111
+          ],
+          "rotationDeg": 65,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/05.png",
+          "sha256": "fde97ba4b32611a82aeef99903545b9ceef13850fe846c04d4e112aca22ef042",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/05.png",
+          "nativeSha256": "13e67898b7203da4f0e22e9c463caff54e2d461038cdb6c667c6bf1fa8a752e3",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/05.png",
+              "sha256": "b68fd100cce27a8d408689dde2f421e02ec22ed6866cfbd56e0bb1c0887a64ec"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/05.png",
+              "sha256": "23955c612be33ed624e0383e3ee963fe670d5452d6447e58184eae7cb4e1ea90"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/05.png",
+              "sha256": "69812775cd3d95171cecea9564b96a9e1d0a6bb2c4f2040d584253986367ad1a"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/05.png",
+              "sha256": "7976f2a7bb4bac457fd76931c7b115f7d0d9378482d662a6f5e7d2be0c34dfce"
+            }
+          }
+        },
+        {
+          "durationMs": 40,
+          "index": 6,
+          "phase": "descent",
+          "provenance": "PixelLab sword stage-D frame 6 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            174,
+            138
+          ],
+          "rotationDeg": 95,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/06.png",
+          "sha256": "5f04598201c142cdc4645a534acb236878906e1a8375fdb6723b91d270049c49",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/06.png",
+          "nativeSha256": "cb37351e3294bf3cdb85d436f5b9f201d342736333f3f92639c12d7b2ca1c623",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/06.png",
+              "sha256": "ad2494cd77ce4724b8263d2d5af22c431b44ac3b12eccb4926b5fcae41214a4f"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/06.png",
+              "sha256": "6c671c0f2b462f826b6a8dcadd61bd466eecc831f9d4d68bc0eeb7c4586af6b8"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/06.png",
+              "sha256": "31e1786e8365ed6e67586a5f9cb1c749f7d1e37cbad27265370eab3e1115b6b8"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/06.png",
+              "sha256": "e0474bc0dea0957d3589e11ec60214ae66b4e105946f505883996478f2200038"
+            }
+          }
+        },
+        {
+          "durationMs": 80,
+          "index": 7,
+          "phase": "impact",
+          "provenance": "PixelLab sword stage-D frame 7 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            163,
+            154
+          ],
+          "rotationDeg": 115,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/07.png",
+          "sha256": "a9e50bab992d998c0b79eadde75b1006275caa66ca00969e642bb731b6eefc04",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/07.png",
+          "nativeSha256": "354b7d5a0a204f86fee5d041fde9b122dca43863bbeb29dc421b28949272c5b2",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/07.png",
+              "sha256": "cd258835a098b8ccfce59982b24188df41c44c5ee849e2aba973a630249d4ee0"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/07.png",
+              "sha256": "54507242ce0191f68e3455251685fdd6ad022a3ee7c4a10fee0ddf86657313e8"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/07.png",
+              "sha256": "083519b8067198a5a4b4999af43d74f4c7113686e2c4e4a1caa6accb435fae3c"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/07.png",
+              "sha256": "3b653a41c6a0cf30bba40d2fe803c0dd96a5b66ccfaad438c25a6cb995bc049e"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 8,
+          "phase": "follow-through",
+          "provenance": "PixelLab sword stage-D frame 8 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            158,
+            161
+          ],
+          "rotationDeg": 115,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/08.png",
+          "sha256": "343b360293766b777ccfb84938acf9bc4d66de9d68c6251b083b0dca4ec844dd",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/08.png",
+          "nativeSha256": "12c8a801ef5fdd58121fff74e9afe1bc2f9b96a037194eabe625c5c6d540da99",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/08.png",
+              "sha256": "c77b9780ba9ec336a609eceae645159fe5c6677ac59908625415a3c0c8011209"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/08.png",
+              "sha256": "533e70119c62ca8f9c3dfcae09cb9011150e3d7fb7091f2065c90aeecd3972b2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/08.png",
+              "sha256": "a8e22b1945ec68eaf5cf95451047b3b7f95e39963bc2ba5f1f45af8a70275209"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/08.png",
+              "sha256": "bad29d1b3112778be76468c8eda0e9776ab9c694fc55fc871bbb1040ee4630e6"
+            }
+          }
+        },
+        {
+          "durationMs": 90,
+          "index": 9,
+          "phase": "recovery-release",
+          "provenance": "PixelLab sword stage-D frame 9 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            159,
+            155
+          ],
+          "rotationDeg": 95,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/09.png",
+          "sha256": "b7ed5c05650f73656ad918ff431586cf5325370bfb3b40a5c7adf58886d1f2da",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/09.png",
+          "nativeSha256": "925d2d1d9b62985dc766fa0e44cd4adc24e068e4ae692d7e0946ca3b1b462942",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/09.png",
+              "sha256": "94237d0b7b4ed83c52f06476679c07dffdb9387bf14c2008f615cff12ac4c66d"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/09.png",
+              "sha256": "b52a4cd984d84b98f179f9405d710e56580e3c4853eb7f9b313416c82064df62"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/09.png",
+              "sha256": "273bcbde5bde15fc51f187aebe806a87393cc298d10486cc56f5f49de2cc6d98"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/09.png",
+              "sha256": "2db32a677e3429a576c34584da8c370d81756ec1421312e6350b7c51b198d02a"
+            }
+          }
+        },
+        {
+          "durationMs": 90,
+          "index": 10,
+          "phase": "recovery-settle",
+          "provenance": "PixelLab sword stage-D frame 10 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/10.png",
+          "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/10.png",
+          "nativeSha256": "99f39efc2270d815ce2bd2066f84404289881c4aca0ae9b72463f7c780a10cfb",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/10.png",
+              "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 11,
+          "phase": "guard-return",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/11.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/11.png",
+          "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/11.png",
+              "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        }
+      ]
+    },
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/clip.json": {
+      "schemaVersion": 1,
+      "revision": "main-orc-artistic-reconstruction-v6-rear",
+      "id": "basic.axe-chop",
+      "character": "orc-v1",
+      "identity": "Verde Warcraft",
+      "direction": "back_r",
+      "category": "Axe",
+      "state": "Attack",
+      "frameCount": 12,
+      "durationsMs": [
+        100,
+        100,
+        110,
+        140,
+        150,
+        60,
+        50,
+        100,
+        140,
+        130,
+        110,
+        130
+      ],
+      "totalDurationMs": 1320,
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "master": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/source/composite.aseprite",
+      "masterSha256": "247cc455058fb93657466a4fc8b707aa9907fd171fece7e04511767df3913f82",
+      "nativeMaster": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/source/native.aseprite",
+      "nativeMasterSha256": "5b85b9a5b69d70016ccb66a5f46b6d124dafc01746d9897e8202e86e254c5cbd",
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "oneShot": true,
+      "loop": false,
+      "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "creatorApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "provenance": {
+        "authorScript": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/author.lua",
+        "authorScriptSha256": "dfbb1f597e666fe79ff538627f869bf6c42b4abd8c6539027a68473da2853b5c",
+        "jobId": "099226ff-7b53-4b59-9cf7-40f0ce387fed",
+        "seed": 64130,
+        "request": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/axe-request.json",
+        "rawFrames": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/raw/axe",
+        "method": "PixelLab skeleton_v3 Stage D back_r whole-body poses; Aseprite Lua exterior cleanup, tiny disconnected debris removal, measured per-pose glove occlusion and independent item composition. Bookends inherited V5 unarmed identity. Not manual drawing.",
+        "limitation": "Full-body reference candidate: knuckle volume, stance continuity, projected cutting direction and onset/recovery require creator judgment. See anatomy-plan.json and report.md. Boot-contact and knee continuity are specifically reviewed against the V5 back_r defects."
+      },
+      "frames": [
+        {
+          "durationMs": 100,
+          "index": 0,
+          "phase": "guard",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/00.png",
+          "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/00.png",
+              "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/00.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 1,
+          "phase": "anticipation-load",
+          "provenance": "PixelLab axe stage-D frame 1 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            164,
+            129
+          ],
+          "rotationDeg": 20,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/01.png",
+          "sha256": "2f0824084e3de8cc7df9d1a83a6737820c16f62f4d798933ec875f985e192a7e",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/01.png",
+          "nativeSha256": "f79ce3e3e71e71ff5ce753b7a65150e5aff8a8f534de3bb7f6a0f7d6ae03a1ce",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/01.png",
+              "sha256": "a1e4781ec8e7c0a080d0e361153b4bbe4073f3ad5f6e62adff23d83dafd0c3d2"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/01.png",
+              "sha256": "40027ffecebc5dd1ab6832b4f1f77644e0a27e5dc67759f59fd4ce8976b107e8"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/01.png",
+              "sha256": "10522e10402a6a97d6e64bb31130bfe18c2cfd7674ed952fc52f87bff420ea27"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/01.png",
+              "sha256": "579ab0cdb4e5c7e801fca76b4a695cb5acbb6c521108198b4172accdce4a6aa5"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 2,
+          "phase": "anticipation-lift",
+          "provenance": "PixelLab axe stage-D frame 2 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            162,
+            92
+          ],
+          "rotationDeg": -15,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/02.png",
+          "sha256": "74ea4b29b23bbb232640912d9a4e50eabce249fda9acdac3d5d6248a30edc6ee",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/02.png",
+          "nativeSha256": "6bddd8ceb8abb01a67dd1b00f957b73c55d5532e361705cc23dd9eba48c0cdb3",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/02.png",
+              "sha256": "66a1caece62015a8d7bdb8f34dbfad8c4e6b83e3ee10b27ee5d9c12a4bd8a22f"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/02.png",
+              "sha256": "2ac6a95d83e104f99bc06a0e04a280db7b16eacd1f1ba5c14cb7acbdfc5cc3ab"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/02.png",
+              "sha256": "198f8baa37cba12d32b3401b18407bd0d0fdac2b9103dbfd30d47b341e6b4f75"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/02.png",
+              "sha256": "f55bca58e6f7dd8ede3dc331e6b77583648604bc357063e3486bae9fcff00e2a"
+            }
+          }
+        },
+        {
+          "durationMs": 140,
+          "index": 3,
+          "phase": "chamber",
+          "provenance": "PixelLab axe stage-D frame 3 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            156,
+            84
+          ],
+          "rotationDeg": -10,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/03.png",
+          "sha256": "e85d0dce8430aff0e7236066e5d811a24b2d8eea5d7836826427d6e62a633b6a",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/03.png",
+          "nativeSha256": "38520b0475b6a14945503128cfa528992a3ed69e216e1c5dceb99885edf4c749",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/03.png",
+              "sha256": "eee8fe8061ad85c791e673f67882368ef00fccec988e318491613bd372409cb5"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/03.png",
+              "sha256": "c90fbba4d6221e7bafa8495d688285dd061e240ea586b36d1c7a5ed46452fe9d"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/03.png",
+              "sha256": "f4a433290c7cf5cf7576a33fcd167a52f642ce5f593e38b685c3f53e8d9dc7ad"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/03.png",
+              "sha256": "c7cd118eff23a7dc99b318428b9bb50b3f45ce08bc9661bab99dc94a2426b52c"
+            }
+          }
+        },
+        {
+          "durationMs": 150,
+          "index": 4,
+          "phase": "loaded-apex",
+          "provenance": "PixelLab axe stage-D frame 4 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            151,
+            82
+          ],
+          "rotationDeg": 0,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/04.png",
+          "sha256": "2ddf61ad8e8a5a8516e448f9ca52c6085a668bf2327cff8876ca283aa95dfeca",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/04.png",
+          "nativeSha256": "32d7c3812d92ef7309097fc06a34e75ec0e6088b0233205e466c7ffd91cdbd04",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/04.png",
+              "sha256": "32e20a2aaf52ad764356f3ceab6c2682bc021f8b1abc3cd38549825df8f4d0b8"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/04.png",
+              "sha256": "4cb706595ed3809619c02ab9a38fdebf33e27a017aa8ecc6ecbcf8a7dd8c65d7"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/04.png",
+              "sha256": "738294e6cf518d707a975747ce54e033f5ec91a5849b300e83c763553f51e43e"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/04.png",
+              "sha256": "29f695f8600ffe4caef4eaae57da668523248fbfb38d82573633592633c7f677"
+            }
+          }
+        },
+        {
+          "durationMs": 60,
+          "index": 5,
+          "phase": "acceleration",
+          "provenance": "PixelLab axe stage-D frame 5 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            161,
+            93
+          ],
+          "rotationDeg": 25,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/05.png",
+          "sha256": "c4ad2e992f62bb5e716dce98793d6c72569bc39390e7430194dff5c3bd303c02",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/05.png",
+          "nativeSha256": "f60530194d5416de6e2ab2039c538c03c2b817d1ae2a6e4516277f293e7f826a",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/05.png",
+              "sha256": "5325a86f3e85db352b8af3fbe60dffa900173de8c743babeeb9efd4df02e08f5"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/05.png",
+              "sha256": "bcd8ea8d60004e774fe3f522b5de31e82e92f9405fc252916406c5373da0304c"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/05.png",
+              "sha256": "80b7b1c49fae74490701d86e56f85d38efc73ee45c8b15ddb96d7c605302f88f"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/05.png",
+              "sha256": "568b2ef79f85dc3b2a78afe8af230d22fb0df09de2252f6fabbafa52ae404846"
+            }
+          }
+        },
+        {
+          "durationMs": 50,
+          "index": 6,
+          "phase": "descent",
+          "provenance": "PixelLab axe stage-D frame 6 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            172,
+            128
+          ],
+          "rotationDeg": 65,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/06.png",
+          "sha256": "1f5d29eebb1bc5cd15a8eec0f68e010efa91876cfb78325d110863f8299b6723",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/06.png",
+          "nativeSha256": "17245abb3d8731e793464b52b4c47dcc1f13cdf7bb3f5da5e49c6b16a782a99f",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/06.png",
+              "sha256": "bf825c0a49ae74803126225928db38705d96191ab0d7a333007d54326e8ffc64"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/06.png",
+              "sha256": "4fc736a43bd58a52a6298d070655be10df9c4b9b327afe3100b72157903aa831"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/06.png",
+              "sha256": "0aa83f24a3c1ebb84412c52b4c4f6b2f344a00f8673250d018964c64cff9644c"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/06.png",
+              "sha256": "b9956096fdad9602481f1f1f1a7ef47a3905950f464bb98c9f8c6b34e5b98995"
+            }
+          }
+        },
+        {
+          "durationMs": 100,
+          "index": 7,
+          "phase": "impact",
+          "provenance": "PixelLab axe stage-D frame 7 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            163,
+            159
+          ],
+          "rotationDeg": 85,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/07.png",
+          "sha256": "1e38514871ced9d797042247c616d63668a2c1c02a9533bfea084e813f027945",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/07.png",
+          "nativeSha256": "9b7c09ae52cd326fe0204380bd3c3c5cee48352a5b95875d7620be7e62bd6457",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/07.png",
+              "sha256": "6ef0bf5ad31d2ffab60d8759df70d1211da6b16b8ab16094241d0c51c47cacd4"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/07.png",
+              "sha256": "8226642d14e79fe93cb5b2c4d0cd3d76cabf7e8900f45cc20ca44ac5438ee19a"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/07.png",
+              "sha256": "c66a25e5635856b35b0094e7451b1a72e8c34686b5379fc10bbc523d29b16cd6"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/07.png",
+              "sha256": "91d1ccef33984f4f7803a405388772acf9f6350ea10ceb26844b04643efe4c8e"
+            }
+          }
+        },
+        {
+          "durationMs": 140,
+          "index": 8,
+          "phase": "follow-through",
+          "provenance": "PixelLab axe stage-D frame 8 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            159,
+            162
+          ],
+          "rotationDeg": 75,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/08.png",
+          "sha256": "aa08e77860b30f7cc61df80d49ad43d639667128880fb83a0c88dc1fda92a4da",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/08.png",
+          "nativeSha256": "d0cafbfb4eb93a17c157fdfeb80ccb0edfaaad31278bcf6f1f0530048f4df605",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/08.png",
+              "sha256": "44ad38b8d7a27acbced6c4a828897654bf5038f6bba365fdd980d229b306d6d4"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/08.png",
+              "sha256": "0b1934e24fa74f986a5e4595076ab0370c9a88f68215350549eb3ad0c7e039a1"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/08.png",
+              "sha256": "82a43d6eb1429de227ac4acb2c0f4b4efeb9033e66ae90bb69935ff0b84fbd8c"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/08.png",
+              "sha256": "aab3059374a834c4c1a40060800f4c0f3b70de6f04e344733ad246d9670e36e7"
+            }
+          }
+        },
+        {
+          "durationMs": 130,
+          "index": 9,
+          "phase": "recovery-release",
+          "provenance": "PixelLab axe stage-D frame 9 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": [
+            161,
+            155
+          ],
+          "rotationDeg": 65,
+          "weaponVisible": true,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/09.png",
+          "sha256": "90b14d729aeaa35deeb5cc1ee20e767b8d5b29ca36fc2579bf156c5718b08661",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/09.png",
+          "nativeSha256": "9b9aa2ba9534038936792fd1aa9ac5f33c46bad5f15e38bdd01b165fe06cad63",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/09.png",
+              "sha256": "dab48f36f75928e4f1f21d17c672168c03e01f076be60557911d0df1f47476b5"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/09.png",
+              "sha256": "fdc18bcdd2f278c9220a5fbd26e8b2fbbc8b256750e152a7cd380c016c53d3af"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/09.png",
+              "sha256": "d362da0e389c12a5c36dc97cc450d41452190778cf73a2824d87725806be4362"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/09.png",
+              "sha256": "c058f3a67873629794fe59f9449b43be3f7b44d68f415beca9c55e954569866b"
+            }
+          }
+        },
+        {
+          "durationMs": 110,
+          "index": 10,
+          "phase": "recovery-settle",
+          "provenance": "PixelLab axe stage-D frame 10 + Aseprite edge cleanup and pose-specific glove occlusion",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/10.png",
+          "sha256": "2fb9e04ea0a084db272144c297908a3ad6bc350ae8b9bf2eb851c07499962576",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/10.png",
+          "nativeSha256": "62cb995838778a6314cff8424b3a0ac478adbbeee5776f59e2fd793307db06fa",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/10.png",
+              "sha256": "2fb9e04ea0a084db272144c297908a3ad6bc350ae8b9bf2eb851c07499962576"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/10.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        },
+        {
+          "durationMs": 130,
+          "index": 11,
+          "phase": "guard-return",
+          "provenance": "V5 unarmed identity reference preserved",
+          "rightGrip": null,
+          "rotationDeg": null,
+          "weaponVisible": false,
+          "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/11.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "nativePng": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/11.png",
+          "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+          "anatomyPlan": "experiments/main-orc-artistic-reconstruction-v6/rear/back-r-stage-d/anatomy-plan.json",
+          "layers": {
+            "weaponBack": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "body": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/11.png",
+              "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+            },
+            "weaponFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            },
+            "handFront": {
+              "png": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/11.png",
+              "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "protectedFiles": {
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/00.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/01.png": "a0773c3ed70b4015c6084ace6c545251eabe2718a96ce5a9b4439e1ecf119325",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/02.png": "cc874361e6ee565d21da87e1cc14b2270a39db6e6f84c6e023380c2446dfcad3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/03.png": "d751cf4ae7d4ee904ee87c5ad8a501e534bcf8e21da06e8c20db604c2b13e1ea",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/04.png": "7183dbb8acd19ec20fe73e5c996132c114e8bddf8562d6c4398181af91a48e1f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/05.png": "8e27f47a6b7be1b6ffc3d5e5897f2fd59d6f1d5758b089533b93785ed13a0bfe",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/06.png": "657711eb18ca5d7751ebdce7e7573a4cfbfe8f136f46104d59ad7d7c76ce0ab6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/07.png": "adef474c5bdc0ed195be99c65c5feef2bb7914687a7cf8216534d83f8aa5837f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/08.png": "73db9658f98b65916caac8c1bc937008a0179ce59aeed84b0843af0878aa50d9",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/09.png": "303b62d605a3101fb3bf6d6fd8dcd3fdb2dfd490295856d4a6ee2fee5194bf1d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/10.png": "0c937f846d89e60ae7e69cd04030ca40f2864c946150b3bd931e4ab66afffa6e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/frames/11.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/00.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/01.png": "21bc778761cbcd28afc0e72d1bc13293e9252954f30c85c7a27826cdf56722e0",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/02.png": "ca7b4c2828c8db9665b7643877d5f8fe08fe871430f7373ddb125a7ae6556320",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/03.png": "d95cb3ee5487146ec515b1f9dceecb909b9eab6c61a5bb4c4c58b7ee964909dc",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/04.png": "fd4d86fb4dff5192f0b92e04cabd1ec9807bf1f8f5dff1fda8271fdb1dd07cd7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/05.png": "4d54fe48114478a29a76628e7c807ca85737310beafd2b3ba4e43c2526223550",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/06.png": "8a80ba3d020fab41e0933d3f395e80af208e0e63a4dae94d2318fff9abda09c7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png": "68c51303ce1f5a7af1b2a3fc9386a1ae001904371919e5f266f5670cdca90c7c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/08.png": "dfa4a7792bcfc175e4f53f775767c0556ec76ee491115fa7658e213bb4f29797",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/09.png": "9a1bd3825b1cd2d64a23377fecd7b61314b533134dfd1fb6586e67a496a2f752",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/10.png": "0c937f846d89e60ae7e69cd04030ca40f2864c946150b3bd931e4ab66afffa6e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/11.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/01.png": "f7ae25b4ce661467cea8e73461a556a47493d0da1d563994516ff42b7684c1ca",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/02.png": "53a1e5010fc8c14ef9b3d03ca72665c6a7a307f423c4161c351929fe9a070894",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/03.png": "bcd0ffeb48d12e098c5ee2a5af9343c7e2518a2fc71ad746ff8316e484ba435a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/04.png": "9eb36f8700b5a57c8d5118de56d85c1a3218952fdc5b11c1b85491c7de280d0d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/05.png": "5df0f8e6dcf99e781e042062f0d3c6518c44b7c70db022f6477b8daacc95cadd",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/06.png": "1fd3b12569e9eeff9d434f975630cd231dbcb82173546f776b7655d002f09f38",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/07.png": "b78d12db973491c792eb4b9626313a65e842fae0a357e7b44c2ab3b066ad7640",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/08.png": "380a239fe364db85e565edb6346d404962ed091aa50c138fa4a773ea78523347",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/09.png": "b4887cfdfb471dc12dfaf88297e252313227c68819fe967771b95f99627d7cf6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/handFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/01.png": "31eae398f60b95b36f933d991437071ba2c4f076a1eb7e26586a4eac0826adc9",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/02.png": "68b4cf39b4184a9797f323c8728b7297262d1d5a72fefcb272bb5a3d3fc5bd07",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/03.png": "2757e21918a7ff7c03842c15757f954d7cb5ab2aa461f6a2aeeed668a185ac3b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/04.png": "4e35ecf9cb54de9aacf421f0edb43b804ebc5fc205eb3e92e38b6b8d4dc329c7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/05.png": "b58a5e042b7cd45e3f9db373453052bed7371a9faf4f28c6ef319b5c5949448a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/06.png": "538f827f54991c310ce54fe7500314bd40e2cd0c635be50ebdaa4c39f3feb635",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/07.png": "71b514cd261d5426103afe3ab63b632d4c1fea2b9f49061e6dcd61f948ae72c3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/08.png": "07416619ef52338c9a4299abbe7fd6b60e179d3f79e668f5386505c860bca82b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/09.png": "4767c3165d1d6ea42a359608112a65e8f8334a2c615d69d3d9b341995277de18",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponBack/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/01.png": "b87e948a3439ac635e3a0816cd35bf13b08d27a37523fc6f9e60dd5447ca27c2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/02.png": "19d2682d222f558604ccb9aafd4be205bdcbbd9357d5bfeef369a5807acaa4ec",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/03.png": "5569cbe605e1b1cace776f75b2b3498a48f92f7c1ffdab568317019bf40d0237",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/04.png": "e93ed513eeefc92b8f3fa1d8c6af0359b02ed8c848230f8b98666f179cc41dba",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/05.png": "395a8e356cc8269fd0bd66d2dc3c17023fcabf2b04ab294f8f2b9b54caef5dfa",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/06.png": "3d0b849bb3e7d08d9852c8e0d69c0179058921541c3a0ac93221ad5d68f457bb",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/07.png": "fcda01a9c2aed5905cef7eff6968b0fc542b44ff14c79fe8a7697dbeceac0a0e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/08.png": "6a457ae1d702cda9c41d050bbda493cbf0858e53ed5afc8108703b49547619f3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/09.png": "2d0d017f3fc62976bea4ddc9f71bdc923549a0b461c43cb6f6c1bf5f5ff94c0d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/weaponFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/00.png": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/01.png": "254477ced0ae34cda4cb641d3c0d67b2bec4b9637c668a8e1da1483a67d80640",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/02.png": "58153b4deb59a7673066efc4ec002238d47833f4c7f28b8dda1886e1f920d15e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/03.png": "039dcff4da10b5f14df996db8d2b9f7cefa6c18fe5b3fd881583c645362ba987",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/04.png": "1c398a5a0add90bc72bf79ce689a18710375a80bc4268792a28c475467eaa984",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/05.png": "e3c24d474796e7d37702267dcacc00ea583e75b566194433c00c4f8e0b1f0b25",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/06.png": "9953162466eb52ef9a8cd8fca33105ec81157c0f32d48e80258d8f16b88ff48d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/07.png": "8f575898a8389bb8ee5b697131303f848168dfc29bffbfea70156aa7c9693229",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/08.png": "93642c6140bbcefb049afb54550eca06cdae655f4d82a21edd5533f5b2a97db6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/09.png": "931437ea94200003ae2bddc01e2632f5bb8ee158d535dd90d807c034ecaebda7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/10.png": "17e4a3a51ca35fa3d374fbed6ae63116290a1c4b9302f315a6a7e90242643261",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/native/11.png": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/source/composite.aseprite": "f944e147f1c39d7fe71303d0e068cea4230d9de27b4add61246a09a36cdbf7fe",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/source/native.aseprite": "5865e030e5e07cccbfa14563574f441c6f305e0efd4376d6135da8e6f4d799fb",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/00.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/01.png": "318178b530799564bb208114c8f351f566bccfa66a54160559ed84568a2830f3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/02.png": "48b06af64eae1417000ac4ae33b26ae059d6e4ff8d86107c794feb65e5be458a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/03.png": "e94c3d53a5a4b3900f4d19a9841b366f8fc20124019e6d121559228a407b2498",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/04.png": "51e36504def4d68566225fec175898bb5e8c2d0e85346d059e2d6062fad8027a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/05.png": "fd3c84afeb02e76ba47ea51699b7041e5c8616241ed3a91f11bb538ab8016229",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/06.png": "cca5ea0f58a635fab7cba9094e8b5061bec6d51b64248def97c7c78e9d8f7c7c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/07.png": "2fbc2377c3147295991e37f996611dc508c525e6313fd331c36792bb898aee63",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/08.png": "615a2bafeb8311f9f4b10b2b9a666acd7af43a3bc6f10d9daf0cd8a9aa240cad",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/09.png": "9046dd731d61732e17704428d664f231b4430762e974a78f4a009190c01315b0",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/10.png": "012fc15593bb4f8df1d5b0ff4772db2b9ad018c8ec70d87c6c50ed66dcadd910",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/frames/11.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/00.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/02.png": "0f4221ccb36c7d532ebcf9581ca9ac8a902d1cf13f4e1c3d2c3499c580c7d140",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/03.png": "2179284087db44861df81daa31c7a5efff7448e90ad1087d822ef0243a28b036",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/04.png": "6eb853137ce7ac0ff094bfddd4a42aab8d6e705185acecaaecceb6a3f7bc58c2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/05.png": "770544c585d5a000accc986a47c6eb0756226ca93038fe31edeeb1ef4d0410d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/06.png": "3a6266d18797cedbb54057ff4680ac891f22063e2144fd1e03384d5ecbee67d6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/07.png": "3e55f3c455193b24a69866d88c8bd58dcc196aac34b21a5e2a99b1fde261ae4a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/08.png": "8919ec8303842887070a92b82e82f288c5f5c428a7db0c4db30e94f34ed60ec0",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/09.png": "05b7a2d6efa579d54e05c86161f1a52bc9a4c96c6213f629d6622c25cce0de83",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/10.png": "012fc15593bb4f8df1d5b0ff4772db2b9ad018c8ec70d87c6c50ed66dcadd910",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/11.png": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/01.png": "8872342c2400ce4533f4b51d34053dc62e85b57cfff6da64df8322e5dbca857d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/02.png": "0521543e2b7351c67b006eb77c5172aa7a04fdc16372313eeea6a472610ff8dc",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/03.png": "9342aa78172222b840350a97caa619fe93b94abc7fcd05b1a02091e964525a92",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/04.png": "bfdf81ba60bb969470694ffeafe5679657ec5938d1ef14b1c17cdccca7dead06",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/05.png": "94f25445f3b25a3ac7dcc2a6939f7dc98ef71aeec30f22cde8b574f93180bbc1",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/06.png": "8c6b8d8c511be55c406aa4c96590e78af157bc79a6787e86e7591953055994c4",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/07.png": "486fac7d925edeb6283855ec4393695ae0fc97896554dba88046d0e374050e67",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/08.png": "70a046def4ea172a0d3846eac1f7bbb43c36f702791ee468cace1c6dc57931af",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/09.png": "9c081558757524a3122544c2f2372238f2df46083365143a337206cb1235c9a9",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/handFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/01.png": "e2bec69425c160c3d36a1ea1e530fe651ee34427b10bb7efa4f3ef2918a3526b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/02.png": "8d985318af854037a1d7689765a382dd4b857f264c1b41df787605ffbe9da0e5",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/03.png": "56f61c57bf21fbdcf885971c106429ad3ad6aed5fa35f50a41c6e4d3ce96b07c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/04.png": "30dafff58dc66599c854d4481581d32ebfb6cc0c2783fa772439a31b1d0feb6b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/05.png": "93aebe960ccb50006f68cdf0227fb4ef8eaa836c1b23ee9f938d1ed88734d9a2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/06.png": "191d6e9f74cec1cb6dd3d0abbf5a75acb56d78bfe5bfbf2d51c23c25c5c5649c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/07.png": "f00281401a5beca8b2e4c5d56ccc3108927f81e850d6813878db9eb50079f58c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/08.png": "524cee2b8de90b72b0e5ffc7a2b0de7de9afd58e5b7d0f3cabecda81fcf0e2c2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/09.png": "82aa47aa1f23a08a968c5ab32ae0ede8d8d09362634b27ce726c5952f323ff4e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponBack/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/01.png": "5f884be86eef51fc822c79717730e5da037fce7ee729497eebaecff69ad0abf6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/02.png": "e2e0fd3d16126c46dab1b30a6b697a93edb21567077c9f751b50459615cff112",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/03.png": "32f778db02908abc792d025b918d4ac52f184d4cf614b1a0899113c3d4d8364d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/04.png": "cf796df0913746b31b225f7c7e7e388494c6d5a08708732cc0439d3e8ec60b23",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/05.png": "38182bae4d219b8263a840357eecaff0a558aaef17e2bfd779e600c59c01adcf",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/06.png": "95bb516e9d9542fddaa763e86672bcd8ceca9636b8a72cc2cfdce8a143862818",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/07.png": "eaa754feaf9aafc05ad06c146516d6c5c890c71112269bd3d0b7b419472157c4",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/08.png": "5d4152dd4711243b99a43a196e28df21baaa835c2910dbd00291d2a7868e54ec",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/09.png": "745e466f29d6fd6163863166362a97473a09ff8039698178f32d501df743b516",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/weaponFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/00.png": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/01.png": "a4a7ce63ce79049de4f8844cb297716dd4f66c89590de62c80139d244c624708",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/02.png": "c5c11942725040c087ddb21a10b976113923f5eba34a202c077b66374107ab39",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/03.png": "686aaae78001ba2b6478f22186a0586f57cc643e7e7af3b5a1906754d97e8b24",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/04.png": "145555ac4fee3ba327f0fffd1c0d74b30b95e367be4600d28ef9718d37c03ec7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/05.png": "a3cb62f95add94dbd8828fc5e74c975fb507be2d493ad055a96edb542a3cbf99",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/06.png": "e2b13959e2440a957f811d5e07b6284d65e4053682360f6796d1854cf9e33052",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/07.png": "24e204fd9b6ada5b94b0b1272e872a4b5072d660526c207c86c495aed96b458e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/08.png": "ca083e2fd4cff4f8e091f55e7b28c4039c5263cec91e407e9c4ca000176ae59a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/09.png": "be41a3e8f39d04d30542045f5742f4403b2443c4eb88f4048944844a3c419abd",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/10.png": "b648b3221dc23bd11837a97065e0b17267de7ac27172402d36de9134e00088e2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/native/11.png": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/source/composite.aseprite": "51843d55994db9d55ef0134db67c4492c0550891cf6783e80e623605265ed23e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/source/native.aseprite": "8aa7cb3e326aa6e4c63249b5b2361818b217640eb2511c50b03a5ae636e0f73b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/00.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/01.png": "6e3f82173ef8aa18287df8f587537249564d761666be2e538cc77a38106c8c37",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/02.png": "d1efb7031e552655e336de5b7f1073759230fd82eaa594d5ac0a39dd872fc76b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/03.png": "44462c8aacb328fb3634fd1c08c7c29907c0333b141a2ec507a205533d5a9caa",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/04.png": "3c56ff5378c4b5fd4e73fa3a178b3e5e4f63faf4a792e35af1041fa575048b34",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/05.png": "fde97ba4b32611a82aeef99903545b9ceef13850fe846c04d4e112aca22ef042",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/06.png": "5f04598201c142cdc4645a534acb236878906e1a8375fdb6723b91d270049c49",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/07.png": "a9e50bab992d998c0b79eadde75b1006275caa66ca00969e642bb731b6eefc04",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/08.png": "343b360293766b777ccfb84938acf9bc4d66de9d68c6251b083b0dca4ec844dd",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/09.png": "b7ed5c05650f73656ad918ff431586cf5325370bfb3b40a5c7adf58886d1f2da",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/10.png": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/frames/11.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/00.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/01.png": "da66823f185f9b0af087adf29fccdd9b9360636e78d89de161df192b9eba7531",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/02.png": "4888c0fdc32445d1d3b08f9ad6c9490b114d5da01cdbb8fb099da1f533af8378",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/03.png": "7e97d7de14b043cdb8d1c7b698936ab00489fd6537c0d4ddca3b69089fffd117",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/04.png": "3727debac6dafbed6d5e9b710e6482e45c6eca8eaf8c03ae06a8bdb2fb122c24",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/05.png": "23955c612be33ed624e0383e3ee963fe670d5452d6447e58184eae7cb4e1ea90",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/06.png": "6c671c0f2b462f826b6a8dcadd61bd466eecc831f9d4d68bc0eeb7c4586af6b8",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/07.png": "54507242ce0191f68e3455251685fdd6ad022a3ee7c4a10fee0ddf86657313e8",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/08.png": "533e70119c62ca8f9c3dfcae09cb9011150e3d7fb7091f2065c90aeecd3972b2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/09.png": "b52a4cd984d84b98f179f9405d710e56580e3c4853eb7f9b313416c82064df62",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/10.png": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/11.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/01.png": "5b0f6a88e4e62ca2f383a4fe99d7fa9730ab35d9dbad6c8e616ee06b8a81f719",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/02.png": "072a0c6d239b468d0e55d506387c60f752c2ad78d1473ef57733a07c12db3ced",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/03.png": "cfa791c27d0bb6e3e20eb66e1bcb112a289f38611499a6a680701b0e494e1408",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/04.png": "3c9fe5e36c8b5aef5146750c78b046c34a52990b3416c591b5495b4899c32942",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/05.png": "7976f2a7bb4bac457fd76931c7b115f7d0d9378482d662a6f5e7d2be0c34dfce",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/06.png": "e0474bc0dea0957d3589e11ec60214ae66b4e105946f505883996478f2200038",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/07.png": "3b653a41c6a0cf30bba40d2fe803c0dd96a5b66ccfaad438c25a6cb995bc049e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/08.png": "bad29d1b3112778be76468c8eda0e9776ab9c694fc55fc871bbb1040ee4630e6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/09.png": "2db32a677e3429a576c34584da8c370d81756ec1421312e6350b7c51b198d02a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/handFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/01.png": "a50f5f2f064557f70bf0fd1e30018f7e56ebacd7deb9e3958336eb28500e0057",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/02.png": "7b536be432cad20bea5c1a3f776bd062fa69c1835e785da9e2e8bb2749c0f494",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/03.png": "893e79e45dfacf89e6fb954c0f7c72b42269f91059bc2d70cec639a5252a18f0",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/04.png": "70c279ba3d6155ff8a8fbc3a951362d8b99bf47b2c0adc90f18310de573282c7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/05.png": "b68fd100cce27a8d408689dde2f421e02ec22ed6866cfbd56e0bb1c0887a64ec",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/06.png": "ad2494cd77ce4724b8263d2d5af22c431b44ac3b12eccb4926b5fcae41214a4f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/07.png": "cd258835a098b8ccfce59982b24188df41c44c5ee849e2aba973a630249d4ee0",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/08.png": "c77b9780ba9ec336a609eceae645159fe5c6677ac59908625415a3c0c8011209",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/09.png": "94237d0b7b4ed83c52f06476679c07dffdb9387bf14c2008f615cff12ac4c66d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponBack/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/01.png": "2086bfd3760761c2c59bd4c57517e497c3da7abbd778334c96e445daaa4efcc1",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/02.png": "c66a6a088fd8a7e5e2c302baba1aaaa9e39e1191113c260065a7a72bf89adf2b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/03.png": "e1cc43e2469e8203502ed03580da6f06b772c78a27d9a6ed84a634d564b68203",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/04.png": "f696dbd475b019c94b149bd08fec470373567010a9377458c9a57bce5db7ca37",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/05.png": "69812775cd3d95171cecea9564b96a9e1d0a6bb2c4f2040d584253986367ad1a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/06.png": "31e1786e8365ed6e67586a5f9cb1c749f7d1e37cbad27265370eab3e1115b6b8",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/07.png": "083519b8067198a5a4b4999af43d74f4c7113686e2c4e4a1caa6accb435fae3c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/08.png": "a8e22b1945ec68eaf5cf95451047b3b7f95e39963bc2ba5f1f45af8a70275209",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/09.png": "273bcbde5bde15fc51f187aebe806a87393cc298d10486cc56f5f49de2cc6d98",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/weaponFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/00.png": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/01.png": "4840894080bb08d168007eedf84342545f0f09adb0a846be44fc0ca15025efb2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/02.png": "f1fb2e41627db0359d504ee62dd3ca05ca16276e302af43930aec240a0047d29",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/03.png": "d53bc6c4fa23dd717e5521f89e8ded0e07bebda32f4d3d3e071baca56a6cc183",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/04.png": "851ea2d1fdacb832977bc42992a25856613d7489e7c87d0d24e292caae343613",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/05.png": "13e67898b7203da4f0e22e9c463caff54e2d461038cdb6c667c6bf1fa8a752e3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/06.png": "cb37351e3294bf3cdb85d436f5b9f201d342736333f3f92639c12d7b2ca1c623",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/07.png": "354b7d5a0a204f86fee5d041fde9b122dca43863bbeb29dc421b28949272c5b2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/08.png": "12c8a801ef5fdd58121fff74e9afe1bc2f9b96a037194eabe625c5c6d540da99",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/09.png": "925d2d1d9b62985dc766fa0e44cd4adc24e068e4ae692d7e0946ca3b1b462942",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/10.png": "99f39efc2270d815ce2bd2066f84404289881c4aca0ae9b72463f7c780a10cfb",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/native/11.png": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/source/composite.aseprite": "8408b39dadcdc0be7e906dd061f8b7e82e3e5eadc03fd09a8eb160e229c64418",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/source/native.aseprite": "84d059f1883fa2118b2e1a75c71df7ade3d49320630ab6fe78a87ea177513a7c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/00.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/01.png": "2f0824084e3de8cc7df9d1a83a6737820c16f62f4d798933ec875f985e192a7e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/02.png": "74ea4b29b23bbb232640912d9a4e50eabce249fda9acdac3d5d6248a30edc6ee",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/03.png": "e85d0dce8430aff0e7236066e5d811a24b2d8eea5d7836826427d6e62a633b6a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/04.png": "2ddf61ad8e8a5a8516e448f9ca52c6085a668bf2327cff8876ca283aa95dfeca",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/05.png": "c4ad2e992f62bb5e716dce98793d6c72569bc39390e7430194dff5c3bd303c02",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/06.png": "1f5d29eebb1bc5cd15a8eec0f68e010efa91876cfb78325d110863f8299b6723",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/07.png": "1e38514871ced9d797042247c616d63668a2c1c02a9533bfea084e813f027945",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/08.png": "aa08e77860b30f7cc61df80d49ad43d639667128880fb83a0c88dc1fda92a4da",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/09.png": "90b14d729aeaa35deeb5cc1ee20e767b8d5b29ca36fc2579bf156c5718b08661",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/10.png": "2fb9e04ea0a084db272144c297908a3ad6bc350ae8b9bf2eb851c07499962576",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/frames/11.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/00.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/01.png": "40027ffecebc5dd1ab6832b4f1f77644e0a27e5dc67759f59fd4ce8976b107e8",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/02.png": "2ac6a95d83e104f99bc06a0e04a280db7b16eacd1f1ba5c14cb7acbdfc5cc3ab",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/03.png": "c90fbba4d6221e7bafa8495d688285dd061e240ea586b36d1c7a5ed46452fe9d",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/04.png": "4cb706595ed3809619c02ab9a38fdebf33e27a017aa8ecc6ecbcf8a7dd8c65d7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/05.png": "bcd8ea8d60004e774fe3f522b5de31e82e92f9405fc252916406c5373da0304c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/06.png": "4fc736a43bd58a52a6298d070655be10df9c4b9b327afe3100b72157903aa831",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/07.png": "8226642d14e79fe93cb5b2c4d0cd3d76cabf7e8900f45cc20ca44ac5438ee19a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/08.png": "0b1934e24fa74f986a5e4595076ab0370c9a88f68215350549eb3ad0c7e039a1",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/09.png": "fdc18bcdd2f278c9220a5fbd26e8b2fbbc8b256750e152a7cd380c016c53d3af",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/10.png": "2fb9e04ea0a084db272144c297908a3ad6bc350ae8b9bf2eb851c07499962576",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/body/11.png": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/01.png": "579ab0cdb4e5c7e801fca76b4a695cb5acbb6c521108198b4172accdce4a6aa5",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/02.png": "f55bca58e6f7dd8ede3dc331e6b77583648604bc357063e3486bae9fcff00e2a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/03.png": "c7cd118eff23a7dc99b318428b9bb50b3f45ce08bc9661bab99dc94a2426b52c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/04.png": "29f695f8600ffe4caef4eaae57da668523248fbfb38d82573633592633c7f677",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/05.png": "568b2ef79f85dc3b2a78afe8af230d22fb0df09de2252f6fabbafa52ae404846",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/06.png": "b9956096fdad9602481f1f1f1a7ef47a3905950f464bb98c9f8c6b34e5b98995",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/07.png": "91d1ccef33984f4f7803a405388772acf9f6350ea10ceb26844b04643efe4c8e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/08.png": "aab3059374a834c4c1a40060800f4c0f3b70de6f04e344733ad246d9670e36e7",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/09.png": "c058f3a67873629794fe59f9449b43be3f7b44d68f415beca9c55e954569866b",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/handFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/01.png": "a1e4781ec8e7c0a080d0e361153b4bbe4073f3ad5f6e62adff23d83dafd0c3d2",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/02.png": "66a1caece62015a8d7bdb8f34dbfad8c4e6b83e3ee10b27ee5d9c12a4bd8a22f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/03.png": "eee8fe8061ad85c791e673f67882368ef00fccec988e318491613bd372409cb5",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/04.png": "32e20a2aaf52ad764356f3ceab6c2682bc021f8b1abc3cd38549825df8f4d0b8",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/05.png": "5325a86f3e85db352b8af3fbe60dffa900173de8c743babeeb9efd4df02e08f5",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/06.png": "bf825c0a49ae74803126225928db38705d96191ab0d7a333007d54326e8ffc64",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/07.png": "6ef0bf5ad31d2ffab60d8759df70d1211da6b16b8ab16094241d0c51c47cacd4",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/08.png": "44ad38b8d7a27acbced6c4a828897654bf5038f6bba365fdd980d229b306d6d4",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/09.png": "dab48f36f75928e4f1f21d17c672168c03e01f076be60557911d0df1f47476b5",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponBack/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/00.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/01.png": "10522e10402a6a97d6e64bb31130bfe18c2cfd7674ed952fc52f87bff420ea27",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/02.png": "198f8baa37cba12d32b3401b18407bd0d0fdac2b9103dbfd30d47b341e6b4f75",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/03.png": "f4a433290c7cf5cf7576a33fcd167a52f642ce5f593e38b685c3f53e8d9dc7ad",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/04.png": "738294e6cf518d707a975747ce54e033f5ec91a5849b300e83c763553f51e43e",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/05.png": "80b7b1c49fae74490701d86e56f85d38efc73ee45c8b15ddb96d7c605302f88f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/06.png": "0aa83f24a3c1ebb84412c52b4c4f6b2f344a00f8673250d018964c64cff9644c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/07.png": "c66a25e5635856b35b0094e7451b1a72e8c34686b5379fc10bbc523d29b16cd6",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/08.png": "82a43d6eb1429de227ac4acb2c0f4b4efeb9033e66ae90bb69935ff0b84fbd8c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/09.png": "d362da0e389c12a5c36dc97cc450d41452190778cf73a2824d87725806be4362",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/10.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/layers/weaponFront/11.png": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/00.png": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/01.png": "f79ce3e3e71e71ff5ce753b7a65150e5aff8a8f534de3bb7f6a0f7d6ae03a1ce",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/02.png": "6bddd8ceb8abb01a67dd1b00f957b73c55d5532e361705cc23dd9eba48c0cdb3",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/03.png": "38520b0475b6a14945503128cfa528992a3ed69e216e1c5dceb99885edf4c749",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/04.png": "32d7c3812d92ef7309097fc06a34e75ec0e6088b0233205e466c7ffd91cdbd04",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/05.png": "f60530194d5416de6e2ab2039c538c03c2b817d1ae2a6e4516277f293e7f826a",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/06.png": "17245abb3d8731e793464b52b4c47dcc1f13cdf7bb3f5da5e49c6b16a782a99f",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/07.png": "9b7c09ae52cd326fe0204380bd3c3c5cee48352a5b95875d7620be7e62bd6457",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/08.png": "d0cafbfb4eb93a17c157fdfeb80ccb0edfaaad31278bcf6f1f0530048f4df605",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/09.png": "9b9aa2ba9534038936792fd1aa9ac5f33c46bad5f15e38bdd01b165fe06cad63",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/10.png": "62cb995838778a6314cff8424b3a0ac478adbbeee5776f59e2fd793307db06fa",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/native/11.png": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/source/composite.aseprite": "247cc455058fb93657466a4fc8b707aa9907fd171fece7e04511767df3913f82",
+    "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/source/native.aseprite": "5b85b9a5b69d70016ccb66a5f46b6d124dafc01746d9897e8202e86e254c5cbd"
+  }
+}

@@ -1,0 +1,28 @@
+Next scope, authorized by Root: compose the COMPLETE grip cycle for `back_l/Sword` (12 frames, 730 ms), reusing the method the independent QA already accepted for `back_r/Axe`.
+
+Body source (already approved by QA as READY_FOR_REAR_GRIPS, do not modify a single body pixel):
+- `characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Sword-full/clip.json`
+- Clip SHA-256 recorded by QA: `74da046b19f98297410327063db70b5a8dad644fea9a53f0f4f5f589fcb5ab32`
+- QA verdict source: `experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-bodies-repair1-result.json`
+- 12 frames, durations and 9 structural keys F03/F04/F07 must stay byte-identical; body RGBA delta must remain 0.
+
+Weapon: independent Militia Axe/Sword definitions already in the repo. This is the SWORD family: use the recruit sword item `characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json`, NOT the axe. Sword is a diagonal cut, not the axe overhead chop — the grip rotation must follow the observed sword arc in this body cycle (the structural keys are already a diagonal slash in back_l/Sword), not be copied from the axe angles.
+
+Deliverables in NEW directories only:
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/`
+- dedicated Aseprite profile `tmp/aseprite-rear-grip-flash-profile` (reuse your own existing profile)
+
+Requirements carried from the accepted `back_r/Axe` method:
+- Four layers `weaponBack → body → weaponFront → handFront`, genuine per-frame glove traced on the real palm/wrist, no geometric stamp, no fixed socket reused across frames, no fingers counted literally.
+- `handFront` only over real glove pixels with minimal internal retouches; declare the count per frame.
+- `visibleInterval` strictly inside the attack; bookends fully transparent and composite byte-identical to the body.
+- Persistent `attack-only-v1` policy; no weapon pixels in the body layer.
+- Masters `composite.aseprite`, `body.aseprite`, `hand.aseprite`, `native.aseprite` saved, reopened and reexported; Lua `Frame.duration` in SECONDS; composite 256 / body offset [64,64] / ground 190 / native 128 / ground 126.
+- Clip JSON with real paths, durations, hashes, `weapon`, `weaponDefinition`, `visibleInterval`, `provenance` including the authoring script and the body parent hash.
+- Preview HTML with 1x/0.5x/step/tactical scale and before/after, plus contact sheets.
+- No new PixelLab generations expected — this is local Aseprite composition. Register real balance only if a call becomes genuinely necessary.
+- Do not touch the other three rear clips, the front clips, the matrix, Unity, or any QA folder.
+- Honest limits: do not claim continuous 1x perception you did not observe.
+
+Stop at `REAR_SWORD_L_BACK_FULL_READY` with report + checkpoint + patch manifest, and stop there. Root will send it to the same independent QA.

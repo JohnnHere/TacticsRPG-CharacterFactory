@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "orc-v1.combat-rescue-v5.candidate28",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "revision": "main-orc-combat-rescue-v5",
+  "baselineBuild": "dist/editor/orc-v1-complete-v1/b178422e1f7fc19f068c",
+  "parentManifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+  "parentManifestSha256": "f250f7a11ceb0e851c9a3c34f8c20e75c48da5a04e0a2229933945298aaf4017",
+  "comparisonBaselineManifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+  "totalClips": 28,
+  "activeCandidatesCount": 13,
+  "inRevisionCount": 0,
+  "inProductionCount": 0,
+  "unchangedAliasesCount": 15,
+  "totalFrames": 226,
+  "affectedFrameCount": 126,
+  "aliasFrameCount": 100,
+  "cells": [
+    {
+      "direction": "front_r",
+      "action": "Idle",
+      "cellId": "front_r/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_r/Idle/clip.json",
+      "clipSha256": "b1c5375ec096c41672d8fb83a9e9683d58f9da4d745f2d90d145f5ba976554c0",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Idle",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_r/Idle/clip.json",
+        "clipSha256": "b1c5375ec096c41672d8fb83a9e9683d58f9da4d745f2d90d145f5ba976554c0"
+      },
+      "masterSha256": "9355d142ee6916e832f32c39d820edbc10b8e2f2d6ce703e1c3132a6bc34e27c",
+      "nativeMasterSha256": "26cccd2fa199f7e59033c8728f88eb51dd771a9f8ab52a5b92762f81209de5d8",
+      "stripSha256": "74eec953440c5ca4852a61ce3f5c84a7dd7b6443160f7015f4d1126500c25bc1"
+    },
+    {
+      "direction": "front_r",
+      "action": "Walk",
+      "cellId": "front_r/Walk",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json",
+      "clipSha256": "360757c7f6b82873a7fa3cf6efa825f09cfa875d58f44618f9e2989ab22b0a1f",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Walk",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json",
+        "clipSha256": "360757c7f6b82873a7fa3cf6efa825f09cfa875d58f44618f9e2989ab22b0a1f"
+      },
+      "masterSha256": "cc6dcc65ec25690443a176fc16c932479173580747a820e0c103f110190cd236",
+      "nativeMasterSha256": "057622f589ef7abdc9a854aad13ee909d8211bce7ddb89b84ac5846c9ee5ab90",
+      "stripSha256": "e23a58d15e5b647da900d264d11d2fa09ad2af7d43defd7f4f89885f89547489"
+    },
+    {
+      "direction": "front_r",
+      "action": "Unarmed",
+      "cellId": "front_r/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/combat/front_r/Unarmed/clip.json",
+      "clipSha256": "65cecc7fc852f60003d53e5c3161fa3a7f52ecac942fd68d0c830a5d78482081",
+      "reviewStatus": "NO_CONFIRMED_DEFECT_IN_PRIOR_INDEPENDENT_QA",
+      "provenance": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_unarmed_4views.lua",
+      "notes": "Front Unarmed F03 recoil and the two rear Unarmed cycles were sustained by the independent reviewer; that freeze was rejected for weapon/grip and rear-body defects, which this candidate replaces. No fresh review of these four cells is claimed.",
+      "frameCount": 5,
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Unarmed",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/clip.json",
+        "clipSha256": "59ec99fc5df45c68979f48d3ea3cb1d13addb2edb317d303188b35d45e919765"
+      },
+      "patchManifest": "characters/orc-v1/source/combat-rescue-v5/combat/patch-manifest.json",
+      "masterSha256": "0b307b9561a91f775bdc44bbbe3a268558c48d4dc7d34f701963ec9a99b89912",
+      "nativeMasterSha256": "883e0d7cf0f0c69ed8277cfee0b5764e4163e7aac93d029bf4382868cbfa3f1c",
+      "stripSha256": "b2627cde365076fd532d62591841f719fd9c6389a0254e01834d0ffa34c44707",
+      "nativeStripSha256": "b2627cde365076fd532d62591841f719fd9c6389a0254e01834d0ffa34c44707",
+      "qaVerdict": "SUSTAINED_STATIC",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-grok/qa-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-grok/report.md"
+      ]
+    },
+    {
+      "direction": "front_r",
+      "action": "Sword",
+      "cellId": "front_r/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+      "clipSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Aseprite Lua in grip-specialist/full-front-r-sword; original front body and timing preserved; validated F02/F06/F08 layers reused exactly.",
+      "notes": "Front sword cycle; independent QA accepted the full 13-frame cycle.",
+      "frameCount": 13,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Sword",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Sword/clip.json",
+        "clipSha256": "e196f707b65dd939de3193eba05f37f906c5b0e4a1ea096ae613342c197d58cf"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "3ee5755c874ccc007aa7f67af9ea5cc839d2cf98b5c0bee25dbcf0bf9acf6410",
+      "bodyMasterSha256": "b85c18f315dfed5cb37536398719b18454e59d2d27f49d166d0f0fb3b10deb38",
+      "nativeMasterSha256": "8fab269d162d995ed3acdbbb09b8a03a3750ca5f05d923f35d21c1e55e8a87d7",
+      "stripSha256": "43aba45bf5b4a0bc4b1a453b76a7b14ce0366b6033691cd1bd1409d738ebe78c",
+      "nativeStripSha256": "43aba45bf5b4a0bc4b1a453b76a7b14ce0366b6033691cd1bd1409d738ebe78c",
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/front-r-sword-full-result.json"
+      ]
+    },
+    {
+      "direction": "front_r",
+      "action": "Axe",
+      "cellId": "front_r/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_r-Axe-full/clip.json",
+      "clipSha256": "dca0ef7e000be50cf8cf39ca69c3b55324ea1a4857a18e1b15278bbae6e3d0f5",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Aseprite Lua in grip-specialist/front_r-Axe-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front axe cycle; independent QA accepted the full 12-frame cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Axe",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Axe/clip.json",
+        "clipSha256": "c7872e38b317d58d6655d5db938facd6746d67cf11f6399cd2089990c2648b0f"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "83f73413521dc5357161423d5d88b55604f316fcc29ba834ea0b5bbd63dd039e",
+      "bodyMasterSha256": "5d61850d2a33057dfc7ebe532a715b0736db31185b2e8d459a9358dbb196deb2",
+      "nativeMasterSha256": "d86b36cccba891e2f91d4f24fb76867e3e35df42c64293b8ab45424b932d138b",
+      "stripSha256": "0caca1544325007fe1e76c055e36ebc7e5b33f8f9350772fdcd9bdf2d5a630a7",
+      "nativeStripSha256": "0caca1544325007fe1e76c055e36ebc7e5b33f8f9350772fdcd9bdf2d5a630a7",
+      "qaVerdict": "READY_FOR_NEXT_STAGE",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ]
+    },
+    {
+      "direction": "front_r",
+      "action": "Hit",
+      "cellId": "front_r/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_r/Hit/clip.json",
+      "clipSha256": "dbdf43c60ee77de9fb59deb261aba4e9d558d3afaba34bfa21633ae2f5b00d7b",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Hit",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_r/Hit/clip.json",
+        "clipSha256": "dbdf43c60ee77de9fb59deb261aba4e9d558d3afaba34bfa21633ae2f5b00d7b"
+      },
+      "masterSha256": "2ded6b489265f3884362218720200a892068c3fe51b57f4649072b07a2eca2be",
+      "nativeMasterSha256": "01c2efe5261c580bf5d913a8a23019866a3f4ed1dd7e3c02ab3e92950c991b07",
+      "stripSha256": "899231ecdc5270994aeb98510c07be1683d613f8d4a9242e1acbcd7a1d4fd682"
+    },
+    {
+      "direction": "front_r",
+      "action": "Defeat",
+      "cellId": "front_r/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/clip.json",
+      "clipSha256": "f2ab6f18beff9d997a0fe2572804c4b902c0ee9c9c2f22b7f201c45765538920",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_r/Defeat",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/clip.json",
+        "clipSha256": "f2ab6f18beff9d997a0fe2572804c4b902c0ee9c9c2f22b7f201c45765538920"
+      },
+      "masterSha256": "1fd7fe705ef0d3bb1732d16cd5145927c878bb2aaba8e31862903582f2b00dec",
+      "nativeMasterSha256": "86accf30c713b5b4c7cc7bfb44aa8f4c5dbfaa70d3d6e279db235f7b46430043",
+      "stripSha256": "03654d8bc9fa439675c783766c2fa604e39d456263a4b54a7a532afd1f6701ec"
+    },
+    {
+      "direction": "front_l",
+      "action": "Idle",
+      "cellId": "front_l/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_l/Idle/clip.json",
+      "clipSha256": "1f8a14dd45a18451eb6dd0772d42010dc1404a90ce9ac67ad4ea36adbbdbab0b",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Idle",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_l/Idle/clip.json",
+        "clipSha256": "1f8a14dd45a18451eb6dd0772d42010dc1404a90ce9ac67ad4ea36adbbdbab0b"
+      },
+      "masterSha256": "a0dd623e6cee1cbf90e2d5cdbe2459c50d8c2f68065311f358fb491afef25936",
+      "nativeMasterSha256": "3221ece6922dd6b5e26aa6d6b604b3ed84d9a5392e3c93821686e9c6e188abb3",
+      "stripSha256": "8aee3de6f8190c619988fe3229839c96fbd8a3a8bb9dc5eb3c16118763857101"
+    },
+    {
+      "direction": "front_l",
+      "action": "Walk",
+      "cellId": "front_l/Walk",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+      "clipSha256": "061e9e9cf9a72fc9ab605df8b75f16133bb1cc4f6887e54fd56bb83af62e24ee",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Walk",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+        "clipSha256": "061e9e9cf9a72fc9ab605df8b75f16133bb1cc4f6887e54fd56bb83af62e24ee"
+      },
+      "masterSha256": "94a0ec0a89a8608fb2aab16e54426d0eb239d94fa01e2ac34decd6b8d80e6dd1",
+      "nativeMasterSha256": "54ba7064efa82f2487998b87d50c8dfd1c78430262e75e741f69b20def0d555f",
+      "stripSha256": "34c80b359341c2ebdecc572861ff975f9d6c43c78cce83ef1bd6053913b47def"
+    },
+    {
+      "direction": "front_l",
+      "action": "Unarmed",
+      "cellId": "front_l/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/clip.json",
+      "clipSha256": "9b51482e6f475b0ed2827f06e8c2574e5f60891215d982c9375e8bc0fa720553",
+      "reviewStatus": "NO_CONFIRMED_DEFECT_IN_PRIOR_INDEPENDENT_QA",
+      "provenance": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_unarmed_4views.lua",
+      "notes": "Front Unarmed F03 recoil and the two rear Unarmed cycles were sustained by the independent reviewer; that freeze was rejected for weapon/grip and rear-body defects, which this candidate replaces. No fresh review of these four cells is claimed.",
+      "frameCount": 5,
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Unarmed",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/clip.json",
+        "clipSha256": "723f218aae286c5282acc8b5b6b5f49493ea9c233016f7738612b836c76ca1ea"
+      },
+      "patchManifest": "characters/orc-v1/source/combat-rescue-v5/combat/patch-manifest.json",
+      "masterSha256": "45f2e01767afdc63bb529e5284729bc1e2930eaf1bb11ca2692a06e88613ac23",
+      "nativeMasterSha256": "0cf602f8cb576e801359bd898566f184c39d1d7a20f428287249b82ab9521b40",
+      "stripSha256": "2841e124267c973349af7a0044e29d77c9ea8ada7cfb2e756c35283ca5cd9e1d",
+      "nativeStripSha256": "2841e124267c973349af7a0044e29d77c9ea8ada7cfb2e756c35283ca5cd9e1d",
+      "qaVerdict": "SUSTAINED_STATIC",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-grok/qa-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-grok/report.md"
+      ]
+    },
+    {
+      "direction": "front_l",
+      "action": "Sword",
+      "cellId": "front_l/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/clip.json",
+      "clipSha256": "56eb4daeb43b35cbb0a50a3b1cc145eba802c5b408b96bf76fa90c3219eb4681",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Aseprite Lua in grip-specialist/front_l-Sword-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front sword cycle; independent QA accepted the full 13-frame cycle.",
+      "frameCount": 13,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Sword",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Sword/clip.json",
+        "clipSha256": "2642b95b25454913a6b80f4a4a4b5684e14e660457d424c0e224495e527cbb71"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "3efc83c1a17fa45e7f34ea3af985255b2820c924fcfcf76be15095d9dec1e085",
+      "bodyMasterSha256": "37e4ed5c76e06fb22cc840ce80ad2c531b71ff28141e80fbea4c44de0fba36c2",
+      "nativeMasterSha256": "38a9865dc23f909bd971b2cadc58c4ad1b9ad6d48b7cfc8533b5d0b41f40789f",
+      "stripSha256": "0e693e1ed2cf3806d37e37f45557d20326fcdff64f88d90edb37b76c82dd63bf",
+      "nativeStripSha256": "0e693e1ed2cf3806d37e37f45557d20326fcdff64f88d90edb37b76c82dd63bf",
+      "qaVerdict": "READY_FOR_NEXT_STAGE",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ]
+    },
+    {
+      "direction": "front_l",
+      "action": "Axe",
+      "cellId": "front_l/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Axe-full/clip.json",
+      "clipSha256": "fa3c620d69d7df05bf0afab1fffa35fe37d861feacfc4124cbafa7e9763d7c5c",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Aseprite Lua in grip-specialist/front_l-Axe-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front axe cycle; independent QA accepted the full 12-frame cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Axe",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/clip.json",
+        "clipSha256": "fb053cece8f86af942515365433e3cf52fb08071d1e813b86b3b52fc201b276e"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "4df2d168a97a7a643be47f2b57d85f260a1a9951324a3f9dbe7ab4107ce08938",
+      "bodyMasterSha256": "871e283bf7ef6a76a041b322d438e296939b7d72673bb8de91ef3820d8acc118",
+      "nativeMasterSha256": "60443ef5d7c2e8ed13ad0c8db935c0ba57d96f13f57b6909f0b6b62eb6c6a885",
+      "stripSha256": "ba6fa7c40759bdeaa1302ac9fcaa90505ff65c2ad483efce6d3824113eb65f33",
+      "nativeStripSha256": "ba6fa7c40759bdeaa1302ac9fcaa90505ff65c2ad483efce6d3824113eb65f33",
+      "qaVerdict": "READY_FOR_NEXT_STAGE",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ]
+    },
+    {
+      "direction": "front_l",
+      "action": "Hit",
+      "cellId": "front_l/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/front_l/Hit/clip.json",
+      "clipSha256": "d962f6ebe55286596eb0f511ef15c0d991c2921047b057bed6bebe3f8866966f",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Hit",
+        "clipJson": "characters/orc-v1/source/complete-v1/front_l/Hit/clip.json",
+        "clipSha256": "d962f6ebe55286596eb0f511ef15c0d991c2921047b057bed6bebe3f8866966f"
+      },
+      "masterSha256": "26b1d294214348447906f9727cc1b4262da9c5ad78bf29647586f3722dc47ab0",
+      "nativeMasterSha256": "9c61761b162d2c7a14b328723d143fdcfc2631ce11b3da2440bd58fb5a2afac0",
+      "stripSha256": "ec46a734267d38bbef069cce7a1079a4860841a0f00d4068d8d4a7d1561420b9"
+    },
+    {
+      "direction": "front_l",
+      "action": "Defeat",
+      "cellId": "front_l/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/clip.json",
+      "clipSha256": "bb68a0a4a29b97039ef618589ad378f70b03d00921a507c17cb83682f5fddb24",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "front_l/Defeat",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/clip.json",
+        "clipSha256": "bb68a0a4a29b97039ef618589ad378f70b03d00921a507c17cb83682f5fddb24"
+      },
+      "masterSha256": "4d72e8039c454f2a893f317a6a21fa6ff4699bd137cd01882d1653ad96a59a2e",
+      "nativeMasterSha256": "06db5b68f3a9b11bf4ab034aa3872209daf1bae889ffa0f7c61f15c06fa24d7d",
+      "stripSha256": "a14719b4a5441b5247f0b49926b4d626e75c34e6c26e9d188af0903463c48fbc"
+    },
+    {
+      "direction": "back_r",
+      "action": "Idle",
+      "cellId": "back_r/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_r/Idle/clip.json",
+      "clipSha256": "5c24b20b45247ee43e652138d4ea743d576328e3dff707e523e1d17ad1c30d1f",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Idle",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_r/Idle/clip.json",
+        "clipSha256": "5c24b20b45247ee43e652138d4ea743d576328e3dff707e523e1d17ad1c30d1f"
+      },
+      "masterSha256": "cb9f234f0c90a1b7b29f7ff65e8fd84a2bebffac2c1e5a54d5c0eaf99fcc7f35",
+      "nativeMasterSha256": "fce2a88aab6103b098fdf660e99c8151cf8eacf9a1ae8041e876f6b34d15dd71",
+      "stripSha256": "3eef81c7480cf94d767b771559321a5801d4463bdeba88cb73c48c474e61c499"
+    },
+    {
+      "direction": "back_r",
+      "action": "Walk",
+      "cellId": "back_r/Walk",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/clip.json",
+      "clipSha256": "d2f4a2b752fa87c91206f4780fc385f99b925ea7830e04da9698045c3d46964f",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 8,
+      "durationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Walk",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/clip.json",
+        "clipSha256": "d2f4a2b752fa87c91206f4780fc385f99b925ea7830e04da9698045c3d46964f"
+      },
+      "masterSha256": "51465f79ab35ede0e3eb1573c9300b6aede1c9832d851224accf8bee6aaf4a4d",
+      "nativeMasterSha256": "2ee7fb0d2d94701a7e133c52a4321a71f906d8f79b77215e60faa5843e2c4289",
+      "stripSha256": "bc22c36ee12e3ca323d81768aac703bc30cd4f05d0e70fa1ec79008d2744910b"
+    },
+    {
+      "direction": "back_r",
+      "action": "Unarmed",
+      "cellId": "back_r/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Unarmed/clip.json",
+      "clipSha256": "2473efb8e4dc8b9055305220f5d74907b3cdeef322707af5174660afc40499a1",
+      "reviewStatus": "NO_CONFIRMED_DEFECT_IN_PRIOR_INDEPENDENT_QA",
+      "provenance": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_unarmed_4views.lua",
+      "notes": "Front Unarmed F03 recoil and the two rear Unarmed cycles were sustained by the independent reviewer; that freeze was rejected for weapon/grip and rear-body defects, which this candidate replaces. No fresh review of these four cells is claimed.",
+      "frameCount": 5,
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Unarmed",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/clip.json",
+        "clipSha256": "23b2677d1886195b1a74185cdabe247eb1c06724117f2287cb61217bdf00ab4c"
+      },
+      "patchManifest": "characters/orc-v1/source/combat-rescue-v5/combat/patch-manifest.json",
+      "masterSha256": "a17dcd1f80b17387c5c25922c983e691235347d05f7df21fe4a7c7b2b5f9e074",
+      "nativeMasterSha256": "317146793c2d6213d6ca8631d8b0e33ac196d458c0b4806a66340baa4e63c9d3",
+      "stripSha256": "0e79b809ad4cd3dc86d1384956a492f7166030979950989655643cc63eb9867e",
+      "nativeStripSha256": "0e79b809ad4cd3dc86d1384956a492f7166030979950989655643cc63eb9867e",
+      "qaVerdict": "SUSTAINED_STATIC",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-grok/qa-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-grok/report.md"
+      ]
+    },
+    {
+      "direction": "back_r",
+      "action": "Sword",
+      "cellId": "back_r/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json",
+      "clipSha256": "a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Rear body from body-specialist/glm-fixes/back_r-Sword-full (F06 residuals and chainmail restored); grip composed in rear-grip-flash/full-back-r-sword.",
+      "notes": "Rear sword cycle built on the escalated body repair; pending final independent QA of the composed cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        60,
+        60,
+        70,
+        70,
+        40,
+        40,
+        90,
+        70,
+        70,
+        60,
+        60
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Sword",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Sword/clip.json",
+        "clipSha256": "ef2f81fb2f61dfc8b661af73977039e7919f8d8b8fb199c93ff5c7ce47ee5eb9"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "cf66aa1fd30280b4b143f891bdca298d8e6ad5faca4f89b4b6d5a8af0631abfb",
+      "bodyMasterSha256": "f0c0b9f650882256242b574501191c0196c78959acf4e49931b0e3245b990e90",
+      "nativeMasterSha256": "bea7a0cf7138e4b8dcfb85a47605ecfc82f79181ce170a180b8e83b9545ddd0a",
+      "stripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646",
+      "nativeStripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646",
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/layer-key-normalization-qa.json"
+      ]
+    },
+    {
+      "direction": "back_r",
+      "action": "Axe",
+      "cellId": "back_r/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe/clip.json",
+      "clipSha256": "66f4b0e1e6ec60dafc493620e9beb68e5fbb42791ccd53be671a52f9e73f8c9e",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Rear body reconstructed in body-specialist/full-back-r-axe (BODY-01 repair1 preserved); grip composed in rear-grip-flash/full-back-r-axe.",
+      "notes": "Rear axe cycle built on the reconstructed overhead body; independent QA accepted keys and full cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        70,
+        80,
+        90,
+        100,
+        110,
+        50,
+        60,
+        110,
+        100,
+        100,
+        100,
+        130
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Axe",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/clip.json",
+        "clipSha256": "410f81803e7c8f8578717100eb9045f18fab8e1e520601ef182fd52217fb2900"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "3ca86a16ad1bb0e2d260e0c1d99970a9358cf9b6b057fbc18a3a5246b802e1e5",
+      "bodyMasterSha256": "e4aa361c8f905944a5b81feadf30a679df095c8ba2406c4685ce56d765d6b686",
+      "nativeMasterSha256": "f789d6b90d520ba1b9a809d00a2f02ec8941746439365863b29e66d0dc15e918",
+      "stripSha256": "c18602344a993ad4cbb50a0c8853ac80d06943f3ca7d17ef2b34b8f5e9207abe",
+      "nativeStripSha256": "c18602344a993ad4cbb50a0c8853ac80d06943f3ca7d17ef2b34b8f5e9207abe",
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-axe-full-result.json"
+      ]
+    },
+    {
+      "direction": "back_r",
+      "action": "Hit",
+      "cellId": "back_r/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_r/Hit/clip.json",
+      "clipSha256": "e61b324d105eae2e7d8e3bdd0b40d6e4eb2dc305ee5d73d55ff51f7190cdfe19",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Hit",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_r/Hit/clip.json",
+        "clipSha256": "e61b324d105eae2e7d8e3bdd0b40d6e4eb2dc305ee5d73d55ff51f7190cdfe19"
+      },
+      "masterSha256": "eae8c43595cf0a8219eb4ff751e3de350ddcc3f948519c104628c5880f2451c5",
+      "nativeMasterSha256": "d3387c3b870ed06239b784b93a3ef34a2cfe1683283645bd1d3282a443dc1c8f",
+      "stripSha256": "eefe68afe6650f03e1a658a47e8d66b8a7d33c7eea7ab06e580a7359a23002d8"
+    },
+    {
+      "direction": "back_r",
+      "action": "Defeat",
+      "cellId": "back_r/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json",
+      "clipSha256": "496843adc5c3507df1feab8ad2729bf57afa133ab7d371aa6f38a0840d9349ef",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_r/Defeat",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json",
+        "clipSha256": "496843adc5c3507df1feab8ad2729bf57afa133ab7d371aa6f38a0840d9349ef"
+      },
+      "masterSha256": "2b4e1d4cd21ea431f89ade8867c08e3edb0579c0cc8710c97abc08b483769dec",
+      "nativeMasterSha256": "46684ac21b42706f22cdceb90ca775488d6d26a08490aff3c0c5cfd5373a1b40",
+      "stripSha256": "f0b092952d4bb6baeca2fb80d6701c15c795abf5db1c9143ef16f84c4723d670"
+    },
+    {
+      "direction": "back_l",
+      "action": "Idle",
+      "cellId": "back_l/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_l/Idle/clip.json",
+      "clipSha256": "640dcd6db1983bc09efd77ef11eb707a9eb4603e09ccf47596e13884d4b65f5d",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Idle",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_l/Idle/clip.json",
+        "clipSha256": "640dcd6db1983bc09efd77ef11eb707a9eb4603e09ccf47596e13884d4b65f5d"
+      },
+      "masterSha256": "6e6c9fddd95387973bf6e587a05ee2ff0f42a6a31dd968ed2b38e050af66e172",
+      "nativeMasterSha256": "f5a3032c6c13ef69505bad9d630d44422a54c006a7d57262e7fd404f7b0ed45b",
+      "stripSha256": "99fef0b03e0c2bebf3b0b0f5ddf2161ce5501c7b06ea26a1fb602f7af970e4f4"
+    },
+    {
+      "direction": "back_l",
+      "action": "Walk",
+      "cellId": "back_l/Walk",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/localized/back_l/Walk/clip.json",
+      "clipSha256": "81135686831827edb8572b442e21892154582f9c06fd6a4211bac28b00e5d751",
+      "reviewStatus": "COLOR_ONLY_EDIT_LIMITED_CONTINUOUS_PERCEPTION",
+      "provenance": "Localized Aseprite batch correction; source fork of characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_l.aseprite; original exports preserved untouched.",
+      "notes": "2741 colour-only edits in F04-F07 of back_l/Walk; alpha and timing unchanged. Independent QA did not demonstrate a wrong-pose collage but did not claim human continuous 1x perception.",
+      "frameCount": 8,
+      "durationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Walk",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/clip.json",
+        "clipSha256": "a84744288b6689c7c0287abfd1c9afb06a26172b52b256b22711c5b0bdb2fa1b"
+      },
+      "patchManifest": "characters/orc-v1/source/combat-rescue-v5/localized/patch-manifest.json",
+      "masterSha256": "1d6069e94a9897f02c65c9afe76a9069792d2b94760182d88a56602a90d45f18",
+      "nativeMasterSha256": "3e4fcf16001b205e841f18208fb7b89bfbbc253c0149ba71eb96634fa7e35352",
+      "stripSha256": "bc71022f86f121aeea4233ea2210039612611af5cbca354ec1c5329b84343232",
+      "qaVerdict": "NO_DEFECT_DEMONSTRATED_LIMITED",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-grok/qa-result.json",
+        "experiments/main-orc-combat-rescue-v5/localized/report.md"
+      ]
+    },
+    {
+      "direction": "back_l",
+      "action": "Unarmed",
+      "cellId": "back_l/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Unarmed/clip.json",
+      "clipSha256": "97d43894e5ce52fab7b7f6bbe30e7c30ed0fc25858c173f7ea30cbfac60e0eb4",
+      "reviewStatus": "NO_CONFIRMED_DEFECT_IN_PRIOR_INDEPENDENT_QA",
+      "provenance": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_unarmed_4views.lua",
+      "notes": "Front Unarmed F03 recoil and the two rear Unarmed cycles were sustained by the independent reviewer; that freeze was rejected for weapon/grip and rear-body defects, which this candidate replaces. No fresh review of these four cells is claimed.",
+      "frameCount": 5,
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Unarmed",
+        "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/clip.json",
+        "clipSha256": "fd1d0138c78e88942f557b05b718437e1e24d93568c14d74b1222d950a433b76"
+      },
+      "patchManifest": "characters/orc-v1/source/combat-rescue-v5/combat/patch-manifest.json",
+      "masterSha256": "7165e8a46b567b05f89af0cf90df255a3b0e6fe8269df81c5998e35f9e6bbf4d",
+      "nativeMasterSha256": "b01eef4f161dce97708359db7ba36f9944c06c058a3df58b503d5345dd3d0185",
+      "stripSha256": "594a50434c3d6c0ac564aef19dcfdb0c2cb3afe051d94be1b625c02dadc9b66b",
+      "nativeStripSha256": "594a50434c3d6c0ac564aef19dcfdb0c2cb3afe051d94be1b625c02dadc9b66b",
+      "qaVerdict": "SUSTAINED_STATIC",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-grok/qa-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-grok/report.md"
+      ]
+    },
+    {
+      "direction": "back_l",
+      "action": "Sword",
+      "cellId": "back_l/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json",
+      "clipSha256": "9a7b2b3ba87027d3ac7e0e1a86582a9769549f6154800b87a572ab460a9497ef",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Rear body from body-specialist/final-cycles/repair1/back_l-Sword-full (silhouette hook removed); grip composed in rear-grip-flash/full-back-l-sword.",
+      "notes": "Rear sword cycle built on the repaired diagonal-cut body; independent QA accepted the full cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        60,
+        60,
+        70,
+        70,
+        40,
+        40,
+        90,
+        70,
+        70,
+        60,
+        60
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Sword",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_l/Sword/clip.json",
+        "clipSha256": "0eac7cb1fcb8ffe2912809532f7d66d20eaa48bd5b22ac723d427d5ec21eb58a"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "d052b9910e96961c4386fd0b22f26e4d8f5cc324fdab41912368a26fc814cedb",
+      "bodyMasterSha256": "f2deef7c77155bc2b3424e25c19b8bb50dbfb6f81d4061711ddc161b97e9b931",
+      "nativeMasterSha256": "d9280bbfae61e229eb098bf211de2186d36fa9fa9c9dbbd477f79980a8b13b7c",
+      "stripSha256": "3aaf3d82b5dffc0b057b3af4b04a8cb3ce36e957925ebd2e34b361b56a8f7873",
+      "nativeStripSha256": "3aaf3d82b5dffc0b057b3af4b04a8cb3ce36e957925ebd2e34b361b56a8f7873",
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-sword-l-back-full-result.json"
+      ]
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe",
+      "cellId": "back_l/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "isAffected": true,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json",
+      "clipSha256": "b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6",
+      "reviewStatus": "INDEPENDENT_QA_ACCEPTED_NOT_CREATOR_APPROVED",
+      "provenance": "Rear body from body-specialist/glm-fixes/back_l-Axe-full (F02 arm reauthored after two rejections); grip composed in rear-grip-flash/full-back-l-axe.",
+      "notes": "Rear axe cycle built on the escalated body repair; pending final independent QA of the composed cycle.",
+      "frameCount": 12,
+      "durationsMs": [
+        70,
+        80,
+        90,
+        100,
+        110,
+        50,
+        60,
+        110,
+        100,
+        100,
+        100,
+        130
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Axe",
+        "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_l/Axe/clip.json",
+        "clipSha256": "52bd1116af7c99a83590cd4999578a425866c89eff774a362a15dc48e395cd90"
+      },
+      "patchManifest": "characters\\orc-v1\\source\\combat-rescue-v5\\final-weapon-patch.json",
+      "masterSha256": "a2ed1edcdf6dc3fdba68ec5ccb9742fd5868d1734f5e725e5a805eedf9d54a4c",
+      "bodyMasterSha256": "bd39a6687551571ac0fe32143dda2c2e98143f9c30dc38ef1c6cb778884c9ddf",
+      "nativeMasterSha256": "c3d3d76606913bffb726efa8211a8eec9971a0da6ddcc8e81e50705ebd0251ab",
+      "stripSha256": "0a59c724f0c796963195dfd1f601c309f526895bae093110bebaf547176780ea",
+      "nativeStripSha256": "0a59c724f0c796963195dfd1f601c309f526895bae093110bebaf547176780ea",
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/layer-key-normalization-qa.json"
+      ]
+    },
+    {
+      "direction": "back_l",
+      "action": "Hit",
+      "cellId": "back_l/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_l/Hit/clip.json",
+      "clipSha256": "aa0394cc73938765ec315544eb26498e07d4cff64064a51ae76adb4b6095465a",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Hit",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_l/Hit/clip.json",
+        "clipSha256": "aa0394cc73938765ec315544eb26498e07d4cff64064a51ae76adb4b6095465a"
+      },
+      "masterSha256": "0da0cb76db6813b8fcfc4ebbf316463d9f44c8f74a76b3a359118fc2ec225aa0",
+      "nativeMasterSha256": "4e088980061599caa7153ee81b03d93ad03ae95e054b93ff6717f2ba1b2a73d6",
+      "stripSha256": "9b24ab1b8601975d94541e2b1b03b13737831924393a215153767c7ab0bf2e2b"
+    },
+    {
+      "direction": "back_l",
+      "action": "Defeat",
+      "cellId": "back_l/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "isAffected": false,
+      "clipJson": "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json",
+      "clipSha256": "1180f5df6c7c23484161c3f344da63d30df2b1e8dab277eee12ad9f1a15bad31",
+      "reviewStatus": "UNCHANGED_RELATIVE_TO_V5_INPUT",
+      "provenance": "Exact alias to immediate V5 input; no artwork or timing change.",
+      "notes": "Preserved source/export; no inherited artistic approval.",
+      "frameCount": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "parentCell": {
+        "manifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+        "cellId": "back_l/Defeat",
+        "clipJson": "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json",
+        "clipSha256": "1180f5df6c7c23484161c3f344da63d30df2b1e8dab277eee12ad9f1a15bad31"
+      },
+      "masterSha256": "1f6b81e9da882bf0c8571164d31d33e1b2567258b30126e3713a50bff82cc83c",
+      "nativeMasterSha256": "c0d41fd0218d270c75c88da5b111c280e819844c6680c1aa99f88692f35ffdee",
+      "stripSha256": "82e2b3336ec50613007d1f8fc10d061a103762ff56eb84ddf58a393a5d20ce15"
+    }
+  ],
+  "weaponDefinitions": {
+    "Sword": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "Axe": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json"
+  },
+  "integrationReport": "experiments/main-orc-combat-rescue-v5/orchestration-report.md",
+  "devReport": "experiments/main-orc-combat-rescue-v5/combat/report.md",
+  "technicalStatus": "TECHNICAL_PASS",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "integrationStatus": "ISOLATED_CANDIDATE_NO_UNITY_AUTHORIZATION",
+  "runtimeImplemented": false,
+  "scope": "Whole-body rear Sword/Axe/Unarmed reconstruction; anatomical grips, affected front Unarmed and localized Walk/Defeat inspection. Protected Idle/Hit/rear Defeat remain exact aliases.",
+  "creatorApproved": false,
+  "verification": {
+    "technicalValidation": {
+      "report": "experiments/main-orc-combat-rescue-v5/technical-validation.json",
+      "note": "Run after this manifest is final; the report records the manifest hash it verified."
+    },
+    "savedSourceReexport": {
+      "dir": "experiments/main-orc-combat-rescue-v5/source-reexports",
+      "note": "One result per verified manifest hash; Aseprite batch CLI reopens every selected saved master and re-renders its frames."
+    },
+    "browserChecks": {
+      "dir": "experiments/main-orc-combat-rescue-v5/browser-checks-final",
+      "status": "BROWSER CHECK PASSED",
+      "checks": 21
+    },
+    "protectedInputs": {
+      "report": "experiments/main-orc-combat-rescue-v5/input-preservation-result.json",
+      "files": 3506
+    },
+    "rejectedSnapshot": {
+      "report": "experiments/main-orc-combat-rescue-v5/qa5-rejected-manifest.json",
+      "sha256": "00281c8608821eecb1848d187a3508eb575781cf9172f40134f1125818df4659",
+      "immutableSourcesPreserved": true
+    },
+    "tests": {
+      "builderUnittest": "4/4 PASS",
+      "integrationNodeTests": "4/4 PASS"
+    },
+    "limits": [
+      "Continuous 1x motion perception in a real player was not established for every clip; static frame-by-frame review plus contact strips and real Chromium playback checks are what exist.",
+      "No anthropometric or behavioural validation in Unity; no Unity write, no pointer promotion, no runtime implementation."
+    ]
+  },
+  "weaponPatch": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/final-weapon-patch.json",
+    "sha256": "01f3d0eeb18a9c06d172c633d99f3a829f0b6b637c10330b420472ace0fa84ab",
+    "cells": 8
+  },
+  "qaEvidenceIndex": {
+    "front_r_Sword": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/front-r-sword-full-result.json",
+    "front_l_Sword": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json",
+    "front_r_Axe": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json",
+    "front_l_Axe": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json",
+    "back_r_Axe": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-axe-full-result.json",
+    "back_l_Sword": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-sword-l-back-full-result.json",
+    "back_r_Sword": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json",
+    "back_l_Axe": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json"
+  },
+  "qaReviewer": "Gemini 3.8 Flash (High) via Antigravity, independent sessions; earlier reviews by Grok 4.7/Copilot and Sol/Codex remain in the report"
+}

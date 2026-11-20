@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-targeted-repair-v1-axe-attack-representative-v1-microclean",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 8,
+  "durationsMs": [
+    90,
+    80,
+    90,
+    80,
+    100,
+    80,
+    100,
+    110
+  ],
+  "totalDurationMs": 730,
+  "master": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/aseprite/axe-attack-representative-v1-microclean.aseprite",
+  "bodyMaster": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/aseprite/axe-body-representative-v1-microclean.aseprite",
+  "nativeMaster": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/aseprite/axe-body-representative-v1-back_r-microclean.aseprite",
+  "strip": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native-strip.png",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "source": "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png",
+    "sourceSha256": "f573fb9a9264a5d46fc20cdfbebf679cb47cf8944d74a435e25e1d9da795c3a0"
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "generationJobId": "8b6ad151-8708-4431-a606-06b250388fc4",
+    "sourceFrames": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/00..06.png",
+    "weaponArt": "unchanged independent weapon PNG, Aseprite transform only",
+    "generationBudgetLedger": "experiments/main-orc-rear-recovery-v2/cost-provenance-ledger.json",
+    "rootAuthorization": "experiments/main-orc-rear-recovery-v2/root-authorization-2026-10-26T182558Z.json",
+    "bodyCleanup": "QA revision 1: bounded Aseprite repairs after independent QA rejection. See qaRevision1.record and preserved rejected freeze; earlier claims of a clean generated body were incomplete.",
+    "qaRevision1": {
+      "record": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/provenance.json",
+      "bodyAuthoring": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/author_body.lua",
+      "compositionAuthoring": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/compose.lua",
+      "findings": [
+        "QA-02",
+        "QA-03"
+      ],
+      "rootCheckpoint": "ACCEPTED_FOR_LOCAL_COMPOSITION_ONLY",
+      "generationCalls": 0
+    }
+  },
+  "reviewEvidence": {
+    "gripCloseups": "experiments/main-orc-rear-recovery-v2/back_r-axe-grip-closeups-qa.png",
+    "weaponLayersOff": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/weapon-layers-off-qa.png",
+    "creatorApproval": "PENDING_CREATOR",
+    "rootReview": "BODY_CHECKPOINT_ACCEPTED_FOR_LOCAL_COMPOSITION_ONLY",
+    "integratedArgonQA": "PENDING_NEW_FREEZE_SAME_COPILOT_REVIEWER",
+    "gifExports": {
+      "1x": {
+        "path": "experiments/main-orc-rear-recovery-v2/back_r-axe-representative-1x.gif",
+        "sha256": "78f73767bf7cd2d8f80729608f27bf1556d60ece85b2107438d8e434a9738467",
+        "frameDelaysMs": [
+          90,
+          80,
+          90,
+          80,
+          100,
+          80,
+          100,
+          110
+        ],
+        "totalMs": 730
+      },
+      "075x": {
+        "path": "experiments/main-orc-rear-recovery-v2/back_r-axe-representative-075x.gif",
+        "sha256": "1fb53227af2e4d3b60c97d47e5d630961ad27b93406ab7d4e7917ac3d4a25c8d",
+        "frameDelaysMs": [
+          120,
+          110,
+          120,
+          110,
+          130,
+          110,
+          130,
+          150
+        ],
+        "totalMs": 980
+      },
+      "05x": {
+        "path": "experiments/main-orc-rear-recovery-v2/back_r-axe-representative-05x.gif",
+        "sha256": "420229be07d51947757df6bab8e0f2e03ecd4f9d6bd69b189243a15a921f8e60",
+        "frameDelaysMs": [
+          180,
+          160,
+          180,
+          160,
+          200,
+          160,
+          200,
+          220
+        ],
+        "totalMs": 1460
+      }
+    },
+    "localArtReview": "TECHNICALLY_COMPLETE",
+    "qaRevision1": {
+      "report": "experiments/main-orc-rear-recovery-v2/qa-revision-1-art-escalation-report.md",
+      "wholeBody": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/checkpoint/AxeR-wholebody.png",
+      "composite": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/final/AxeR-composite-wholebody.png",
+      "grips": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/final/AxeR-grips.png",
+      "playback": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/playback-verification.json"
+    },
+    "independentReReview": "PENDING_NEW_FREEZE_SAME_COPILOT_REVIEWER",
+    "targetedRepairComparator": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/comparator.html",
+    "verifyVsFreeze": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/verify-axe-vs-freeze.json"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "durationMs": 90,
+      "phase": "guard-start",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/00.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "index": 1,
+      "durationMs": 80,
+      "phase": "reach",
+      "weaponVisible": true,
+      "rightGrip": [
+        175,
+        106
+      ],
+      "rotationDeg": 315,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/01.png",
+          "sha256": "b57b7a94f89d426a3c27370e3a712e05227e755b77b811e7f48883b115588c9d"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/01.png",
+          "sha256": "acdec833ccd450e564926c95dd9b248223eadcc0025d68b4b0302951b9502770"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/01.png",
+          "sha256": "a43428888dbaf18e6997f7cf28ce9aba126b88f4dab66467baac97c1402ae4a7"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/01.png",
+      "sha256": "10a3daa54baec90aa1d78901d8ab7d1f661e7daf9f45607b8514394eb7782d90",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/01.png",
+      "nativeSha256": "86c36bacbc7155264e89d9dc2183750c0e9c8ad368159d5a43d88957067528af"
+    },
+    {
+      "index": 2,
+      "durationMs": 90,
+      "phase": "cocked-shoulder",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        73
+      ],
+      "rotationDeg": 350,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/02.png",
+          "sha256": "9da4fd8c1a3cf6e74bb64d3f9d83218f0d96b2d1953be0fa9ac4249f66a4fe1a"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/02.png",
+          "sha256": "62a027d9ea1d4b680cc310b090d745e5a5373e8e43d6b1a729e3479b552e68ec"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/02.png",
+          "sha256": "80e3090f863b3ced100b372434125b64d2f29c0e194c475dde950d6bfa0f54e8"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/02.png",
+          "sha256": "8176f6bf60e43dfa9c61bb5dd6beecc2f7f9733cc88a0884606466a6c4650c28"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/02.png",
+      "sha256": "52ee25e8e093b7e7d90d4304415d289290affe7b94e1c2ef62bb4b39b88523ad",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/02.png",
+      "nativeSha256": "7e0649708843b30ffa01ccbc45355bd6eaffd5d5aece52fd17c06240e6ad560c"
+    },
+    {
+      "index": 3,
+      "durationMs": 80,
+      "phase": "overhead-hold",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        78
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/03.png",
+          "sha256": "b0424cfa9020210c6edc42605a497d9d225fcdf1b30696ced5e4eddcebad227d"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/03.png",
+          "sha256": "85ba78f1640c8670ecd430e554d5250aaabe7b25b439e20967b055ad2d701b51"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/03.png",
+          "sha256": "61e5f3d221c666c81e0794dd80f590fda4e4ab1894ab1ee84d8324d38fe5ca5b"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/03.png",
+          "sha256": "b7582b9f8548c8d22a21dd78f9be297f6cc23e27d8e63af3808cb084f4075259"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/03.png",
+      "sha256": "9f7009d0e254ff1304c217db286c883d26c754e1298faa646d61e6c19950ef68",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/03.png",
+      "nativeSha256": "16024215f6eb7ef515e5b2184434b5d4998609d2eb62ba56077fb57521f649d1"
+    },
+    {
+      "index": 4,
+      "durationMs": 100,
+      "phase": "downward-commit",
+      "weaponVisible": true,
+      "rightGrip": [
+        181,
+        118
+      ],
+      "rotationDeg": 70,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/04.png",
+          "sha256": "e55e6f7525fe24186f427497b1339734af438076359106c186fa2ee069f0c1f3"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/04.png",
+          "sha256": "cb5dc38cc8c39e9ad7f445d57e307e774681e1359935643d03e67cd1ddc603d0"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/04.png",
+          "sha256": "3ca08a0632f447b3ae69966716a31e68ff69614f35e5069784931461b7f61dcd"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/04.png",
+      "sha256": "9a022038be270e9bb03d376ae39756b586292d6ee6f036611de8af654e8e6c49",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/04.png",
+      "nativeSha256": "67d8441d003a7a2829c91124aadc30d02f160c3592f74fa75de96a89a4180002"
+    },
+    {
+      "index": 5,
+      "durationMs": 80,
+      "phase": "impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        181,
+        122
+      ],
+      "rotationDeg": 105,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/05.png",
+          "sha256": "6da6cfa8d5f246a7a9dc620493efb1e89008ef8614577ab7dd7c5ec8f0ef739d"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/05.png",
+          "sha256": "5ad6ac89a873eb24af2b926abb849ba84b3249bea6d3db0b3b04c525846ccfe6"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/05.png",
+          "sha256": "42c0fd0650d1d4d409c74a143caca705348ee28fd258af53767af8f2a129be22"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/05.png",
+      "sha256": "0ab83cbac1781daef6c9180530f390b1ddcb71e5d0f00de4f6115b9b763a3b4d",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/05.png",
+      "nativeSha256": "10b9703628ac18d8d5bd0b65e6fc62c4fc4ca722caa95b1164d57fb08b9e2935"
+    },
+    {
+      "index": 6,
+      "durationMs": 100,
+      "phase": "lowered-follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        156,
+        139
+      ],
+      "rotationDeg": 135,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/06.png",
+          "sha256": "2dbf2207380cd2c3e673c0440e53390aae2b9b3f273a0f8236ec9b3ace972b2b"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/06.png",
+          "sha256": "37c69a8430fe19ad8819955e2b430dc3117613c15f0d0422ad6b01f590c967f7"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/06.png",
+          "sha256": "ff28fe86271023954bb1f2634deb4e60ec8761a9a0fceb346a31b3c8cd5afedc"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/06.png",
+      "sha256": "237fa64884e30323206a7c6e488075babfe9da36798ef5cc40d981e78f7a8408",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/06.png",
+      "nativeSha256": "80a18cbbde0b07c818d5e25a2ca58fa2b8cc79a47a5ba87dd88b2bd480a16472"
+    },
+    {
+      "index": 7,
+      "durationMs": 110,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/body/07.png",
+          "sha256": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "png": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/07.png",
+      "sha256": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a",
+      "nativePng": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean/native/07.png",
+      "nativeSha256": "a8c25357802d1d40f086d51f1e6c2dff9615827e4aa539412fdfa4ced7f8d4f3"
+    }
+  ],
+  "masterSha256": "1048aba06696240581170d651556864bdf0c148adfb36c329e1071288312e779",
+  "bodyMasterSha256": "5cc5fac9f991783568b8c2432a1ec480b4b70f5c0b8858d3e4f6cf3ef202341c",
+  "nativeMasterSha256": "cd1bd6ec1aa6ba6512e0a144951c22d5b097540c90079e311626a82abf5c6d26",
+  "stripSha256": "5876666bfc91d3abc36ef3bb2c5244fd4097aac6206da760b4eaf5b5104ba358",
+  "parentClip": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/clip.json",
+  "parentClipSha256": "5e383de2d53631a5e6d67bb8d1d8525fda40635e7d3c301405524aad0556c07b",
+  "targetedRepair": {
+    "candidateId": "main-orc-targeted-repair-v1",
+    "clip": "Axe/back_r",
+    "pool": "main-orc-targeted-repair-v1/artist-rear",
+    "status": "HYPOTHESIS_NOT_INTEGRATED",
+    "decision": "HIPOTESE NAO INTEGRADA. Os 11 pixels NAO constituem correcao artistica provada. Medido sobre o freeze: (a) os 8 pixels de y=191 sao uma faixa palida uniforme (122,123,125) imediatamente abaixo da linha de contorno ink (2,2,3)/(7,7,10) de y=190, isto e, o rebordo claro da sola projetando 1 px abaixo do contorno - remover recorta a sola e e o MESMO defeito sistemico de rebordo palido que este pool decidiu nao tocar nos outros quadros; (b) os 2 pixels de (144,64)/(145,64) estao na primeira linha do recorte nativo, sem vizinhos em nenhuma direcao, e podem ser fragmento de membro/arma cortado pelo recorte e nao sujeira independente; (c) o pixel de (171,151) esta a 2 px de um aglomerado escuro real em (168,152)-(169,154) e pode ser um fleco intencional dele. Conectividade e limiar de cor nao decidem intencao. Nenhum dos tres casos foi validado como defeito; ficam como hipotese aguardando decisao do criador.",
+    "authoring": "Aseprite 1.3.18.6, Lua, programmatic authorship by the agent (not manual drawing)",
+    "authoringScript": "experiments/main-orc-targeted-repair-v1/artist-rear/lua/author_axe_microclean.lua",
+    "exportScript": "experiments/main-orc-targeted-repair-v1/artist-rear/lua/export_candidate_back_r_axe.lua",
+    "semanticAudit": null,
+    "pixelsChanged": 11,
+    "framesTouched": [
+      1,
+      2,
+      6
+    ],
+    "frameCount": 8,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "timingChanged": false,
+    "generationCalls": 0,
+    "externalCost": 0,
+    "filesByteIdenticalToParent": 44,
+    "changedFiles": [
+      {
+        "file": "01.png",
+        "diffPixels": 8,
+        "bbox": [
+          110,
+          191,
+          117,
+          191
+        ]
+      },
+      {
+        "file": "02.png",
+        "diffPixels": 2,
+        "bbox": [
+          144,
+          64,
+          145,
+          64
+        ]
+      },
+      {
+        "file": "06.png",
+        "diffPixels": 1,
+        "bbox": [
+          171,
+          151,
+          171,
+          151
+        ]
+      },
+      {
+        "file": "body-only-strip.png",
+        "diffPixels": 11,
+        "bbox": [
+          174,
+          0,
+          875,
+          127
+        ]
+      },
+      {
+        "file": "body-only/01.png",
+        "diffPixels": 8,
+        "bbox": [
+          110,
+          191,
+          117,
+          191
+        ]
+      },
+      {
+        "file": "body-only/02.png",
+        "diffPixels": 2,
+        "bbox": [
+          144,
+          64,
+          145,
+          64
+        ]
+      },
+      {
+        "file": "body-only/06.png",
+        "diffPixels": 1,
+        "bbox": [
+          171,
+          151,
+          171,
+          151
+        ]
+      },
+      {
+        "file": "composite-sheet-qa.png",
+        "diffPixels": 11,
+        "bbox": [
+          366,
+          64,
+          683,
+          407
+        ]
+      },
+      {
+        "file": "layers/body/01.png",
+        "diffPixels": 8,
+        "bbox": [
+          110,
+          191,
+          117,
+          191
+        ]
+      },
+      {
+        "file": "layers/body/02.png",
+        "diffPixels": 2,
+        "bbox": [
+          144,
+          64,
+          145,
+          64
+        ]
+      },
+      {
+        "file": "layers/body/06.png",
+        "diffPixels": 1,
+        "bbox": [
+          171,
+          151,
+          171,
+          151
+        ]
+      },
+      {
+        "file": "native-strip.png",
+        "diffPixels": 11,
+        "bbox": [
+          174,
+          0,
+          875,
+          127
+        ]
+      },
+      {
+        "file": "native/01.png",
+        "diffPixels": 8,
+        "bbox": [
+          46,
+          127,
+          53,
+          127
+        ]
+      },
+      {
+        "file": "native/02.png",
+        "diffPixels": 2,
+        "bbox": [
+          80,
+          0,
+          81,
+          0
+        ]
+      },
+      {
+        "file": "native/06.png",
+        "diffPixels": 1,
+        "bbox": [
+          107,
+          87,
+          107,
+          87
+        ]
+      },
+      {
+        "file": "weapon-layers-off-qa.png",
+        "diffPixels": 11,
+        "bbox": [
+          366,
+          64,
+          683,
+          407
+        ]
+      }
+    ],
+    "notAddressed": [
+      "pale grey rim of the generated rear body (systemic; not touched) - the y=191 row is the same rim",
+      "weapon-over-fist occlusion: 42/30/22 px of the fist are painted by the axe in frames 1/4/5",
+      "pommel buried inside the fist (placement, not mask)",
+      "whether any of the three micro-cleanup sites is actually an artifact at all"
+    ],
+    "risks": [
+      "os 8 px de y=191 podem ser a sola/rebordo da bota: a remocao encurta a silhueta em 1 px e deixa o contorno ink como borda inferior",
+      "os 2 px de (144,64)/(145,64) podem ser fragmento de membro ou de arma cortado pelo recorte nativo 128",
+      "o px de (171,151) pode ser fleco intencional do aglomerado (168,152)-(169,154)",
+      "conectividade 8 e limiar de cor sao medidas geometricas, nao provas de intencao artistica",
+      "remover o rebordo palido de y=191 contradiz a decisao de nao tocar o rebordo palido sistemico dos demais quadros"
+    ],
+    "artisticApproval": "PENDING_CREATOR"
+  }
+}

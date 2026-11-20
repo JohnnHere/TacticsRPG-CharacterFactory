@@ -1,0 +1,76 @@
+{
+  "createdAtUtc": "2026-10-27T05:08:39.048Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/verify_saved_sources.mjs",
+      "exitCode": 0,
+      "sets": 21,
+      "freshExactFrameComparisons": 168,
+      "evidence": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/source-proof.json"
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/playback.mjs",
+      "exitCode": 0,
+      "actualRAFRuns": 9,
+      "all8FramesObserved": 9,
+      "loopBoundariesObserved": 9,
+      "errors": 0,
+      "evidence": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/playback-verification.json"
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/verify_new_representatives.mjs --check",
+      "exitCode": 0,
+      "clips": 4,
+      "failures": 0,
+      "readOnly": true
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.mjs --output experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/manifest-validation.json",
+      "exitCode": 0,
+      "checksPassed": 338,
+      "failed": 0,
+      "evidence": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/manifest-validation.json"
+    },
+    {
+      "command": "node --test experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.test.mjs",
+      "exitCode": 0,
+      "tests": 14,
+      "passed": 14,
+      "failed": 0,
+      "newTestsAuthored": 0
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/root-check-qa-regressions.mjs",
+      "exitCode": 0,
+      "filesChecked": 1911,
+      "changed": 0,
+      "referenceFreeze": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843"
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/preservation.mjs",
+      "exitCode": 0,
+      "backupFilesVerified": 197,
+      "independentWeaponFilesUnchanged": 14,
+      "axeLRaisedFistChangedPixels": 0,
+      "prior27PixelsTransparent": true,
+      "evidence": "experiments/main-orc-rear-recovery-v2/qa-revision-1-repair/preservation.json"
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/verify_front_f02_and_protected_frames.mjs",
+      "exitCode": 0,
+      "views": 2,
+      "frames": 10,
+      "baselineFramesPreserved": 8,
+      "changedF02Frames": 2,
+      "readOnly": true
+    },
+    {
+      "command": "node experiments/main-orc-rear-recovery-v2/verify_four_early_clip_source_metadata.mjs",
+      "exitCode": 0,
+      "clips": 4,
+      "nativeFrames": 20,
+      "readOnly": true
+    }
+  ]
+}

@@ -1,0 +1,2157 @@
+{
+  "reviewedAt": "2026-10-30T02:09:07.670Z",
+  "reviewer": "Current Codex session; independent read-only verification, not the historical Copilot reviewer",
+  "verdict": "REVISIONS_REQUIRED",
+  "technicalStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": false,
+  "referenceFreezeId": "0ad263a63d88586dda7c847d7be9f74ba9f855beb2526a5a2fdce7ecd25c9841",
+  "checkedFiles": 4061,
+  "changedFiles": 426,
+  "blockingFindings": [
+    {
+      "id": "QA-FREEZE-01",
+      "severity": "HIGH",
+      "observation": "Current delivery differs from the exact freeze carrying the historical independent PASS. Changes include canonical art, saved masters, staged preview assets and manifest. Historical image/playback evidence cannot establish the current delivery verdict.",
+      "requiredCorrection": "Produce an exact freeze of the intended integrated candidate and submit its changed sources and actual playback to the same independent Copilot reviewer. Preserve prior verdict and do not restore or modify art as part of QA."
+    }
+  ],
+  "limitations": [
+    "Inspected historical layers-off sheets and captured playback layouts only; these are not current-art validation.",
+    "No fresh animation or artistic PASS asserted after the identity gate failed."
+  ],
+  "productionEdits": false,
+  "differences": [
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Ataque.aseprite",
+      "expected": "a8f69f7b5d5229378542dfc5215a3b105f0a92df40cc1ab209062d59fb6d58b7",
+      "actual": "c6d519b9da1114af1c8e8297ebd2f16a345e76982f0dc427b724651efee2ea5b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/01.png",
+      "expected": "b1e97e4f877a5b0835af4c7bd8d6f8d9f703be99ca4f3b247ac89449ac3e81fa",
+      "actual": "b5a1d1d949f4e113708c6f1aafa035ed20e17fd399cd6c3da914898fff91072e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/02.png",
+      "expected": "7615fcf2b48e3b1f195416396b4f2cc822d6c29b7096752c3c874d46ea96657c",
+      "actual": "6886228c2a608b5e45ecacca5e41891088269cb2e93bd6923ab8184f39fa7f22"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/03.png",
+      "expected": "7615fcf2b48e3b1f195416396b4f2cc822d6c29b7096752c3c874d46ea96657c",
+      "actual": "cba0ae707c8c194dc42e82c371430927a96d17ea33c0770f436bc08e856f5a43"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/04.png",
+      "expected": "9c336aa3b9925d13b43fcb40310565046b6d8675b0b82954bae1ebb6cf61f4aa",
+      "actual": "ebcd513cc93ed9125ce82606aa284205a4dffa3df216c7e74c07e0867335a000"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/05.png",
+      "expected": "3b713cf5c66887c6c07b6180a026e3f9517fb6080e7898b54e1e94a330331afc",
+      "actual": "f46511a832cac2f91a756a343a684e8129cec5ca4c7ebd62c89e3aea2fe53e8c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/handFront/06.png",
+      "expected": "6ec08d544e189825562f066dc380a224fe6918174ac9f50632bbc7f11b53b1a1",
+      "actual": "b11df99799d5cca4d74ab2815425f5358a0178a687ab5c40d1a5740b57d4b355"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponBack/02.png",
+      "expected": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "actual": "2c2012fb572f51f4227b635b4dd053bf7d2d7fc778577d5c404b4caf1f52490b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponBack/03.png",
+      "expected": "0ad282a6499b26d421079a6b32ae4a26d5a66be0ea23ee394befab4572e8f315",
+      "actual": "8d4f3dbe34cee2d547cd76ce1067be981f4f25ec2d1dc441a099db0fb79a0a83"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponBack/04.png",
+      "expected": "bc3eaa956bd266f6618d0c742564e2ac9f00bf5cda4f3f067c7e77b9fbfb8eab",
+      "actual": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/01.png",
+      "expected": "4be544c07dce74d522248f4cdc849c427c436710313f931a54c1c97782ceb776",
+      "actual": "3371c0bcc80d76acc12fa99245d6bd5cb45d73a7d96795366030fc688e5aea13"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/02.png",
+      "expected": "7a7d84db39a5834ba15475b248debf2c6528913e444b91e2c74bad08b3d06a71",
+      "actual": "7987a6d997061c3ee1b435b081c508cafdb5cb689517762baa011fd0b5ad1b55"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/03.png",
+      "expected": "6844921af5c1c6d23aae428fedff6af6c07b0174cc6f6afc03c4716d74eea5a6",
+      "actual": "ed7434f8d0e593b5dfc5ad8d22d3b4bfc402ff8cace068a75eb24247b2c330a0"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/04.png",
+      "expected": "872fc6d11c5a325662e5902deba71bb231d7051066fe705ff2abee3e5e52ce81",
+      "actual": "9300cb076acbddd3a3fa4e21d2b11357c792fe874fd100f58667737e90a3eefa"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/05.png",
+      "expected": "25780805390a3cbd06bdc271b479e4de72ca700469331dd1c7a0b1961d677b68",
+      "actual": "8010989a6c98ec788a7f12237919a015c988f3ea1f0a78acef4d4ecf1b941e6d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Camadas/weaponFront/06.png",
+      "expected": "e832a97b7a061b81347becda4fe650ca7759d30977cc7ba977a32efc14c38a3f",
+      "actual": "8a35f02d9af2a65aeef854e60c5ea5de88357f33d5f579d9f8cd3b8410fdb263"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Folha.png",
+      "expected": "ccecf3ac184cbc016d2fb888ee2c81bae968c64b5c6c2519a1d8cffe363aee0c",
+      "actual": "fd1f3d30381143202592d40a055085ba730507954f336c4509ee7aa354dd1818"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/01.png",
+      "expected": "7625eba6cb17761f3f5d364e3738d595993b1af2c73cdeb6fc2ae32a9a0203b7",
+      "actual": "26f79b53b00bf91d1394f4b3748683b009f543675d8fd90f7be08fb15f91ff20"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/02.png",
+      "expected": "1dc453b95c293893e0f3f4a20cdaad76b28fc2e7b009c4d4bf90f2cda27d5fe3",
+      "actual": "d2f7fa408801857487d081dc30e88b6941b07850193c84a4db7bc1728e60d51f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/03.png",
+      "expected": "1a42aa1bdc60b41a71021eeadbdb694bceca1760b488fae26e833184b31b2d7f",
+      "actual": "196823fff56cca0b599b942ebe2ca23c3e0927e2a14ed577111977b7de8f6a1a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/04.png",
+      "expected": "8d26362cf6eb9cddc6aa18447d7dc553e1de4aa2dc980caa6a98fb416d350cae",
+      "actual": "fbe91068f26696ce8a55f984dd36e28eaa62c7a089191607df745c14b8aaf2d9"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/05.png",
+      "expected": "4d85d5cd6ebc41ee873c20d0c4e5f6d69a0d4a18c4c8f6c6272adc5eda3da1da",
+      "actual": "b6fa7c8c9f06e4e72ba8a149bb9c274a250bd41410d0539c166e41a19209dfc2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Axe/Quadros/06.png",
+      "expected": "822ed2d9e4ef0c5d4132eea78029773fc0cef03cc9fbc4b32403b5fa790faec5",
+      "actual": "8b6138845fe38c7e2833fc92258ac4e657ea140f06bccb6df2cbdda9b8ce2eb7"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Ataque.aseprite",
+      "expected": "f25a87593b73a6a3719314bc5d7b23bfec5289596f088068bfd5354f4d91339e",
+      "actual": "72b1ebcf0d2f16cc648798b719571ac0c2a63400847206c5e2e86a6f22dd7861"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/01.png",
+      "expected": "770133344cce7bd521ef9fb0b040e95d00b83cf53053276b5bc7c00431b03694",
+      "actual": "b698930d8d5301e37ceaa6adc33128dce230b1c0110cd478d1997e419f1b7431"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/02.png",
+      "expected": "dae33dfeff77c5a731ebe0ddb8c2e2fe75836fd7f0b6990e8a60d262e572b206",
+      "actual": "0bb72ac5a78971b7315dfeaf3559680c247edd4dfb96860bfbb7e8f97e8de1cd"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/03.png",
+      "expected": "8b2e8bbbab59693fe78590f58e831a355d3af2d014ddbbdf1733ca5ea4c43c1e",
+      "actual": "e3455bbf9ff3b68c49564e6a98c1f3247de4e46028e9f01a3aeef0d24c1a3335"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/04.png",
+      "expected": "cb516e5efbf96140d94ad3acdcea94515ef78e1fcd8c7088f2005fef10659980",
+      "actual": "1e74d55fa91ea5658ed3f9c27f8eb6fd71d3103929b5b85f22d2478858c973e2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/05.png",
+      "expected": "8483678fe8a4326c647bf5ff6600a511528433360f4bd2c769a848e13c3606fd",
+      "actual": "7cb1bc8e7225a47bc08e3b147f083391a881a1cc992a1ae6187ddb042c8599cb"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/handFront/06.png",
+      "expected": "4d95d28c5cb08d7a5a0db5ae020c98cdff7fe0ccaee5e06e07b7f6def69e1529",
+      "actual": "96efbda0b646ade98802c01386da01b36fcdf2f64d31111b0380bcfad75355da"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponBack/02.png",
+      "expected": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "actual": "ab5c4b95f0365d64ae5e88187c96acf041dce4259dea21e73c586812df485e8a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponBack/03.png",
+      "expected": "6e3a514a74412dfad2e0417709eaf6049489370026daee32a6f7a9106d686c47",
+      "actual": "9d0a5f504c181787e384638603a59af3ecffa3bbd26948d2769606c4cac777b0"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponBack/04.png",
+      "expected": "e3cb8aabdf7b0cb4ee516b23956d041a2968299dece7a96a2ad3fbc05d6857f3",
+      "actual": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/01.png",
+      "expected": "205ad1e6edd25036fbea57ac519e4181796f263174b650bccbab69a4e77af4d6",
+      "actual": "09a134702c1c0a6ab0c3daf4c38a3cddc8aded19776028de900d83b7991b6410"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/02.png",
+      "expected": "87391507edf47cf069a9edf1fa628431fce149beecfccca4ce7166d7fcc3df1d",
+      "actual": "f04898c0a78a7513300d38c23f716751e7296a67a385a87400790abb44e2c340"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/03.png",
+      "expected": "92fd0d390e17176da437b514f4ae91aa37ea3c00540ea6d8e141fe9f9db48179",
+      "actual": "564bb3ac7db7a9b342454a7d608e2576677620726c9e72e010d6194363e44ad8"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/04.png",
+      "expected": "05fc0e1306c53ec67217552a97c15c7dbfc4e1615d3239874b50badafc36d441",
+      "actual": "fb9017f5ca254c73fd6ef9a676f821ea00e9193b452461be7de60acc5d0fed60"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/05.png",
+      "expected": "11c8e04d29925b36b1ccf5340a55b26e4b17b6ea32b58dd929d1a6209d17293f",
+      "actual": "a0bddcf1c5a18a0a269d27be5332d717d0283427a48449a913f0cb3536fb99d2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Camadas/weaponFront/06.png",
+      "expected": "c316ab1c3613c1f626f679df3619b3ba0ea1fa2a024bfffec6d23d4775b59084",
+      "actual": "177ab1dd584e0bc5d316d1689ea4f3b55f5421b5e033be91ae53531db594664c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Folha.png",
+      "expected": "afd1330f957b214db9db8b97765328b021257ad94fb7143fb58c67450cbf5c75",
+      "actual": "4fc7e9474af414be3ff069556e4d12feb46fba7002b491fa88a2057d06dcaa15"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/01.png",
+      "expected": "69c134b6499380f70641262fa95818db5e77a80ffea8e8a208b364614f66499f",
+      "actual": "5ebaaf2f28652228a03fabcce0a00ad066a5635c7fd6e854942128ad49b959dc"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/02.png",
+      "expected": "e71ec1fb778d06922c5af284a747e3abcd4f6dfa511fb050464eabf630e765da",
+      "actual": "7264ab0165f5c57348983d88dc98b17217fe9a52f60bfdd027f9a8d532c66c10"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/03.png",
+      "expected": "17b907d5233548cba53ab5367b83e2dbc830fa5344fd707b6c530730dc7de4fc",
+      "actual": "77bd47955ff55f85ec99bb28d358b90b9d95a81287822a84f48e6f634f083ab4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/04.png",
+      "expected": "3fb783322b4d1eb946475e7f50124f08c063859a014992c290634b83f3941da9",
+      "actual": "42e561689c7bb3cf325f73f8ba7a08fc9de20c37541bc02f8e076ccfc6e8adf2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/05.png",
+      "expected": "d0b2fa797135ea9a8fa0ee54049b26895179f76327f0c00eedbbd16655c024c6",
+      "actual": "4d6368739336255188c0b20de306aac021f024080dbd175b93d4a810db1c9a6d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Sword/Quadros/06.png",
+      "expected": "c3acaaaf4071dd91ff150a0a11f43f0807bd7ce77876001df31a27d37d01c15a",
+      "actual": "a5c2fa303b8086a47b825dcdaa17f321ac2b17e2232d2ba75d46a7edba36a221"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Folha.png",
+      "expected": "a384cf4f35b24ccc01ddd4efb0fedbfbc43796ce877100b4310921e6851c61b3",
+      "actual": "dd10d47bd069deb87c60e6c0ef949c479cd76f7cfbc6f6a123da7b5cc10bc61c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Nativo128/00.png",
+      "expected": "3a742cbd7650d5aa5b67fc6e55e9292265fc97e835c649dd88c38df185923d4e",
+      "actual": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Nativo128/01.png",
+      "expected": "5e9a924fdb7791417730a3aa42d623725f7f78752a342617917e563a1954ffa7",
+      "actual": "6f982b53ffcd0e26a7e10b6d3a0c1d933e97f47f5d8882623085dc9f64c7c92a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Nativo128/02.png",
+      "expected": "d4e6d38f3dd742b71d37f91b6875c34d46318f68c94a402d598fcb7cf8efeeab",
+      "actual": "4c32819e1ab2c997193eca3aeb8b3b44ebb05066ea2ca49f3c8199ef081cd1fa"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Nativo128/03.png",
+      "expected": "e97574f8ab0628a3645cfb9d7735e88dc6c6f1f27da4362056f0a78f72c174f2",
+      "actual": "b1e3c584161b365cf739535702560fe592b1557ef195c11b4207e66dac18e723"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Nativo128/04.png",
+      "expected": "96b6286dc5d08349ab2fb3b682ee4103fd4e32466a235aa36feb4d8a090b693b",
+      "actual": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Quadros/01.png",
+      "expected": "8d7a2cadf248857346ae6adc1a9f8494ec8432a56778451d471de980151c749b",
+      "actual": "ed4d8c0b2de08e7b4c261950d3fee450888c7a63251ba887fabc4d9ccffd35bc"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Quadros/03.png",
+      "expected": "9e9dbf61ded888e4ba99a4bc56e9b83b8504f3c84e880ef11aaa9bfcc6df9c1f",
+      "actual": "d06a30372c461a6fcceff85b1bdbaa52f38cff4f4b8787780015bf5d8da92699"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Quadros/04.png",
+      "expected": "6477fd002f3c8fe9b65e1b0f75ce526aaebeaa48a799ff3ba5c57a20e25299af",
+      "actual": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Unarmed-128.aseprite",
+      "expected": "cef0b6eece981ec2c0319f696a709a41d6b8beead429e7e74a832ec88716cf7d",
+      "actual": "298044e32b7778147a7a32ac5db38e63c4e8f32c75db85b75c2afdd1bb561f44"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Unarmed/Unarmed.aseprite",
+      "expected": "61619e500f5421ec179d79763621786de407fa06197e5b85076e8a2796b50c97",
+      "actual": "cfd964f502f2a823f541e6a1d5909ba30dee76b335234a3cdceabc0d63dae96e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Folha.png",
+      "expected": "a1137763e4a9678b2b95402af42c3cd62c54d6dd792b7b7950b1fb51933cc23e",
+      "actual": "0498a61dc422556fbf0d55f98491a6539be2a9d5a1dfd15679962fa6c71d5928"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/00.png",
+      "expected": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "actual": "235d6a5b6651ffe2cb7660ddbccd6f99378ef0926a1006de3c25e319c81361a1"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/01.png",
+      "expected": "5278d8a88c6fbfd85263f491215c84c5e4c9cdda9ee69770d012a1b579c7007f",
+      "actual": "cd5d78c57d43e0ea891bd0336b70710cd45b3a98cc12d51aa0e565432874b64b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/02.png",
+      "expected": "c2e739ec947c877f9d883768f5960c5a8dc95f4ba8eb3158f090df29cd90d933",
+      "actual": "23f2feafd5c013623cfd8ab2003c39202874f9e1b7bb0509e6cfce2ff09e90c2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/03.png",
+      "expected": "61543171cfd679fb16af8d9c1acb1722ba37f3cdb06c49f8a0e4d9276720dbfa",
+      "actual": "b573fa4e5941c8df800a462cae3402d5b2e4d7c4f635bff5687550bec055ce77"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/04.png",
+      "expected": "8030550caf56b0212d8bc08e81deb75eb4041d755495120080ce111f5d2dcd85",
+      "actual": "7cdd986b9e64f0e27535b0504bfa8672b9d293d11a1d61b72a1cd4bbf8d92d05"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/05.png",
+      "expected": "1bbd3bc9820dc658415d7da12a4957cbfb82dcf6216c1ffa85ed8ecb4ac16d2f",
+      "actual": "fd8f967825d856a7e9348dafdd06f48c7aef89c8946f35a4efb672f19fdeeefd"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/06.png",
+      "expected": "68b5015afc86bbbe24e6bd42ca7dec8725a480b67c6b92a391e32b48fc4b62cf",
+      "actual": "feccd55be29d3615b21710b4216767e6ed197c4ed119621589d91a7ab0a308f5"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Quadros/07.png",
+      "expected": "5fe4b90f7cc4dec9520a03170fb4c7321d776e0026c9ff2ab0c698ee17d88b61",
+      "actual": "416688a36756aa85d8c36913612594ea50d8a291bb007dbb689a416f99a7d9da"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Walk-128.aseprite",
+      "expected": "30cec9f68037d410e974782ba204e72910aa7cfda4c7af61594186a01705039f",
+      "actual": "472666b457aa652da01b28a01daa69ff817b6b7bbf19a02560489b7b162873f2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_l/Walk/Walk.aseprite",
+      "expected": "82c1cb35a846831b059f58627e7a6256103639771438c71c250fb402496cd2e7",
+      "actual": "5742cd33f88f7155bfe43097977dc89adfe58b0342fc206abe77cce7379a2b12"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Ataque.aseprite",
+      "expected": "7dc47e768e7a6ec28c2b5a75aa14be5bdcb1d168724ae6e83de3b20c507c4e1e",
+      "actual": "44da0baaf0b5fc6434ae67d15d0db2553e67692bab188a01aa786b8e62f1540e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/01.png",
+      "expected": "a43428888dbaf18e6997f7cf28ce9aba126b88f4dab66467baac97c1402ae4a7",
+      "actual": "18e91de02c7d3dcd0a4cbda5742c8abb84de01574fe06625a9823d5fe99d3e7e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/02.png",
+      "expected": "8176f6bf60e43dfa9c61bb5dd6beecc2f7f9733cc88a0884606466a6c4650c28",
+      "actual": "3f098416d82510a057c018f60bc559f6db5e97eaac95345a32f74d626c7a515f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/03.png",
+      "expected": "b7582b9f8548c8d22a21dd78f9be297f6cc23e27d8e63af3808cb084f4075259",
+      "actual": "96b57150b219327e7083f1cf8782d0d9d0e31e127dd3400a37bc8d664c874946"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/04.png",
+      "expected": "3ca08a0632f447b3ae69966716a31e68ff69614f35e5069784931461b7f61dcd",
+      "actual": "c3ce5f77ddb1212d63a05c12ebcc7bc03e0518adb7dd034bfbe661e8ffad4b4d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/05.png",
+      "expected": "42c0fd0650d1d4d409c74a143caca705348ee28fd258af53767af8f2a129be22",
+      "actual": "851156fb026aa013271a53574c098979161f05e1256cb43c20eb76853f387d13"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/handFront/06.png",
+      "expected": "ff28fe86271023954bb1f2634deb4e60ec8761a9a0fceb346a31b3c8cd5afedc",
+      "actual": "87f0e0a8d6c318d8b0eb4cf6a04f6be2c8d5fdf254ec3f0c19f3864c5ef5c65b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponBack/02.png",
+      "expected": "9da4fd8c1a3cf6e74bb64d3f9d83218f0d96b2d1953be0fa9ac4249f66a4fe1a",
+      "actual": "c2e8bbee6c005a0db631efc0c44d94e767b2f159fde2e5aed50b0ba87eff3b2a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponBack/03.png",
+      "expected": "b0424cfa9020210c6edc42605a497d9d225fcdf1b30696ced5e4eddcebad227d",
+      "actual": "63a0b8834b878f7176e398d2d96547f595d8f35e6bd5f5e182767119dbfd24d1"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/01.png",
+      "expected": "acdec833ccd450e564926c95dd9b248223eadcc0025d68b4b0302951b9502770",
+      "actual": "6491e5cc8b9f4041945c0add93723ec62065e4ffe3cca4145f6b788caf5c459c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/02.png",
+      "expected": "80e3090f863b3ced100b372434125b64d2f29c0e194c475dde950d6bfa0f54e8",
+      "actual": "455e0ecb778570d4468c1d5cf12deaf5ed18e43b14583140ca443eceaab46df6"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/03.png",
+      "expected": "61e5f3d221c666c81e0794dd80f590fda4e4ab1894ab1ee84d8324d38fe5ca5b",
+      "actual": "efd2871cc04e5b9f9ab0088af27c2e3fcc7c7a1df860b03acc38f3a4bd16d44b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/04.png",
+      "expected": "cb5dc38cc8c39e9ad7f445d57e307e774681e1359935643d03e67cd1ddc603d0",
+      "actual": "fe10e6e5cd9fa342c264dad93cc548c9b9f91e52e40071dd262db6c2351b273f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/05.png",
+      "expected": "5ad6ac89a873eb24af2b926abb849ba84b3249bea6d3db0b3b04c525846ccfe6",
+      "actual": "470aec2888546bf8f85d4981bcf6b8ecc5312446bbc9c10919d0606202892f4b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Camadas/weaponFront/06.png",
+      "expected": "37c69a8430fe19ad8819955e2b430dc3117613c15f0d0422ad6b01f590c967f7",
+      "actual": "c43d9302eda00191576c31455299c1d84663e0143ef8d2156746dd55a0c29cc6"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Folha.png",
+      "expected": "adecb64cc85e418c146840b74affa19225121671bc32006d75727377b290227a",
+      "actual": "e25cbe1602d029660b9ad607a24922ec64b25666d46c0bfc39d4561499c09169"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/01.png",
+      "expected": "2d43c5bd03d90510c7faaa03db03cd5a3daaf425cee51b70bc4d0557451b2d53",
+      "actual": "a1fa8f2feac23427c537585e4b8bcf46a4b964812c0a383df719546add494b27"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/02.png",
+      "expected": "641139202255942ca6f17f783c97ab110a199a5566848e0caf42c8ab1dbd7d23",
+      "actual": "44cc9fdaa718df5d15396cc2170925d847b3726d866a7bd270d6f1ad3e44b00a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/03.png",
+      "expected": "9f7009d0e254ff1304c217db286c883d26c754e1298faa646d61e6c19950ef68",
+      "actual": "78257788b96ac0b1832b2a73dd24be73edbb64705f9399aa57b7d266665c5446"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/04.png",
+      "expected": "9a022038be270e9bb03d376ae39756b586292d6ee6f036611de8af654e8e6c49",
+      "actual": "6d9ac972c04208f92abffae53f78b65093aaf43c394661222813551dd484dc5d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/05.png",
+      "expected": "0ab83cbac1781daef6c9180530f390b1ddcb71e5d0f00de4f6115b9b763a3b4d",
+      "actual": "d5983e7968c1876f2bd9687498f214a59df1b47dcb20f7c61cf769583d8ee64a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Axe/Quadros/06.png",
+      "expected": "8225a7cf825d5630497b0bf7d7456b2d2d88716868ab424446ed12ebfcb21a8d",
+      "actual": "550051c8048c633d44a311bfc0327c6bd1c7605840cbda3292fcb0553cdeca6e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Ataque.aseprite",
+      "expected": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "actual": "ebee187353cfbbfeaba4f1a59ebea35eb9a56eb656137bb0bfc5705702da272d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/00.png",
+      "expected": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "actual": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/01.png",
+      "expected": "74d16312fb4684eab73e7d9eb1aadac7a1aca14aa9870977c1edde26014afe57",
+      "actual": "d6f6ba6bda6d35f0ff13ab4186a8041c868a236a5b759064b15279ff3a962831"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/02.png",
+      "expected": "27516791e1af089400b4decd08301576cf60c8ad484b858f3b50dbe37dd50ff5",
+      "actual": "397455305cc7005e4b2ac3137fcae9667f837913e4024dafe3c32a6ed2f2c7c0"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/03.png",
+      "expected": "6554b7ca1da148ff20bf82ab9d5b7b49d94a568303cc8c3eb6e61f369504b7d1",
+      "actual": "85ba78f1640c8670ecd430e554d5250aaabe7b25b439e20967b055ad2d701b51"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/04.png",
+      "expected": "c73c0402647d307e1d4860cbe8c43e7f8691513e1e8ad4c71b4d0c780fe5814d",
+      "actual": "e55e6f7525fe24186f427497b1339734af438076359106c186fa2ee069f0c1f3"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/05.png",
+      "expected": "5d5a114134a01e907e24a77870ffb0f5d94864132c5317da4ecd31304c13a3e9",
+      "actual": "6da6cfa8d5f246a7a9dc620493efb1e89008ef8614577ab7dd7c5ec8f0ef739d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/06.png",
+      "expected": "9cbaaf581f5f7fe6bbf2c9c98e57d2d441c666915a4d1cb1d3463d40c2692fca",
+      "actual": "6ffc7e9e1a8912cfac9f297af312e7152b1d36029bff6adcfd6d10d26bacd3f2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/body/07.png",
+      "expected": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "actual": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/01.png",
+      "expected": "31d21b5fade8c89ec030369460ce8d897703eeca742a62717d1f0de2dad69dfb",
+      "actual": "9b7bb2a67dd918dc8dd5c029ac823c99f6c895ebfd184f86750de8f1a739357c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/02.png",
+      "expected": "3fb7f63916c9f1fa24bee97339fa934904ff9c7129f3d204f4623b86026d35ab",
+      "actual": "3f098416d82510a057c018f60bc559f6db5e97eaac95345a32f74d626c7a515f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/03.png",
+      "expected": "15309ac6e5962f1ed7cb6e885188203f82c1f0c2c0c278f6fad23ff39740c5ac",
+      "actual": "3dcac09245cbbf86a3752b48e6564cf22bd374011b2cb4ab1abe953d3bdec86a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/04.png",
+      "expected": "f07a722c6aa8da755f2dc36cd672a98235abc5fa40638857386155550fbee64e",
+      "actual": "45c8ff5fef32efd76246d280cc72faa1c4323f851eb815c72a15288f10c69769"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/05.png",
+      "expected": "8d0cb16e4ee2a7c451827114871f7289f6f212a6894e4396821e96ffbb316b41",
+      "actual": "851156fb026aa013271a53574c098979161f05e1256cb43c20eb76853f387d13"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/handFront/06.png",
+      "expected": "909fe36229386c6917a970ca0a9585033dfc1d36382e043888f1931058b76847",
+      "actual": "87f0e0a8d6c318d8b0eb4cf6a04f6be2c8d5fdf254ec3f0c19f3864c5ef5c65b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponBack/02.png",
+      "expected": "93ae850ff808b96959c47ef94b4a0de8e6f301b5bb1a66155819ef977080b480",
+      "actual": "f280c84e05cb4488a1b45f020501ad789287e7a23f74fe9fa640a5604b642e62"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponBack/03.png",
+      "expected": "47fb1355bee5a64a96b38a62e7e4e62c913f3fa83d6635366a04fb42a8a279e5",
+      "actual": "8942a6712f6a94ce97bc53916b991a846b88f9ac7eb626e74b1d5c7f97ed3c39"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/01.png",
+      "expected": "57f322e21310b8551f4e931d9fca8661a76a209b3cdc14e7c93c432e2dec2266",
+      "actual": "a2e8d23c1b2247ed2dbd54bd395815cb23a7cece744d157d1ac0824ae36badbf"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/02.png",
+      "expected": "d674cf8980deafbf9327f2a29653dc000bd6c38a70040a630f5420685737a31e",
+      "actual": "96d682b17f6c78c8fd9371e9717facfda42c407229fbaed55fdf3275b1f8ce94"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/03.png",
+      "expected": "29fb8652df1656e6afb6deb512c1163fd3cc47baf1b6728097b1b9b538224c97",
+      "actual": "0d0dffe9787cd1e2236b58add0d3a364d084ad34d80ad3ca6aa59352ba38aa6c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/04.png",
+      "expected": "7780985cf2a7635ab797237f87bf1b5339193a34a25ac9aeeb28375ad883ebc4",
+      "actual": "1d8d3a04a2792b2c48c8be8a663c66da537ae6c70e1c169406715348a361d438"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/05.png",
+      "expected": "24245bfe0d2e41a9562182eb2e9861f2792791126ea9bf12089f8846ecd7d1db",
+      "actual": "a11427c4d5f522371ed6dcfffe3835d94bc29133f52afdfe7f0713add0a6e0b4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Camadas/weaponFront/06.png",
+      "expected": "764df8a2704e6f6c4211977a8a9b0636f3a8c12ff422b8608475e84ca1d01110",
+      "actual": "b905ee8eefb81b357424f6e57ed36fcb86cfefd8939d93059ecc5665eb7488f7"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Corpo.aseprite",
+      "expected": "41dd247230dfee7c8ea8a4467275fef9841d0be672266cd58412991558a74c88",
+      "actual": "943b45065ff179550b7f6c33302a375250e0e472f9d62b57a4d54f6848463c6d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Folha.png",
+      "expected": "8f02ea01624b02aac84119b794fc546b9b1c7c5ee0406fc6275c66b60ca1df42",
+      "actual": "9443282a757b622914ebcee386f5514f5691d4e7515d7705f28b537cbf526ec4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/00.png",
+      "expected": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "actual": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/01.png",
+      "expected": "af07f56bc2a46717ab007956f8f90baf1369fd95b7111df0cb5049475dd9b6a8",
+      "actual": "a02d78257d881b4546060ddb1f40ea00dcfab47c85e6178068e800645d4eddc6"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/02.png",
+      "expected": "99a5db49aa7b465d6fbd0bccaa36deb8efb48f24b44c623bb7e443b4335d4f71",
+      "actual": "566d30ad508cbecb3156a66dafa0d5f6955dd8b6a25a31438c8ac66eea19bee4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/03.png",
+      "expected": "c61c4d683c092cab909a7104587dfd46f590f366e2a2c1fb26b4af4ec7c870db",
+      "actual": "27eddafd53cc8abefb7bd5a613389284eded05eca020c79a08f891b8b266a0be"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/04.png",
+      "expected": "1a1533e738e4f5eccb4bf439b5b06e24ababe1ab5e4933f70b970ab1159fb583",
+      "actual": "9590e71d65726ce5c7c0a5066af053678b4744397739bf02900ea0b2de658806"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/05.png",
+      "expected": "e3613fc2962c3c07812f8f45a6d487aebd6cf7ebe814ec0590729ac301cbb5ad",
+      "actual": "31cd6b75b56806d8e8483fdd7759dcef2987161e309a287a364dbd138cc9744b"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/06.png",
+      "expected": "f1a689f108ba1771d2351c7e9b79c011713a06d871b1d7695ceed161de7fef11",
+      "actual": "f83b9330b1246926d9312cc9f59d99f6cbfaaf1a9fd8a85d8e1a56883dcc80d6"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Sword/Quadros/07.png",
+      "expected": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "actual": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Folha.png",
+      "expected": "e684b5990b6e86d084248d24537b6ea75198f7fb26dda9ef8349be915bebe98b",
+      "actual": "ebf845d36fbd8d22c9331b05e0f2abbe139f6a91ee72c8e6a1c3f518b9e819b7"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Nativo128/00.png",
+      "expected": "92e9874b0893400eabafd538e9d732d91e0eb0122648b6a8f7e85ffbdc9fa352",
+      "actual": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Nativo128/01.png",
+      "expected": "b31bf6e50d22619a110aeabbf0ff11b5c82c93afa2491fd4010778fdd42fdb60",
+      "actual": "7ff3c5c73e6c76a29ce8fd148790aef9e4a3199d008e1f109ebae827c617a8ff"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Nativo128/02.png",
+      "expected": "39b36aa1916afc8c4c2f47b9d38ca9bd903b014a9e0202854b6f0cdae79b6411",
+      "actual": "48577c4418ac4b63b5195e1fde5cb838b8b003f129e3d20a086af2321bc7cf81"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Nativo128/03.png",
+      "expected": "33884b829acda31655a429c7a9babf0c7815f5f819c9a82f09702313f2e76806",
+      "actual": "0492beb0b9445bc37e9fe93fd6922b3e65bb57329251fa584c2c114517d8b3c5"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Nativo128/04.png",
+      "expected": "8c3dbe60093bfaf1c59e22ed3645824b243125972335e8c5c077eecf425c763d",
+      "actual": "0bcdd5367baa4fcf05e9d26dbab25c901d7f110cf1127740a83a920ade8a881a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Quadros/00.png",
+      "expected": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "actual": "5c3605810ce5d4af53676b8f637862acc92ccdd39927bc18032efe969a8b83eb"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Quadros/01.png",
+      "expected": "73d948b64346fd6761289413cc6fea52d5e207e5fdeb333516f17683b59dcfcf",
+      "actual": "78e92746bfa9810c1b924a885e24270a145fba9d98551f182faba36917cff9b0"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Quadros/02.png",
+      "expected": "56b5ce4ea97fc93fc726406e37fcc21d5cc882c69a1896dabdc8753cdeae4b6a",
+      "actual": "f11ef122683f2990c2103afdceb608f4d9c809afde2114fc1b9b4e9034e3ed84"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Quadros/03.png",
+      "expected": "2ff95f5c973cd5ac43bc89c4eef5a23879e769de3fbcb0bf151cc2f31e7b8907",
+      "actual": "408fb4941729e05dd6b9474f1a3adebea1354ffa7e42018f6a4d4405630551e5"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Quadros/04.png",
+      "expected": "13338005e92eb739bead09009eea0b3d3919a5a32bbbb5c0356134947e2279d3",
+      "actual": "b186ee75bc9754855ffb9da703df83745724cb6a6eb9c3572f6add7e920f5255"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Unarmed-128.aseprite",
+      "expected": "82c8a587164e1c02795447a02ef0b575b9efdaca412b70f3dbe916fe5ff2d68d",
+      "actual": "17908484cef609855c403f9fcf41f3c7431734e4270fec9bddd714d5ce9717a6"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Unarmed/Unarmed.aseprite",
+      "expected": "e9f18f84706f1ac542d98c4892e3ddcbd1c51b2b659c5d21b736045bef9f12bd",
+      "actual": "1d73546d3b6fb33f97654fb02af4914a25a998cd5b96cd4ff00b6569493ffade"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Folha.png",
+      "expected": "95f39122861897b1dcc51d58f041704438bc6d325c60267c9b287592579618bf",
+      "actual": "cc2f08ef749a3c46fa0fef09e531f762c65f7dbe66022e5231e85f203af05411"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/00.png",
+      "expected": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "actual": "1af93e397e7faf8258579c8214f7d9906f7e0bea1c465f190da01a5b4c856e34"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/01.png",
+      "expected": "9ce1f6d49da94c28ac5067baa1d7d14f6926436a932ab0c25c66d9baba94327d",
+      "actual": "6aab0f5b315f895b4f00ca4007148277c3f2114ce9ee1cd0de886e5a01d671a7"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/02.png",
+      "expected": "e6017004280251f3d42d057211db6de55dde8f6021437a968a33a9b8cc74403d",
+      "actual": "b0aa51812d59ba61f67d466ab59c8b9101ed544e964ea6173d712b5b1611ccc4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/03.png",
+      "expected": "d26400e7c2938582e8d1706225fdeccf028e8fc1529570a184858c8e16b303e9",
+      "actual": "52859de842294547f6c6b8b241a617a91470ceae1cca1c904a8a219bd6e2ba05"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/04.png",
+      "expected": "c97a076bd396848a8fdcd30b4e720b2044012d620d396f8f1cc867aab7f3f923",
+      "actual": "bea87057309365a37b1f58a9f5d3b698df4443da0b71160055f0dd8d19d8d1b1"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/05.png",
+      "expected": "465990401af7a523762cd6b8c14555b02eb41e02c60fbb19538b33e254e7d271",
+      "actual": "093f2a6bee10e3de584ba3a1220ebeba870b3d4def4f0bf163aab9a9c5f209b1"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/06.png",
+      "expected": "986081b7887735388ca3f3ca4daf63292dca3d9f8cced6a042d3317444ad21c9",
+      "actual": "40f4fe9091a104000d074e816e99e5924895ef2b423b86c4edc619fdd73a09ce"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Quadros/07.png",
+      "expected": "5ab8f69509417733f4216ecde77ffd5dd6561d4d72d329106e73008ec269686b",
+      "actual": "b0c33d1d696e7350c84ad8011d7420eeeefafc0d45c9dcb441dd438bb5106cfb"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Walk-128.aseprite",
+      "expected": "95ab8db604ec258d2e5a6e6c0ec6ec3dc6ea2c0da1a7cc64241ebbbd85bb5fe8",
+      "actual": "2ee7fb0d2d94701a7e133c52a4321a71f906d8f79b77215e60faa5843e2c4289"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/back_r/Walk/Walk.aseprite",
+      "expected": "60c02f8804460163dbd793631fa16f593c0cd90ffae9a6d3da524c8a2ae25747",
+      "actual": "51465f79ab35ede0e3eb1573c9300b6aede1c9832d851224accf8bee6aaf4a4d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Defeat/Defeat-128.aseprite",
+      "expected": "d9295819945a963f11ee148a935824dfb9e00d0b9fc13be277c352357e21fa57",
+      "actual": "06db5b68f3a9b11bf4ab034aa3872209daf1bae889ffa0f7c61f15c06fa24d7d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Defeat/Defeat.aseprite",
+      "expected": "58c50e24ae8164e888300380f2db5e05b4687c643e4b18400d19ed2a506b6a36",
+      "actual": "4d72e8039c454f2a893f317a6a21fa6ff4699bd137cd01882d1653ad96a59a2e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Defeat/Folha.png",
+      "expected": "88b4e39492a3cbc83ec5d173df4a3587bb6b9861c66cd068085a4ff4890bbaef",
+      "actual": "d581a047cc53f1f3bfaaf6e534d22e074b5a5b554d7861219fc70292866a7e5e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Defeat/Nativo128/04.png",
+      "expected": "c5cefe64ab4905997b6e4b278bbf00c29ebf73f40c3052130391d498a053233d",
+      "actual": "7258681812c520b1726a032b437dca060f2962150837722ce1147a3aff0c0248"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Defeat/Quadros/04.png",
+      "expected": "c4cb021c5b3f15f125961de2a10e15d936aebf4a9ec3d978bd44882581ec40fd",
+      "actual": "1d5972b39f24989ece31ac7681030e8dd2e400888a0669c8748941d9cd8a28ba"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Ataque.aseprite",
+      "expected": "11a0c87dae2a5680e7ca19e700724cd3c5eb74b02a0fcc3df3beafb71198771e",
+      "actual": "87c2adf1f05afdb5bbb708273c04fb096c1c0d8ad3b7894de3d27be8fe40d249"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Camadas/body/01.png",
+      "expected": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "actual": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Camadas/body/02.png",
+      "expected": "4d39821a38cd2d248cfb887265ff931b0b70c667a26a7de6e4bc6872babfa1e2",
+      "actual": "3b87642b53627eae5c4bfe4455ed8df12ff71c609fedde66399bf53e9e2fa566"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Camadas/body/03.png",
+      "expected": "9e25281c626ce764af9f81a143070075de14d9464729c48a4f6760c3d08f7f9c",
+      "actual": "c33f3eb5768b7735615acbb27f184ca355f42ad8f8f59663bcf24efe0149d061"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Corpo.aseprite",
+      "expected": "79edaa848ede7095fcd19d79bdab831e5cd649a87b953eda45a0c4cb2d34ee67",
+      "actual": "b145f592f7b615f405aa2b7f049e347f668932d3dbaf6b87e5253a430f8bdf82"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Folha.png",
+      "expected": "f5df9112601200beea2c3b11870dbdbc99ba089bbbfcc229a330c1918ac5e33b",
+      "actual": "c8d887f5f2222b199459b68d2bdcf780d7f7b2157d8d299023e73c0d689dc432"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Quadros/01.png",
+      "expected": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "actual": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Sword/Quadros/03.png",
+      "expected": "facc911030a3fc2d66edd69f63ae4bce3787a2d09cdf3c6e49491a1fa2c56356",
+      "actual": "cc9b123a8ef485f682e2e63477f3e5a289d98e6f99ac763c91a6524a42aa0c78"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Folha.png",
+      "expected": "6ba1d36a5c7f02727701438d056c6db9e68ecb8f2413cc186d7342b94ec121ab",
+      "actual": "c71a9389cb9b6ff21fdaae92127e28a85f3d497dc68ddffd3f8233b7b32c34bb"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Nativo128/02.png",
+      "expected": "53edcaa4a36206224a5479baafa6a18bbab56c67d324160e78973f07e420f2de",
+      "actual": "7dc35b17b2b7ab3153c83e2eda7bc2a36b87212e3cd8ce0bf9dc9bca35bf22d5"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Nativo128/03.png",
+      "expected": "ee7a57e4d7b78dc2a214c95b91c74c69873ba17b4d0a254b7019ca557537cc3d",
+      "actual": "9523f9a6429989ac55298533b64270b65101e3d20981d886e87babbc32ebc681"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Quadros/02.png",
+      "expected": "b11843a297e6cf3703d31b29efa5cc39f7070c2eac4c81b58e4dd311804d7132",
+      "actual": "918376f3cc14a941d5ef7316cfcfd0abd18111b6502812644c507e76ffaa6e81"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Quadros/03.png",
+      "expected": "c997233bb4d81865730e12fc3d0c55365abd44818ce79d78d0c62dec216b1da2",
+      "actual": "e46a04e91230f507a4d53918bc1fa451e440042014f3043b6fdaba95631dea6f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Unarmed-128.aseprite",
+      "expected": "ab453f6e20f9f892ff58ee866301dc4a9f15efc038e8274dc4162590160cbf9d",
+      "actual": "1eeec391fe69e5475b315f19ca82a9188972c900ce6a993852324bff80e0f7cd"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Unarmed/Unarmed.aseprite",
+      "expected": "e86f5f8c076612c862c2d6eb4df31daf0cf043934264e67f45ac770df5d79128",
+      "actual": "8f42f5f89314b3b74f05847b3c641755252117e2848bc5848f96ccadea0f5fb8"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Walk/Folha.png",
+      "expected": "cc24b853989b573ad6ced812ad55f4a1c9c05c0aba42eb0822aa4c9777e7f015",
+      "actual": "c82ea19fb882074d8e3b45905378e90c4d118ecb477a3d2bd10243fa1fea3b8c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Walk/Nativo128/08.png",
+      "expected": "dd291ab4f4d27d117346084f3ca1f2a65763c72b71941e7e3bd7bcf2d0f8177a",
+      "actual": "b21772f734ad0425eb049ff7fc0f69c7bf73c2cb30d6a4dbb1268b43b65f5280"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Walk/Quadros/08.png",
+      "expected": "6348aeb0ca07cb5ac0ff74cc02374a2649e6e7aefa3392c972a3fe15908b3ca7",
+      "actual": "5dd502f77a172fdf9cc9706f76cc6ecff81a9f3285cc5693de4768283bb119a3"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Walk/Walk-128.aseprite",
+      "expected": "12c7a8c7424fab4a978bb29b904fbfacfa4f76d629e2e29c9786d64d4e601292",
+      "actual": "54ba7064efa82f2487998b87d50c8dfd1c78430262e75e741f69b20def0d555f"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_l/Walk/Walk.aseprite",
+      "expected": "c5c18211652504c1fd0090f0757a63e4c9a366fe9165bbc9615e6e19c2133220",
+      "actual": "94a0ec0a89a8608fb2aab16e54426d0eb239d94fa01e2ac34decd6b8d80e6dd1"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Defeat/Defeat-128.aseprite",
+      "expected": "e5cc9b1e7c290678480674c9ae1c7269c692376d057cf193abc12f849970de6e",
+      "actual": "86accf30c713b5b4c7cc7bfb44aa8f4c5dbfaa70d3d6e279db235f7b46430043"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Defeat/Defeat.aseprite",
+      "expected": "8bba1ee8c909f2b343aee49b24e47aed3137c7a3785f0d617ff42c3e0491532d",
+      "actual": "1fd7fe705ef0d3bb1732d16cd5145927c878bb2aaba8e31862903582f2b00dec"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Defeat/Folha.png",
+      "expected": "94a01779f85e89b7e98b617f8cbd157d9693ed13d3b4e8099438e884037d37f9",
+      "actual": "ceca26b4a1df13fea99b7a9972e98f2920e38e444a92c46f515020c1dc5d5b58"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Defeat/Nativo128/04.png",
+      "expected": "ad8545349766dd31cbc4fa2ee6abc8b3f03ae0c5c62cd5681ebaa4d3b9707adf",
+      "actual": "7d7ba80128ad4650ada88e3ee9bfc59683b7f221b6f41ec4bef66cbd9debdfbc"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Defeat/Quadros/04.png",
+      "expected": "30e59327e3a4f46f8214eaf13c9664991d5b912167ac26e742c2a34e663b11fe",
+      "actual": "3bef76893153832461582fc5e058685aea454fe02b587b49e3857406bad13f40"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Folha.png",
+      "expected": "41d8a3381c060569eed51dc66590c8042ea3155a9e2a5d433e921ade908279c2",
+      "actual": "3f5f136954f67ae9b9c9d72356e4d13ee7c1d5118431d6570c36948299b7a7c8"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Nativo128/02.png",
+      "expected": "a6cf32fb3af2a1c2c986feb869d094556df92dc9a27716dffc58831f1bc6a299",
+      "actual": "546c10693de7219a0026a30a7d0014ce1b6c1139f8f59a664db9aba9ca7c054a"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Nativo128/03.png",
+      "expected": "89defc1e1b8fcea28cbdfd58dbca488b3c49d26266cc945716f2e86b10e62d2e",
+      "actual": "a971cbed6a267c07630bded6bc1f9d489f3d748dacea31920ab7ba84de11e02d"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Quadros/02.png",
+      "expected": "b6b68bc84ee929bfc12b44ab4d612eedc205164cdc178c28266cec1c8b9e2a2f",
+      "actual": "f5763a56a0615500e7e40f71143b0c5e8add8197792eb06fef0e912315ccf22e"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Quadros/03.png",
+      "expected": "0905839785b6d32815c82d79cd1d07a7c834f9711b0b721b1b54fe09ba36d818",
+      "actual": "92b75d1c10ed38c5b9c4034bad6a320865f17a6f8bd3bcc8fa42215a9f0aea60"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Unarmed-128.aseprite",
+      "expected": "076528f90e0ab9bb1e4a78144a9b44f58ab9f875a844849eeceed6696c64c068",
+      "actual": "aacc2e65c6440a3d41b0f29de34c8828d56d046412a6e7dc84a83bd8d231ebae"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Unarmed/Unarmed.aseprite",
+      "expected": "608babd785bec6c7441244387496c99983447131590e99903dad7b5664770643",
+      "actual": "fbe9d08a635a9b0c64785734f8490fa732f58cb65fc395980d11167923bd7589"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Walk/Folha.png",
+      "expected": "12c8cc63b1af932f58f762025e3973284f74dca88bfc72ba1ff578439d0099af",
+      "actual": "0b106c6773dc7825077b8869881deaf94b37b03c533a968598e89f377285c71c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Walk/Nativo128/08.png",
+      "expected": "8cb3576cd2c721b1c9c0f5db8358b06d8b25413dfcbbbf792a71259fd74519b2",
+      "actual": "32b2ec4340bc49f44f33cc14f6afe4ac5da35873fa6afccd6e7ef8dbcef7da76"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Walk/Quadros/08.png",
+      "expected": "2a814fc8625e7b708d317630faa1eb996e5f242fc88fb7c0f2caabe6f21640f0",
+      "actual": "713d2d3bb6e2e379b85438e65565dac68e289734315f9f1e75ef3ed1a99618ff"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Walk/Walk-128.aseprite",
+      "expected": "be48c3370357402b60d2b17929a27c6393311246e05d1f8bce155f6e5d76b49b",
+      "actual": "057622f589ef7abdc9a854aad13ee909d8211bce7ddb89b84ac5846c9ee5ab90"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/Clipes/front_r/Walk/Walk.aseprite",
+      "expected": "4ce44e5d771e3cd8b4d7667327de4bf36be2ae96eacd0f86e4a04ac71fae437c",
+      "actual": "cc6dcc65ec25690443a176fc16c932479173580747a820e0c103f110190cd236"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/catalogo.json",
+      "expected": "510d57c3570981dbde2aaa3d6106fbae0fc6d9d8c65fe49f27bedf948cd4f1ca",
+      "actual": "3f256d0c9e4000c4ad7f83b53f03a996cbde1a06323da5a3b6fc92e26ba226c4"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/index.html",
+      "expected": "7b9f890b861564ac1cb2f812c52857cce58c084971b8481bb4f6a7807f184cb3",
+      "actual": "ff9d7bef813d928b6e96f6bce9480c045944e4fa991c88c5c1960317f4819e3c"
+    },
+    {
+      "path": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao traseira/manifest.json",
+      "expected": "2ddf898ea48c35c6e3f3f334e394809cabbd7ae2d826e523af48692fb9833f16",
+      "actual": "6e3dac4f355374319156e40a201974ed438ed8428ff6ce69b190fba0714f33e4"
+    },
+    {
+      "path": "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+      "expected": "44fec8d0d7f5da14ed65e166cb147d0e6b41ca449651ba93802aaba6d8f6620f",
+      "actual": "7dc35b17b2b7ab3153c83e2eda7bc2a36b87212e3cd8ce0bf9dc9bca35bf22d5"
+    },
+    {
+      "path": "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+      "expected": "ee7a57e4d7b78dc2a214c95b91c74c69873ba17b4d0a254b7019ca557537cc3d",
+      "actual": "9523f9a6429989ac55298533b64270b65101e3d20981d886e87babbc32ebc681"
+    },
+    {
+      "path": "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+      "expected": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+      "actual": "546c10693de7219a0026a30a7d0014ce1b6c1139f8f59a664db9aba9ca7c054a"
+    },
+    {
+      "path": "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+      "expected": "89defc1e1b8fcea28cbdfd58dbca488b3c49d26266cc945716f2e86b10e62d2e",
+      "actual": "a971cbed6a267c07630bded6bc1f9d489f3d748dacea31920ab7ba84de11e02d"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-attack.aseprite",
+      "expected": "11a0c87dae2a5680e7ca19e700724cd3c5eb74b02a0fcc3df3beafb71198771e",
+      "actual": "87c2adf1f05afdb5bbb708273c04fb096c1c0d8ad3b7894de3d27be8fe40d249"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-body.aseprite",
+      "expected": "79edaa848ede7095fcd19d79bdab831e5cd649a87b953eda45a0c4cb2d34ee67",
+      "actual": "b145f592f7b615f405aa2b7f049e347f668932d3dbaf6b87e5253a430f8bdf82"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/walk-unarmed.aseprite",
+      "expected": "c5c18211652504c1fd0090f0757a63e4c9a366fe9165bbc9615e6e19c2133220",
+      "actual": "94a0ec0a89a8608fb2aab16e54426d0eb239d94fa01e2ac34decd6b8d80e6dd1"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/walk-unarmed.aseprite",
+      "expected": "4ce44e5d771e3cd8b4d7667327de4bf36be2ae96eacd0f86e4a04ac71fae437c",
+      "actual": "cc6dcc65ec25690443a176fc16c932479173580747a820e0c103f110190cd236"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_l.aseprite",
+      "expected": "12c7a8c7424fab4a978bb29b904fbfacfa4f76d629e2e29c9786d64d4e601292",
+      "actual": "54ba7064efa82f2487998b87d50c8dfd1c78430262e75e741f69b20def0d555f"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_r.aseprite",
+      "expected": "be48c3370357402b60d2b17929a27c6393311246e05d1f8bce155f6e5d76b49b",
+      "actual": "057622f589ef7abdc9a854aad13ee909d8211bce7ddb89b84ac5846c9ee5ab90"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "expected": "a8f69f7b5d5229378542dfc5215a3b105f0a92df40cc1ab209062d59fb6d58b7",
+      "actual": "c6d519b9da1114af1c8e8297ebd2f16a345e76982f0dc427b724651efee2ea5b"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "expected": "f25a87593b73a6a3719314bc5d7b23bfec5289596f088068bfd5354f4d91339e",
+      "actual": "72b1ebcf0d2f16cc648798b719571ac0c2a63400847206c5e2e86a6f22dd7861"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/unarmed-attack.aseprite",
+      "expected": "61619e500f5421ec179d79763621786de407fa06197e5b85076e8a2796b50c97",
+      "actual": "cfd964f502f2a823f541e6a1d5909ba30dee76b335234a3cdceabc0d63dae96e"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/walk-unarmed.aseprite",
+      "expected": "82c1cb35a846831b059f58627e7a6256103639771438c71c250fb402496cd2e7",
+      "actual": "5742cd33f88f7155bfe43097977dc89adfe58b0342fc206abe77cce7379a2b12"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "expected": "7dc47e768e7a6ec28c2b5a75aa14be5bdcb1d168724ae6e83de3b20c507c4e1e",
+      "actual": "44da0baaf0b5fc6434ae67d15d0db2553e67692bab188a01aa786b8e62f1540e"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "expected": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "actual": "ebee187353cfbbfeaba4f1a59ebea35eb9a56eb656137bb0bfc5705702da272d"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-body-representative-v2.aseprite",
+      "expected": "41dd247230dfee7c8ea8a4467275fef9841d0be672266cd58412991558a74c88",
+      "actual": "943b45065ff179550b7f6c33302a375250e0e472f9d62b57a4d54f6848463c6d"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/unarmed-attack.aseprite",
+      "expected": "e9f18f84706f1ac542d98c4892e3ddcbd1c51b2b659c5d21b736045bef9f12bd",
+      "actual": "1d73546d3b6fb33f97654fb02af4914a25a998cd5b96cd4ff00b6569493ffade"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/walk-unarmed.aseprite",
+      "expected": "60c02f8804460163dbd793631fa16f593c0cd90ffae9a6d3da524c8a2ae25747",
+      "actual": "51465f79ab35ede0e3eb1573c9300b6aede1c9832d851224accf8bee6aaf4a4d"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_l/defeat.aseprite",
+      "expected": "58c50e24ae8164e888300380f2db5e05b4687c643e4b18400d19ed2a506b6a36",
+      "actual": "4d72e8039c454f2a893f317a6a21fa6ff4699bd137cd01882d1653ad96a59a2e"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_l/unarmed-attack.aseprite",
+      "expected": "e86f5f8c076612c862c2d6eb4df31daf0cf043934264e67f45ac770df5d79128",
+      "actual": "8f42f5f89314b3b74f05847b3c641755252117e2848bc5848f96ccadea0f5fb8"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_r/defeat.aseprite",
+      "expected": "8bba1ee8c909f2b343aee49b24e47aed3137c7a3785f0d617ff42c3e0491532d",
+      "actual": "1fd7fe705ef0d3bb1732d16cd5145927c878bb2aaba8e31862903582f2b00dec"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_r/unarmed-attack.aseprite",
+      "expected": "608babd785bec6c7441244387496c99983447131590e99903dad7b5664770643",
+      "actual": "fbe9d08a635a9b0c64785734f8490fa732f58cb65fc395980d11167923bd7589"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/defeat-front_l.aseprite",
+      "expected": "d9295819945a963f11ee148a935824dfb9e00d0b9fc13be277c352357e21fa57",
+      "actual": "06db5b68f3a9b11bf4ab034aa3872209daf1bae889ffa0f7c61f15c06fa24d7d"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/defeat-front_r.aseprite",
+      "expected": "e5cc9b1e7c290678480674c9ae1c7269c692376d057cf193abc12f849970de6e",
+      "actual": "86accf30c713b5b4c7cc7bfb44aa8f4c5dbfaa70d3d6e279db235f7b46430043"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/sword-body-representative-v2-back_r.aseprite",
+      "expected": "ce5cd061ca8d5f2939087fba96be9006f3af58968c31d01dd5f17d164088d084",
+      "actual": "f8f27a5036db662a6afe1038c3d9af4d9cb8d99e6518bda1aeb4b36ac7b7f5b3"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-back_l.aseprite",
+      "expected": "cef0b6eece981ec2c0319f696a709a41d6b8beead429e7e74a832ec88716cf7d",
+      "actual": "298044e32b7778147a7a32ac5db38e63c4e8f32c75db85b75c2afdd1bb561f44"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-back_r.aseprite",
+      "expected": "82c8a587164e1c02795447a02ef0b575b9efdaca412b70f3dbe916fe5ff2d68d",
+      "actual": "17908484cef609855c403f9fcf41f3c7431734e4270fec9bddd714d5ce9717a6"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-front_l.aseprite",
+      "expected": "ab453f6e20f9f892ff58ee866301dc4a9f15efc038e8274dc4162590160cbf9d",
+      "actual": "1eeec391fe69e5475b315f19ca82a9188972c900ce6a993852324bff80e0f7cd"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-front_r.aseprite",
+      "expected": "076528f90e0ab9bb1e4a78144a9b44f58ab9f875a844849eeceed6696c64c068",
+      "actual": "aacc2e65c6440a3d41b0f29de34c8828d56d046412a6e7dc84a83bd8d231ebae"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_l.aseprite",
+      "expected": "30cec9f68037d410e974782ba204e72910aa7cfda4c7af61594186a01705039f",
+      "actual": "472666b457aa652da01b28a01daa69ff817b6b7bbf19a02560489b7b162873f2"
+    },
+    {
+      "path": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_r.aseprite",
+      "expected": "95ab8db604ec258d2e5a6e6c0ec6ec3dc6ea2c0da1a7cc64241ebbbd85bb5fe8",
+      "actual": "2ee7fb0d2d94701a7e133c52a4321a71f906d8f79b77215e60faa5843e2c4289"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/01.png",
+      "expected": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "actual": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/03.png",
+      "expected": "facc911030a3fc2d66edd69f63ae4bce3787a2d09cdf3c6e49491a1fa2c56356",
+      "actual": "cc9b123a8ef485f682e2e63477f3e5a289d98e6f99ac763c91a6524a42aa0c78"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/clip.json",
+      "expected": "40497004cd9f5fe52ef5dd2816b593e3e00827f3f9a1256de2798de82daa1797",
+      "actual": "151e57e3154b8914959b42bd9882300c85e722175d74c7bb2a4a44336a57a28e"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/01.png",
+      "expected": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "actual": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/02.png",
+      "expected": "4d39821a38cd2d248cfb887265ff931b0b70c667a26a7de6e4bc6872babfa1e2",
+      "actual": "3b87642b53627eae5c4bfe4455ed8df12ff71c609fedde66399bf53e9e2fa566"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/03.png",
+      "expected": "9e25281c626ce764af9f81a143070075de14d9464729c48a4f6760c3d08f7f9c",
+      "actual": "c33f3eb5768b7735615acbb27f184ca355f42ad8f8f59663bcf24efe0149d061"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/native-strip.png",
+      "expected": "2e8b6711bfe708ea71bd3a562dc3b20b1494b7c6b76f9fe488c8f4f941dccbf0",
+      "actual": "c0b9f5b391270e802bf19eb96a52928f161717170438318c3b105ead830b6aed"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Walk/08.png",
+      "expected": "6348aeb0ca07cb5ac0ff74cc02374a2649e6e7aefa3392c972a3fe15908b3ca7",
+      "actual": "5dd502f77a172fdf9cc9706f76cc6ecff81a9f3285cc5693de4768283bb119a3"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+      "expected": "8f63bf2dd70c94c1de353d93f968e8351bc1b2863e2e95c28ad4044f9e986176",
+      "actual": "061e9e9cf9a72fc9ab605df8b75f16133bb1cc4f6887e54fd56bb83af62e24ee"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_l/Walk/native-strip.png",
+      "expected": "af1d2e515e5b1cba63a91fe2864d30f6503c22ac91de3a1b08ff449bc754da23",
+      "actual": "34c80b359341c2ebdecc572861ff975f9d6c43c78cce83ef1bd6053913b47def"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_r/Walk/08.png",
+      "expected": "2a814fc8625e7b708d317630faa1eb996e5f242fc88fb7c0f2caabe6f21640f0",
+      "actual": "713d2d3bb6e2e379b85438e65565dac68e289734315f9f1e75ef3ed1a99618ff"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json",
+      "expected": "952ac416546330e1f4f299cd37863ded248bf611048433041138e68794378c46",
+      "actual": "360757c7f6b82873a7fa3cf6efa825f09cfa875d58f44618f9e2989ab22b0a1f"
+    },
+    {
+      "path": "characters/orc-v1/source/complete-v1/front_r/Walk/native-strip.png",
+      "expected": "1b96639e5bcd367585dd8a70e2981bd279c05369f05f788ab0d599e04e9622cd",
+      "actual": "e23a58d15e5b647da900d264d11d2fa09ad2af7d43defd7f4f89885f89547489"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/01.png",
+      "expected": "7625eba6cb17761f3f5d364e3738d595993b1af2c73cdeb6fc2ae32a9a0203b7",
+      "actual": "26f79b53b00bf91d1394f4b3748683b009f543675d8fd90f7be08fb15f91ff20"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/02.png",
+      "expected": "1dc453b95c293893e0f3f4a20cdaad76b28fc2e7b009c4d4bf90f2cda27d5fe3",
+      "actual": "d2f7fa408801857487d081dc30e88b6941b07850193c84a4db7bc1728e60d51f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/03.png",
+      "expected": "1a42aa1bdc60b41a71021eeadbdb694bceca1760b488fae26e833184b31b2d7f",
+      "actual": "196823fff56cca0b599b942ebe2ca23c3e0927e2a14ed577111977b7de8f6a1a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/04.png",
+      "expected": "8d26362cf6eb9cddc6aa18447d7dc553e1de4aa2dc980caa6a98fb416d350cae",
+      "actual": "fbe91068f26696ce8a55f984dd36e28eaa62c7a089191607df745c14b8aaf2d9"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/05.png",
+      "expected": "4d85d5cd6ebc41ee873c20d0c4e5f6d69a0d4a18c4c8f6c6272adc5eda3da1da",
+      "actual": "b6fa7c8c9f06e4e72ba8a149bb9c274a250bd41410d0539c166e41a19209dfc2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/06.png",
+      "expected": "822ed2d9e4ef0c5d4132eea78029773fc0cef03cc9fbc4b32403b5fa790faec5",
+      "actual": "8b6138845fe38c7e2833fc92258ac4e657ea140f06bccb6df2cbdda9b8ce2eb7"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/clip.json",
+      "expected": "948ed84288ac9b08666305ec3fe67e1137abc9bc1ae6b74174444c6928ce0373",
+      "actual": "d77cf6e2c77b23758ff9eaf20ea87975bb98a484f2941564c4efe8241d49af97"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/01.png",
+      "expected": "b1e97e4f877a5b0835af4c7bd8d6f8d9f703be99ca4f3b247ac89449ac3e81fa",
+      "actual": "b5a1d1d949f4e113708c6f1aafa035ed20e17fd399cd6c3da914898fff91072e"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/02.png",
+      "expected": "7615fcf2b48e3b1f195416396b4f2cc822d6c29b7096752c3c874d46ea96657c",
+      "actual": "6886228c2a608b5e45ecacca5e41891088269cb2e93bd6923ab8184f39fa7f22"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/03.png",
+      "expected": "7615fcf2b48e3b1f195416396b4f2cc822d6c29b7096752c3c874d46ea96657c",
+      "actual": "cba0ae707c8c194dc42e82c371430927a96d17ea33c0770f436bc08e856f5a43"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/04.png",
+      "expected": "9c336aa3b9925d13b43fcb40310565046b6d8675b0b82954bae1ebb6cf61f4aa",
+      "actual": "ebcd513cc93ed9125ce82606aa284205a4dffa3df216c7e74c07e0867335a000"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/05.png",
+      "expected": "3b713cf5c66887c6c07b6180a026e3f9517fb6080e7898b54e1e94a330331afc",
+      "actual": "f46511a832cac2f91a756a343a684e8129cec5ca4c7ebd62c89e3aea2fe53e8c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/handFront/06.png",
+      "expected": "6ec08d544e189825562f066dc380a224fe6918174ac9f50632bbc7f11b53b1a1",
+      "actual": "b11df99799d5cca4d74ab2815425f5358a0178a687ab5c40d1a5740b57d4b355"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponBack/02.png",
+      "expected": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "actual": "2c2012fb572f51f4227b635b4dd053bf7d2d7fc778577d5c404b4caf1f52490b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponBack/03.png",
+      "expected": "0ad282a6499b26d421079a6b32ae4a26d5a66be0ea23ee394befab4572e8f315",
+      "actual": "8d4f3dbe34cee2d547cd76ce1067be981f4f25ec2d1dc441a099db0fb79a0a83"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponBack/04.png",
+      "expected": "bc3eaa956bd266f6618d0c742564e2ac9f00bf5cda4f3f067c7e77b9fbfb8eab",
+      "actual": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/01.png",
+      "expected": "4be544c07dce74d522248f4cdc849c427c436710313f931a54c1c97782ceb776",
+      "actual": "3371c0bcc80d76acc12fa99245d6bd5cb45d73a7d96795366030fc688e5aea13"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/02.png",
+      "expected": "7a7d84db39a5834ba15475b248debf2c6528913e444b91e2c74bad08b3d06a71",
+      "actual": "7987a6d997061c3ee1b435b081c508cafdb5cb689517762baa011fd0b5ad1b55"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/03.png",
+      "expected": "6844921af5c1c6d23aae428fedff6af6c07b0174cc6f6afc03c4716d74eea5a6",
+      "actual": "ed7434f8d0e593b5dfc5ad8d22d3b4bfc402ff8cace068a75eb24247b2c330a0"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/04.png",
+      "expected": "872fc6d11c5a325662e5902deba71bb231d7051066fe705ff2abee3e5e52ce81",
+      "actual": "9300cb076acbddd3a3fa4e21d2b11357c792fe874fd100f58667737e90a3eefa"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/05.png",
+      "expected": "25780805390a3cbd06bdc271b479e4de72ca700469331dd1c7a0b1961d677b68",
+      "actual": "8010989a6c98ec788a7f12237919a015c988f3ea1f0a78acef4d4ecf1b941e6d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/layers/weaponFront/06.png",
+      "expected": "e832a97b7a061b81347becda4fe650ca7759d30977cc7ba977a32efc14c38a3f",
+      "actual": "8a35f02d9af2a65aeef854e60c5ea5de88357f33d5f579d9f8cd3b8410fdb263"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/01.png",
+      "expected": "69c134b6499380f70641262fa95818db5e77a80ffea8e8a208b364614f66499f",
+      "actual": "5ebaaf2f28652228a03fabcce0a00ad066a5635c7fd6e854942128ad49b959dc"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/02.png",
+      "expected": "e71ec1fb778d06922c5af284a747e3abcd4f6dfa511fb050464eabf630e765da",
+      "actual": "7264ab0165f5c57348983d88dc98b17217fe9a52f60bfdd027f9a8d532c66c10"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/03.png",
+      "expected": "17b907d5233548cba53ab5367b83e2dbc830fa5344fd707b6c530730dc7de4fc",
+      "actual": "77bd47955ff55f85ec99bb28d358b90b9d95a81287822a84f48e6f634f083ab4"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/04.png",
+      "expected": "3fb783322b4d1eb946475e7f50124f08c063859a014992c290634b83f3941da9",
+      "actual": "42e561689c7bb3cf325f73f8ba7a08fc9de20c37541bc02f8e076ccfc6e8adf2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/05.png",
+      "expected": "d0b2fa797135ea9a8fa0ee54049b26895179f76327f0c00eedbbd16655c024c6",
+      "actual": "4d6368739336255188c0b20de306aac021f024080dbd175b93d4a810db1c9a6d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/06.png",
+      "expected": "c3acaaaf4071dd91ff150a0a11f43f0807bd7ce77876001df31a27d37d01c15a",
+      "actual": "a5c2fa303b8086a47b825dcdaa17f321ac2b17e2232d2ba75d46a7edba36a221"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/clip.json",
+      "expected": "f8d9f4c35d1bd67ff66beebb414c0e4ebe00603c64bae568be67ddd2f9b175e2",
+      "actual": "97c61fa409864048023c668d509e3b612abb93831398a1c30da5a9050f5ee96f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/01.png",
+      "expected": "770133344cce7bd521ef9fb0b040e95d00b83cf53053276b5bc7c00431b03694",
+      "actual": "b698930d8d5301e37ceaa6adc33128dce230b1c0110cd478d1997e419f1b7431"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/02.png",
+      "expected": "dae33dfeff77c5a731ebe0ddb8c2e2fe75836fd7f0b6990e8a60d262e572b206",
+      "actual": "0bb72ac5a78971b7315dfeaf3559680c247edd4dfb96860bfbb7e8f97e8de1cd"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/03.png",
+      "expected": "8b2e8bbbab59693fe78590f58e831a355d3af2d014ddbbdf1733ca5ea4c43c1e",
+      "actual": "e3455bbf9ff3b68c49564e6a98c1f3247de4e46028e9f01a3aeef0d24c1a3335"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/04.png",
+      "expected": "cb516e5efbf96140d94ad3acdcea94515ef78e1fcd8c7088f2005fef10659980",
+      "actual": "1e74d55fa91ea5658ed3f9c27f8eb6fd71d3103929b5b85f22d2478858c973e2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/05.png",
+      "expected": "8483678fe8a4326c647bf5ff6600a511528433360f4bd2c769a848e13c3606fd",
+      "actual": "7cb1bc8e7225a47bc08e3b147f083391a881a1cc992a1ae6187ddb042c8599cb"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/handFront/06.png",
+      "expected": "4d95d28c5cb08d7a5a0db5ae020c98cdff7fe0ccaee5e06e07b7f6def69e1529",
+      "actual": "96efbda0b646ade98802c01386da01b36fcdf2f64d31111b0380bcfad75355da"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponBack/02.png",
+      "expected": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163",
+      "actual": "ab5c4b95f0365d64ae5e88187c96acf041dce4259dea21e73c586812df485e8a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponBack/03.png",
+      "expected": "6e3a514a74412dfad2e0417709eaf6049489370026daee32a6f7a9106d686c47",
+      "actual": "9d0a5f504c181787e384638603a59af3ecffa3bbd26948d2769606c4cac777b0"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponBack/04.png",
+      "expected": "e3cb8aabdf7b0cb4ee516b23956d041a2968299dece7a96a2ad3fbc05d6857f3",
+      "actual": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/01.png",
+      "expected": "205ad1e6edd25036fbea57ac519e4181796f263174b650bccbab69a4e77af4d6",
+      "actual": "09a134702c1c0a6ab0c3daf4c38a3cddc8aded19776028de900d83b7991b6410"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/02.png",
+      "expected": "87391507edf47cf069a9edf1fa628431fce149beecfccca4ce7166d7fcc3df1d",
+      "actual": "f04898c0a78a7513300d38c23f716751e7296a67a385a87400790abb44e2c340"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/03.png",
+      "expected": "92fd0d390e17176da437b514f4ae91aa37ea3c00540ea6d8e141fe9f9db48179",
+      "actual": "564bb3ac7db7a9b342454a7d608e2576677620726c9e72e010d6194363e44ad8"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/04.png",
+      "expected": "05fc0e1306c53ec67217552a97c15c7dbfc4e1615d3239874b50badafc36d441",
+      "actual": "fb9017f5ca254c73fd6ef9a676f821ea00e9193b452461be7de60acc5d0fed60"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/05.png",
+      "expected": "11c8e04d29925b36b1ccf5340a55b26e4b17b6ea32b58dd929d1a6209d17293f",
+      "actual": "a0bddcf1c5a18a0a269d27be5332d717d0283427a48449a913f0cb3536fb99d2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/weaponFront/06.png",
+      "expected": "c316ab1c3613c1f626f679df3619b3ba0ea1fa2a024bfffec6d23d4775b59084",
+      "actual": "177ab1dd584e0bc5d316d1689ea4f3b55f5421b5e033be91ae53531db594664c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/01.png",
+      "expected": "8d7a2cadf248857346ae6adc1a9f8494ec8432a56778451d471de980151c749b",
+      "actual": "ed4d8c0b2de08e7b4c261950d3fee450888c7a63251ba887fabc4d9ccffd35bc"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/03.png",
+      "expected": "9e9dbf61ded888e4ba99a4bc56e9b83b8504f3c84e880ef11aaa9bfcc6df9c1f",
+      "actual": "d06a30372c461a6fcceff85b1bdbaa52f38cff4f4b8787780015bf5d8da92699"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/04.png",
+      "expected": "6477fd002f3c8fe9b65e1b0f75ce526aaebeaa48a799ff3ba5c57a20e25299af",
+      "actual": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/clip.json",
+      "expected": "280eca4e75ea1289941e00cdcca6a9426694d70045da5ae45b9e37da4ae47f94",
+      "actual": "fd1d0138c78e88942f557b05b718437e1e24d93568c14d74b1222d950a433b76"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native-strip.png",
+      "expected": "9685e033af0622945f126241c3d93ddf86198d0208f4a3cc2e299316fa570427",
+      "actual": "3d310ec95ac514290b5b5840a9c8309ca0914d1f055213dd379c8d80b4dc952f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native/00.png",
+      "expected": "3a742cbd7650d5aa5b67fc6e55e9292265fc97e835c649dd88c38df185923d4e",
+      "actual": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native/01.png",
+      "expected": "5e9a924fdb7791417730a3aa42d623725f7f78752a342617917e563a1954ffa7",
+      "actual": "6f982b53ffcd0e26a7e10b6d3a0c1d933e97f47f5d8882623085dc9f64c7c92a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native/02.png",
+      "expected": "d4e6d38f3dd742b71d37f91b6875c34d46318f68c94a402d598fcb7cf8efeeab",
+      "actual": "4c32819e1ab2c997193eca3aeb8b3b44ebb05066ea2ca49f3c8199ef081cd1fa"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native/03.png",
+      "expected": "e97574f8ab0628a3645cfb9d7735e88dc6c6f1f27da4362056f0a78f72c174f2",
+      "actual": "b1e3c584161b365cf739535702560fe592b1557ef195c11b4207e66dac18e723"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/native/04.png",
+      "expected": "96b6286dc5d08349ab2fb3b682ee4103fd4e32466a235aa36feb4d8a090b693b",
+      "actual": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/00.png",
+      "expected": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "actual": "235d6a5b6651ffe2cb7660ddbccd6f99378ef0926a1006de3c25e319c81361a1"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/01.png",
+      "expected": "5278d8a88c6fbfd85263f491215c84c5e4c9cdda9ee69770d012a1b579c7007f",
+      "actual": "cd5d78c57d43e0ea891bd0336b70710cd45b3a98cc12d51aa0e565432874b64b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/02.png",
+      "expected": "c2e739ec947c877f9d883768f5960c5a8dc95f4ba8eb3158f090df29cd90d933",
+      "actual": "23f2feafd5c013623cfd8ab2003c39202874f9e1b7bb0509e6cfce2ff09e90c2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/03.png",
+      "expected": "61543171cfd679fb16af8d9c1acb1722ba37f3cdb06c49f8a0e4d9276720dbfa",
+      "actual": "b573fa4e5941c8df800a462cae3402d5b2e4d7c4f635bff5687550bec055ce77"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/04.png",
+      "expected": "8030550caf56b0212d8bc08e81deb75eb4041d755495120080ce111f5d2dcd85",
+      "actual": "7cdd986b9e64f0e27535b0504bfa8672b9d293d11a1d61b72a1cd4bbf8d92d05"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/05.png",
+      "expected": "1bbd3bc9820dc658415d7da12a4957cbfb82dcf6216c1ffa85ed8ecb4ac16d2f",
+      "actual": "fd8f967825d856a7e9348dafdd06f48c7aef89c8946f35a4efb672f19fdeeefd"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/06.png",
+      "expected": "68b5015afc86bbbe24e6bd42ca7dec8725a480b67c6b92a391e32b48fc4b62cf",
+      "actual": "feccd55be29d3615b21710b4216767e6ed197c4ed119621589d91a7ab0a308f5"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/07.png",
+      "expected": "5fe4b90f7cc4dec9520a03170fb4c7321d776e0026c9ff2ab0c698ee17d88b61",
+      "actual": "416688a36756aa85d8c36913612594ea50d8a291bb007dbb689a416f99a7d9da"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/clip.json",
+      "expected": "dd17bf7ab82d6fa6db2bd81f1ec4fa17e63ac9b524f56db3f7f02e9b8f055fa9",
+      "actual": "a84744288b6689c7c0287abfd1c9afb06a26172b52b256b22711c5b0bdb2fa1b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Walk/native-strip.png",
+      "expected": "3338bc95da5ba2ba342c4255bf29f2042b077cdd11cd8e519142aad53923c6cb",
+      "actual": "4e8e41843aed549160275d43229baffd56dabc28486fab224893ed648ae5fcae"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/01.png",
+      "expected": "2d43c5bd03d90510c7faaa03db03cd5a3daaf425cee51b70bc4d0557451b2d53",
+      "actual": "a1fa8f2feac23427c537585e4b8bcf46a4b964812c0a383df719546add494b27"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/02.png",
+      "expected": "641139202255942ca6f17f783c97ab110a199a5566848e0caf42c8ab1dbd7d23",
+      "actual": "44cc9fdaa718df5d15396cc2170925d847b3726d866a7bd270d6f1ad3e44b00a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/03.png",
+      "expected": "9f7009d0e254ff1304c217db286c883d26c754e1298faa646d61e6c19950ef68",
+      "actual": "78257788b96ac0b1832b2a73dd24be73edbb64705f9399aa57b7d266665c5446"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/04.png",
+      "expected": "9a022038be270e9bb03d376ae39756b586292d6ee6f036611de8af654e8e6c49",
+      "actual": "6d9ac972c04208f92abffae53f78b65093aaf43c394661222813551dd484dc5d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/05.png",
+      "expected": "0ab83cbac1781daef6c9180530f390b1ddcb71e5d0f00de4f6115b9b763a3b4d",
+      "actual": "d5983e7968c1876f2bd9687498f214a59df1b47dcb20f7c61cf769583d8ee64a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/06.png",
+      "expected": "8225a7cf825d5630497b0bf7d7456b2d2d88716868ab424446ed12ebfcb21a8d",
+      "actual": "550051c8048c633d44a311bfc0327c6bd1c7605840cbda3292fcb0553cdeca6e"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/clip.json",
+      "expected": "5e383de2d53631a5e6d67bb8d1d8525fda40635e7d3c301405524aad0556c07b",
+      "actual": "0f98a68e44181ecb3948cdc5b3ab8821cdb22c94e594eee8eb8b1cc516cdd80b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/01.png",
+      "expected": "a43428888dbaf18e6997f7cf28ce9aba126b88f4dab66467baac97c1402ae4a7",
+      "actual": "18e91de02c7d3dcd0a4cbda5742c8abb84de01574fe06625a9823d5fe99d3e7e"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/02.png",
+      "expected": "8176f6bf60e43dfa9c61bb5dd6beecc2f7f9733cc88a0884606466a6c4650c28",
+      "actual": "3f098416d82510a057c018f60bc559f6db5e97eaac95345a32f74d626c7a515f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/03.png",
+      "expected": "b7582b9f8548c8d22a21dd78f9be297f6cc23e27d8e63af3808cb084f4075259",
+      "actual": "96b57150b219327e7083f1cf8782d0d9d0e31e127dd3400a37bc8d664c874946"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/04.png",
+      "expected": "3ca08a0632f447b3ae69966716a31e68ff69614f35e5069784931461b7f61dcd",
+      "actual": "c3ce5f77ddb1212d63a05c12ebcc7bc03e0518adb7dd034bfbe661e8ffad4b4d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/05.png",
+      "expected": "42c0fd0650d1d4d409c74a143caca705348ee28fd258af53767af8f2a129be22",
+      "actual": "851156fb026aa013271a53574c098979161f05e1256cb43c20eb76853f387d13"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/handFront/06.png",
+      "expected": "ff28fe86271023954bb1f2634deb4e60ec8761a9a0fceb346a31b3c8cd5afedc",
+      "actual": "87f0e0a8d6c318d8b0eb4cf6a04f6be2c8d5fdf254ec3f0c19f3864c5ef5c65b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponBack/02.png",
+      "expected": "9da4fd8c1a3cf6e74bb64d3f9d83218f0d96b2d1953be0fa9ac4249f66a4fe1a",
+      "actual": "c2e8bbee6c005a0db631efc0c44d94e767b2f159fde2e5aed50b0ba87eff3b2a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponBack/03.png",
+      "expected": "b0424cfa9020210c6edc42605a497d9d225fcdf1b30696ced5e4eddcebad227d",
+      "actual": "63a0b8834b878f7176e398d2d96547f595d8f35e6bd5f5e182767119dbfd24d1"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/01.png",
+      "expected": "acdec833ccd450e564926c95dd9b248223eadcc0025d68b4b0302951b9502770",
+      "actual": "6491e5cc8b9f4041945c0add93723ec62065e4ffe3cca4145f6b788caf5c459c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/02.png",
+      "expected": "80e3090f863b3ced100b372434125b64d2f29c0e194c475dde950d6bfa0f54e8",
+      "actual": "455e0ecb778570d4468c1d5cf12deaf5ed18e43b14583140ca443eceaab46df6"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/03.png",
+      "expected": "61e5f3d221c666c81e0794dd80f590fda4e4ab1894ab1ee84d8324d38fe5ca5b",
+      "actual": "efd2871cc04e5b9f9ab0088af27c2e3fcc7c7a1df860b03acc38f3a4bd16d44b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/04.png",
+      "expected": "cb5dc38cc8c39e9ad7f445d57e307e774681e1359935643d03e67cd1ddc603d0",
+      "actual": "fe10e6e5cd9fa342c264dad93cc548c9b9f91e52e40071dd262db6c2351b273f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/05.png",
+      "expected": "5ad6ac89a873eb24af2b926abb849ba84b3249bea6d3db0b3b04c525846ccfe6",
+      "actual": "470aec2888546bf8f85d4981bcf6b8ecc5312446bbc9c10919d0606202892f4b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/layers/weaponFront/06.png",
+      "expected": "37c69a8430fe19ad8819955e2b430dc3117613c15f0d0422ad6b01f590c967f7",
+      "actual": "c43d9302eda00191576c31455299c1d84663e0143ef8d2156746dd55a0c29cc6"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/00.png",
+      "expected": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "actual": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/01.png",
+      "expected": "af07f56bc2a46717ab007956f8f90baf1369fd95b7111df0cb5049475dd9b6a8",
+      "actual": "a02d78257d881b4546060ddb1f40ea00dcfab47c85e6178068e800645d4eddc6"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/02.png",
+      "expected": "99a5db49aa7b465d6fbd0bccaa36deb8efb48f24b44c623bb7e443b4335d4f71",
+      "actual": "566d30ad508cbecb3156a66dafa0d5f6955dd8b6a25a31438c8ac66eea19bee4"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/03.png",
+      "expected": "c61c4d683c092cab909a7104587dfd46f590f366e2a2c1fb26b4af4ec7c870db",
+      "actual": "27eddafd53cc8abefb7bd5a613389284eded05eca020c79a08f891b8b266a0be"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/04.png",
+      "expected": "1a1533e738e4f5eccb4bf439b5b06e24ababe1ab5e4933f70b970ab1159fb583",
+      "actual": "9590e71d65726ce5c7c0a5066af053678b4744397739bf02900ea0b2de658806"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/05.png",
+      "expected": "e3613fc2962c3c07812f8f45a6d487aebd6cf7ebe814ec0590729ac301cbb5ad",
+      "actual": "31cd6b75b56806d8e8483fdd7759dcef2987161e309a287a364dbd138cc9744b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/06.png",
+      "expected": "f1a689f108ba1771d2351c7e9b79c011713a06d871b1d7695ceed161de7fef11",
+      "actual": "f83b9330b1246926d9312cc9f59d99f6cbfaaf1a9fd8a85d8e1a56883dcc80d6"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/07.png",
+      "expected": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "actual": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only-strip.png",
+      "expected": "091b7f4d7fc682d1ae22f253e812ccbb797755e994c2897d5f7f3c8c6024e1f5",
+      "actual": "83746b67e47d510d9218ad35e55e368577af3b2fcd61668d968530192314b332"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/00.png",
+      "expected": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "actual": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/01.png",
+      "expected": "74d16312fb4684eab73e7d9eb1aadac7a1aca14aa9870977c1edde26014afe57",
+      "actual": "d6f6ba6bda6d35f0ff13ab4186a8041c868a236a5b759064b15279ff3a962831"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/02.png",
+      "expected": "27516791e1af089400b4decd08301576cf60c8ad484b858f3b50dbe37dd50ff5",
+      "actual": "397455305cc7005e4b2ac3137fcae9667f837913e4024dafe3c32a6ed2f2c7c0"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/03.png",
+      "expected": "6554b7ca1da148ff20bf82ab9d5b7b49d94a568303cc8c3eb6e61f369504b7d1",
+      "actual": "85ba78f1640c8670ecd430e554d5250aaabe7b25b439e20967b055ad2d701b51"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/04.png",
+      "expected": "c73c0402647d307e1d4860cbe8c43e7f8691513e1e8ad4c71b4d0c780fe5814d",
+      "actual": "e55e6f7525fe24186f427497b1339734af438076359106c186fa2ee069f0c1f3"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/05.png",
+      "expected": "5d5a114134a01e907e24a77870ffb0f5d94864132c5317da4ecd31304c13a3e9",
+      "actual": "6da6cfa8d5f246a7a9dc620493efb1e89008ef8614577ab7dd7c5ec8f0ef739d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/06.png",
+      "expected": "9cbaaf581f5f7fe6bbf2c9c98e57d2d441c666915a4d1cb1d3463d40c2692fca",
+      "actual": "6ffc7e9e1a8912cfac9f297af312e7152b1d36029bff6adcfd6d10d26bacd3f2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/body-only/07.png",
+      "expected": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "actual": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/clip.json",
+      "expected": "77ab4799d526a0fbe15ca1fe801150ba7b1c44b34d6ac88f67a9e8dce93e9c6a",
+      "actual": "873dedaec5c90d3b1031a72670189aba32f0e2c7adbff26f21f5cd4d08e20d46"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/00.png",
+      "expected": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "actual": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/01.png",
+      "expected": "74d16312fb4684eab73e7d9eb1aadac7a1aca14aa9870977c1edde26014afe57",
+      "actual": "d6f6ba6bda6d35f0ff13ab4186a8041c868a236a5b759064b15279ff3a962831"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/02.png",
+      "expected": "27516791e1af089400b4decd08301576cf60c8ad484b858f3b50dbe37dd50ff5",
+      "actual": "397455305cc7005e4b2ac3137fcae9667f837913e4024dafe3c32a6ed2f2c7c0"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/03.png",
+      "expected": "6554b7ca1da148ff20bf82ab9d5b7b49d94a568303cc8c3eb6e61f369504b7d1",
+      "actual": "85ba78f1640c8670ecd430e554d5250aaabe7b25b439e20967b055ad2d701b51"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/04.png",
+      "expected": "c73c0402647d307e1d4860cbe8c43e7f8691513e1e8ad4c71b4d0c780fe5814d",
+      "actual": "e55e6f7525fe24186f427497b1339734af438076359106c186fa2ee069f0c1f3"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/05.png",
+      "expected": "5d5a114134a01e907e24a77870ffb0f5d94864132c5317da4ecd31304c13a3e9",
+      "actual": "6da6cfa8d5f246a7a9dc620493efb1e89008ef8614577ab7dd7c5ec8f0ef739d"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/06.png",
+      "expected": "9cbaaf581f5f7fe6bbf2c9c98e57d2d441c666915a4d1cb1d3463d40c2692fca",
+      "actual": "6ffc7e9e1a8912cfac9f297af312e7152b1d36029bff6adcfd6d10d26bacd3f2"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/body/07.png",
+      "expected": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "actual": "608cbd8012ad9c426372a76c2a6a68184ab70ddfd26ca5715ca6017b8551407a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/01.png",
+      "expected": "31d21b5fade8c89ec030369460ce8d897703eeca742a62717d1f0de2dad69dfb",
+      "actual": "9b7bb2a67dd918dc8dd5c029ac823c99f6c895ebfd184f86750de8f1a739357c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/02.png",
+      "expected": "3fb7f63916c9f1fa24bee97339fa934904ff9c7129f3d204f4623b86026d35ab",
+      "actual": "3f098416d82510a057c018f60bc559f6db5e97eaac95345a32f74d626c7a515f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/03.png",
+      "expected": "15309ac6e5962f1ed7cb6e885188203f82c1f0c2c0c278f6fad23ff39740c5ac",
+      "actual": "3dcac09245cbbf86a3752b48e6564cf22bd374011b2cb4ab1abe953d3bdec86a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/04.png",
+      "expected": "f07a722c6aa8da755f2dc36cd672a98235abc5fa40638857386155550fbee64e",
+      "actual": "45c8ff5fef32efd76246d280cc72faa1c4323f851eb815c72a15288f10c69769"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/05.png",
+      "expected": "8d0cb16e4ee2a7c451827114871f7289f6f212a6894e4396821e96ffbb316b41",
+      "actual": "851156fb026aa013271a53574c098979161f05e1256cb43c20eb76853f387d13"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/handFront/06.png",
+      "expected": "909fe36229386c6917a970ca0a9585033dfc1d36382e043888f1931058b76847",
+      "actual": "87f0e0a8d6c318d8b0eb4cf6a04f6be2c8d5fdf254ec3f0c19f3864c5ef5c65b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponBack/02.png",
+      "expected": "93ae850ff808b96959c47ef94b4a0de8e6f301b5bb1a66155819ef977080b480",
+      "actual": "f280c84e05cb4488a1b45f020501ad789287e7a23f74fe9fa640a5604b642e62"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponBack/03.png",
+      "expected": "47fb1355bee5a64a96b38a62e7e4e62c913f3fa83d6635366a04fb42a8a279e5",
+      "actual": "8942a6712f6a94ce97bc53916b991a846b88f9ac7eb626e74b1d5c7f97ed3c39"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/01.png",
+      "expected": "57f322e21310b8551f4e931d9fca8661a76a209b3cdc14e7c93c432e2dec2266",
+      "actual": "a2e8d23c1b2247ed2dbd54bd395815cb23a7cece744d157d1ac0824ae36badbf"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/02.png",
+      "expected": "d674cf8980deafbf9327f2a29653dc000bd6c38a70040a630f5420685737a31e",
+      "actual": "96d682b17f6c78c8fd9371e9717facfda42c407229fbaed55fdf3275b1f8ce94"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/03.png",
+      "expected": "29fb8652df1656e6afb6deb512c1163fd3cc47baf1b6728097b1b9b538224c97",
+      "actual": "0d0dffe9787cd1e2236b58add0d3a364d084ad34d80ad3ca6aa59352ba38aa6c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/04.png",
+      "expected": "7780985cf2a7635ab797237f87bf1b5339193a34a25ac9aeeb28375ad883ebc4",
+      "actual": "1d8d3a04a2792b2c48c8be8a663c66da537ae6c70e1c169406715348a361d438"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/05.png",
+      "expected": "24245bfe0d2e41a9562182eb2e9861f2792791126ea9bf12089f8846ecd7d1db",
+      "actual": "a11427c4d5f522371ed6dcfffe3835d94bc29133f52afdfe7f0713add0a6e0b4"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/layers/weaponFront/06.png",
+      "expected": "764df8a2704e6f6c4211977a8a9b0636f3a8c12ff422b8608475e84ca1d01110",
+      "actual": "b905ee8eefb81b357424f6e57ed36fcb86cfefd8939d93059ecc5665eb7488f7"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native-strip.png",
+      "expected": "091b7f4d7fc682d1ae22f253e812ccbb797755e994c2897d5f7f3c8c6024e1f5",
+      "actual": "83746b67e47d510d9218ad35e55e368577af3b2fcd61668d968530192314b332"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/00.png",
+      "expected": "45dd235cb239ec683639051767c5c23f859e71ca5926eeb68ce904c1ad1c402d",
+      "actual": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/01.png",
+      "expected": "20c38c665ffafb74c042e971c546d46d8daff8c75d9c9cfb491e321f62eee797",
+      "actual": "3ce7e61806fa3ea96136bed9db829492d0395b1e0063753cc37ec0429ffc1b51"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/02.png",
+      "expected": "8da4e6337a2c7c7490df0f774920ac6ad3daacf981419587e1ca84961e777f59",
+      "actual": "73029423e99be5fd89df5a1f576c6f3d0dcc8d7c33c817f068ae93ef422ce474"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/03.png",
+      "expected": "07754b6ca6cc3fd79dd04f9ad3ca9a86551254b46de026261fd87dc4b6acfcba",
+      "actual": "16024215f6eb7ef515e5b2184434b5d4998609d2eb62ba56077fb57521f649d1"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/04.png",
+      "expected": "965285383c3863f9bb21f753dc57e2c21474f2493f393fb10fc157b205df268c",
+      "actual": "67d8441d003a7a2829c91124aadc30d02f160c3592f74fa75de96a89a4180002"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/05.png",
+      "expected": "ec483a01ba1f6078f47579aec3992f52ec0d3a46faa3a6d588dca9fa86e3ebd2",
+      "actual": "10b9703628ac18d8d5bd0b65e6fc62c4fc4ca722caa95b1164d57fb08b9e2935"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/06.png",
+      "expected": "6a84b0259395d5a94c9792ff823cea10569446b8f5186464fd2e328f319658e8",
+      "actual": "5fc5818220f37571b64be83ca284f5eefe61c5e0d501926eda479a90eaba608a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/native/07.png",
+      "expected": "9f9a086649cd4c07dae96b5feeec9b759af9c4e1f765f5825fe8d4f5e547c54f",
+      "actual": "a8c25357802d1d40f086d51f1e6c2dff9615827e4aa539412fdfa4ced7f8d4f3"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/00.png",
+      "expected": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "actual": "5c3605810ce5d4af53676b8f637862acc92ccdd39927bc18032efe969a8b83eb"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/01.png",
+      "expected": "73d948b64346fd6761289413cc6fea52d5e207e5fdeb333516f17683b59dcfcf",
+      "actual": "78e92746bfa9810c1b924a885e24270a145fba9d98551f182faba36917cff9b0"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/02.png",
+      "expected": "56b5ce4ea97fc93fc726406e37fcc21d5cc882c69a1896dabdc8753cdeae4b6a",
+      "actual": "f11ef122683f2990c2103afdceb608f4d9c809afde2114fc1b9b4e9034e3ed84"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/03.png",
+      "expected": "2ff95f5c973cd5ac43bc89c4eef5a23879e769de3fbcb0bf151cc2f31e7b8907",
+      "actual": "408fb4941729e05dd6b9474f1a3adebea1354ffa7e42018f6a4d4405630551e5"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/04.png",
+      "expected": "13338005e92eb739bead09009eea0b3d3919a5a32bbbb5c0356134947e2279d3",
+      "actual": "b186ee75bc9754855ffb9da703df83745724cb6a6eb9c3572f6add7e920f5255"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/clip.json",
+      "expected": "6b488e02df3a1176aeb143d937128083f941c0d3409309009d2d76e8b714ec06",
+      "actual": "23b2677d1886195b1a74185cdabe247eb1c06724117f2287cb61217bdf00ab4c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native-strip.png",
+      "expected": "ed177dd8c74a1e51e2706ba58d3894abbd175d7dc8fa4b4d9653225322013f0f",
+      "actual": "d8df547515d9933d51a33b92a9d70e1c732608f450f298be18fa0d651042374f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/00.png",
+      "expected": "92e9874b0893400eabafd538e9d732d91e0eb0122648b6a8f7e85ffbdc9fa352",
+      "actual": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/01.png",
+      "expected": "b31bf6e50d22619a110aeabbf0ff11b5c82c93afa2491fd4010778fdd42fdb60",
+      "actual": "7ff3c5c73e6c76a29ce8fd148790aef9e4a3199d008e1f109ebae827c617a8ff"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/02.png",
+      "expected": "39b36aa1916afc8c4c2f47b9d38ca9bd903b014a9e0202854b6f0cdae79b6411",
+      "actual": "48577c4418ac4b63b5195e1fde5cb838b8b003f129e3d20a086af2321bc7cf81"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/03.png",
+      "expected": "33884b829acda31655a429c7a9babf0c7815f5f819c9a82f09702313f2e76806",
+      "actual": "0492beb0b9445bc37e9fe93fd6922b3e65bb57329251fa584c2c114517d8b3c5"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/04.png",
+      "expected": "8c3dbe60093bfaf1c59e22ed3645824b243125972335e8c5c077eecf425c763d",
+      "actual": "0bcdd5367baa4fcf05e9d26dbab25c901d7f110cf1127740a83a920ade8a881a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/00.png",
+      "expected": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "actual": "1af93e397e7faf8258579c8214f7d9906f7e0bea1c465f190da01a5b4c856e34"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/01.png",
+      "expected": "9ce1f6d49da94c28ac5067baa1d7d14f6926436a932ab0c25c66d9baba94327d",
+      "actual": "6aab0f5b315f895b4f00ca4007148277c3f2114ce9ee1cd0de886e5a01d671a7"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/02.png",
+      "expected": "e6017004280251f3d42d057211db6de55dde8f6021437a968a33a9b8cc74403d",
+      "actual": "b0aa51812d59ba61f67d466ab59c8b9101ed544e964ea6173d712b5b1611ccc4"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/03.png",
+      "expected": "d26400e7c2938582e8d1706225fdeccf028e8fc1529570a184858c8e16b303e9",
+      "actual": "52859de842294547f6c6b8b241a617a91470ceae1cca1c904a8a219bd6e2ba05"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/04.png",
+      "expected": "c97a076bd396848a8fdcd30b4e720b2044012d620d396f8f1cc867aab7f3f923",
+      "actual": "bea87057309365a37b1f58a9f5d3b698df4443da0b71160055f0dd8d19d8d1b1"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/05.png",
+      "expected": "465990401af7a523762cd6b8c14555b02eb41e02c60fbb19538b33e254e7d271",
+      "actual": "093f2a6bee10e3de584ba3a1220ebeba870b3d4def4f0bf163aab9a9c5f209b1"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/06.png",
+      "expected": "986081b7887735388ca3f3ca4daf63292dca3d9f8cced6a042d3317444ad21c9",
+      "actual": "40f4fe9091a104000d074e816e99e5924895ef2b423b86c4edc619fdd73a09ce"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/07.png",
+      "expected": "5ab8f69509417733f4216ecde77ffd5dd6561d4d72d329106e73008ec269686b",
+      "actual": "b0c33d1d696e7350c84ad8011d7420eeeefafc0d45c9dcb441dd438bb5106cfb"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/clip.json",
+      "expected": "1ca1ad2545a8533e400436723226fb4e8cd6739c156305b8c0a58bfe44cb343c",
+      "actual": "d2f4a2b752fa87c91206f4780fc385f99b925ea7830e04da9698045c3d46964f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/native-strip.png",
+      "expected": "243583bc552d55a129e502f63d90f9ef7cdcecf41abc902143e9b4e0eff3fc3b",
+      "actual": "bc22c36ee12e3ca323d81768aac703bc30cd4f05d0e70fa1ec79008d2744910b"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/candidate28manifest.json",
+      "expected": "2bfd9ceb993aff6a36c928e4371bbf02089def19d6f8e423edd065e98359ec81",
+      "actual": "51f18754dbb588d9c2c5571b03ca92d5dac8236432137cf14dd5a0976df30e18"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/04.png",
+      "expected": "c4cb021c5b3f15f125961de2a10e15d936aebf4a9ec3d978bd44882581ec40fd",
+      "actual": "1d5972b39f24989ece31ac7681030e8dd2e400888a0669c8748941d9cd8a28ba"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/clip.json",
+      "expected": "9949df3a5f2d206c18e6bf7fb01ea1106eda6a6851c9d533f118f5fe652b9d7b",
+      "actual": "bb68a0a4a29b97039ef618589ad378f70b03d00921a507c17cb83682f5fddb24"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native-strip.png",
+      "expected": "5e046a7458afc63248ce2ae958eefad8f0b97c00df5b156a757dc6bd8716c31f",
+      "actual": "a14719b4a5441b5247f0b49926b4d626e75c34e6c26e9d188af0903463c48fbc"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native/04.png",
+      "expected": "c5cefe64ab4905997b6e4b278bbf00c29ebf73f40c3052130391d498a053233d",
+      "actual": "7258681812c520b1726a032b437dca060f2962150837722ce1147a3aff0c0248"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/02.png",
+      "expected": "b11843a297e6cf3703d31b29efa5cc39f7070c2eac4c81b58e4dd311804d7132",
+      "actual": "918376f3cc14a941d5ef7316cfcfd0abd18111b6502812644c507e76ffaa6e81"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/03.png",
+      "expected": "c997233bb4d81865730e12fc3d0c55365abd44818ce79d78d0c62dec216b1da2",
+      "actual": "e46a04e91230f507a4d53918bc1fa451e440042014f3043b6fdaba95631dea6f"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/clip.json",
+      "expected": "cb9df28ee2d2b9fae69f0d2b7195086343d93ff8f5123e54d86f848b0b819d42",
+      "actual": "723f218aae286c5282acc8b5b6b5f49493ea9c233016f7738612b836c76ca1ea"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native-strip.png",
+      "expected": "757ff52a123426cb1565328b28e0576abd76eadfc460a6ecf482c3ae84e6b2dd",
+      "actual": "c7e62aa114daeb267cdbcfa99cc43b826c22f2229a21b96d12083724c96cd85e"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native/02.png",
+      "expected": "53edcaa4a36206224a5479baafa6a18bbab56c67d324160e78973f07e420f2de",
+      "actual": "7dc35b17b2b7ab3153c83e2eda7bc2a36b87212e3cd8ce0bf9dc9bca35bf22d5"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native/03.png",
+      "expected": "ee7a57e4d7b78dc2a214c95b91c74c69873ba17b4d0a254b7019ca557537cc3d",
+      "actual": "9523f9a6429989ac55298533b64270b65101e3d20981d886e87babbc32ebc681"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/04.png",
+      "expected": "30e59327e3a4f46f8214eaf13c9664991d5b912167ac26e742c2a34e663b11fe",
+      "actual": "3bef76893153832461582fc5e058685aea454fe02b587b49e3857406bad13f40"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/clip.json",
+      "expected": "7ba4bb966da39c9795a07152f407d0467b79f487542c13e7005407f7770e3738",
+      "actual": "f2ab6f18beff9d997a0fe2572804c4b902c0ee9c9c2f22b7f201c45765538920"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/native-strip.png",
+      "expected": "477c6479fbdac5dd2f535e80a7df55b523264f5600999f6285fc87383c9db6e6",
+      "actual": "03654d8bc9fa439675c783766c2fa604e39d456263a4b54a7a532afd1f6701ec"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/native/04.png",
+      "expected": "ad8545349766dd31cbc4fa2ee6abc8b3f03ae0c5c62cd5681ebaa4d3b9707adf",
+      "actual": "7d7ba80128ad4650ada88e3ee9bfc59683b7f221b6f41ec4bef66cbd9debdfbc"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/02.png",
+      "expected": "b6b68bc84ee929bfc12b44ab4d612eedc205164cdc178c28266cec1c8b9e2a2f",
+      "actual": "f5763a56a0615500e7e40f71143b0c5e8add8197792eb06fef0e912315ccf22e"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/03.png",
+      "expected": "0905839785b6d32815c82d79cd1d07a7c834f9711b0b721b1b54fe09ba36d818",
+      "actual": "92b75d1c10ed38c5b9c4034bad6a320865f17a6f8bd3bcc8fa42215a9f0aea60"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/clip.json",
+      "expected": "0abf081efca1698f3bb2be2887104c41ae7532a4f1fb7c2ad6dda9e8789cd0a3",
+      "actual": "59ec99fc5df45c68979f48d3ea3cb1d13addb2edb317d303188b35d45e919765"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/native-strip.png",
+      "expected": "69de786e65f002107576725fe5a2fc8d6b4d4d1d1890f04a3a0f502642bcbf47",
+      "actual": "f976aa119a2fa49b79f0dcb00a5ef8147eba5154184c5442bff8925e30a11858"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/native/02.png",
+      "expected": "a6cf32fb3af2a1c2c986feb869d094556df92dc9a27716dffc58831f1bc6a299",
+      "actual": "546c10693de7219a0026a30a7d0014ce1b6c1139f8f59a664db9aba9ca7c054a"
+    },
+    {
+      "path": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/native/03.png",
+      "expected": "89defc1e1b8fcea28cbdfd58dbca488b3c49d26266cc945716f2e86b10e62d2e",
+      "actual": "a971cbed6a267c07630bded6bc1f9d489f3d748dacea31920ab7ba84de11e02d"
+    },
+    {
+      "path": "characters/orc-v1/sprites/Animations/Walk/walk_front_l_08.png",
+      "expected": "dd291ab4f4d27d117346084f3ca1f2a65763c72b71941e7e3bd7bcf2d0f8177a",
+      "actual": "b21772f734ad0425eb049ff7fc0f69c7bf73c2cb30d6a4dbb1268b43b65f5280"
+    },
+    {
+      "path": "characters/orc-v1/sprites/Animations/Walk/walk_front_r_08.png",
+      "expected": "8cb3576cd2c721b1c9c0f5db8358b06d8b25413dfcbbbf792a71259fd74519b2",
+      "actual": "32b2ec4340bc49f44f33cc14f6afe4ac5da35873fa6afccd6e7ef8dbcef7da76"
+    },
+    {
+      "path": "docs/ARTISTIC_QUALITY_GATES.md",
+      "expected": "8aa82ef3a39c7fa04e5cc49dfe95ef76658faed3d9bcad15f7e6712eb94b923c",
+      "actual": "42293fd1629ff32db953516ae0903d718700c0f1e08086d12bda21becdde332d"
+    },
+    {
+      "path": "docs/ASEPRITE.md",
+      "expected": "1bc38ec233f7a915385c44ce5f6ea89bf4633ca582e5a3076327ad536aeeddd9",
+      "actual": "44eb18f2a4978e2ab73b60aa13b1a924aa94158db7f6a65c9362c2993200ca65"
+    },
+    {
+      "path": "docs/MAIN_ORC_COMBAT_POLISH.md",
+      "expected": "65e404faa4b540f88b0571de562172c44f9114394ca1be023431e75ba4d20334",
+      "actual": "652076920c2beb55944472f717baae7b1689744b86e0a0c36889933de127b596"
+    },
+    {
+      "path": "docs/RECIPES.md",
+      "expected": "0b98348c9aeb60628c1c86e57b0389a13756d27fce87b8214a14b639b3407f18",
+      "actual": "8db4c921241775b15fc6b5cb767219d4acba84b990939545169475c56bae85a7"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "expected": "74fe11647bde433f192b6e8eea913e6756fa3a5e68c679edec2161e60b01e1af",
+      "actual": "9bcc8eb47e332ae41b0009dd46ccb0e15cf59bc1a61261aac22b30a8d1b21fa8"
+    },
+    {
+      "path": "experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.mjs",
+      "expected": "1bcebed26897b4602ab63d585b71cdaff31938365e47ec9637989433c76f8aaa",
+      "actual": "58bf874c1b92ac4ac3a29dce0d9201b7b3e1372c44b016bac1731c17685d6473"
+    },
+    {
+      "path": "experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.test.mjs",
+      "expected": "4a5c94c50e8f5d4a14ca95eb807aa7fb6c9408bec57442d7a683b61cf58efaba",
+      "actual": "995445e0fb03894c95dfd978bdc76c8b413d40325c9e73e3ea3769bc9b0a4c51"
+    },
+    {
+      "path": "handoff/AGENT_CONTEXT.md",
+      "expected": "dd9f78d56ddf004fa8bb66cde22eb6f6219293d1d09807bc3d6811ea293c06e9",
+      "actual": "36e4435fc6fa34d9885488d32fe7b810e63105c7d5e0ae8517b88bc25dfe3aec"
+    },
+    {
+      "path": "test/browser-check-rear-recovery-review.mjs",
+      "expected": "e3ba3111c52ac6cfa433e2a9eb67fe22e83e4a11609c0fe542baf1575df95215",
+      "actual": "c6cd6981345874b2dc77ae774140926aa3be34e5c2409ebcc5738554f85a508c"
+    },
+    {
+      "path": "tools/build-rear-recovery-review.py",
+      "expected": "62f8504d11dfc675d9682024ee55b8a8192e2845f43c8d7161ee677ae7810d3c",
+      "actual": "197f9bb56eb6a4c88cccb60058273b34ec19102198f38e2cc91c5df15474464a"
+    }
+  ]
+}

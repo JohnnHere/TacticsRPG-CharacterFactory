@@ -1,0 +1,14 @@
+Voce vai corrigir um unico defeito real de anatomia na celula front_l/Sword do Orc V1, no candidato V8. Trabalhe no Aseprite como sempre. Nao gere imagem por IA, nao use PixelLab, nao faca commit, nao toque no Unity.
+
+CELULA: characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/clip.json
+ENTREGAVEL: uma celula nova em characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/ com clip.json, frames, camadas, mestres e reexport, no mesmo contrato das outras celulas. Depois eu troco no patch.
+
+O DEFEITO. O QA estatico independente (Terra) revisou o V8 e disse textualmente que a juncao ombro-axila da vista front_l continua escura em F03, F04 e F05 e que nao consegue afirmar que o buraco foi resolvido. Um reparo anterior restaurou 19 pixels que estavam cobertos por uma chapa escura rgb(12,15,18), mas isso tratou o sintoma visivel, nao a causa. O criador ja havia apontado a axila antes e ela continua sendo reprovada. A pergunta que voce precisa responder com pixels e esta: entre o deltoide e o tronco existe continuidade anatomica, ou existe um vao escuro que le como buraco.
+
+COMO DIAGNOSTICAR ANTES DE DESENHAR. Nas fontes salvas em source/, isole a regiao da axila (aprox x 80 a 130, y 60 a 120 no canvas 256) em F03, F04 e F05. Compare com a mesma regiao na vista front_r/Sword e na vista back_l/Sword, que sao a mesma anatomia vista de outro angulo, e com o Idle, onde o braco esta abaixado. Diga em numeros qual e a cor de contorno legitima do membro, qual e a cor de sombra interna, e se a regiao reclamada esta usando uma cor que nao pertence a nenhuma dessas duas.
+
+RESTRICOES DURAS. Nao altere a contagem de quadros, a duracao por quadro, a janela armada nem a posicao da arma. A grade canonica do Sword e 13 quadros com duracoes 30,65,35,50,45,65,35,35,100,55,80,45,90 ms e o impacto em 290 ms; isso tem de continuar identico, porque as quatro direcoes acabaram de ser alinhadas e quebrar isso desfaz a rodada inteira. Nao escureca o personagem. Nao apague highlight de armadura: uma tentativa anterior fez isso e foi rejeitada por medicao. Nao altere front_r/Sword, que e protegido.
+
+PROVA QUE PRECISO. Alem da celula, escreva experiments/main-orc-combat-recovery-v8/qa-armpit-v8/report.md com: quantos pixels mudaram em cada um de F03, F04 e F05; as cores antes e depois; e um recorte ampliado antes e depois da regiao da axila em experiments/main-orc-combat-recovery-v8/zoom/armpit-before.png e armpit-after.png com ampliacao 8x nearest-neighbour. Se voce concluir que nao ha defeito e que a leitura escura e sombra correta, diga isso com a medicao e nao mexa na arte.
+
+Registre a procedencia como autoria programatica ou manual no Aseprite, como sempre.

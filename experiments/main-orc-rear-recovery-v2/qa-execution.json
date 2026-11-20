@@ -1,0 +1,49 @@
+{
+  "reviewerAgentId": "08686c14-6b97-4323-888f-08feb819208c",
+  "provider": "copilot",
+  "model": "gpt-6.1-sol",
+  "startedAtUtc": "2026-10-27T00:27:17.917Z",
+  "freezeId": "0ad263a63d88586dda7c847d7be9f74ba9f855beb2526a5a2fdce7ecd25c9841",
+  "identityEvidence": "Actual Paseo inspect output; independent reviewer, no production ownership",
+  "resultFile": "qa-result.json",
+  "reportFile": "qa-argon-final.md",
+  "attempts": [
+    {
+      "reviewerAgentId": "42f3176f-543a-4572-827e-af63439d5f0d",
+      "provider": "antigravity",
+      "model": "gemini-4-argon-high",
+      "startedAtUtc": "2026-10-26T23:48:29.650Z",
+      "status": "error",
+      "reason": "Provider hard quota before verdict; reset141h46m; partial evidence preserved under qa-argon"
+    },
+    {
+      "reviewerAgentId": "0e20be41-55a6-4896-a138-24972f2e1647",
+      "provider": "cline-glm-api",
+      "model": "glm-5.3",
+      "startedAtUtc": "2026-10-27T00:05:51.261Z",
+      "status": "idle_incomplete",
+      "reason": "Two attempts ended without a verdict/report; continuation ended without assistant response; no pending permissions"
+    },
+    {
+      "reviewerAgentId": "08686c14-6b97-4323-888f-08feb819208c",
+      "provider": "copilot",
+      "model": "gpt-6.1-sol",
+      "startedAtUtc": "2026-10-27T00:27:17.917Z",
+      "status": "idle_revisions_required"
+    },
+    {
+      "reviewerAgentId": "08686c14-6b97-4323-888f-08feb819208c",
+      "provider": "copilot",
+      "model": "gpt-6.1-sol",
+      "startedAtUtc": "2026-10-27T05:12:54.096Z",
+      "freezeId": "0ad263a63d88586dda7c847d7be9f74ba9f855beb2526a5a2fdce7ecd25c9841",
+      "status": "idle_pass",
+      "scope": "QA-01..04 corrected sources, relevant regressions and integrated docs/page; source unchanged during QA"
+    }
+  ],
+  "verdict": "PASS",
+  "next": "Creator artistic review only; no Unity integration or source promotion",
+  "previousRejectedFreeze": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843",
+  "completedAtUtc": "2026-10-27T05:29:06.914Z",
+  "finalCleanup": "Task-owned Hit review server PID34780 closed after QA; ART, knowledge and reviewer idle. Frozen4061files verified unchanged by Root and reviewer."
+}

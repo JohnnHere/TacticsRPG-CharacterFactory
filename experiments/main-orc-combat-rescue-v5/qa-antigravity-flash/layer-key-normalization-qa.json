@@ -1,0 +1,67 @@
+{
+  "contract": "layer-key-normalization-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T18:27:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "task": "Layer key normalization verification (path -> png)",
+    "clips": [
+      {
+        "clip": "back_r/Sword",
+        "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json",
+        "preNormPath": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/pre-normalization/full-back-r-sword.clip.json",
+        "clipSha256Approved": "eb379d1d699ab51203ec633d645a29d9c63e377e36fe8b15b8fda44fc1a9aac6",
+        "clipSha256Confirmed": "a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739"
+      },
+      {
+        "clip": "back_l/Axe",
+        "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json",
+        "preNormPath": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/pre-normalization/full-back-l-axe.clip.json",
+        "clipSha256Approved": "9f7d01e726f3f6dc63b24aeb23da97ac9cad29a7fd31572ccdf59a3ee384a0f3",
+        "clipSha256Confirmed": "b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6"
+      }
+    ]
+  },
+  "verdict": "NORMALIZATION_CONFIRMED",
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "pixellab_note": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado",
+    "cost_usd": "não informado"
+  },
+  "verifications": {
+    "back_r_Sword": {
+      "preNormHashMatch": true,
+      "currentHashMatch": true,
+      "layersRenamed": 48,
+      "layersChecked": 48,
+      "allLayersUsePng": true,
+      "noLayersUsePath": true,
+      "allLayerFilesExist": true,
+      "allLayerHashesMatchDeclared": true,
+      "frameSha256Unchanged": true,
+      "frameNativeSha256Unchanged": true,
+      "durationMsUnchanged": true,
+      "weaponVisibleUnchanged": true,
+      "mastersAndStripsMatch": true
+    },
+    "back_l_Axe": {
+      "preNormHashMatch": true,
+      "currentHashMatch": true,
+      "layersRenamed": 48,
+      "layersChecked": 48,
+      "allLayersUsePng": true,
+      "noLayersUsePath": true,
+      "allLayerFilesExist": true,
+      "allLayerHashesMatchDeclared": true,
+      "frameSha256Unchanged": true,
+      "frameNativeSha256Unchanged": true,
+      "durationMsUnchanged": true,
+      "weaponVisibleUnchanged": true,
+      "mastersAndStripsMatch": true
+    }
+  },
+  "confirmedHashes": {
+    "full_back_r_sword_clip_json": "a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739",
+    "full_back_l_axe_clip_json": "b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "jobs": [
+    {
+      "label": "sword",
+      "jobId": "96e36d0f-553a-4a7c-81da-ef0fc20dcdab",
+      "costGenerationsFromReceipt": 3,
+      "seed": 61029,
+      "tool": "animate_with_skeleton_v3",
+      "frames": 12,
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/sword-submit.json",
+      "request": "experiments/main-orc-artistic-reconstruction-v6/rear/sword-request.json",
+      "requestSha256": "68c6f4d07d8dfbfb6a92e3209be69b00883a495af06d5c3634c1f04021c8c9c5",
+      "use": "unused raw foundation; local-arm attempt rejected by DEV"
+    },
+    {
+      "label": "axe",
+      "jobId": "cb8d19e9-9862-42ca-a488-18dd2e6bbef8",
+      "costGenerationsFromReceipt": 3,
+      "seed": 62029,
+      "tool": "animate_with_skeleton_v3",
+      "frames": 12,
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/axe-submit.json",
+      "request": "experiments/main-orc-artistic-reconstruction-v6/rear/axe-request.json",
+      "requestSha256": "3115fb3be3231b0eee42487fae2fe5cc4958f4d48ad6d19f92758a22e162691c",
+      "use": "unused raw foundation; local-arm attempt rejected by DEV"
+    },
+    {
+      "label": "sword-reference2",
+      "jobId": "61ca245f-d86e-4ca8-a8eb-7886f5732df7",
+      "costGenerationsFromReceipt": 3,
+      "seed": 61129,
+      "tool": "animate_with_skeleton_v3",
+      "frames": 12,
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/sword-reference2-submit.json",
+      "request": "experiments/main-orc-artistic-reconstruction-v6/rear/sword-reference2-request.json",
+      "requestSha256": "fdc1d305518b2ee515c3e48ca7227649dbaf0dea958f690f25b5825b86ac051b",
+      "use": "selected body foundation, with documented local Aseprite finishing"
+    },
+    {
+      "label": "axe-reference2",
+      "jobId": "8e309cdd-cd08-45e6-a0d7-2825842e286e",
+      "costGenerationsFromReceipt": 3,
+      "seed": 62129,
+      "tool": "animate_with_skeleton_v3",
+      "frames": 12,
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/axe-reference2-submit.json",
+      "request": "experiments/main-orc-artistic-reconstruction-v6/rear/axe-reference2-request.json",
+      "requestSha256": "3ba6fd4fde324e48df7f4545f0c3f2da4eb942ad500d755e7521d6cedc3f4138",
+      "use": "selected body foundation, with documented local Aseprite finishing"
+    }
+  ],
+  "jobCount": 4,
+  "outputFrames": 48,
+  "ownGenerationsFromJobReceipts": 12,
+  "snapshots": [
+    {
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/balance-before.json",
+      "generationsRemaining": 1336.7,
+      "creditBalanceUSD": 0.0
+    },
+    {
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/balance-after.json",
+      "generationsRemaining": 1321.7,
+      "creditBalanceUSD": 0.0
+    },
+    {
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/balance-reference2-before.json",
+      "generationsRemaining": 1312.7,
+      "creditBalanceUSD": 0.0
+    },
+    {
+      "receipt": "experiments/main-orc-artistic-reconstruction-v6/rear/balance-final.json",
+      "generationsRemaining": 1306.7,
+      "creditBalanceUSD": 0.0
+    }
+  ],
+  "observedAccountDelta": 30.0,
+  "accountDeltaBeyondOwnReceipts": 18.0,
+  "attributionNote": "Account is shared with other activity. Only these four job receipts are attributed to rear DEV; the additional observed account delta is not attributed without corresponding receipts. No token or dollar usage estimate.",
+  "purchases": false
+}

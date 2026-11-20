@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-rear-reconstruction-v4",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "front_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "ppu": 100,
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    65,
+    35,
+    80,
+    155,
+    35,
+    115,
+    110,
+    130,
+    50,
+    90,
+    100
+  ],
+  "totalDurationMs": 1005,
+  "master": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/source/composite.aseprite",
+  "masterSha256": "cc94d939887c8f3549e1c61e03b1201bb69221e87ad90e174427ffa06d730d3a",
+  "bodyMaster": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/source/body.aseprite",
+  "bodyMasterSha256": "ed99016e204d0e484dc55572cd12018e21aae3ec203d5a1b0d9f3b26e909c54e",
+  "handMaster": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-hand-front.aseprite",
+  "handMasterSha256": "3615c686ed21475f5f51a91871da57647c9ec7f4e81fe45251a3830c47c15896",
+  "strip": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native-strip.png",
+  "stripSha256": "ba6fa7c40759bdeaa1302ac9fcaa90505ff65c2ad483efce6d3824113eb65f33",
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.png",
+    "master": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.aseprite",
+    "spriteSha256": "e28a9477ad29af127ddeabad754ee0e231be12b96437bfe8aec49d444f80581c",
+    "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "source": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.aseprite",
+    "sourceSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "definition": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/weapon.json",
+    "scale": 1
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/00.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "durationMs": 40,
+      "phase": "rest",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/00.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/00.png",
+      "nativeSha256": "4a50582c2987504d1a9b1d5ddc62ed487773b0df8af92a075c163a6bec59fa4f"
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/01.png",
+      "sha256": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/01.png",
+          "sha256": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/01.png",
+      "nativeSha256": "06ea1f13ef93479282b361faf3f70fcc9053ca1a3f75d74cd15d4bf7666c5889"
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/02.png",
+      "sha256": "82a8c30a04ace9ffbc26aafbca46720187e0811cc6c4d4bde80b97e45d81ab1e",
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        154,
+        131
+      ],
+      "rotationDeg": 60,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/02.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/02.png",
+          "sha256": "4d39821a38cd2d248cfb887265ff931b0b70c667a26a7de6e4bc6872babfa1e2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/02.png",
+          "sha256": "6879d80b4148b227c0b171ccf9f17939c9a9d032f9b4d61d793de9456e57b09b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/02.png",
+          "sha256": "cff09f14645301888c78b1aad71d6c8b4d97cbb13dedca3000754673fac60121"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/02.png",
+      "nativeSha256": "5c3317a8c5469c1621a51793d1d7876142975de1217fd37146fac3dc695a21a5",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/03.png",
+      "sha256": "17123325649436ef99b0da73f88f3cbe35160839eb5bacca18de624f2cd005d9",
+      "durationMs": 80,
+      "phase": "raise",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        118
+      ],
+      "rotationDeg": 35,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/03.png",
+          "sha256": "9e25281c626ce764af9f81a143070075de14d9464729c48a4f6760c3d08f7f9c"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/03.png",
+          "sha256": "36e45010a79f3c5652ff205367e538033b7365e28313eb22d9ce371f4fe66d0c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/03.png",
+          "sha256": "af7d72de553ff99e2cf413eae5aa8be2a3921dd4ef4a6912b0d2ec69a3a8dee7"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/03.png",
+      "nativeSha256": "35e1ec2d73a57d825eae95255fbca675dd61a891f4bfaa0a0cc25f028b8212f9",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/04.png",
+      "sha256": "d7a14e879f564a0a63771d7e3bdd5586b1cfd7d0d044d9329a70c0c662e5c786",
+      "durationMs": 155,
+      "phase": "cocked-shoulder",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        100
+      ],
+      "rotationDeg": 10,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/04.png",
+          "sha256": "489ad296bc79f950db00b880afe9d9c3883944d269a79c2414bdc29261840aac"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/04.png",
+          "sha256": "41c1da157633087d7155354170ae3eb401cb6b5d96af9eacafcb3bc9024fd3bb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/04.png",
+          "sha256": "1e0e5e671ce81a94a7e9babcf1dc5fc60133af323f57d61bf6319c124913b3fd"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/04.png",
+          "sha256": "0ae22d2e67cd9ec3625b98254ea296569225f47c755d56e0c3c38e4580a010ab"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/04.png",
+      "nativeSha256": "88d344641d14be138d66c2e1c38eab51271d6bc99a83ad470f04e1236e629bd2",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/05.png",
+      "sha256": "7035d1bb094d2bffacec05790b2302f66f6e5269fe856d76cc0591e96138f910",
+      "durationMs": 35,
+      "phase": "release",
+      "weaponVisible": true,
+      "rightGrip": [
+        109,
+        119
+      ],
+      "rotationDeg": 325,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/05.png",
+          "sha256": "9295f35ff370906d0c41ad9bae50dd2ab0e8e9d83d10ddfc0bd9e7a126f7b4ca"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/05.png",
+          "sha256": "faf1821ae8641f2adcb5c299dbd5a2b03f12ee6da310dc6dadcd496ba0e61b6c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/05.png",
+          "sha256": "cbbcb1736556b7409a7986814a8cbe9b338bca1bd693250fcf49ceaebdedb6b6"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/05.png",
+      "nativeSha256": "4e91393ec1e8375acbed16687e9f0f18e1e437cee4ca169a6eaccd80309db886",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/06.png",
+      "sha256": "d6a744127941dc4c8572d008254e295a5960bb26d60d765ea309c49357b59c46",
+      "durationMs": 115,
+      "phase": "impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        107,
+        143
+      ],
+      "rotationDeg": 275,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/06.png",
+          "sha256": "d6635ef9e006a0738ef106d06b63c9664a3f1c062a1de437d287341ae69806d5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/06.png",
+          "sha256": "dae74dc37c29bc7f3c3369fa086f0f8fa9b3bf71bd82442716bdddc254158cf8"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/06.png",
+          "sha256": "2da91c494616a66e6a7ef029b94065b427f0c4a8da0ba4e1d7587b2691783a31"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/06.png",
+      "nativeSha256": "ee7a57e4d7b78dc2a214c95b91c74c69873ba17b4d0a254b7019ca557537cc3d",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/07.png",
+      "sha256": "6cfa865487f032c2db4ac3387cd51515e4bbf9a5cf2a00d464a4930fb1859622",
+      "durationMs": 110,
+      "phase": "follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        117,
+        148
+      ],
+      "rotationDeg": 270,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/07.png",
+          "sha256": "df37a4d497e968b85016b59abaf9909c47af792cd9dfe892091e1b731c12c616"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/07.png",
+          "sha256": "ad6b82a2c6ae0a23c05efa79a0f1b7145247406b81539dfc751af180fc994917"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/07.png",
+          "sha256": "76bb6082cd38b90d7941009bcd276d22c037bbb1e6ef84cf96ca1b119823e18e"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/07.png",
+      "nativeSha256": "f12fa6ba123d2f328e581b92ca5a30dbd2be6c5d53438daf7cafacee506f7d82",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 8,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/08.png",
+      "sha256": "e7e5e579d0a833393147b49c39bd31b536aa49274c79bf4408ddf2ef45545e81",
+      "durationMs": 130,
+      "phase": "recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        126,
+        148
+      ],
+      "rotationDeg": 280,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/08.png",
+          "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/08.png",
+          "sha256": "127129f09afc4b1a4a209228b1b0cfd1ed5e524b554984617665a41450e1b2ef"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/08.png",
+          "sha256": "ae436bcf0f842fa6562ae007583ce634e72240c0d647dc285d997db036b0de96"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/08.png",
+      "nativeSha256": "6fee6cc5721e6c855a19222340c9f6357d513fa675f1d512d9392b8d45a452d0",
+      "flipBit": true,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 9,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/09.png",
+      "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae",
+      "durationMs": 50,
+      "phase": "action-complete",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/09.png",
+          "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/09.png",
+      "nativeSha256": "6fee6cc5721e6c855a19222340c9f6357d513fa675f1d512d9392b8d45a452d0"
+    },
+    {
+      "index": 10,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/10.png",
+      "sha256": "b43b2e3558d0914f31ff988f28fff8490778c6e212699f3a3c11b7d38fb3a839",
+      "durationMs": 90,
+      "phase": "after-attack-settle",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/10.png",
+          "sha256": "b43b2e3558d0914f31ff988f28fff8490778c6e212699f3a3c11b7d38fb3a839"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/10.png",
+      "nativeSha256": "ab3dcb8cba984dc679f238ae313638f16496601c52bada65571cab25e099a54f"
+    },
+    {
+      "index": 11,
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/11.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "durationMs": 100,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/body/11.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/native/11.png",
+      "nativeSha256": "4a50582c2987504d1a9b1d5ddc62ed487773b0df8af92a075c163a6bec59fa4f"
+    }
+  ],
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "hideAfterAction": true,
+  "contactEvent": {
+    "frame": 6,
+    "timeMs": 410,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false,
+  "nativeMaster": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/source/native.aseprite",
+  "nativeMasterSha256": "91f2f85886689d9fe16eebb0c40d09fd8c07b6a687b0bb5299b312906555650d",
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "compositeStrip": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/composite-strip.png",
+  "parentClip": "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/clip.json",
+  "parentClipSha256": "3412b5cb35ac615e7b84a64a2148a454e6b2519352786e2756e3e6efa7aff2ef",
+  "eligibleForIntegration": false,
+  "integrationStatus": "ISOLATED_MATERIAL_AND_SCALP_REFINEMENT_RECONSTRUCTION_UNRESOLVED",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/clip.json",
+    "parentMaster": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-attack.aseprite",
+    "parentMasterSha256": "5b19cac24dcceb2218a05bd6009a0debb847719b205d4c0a8989aa8169ade3eb",
+    "authoringScript": "experiments/main-orc-rear-reconstruction-v4/dev/compose-material-forks.lua",
+    "weaponArtScript": "experiments/main-orc-rear-reconstruction-v4/dev/author-weapons.lua",
+    "paidGenerationCalls": 0,
+    "bodyArtChanged": false,
+    "bodyArtScope": "body RGBA unchanged",
+    "scalpCoordinateEvidence": "experiments/main-orc-rear-reconstruction-v4/dev/scalp-outline-points.json",
+    "handArtChanged": false,
+    "choreographyChanged": false,
+    "timingChanged": false,
+    "sourceRegistration": "experiments/main-orc-rear-reconstruction-v4/dev/weapon-registration.json",
+    "priorRearContourOverrides": "Exact old dark weapon pixels retained only where layer differs from raw source; no new luma filter applied. Quantities in material-composition-evidence.json."
+  },
+  "nativeStripSha256": "ba6fa7c40759bdeaa1302ac9fcaa90505ff65c2ad483efce6d3824113eb65f33",
+  "compositeStripSha256": "3dddf875ece8d1e4520869a5c849f613b57221be3f06a491f6a073d5e4e6e91b"
+}

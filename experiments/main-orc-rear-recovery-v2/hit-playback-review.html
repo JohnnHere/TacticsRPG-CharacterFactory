@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Orc V1 Hit — actual production PNG playback</title>
+<style>
+ body{margin:24px;background:#202127;color:#eee;font:14px system-ui,sans-serif} main{display:grid;grid-template-columns:180px auto;gap:24px;align-items:start}
+ canvas{image-rendering:pixelated;background:#090a0d;border:1px solid #555} label{display:block;margin:12px 0} button,select{font:inherit;margin:4px;padding:6px 10px} #readout{font-variant-numeric:tabular-nums;margin-top:12px;line-height:1.6} .note{color:#cbd0d9;max-width:760px}
+</style>
+<h1>Orc V1 Hit · current production exports</h1>
+<p class="note">Frames load from each clip’s declared <code>nativePng</code> path. Canvas scales display only; timings remain the clip’s source milliseconds divided by playback speed.</p>
+<main><section>
+ <label>Direction <select id="direction"><option>front_r</option><option>front_l</option><option>back_r</option><option>back_l</option></select></label>
+ <label>Playback <select id="speed"><option value="1">1×</option><option value="0.75">0.75×</option><option value="0.5">0.5×</option></select></label>
+ <label>Display <select id="scale"><option value="128">128px native</option><option value="64">64px tactical scale</option><option value="512">512px zoom (4×)</option></select></label>
+ <button id="play">Play / replay</button><button id="pause">Pause</button>
+ <button id="prev">Previous</button><button id="next">Next</button>
+ <div id="readout"></div>
+ </section><canvas id="sprite" width="128" height="128" style="width:128px;height:128px"></canvas></main>
+<script>
+const dirs=['front_r','front_l','back_r','back_l'];
+let images=[],clip=null,frame=0,timer=null,started=0,elapsed=0;
+const canvas=document.querySelector('#sprite'),ctx=canvas.getContext('2d');
+function draw(){ctx.clearRect(0,0,128,128);if(images[frame]?.complete)ctx.drawImage(images[frame],0,0);const scale=+document.querySelector('#scale').value;canvas.style.width=scale+'px';canvas.style.height=scale+'px';readout()}
+function readout(){const ms=clip?.durationsMs?.[frame]??0,phase=clip?.frames?.[frame]?.phase??`frame-${frame}`;document.querySelector('#readout').innerHTML=`${clip?.direction??''} · frame ${String(frame).padStart(2,'0')} / ${String((clip?.frames?.length??1)-1).padStart(2,'0')}<br>${phase} · ${ms}ms source<br>speed ${document.querySelector('#speed').value}× · ${Math.round(ms/(+document.querySelector('#speed').value))}ms shown`}
+async function load(){clearTimeout(timer);const d=document.querySelector('#direction').value;clip=await fetch(`/characters/orc-v1/source/complete-v1/${d}/Hit/clip.json`).then(r=>r.json());images=clip.frames.map(f=>{const im=new Image();im.src='/'+f.nativePng;return im});await Promise.all(images.map(im=>im.complete?Promise.resolve():new Promise(resolve=>{im.onload=resolve;im.onerror=resolve})));frame=0;elapsed=0;draw()}
+function next(){if(frame<4){frame++;draw()}}
+function play(){clearTimeout(timer);frame=0;elapsed=0;draw();const tick=()=>{const wait=clip.durationsMs[frame]/(+document.querySelector('#speed').value);timer=setTimeout(()=>{elapsed+=wait;if(frame===clip.frames.length-1){draw();return}frame++;draw();tick()},wait)};tick()}
+document.querySelector('#direction').onchange=load;document.querySelector('#speed').onchange=draw;document.querySelector('#scale').onchange=draw;
+document.querySelector('#play').onclick=play;document.querySelector('#pause').onclick=()=>clearTimeout(timer);document.querySelector('#prev').onclick=()=>{clearTimeout(timer);frame=Math.max(0,frame-1);draw()};document.querySelector('#next').onclick=()=>{clearTimeout(timer);next()};load();
+</script>

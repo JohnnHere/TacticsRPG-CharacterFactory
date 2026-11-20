@@ -1,0 +1,277 @@
+{
+  "direction": "front_r",
+  "sourceClip": "C:/Users/Jo\u00e3o Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory/characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_r-sword/clip.json",
+  "reason": "front_r stores rotationDeg but grip=null, so the pivot had to be derived from the art",
+  "method": [
+    "rigid-transform centroid",
+    "exact integer search +/-4 px and +/-1 deg"
+  ],
+  "declaredGripMatchesFit": {
+    "6": true
+  },
+  "fitGripTable": {
+    "2": [
+      103,
+      130
+    ],
+    "3": [
+      90,
+      119
+    ],
+    "4": [
+      98,
+      100
+    ],
+    "5": [
+      98,
+      89
+    ],
+    "6": [
+      127,
+      101
+    ],
+    "7": [
+      155,
+      114
+    ],
+    "8": [
+      158,
+      132
+    ],
+    "9": [
+      159,
+      148
+    ],
+    "10": [
+      133,
+      147
+    ],
+    "11": [
+      110,
+      150
+    ]
+  },
+  "usedByAuthorLua": {
+    "2": [
+      103,
+      130
+    ],
+    "3": [
+      90,
+      119
+    ],
+    "4": [
+      98,
+      100
+    ],
+    "5": [
+      98,
+      89
+    ],
+    "6": [
+      127,
+      101
+    ],
+    "7": [
+      155,
+      114
+    ],
+    "8": [
+      158,
+      132
+    ],
+    "9": [
+      159,
+      148
+    ],
+    "10": [
+      134,
+      147
+    ],
+    "11": [
+      110,
+      150
+    ]
+  },
+  "fitVsUsed": {
+    "10": {
+      "fit": [
+        133,
+        147
+      ],
+      "used": [
+        134,
+        147
+      ]
+    }
+  },
+  "rotationPolicy": "author.lua uses the declared rotationDeg for every frame; the fit preferred 117 deg on frame 10 by 1 px of symmetric difference, which is inside the source resampling noise, so the declared angle was kept.",
+  "totalSymmetricDifferencePx": 643,
+  "totalWeaponPx": 7057,
+  "note": "The residual is the source art itself: it is not a pixel-exact rigid rotation of recruit-sword.png because Aseprite resampled the rotation, so a ~1 px contour band differs at every angle. Widening the search to +/-4 deg does not reduce it.",
+  "rows": [
+    {
+      "index": 2,
+      "declaredRotationDeg": 320,
+      "declaredGrip": null,
+      "centroidGrip": [
+        103,
+        130
+      ],
+      "adoptedGrip": [
+        103,
+        130
+      ],
+      "adoptedRotationDeg": 320,
+      "symmetricDifferencePx": 130,
+      "weaponPx": 708
+    },
+    {
+      "index": 3,
+      "declaredRotationDeg": 340,
+      "declaredGrip": null,
+      "centroidGrip": [
+        90,
+        119
+      ],
+      "adoptedGrip": [
+        90,
+        119
+      ],
+      "adoptedRotationDeg": 340,
+      "symmetricDifferencePx": 69,
+      "weaponPx": 703
+    },
+    {
+      "index": 4,
+      "declaredRotationDeg": 350,
+      "declaredGrip": null,
+      "centroidGrip": [
+        98,
+        100
+      ],
+      "adoptedGrip": [
+        98,
+        100
+      ],
+      "adoptedRotationDeg": 350,
+      "symmetricDifferencePx": 26,
+      "weaponPx": 705
+    },
+    {
+      "index": 5,
+      "declaredRotationDeg": 0,
+      "declaredGrip": null,
+      "centroidGrip": [
+        98,
+        89
+      ],
+      "adoptedGrip": [
+        98,
+        89
+      ],
+      "adoptedRotationDeg": 0,
+      "symmetricDifferencePx": 0,
+      "weaponPx": 706
+    },
+    {
+      "index": 6,
+      "declaredRotationDeg": 16,
+      "declaredGrip": [
+        127,
+        101
+      ],
+      "centroidGrip": [
+        127,
+        101
+      ],
+      "adoptedGrip": [
+        127,
+        101
+      ],
+      "adoptedRotationDeg": 16,
+      "symmetricDifferencePx": 41,
+      "weaponPx": 706
+    },
+    {
+      "index": 7,
+      "declaredRotationDeg": 32,
+      "declaredGrip": null,
+      "centroidGrip": [
+        155,
+        114
+      ],
+      "adoptedGrip": [
+        155,
+        114
+      ],
+      "adoptedRotationDeg": 32,
+      "symmetricDifferencePx": 104,
+      "weaponPx": 704
+    },
+    {
+      "index": 8,
+      "declaredRotationDeg": 80,
+      "declaredGrip": null,
+      "centroidGrip": [
+        158,
+        132
+      ],
+      "adoptedGrip": [
+        158,
+        132
+      ],
+      "adoptedRotationDeg": 80,
+      "symmetricDifferencePx": 26,
+      "weaponPx": 705
+    },
+    {
+      "index": 9,
+      "declaredRotationDeg": 128,
+      "declaredGrip": null,
+      "centroidGrip": [
+        159,
+        148
+      ],
+      "adoptedGrip": [
+        159,
+        148
+      ],
+      "adoptedRotationDeg": 127,
+      "symmetricDifferencePx": 79,
+      "weaponPx": 710
+    },
+    {
+      "index": 10,
+      "declaredRotationDeg": 118,
+      "declaredGrip": null,
+      "centroidGrip": [
+        134,
+        147
+      ],
+      "adoptedGrip": [
+        133,
+        147
+      ],
+      "adoptedRotationDeg": 117,
+      "symmetricDifferencePx": 147,
+      "weaponPx": 704
+    },
+    {
+      "index": 11,
+      "declaredRotationDeg": 100,
+      "declaredGrip": null,
+      "centroidGrip": [
+        110,
+        150
+      ],
+      "adoptedGrip": [
+        110,
+        150
+      ],
+      "adoptedRotationDeg": 100,
+      "symmetricDifferencePx": 21,
+      "weaponPx": 706
+    }
+  ]
+}

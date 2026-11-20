@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "patchId": "orc-v1.combat-rescue-v5.final-weapon-clips",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "revision": "main-orc-combat-rescue-v5",
+  "parentManifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+  "parentManifestSha256": "f250f7a11ceb0e851c9a3c34f8c20e75c48da5a04e0a2229933945298aaf4017",
+  "scope": "Eight final equipped Sword/Axe attack cycles: four preserved front bodies with new anatomical grips and four reconstructed rear bodies with independent weapons.",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "weapons": {
+    "Sword": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "Axe": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json"
+  },
+  "cells": [
+    {
+      "direction": "front_r",
+      "action": "Sword",
+      "cellId": "front_r/Sword",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+      "clipSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+      "provenance": "Aseprite Lua in grip-specialist/full-front-r-sword; original front body and timing preserved; validated F02/F06/F08 layers reused exactly.",
+      "notes": "Front sword cycle; independent QA accepted the full 13-frame cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/front-r-sword-full-result.json"
+      ],
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW"
+    },
+    {
+      "direction": "front_l",
+      "action": "Sword",
+      "cellId": "front_l/Sword",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/clip.json",
+      "clipSha256": "56eb4daeb43b35cbb0a50a3b1cc145eba802c5b408b96bf76fa90c3219eb4681",
+      "provenance": "Aseprite Lua in grip-specialist/front_l-Sword-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front sword cycle; independent QA accepted the full 13-frame cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ],
+      "qaVerdict": "READY_FOR_NEXT_STAGE"
+    },
+    {
+      "direction": "front_r",
+      "action": "Axe",
+      "cellId": "front_r/Axe",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_r-Axe-full/clip.json",
+      "clipSha256": "dca0ef7e000be50cf8cf39ca69c3b55324ea1a4857a18e1b15278bbae6e3d0f5",
+      "provenance": "Aseprite Lua in grip-specialist/front_r-Axe-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front axe cycle; independent QA accepted the full 12-frame cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ],
+      "qaVerdict": "READY_FOR_NEXT_STAGE"
+    },
+    {
+      "direction": "front_l",
+      "action": "Axe",
+      "cellId": "front_l/Axe",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Axe-full/clip.json",
+      "clipSha256": "fa3c620d69d7df05bf0afab1fffa35fe37d861feacfc4124cbafa7e9763d7c5c",
+      "provenance": "Aseprite Lua in grip-specialist/front_l-Axe-full; original front body and timing preserved; independent item composition.",
+      "notes": "Front axe cycle; independent QA accepted the full 12-frame cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/qa-result.json"
+      ],
+      "qaVerdict": "READY_FOR_NEXT_STAGE"
+    },
+    {
+      "direction": "back_r",
+      "action": "Axe",
+      "cellId": "back_r/Axe",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe/clip.json",
+      "clipSha256": "66f4b0e1e6ec60dafc493620e9beb68e5fbb42791ccd53be671a52f9e73f8c9e",
+      "provenance": "Rear body reconstructed in body-specialist/full-back-r-axe (BODY-01 repair1 preserved); grip composed in rear-grip-flash/full-back-r-axe.",
+      "notes": "Rear axe cycle built on the reconstructed overhead body; independent QA accepted keys and full cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-axe-full-result.json"
+      ],
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW"
+    },
+    {
+      "direction": "back_l",
+      "action": "Sword",
+      "cellId": "back_l/Sword",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json",
+      "clipSha256": "9a7b2b3ba87027d3ac7e0e1a86582a9769549f6154800b87a572ab460a9497ef",
+      "provenance": "Rear body from body-specialist/final-cycles/repair1/back_l-Sword-full (silhouette hook removed); grip composed in rear-grip-flash/full-back-l-sword.",
+      "notes": "Rear sword cycle built on the repaired diagonal-cut body; independent QA accepted the full cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-sword-l-back-full-result.json"
+      ],
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW"
+    },
+    {
+      "direction": "back_r",
+      "action": "Sword",
+      "cellId": "back_r/Sword",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json",
+      "clipSha256": "a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739",
+      "provenance": "Rear body from body-specialist/glm-fixes/back_r-Sword-full (F06 residuals and chainmail restored); grip composed in rear-grip-flash/full-back-r-sword.",
+      "notes": "Rear sword cycle built on the escalated body repair; pending final independent QA of the composed cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/layer-key-normalization-qa.json"
+      ],
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW"
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe",
+      "cellId": "back_l/Axe",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json",
+      "clipSha256": "b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6",
+      "provenance": "Rear body from body-specialist/glm-fixes/back_l-Axe-full (F02 arm reauthored after two rejections); grip composed in rear-grip-flash/full-back-l-axe.",
+      "notes": "Rear axe cycle built on the escalated body repair; pending final independent QA of the composed cycle.",
+      "qaEvidence": [
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/rear-two-remaining-result.json",
+        "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/layer-key-normalization-qa.json"
+      ],
+      "qaVerdict": "READY_FOR_MATRIX_REVIEW"
+    }
+  ]
+}

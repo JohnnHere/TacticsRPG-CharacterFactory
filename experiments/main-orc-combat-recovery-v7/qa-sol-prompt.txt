@@ -1,0 +1,44 @@
+# QA independente — candidato V7
+
+Manifesto: `characters/orc-v1/source/combat-recovery-v7/candidate28manifest.json`
+SHA-256: `fde1fe23f2d637589b6abef6b9b946b6c4370cc8ae5f3927525fb038397b2579`
+13 células ativas, 15 aliases, 232 quadros. Pai comparativo: o V6 rejeitado (`artistic-reconstruction-v6`, `5d68b52d…`).
+
+Você já reprovou o V6 e seus dois achados foram tratados. **Não reaproveite parecer anterior**: julgue esta versão.
+
+Página real: `Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao de combate V7/index.html` (1×, 0,5×, passo, zoom, escala tática, before/after contra o V6).
+
+## O que mudou nesta rodada, e por quê
+
+O criador rejeitou o V6 com estas objeções — esta é a matriz que você deve confrontar:
+
+| Objeção do criador | O que foi feito |
+|---|---|
+| `back_l/Sword` **ataca de lado** em vez de levantar e golpear | Reconstrução **manual** completa no Aseprite (15 quadros, 860 ms): ápice com ponta 48 px acima do crânio, punho 14 px acima da linha do ombro, espaço negativo 4 px, cotovelo 68,41°. Zero gerações. Pipeline generativo foi abandonado após 23 gerações sem ciclo. |
+| `back_l/Axe` severamente antinatural | Reconstrução manual própria do machado (15 quadros, 1230 ms), massa na cabeça conduzindo. |
+| **Flash branco** no lado esquerdo no Sword traseiro | Causa provada: bookends byte-idênticos ao corpo do Idle (`245ce5ce71ce…`) com highlight de ombro que o ataque não tem. Normalizados: F00 67→7, F11 67→5, igual aos vizinhos, nos dois clipes `back_r`; os `back_l` novos já nasceram consistentes (14/14 e 23/23). |
+| `back_r/Axe` com **pegada underhand** | Corrigida na própria luva, com causa raiz medida (relação palma–cabo). |
+| Axila de `front_l/Sword` ainda não resolvida | 19 px restaurados às cores nativas — incluindo desfazer uma chapa de tinta chapada e um degrau retrógrado que a tentativa anterior (minha escalada) havia introduzido. |
+| Contornos claros frontais | **Resultado negativo fundamentado**: os 14 pixels de borda são rim-light legítimo, todos já existentes no V5 na mesma coordenada. Nenhuma alteração feita. |
+| `front_r/Sword` | PROTEGIDO — coreografia preservada. |
+
+## Sua tarefa
+
+1. **Matriz** `Objeção → célula/quadro → evidência → PASS / FAIL / NÃO VERIFICADO` para os itens acima.
+2. **Critério central do criador**: alternando entre `front_r`, `front_l`, `back_r` e `back_l`, reconhece-se a MESMA técnica de espada e de machado adaptada à perspectiva? Isso vale mais que qualquer teste estrutural. Se as quatro direções ainda parecerem quatro ataques desconectados, isso é FAIL.
+3. Confirme ou refute numericamente: ponta acima do crânio no ápice de `back_l/Sword`; ausência de salto de luminância nos bookends (transições F00→F01 e F10→F11 na faixa dos demais quadros); nenhum pixel de arma abaixo de `groundY`; bookends desarmados; aliases intactos.
+4. Procure **regressões** nas células não alvo e nas frontais preservadas.
+5. Se puder reproduzir em navegador, assista 1× e 0,5× e registre; se não puder, marque os critérios temporais como NÃO VERIFICADO — há um revisor temporal separado para isso.
+
+## Evidência técnica existente (confira coerência, não repita em massa)
+
+- `experiments/main-orc-combat-recovery-v7/technical-validation.json` — TECHNICAL_PASS 28/232/994
+- `.../source-reexports/fde1fe23.../result.json` — 36 mestres / 388 quadros reabertos no Aseprite
+- `.../browser-checks/` — 21/21
+- `.../forensics/white-flash.json|md`, `.../frontal/report.md`, `.../rear-alt/report.md`, `.../rear-r/report.md`, `.../rear-r-flashfixed/report.md`
+
+## Registro
+
+Grave `experiments/main-orc-combat-recovery-v7/qa-sol/result.json` e `report.md`. Inclua hash do manifesto, matriz, achados com célula/quadro/coordenadas, limitações, e veredito: `READY_FOR_CREATOR_REVIEW`, `ARTISTIC_ISSUES_FOUND` (com severidade) ou `INCONCLUSIVE`.
+
+Não edite arte, fontes, manifesto, docs ou Unity; não crie subagentes; zero PixelLab; custo LLM não informado. Você aponta defeitos e libera o pacote — nunca aprova em nome do criador.

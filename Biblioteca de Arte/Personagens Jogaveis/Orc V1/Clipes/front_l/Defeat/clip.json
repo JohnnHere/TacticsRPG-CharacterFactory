@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "reaction.defeat",
+  "character": "orc-v1",
+  "state": "Defeat",
+  "legacySlotState": "Defeat",
+  "direction": "front_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": true,
+  "terminalFrame": 4,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    70,
+    95,
+    115,
+    130,
+    290
+  ],
+  "totalDurationMs": 700,
+  "master": "Defeat.aseprite",
+  "masterSha256": "06d718d305e462e222f74ae821eff98476c8b4c35e27a8a17facf2ee003c803b",
+  "nativeMaster": "Defeat-128.aseprite",
+  "nativeMasterSha256": "79d71f8af1704360855208dd1eb4227e15f579aea286dde04124f4b34cf54443",
+  "strip": "Folha.png",
+  "stripSha256": "ceb5f3e17858cffe07f1b0c3968f70d0d0c5e823a839e08a09d94ecd7ab2a338",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": null,
+  "frames": [
+    {
+      "index": 0,
+      "png": "Quadros/00.png",
+      "sha256": "fd019fdd8979375cbf29c981c186519ad639dc6c3308b27c30ff98df01c29bd5",
+      "nativePng": "Nativo128/00.png",
+      "nativeSha256": "0d6b943c9e4559fee20ce122b3c9ea6f9c684f060d5b2e23b36024d58a9ae4f8",
+      "durationMs": 70,
+      "phase": "fatal-stagger",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "Quadros/01.png",
+      "sha256": "8bd2231a6c61e8c29921776f118d0c4963cfa6d9ae8a00ca5b2a513e18ae0b1c",
+      "nativePng": "Nativo128/01.png",
+      "nativeSha256": "7f623cac2ccf0f97972fc9c171b71383249db3dca97dac63dee3fd41a6b3316e",
+      "durationMs": 95,
+      "phase": "knees-buckle",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "Quadros/02.png",
+      "sha256": "511c320620aba765210bb993924204c1b07e2713003511c44c05c2ae7e1b08ce",
+      "nativePng": "Nativo128/02.png",
+      "nativeSha256": "fa2f2fc0c4f8e91ed91658bf9db1c4fb379578d5a594408f573e4760aeadf966",
+      "durationMs": 115,
+      "phase": "drop-to-knees",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "Quadros/03.png",
+      "sha256": "2135ea07a4087ba368ee32a1e2f9220949045d253caf7972cd9cf97e0949bb7a",
+      "nativePng": "Nativo128/03.png",
+      "nativeSha256": "fe2e4bdcff9f3a9fd5d885688f43115087b241dba12fc4d46011ec25b202aa32",
+      "durationMs": 130,
+      "phase": "collapse-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "Quadros/04.png",
+      "sha256": "22f9475980c0558c35caf16626e3eaf1633cc3a2e253d193ac2860a58c8042c3",
+      "nativePng": "Nativo128/04.png",
+      "nativeSha256": "d25c4511550770c1cc284594b160b19b40b787688f8a276bb7833f937efd3ace",
+      "durationMs": 290,
+      "phase": "terminal-defeated",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

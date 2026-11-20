@@ -1,0 +1,924 @@
+{
+  "Sword": {
+    "spec": {
+      "frameCount": 13,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "durationMs": 730,
+      "visibleInterval": [
+        2,
+        10
+      ],
+      "phases": [
+        {
+          "index": 0,
+          "phase": "rest",
+          "startMs": 0,
+          "durationMs": 30,
+          "endMs": 30
+        },
+        {
+          "index": 1,
+          "phase": "body-preparation",
+          "startMs": 30,
+          "durationMs": 65,
+          "endMs": 95
+        },
+        {
+          "index": 2,
+          "phase": "establish-grip",
+          "startMs": 95,
+          "durationMs": 35,
+          "endMs": 130
+        },
+        {
+          "index": 3,
+          "phase": "anticipation",
+          "startMs": 130,
+          "durationMs": 50,
+          "endMs": 180
+        },
+        {
+          "index": 4,
+          "phase": "coil-behind",
+          "startMs": 180,
+          "durationMs": 45,
+          "endMs": 225
+        },
+        {
+          "index": 5,
+          "phase": "apex-hold",
+          "startMs": 225,
+          "durationMs": 65,
+          "endMs": 290
+        },
+        {
+          "index": 6,
+          "phase": "slash-release",
+          "startMs": 290,
+          "durationMs": 35,
+          "endMs": 325
+        },
+        {
+          "index": 7,
+          "phase": "contact",
+          "startMs": 325,
+          "durationMs": 35,
+          "endMs": 360
+        },
+        {
+          "index": 8,
+          "phase": "follow-through",
+          "startMs": 360,
+          "durationMs": 100,
+          "endMs": 460
+        },
+        {
+          "index": 9,
+          "phase": "recoil",
+          "startMs": 460,
+          "durationMs": 55,
+          "endMs": 515
+        },
+        {
+          "index": 10,
+          "phase": "settle-grip",
+          "startMs": 515,
+          "durationMs": 80,
+          "endMs": 595
+        },
+        {
+          "index": 11,
+          "phase": "release-grip",
+          "startMs": 595,
+          "durationMs": 45,
+          "endMs": 640
+        },
+        {
+          "index": 12,
+          "phase": "return-to-guard",
+          "startMs": 640,
+          "durationMs": 90,
+          "endMs": 730
+        }
+      ],
+      "impactFrame": 7,
+      "impactStartMs": 325,
+      "frontals": {
+        "front_r": {
+          "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/full-front-r-sword/clip.json",
+          "sha256": "6809bfaaab103156f9a5bf4009e80e2c0f84df7f175a0430ab794f654c12d791",
+          "legacyContactEvent": {
+            "frame": 6,
+            "timeMs": 290,
+            "status": "CANDIDATE_VISUAL_ONLY",
+            "appliesDamage": false
+          }
+        },
+        "front_l": {
+          "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/clip.json",
+          "sha256": "41c770a6fc6bf501bb4aa1bc5d193148858471a379f34bff4cf6b83e2ea677d2",
+          "legacyContactEvent": {
+            "frame": 7,
+            "timeMs": 325,
+            "status": "CANDIDATE_VISUAL_ONLY",
+            "appliesDamage": false
+          }
+        }
+      },
+      "validatedRearMapping": true
+    },
+    "clips": {
+      "front_r": {
+        "clipRevision": "main-orc-artistic-reconstruction-v6-frontal",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/00.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 30
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/01.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/02.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/03.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/04.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/04.png",
+            "phase": "coil-behind",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/05.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/05.png",
+            "phase": "apex-hold",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/06.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/06.png",
+            "phase": "slash-release",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/07.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/07.png",
+            "phase": "contact",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/08.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/08.png",
+            "phase": "follow-through",
+            "durationMs": 100
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/09.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/09.png",
+            "phase": "recoil",
+            "durationMs": 55
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/10.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/10.png",
+            "phase": "settle-grip",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/11.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/11.png",
+            "phase": "release-grip",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/12.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/layers/body/12.png",
+            "phase": "return-to-guard",
+            "durationMs": 90
+          }
+        ]
+      },
+      "front_l": {
+        "clipRevision": "main-orc-v7-axilla-recovery",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/00.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 30
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/01.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/02.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/03.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/04.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/04.png",
+            "phase": "coil-behind",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/05.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/05.png",
+            "phase": "apex-hold",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/06.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/06.png",
+            "phase": "slash-release",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/07.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/07.png",
+            "phase": "contact",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/08.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/08.png",
+            "phase": "follow-through",
+            "durationMs": 100
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/09.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/09.png",
+            "phase": "recoil",
+            "durationMs": 55
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/10.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/10.png",
+            "phase": "settle-grip",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/11.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/11.png",
+            "phase": "release-grip",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/12.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/layers/body/12.png",
+            "phase": "return-to-guard",
+            "durationMs": 90
+          }
+        ]
+      },
+      "back_l": {
+        "clipRevision": "main-orc-combat-recovery-v8-rear-aligned",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/00.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 30
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/01.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/02.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/03.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/04.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/04.png",
+            "phase": "coil-behind",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/05.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/05.png",
+            "phase": "apex-hold",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/06.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/06.png",
+            "phase": "slash-release",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/07.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/07.png",
+            "phase": "contact",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/08.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/08.png",
+            "phase": "follow-through",
+            "durationMs": 100
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/09.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/09.png",
+            "phase": "recoil",
+            "durationMs": 55
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/10.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/10.png",
+            "phase": "settle-grip",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/11.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/11.png",
+            "phase": "release-grip",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/frames/12.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/layers/body/12.png",
+            "phase": "return-to-guard",
+            "durationMs": 90
+          }
+        ]
+      },
+      "back_r": {
+        "clipRevision": "main-orc-combat-recovery-v8-rear-aligned",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/00.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 30
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/01.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/02.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/03.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/04.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/04.png",
+            "phase": "coil-behind",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/05.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/05.png",
+            "phase": "apex-hold",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/06.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/06.png",
+            "phase": "slash-release",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/07.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/07.png",
+            "phase": "contact",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/08.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/08.png",
+            "phase": "follow-through",
+            "durationMs": 100
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/09.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/09.png",
+            "phase": "recoil",
+            "durationMs": 55
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/10.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/10.png",
+            "phase": "settle-grip",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/11.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/11.png",
+            "phase": "release-grip",
+            "durationMs": 45
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/frames/12.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/layers/body/12.png",
+            "phase": "return-to-guard",
+            "durationMs": 90
+          }
+        ]
+      }
+    }
+  },
+  "Axe": {
+    "spec": {
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "durationMs": 1005,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "phases": [
+        {
+          "index": 0,
+          "phase": "rest",
+          "startMs": 0,
+          "durationMs": 40,
+          "endMs": 40
+        },
+        {
+          "index": 1,
+          "phase": "body-preparation",
+          "startMs": 40,
+          "durationMs": 65,
+          "endMs": 105
+        },
+        {
+          "index": 2,
+          "phase": "establish-grip",
+          "startMs": 105,
+          "durationMs": 35,
+          "endMs": 140
+        },
+        {
+          "index": 3,
+          "phase": "anticipation",
+          "startMs": 140,
+          "durationMs": 80,
+          "endMs": 220
+        },
+        {
+          "index": 4,
+          "phase": "overhead-coil",
+          "startMs": 220,
+          "durationMs": 155,
+          "endMs": 375
+        },
+        {
+          "index": 5,
+          "phase": "cleave-drive",
+          "startMs": 375,
+          "durationMs": 35,
+          "endMs": 410
+        },
+        {
+          "index": 6,
+          "phase": "heavy-impact",
+          "startMs": 410,
+          "durationMs": 115,
+          "endMs": 525
+        },
+        {
+          "index": 7,
+          "phase": "weight-settle",
+          "startMs": 525,
+          "durationMs": 110,
+          "endMs": 635
+        },
+        {
+          "index": 8,
+          "phase": "wrench-recovery",
+          "startMs": 635,
+          "durationMs": 130,
+          "endMs": 765
+        },
+        {
+          "index": 9,
+          "phase": "release-grip",
+          "startMs": 765,
+          "durationMs": 50,
+          "endMs": 815
+        },
+        {
+          "index": 10,
+          "phase": "shoulder-reset",
+          "startMs": 815,
+          "durationMs": 90,
+          "endMs": 905
+        },
+        {
+          "index": 11,
+          "phase": "return-to-guard",
+          "startMs": 905,
+          "durationMs": 100,
+          "endMs": 1005
+        }
+      ],
+      "impactFrame": 6,
+      "impactStartMs": 410,
+      "frontals": {
+        "front_r": {
+          "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/front_r-Axe-full/clip.json",
+          "sha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "legacyContactEvent": {
+            "frame": 6,
+            "timeMs": 375,
+            "status": "CANDIDATE_VISUAL_ONLY",
+            "appliesDamage": false
+          }
+        },
+        "front_l": {
+          "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Axe-full/clip.json",
+          "sha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "legacyContactEvent": {
+            "frame": 6,
+            "timeMs": 375,
+            "status": "CANDIDATE_VISUAL_ONLY",
+            "appliesDamage": false
+          }
+        }
+      },
+      "validatedRearMapping": true
+    },
+    "clips": {
+      "front_r": {
+        "clipRevision": "main-orc-artistic-reconstruction-v6-frontal",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/00.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 40
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/01.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/02.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/03.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/04.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/04.png",
+            "phase": "overhead-coil",
+            "durationMs": 155
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/05.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/05.png",
+            "phase": "cleave-drive",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/06.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/06.png",
+            "phase": "heavy-impact",
+            "durationMs": 115
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/07.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/07.png",
+            "phase": "weight-settle",
+            "durationMs": 110
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/08.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/08.png",
+            "phase": "wrench-recovery",
+            "durationMs": 130
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/09.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/09.png",
+            "phase": "release-grip",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/10.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/10.png",
+            "phase": "shoulder-reset",
+            "durationMs": 90
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/11.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/layers/body/11.png",
+            "phase": "return-to-guard",
+            "durationMs": 100
+          }
+        ]
+      },
+      "front_l": {
+        "clipRevision": "main-orc-artistic-reconstruction-v6-frontal",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/00.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 40
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/01.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/02.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/03.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/04.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/04.png",
+            "phase": "overhead-coil",
+            "durationMs": 155
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/05.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/05.png",
+            "phase": "cleave-drive",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/06.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/06.png",
+            "phase": "heavy-impact",
+            "durationMs": 115
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/07.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/07.png",
+            "phase": "weight-settle",
+            "durationMs": 110
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/08.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/08.png",
+            "phase": "wrench-recovery",
+            "durationMs": 130
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/09.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/09.png",
+            "phase": "release-grip",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/10.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/10.png",
+            "phase": "shoulder-reset",
+            "durationMs": 90
+          },
+          {
+            "png": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/11.png",
+            "body": "../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/layers/body/11.png",
+            "phase": "return-to-guard",
+            "durationMs": 100
+          }
+        ]
+      },
+      "back_l": {
+        "clipRevision": "main-orc-combat-recovery-v8-rear-aligned",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/00.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 40
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/01.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/02.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/03.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/04.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/04.png",
+            "phase": "overhead-coil",
+            "durationMs": 155
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/05.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/05.png",
+            "phase": "cleave-drive",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/06.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/06.png",
+            "phase": "heavy-impact",
+            "durationMs": 115
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/07.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/07.png",
+            "phase": "weight-settle",
+            "durationMs": 110
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/08.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/08.png",
+            "phase": "wrench-recovery",
+            "durationMs": 130
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/09.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/09.png",
+            "phase": "release-grip",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/10.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/10.png",
+            "phase": "shoulder-reset",
+            "durationMs": 90
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/frames/11.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/layers/body/11.png",
+            "phase": "return-to-guard",
+            "durationMs": 100
+          }
+        ]
+      },
+      "back_r": {
+        "clipRevision": "main-orc-combat-recovery-v8-rear-aligned",
+        "frames": [
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/00.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/00.png",
+            "phase": "rest",
+            "durationMs": 40
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/01.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/01.png",
+            "phase": "body-preparation",
+            "durationMs": 65
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/02.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/02.png",
+            "phase": "establish-grip",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/03.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/03.png",
+            "phase": "anticipation",
+            "durationMs": 80
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/04.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/04.png",
+            "phase": "overhead-coil",
+            "durationMs": 155
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/05.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/05.png",
+            "phase": "cleave-drive",
+            "durationMs": 35
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/06.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/06.png",
+            "phase": "heavy-impact",
+            "durationMs": 115
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/07.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/07.png",
+            "phase": "weight-settle",
+            "durationMs": 110
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/08.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/08.png",
+            "phase": "wrench-recovery",
+            "durationMs": 130
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/09.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/09.png",
+            "phase": "release-grip",
+            "durationMs": 50
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/10.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/10.png",
+            "phase": "shoulder-reset",
+            "durationMs": 90
+          },
+          {
+            "png": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/frames/11.png",
+            "body": "../../../characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/layers/body/11.png",
+            "phase": "return-to-guard",
+            "durationMs": 100
+          }
+        ]
+      }
+    }
+  }
+}

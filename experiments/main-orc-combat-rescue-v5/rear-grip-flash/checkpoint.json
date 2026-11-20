@@ -1,0 +1,51 @@
+{
+  "checkpoint": "REAR_AXE_GRIP_KEYS_READY",
+  "scope": "ONLY back_r/Axe F04 (apex) and F07 (impact)",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalTaskStatus": "ARTISTIC_REVISION_REQUIRED_UNCHANGED_PENDING_ROOT_QA",
+  "artisticApproval": "PENDING_CREATOR",
+  "independentQA": "863ae631-5582-4955-a0ef-020d51692fbb",
+  "keys": {
+    "F04": {
+      "sourceIndex": 4,
+      "phase": "validated-apex",
+      "durationMs": 110,
+      "bodyGrip": [
+        139,
+        72
+      ],
+      "rotationDeg": 330,
+      "localRetouches": 6,
+      "composite256Sha256": "27cab6a671d6edd68113eee1e0b9f70872e2e563466df66ad5bed7367c065a95",
+      "body128Sha256": "4c2cf239eec6b5008f9171661513caf147e208489018abbf4c124302c7873df6"
+    },
+    "F07": {
+      "sourceIndex": 7,
+      "phase": "validated-impact",
+      "durationMs": 110,
+      "bodyGrip": [
+        157,
+        146
+      ],
+      "rotationDeg": 120,
+      "localRetouches": 6,
+      "composite256Sha256": "b9b17570db0d8759edf863ca7e48b14f289bc9ae0460bdf6e2235e4ee3d34b9f",
+      "body128Sha256": "608119efa4811fe6e9de48001199ea84a5405f171e30ee46911b584a7bd54693"
+    }
+  },
+  "masters": {
+    "composite": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/composite.aseprite",
+    "compositeSha256": "f00de3eb8abff4df5464518c46e826b3387c95724a0c4b49b7b4cc34a68d08be",
+    "body256": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/body-256.aseprite",
+    "body256Sha256": "1a7762207abf742e0235910386ba45421dc096fe6a34c48549448e3ca2582471",
+    "body128": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/body-128.aseprite",
+    "body128Sha256": "9f33636a57c04bd0e005df921ed362b258748636b7d96363e84be7647a4de054",
+    "hand256": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/hand-256.aseprite",
+    "hand256Sha256": "7440803215f3c8d265d82f5b4165f827b6e9bf9d77b1e0fdc64392ee125c2149"
+  },
+  "bodyRgbaDelta": 0,
+  "newPixelLabCalls": 0,
+  "inputsPreserved": 11,
+  "nextStep": "Root submits these exact two representatives to the SAME independent QA 863ae631-5582-4955-a0ef-020d51692fbb; no propagation before QA verdict."
+}

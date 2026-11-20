@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "family": "Sword/basic.sword-slash",
+  "animationSource": "characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_l-sword/clip.json",
+  "sourceSha256": "a0697d1a376f7b76728b292f47b909a03e887cc31400b547c7cbc2a12d83069a",
+  "hand": "anatomical right hand; original body glove + original handFront per frame",
+  "canvas": [
+    96,
+    96
+  ],
+  "contact": [
+    48,
+    66
+  ],
+  "pivot": [
+    48,
+    66
+  ],
+  "scale": 1,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "occlusion": {
+    "weaponBack": "Original per-frame mask, leather grip v60..70 behind body",
+    "weaponFront": "Original guard/pommel and blade; B replaces blade v<=54 only",
+    "handFront": "Original traced glove, unchanged, overlays front weapon; no new overlay"
+  },
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "contactEvent": {
+    "frame": 8,
+    "timeMs": 325,
+    "phase": "contact",
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    35,
+    30,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "frames": [
+    {
+      "index": 0,
+      "visible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "specialTransform": null
+    },
+    {
+      "index": 1,
+      "visible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "specialTransform": null
+    },
+    {
+      "index": 2,
+      "visible": true,
+      "grip": [
+        152,
+        130
+      ],
+      "rotationDeg": 40,
+      "unwrappedAngleDeg": -320,
+      "specialTransform": null
+    },
+    {
+      "index": 3,
+      "visible": true,
+      "grip": [
+        165,
+        119
+      ],
+      "rotationDeg": 20,
+      "unwrappedAngleDeg": -340,
+      "specialTransform": null
+    },
+    {
+      "index": 4,
+      "visible": true,
+      "grip": [
+        157,
+        100
+      ],
+      "rotationDeg": 10,
+      "unwrappedAngleDeg": -350,
+      "specialTransform": null
+    },
+    {
+      "index": 5,
+      "visible": true,
+      "grip": [
+        157,
+        89
+      ],
+      "rotationDeg": 0,
+      "unwrappedAngleDeg": -360,
+      "specialTransform": null
+    },
+    {
+      "index": 6,
+      "visible": true,
+      "grip": [
+        128,
+        101
+      ],
+      "rotationDeg": 344,
+      "specialTransform": "F05 inverse nearest lookup then -16 degrees around target (128,101), source (157,89); see author.lua"
+    },
+    {
+      "index": 7,
+      "visible": true,
+      "grip": [
+        100,
+        114
+      ],
+      "rotationDeg": 328,
+      "unwrappedAngleDeg": -392,
+      "specialTransform": null
+    },
+    {
+      "index": 8,
+      "visible": true,
+      "grip": [
+        97,
+        132
+      ],
+      "rotationDeg": 280,
+      "unwrappedAngleDeg": -440,
+      "specialTransform": null
+    },
+    {
+      "index": 9,
+      "visible": true,
+      "grip": [
+        96,
+        148
+      ],
+      "rotationDeg": 232,
+      "unwrappedAngleDeg": -488,
+      "specialTransform": null
+    },
+    {
+      "index": 10,
+      "visible": true,
+      "grip": [
+        121,
+        147
+      ],
+      "rotationDeg": 242,
+      "unwrappedAngleDeg": -478,
+      "specialTransform": null
+    },
+    {
+      "index": 11,
+      "visible": true,
+      "grip": [
+        145,
+        150
+      ],
+      "rotationDeg": 260,
+      "unwrappedAngleDeg": -460,
+      "specialTransform": null
+    },
+    {
+      "index": 12,
+      "visible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "specialTransform": null
+    },
+    {
+      "index": 13,
+      "visible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "specialTransform": null
+    }
+  ]
+}

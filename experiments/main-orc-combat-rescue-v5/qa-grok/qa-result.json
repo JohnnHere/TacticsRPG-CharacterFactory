@@ -1,0 +1,54 @@
+{
+  "reviewer": "Grok 4.7 / GitHub Copilot",
+  "role": "independent QA fallback",
+  "replacedSession": "76797f0a-7d99-41fc-8e1c-638dce10a345",
+  "replacedSessionNote": "GLM stopped idle without a usable opinion. This file does not reuse that partial analysis as a verdict.",
+  "revision": "main-orc-combat-rescue-v5",
+  "manifest": "characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json",
+  "manifestSha256": "00281c8608821eecb1848d187a3508eb575781cf9172f40134f1125818df4659",
+  "parentManifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+  "verdict": "REVISIONS_REQUIRED",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "technicalPackaging": "PASS",
+  "eligibleForIntegration": false,
+  "creatorApproval": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "matrix": {
+    "clips": 28,
+    "frames": 210,
+    "candidates": 13,
+    "candidateFrames": 110,
+    "aliases": 15,
+    "aliasFrames": 100
+  },
+  "checks": {
+    "validate.mjs": "TECHNICAL_PASS 28/210/840",
+    "preservation": "3506/3506",
+    "chromium": "21/21 functional",
+    "asepriteRespot": "back_r/Sword native master re-export matched 8/8 PNG and durations"
+  },
+  "findings": [
+    {
+      "id": "QA5-01",
+      "severity": "HIGH",
+      "clips": "all 8 Sword/Axe",
+      "verdict": "FAIL",
+      "summary": "handFront is a 110-128px steel stamp. It does not form fingers around the handle, does not bridge to the forearm, and often sits beside the guard rather than enclosing the grip."
+    },
+    {
+      "id": "QA5-02",
+      "severity": "HIGH",
+      "clips": "back_r/Sword, back_r/Axe, back_l/Sword, back_l/Axe",
+      "verdict": "FAIL",
+      "summary": "Off-hand column is byte-identical to F00 on all 32 frames. Striking-arm arcs differ between sword and axe, but hips and legs do not take the blow. Not a whole-body technique."
+    },
+    {
+      "id": "QA5-03",
+      "severity": "MEDIUM",
+      "clips": "back_l/Sword, back_l/Axe",
+      "verdict": "FAIL",
+      "summary": "DEV 'left-handed' is anatomically correct on the rear-left view, not a screen-side mixup. back_r strikes with the character's right arm. Dominance is not coherent across rear views."
+    }
+  ],
+  "report": "experiments/main-orc-combat-rescue-v5/qa-grok/report.md"
+}

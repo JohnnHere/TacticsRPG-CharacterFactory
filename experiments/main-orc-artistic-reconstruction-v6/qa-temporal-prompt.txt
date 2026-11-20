@@ -1,0 +1,24 @@
+QA TEMPORAL E VISUAL independente — preencher a lacuna que o revisor estático declarou (ele não tinha navegador e marcou percepção de movimento como NÃO VERIFICADO). Você não é orquestrador nem produtor.
+
+OBJETO: `characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json`, SHA-256 `5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca`. 13 células ativas (8 Sword/Axe + 4 Unarmed + back_l/Walk), 15 aliases, 226 quadros.
+
+PÁGINA REAL (use-a de verdade, com navegador): `Biblioteca de Arte/Estudos Comparativos/Orc principal - Reconstrucao artistica/index.html`. Tem player 1×/0,5×, passo de quadro, zoom nativo, escala tática e before/after contra o candidato V5 rejeitado. Se o navegador headless falhar, use o Edge/Chromium instalado como fallback e registre qual usou.
+
+TAREFA — para CADA um dos 8 ataques (front_r, front_l, back_r, back_l × Sword, Axe):
+1. Reproduza o clipe inteiro em 1× e observe a sequência completa; registre quantas execuções assistiu e se cada uma cruzou o loop.
+2. Repita em 0,5× e use passo de quadro para investigar qualquer suspeita.
+3. Julgue, como movimento e não como arquivo:
+   - Sword traseiras: um corte contínuo e legível? Antecipação → aceleração → impacto → follow-through → recuperação? Sem salto de pose, sem membro desaparecendo, sem arma orbitando braço parado, sem teleporte da arma.
+   - Axe traseiras: descida pesada com participação de tronco/quadril/joelhos? Sem rigidez mecânica de subir/descer? Sem mudança aparente de tamanho da cabeça do machado?
+   - Compatibilidade entre back_r e back_l por família: mesma técnica reconhecível, perspectivas próprias, sem espelho.
+   - Frontais: coreografia preservada, sem piscadas, sem contorno claro piscando entre quadros.
+4. Verifique em escala tática (64 px) se a leitura ainda funciona.
+5. Confira especificamente os dois pontos que já foram corrigidos, em movimento e não só em still:
+   - `front_l/Sword` F03–F04: a axila agora lê como abertura anatômica nos quadros vizinhos? Alguma emenda/piscada aparece na transição F02→F03→F04→F05?
+   - `back_l/Sword` F07–F09: em reprodução, a ponta parece suspensa ou ainda sugere penetrar o chão?
+
+EVIDÊNCIA TÉCNICA JÁ EXISTENTE (confira coerência, não repita em massa): `experiments/main-orc-artistic-reconstruction-v6/technical-validation.json` (28/226/956 TECHNICAL_PASS), `source-reexports/5d68b52d.../result.json` (34 mestres/352 quadros), `browser-checks-final/` (21/21).
+
+REGISTRO: grave `experiments/main-orc-artistic-reconstruction-v6/qa-temporal/result.json` e `report.md`. Inclua navegador usado, contagem de execuções por clipe, o que foi percebido em 1×, achados com célula/quadro, e limitações. Veredito: `TEMPORAL_PASS`, `ARTISTIC_ISSUES_FOUND` (com achados), ou `INCONCLUSIVE` (se não houve percepção real — não invente fluidez).
+
+Restrições: não edite arte, fontes, manifesto, docs ou Unity; não crie subagentes; zero PixelLab; custo LLM não informado; não aprova em nome do criador.

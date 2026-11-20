@@ -1,0 +1,60 @@
+{
+  "role": "independent-qa",
+  "reviewer": "Grok 4.7 / GitHub Copilot",
+  "scope": "back_r/Axe body layers-off only; grip overlay not judged",
+  "reviewedAt": "2026-10-29T13:15:00-03:00",
+  "clip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/clip.json",
+  "clipSha256": "ae5ecf1c313e8bebfde96bf8dd687ced4f10699cf075b1e2508c1dd723cf269e",
+  "clipShaMatchesCheckpoint": true,
+  "bodyLayer": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body",
+  "verdict": "REVISIONS_REQUIRED",
+  "representativeBodyAcceptableForPropagation": false,
+  "globalVerdictUnchanged": "REVISIONS_REQUIRED",
+  "artisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "gripJudged": false,
+  "doNotRevert": [
+    "No F00 off-hand column paste: screen-left arm swings out on F01-F03 and returns",
+    "Hips and skirt change stance; F01-F03 narrow, F04 opens",
+    "Anatomical right arm chain is continuous on all 8 frames",
+    "Layers-off body has no embedded axe, shaft, disc, shoulder hook, or bright halo >190",
+    "Striking arm is the anatomical right hand",
+    "F05-F06-F07 return to a low-arm guard; F07 is a redraw of guard, not a copy of F00"
+  ],
+  "findings": [
+    {
+      "id": "QA5-02R-TECHNIQUE",
+      "severity": "HIGH",
+      "frames": ["01.png", "02.png", "03.png", "04.png"],
+      "evidence": "layers/body. F01-F02 fist stays beside the ear. F02 gauntlet edge y=67 versus scalp top y=69, a 2px lateral clearance, not a hand stacked above the crown. F03 extends the arm horizontally at head height. F04 holds the arm out to screen-right at waist height with an upright torso.",
+      "claimRejected": "clip phases overhead-hoist, overhead-apex, cleave-drop and heavy-impact do not match the pixels",
+      "effect": "Propagating this body method would repeat a lateral cut, not a heavy overhead axe"
+    },
+    {
+      "id": "QA5-02R-WEIGHT",
+      "severity": "MEDIUM",
+      "frames": ["03.png", "04.png", "05.png"],
+      "evidence": "Off-hand counterweight and a small stance change are visible. The striking shoulder does not drop and the torso does not sink into the impact. Hip pixel diffs are not weight.",
+      "effect": "The frozen-column defect is fixed. The blow still does not read as heavy."
+    }
+  ],
+  "passedOnThisClip": [
+    "arm chain continuous, no truncation, double forearm, or shoulder hook",
+    "layers-off clean, 0 pixels with rgb all >190",
+    "anatomical right-hand dominance on back_r",
+    "recovery pose class is guard",
+    "rear V1 identity: green scalp, no face, dorsal plate"
+  ],
+  "limitations": [
+    "Sequential still frames of body layers at native crop, 3x and 4x. Not a continuous human 1x viewing. The overhead failure is visible in stills and is not based on missing playback.",
+    "Provisional weapon and handFront overlays were not judged.",
+    "Job receipt f0235167-519c-4994-86a2-1260b0e3a23e still says processing and 7 frames; the clip has 8. Balance receipt shows 1382.70. Accounting was not used as an artistic finding.",
+    "Sol front-grip work and the global 28-clip matrix were not re-reviewed."
+  ],
+  "evidence": [
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/axe_body_layers_off.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/axe_body_arm_zoom.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/axe_body_lower.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/axe_body_recovery.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/axe_body_metrics.json"
+  ]
+}

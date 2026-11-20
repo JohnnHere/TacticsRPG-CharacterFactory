@@ -1,0 +1,25 @@
+Voce vai reconstruir a celula back_r/Sword do Orc V1 no candidato V8, porque um QA temporal independente reprovou o que existe hoje. Trabalhe no Aseprite. Nao gere por IA, nao use PixelLab, nao faca commit, nao toque no Unity.
+
+CELULA ATUAL, QUE SERA DESCARTADA: characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword
+ENTREGAVEL: characters/orc-v1/source/combat-recovery-v8/rear-fix/back_r-sword/ com clip.json, frames, camadas body, handFront, weaponBack, weaponFront, native, source, mestres e strips, no mesmo contrato das outras celulas.
+
+TRES DEFEITOS MEDIDOS, cada um com numero
+
+D1. Dois congelamentos armados. Os quadros F04 e F05 sao byte-identicos entre si, e os quadros F09 e F10 tambem. Pior: F04==F05 cobre 65 ms e F05==F09 acumula 135 ms sem nenhum movimento. Como a arma esta visivel nesses quadros, o jogador ve a animacao parar no meio do golpe. Hash igual e a prova.
+
+D2. Fase do pico cinetico errada. Nas outras tres direcoes o maior deslocamento do centroide da lamina acontece na transicao F05 para F06, na fase slash-release. Em back_r/Sword ele acontece em F06 para F07, com 68,53 px, enquanto F05 para F06 tem 59,24 px. Isso inverte a aceleracao: o golpe acelera depois do contato em vez de antes.
+
+D3. A grade hoje e 13 quadros com duracoes 30,65,35,50,45,65,35,35,100,55,80,45,90 ms e fases rest, body-preparation, establish-grip, anticipation, coil-behind, apex-hold, slash-release, contact, follow-through, recoil, settle-grip, release-grip, return-to-guard. Essa grade esta CORRETA e nao pode mudar: e ela que acabou de alinhar as quatro direcoes. Seu trabalho e preencher os treze quadros com poses distintas e cinematicamente coerentes, nao mudar o relogio.
+
+O QUE FAZER. Voce tem material bom para reaproveitar: as direcoes back_l/Sword e front_r/Sword do proprio V8 tem treze quadros sem nenhuma duplicata armada, e a back_l tem a descida manualmente autorada na rodada anterior que voce mesmo produziu. Use as poses de back_l/Sword e front_r/Sword como referencia anatomica da mesma vista e do mesmo item, ajustando o que for especifico de back_r. Os dois quadros que hoje estao duplicados precisam virar poses intermediarias reais entre o apex e o contato, com deslocamento comparavel ao das outras direcoes, nao um clone.
+
+CRITERIOS DE ACEITE, QUE EU VOU MEDIR
+1. Nenhum par de quadros com arma visivel pode ter hash igual.
+2. O maior passo do centroide da lamina tem de estar em F05 para F06, como nas outras tres direcoes, e a magnitude deve ficar na mesma faixa das outras direcoes, hoje entre 56 e 76 px.
+3. Grade, duracoes, fases, janela armada F02 a F10 e bookends desarmados inalterados.
+4. Nenhum pixel claro de armadura apagado: a serie de pixels com luminancia maior ou igual a 160 na camada body deve continuar na mesma faixa da direcao back_l/Sword.
+5. A lamina nao pode atravessar o chao nem desconectar da luva.
+
+PROVA. Escreva experiments/main-orc-combat-recovery-v8/qa-rear-fix/report.md com: hash de cada um dos treze quadros; a tabela de passos do centroide por transicao; uma frase objetiva dizendo qual pose voce usou em cada quadro e por que; e um strip ampliado de F04 a F07 em 4x neste mesmo diretorio. Registre a procedencia das poses.
+
+Nao altere nenhuma outra celula. Nao mexa em front_r/Sword, que e protegida.

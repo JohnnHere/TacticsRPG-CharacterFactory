@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skeleton-first · Visualizador — Orc back_l Sword (Experimento 01)</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0d1117; color: #dbe6ee; font: 14px/1.45 "Segoe UI", system-ui, sans-serif; }
+  header { display: flex; align-items: center; gap: 14px; padding: 12px 18px; border-bottom: 1px solid #232c36; flex-wrap: wrap; }
+  h1 { font-size: 16px; margin: 0; font-weight: 600; }
+  h1 small { color: #8fa3b3; font-weight: 400; }
+  .badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; letter-spacing: .4px; }
+  .badge-neutral { background: #232c36; color: #9db2c2; }
+  .badge-real { background: #14432a; color: #6ee7a0; border: 1px solid #1f6b41; }
+  .badge-fixture { background: #453214; color: #ffb454; border: 1px solid #7a5a22; }
+  .badge-missing { background: #451717; color: #ff8f8f; border: 1px solid #7a2a2a; }
+  .banner { padding: 9px 18px; font-size: 13px; }
+  .banner code { background: #1d2630; padding: 1px 5px; border-radius: 4px; }
+  .banner-amber { background: #2c230f; color: #ffcf87; border-bottom: 1px solid #57431a; }
+  .banner-red { background: #2f1212; color: #ffb3b3; border-bottom: 1px solid #632222; }
+  main { padding: 14px 18px 30px; }
+  .stage-wrap { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  .canvas-holder { position: relative; border: 1px solid #2a3440; border-radius: 8px; overflow: hidden; background: #141a20; }
+  canvas#stage { display: block; }
+  #tooltip { position: absolute; pointer-events: none; background: #0b1218ee; border: 1px solid #35506a; border-radius: 6px; padding: 6px 9px; font-size: 12px; z-index: 5; max-width: 220px; }
+  .hud { min-width: 250px; flex: 1 1 250px; max-width: 380px; display: flex; flex-direction: column; gap: 8px; }
+  .hud-row { display: flex; justify-content: space-between; gap: 10px; background: #151c24; border: 1px solid #232c36; border-radius: 7px; padding: 7px 11px; }
+  .hud-k { color: #8fa3b3; font-size: 12px; }
+  .hud-v { text-align: right; }
+  .mono, .delta { font-family: Consolas, "Cascadia Mono", monospace; }
+  .hud-delta-box { background: #17131e; border: 1px solid #3a2f52; border-radius: 7px; padding: 8px 11px; }
+  .delta { font-size: 24px; font-weight: 700; color: #ffd23f; }
+  .hud-sub { color: #9aa9b8; font-size: 12px; margin-top: 2px; }
+  details.legend summary { cursor: pointer; color: #8fa3b3; font-size: 12px; }
+  details.legend ul { margin: 6px 0 0; padding-left: 18px; font-size: 12px; color: #b9c7d3; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: baseline; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; background: #121820; border: 1px solid #232c36; border-radius: 8px; padding: 10px 12px; }
+  .controls button { background: #1d2733; color: #dbe6ee; border: 1px solid #33414f; border-radius: 6px; padding: 7px 13px; font: inherit; cursor: pointer; }
+  .controls button:hover { background: #263342; }
+  .controls select, .controls input[type=range] { accent-color: #38d9f9; }
+  .controls select { background: #1d2733; color: #dbe6ee; border: 1px solid #33414f; border-radius: 6px; padding: 6px; font: inherit; }
+  .ctl-group { display: flex; align-items: center; gap: 6px; }
+  .ctl-label { color: #8fa3b3; font-size: 12px; }
+  .sep { width: 1px; height: 24px; background: #2a3440; }
+  .poses { margin-top: 18px; }
+  .poses h2 { font-size: 14px; margin: 0 0 8px; color: #c3d2de; }
+  .poses-strip { display: flex; gap: 10px; flex-wrap: wrap; }
+  .pose-chip { display: flex; flex-direction: column; align-items: center; gap: 4px; background: #141b23; border: 1px solid #2a3440; border-radius: 8px; padding: 7px; cursor: pointer; font: inherit; color: inherit; width: 192px; }
+  .pose-chip:hover { border-color: #38d9f9; }
+  .pose-chip.active { border-color: #ffd23f; background: #1c2130; }
+  .pose-chip:disabled { opacity: .45; cursor: not-allowed; }
+  .pose-chip canvas { border-radius: 4px; }
+  .pose-name { font-weight: 600; font-size: 13px; }
+  .pose-via { font-size: 11px; color: #8fa3b3; }
+  footer { margin-top: 22px; border-top: 1px solid #232c36; padding-top: 12px; color: #9db2c2; font-size: 12.5px; }
+  footer summary { cursor: pointer; }
+  footer li { margin: 4px 0; }
+  .foot-note { color: #6f8393; margin-top: 10px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Visualizador skeleton-first <small>· Experimento 01 — Orc principal, Sword <code>back_l</code> · espaço 256×256</small></h1>
+  <span id="hud-src" class="badge badge-missing">CARREGANDO…</span>
+  <span class="badge badge-neutral">chão y=190/256 = 0.7422</span>
+</header>
+
+<div id="banner-fixture" class="banner banner-amber" hidden>
+  <strong>FIXTURE SINTÉTICO</strong> — sequência gerada por <code>viewer/tools/make-fixture.mjs</code> só para demonstrar e
+  verificar o visualizador. <u>Não</u> é o movimento real do DEV de motion design. Fases e durações seguem a grade pública do
+  <code>clip.json</code> vigente; o esqueleto é esquemático.
+</div>
+<div id="banner-missing" class="banner banner-red" hidden></div>
+<div id="banner-bg" class="banner banner-amber" hidden></div>
+
+<main>
+  <section class="stage-wrap">
+    <div class="canvas-holder">
+      <canvas id="stage" width="512" height="512"></canvas>
+      <div id="tooltip" hidden></div>
+    </div>
+    <aside class="hud">
+      <div class="hud-row"><span class="hud-k">quadro</span><span id="hud-frame" class="hud-v mono">—</span></div>
+      <div class="hud-row"><span class="hud-k">fase</span><span id="hud-phase" class="hud-v">—</span></div>
+      <div class="hud-row"><span class="hud-k">duração</span><span id="hud-dur" class="hud-v mono">—</span></div>
+      <div class="hud-row"><span class="hud-k">tempo</span><span id="hud-time" class="hud-v mono">—</span></div>
+      <div class="hud-delta-box">
+        <div class="hud-k">Δ ponta da lâmina · quadro atual vs anterior</div>
+        <div id="hud-delta" class="delta">—</div>
+        <div id="hud-deltamax" class="hud-sub">—</div>
+      </div>
+      <div class="hud-row"><span class="hud-k">empunhadura</span><span id="hud-grip" class="hud-v">—</span></div>
+      <details class="legend">
+        <summary>legenda</summary>
+        <ul>
+          <li><span class="swatch" style="background:#9be7ff"></span>junta COCO-18 (ARM=punho, LEG=tornozelo)</li>
+          <li><span class="swatch" style="background:#59d1ff"></span>osso</li>
+          <li><span class="swatch" style="background:#ff9f43"></span>quadrado — punho que empunha (<code>grip.hand</code>)</li>
+          <li><span class="swatch" style="background:#ffe066"></span>losango — ponto de pega (<code>grip.point</code>)</li>
+          <li><span class="swatch" style="background:#8a6544"></span>cabo · <span class="swatch" style="background:#e8f1f8"></span>lâmina</li>
+          <li><span class="swatch" style="background:#ffd23f"></span>trilha da ponta · <span class="swatch" style="background:#ff6b6b"></span>contato</li>
+          <li><span class="swatch" style="background:#5dd39e"></span>chão (tracejado)</li>
+        </ul>
+      </details>
+    </aside>
+  </section>
+
+  <section class="controls">
+    <button id="btn-play-1" title="Reproduzir a 1×">▶ 1×</button>
+    <button id="btn-play-half" title="Reproduzir a 0,5×">▶ 0,5×</button>
+    <button id="btn-pause">⏸ pausa</button>
+    <button id="btn-step-back" title="Quadro anterior (←)">⏮ quadro</button>
+    <button id="btn-step-fwd" title="Próximo quadro (→)">quadro ⏭</button>
+    <button id="btn-restart">⟲ início</button>
+    <span class="sep"></span>
+    <span class="ctl-group"><span class="ctl-label">velocidade</span>
+      <select id="speed-select">
+        <option value="0.25">0,25×</option>
+        <option value="0.5">0,5×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1,5×</option>
+        <option value="2">2×</option>
+      </select>
+    </span>
+    <span class="ctl-group"><span class="ctl-label">ampliação</span>
+      <select id="zoom-select">
+        <option value="2" selected>2×</option>
+        <option value="3">3×</option>
+      </select>
+    </span>
+    <span class="sep"></span>
+    <span class="ctl-group"><label><input type="checkbox" id="tg-skeleton" checked> esqueleto</label></span>
+    <span class="ctl-group"><label><input type="checkbox" id="tg-labels" checked> rótulos</label></span>
+    <span class="ctl-group"><label><input type="checkbox" id="tg-trail" checked> trilha</label></span>
+    <span class="ctl-group"><label><input type="checkbox" id="tg-weapon" checked> arma</label></span>
+    <span class="ctl-group"><label><input type="checkbox" id="tg-ground" checked> chão</label></span>
+    <span class="ctl-group"><span class="ctl-label">lâmina (exibição)</span>
+      <input type="range" id="blade-len" min="0.10" max="0.50" step="0.01" value="0.30" style="width:110px">
+      <span id="blade-len-val" class="mono">0.30</span>
+    </span>
+    <span class="sep"></span>
+    <span class="ctl-group" style="flex:1 1 240px">
+      <span class="ctl-label">quadro</span>
+      <input type="range" id="frame-scrub" min="0" max="13" step="1" value="0" style="flex:1">
+      <span id="scrub-label" class="mono">1/14</span>
+    </span>
+  </section>
+
+  <section class="poses">
+    <h2>As cinco poses-chave (clique para ir ao quadro correspondente)</h2>
+    <div id="poses-strip" class="poses-strip"></div>
+  </section>
+
+  <footer>
+    <details open>
+      <summary>divergências e adaptações registradas (<span id="notes-count">0</span>)</summary>
+      <ul id="notes-list"></ul>
+    </details>
+    <p class="foot-note">
+      Abra este <code>index.html</code> direto no navegador (<code>file://</code>). Sem JSON de movimento, a página avisa
+      em vez de inventar. Demonstração com dados sintéticos: acrescente <code>?fixture=1</code> à URL.
+      Passe o mouse sobre uma junta para ver <code>x,y,z_index,depth</code>. Teclado: espaço = play/pausa, ← → = passo.
+    </p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+{
+  "target": "back_r/Sword",
+  "character": "orc-v1",
+  "frameCount": 12,
+  "totalDurationMs": 730,
+  "policy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "motion": "Diagonal Slash across north-east",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": "guard",
+      "durationMs": 40,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 1,
+      "phase": "chamber-init",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 2,
+      "phase": "hoist-lift",
+      "durationMs": 60,
+      "weaponVisible": true,
+      "grip": [
+        168,
+        114
+      ],
+      "rotationDeg": 355,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 3,
+      "phase": "01-hoist",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "grip": [
+        164,
+        108
+      ],
+      "rotationDeg": 10,
+      "isAcceptedKey": true
+    },
+    {
+      "frame": 4,
+      "phase": "02-apex",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "grip": [
+        180,
+        116
+      ],
+      "rotationDeg": 45,
+      "isAcceptedKey": true
+    },
+    {
+      "frame": 5,
+      "phase": "slash-cleave",
+      "durationMs": 40,
+      "weaponVisible": true,
+      "grip": [
+        172,
+        131
+      ],
+      "rotationDeg": 80,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 6,
+      "phase": "slash-descent",
+      "durationMs": 40,
+      "weaponVisible": true,
+      "grip": [
+        162,
+        135
+      ],
+      "rotationDeg": 105,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 7,
+      "phase": "03-impact",
+      "durationMs": 90,
+      "weaponVisible": true,
+      "grip": [
+        151,
+        147
+      ],
+      "rotationDeg": 125,
+      "isAcceptedKey": true
+    },
+    {
+      "frame": 8,
+      "phase": "recover-low",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "grip": [
+        159,
+        146
+      ],
+      "rotationDeg": 120,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 9,
+      "phase": "recover-pelvis",
+      "durationMs": 70,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 10,
+      "phase": "recover-guard",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "isAcceptedKey": false
+    },
+    {
+      "frame": 11,
+      "phase": "guard-return",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "isAcceptedKey": false
+    }
+  ]
+}

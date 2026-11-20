@@ -1,0 +1,1818 @@
+{
+  "front_r/Unarmed": {
+    "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/clip.json",
+    "frameCount": 5,
+    "durationsMs": [
+      80,
+      110,
+      50,
+      90,
+      120
+    ],
+    "totalMs": 450,
+    "visibleInterval": null,
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-prep",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 1,
+        "phase": "shoulder-coil",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 2,
+        "phase": "heavy-gauntlet-impact",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 3,
+        "phase": "follow-through",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 4,
+        "phase": "recovery-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      }
+    ]
+  },
+  "front_r/Sword": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Sword/clip.json",
+    "frameCount": 13,
+    "durationsMs": [
+      30,
+      65,
+      35,
+      50,
+      45,
+      65,
+      35,
+      35,
+      100,
+      55,
+      80,
+      45,
+      90
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      2,
+      10
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "rest",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 1,
+        "phase": "body-preparation",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 2,
+        "phase": "establish-grip",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 27,
+        "handFrontBbox256": [
+          97,
+          130,
+          103,
+          134
+        ],
+        "rightGrip": [
+          101,
+          131
+        ],
+        "rotationDeg": 315,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 3,
+        "phase": "entry-elbow-lift",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          84,
+          114,
+          92,
+          121
+        ],
+        "rightGrip": [
+          88,
+          118
+        ],
+        "rotationDeg": 330,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 4,
+        "phase": "entry-shoulder-coil",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 59,
+        "handFrontBbox256": [
+          94,
+          96,
+          102,
+          103
+        ],
+        "rightGrip": [
+          98,
+          100
+        ],
+        "rotationDeg": 340,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 5,
+        "phase": "high-guard",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 50,
+        "handFrontBbox256": [
+          93,
+          86,
+          102,
+          92
+        ],
+        "rightGrip": [
+          98,
+          89
+        ],
+        "rotationDeg": 345,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 6,
+        "phase": "drive",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 40,
+        "handFrontBbox256": [
+          153,
+          109,
+          159,
+          115
+        ],
+        "rightGrip": [
+          157,
+          112
+        ],
+        "rotationDeg": 20,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 7,
+        "phase": "crossing",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 56,
+        "handFrontBbox256": [
+          152,
+          130,
+          161,
+          137
+        ],
+        "rightGrip": [
+          158,
+          134
+        ],
+        "rotationDeg": 55,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 8,
+        "phase": "strike-follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 63,
+        "handFrontBbox256": [
+          153,
+          138,
+          162,
+          146
+        ],
+        "rightGrip": [
+          159,
+          142
+        ],
+        "rotationDeg": 100,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 9,
+        "phase": "recovery-bridge",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          124,
+          143,
+          133,
+          151
+        ],
+        "rightGrip": [
+          129,
+          148
+        ],
+        "rotationDeg": 102,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 10,
+        "phase": "recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 52,
+        "handFrontBbox256": [
+          105,
+          143,
+          111,
+          150
+        ],
+        "rightGrip": [
+          110,
+          147
+        ],
+        "rotationDeg": 105,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 11,
+        "phase": "action-complete",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 12,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      }
+    ]
+  },
+  "front_r/Axe": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Axe/clip.json",
+    "frameCount": 12,
+    "durationsMs": [
+      40,
+      65,
+      35,
+      80,
+      155,
+      35,
+      115,
+      110,
+      130,
+      50,
+      90,
+      100
+    ],
+    "totalMs": 1005,
+    "visibleInterval": [
+      2,
+      8
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "rest",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 1,
+        "phase": "body-preparation",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 2,
+        "phase": "establish-grip",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 27,
+        "handFrontBbox256": [
+          97,
+          130,
+          103,
+          134
+        ],
+        "rightGrip": [
+          101,
+          131
+        ],
+        "rotationDeg": 300,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 3,
+        "phase": "raise",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          84,
+          114,
+          92,
+          121
+        ],
+        "rightGrip": [
+          88,
+          118
+        ],
+        "rotationDeg": 325,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 4,
+        "phase": "cocked-shoulder",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 59,
+        "handFrontBbox256": [
+          94,
+          96,
+          102,
+          103
+        ],
+        "rightGrip": [
+          98,
+          100
+        ],
+        "rotationDeg": 350,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 5,
+        "phase": "release",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          141,
+          114,
+          150,
+          122
+        ],
+        "rightGrip": [
+          146,
+          119
+        ],
+        "rotationDeg": 35,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 6,
+        "phase": "impact",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          143,
+          139,
+          151,
+          146
+        ],
+        "rightGrip": [
+          148,
+          143
+        ],
+        "rotationDeg": 85,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 7,
+        "phase": "follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          133,
+          143,
+          142,
+          151
+        ],
+        "rightGrip": [
+          138,
+          148
+        ],
+        "rotationDeg": 90,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 8,
+        "phase": "recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          124,
+          143,
+          133,
+          151
+        ],
+        "rightGrip": [
+          129,
+          148
+        ],
+        "rotationDeg": 80,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 9,
+        "phase": "action-complete",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 10,
+        "phase": "after-attack-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 11,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      }
+    ]
+  },
+  "front_l/Unarmed": {
+    "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/clip.json",
+    "frameCount": 5,
+    "durationsMs": [
+      80,
+      110,
+      50,
+      90,
+      120
+    ],
+    "totalMs": 450,
+    "visibleInterval": null,
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-prep",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 1,
+        "phase": "shoulder-coil",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 2,
+        "phase": "heavy-gauntlet-impact",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 3,
+        "phase": "follow-through",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 4,
+        "phase": "recovery-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      }
+    ]
+  },
+  "front_l/Sword": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Sword/clip.json",
+    "frameCount": 13,
+    "durationsMs": [
+      30,
+      65,
+      35,
+      50,
+      45,
+      65,
+      35,
+      35,
+      100,
+      55,
+      80,
+      45,
+      90
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      2,
+      10
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "rest",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 1,
+        "phase": "body-preparation",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 2,
+        "phase": "establish-grip",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 27,
+        "handFrontBbox256": [
+          152,
+          130,
+          158,
+          134
+        ],
+        "rightGrip": [
+          154,
+          131
+        ],
+        "rotationDeg": 45,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 3,
+        "phase": "entry-elbow-lift",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          163,
+          114,
+          171,
+          121
+        ],
+        "rightGrip": [
+          167,
+          118
+        ],
+        "rotationDeg": 30,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 4,
+        "phase": "entry-shoulder-coil",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 59,
+        "handFrontBbox256": [
+          153,
+          96,
+          161,
+          103
+        ],
+        "rightGrip": [
+          157,
+          100
+        ],
+        "rotationDeg": 20,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 5,
+        "phase": "high-guard",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 50,
+        "handFrontBbox256": [
+          153,
+          86,
+          162,
+          92
+        ],
+        "rightGrip": [
+          157,
+          89
+        ],
+        "rotationDeg": 15,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 6,
+        "phase": "drive",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 40,
+        "handFrontBbox256": [
+          96,
+          109,
+          102,
+          115
+        ],
+        "rightGrip": [
+          98,
+          112
+        ],
+        "rotationDeg": 340,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 7,
+        "phase": "crossing",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 56,
+        "handFrontBbox256": [
+          94,
+          130,
+          103,
+          137
+        ],
+        "rightGrip": [
+          97,
+          134
+        ],
+        "rotationDeg": 305,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 8,
+        "phase": "strike-follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 63,
+        "handFrontBbox256": [
+          93,
+          138,
+          102,
+          146
+        ],
+        "rightGrip": [
+          96,
+          142
+        ],
+        "rotationDeg": 260,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 9,
+        "phase": "recovery-bridge",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          122,
+          143,
+          131,
+          151
+        ],
+        "rightGrip": [
+          126,
+          148
+        ],
+        "rotationDeg": 258,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 10,
+        "phase": "recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 52,
+        "handFrontBbox256": [
+          144,
+          143,
+          150,
+          150
+        ],
+        "rightGrip": [
+          145,
+          147
+        ],
+        "rotationDeg": 255,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 11,
+        "phase": "action-complete",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 12,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      }
+    ]
+  },
+  "front_l/Axe": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/front_l/Axe/clip.json",
+    "frameCount": 12,
+    "durationsMs": [
+      40,
+      65,
+      35,
+      80,
+      155,
+      35,
+      115,
+      110,
+      130,
+      50,
+      90,
+      100
+    ],
+    "totalMs": 1005,
+    "visibleInterval": [
+      2,
+      8
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "rest",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 1,
+        "phase": "body-preparation",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 2,
+        "phase": "establish-grip",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 27,
+        "handFrontBbox256": [
+          152,
+          130,
+          158,
+          134
+        ],
+        "rightGrip": [
+          154,
+          131
+        ],
+        "rotationDeg": 60,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 3,
+        "phase": "raise",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          163,
+          114,
+          171,
+          121
+        ],
+        "rightGrip": [
+          167,
+          118
+        ],
+        "rotationDeg": 35,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 4,
+        "phase": "cocked-shoulder",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 59,
+        "handFrontBbox256": [
+          153,
+          96,
+          161,
+          103
+        ],
+        "rightGrip": [
+          157,
+          100
+        ],
+        "rotationDeg": 10,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 5,
+        "phase": "release",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          105,
+          114,
+          114,
+          122
+        ],
+        "rightGrip": [
+          109,
+          119
+        ],
+        "rotationDeg": 325,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 6,
+        "phase": "impact",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          104,
+          139,
+          112,
+          146
+        ],
+        "rightGrip": [
+          107,
+          143
+        ],
+        "rotationDeg": 275,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 7,
+        "phase": "follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          113,
+          143,
+          122,
+          151
+        ],
+        "rightGrip": [
+          117,
+          148
+        ],
+        "rotationDeg": 270,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 8,
+        "phase": "recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 67,
+        "handFrontBbox256": [
+          122,
+          143,
+          131,
+          151
+        ],
+        "rightGrip": [
+          126,
+          148
+        ],
+        "rotationDeg": 280,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 9,
+        "phase": "action-complete",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 10,
+        "phase": "after-attack-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 11,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": null,
+        "rotationDeg": null,
+        "weaponBehindBody": false
+      }
+    ]
+  },
+  "back_r/Unarmed": {
+    "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/clip.json",
+    "frameCount": 5,
+    "durationsMs": [
+      80,
+      110,
+      50,
+      90,
+      120
+    ],
+    "totalMs": 450,
+    "visibleInterval": null,
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-prep",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 1,
+        "phase": "shoulder-coil",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 2,
+        "phase": "heavy-gauntlet-impact",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 3,
+        "phase": "follow-through",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 4,
+        "phase": "recovery-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      }
+    ]
+  },
+  "back_r/Sword": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Sword/clip.json",
+    "frameCount": 8,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      1,
+      6
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-start",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 1,
+        "phase": "reach-close-fist",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 55,
+        "handFrontBbox256": [
+          171,
+          102,
+          179,
+          110
+        ],
+        "rightGrip": [
+          175,
+          106
+        ],
+        "rotationDeg": 325,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 2,
+        "phase": "cock-high",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 60,
+        "handFrontBbox256": [
+          163,
+          69,
+          170,
+          77
+        ],
+        "rightGrip": [
+          167,
+          73
+        ],
+        "rotationDeg": 350,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 3,
+        "phase": "load-back",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          163,
+          74,
+          170,
+          82
+        ],
+        "rightGrip": [
+          167,
+          78
+        ],
+        "rotationDeg": 15,
+        "weaponBehindBody": true
+      },
+      {
+        "index": 4,
+        "phase": "slash-release",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 54,
+        "handFrontBbox256": [
+          177,
+          114,
+          184,
+          122
+        ],
+        "rightGrip": [
+          181,
+          118
+        ],
+        "rotationDeg": 65,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 5,
+        "phase": "impact-follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 54,
+        "handFrontBbox256": [
+          177,
+          118,
+          184,
+          126
+        ],
+        "rightGrip": [
+          181,
+          122
+        ],
+        "rotationDeg": 105,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 6,
+        "phase": "lowered-recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          152,
+          135,
+          160,
+          143
+        ],
+        "rightGrip": [
+          156,
+          139
+        ],
+        "rotationDeg": 135,
+        "weaponBehindBody": false
+      },
+      {
+        "index": 7,
+        "phase": "return-guard",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": false
+      }
+    ]
+  },
+  "back_r/Axe": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/clip.json",
+    "frameCount": 8,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      1,
+      6
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-start",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 1,
+        "phase": "reach",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 55,
+        "handFrontBbox256": [
+          171,
+          102,
+          179,
+          110
+        ],
+        "rightGrip": [
+          175,
+          106
+        ],
+        "rotationDeg": 315,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 2,
+        "phase": "cocked-shoulder",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 60,
+        "handFrontBbox256": [
+          163,
+          69,
+          170,
+          77
+        ],
+        "rightGrip": [
+          167,
+          73
+        ],
+        "rotationDeg": 350,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 3,
+        "phase": "overhead-hold",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 64,
+        "handFrontBbox256": [
+          163,
+          74,
+          170,
+          82
+        ],
+        "rightGrip": [
+          167,
+          78
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 4,
+        "phase": "downward-commit",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 54,
+        "handFrontBbox256": [
+          177,
+          114,
+          184,
+          122
+        ],
+        "rightGrip": [
+          181,
+          118
+        ],
+        "rotationDeg": 70,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 5,
+        "phase": "impact",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 54,
+        "handFrontBbox256": [
+          177,
+          118,
+          184,
+          126
+        ],
+        "rightGrip": [
+          181,
+          122
+        ],
+        "rotationDeg": 105,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 6,
+        "phase": "lowered-follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          152,
+          135,
+          160,
+          143
+        ],
+        "rightGrip": [
+          156,
+          139
+        ],
+        "rotationDeg": 135,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 7,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      }
+    ]
+  },
+  "back_l/Unarmed": {
+    "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/clip.json",
+    "frameCount": 5,
+    "durationsMs": [
+      80,
+      110,
+      50,
+      90,
+      120
+    ],
+    "totalMs": 450,
+    "visibleInterval": null,
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-prep",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 1,
+        "phase": "shoulder-coil",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 2,
+        "phase": "heavy-gauntlet-impact",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 3,
+        "phase": "follow-through",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      },
+      {
+        "index": 4,
+        "phase": "recovery-settle",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null
+      }
+    ]
+  },
+  "back_l/Sword": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_l/Sword/clip.json",
+    "frameCount": 8,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      1,
+      6
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-start",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 1,
+        "phase": "reach-NW",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 63,
+        "handFrontBbox256": [
+          88,
+          105,
+          96,
+          112
+        ],
+        "rightGrip": [
+          92,
+          108
+        ],
+        "rotationDeg": 270,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 2,
+        "phase": "cock-overhead",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          100,
+          66,
+          108,
+          74
+        ],
+        "rightGrip": [
+          104,
+          70
+        ],
+        "rotationDeg": 350,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 3,
+        "phase": "load-across-back",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 68,
+        "handFrontBbox256": [
+          123,
+          68,
+          131,
+          76
+        ],
+        "rightGrip": [
+          127,
+          72
+        ],
+        "rotationDeg": 20,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 4,
+        "phase": "NW-release",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 62,
+        "handFrontBbox256": [
+          89,
+          67,
+          97,
+          75
+        ],
+        "rightGrip": [
+          93,
+          71
+        ],
+        "rotationDeg": 240,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 5,
+        "phase": "follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 53,
+        "handFrontBbox256": [
+          70,
+          92,
+          78,
+          99
+        ],
+        "rightGrip": [
+          74,
+          95
+        ],
+        "rotationDeg": 215,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 6,
+        "phase": "lowered-recovery",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          96,
+          114,
+          104,
+          122
+        ],
+        "rightGrip": [
+          100,
+          118
+        ],
+        "rotationDeg": 200,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 7,
+        "phase": "return-unarmed",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      }
+    ]
+  },
+  "back_l/Axe": {
+    "clipJson": "characters/orc-v1/source/rear-reconstruction-v4/back_l/Axe/clip.json",
+    "frameCount": 8,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "totalMs": 730,
+    "visibleInterval": [
+      1,
+      6
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "guard-start",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 1,
+        "phase": "left-hand-reach",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          88,
+          104,
+          96,
+          112
+        ],
+        "rightGrip": [
+          92,
+          108
+        ],
+        "rotationDeg": 270,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 2,
+        "phase": "cocked-overhead",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 65,
+        "handFrontBbox256": [
+          100,
+          74,
+          108,
+          82
+        ],
+        "rightGrip": [
+          104,
+          78
+        ],
+        "rotationDeg": 315,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 3,
+        "phase": "overhead-hold",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 65,
+        "handFrontBbox256": [
+          100,
+          74,
+          108,
+          82
+        ],
+        "rightGrip": [
+          104,
+          78
+        ],
+        "rotationDeg": 350,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 4,
+        "phase": "downward-commit",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          82,
+          114,
+          90,
+          122
+        ],
+        "rightGrip": [
+          86,
+          118
+        ],
+        "rotationDeg": 315,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 5,
+        "phase": "impact",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          92,
+          137,
+          100,
+          145
+        ],
+        "rightGrip": [
+          96,
+          141
+        ],
+        "rotationDeg": 270,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 6,
+        "phase": "low-follow-through",
+        "weaponVisible": true,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 69,
+        "handFrontBbox256": [
+          95,
+          141,
+          103,
+          149
+        ],
+        "rightGrip": [
+          99,
+          145
+        ],
+        "rotationDeg": 235,
+        "weaponBehindBody": null
+      },
+      {
+        "index": 7,
+        "phase": "recovery",
+        "weaponVisible": false,
+        "socket": null,
+        "occlusion": null,
+        "handFrontPixels": 0,
+        "rightGrip": [
+          0,
+          0
+        ],
+        "rotationDeg": 0,
+        "weaponBehindBody": null
+      }
+    ]
+  }
+}

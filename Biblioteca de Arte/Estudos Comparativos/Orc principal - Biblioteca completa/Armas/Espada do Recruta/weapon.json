@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "recruit-sword",
+  "name": "Espada do Recruta",
+  "hands": 1,
+  "category": "Sword",
+  "description": "Uma mão; lâmina reta de dois gumes com canal central, guarda reta simples, couro castanho costurado, pomo disco. Aço gasto e funcional, sem magia ou ornamentos de alto nível.",
+  "authoring": "Inherited PixelLab Pro v2 artwork, component proportion/material retouch in Aseprite Lua; not a newly generated weapon",
+  "reference": "Photo supplied inline by creator 2026-10-25: straight fuller sword with leather hilt and disk pommel / simple curved-haft axe. Reference read in conversation; no falsely claimed local photo file.",
+  "canvas": [
+    96,
+    96
+  ],
+  "grip": [
+    48,
+    66
+  ],
+  "ppu": 100,
+  "sprite": "Espada do Recruta.png",
+  "master": "Espada do Recruta.aseprite",
+  "artisticApproval": "PENDING_CREATOR",
+  "bindings": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/profile.json",
+  "visualDesign": "Global game language; no Orc racial palette/design requirement",
+  "revision": "main-orc-onehanded-v3",
+  "sourceSha256": "a48e07f5be3616b71b2a779326d9376972372d0625d3caee99960ca3359d9cd2",
+  "spriteSha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a",
+  "masterSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4",
+  "compatibility": {
+    "category": "Sword",
+    "profile": "basic.sword-slash",
+    "hand": "right",
+    "scale": 1,
+    "body": "orc-v1",
+    "direction": "front_r"
+  },
+  "script": "tools/aseprite/prepare-main-orc-rescue.lua"
+}

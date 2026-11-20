@@ -1,0 +1,3716 @@
+{
+  "schemaVersion": 1,
+  "stage": "A",
+  "stageName": "Production audit and protected art snapshot",
+  "task": "main-orc-complete-animation-v1",
+  "generatedAt": "2026-10-26T01:16:38.142Z",
+  "character": "orc-v1",
+  "auditScope": "BASELINE_AT_SNAPSHOT",
+  "baselineAnchors": {
+    "gitHead": "a9ab1e6a958e36400743412c542dc6b6fec6126a",
+    "gitHeadSubject": "integracao com aseprite e pixel lab feita com sucesso",
+    "artSnapshot": "experiments/main-orc-complete-animation-v1/protected-art.json",
+    "artSnapshotAt": "2026-10-26T00:56:35.707Z",
+    "metadataSource": "git HEAD (tree was clean at Stage A start)"
+  },
+  "identity": {
+    "authority": "reports/orc-production-current.json",
+    "status": "SELECTED_FOR_FUTURE_INTEGRATION",
+    "revision": "orc-v1-green-warcraft",
+    "selectedVariant": "green-skin-v3",
+    "unityIntegrated": false,
+    "fullDirectionGatesGranted": false,
+    "reviewsRecorded": 0,
+    "idleStandard": "idle-balanced-v1"
+  },
+  "status": "PASS",
+  "summary": {
+    "protectedArtFiles": 10060,
+    "protectedArtDrift": 0,
+    "artFilesAddedAfterSnapshot": 918,
+    "protectedLibraryFiles": 2302,
+    "libraryDrift": 0,
+    "metadataFilesAudited": 17,
+    "metadataDrift": 1,
+    "clipsAudited": 24,
+    "bindingsAudited": 6,
+    "invariants": 34,
+    "invariantFailures": 0,
+    "integrityChecks": 3172,
+    "integrityFailures": 0,
+    "statesPresent": [
+      "Idle",
+      "Walk",
+      "Attack (Sword)",
+      "Attack (Axe)"
+    ],
+    "statesMissing": [
+      "Attack (unarmed)",
+      "Hit",
+      "Defeat"
+    ],
+    "findings": 12,
+    "warnings": 2
+  },
+  "snapshot": {
+    "mode": "PRESERVED",
+    "file": "experiments/main-orc-complete-animation-v1/protected-art.json",
+    "roots": [
+      "characters",
+      "assets/weapons",
+      "ideas"
+    ],
+    "extensions": [
+      ".png",
+      ".aseprite",
+      ".ase"
+    ],
+    "drift": [],
+    "filesAddedAfterSnapshot": [
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_00.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_01.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_02.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_03.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_04.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_00.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_01.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_02.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_03.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/back_r/attack_back_r_04.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_00.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_01.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_02.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_03.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_l/attack_front_l_04.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_00.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_01.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_02.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_03.png",
+      "characters/orc-v1/source/actions/basic-unarmed/v1/front_r/attack_front_r_04.png",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/axe-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/axe-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/axe-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/defeat-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/dir-base.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/hit-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/idle-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/sword-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/sword-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/sword-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/unarmed-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/walk-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/axe-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/axe-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/axe-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/defeat-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/dir-base.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/hit-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/idle-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/unarmed-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/walk-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/defeat-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/dir-base.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/hit-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/idle-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/unarmed-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/walk-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/axe-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/axe-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/axe-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/defeat-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/dir-base.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/hit-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/idle-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/sword-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/sword-body.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/sword-hand-front.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/unarmed-attack.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/walk-unarmed.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/attack-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/attack-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/attack-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/attack-front_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/defeat-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/defeat-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/defeat-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/defeat-front_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/dir-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/dir-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/dir-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/dir-front_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/hit-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/hit-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/hit-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/hit-front_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/idle-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/idle-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/idle-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/idle-front_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/static-base.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/walk-back_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/walk-back_r.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_l.aseprite",
+      "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_r.aseprite",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Directions/base.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/body/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/handFront/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponBack/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/layers/weaponFront/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/00.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/01.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/02.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/03.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/04.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/05.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/06.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/07.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/08.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/09.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/10.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/11.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/12.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/13.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/14.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/15.png",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Directions/base.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponBack/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/weaponFront/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/native-strip.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/00.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/01.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/02.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/03.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/04.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/05.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/06.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/07.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/08.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/09.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/10.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/11.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/12.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/13.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/14.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/15.png",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Directions/base.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/body/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/handFront/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponBack/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/layers/weaponFront/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/00.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/01.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/02.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/03.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/04.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/05.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/06.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/07.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/08.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/09.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/10.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/11.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/12.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/13.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/14.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/15.png",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Directions/base.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/body/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/handFront/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponBack/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/layers/weaponFront/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/native-strip.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/00.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/01.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/02.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/03.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/04.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/05.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/06.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/07.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/08.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/09.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/10.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/11.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/12.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/13.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/14.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/15.png",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/native-strip.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_l_00.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_l_01.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_l_02.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_l_03.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_l_04.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_r_00.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_r_01.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_r_02.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_r_03.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_back_r_04.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_l_00.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_l_01.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_l_02.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_l_03.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_l_04.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_r_00.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_r_01.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_r_02.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_r_03.png",
+      "characters/orc-v1/sprites/Animations/Attack/attack_front_r_04.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_00.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_01.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_02.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_03.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_04.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_r_00.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_r_01.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_r_02.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_r_03.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_back_r_04.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_l_00.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_l_01.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_l_02.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_l_03.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_l_04.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_r_00.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_r_01.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_r_02.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_r_03.png",
+      "characters/orc-v1/sprites/Animations/Defeat/defeat_front_r_04.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_l_00.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_l_01.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_l_02.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_l_03.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_l_04.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_r_00.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_r_01.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_r_02.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_r_03.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_back_r_04.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_l_00.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_l_01.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_l_02.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_l_03.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_l_04.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_r_00.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_r_01.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_r_02.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_r_03.png",
+      "characters/orc-v1/sprites/Animations/Hit/hit_front_r_04.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_l_00.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_l_01.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_l_02.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_l_03.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_l_04.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_r_00.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_r_01.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_r_02.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_r_03.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_back_r_04.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_l_00.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_l_01.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_l_02.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_l_03.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_l_04.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_r_00.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_r_01.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_r_02.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_r_03.png",
+      "characters/orc-v1/sprites/Animations/Idle/idle_front_r_04.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_00.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_01.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_02.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_03.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_04.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_05.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_06.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_07.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_08.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_09.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_10.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_11.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_12.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_13.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_14.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_l_15.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_00.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_01.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_02.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_03.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_04.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_05.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_06.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_07.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_08.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_09.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_10.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_11.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_12.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_13.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_14.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_back_r_15.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_00.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_01.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_02.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_03.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_04.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_05.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_06.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_07.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_08.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_09.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_10.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_11.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_12.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_13.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_14.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_l_15.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_00.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_01.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_02.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_03.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_04.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_05.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_06.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_07.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_08.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_09.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_10.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_11.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_12.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_13.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_14.png",
+      "characters/orc-v1/sprites/Animations/Walk/walk_front_r_15.png",
+      "characters/orc-v1/sprites/Directions/orc_v1_dir_back_l.png",
+      "characters/orc-v1/sprites/Directions/orc_v1_dir_back_r.png",
+      "characters/orc-v1/sprites/Directions/orc_v1_dir_front_l.png",
+      "characters/orc-v1/sprites/Directions/orc_v1_dir_front_r.png",
+      "characters/orc-v1/sprites/orc_v1_mvp1_static_128.png"
+    ]
+  },
+  "metadataSnapshot": {
+    "files": [
+      {
+        "file": "characters/orc-v1/character.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "14839e5a80d848f852a8034d401a718a01ab11aed327f7449d710f002a3f2b1e",
+        "currentSha256": "49ce0b1d95c78f93ba51c91c6f469f4803e3a8902277b56c6422a734e876042b",
+        "drifted": true,
+        "changedKeys": [
+          {
+            "key": "profile.groundY",
+            "baseline": null,
+            "now": 126
+          },
+          {
+            "key": "profile.counts.Attack",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.counts.Hit",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.counts.Defeat",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.note",
+            "baseline": "Candidatos de uma vista para revisão; tempos e quadros estão nos mestres e clips, sem contrato de runtime.",
+            "now": "Biblioteca completa de candidatos do Orc V1 em 4 direções (128x128 nativo sem armas e 256x256 composto para combate de uma mão); tempos e quadros registrados nos mestres e clips."
+          },
+          {
+            "key": "reuseAssessment",
+            "baseline": [
+              {
+                "component": "Character identity, silhouette, face, palette, outfit and poses",
+                "category": "CREATE_NEW",
+                "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+                "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+                "artRisk": "The model may converge on the first round despite different prompts.",
+                "technicalRisk": "Animation and small-scale readability remain review studies.",
+                "dependencies": [
+                  "Installed PixelLab extension and authenticated account"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "No current candidate, approval, or production asset is replaced."
+              },
+              {
+                "component": "Aseprite masters, export and review tools",
+                "category": "REUSE_DIRECT",
+                "evidence": "Existing local Aseprite bridge and packaging workflow.",
+                "adaptation": "New independent IDs and source paths.",
+                "artRisk": "Technical export does not prove artistic quality.",
+                "technicalRisk": "None beyond normal preview checks.",
+                "dependencies": [
+                  "Aseprite 1.3+"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "Candidate review only."
+              },
+              {
+                "component": "Idle refinement-v2",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+                "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+                "artRisk": "Two held breathing poses; creator must assess intensity.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Saved own concept",
+                  "Aseprite regional edit script"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Walk refinement-v2",
+                "category": "CREATE_NEW",
+                "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+                "adaptation": "Animate with text (PixMiniMax)",
+                "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Official PixelLab extension and plan",
+                  "Own concept"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Corrective v3 motions",
+                "category": "CREATE_NEW",
+                "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+                "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+                "artRisk": "Generated face/material drift and gait require creator review.",
+                "dependencies": [
+                  "Authenticated official PixelLab MCP",
+                  "Own current concept",
+                  "Aseprite"
+                ],
+                "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+                "artisticApproval": "PENDING_CREATOR"
+              }
+            ],
+            "now": [
+              {
+                "component": "Character identity, silhouette, face, palette, outfit and poses",
+                "category": "CREATE_NEW",
+                "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+                "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+                "artRisk": "The model may converge on the first round despite different prompts.",
+                "technicalRisk": "Animation and small-scale readability remain review studies.",
+                "dependencies": [
+                  "Installed PixelLab extension and authenticated account"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "No current candidate, approval, or production asset is replaced."
+              },
+              {
+                "component": "Aseprite masters, export and review tools",
+                "category": "REUSE_DIRECT",
+                "evidence": "Existing local Aseprite bridge and packaging workflow.",
+                "adaptation": "New independent IDs and source paths.",
+                "artRisk": "Technical export does not prove artistic quality.",
+                "technicalRisk": "None beyond normal preview checks.",
+                "dependencies": [
+                  "Aseprite 1.3+"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "Candidate review only."
+              },
+              {
+                "component": "Idle refinement-v2",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+                "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+                "artRisk": "Two held breathing poses; creator must assess intensity.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Saved own concept",
+                  "Aseprite regional edit script"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Walk refinement-v2",
+                "category": "CREATE_NEW",
+                "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+                "adaptation": "Animate with text (PixMiniMax)",
+                "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Official PixelLab extension and plan",
+                  "Own concept"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Corrective v3 motions",
+                "category": "CREATE_NEW",
+                "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+                "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+                "artRisk": "Generated face/material drift and gait require creator review.",
+                "dependencies": [
+                  "Authenticated official PixelLab MCP",
+                  "Own current concept",
+                  "Aseprite"
+                ],
+                "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+                "artisticApproval": "PENDING_CREATOR"
+              },
+              {
+                "component": "Main Orc Complete Animation Library (main-orc-complete-v1)",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Reuses canonical front_r Idle (idle-balanced-v1), Walk (16f), and entry-v1 Sword/Axe attacks directly; authors front_l, back_r, back_l directional foundations and Unarmed/Hit/Defeat/Sword/Axe animations in Aseprite.",
+                "adaptation": "Aseprite Lua authoring (tools/aseprite/author-main-orc-complete.lua) preserving right-hand dominance, asymmetrical 3-spike right pauldron, top-left lighting, and attack-only-v1 weapon visibility.",
+                "artRisk": "Directional projections and basic combat reactions require explicit creator review.",
+                "technicalRisk": "Dynamic weapon overlay and 256x256 composite clips require future Unity runtime extension.",
+                "dependencies": [
+                  "Aseprite 1.3+",
+                  "characters/orc-v1/source/onehanded-entry-v1/manifest.json"
+                ],
+                "validation": "reports/orc-v1-animation-coverage-v1.json; experiments/main-orc-complete-v1/build.json",
+                "artisticApproval": "PENDING_CREATOR"
+              }
+            ]
+          },
+          {
+            "key": "completeAnimationCandidate",
+            "baseline": null,
+            "now": "characters/orc-v1/source/equipment-complete-candidate.json"
+          }
+        ],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/character.json"
+      },
+      {
+        "file": "characters/orc-v1/assets.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "838ce84fb5c1576634fad8c5f6a88604a47ca1c4697403e12c7e3e0add155824",
+        "currentSha256": "5189e3e0801354bbf40702d145236bd3fdc9dbc15bc1cc55b45d750a6893bc3e",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/assets.json"
+      },
+      {
+        "file": "characters/orc-v1/reviews.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/reviews.json"
+      },
+      {
+        "file": "characters/orc-v1/source/selection.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "ad7d9f2ebc4353f9959f8b344622fcc61465dfae72fba9864bc96af41eb32e1a",
+        "currentSha256": "097456d6ffb8b35cd990e4b954ab24025735b66daab5acbd7113b9151225ad9c",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/selection.json"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-current.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "3e9c4a02d65553f8860c1d9b6f7e142120686cf6c99b53a647269eaba72d78ef",
+        "currentSha256": "f525cac4ff60ecca88c6d72fdc8aab4e9a75c87ff33b455372c91152249b65c2",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/equipment-current.json"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-polish-candidate.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "2789b7907016c40733cd1b01b08b38d2d9cf79389bc9ad46cee2490529b3b77c",
+        "currentSha256": "9b212087708854622638e1ac24ba4545d455f361c93ac7b26aac430365023d70",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/equipment-polish-candidate.json"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-entry-candidate.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "aee55f0c0301f250d45a7b99e48397714c572c2b3cfbd04aa264733d95062a59",
+        "currentSha256": "02cf31da10463dcbee91fb3e5dacfad39cfe680df5063b72110a20bd0573b13c",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/equipment-entry-candidate.json"
+      },
+      {
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "f65f1b192bb669c403659f9e08db8690e43886b9895a3b30909e37b7e81c92ae",
+        "currentSha256": "4590acbfbc7a199cc67ef745179b669711f83e636cf6655fc697cbe393b58f91",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/onehanded-rescue-v3/manifest.json"
+      },
+      {
+        "file": "characters/orc-v1/source/onehanded-polish-v1/manifest.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "e1b9fa8c5807983a5b48efbd6e2433400254e20aa084e644568291e12d4eddd2",
+        "currentSha256": "e951968f82955cec1714a30284f4fc90d0d36beb1fb0d48773e0ccd77f9934bf",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/onehanded-polish-v1/manifest.json"
+      },
+      {
+        "file": "characters/orc-v1/source/onehanded-entry-v1/manifest.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "c3ee6da61acd867144c1abcbbdbf6c4392372ba90c6fe74b25aeeeb6e909e470",
+        "currentSha256": "298e658b5bd9dd459d2fa3d59aff8f10e57839be5a723c39666e0fe94b3b9675",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/onehanded-entry-v1/manifest.json"
+      },
+      {
+        "file": "characters/orc-v1/source/studies/Idle/clip.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "0842aa658e433f4fb075d7ef18682090b7b2c9861aa09e1383b6baee3779f638",
+        "currentSha256": "1e11103bbdba8382a937ae06a1390648f29d5313921874c8c86c6c2b1732dcce",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/studies/Idle/clip.json"
+      },
+      {
+        "file": "characters/orc-v1/source/studies/Walk/clip.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "2575ab182db37d802384793cfddfbea02610802021fa95f3c1c41596ed0d9cea",
+        "currentSha256": "80f6a14ac36e299ae7d4d8c87a0d5977209fe16ce915e41f8509964f3d95b2e2",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/source/studies/Walk/clip.json"
+      },
+      {
+        "file": "assets/weapons/recruit-sword/weapon.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "f04b909d6e59783b602cbf02f6d279f88dd97187825b7e5d8b39669724405329",
+        "currentSha256": "90f1c7e7b795d18ffd994aaa0be98964ee2750cf8e00e4071737922772134daa",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/assets/weapons/recruit-sword/weapon.json"
+      },
+      {
+        "file": "assets/weapons/militia-axe/weapon.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "323befaffe2c96dbb1624c1fba5bc9de3fad1c5fc0d658aaa25337b2000c95f0",
+        "currentSha256": "0df0b2975bd6fbc3a663145a22e9b8eeda2e9f446917a34573815092fba34914",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/assets/weapons/militia-axe/weapon.json"
+      },
+      {
+        "file": "reports/orc-production-current.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "1f1d7786d19240fc6428738963771763b1825156220523c31ad5e4f0482f0aa7",
+        "currentSha256": "fc7f7752020393303839aa34ad8031fd210ea76b10a38488b94c9f33cb0b0f97",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/reports/orc-production-current.json"
+      },
+      {
+        "file": "config/equipment-actions-v1.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "6564ee5be7f420320cd55486b06ba020ef93a00f397447970944fa047cd4d6ae",
+        "currentSha256": "aea2390b356caf284f3c2b1c5a925d0362e9fac2ea15b6ce642b90c7dbac0094",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/config/equipment-actions-v1.json"
+      },
+      {
+        "file": "config/idle-art-standard-v1.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "79d3acbf7856cbd0fa6a30677f28ff4f6dd0e98e1a709c13854e9b6271bd3469",
+        "currentSha256": "1391cae6fb3508bd8719bebfb4cade2acafc881d69255df7b763ae7c1315aaed",
+        "drifted": false,
+        "changedKeys": [],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/config/idle-art-standard-v1.json"
+      }
+    ],
+    "drift": [
+      {
+        "file": "characters/orc-v1/character.json",
+        "baseline": "GIT_HEAD",
+        "baselineSha256": "14839e5a80d848f852a8034d401a718a01ab11aed327f7449d710f002a3f2b1e",
+        "currentSha256": "49ce0b1d95c78f93ba51c91c6f469f4803e3a8902277b56c6422a734e876042b",
+        "drifted": true,
+        "changedKeys": [
+          {
+            "key": "profile.groundY",
+            "baseline": null,
+            "now": 126
+          },
+          {
+            "key": "profile.counts.Attack",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.counts.Hit",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.counts.Defeat",
+            "baseline": null,
+            "now": 5
+          },
+          {
+            "key": "profile.note",
+            "baseline": "Candidatos de uma vista para revisão; tempos e quadros estão nos mestres e clips, sem contrato de runtime.",
+            "now": "Biblioteca completa de candidatos do Orc V1 em 4 direções (128x128 nativo sem armas e 256x256 composto para combate de uma mão); tempos e quadros registrados nos mestres e clips."
+          },
+          {
+            "key": "reuseAssessment",
+            "baseline": [
+              {
+                "component": "Character identity, silhouette, face, palette, outfit and poses",
+                "category": "CREATE_NEW",
+                "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+                "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+                "artRisk": "The model may converge on the first round despite different prompts.",
+                "technicalRisk": "Animation and small-scale readability remain review studies.",
+                "dependencies": [
+                  "Installed PixelLab extension and authenticated account"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "No current candidate, approval, or production asset is replaced."
+              },
+              {
+                "component": "Aseprite masters, export and review tools",
+                "category": "REUSE_DIRECT",
+                "evidence": "Existing local Aseprite bridge and packaging workflow.",
+                "adaptation": "New independent IDs and source paths.",
+                "artRisk": "Technical export does not prove artistic quality.",
+                "technicalRisk": "None beyond normal preview checks.",
+                "dependencies": [
+                  "Aseprite 1.3+"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "Candidate review only."
+              },
+              {
+                "component": "Idle refinement-v2",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+                "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+                "artRisk": "Two held breathing poses; creator must assess intensity.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Saved own concept",
+                  "Aseprite regional edit script"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Walk refinement-v2",
+                "category": "CREATE_NEW",
+                "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+                "adaptation": "Animate with text (PixMiniMax)",
+                "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Official PixelLab extension and plan",
+                  "Own concept"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Corrective v3 motions",
+                "category": "CREATE_NEW",
+                "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+                "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+                "artRisk": "Generated face/material drift and gait require creator review.",
+                "dependencies": [
+                  "Authenticated official PixelLab MCP",
+                  "Own current concept",
+                  "Aseprite"
+                ],
+                "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+                "artisticApproval": "PENDING_CREATOR"
+              }
+            ],
+            "now": [
+              {
+                "component": "Character identity, silhouette, face, palette, outfit and poses",
+                "category": "CREATE_NEW",
+                "evidence": "Creator requested a new contrast round with three distinct textual briefs.",
+                "adaptation": "PixelLab Create image Pro from a blank 128x128 Aseprite document; text only, no image conditioning.",
+                "artRisk": "The model may converge on the first round despite different prompts.",
+                "technicalRisk": "Animation and small-scale readability remain review studies.",
+                "dependencies": [
+                  "Installed PixelLab extension and authenticated account"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "No current candidate, approval, or production asset is replaced."
+              },
+              {
+                "component": "Aseprite masters, export and review tools",
+                "category": "REUSE_DIRECT",
+                "evidence": "Existing local Aseprite bridge and packaging workflow.",
+                "adaptation": "New independent IDs and source paths.",
+                "artRisk": "Technical export does not prove artistic quality.",
+                "technicalRisk": "None beyond normal preview checks.",
+                "dependencies": [
+                  "Aseprite 1.3+"
+                ],
+                "validation": "Current v3 candidate files exported and inspected; creator approval pending.",
+                "productionImpact": "Candidate review only."
+              },
+              {
+                "component": "Idle refinement-v2",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Own PixelLab concept reused with unchanged face and lower body.",
+                "adaptation": "Aseprite Lua torso microanimation over original PixelLab concept",
+                "artRisk": "Two held breathing poses; creator must assess intensity.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Saved own concept",
+                  "Aseprite regional edit script"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Walk refinement-v2",
+                "category": "CREATE_NEW",
+                "evidence": "Own concept conditions a new PixMiniMax motion cycle.",
+                "adaptation": "Animate with text (PixMiniMax)",
+                "artRisk": "Generated detail/orientation drift and loop contact require artistic review.",
+                "technicalRisk": "Candidate view only; no runtime or anatomy-universal claim.",
+                "dependencies": [
+                  "Official PixelLab extension and plan",
+                  "Own concept"
+                ],
+                "validation": "Previous v2 study superseded after creator feedback; do not reuse rejected local Idle deformation.",
+                "artisticApproval": "PENDING_CREATOR",
+                "historical": true
+              },
+              {
+                "component": "Corrective v3 motions",
+                "category": "CREATE_NEW",
+                "evidence": "Creator rejected broken regional Idles and 04/07 gait; own concepts supplied to official MCP animate_image.",
+                "adaptation": "Eight generated poses; Aseprite master packaging with explicit timing. 06 Walk preserved.",
+                "artRisk": "Generated face/material drift and gait require creator review.",
+                "dependencies": [
+                  "Authenticated official PixelLab MCP",
+                  "Own current concept",
+                  "Aseprite"
+                ],
+                "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
+                "artisticApproval": "PENDING_CREATOR"
+              },
+              {
+                "component": "Main Orc Complete Animation Library (main-orc-complete-v1)",
+                "category": "REUSE_ADAPTED",
+                "evidence": "Reuses canonical front_r Idle (idle-balanced-v1), Walk (16f), and entry-v1 Sword/Axe attacks directly; authors front_l, back_r, back_l directional foundations and Unarmed/Hit/Defeat/Sword/Axe animations in Aseprite.",
+                "adaptation": "Aseprite Lua authoring (tools/aseprite/author-main-orc-complete.lua) preserving right-hand dominance, asymmetrical 3-spike right pauldron, top-left lighting, and attack-only-v1 weapon visibility.",
+                "artRisk": "Directional projections and basic combat reactions require explicit creator review.",
+                "technicalRisk": "Dynamic weapon overlay and 256x256 composite clips require future Unity runtime extension.",
+                "dependencies": [
+                  "Aseprite 1.3+",
+                  "characters/orc-v1/source/onehanded-entry-v1/manifest.json"
+                ],
+                "validation": "reports/orc-v1-animation-coverage-v1.json; experiments/main-orc-complete-v1/build.json",
+                "artisticApproval": "PENDING_CREATOR"
+              }
+            ]
+          },
+          {
+            "key": "completeAnimationCandidate",
+            "baseline": null,
+            "now": "characters/orc-v1/source/equipment-complete-candidate.json"
+          }
+        ],
+        "copy": "experiments/main-orc-complete-animation-v1/before-metadata/characters/orc-v1/character.json"
+      }
+    ],
+    "copyRoot": "experiments/main-orc-complete-animation-v1/before-metadata/"
+  },
+  "reviewMaterials": {
+    "libraryManifest": "experiments/main-orc-complete-animation-v1/protected-library.json",
+    "libraryFilesHashed": 2302,
+    "libraryStrategy": "HASH_ONLY: the library is regenerable from canonical sources; no byte copy is stored.",
+    "maxProtectedPathLength": 218,
+    "libraryDrift": [],
+    "pages": [
+      {
+        "file": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Entrada de combate/index.html",
+        "sha256": "069a524f5102eb0f9f7442813275884266849177e0530b5c198be9ac32e6ed05",
+        "bytes": 34437
+      },
+      {
+        "file": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Polimento de combate/index.html",
+        "sha256": "5056709a8733b10256cea89ac38afcfbfdc2f317fa8aefbd29c46face8b6cd80",
+        "bytes": 31998
+      },
+      {
+        "file": "Biblioteca de Arte/Historico de Entregas/Orc V1 - Armas v1/index.html",
+        "sha256": "4f498cbd4d1290649d18ff90332f2a0ec8ad4822dfaedeabef1d4ce1c765e7ce",
+        "bytes": 13825
+      },
+      {
+        "file": "Biblioteca de Arte/Historico de Entregas/Orc V1 - Armas v2/index.html",
+        "sha256": "38ee03b66a249a87eed9ab5ff99ae60bd8be9d29cf452158b4a1e64b1262d9f8",
+        "bytes": 16881
+      },
+      {
+        "file": "Biblioteca de Arte/index.html",
+        "sha256": "4f65e845045e695d275cc44052d82bf47bd9423f988580f8371272fba5ea1d04",
+        "bytes": 38782
+      },
+      {
+        "file": "Biblioteca de Arte/Orcs Atuais/Orc V1/index.html",
+        "sha256": "46c4687d9527a9153b972f1c2ec46d1d65debdb09848eb25c1376bdde81cd590",
+        "bytes": 7900
+      },
+      {
+        "file": "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+        "sha256": "5eca6c329e7f09407b081d78cea3fd04878235d7ce031510248af5c32a391f68",
+        "bytes": 27629
+      }
+    ],
+    "editorBuilds": [
+      {
+        "build": "main-orc-onehanded-entry-v1",
+        "files": 284,
+        "bytes": 4691088
+      },
+      {
+        "build": "main-orc-onehanded-polish-v1",
+        "files": 408,
+        "bytes": 6706044
+      },
+      {
+        "build": "main-orc-onehanded-v3",
+        "files": 242,
+        "bytes": 3872521
+      },
+      {
+        "build": "main-orc-timing-only-study",
+        "files": 30,
+        "bytes": 633783
+      }
+    ]
+  },
+  "git": {
+    "branch": "main",
+    "head": "a9ab1e6a958e36400743412c542dc6b6fec6126a",
+    "headSubject": "integracao com aseprite e pixel lab feita com sucesso",
+    "headDate": "2026-10-25T21:31:47-03:00",
+    "cleanAtStageAStart": true,
+    "entriesNow": 14,
+    "concurrentArrivals": 12,
+    "concurrentArrivalsFile": "experiments/main-orc-complete-animation-v1/concurrent-arrivals.txt",
+    "statusFile": "experiments/main-orc-complete-animation-v1/initial-git-status.txt",
+    "currentStatusFile": "experiments/main-orc-complete-animation-v1/current-git-status.txt",
+    "note": "The tree was clean at HEAD when Stage A started. Entries in concurrent-arrivals.txt appeared afterwards, sit outside this audit and are not production truth. No commit/reset/stash was made."
+  },
+  "postSnapshotActivity": {
+    "note": "Files that exist now but were not part of the audited baseline. They are not production truth here.",
+    "metadataFilesAdded": [
+      "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Hit/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Idle/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Unarmed/clip.json",
+      "characters/orc-v1/source/complete-v1/back_l/Walk/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Hit/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Idle/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Unarmed/clip.json",
+      "characters/orc-v1/source/complete-v1/back_r/Walk/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Defeat/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Hit/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Idle/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Unarmed/clip.json",
+      "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Defeat/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Hit/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Idle/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Unarmed/clip.json",
+      "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json"
+    ],
+    "gitEntriesAppeared": [
+      "M characters/orc-v1/character.json",
+      "?? characters/orc-v1/reports/",
+      "?? characters/orc-v1/source/actions/",
+      "?? characters/orc-v1/source/aseprite/complete-v1/",
+      "?? characters/orc-v1/source/complete-v1/",
+      "?? characters/orc-v1/source/equipment-complete-candidate.json",
+      "?? characters/orc-v1/sprites/",
+      "?? experiments/main-orc-complete-v1/",
+      "?? reports/orc-v1-animation-coverage-v1.json",
+      "?? tools/aseprite/author-main-orc-complete.lua",
+      "?? tools/build-main-orc-complete-review.py",
+      "?? tools/build-main-orc-complete.mjs"
+    ],
+    "file": "experiments/main-orc-complete-animation-v1/concurrent-arrivals.txt"
+  },
+  "verification": {
+    "generatedAt": "2026-10-26T01:16:38.141Z",
+    "commands": [
+      "node src/cli.mjs doctor",
+      "node src/cli.mjs editor-check",
+      "node --test --test-concurrency=1"
+    ],
+    "doctor": {
+      "ok": true,
+      "json": {
+        "node": "v24.20.0",
+        "root": "C:\\Users\\João Orlando\\Documents\\Projetos Unity\\TacticsRPG-CharacterFactory",
+        "referenceErrors": [],
+        "cloudCalls": "none",
+        "generation": "Aseprite e o mestre. PixelLab pela extensao oficial e opcional e executa geracao em nuvem; este comando nao gera nem chama o servico.",
+        "editor": {
+          "status": "AVAILABLE",
+          "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+          "version": "Aseprite 1.3.18.6-x64",
+          "mode": "batch",
+          "windowsHide": true,
+          "steamClient": "--noinapp",
+          "cloudCalls": "none"
+        },
+        "editorPolicy": "Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade."
+      }
+    },
+    "editorCheck": {
+      "ok": true,
+      "json": {
+        "status": "AVAILABLE",
+        "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+        "version": "Aseprite 1.3.18.6-x64",
+        "mode": "batch",
+        "windowsHide": true,
+        "steamClient": "--noinapp",
+        "cloudCalls": "none"
+      }
+    },
+    "tests": {
+      "ok": true,
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "durationMs": 26931,
+      "tail": "✔ basic unarmed never uses a Job cast or bow gesture (0.7658ms)\n✔ equipped basic action follows actual weapon; unknown or omitted equipment fails (0.3198ms)\n✔ ability requires its explicit visual profile and cannot reuse basic attack implicitly (0.1595ms)\n✔ supplement export requires explicit current approval and copies every direction without inventing overlays (109.29ms)\n✔ export rejects changed native/editor bytes and false unarmed overlay or reuse (50.9112ms)\n✔ V4 timing and deliberate closing pose are approval-bound; extra duplicates remain rejected (106.0429ms)\nImportado sem reescala: concepts/synthetic-fixture.png\nRevisao humana registrada para estes arquivos e esta ficha.\n✔ editor discovery rejects explicit invalid path; malformed manifests cannot escape workspace (1.9239ms)\n✔ real Aseprite bridge: frames, layers, tags, tilemap, source preservation, immutable builds, templates and gated apply (4252.5973ms)\n✔ confinamento rejeita traversal, IDs perigosos e junction/symlink externo (3.8312ms)\n✔ source-over preserva pixel grid, respeita ordem/alfa e rejeita canvas diferente (1.833ms)\n✔ medicao considera alfa, fundo transparente e linha do chao (1.7239ms)\n✔ PNG corrompido e limites de dimensao sao rejeitados antes de uso (3.2716ms)\n✔ catalogos e referencias congeladas preservam baseline 28/63 (450.0858ms)\n✔ fluxo CLI protege gates, registra roupas, exporta baseline e invalida revisao apos mudanca (6198.3177ms)\n✔ entry preview builds without the historical deliveries directory (1913.9174ms)\nℹ tests 15\nℹ suites 0\nℹ pass 15\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 26931.7078\n"
+    },
+    "note": "Baseline verification of the audited state. Technical PASS is not artistic approval."
+  },
+  "pointers": [
+    {
+      "file": "characters/orc-v1/source/equipment-current.json",
+      "revision": "main-orc-onehanded-v3",
+      "manifest": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+      "manifestSha256": "4590acbfbc7a199cc67ef745179b669711f83e636cf6655fc697cbe393b58f91",
+      "manifestExists": true,
+      "selection": null,
+      "artisticApproval": "PENDING_CREATOR",
+      "baseline": null,
+      "scope": "BASELINE_AT_SNAPSHOT"
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-polish-candidate.json",
+      "revision": "main-orc-onehanded-polish-v1",
+      "manifest": "characters/orc-v1/source/onehanded-polish-v1/manifest.json",
+      "manifestSha256": "e951968f82955cec1714a30284f4fc90d0d36beb1fb0d48773e0ccd77f9934bf",
+      "manifestExists": true,
+      "selection": null,
+      "artisticApproval": "PENDING_CREATOR",
+      "baseline": null,
+      "scope": "BASELINE_AT_SNAPSHOT"
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-entry-candidate.json",
+      "revision": "main-orc-onehanded-entry-v1",
+      "manifest": "characters/orc-v1/source/onehanded-entry-v1/manifest.json",
+      "manifestSha256": "298e658b5bd9dd459d2fa3d59aff8f10e57839be5a723c39666e0fe94b3b9675",
+      "manifestExists": true,
+      "selection": "REVIEW_ONLY; equipment-current remains v3",
+      "artisticApproval": "PENDING_CREATOR",
+      "baseline": "characters/orc-v1/source/onehanded-polish-v1/manifest.json",
+      "scope": "BASELINE_AT_SNAPSHOT"
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-complete-candidate.json",
+      "revision": "main-orc-complete-v1",
+      "manifest": "characters/orc-v1/source/complete-v1/manifest.json",
+      "manifestSha256": "ee33af0868e81bbdac25e5e810a91f7760b0c7c3bb9138a1d5f20ab0b24d3729",
+      "manifestExists": true,
+      "selection": null,
+      "artisticApproval": "PENDING_CREATOR",
+      "baseline": null,
+      "scope": "ARRIVED_AFTER_SNAPSHOT"
+    }
+  ],
+  "pointersResolved": {
+    "activeRevision": "main-orc-onehanded-v3",
+    "activeManifest": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+    "characterEquipmentPreview": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+    "candidates": [
+      {
+        "file": "characters/orc-v1/source/equipment-polish-candidate.json",
+        "revision": "main-orc-onehanded-polish-v1",
+        "selection": null
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-entry-candidate.json",
+        "revision": "main-orc-onehanded-entry-v1",
+        "selection": "REVIEW_ONLY; equipment-current remains v3"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-complete-candidate.json",
+        "revision": "main-orc-complete-v1",
+        "selection": null
+      }
+    ]
+  },
+  "sourceTruth": {
+    "concept": "characters/orc-v1/concepts/concept-selected.png",
+    "conceptMaster": "characters/orc-v1/source/aseprite/concept-selected.aseprite",
+    "idleClip": "characters/orc-v1/source/studies/Idle/clip.json",
+    "idleMaster": "characters/orc-v1/source/aseprite/idle-study.aseprite",
+    "walkClip": "characters/orc-v1/source/studies/Walk/clip.json",
+    "walkMaster": "characters/orc-v1/source/aseprite/walk-study.aseprite",
+    "idleStandard": "config/idle-art-standard-v1.json",
+    "equipmentContract": "config/equipment-actions-v1.json"
+  },
+  "clips": [
+    {
+      "file": "characters/orc-v1/source/equipment-v2/militia-axe/Attack/clip.json",
+      "revision": "weapons-v2",
+      "state": "Attack",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 12,
+      "durationsMs": [
+        160,
+        100,
+        100,
+        120,
+        140,
+        60,
+        55,
+        70,
+        90,
+        120,
+        120,
+        180
+      ],
+      "totalMs": 1315,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": {
+        "frame": 6,
+        "appliesDamage": false,
+        "status": "CANDIDATE_VISUAL_ONLY"
+      },
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-v2/militia-axe/Idle/clip.json",
+      "revision": "weapons-v2",
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-idle.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-v2/militia-axe/Walk/clip.json",
+      "revision": "weapons-v2",
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/militia-axe-walk.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Attack/clip.json",
+      "revision": "weapons-v2",
+      "state": "Attack",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 12,
+      "durationsMs": [
+        160,
+        100,
+        100,
+        120,
+        140,
+        60,
+        55,
+        70,
+        90,
+        120,
+        120,
+        180
+      ],
+      "totalMs": 1315,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": {
+        "frame": 6,
+        "appliesDamage": false,
+        "status": "CANDIDATE_VISUAL_ONLY"
+      },
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Idle/clip.json",
+      "revision": "weapons-v2",
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-idle.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Walk/clip.json",
+      "revision": "weapons-v2",
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/equipment-v2/recruit-sword-walk.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment/militia-axe/Attack/clip.json",
+      "revision": null,
+      "state": "Attack",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 9,
+      "durationsMs": [
+        180,
+        100,
+        140,
+        170,
+        75,
+        100,
+        150,
+        170,
+        200
+      ],
+      "totalMs": 1285,
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": {
+        "frameIndex": 5,
+        "offsetMs": 0,
+        "kind": "visual-only-contact-candidate",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment/militia-axe/Walk/clip.json",
+      "revision": null,
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/equipment/militia-axe-walk.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment/recruit-sword/Attack/clip.json",
+      "revision": null,
+      "state": "Attack",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 9,
+      "durationsMs": [
+        140,
+        90,
+        120,
+        120,
+        65,
+        80,
+        110,
+        130,
+        170
+      ],
+      "totalMs": 1025,
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": {
+        "frameIndex": 5,
+        "offsetMs": 0,
+        "kind": "visual-only-contact-candidate",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/equipment/recruit-sword/Walk/clip.json",
+      "revision": null,
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/equipment/recruit-sword-walk.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": {
+        "grip": null,
+        "scale": null
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+      "revision": "main-orc-onehanded-entry-v1",
+      "state": "Attack",
+      "category": "Axe",
+      "id": "basic.axe-chop",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "totalMs": 1005,
+      "master": "characters/orc-v1/source/aseprite/onehanded-entry-v1/axe-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "contactEvent": {
+        "frame": 6,
+        "timeMs": 410,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "militia-axe",
+        "grip": [
+          36,
+          55
+        ],
+        "scale": 1
+      },
+      "baselineRevision": "main-orc-onehanded-polish-v1"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+      "revision": null,
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+      "revision": "main-orc-onehanded-entry-v1",
+      "state": "Attack",
+      "category": "Sword",
+      "id": "basic.sword-slash",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 13,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "totalMs": 730,
+      "master": "characters/orc-v1/source/aseprite/onehanded-entry-v1/sword-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        2,
+        10
+      ],
+      "contactEvent": {
+        "frame": 8,
+        "timeMs": 360,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "recruit-sword",
+        "grip": [
+          48,
+          66
+        ],
+        "scale": 1
+      },
+      "baselineRevision": "main-orc-onehanded-polish-v1"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+      "revision": null,
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+      "revision": "main-orc-onehanded-polish-v1",
+      "state": "Attack",
+      "category": "Axe",
+      "id": "basic.axe-chop",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 12,
+      "durationsMs": [
+        40,
+        50,
+        100,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "totalMs": 1055,
+      "master": "characters/orc-v1/source/aseprite/onehanded-polish-v1/axe-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        1,
+        8
+      ],
+      "contactEvent": {
+        "frame": 6,
+        "timeMs": 460,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "militia-axe",
+        "grip": [
+          36,
+          55
+        ],
+        "scale": 1
+      },
+      "baselineRevision": "main-orc-onehanded-v3"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+      "revision": null,
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+      "revision": "main-orc-onehanded-polish-v1",
+      "state": "Attack",
+      "category": "Sword",
+      "id": "basic.sword-slash",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 11,
+      "durationsMs": [
+        40,
+        45,
+        65,
+        100,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "totalMs": 690,
+      "master": "characters/orc-v1/source/aseprite/onehanded-polish-v1/sword-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        1,
+        8
+      ],
+      "contactEvent": {
+        "frame": 6,
+        "timeMs": 320,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "recruit-sword",
+        "grip": [
+          48,
+          66
+        ],
+        "scale": 1
+      },
+      "baselineRevision": "main-orc-onehanded-v3"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+      "revision": null,
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+      "revision": "main-orc-onehanded-v3",
+      "state": "Attack",
+      "category": "Axe",
+      "id": "basic.axe-chop",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 10,
+      "durationsMs": [
+        80,
+        120,
+        110,
+        170,
+        70,
+        70,
+        120,
+        150,
+        100,
+        140
+      ],
+      "totalMs": 1130,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/axe-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        1,
+        7
+      ],
+      "contactEvent": {
+        "frame": 5,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "militia-axe",
+        "grip": [
+          36,
+          55
+        ],
+        "scale": 1
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+      "revision": null,
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/idle-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+      "revision": "main-orc-onehanded-v3",
+      "state": "Attack",
+      "category": "Sword",
+      "id": "basic.sword-slash",
+      "direction": "front_r",
+      "loop": false,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 8,
+      "durationsMs": [
+        80,
+        100,
+        130,
+        65,
+        55,
+        95,
+        130,
+        120
+      ],
+      "totalMs": 775,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/sword-attack.aseprite",
+      "artisticApproval": "PENDING_CREATOR",
+      "selectedAsCurrent": null,
+      "visibleInterval": [
+        1,
+        6
+      ],
+      "contactEvent": {
+        "frame": 5,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "weapon": {
+        "id": "recruit-sword",
+        "grip": [
+          48,
+          66
+        ],
+        "scale": 1
+      },
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+      "revision": null,
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": null,
+      "loop": true,
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/onehanded-rescue-v3/walk-unarmed.aseprite",
+      "artisticApproval": null,
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/studies/Idle/clip.json",
+      "revision": "green-skin-v3",
+      "state": "Idle",
+      "category": null,
+      "id": null,
+      "direction": "front_r",
+      "loop": null,
+      "canvas": null,
+      "groundY": null,
+      "ppu": null,
+      "frameCount": 5,
+      "durationsMs": [
+        400,
+        450,
+        500,
+        450,
+        400
+      ],
+      "totalMs": 2200,
+      "master": "characters/orc-v1/source/aseprite/idle-study.aseprite",
+      "artisticApproval": "CREATOR_SELECTED_GREEN_WARCRAFT",
+      "selectedAsCurrent": true,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    },
+    {
+      "file": "characters/orc-v1/source/studies/Walk/clip.json",
+      "revision": "orc-v1-green-walk",
+      "state": "Walk",
+      "category": null,
+      "id": null,
+      "direction": "front_r",
+      "loop": null,
+      "canvas": null,
+      "groundY": null,
+      "ppu": null,
+      "frameCount": 16,
+      "durationsMs": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "totalMs": 1280,
+      "master": "characters/orc-v1/source/aseprite/walk-study.aseprite",
+      "artisticApproval": "PENDING_CREATOR_GREEN_WALK",
+      "selectedAsCurrent": null,
+      "visibleInterval": null,
+      "contactEvent": null,
+      "weapon": null,
+      "baselineRevision": null
+    }
+  ],
+  "bindings": [
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/profile.json",
+      "id": "basic.axe-chop",
+      "category": "Axe",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 12,
+      "totalMs": 1005,
+      "weaponVisibleFrames": 7,
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/profile.json",
+      "id": "basic.sword-slash",
+      "category": "Sword",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "ppu": 100,
+      "frameCount": 13,
+      "totalMs": 730,
+      "weaponVisibleFrames": 9,
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/profile.json",
+      "id": "basic.axe-chop",
+      "category": "Axe",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 12,
+      "totalMs": 1055,
+      "weaponVisibleFrames": 8,
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/profile.json",
+      "id": "basic.sword-slash",
+      "category": "Sword",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 11,
+      "totalMs": 690,
+      "weaponVisibleFrames": 8,
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/profile.json",
+      "id": "basic.axe-chop",
+      "category": "Axe",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 10,
+      "totalMs": 1130,
+      "weaponVisibleFrames": 7,
+      "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/profile.json",
+      "id": "basic.sword-slash",
+      "category": "Sword",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "ppu": 100,
+      "frameCount": 8,
+      "totalMs": 775,
+      "weaponVisibleFrames": 6,
+      "artisticApproval": "PENDING_CREATOR"
+    }
+  ],
+  "manifests": [
+    {
+      "file": "characters/orc-v1/source/onehanded-entry-v1/manifest.json",
+      "revision": "main-orc-onehanded-entry-v1",
+      "character": "orc-v1",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "clips": [
+        {
+          "state": "Attack",
+          "category": "Sword",
+          "clip": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Attack",
+          "category": "Axe",
+          "clip": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Idle",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+          "alias": true
+        },
+        {
+          "state": "Walk",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+          "alias": true
+        }
+      ],
+      "artisticApproval": "PENDING_CREATOR",
+      "selection": "REVIEW_ONLY; equipment-current unchanged"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-polish-v1/manifest.json",
+      "revision": "main-orc-onehanded-polish-v1",
+      "character": "orc-v1",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": 190,
+      "clips": [
+        {
+          "state": "Attack",
+          "category": "Sword",
+          "clip": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Attack",
+          "category": "Axe",
+          "clip": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Idle",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Walk",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+          "alias": false
+        }
+      ],
+      "artisticApproval": "PENDING_CREATOR",
+      "selection": "REVIEW_ONLY; equipment-current remains v3"
+    },
+    {
+      "file": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+      "revision": "main-orc-onehanded-v3",
+      "character": "orc-v1",
+      "direction": "front_r",
+      "canvas": [
+        256,
+        256
+      ],
+      "groundY": null,
+      "clips": [
+        {
+          "state": "Idle",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Walk",
+          "category": null,
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Attack",
+          "category": "Sword",
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+          "alias": false
+        },
+        {
+          "state": "Attack",
+          "category": "Axe",
+          "clip": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+          "alias": false
+        }
+      ],
+      "artisticApproval": "PENDING_CREATOR",
+      "selection": null
+    }
+  ],
+  "invariants": {
+    "total": 34,
+    "scope": "Current revisions only (source/studies + onehanded-rescue-v3/polish-v1/entry-v1). Rejected armed v1/v2 clips in source/equipment*/ are preserved history and excluded.",
+    "failures": [],
+    "historicalExcluded": [
+      {
+        "file": "characters/orc-v1/source/equipment-v2/militia-axe/Attack/clip.json",
+        "state": "Attack",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-v2/militia-axe/Idle/clip.json",
+        "state": "Idle",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-v2/militia-axe/Walk/clip.json",
+        "state": "Walk",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Attack/clip.json",
+        "state": "Attack",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Idle/clip.json",
+        "state": "Idle",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment-v2/recruit-sword/Walk/clip.json",
+        "state": "Walk",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment/militia-axe/Attack/clip.json",
+        "state": "Attack",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment/militia-axe/Walk/clip.json",
+        "state": "Walk",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment/recruit-sword/Attack/clip.json",
+        "state": "Attack",
+        "reason": "REJECTED_ARMED_HISTORY"
+      },
+      {
+        "file": "characters/orc-v1/source/equipment/recruit-sword/Walk/clip.json",
+        "state": "Walk",
+        "reason": "REJECTED_ARMED_HISTORY"
+      }
+    ],
+    "checks": [
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 2..8"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 2..10"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 1..8"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 1..8"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 1..7"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "visible-interval-contiguous",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "weaponVisible must be true only in 1..6"
+      },
+      {
+        "id": "neutral-start",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "first attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "neutral-end",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+        "ok": true,
+        "detail": "last attack frame differs from Idle frame 0"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/studies/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/studies/Idle/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      },
+      {
+        "id": "rest-no-weapon-visible",
+        "file": "characters/orc-v1/source/studies/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip declares a visible weapon"
+      },
+      {
+        "id": "rest-no-weapon-layer",
+        "file": "characters/orc-v1/source/studies/Walk/clip.json",
+        "ok": true,
+        "detail": "resting clip carries weapon layers"
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "id": "recruit-sword",
+      "weaponJson": "assets/weapons/recruit-sword/weapon.json",
+      "present": true,
+      "category": "Sword",
+      "hands": 1,
+      "ppu": 100,
+      "sprite": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+      "spriteSha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a",
+      "master": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+      "masterSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4",
+      "spriteCanvas": [
+        96,
+        96
+      ],
+      "contentBBox": [
+        35,
+        7,
+        61,
+        79
+      ],
+      "contentSize": [
+        26,
+        72
+      ]
+    },
+    {
+      "id": "militia-axe",
+      "weaponJson": "assets/weapons/militia-axe/weapon.json",
+      "present": true,
+      "category": "Axe",
+      "hands": 1,
+      "ppu": 100,
+      "sprite": "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png",
+      "spriteSha256": "f573fb9a9264a5d46fc20cdfbebf679cb47cf8944d74a435e25e1d9da795c3a0",
+      "master": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+      "masterSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+      "spriteCanvas": [
+        96,
+        96
+      ],
+      "contentBBox": [
+        30,
+        15,
+        66,
+        62
+      ],
+      "contentSize": [
+        36,
+        47
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "state": "Idle",
+      "kind": "body",
+      "note": "Loop 5 frames / 2200 ms, idle-balanced-v1 standard.",
+      "status": "PRESENT",
+      "active": {
+        "file": "characters/orc-v1/source/studies/Idle/clip.json",
+        "revision": "green-skin-v3",
+        "frames": 5,
+        "totalMs": 2200,
+        "approval": "CREATOR_SELECTED_GREEN_WARCRAFT",
+        "visibleInterval": null,
+        "aliases": [
+          "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+          "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json"
+        ]
+      },
+      "latestCandidate": {
+        "file": "characters/orc-v1/source/studies/Idle/clip.json",
+        "revision": "green-skin-v3",
+        "frames": 5,
+        "totalMs": 2200,
+        "approval": "CREATOR_SELECTED_GREEN_WARCRAFT",
+        "visibleInterval": null,
+        "aliases": [
+          "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+          "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+          "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json"
+        ]
+      },
+      "allFiles": [
+        "characters/orc-v1/source/equipment-v2/militia-axe/Idle/clip.json",
+        "characters/orc-v1/source/equipment-v2/recruit-sword/Idle/clip.json",
+        "characters/orc-v1/source/onehanded-entry-v1/Idle/clip.json",
+        "characters/orc-v1/source/onehanded-polish-v1/Idle/clip.json",
+        "characters/orc-v1/source/onehanded-rescue-v3/Idle/clip.json",
+        "characters/orc-v1/source/studies/Idle/clip.json"
+      ],
+      "legacyFiles": [
+        "characters/orc-v1/source/equipment-v2/militia-axe/Idle/clip.json",
+        "characters/orc-v1/source/equipment-v2/recruit-sword/Idle/clip.json"
+      ]
+    },
+    {
+      "state": "Walk",
+      "kind": "body",
+      "note": "Loop 16 frames / 1280 ms.",
+      "status": "PRESENT",
+      "active": {
+        "file": "characters/orc-v1/source/studies/Walk/clip.json",
+        "revision": "orc-v1-green-walk",
+        "frames": 16,
+        "totalMs": 1280,
+        "approval": "PENDING_CREATOR_GREEN_WALK",
+        "visibleInterval": null,
+        "aliases": [
+          "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+          "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json"
+        ]
+      },
+      "latestCandidate": {
+        "file": "characters/orc-v1/source/studies/Walk/clip.json",
+        "revision": "orc-v1-green-walk",
+        "frames": 16,
+        "totalMs": 1280,
+        "approval": "PENDING_CREATOR_GREEN_WALK",
+        "visibleInterval": null,
+        "aliases": [
+          "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+          "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+          "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json"
+        ]
+      },
+      "allFiles": [
+        "characters/orc-v1/source/equipment-v2/militia-axe/Walk/clip.json",
+        "characters/orc-v1/source/equipment-v2/recruit-sword/Walk/clip.json",
+        "characters/orc-v1/source/equipment/militia-axe/Walk/clip.json",
+        "characters/orc-v1/source/equipment/recruit-sword/Walk/clip.json",
+        "characters/orc-v1/source/onehanded-entry-v1/Walk/clip.json",
+        "characters/orc-v1/source/onehanded-polish-v1/Walk/clip.json",
+        "characters/orc-v1/source/onehanded-rescue-v3/Walk/clip.json",
+        "characters/orc-v1/source/studies/Walk/clip.json"
+      ],
+      "legacyFiles": [
+        "characters/orc-v1/source/equipment-v2/militia-axe/Walk/clip.json",
+        "characters/orc-v1/source/equipment-v2/recruit-sword/Walk/clip.json",
+        "characters/orc-v1/source/equipment/militia-axe/Walk/clip.json",
+        "characters/orc-v1/source/equipment/recruit-sword/Walk/clip.json"
+      ]
+    },
+    {
+      "state": "Attack",
+      "kind": "unarmed",
+      "note": "basic.unarmed: physical hit with empty hands.",
+      "status": "MISSING",
+      "active": null,
+      "latestCandidate": null,
+      "allFiles": [],
+      "legacyFiles": []
+    },
+    {
+      "state": "Attack",
+      "kind": "Sword",
+      "note": "basic.sword-slash profile, weapon visible only in the declared interval.",
+      "status": "PRESENT",
+      "active": {
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json",
+        "revision": "main-orc-onehanded-v3",
+        "frames": 8,
+        "totalMs": 775,
+        "approval": "PENDING_CREATOR",
+        "visibleInterval": [
+          1,
+          6
+        ]
+      },
+      "latestCandidate": {
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+        "revision": "main-orc-onehanded-entry-v1",
+        "frames": 13,
+        "totalMs": 730,
+        "approval": "PENDING_CREATOR",
+        "visibleInterval": [
+          2,
+          10
+        ]
+      },
+      "allFiles": [
+        "characters/orc-v1/source/onehanded-entry-v1/Sword/Attack/clip.json",
+        "characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/clip.json",
+        "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json"
+      ],
+      "legacyFiles": []
+    },
+    {
+      "state": "Attack",
+      "kind": "Axe",
+      "note": "basic.axe-chop profile, weapon visible only in the declared interval.",
+      "status": "PRESENT",
+      "active": {
+        "file": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json",
+        "revision": "main-orc-onehanded-v3",
+        "frames": 10,
+        "totalMs": 1130,
+        "approval": "PENDING_CREATOR",
+        "visibleInterval": [
+          1,
+          7
+        ]
+      },
+      "latestCandidate": {
+        "file": "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+        "revision": "main-orc-onehanded-entry-v1",
+        "frames": 12,
+        "totalMs": 1005,
+        "approval": "PENDING_CREATOR",
+        "visibleInterval": [
+          2,
+          8
+        ]
+      },
+      "allFiles": [
+        "characters/orc-v1/source/onehanded-entry-v1/Axe/Attack/clip.json",
+        "characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/clip.json",
+        "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json"
+      ],
+      "legacyFiles": []
+    },
+    {
+      "state": "Hit",
+      "kind": "body",
+      "note": "Reaction shared by armed/unarmed presentation.",
+      "status": "MISSING",
+      "active": null,
+      "latestCandidate": null,
+      "allFiles": [],
+      "legacyFiles": []
+    },
+    {
+      "state": "Defeat",
+      "kind": "body",
+      "note": "Terminal state, no persistent weapon overlay.",
+      "status": "MISSING",
+      "active": null,
+      "latestCandidate": null,
+      "allFiles": [],
+      "legacyFiles": []
+    }
+  ],
+  "findings": [
+    {
+      "severity": "WARN",
+      "area": "metadata",
+      "message": "1 audited metadata file(s) changed after the Stage A baseline: characters/orc-v1/character.json (profile.groundY, profile.counts.Attack, profile.counts.Hit, profile.counts.Defeat, profile.note, reuseAssessment, completeAnimationCandidate)."
+    },
+    {
+      "severity": "INFO",
+      "area": "pointers",
+      "message": "1 pointer file(s) exist on disk but not at HEAD: characters/orc-v1/source/equipment-complete-candidate.json. They arrived after the snapshot and are not the active pointer audited here."
+    },
+    {
+      "severity": "INFO",
+      "area": "gates",
+      "message": "reviews.json is empty: no concept/base/consistency gate is recorded for orc-v1 even though identity was selected."
+    },
+    {
+      "severity": "INFO",
+      "area": "profile",
+      "message": "character.json profile.counts lists only Idle and Walk; attack/hit/defeat coverage is not represented in the character profile."
+    },
+    {
+      "severity": "WARN",
+      "area": "coverage",
+      "message": "States without a current clip for orc-v1: Attack (unarmed), Hit, Defeat."
+    },
+    {
+      "severity": "INFO",
+      "area": "metadata",
+      "message": "10 legacy armed clips (source/equipment/, source/equipment-v2/) are preserved history: rejected v1/v2, no category/id fields, no persistent armed presentation."
+    },
+    {
+      "severity": "INFO",
+      "area": "metadata",
+      "message": "canonical study clips (source/studies/{Idle,Walk}) omit canvas/groundY/ppu/loop; the onehanded display copies declare 256x256, groundY 190 and body at (64,64), while the native PNGs are 128x128. Consolidation must inherit the copy metadata."
+    },
+    {
+      "severity": "INFO",
+      "area": "events",
+      "message": "characters/orc-v1/source/equipment-v2/militia-axe/Attack/clip.json declares contactEvent.frame=6 without timeMs; a runtime offset would have to be derived from frame durations."
+    },
+    {
+      "severity": "INFO",
+      "area": "events",
+      "message": "characters/orc-v1/source/equipment-v2/recruit-sword/Attack/clip.json declares contactEvent.frame=6 without timeMs; a runtime offset would have to be derived from frame durations."
+    },
+    {
+      "severity": "INFO",
+      "area": "events",
+      "message": "characters/orc-v1/source/onehanded-rescue-v3/Axe/Attack/clip.json declares contactEvent.frame=5 without timeMs; a runtime offset would have to be derived from frame durations."
+    },
+    {
+      "severity": "INFO",
+      "area": "events",
+      "message": "characters/orc-v1/source/onehanded-rescue-v3/Sword/Attack/clip.json declares contactEvent.frame=5 without timeMs; a runtime offset would have to be derived from frame durations."
+    },
+    {
+      "severity": "INFO",
+      "area": "approval",
+      "message": "Walk approval is \"PENDING_CREATOR_GREEN_WALK\"; treat it as current-but-unapproved for green, not as an approved gate."
+    }
+  ],
+  "integrity": {
+    "status": "PASS",
+    "failures": [],
+    "byKind": {
+      "clip-frame-count": {
+        "total": 24,
+        "failed": 0
+      },
+      "frame-png-exists": {
+        "total": 1126,
+        "failed": 0
+      },
+      "frame-png-sha": {
+        "total": 1126,
+        "failed": 0
+      },
+      "layer-canvas": {
+        "total": 728,
+        "failed": 0
+      },
+      "clip-canvas": {
+        "total": 22,
+        "failed": 0
+      },
+      "master-exists": {
+        "total": 24,
+        "failed": 0
+      },
+      "master-sha": {
+        "total": 24,
+        "failed": 0
+      },
+      "body-master-exists": {
+        "total": 6,
+        "failed": 0
+      },
+      "body-master-sha": {
+        "total": 6,
+        "failed": 0
+      },
+      "hand-master-exists": {
+        "total": 6,
+        "failed": 0
+      },
+      "hand-master-sha": {
+        "total": 6,
+        "failed": 0
+      },
+      "weapon-sprite-exists": {
+        "total": 6,
+        "failed": 0
+      },
+      "weapon-sprite-sha": {
+        "total": 6,
+        "failed": 0
+      },
+      "weapon-master-exists": {
+        "total": 6,
+        "failed": 0
+      },
+      "weapon-master-sha": {
+        "total": 6,
+        "failed": 0
+      },
+      "profile-master-exists": {
+        "total": 12,
+        "failed": 0
+      },
+      "invariant:visible-interval-contiguous": {
+        "total": 6,
+        "failed": 0
+      },
+      "invariant:neutral-start": {
+        "total": 6,
+        "failed": 0
+      },
+      "invariant:neutral-end": {
+        "total": 6,
+        "failed": 0
+      },
+      "invariant:rest-no-weapon-visible": {
+        "total": 8,
+        "failed": 0
+      },
+      "invariant:rest-no-weapon-layer": {
+        "total": 8,
+        "failed": 0
+      },
+      "weapon-asset-exists": {
+        "total": 4,
+        "failed": 0
+      }
+    }
+  },
+  "scope": {
+    "readOnly": true,
+    "writes": [
+      "experiments/main-orc-complete-animation-v1/"
+    ],
+    "cloudCalls": 0,
+    "editorSessions": 0,
+    "unityChanges": 0,
+    "artisticApproval": "PENDING_CREATOR"
+  },
+  "limitations": [
+    "Technical audit only: presence, hashes, canvas, durations and declared metadata. It does not judge artistic quality, weight, grip or tactical readability.",
+    "No Unity/PlayMode verification: the runtime does not consume these overlays yet.",
+    "Coverage is scoped to front_r, the only view produced for this character at the baseline."
+  ]
+}

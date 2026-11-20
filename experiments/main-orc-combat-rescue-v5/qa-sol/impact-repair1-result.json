@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T13:48:55.535Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "sessionLabel": "qa-sol",
+    "sameReviewerAsOriginalBody01": true,
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false
+  },
+  "scope": "Only BODY-01 impact repair1 back_r/Axe; hoist/apex retain previous structural verdict via exact alias hashes",
+  "verdict": "READY_FOR_INTERMEDIATES",
+  "readyForIntermediates": true,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "fullCycleApproved": false,
+  "weaponArcProven": false,
+  "gripApproved": false,
+  "runtimeImplemented": false,
+  "integrationAllowed": false,
+  "automaticPropagationAllowed": false,
+  "originalFinding": {
+    "id": "BODY-01",
+    "status": "RESOLVED_FOR_BODY_KEY_GATE",
+    "previousVerdict": "REVISIONS_REQUIRED",
+    "previousResult": {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/keys-axe-result.json",
+      "sha256": "0a14a9a8b5a0a7aa01760952a75ac394476ddb09bcf1f047cd96830a6a9c2f56"
+    },
+    "observedRepair": "Steel cuff narrows into a distinct wrist and rounded wine-brown closed glove. Knuckle mass, inner thumb and dark finger separations distinguish hand from forearm and hip; endpoint is readable layers-off at native128 and in unmarked magnification.",
+    "continuity": "Shoulder and elbow still feed the same descending right forearm; repaired distal connection now terminates in identifiable wrist/hand without a floating gap or doubled limb.",
+    "wholeBody": "Head/dorsal lean, shoulder delivery, lowered pelvis, bent knees, wider planted supports and inactive left hand remain visually unchanged; independent diff confirms all pixels outside local repair identical.",
+    "newBlockingFindings": []
+  },
+  "visualInspection": {
+    "actualFinalNativeExportViewed": true,
+    "actualFinalCompositeExportViewed": true,
+    "unmarkedBeforeAfterWholeBodyViewed": true,
+    "unmarkedBeforeAfterHandViewed": true,
+    "weaponOverlayPresent": false,
+    "readingBlocked": false,
+    "playerOrFullAnimationReviewed": false
+  },
+  "independentFocusedChecks": {
+    "checkedAtUtc": "2026-10-29T13:47:42.9676949Z",
+    "changedArgbPixels": 97,
+    "diffBBoxInclusive": [
+      88,
+      75,
+      98,
+      86
+    ],
+    "outsideLocalRegionChanged": 0,
+    "compositeCropArgbDelta": 0,
+    "scope": "Only impact before/after and composite crop; no broad audit",
+    "unchangedElevatedAliases": [
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.aseprite",
+        "sha256": "224a4fb2b05d388613eb6928d3f05e5e4cadb1098000bb966959cdf7f6ec4f97",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.aseprite",
+        "sha256": "0ff2da67d869c099f49f37903da130aecebf9fccc4ca9d715975b6254cac11f4",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+        "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.png",
+        "sha256": "f087da033136cf4fae6276ee3901fcbc44bc82c75b3eddd182f4236af5e50c99",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.aseprite",
+        "sha256": "b9a8baa117943a809008be5575c6097f3266dcbe2c530ca619acaaca10c4e2c9",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.aseprite",
+        "sha256": "625f1cd281ed500d331d922c9e93c5f686f1dd56763ddd0f1eab982c72e79bc6",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+        "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+        "matchesPreviousIndependentFreeze": true
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.png",
+        "sha256": "ba579ee42f0d6e0b5ea87c89626f547691236fdf5a5e028edb46cdc60d24c87d",
+        "matchesPreviousIndependentFreeze": true
+      }
+    ],
+    "masterHeaderChecks": [
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.aseprite",
+        "frameCount": 1,
+        "durationMs": 160
+      },
+      {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-composite.aseprite",
+        "frameCount": 1,
+        "durationMs": 160
+      }
+    ],
+    "declaredHashMismatches": 0,
+    "reexportAsepriteRepeated": false,
+    "broadAuditRepeated": false
+  },
+  "evidenceFiles": [
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/representative.json",
+      "sha256": "e4434397532c4a42690be0acae5344a5185f0e1fbe19574cf78bd2b1672471c3",
+      "role": "repair1 representative freeze",
+      "declaredSha256": "e4434397532c4a42690be0acae5344a5185f0e1fbe19574cf78bd2b1672471c3",
+      "declaredMatches": true
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/checkpoint.json",
+      "sha256": "89eeac672926f983de48ec49a3991e64a6f037446ce5cb03895343fd84419885",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/report.md",
+      "sha256": "4fd926bc0031f2492ffeb516d1aeccf058be1ba460cd7c8a230d0bd1e4b12f42",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/technical-verification.json",
+      "sha256": "1530cacb7022944da76d0d8cd31ad0ddd9b7298a64122f6da0a58f672210f799",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/before-exact-6x.png",
+      "sha256": "9bdebf25030beb176c218f2c57b96ecfd9537b80545fbd9710732ce63f21bc6a",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/after-exact-6x.png",
+      "sha256": "df6b6daf652f24eb5c529d32f1e0b4516420855f5a00f5185860eb5a95fdfd84",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/before-hand-exact-20x.png",
+      "sha256": "7a322e80ed815252c6d6f09125c98183339825833afd0a3625b7dfea128e8fa0",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/after-hand-exact-20x.png",
+      "sha256": "3ad9200f28acc3b0ae6a3e0fe1d2ab449839e4c7a5fb3be540375d3eeb143c47",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/repair-impact.lua",
+      "sha256": "c92f1a9d9357cda462578993f396864fb5993b6f6d95be3895f5d12670e8c3ae",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/pixel-diff.json",
+      "sha256": "b5646f03af1faabf870029b65d3b86393425651cbb1ad995206a749ed3ac8669",
+      "role": "repair1 producer evidence"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.aseprite",
+      "sha256": "224a4fb2b05d388613eb6928d3f05e5e4cadb1098000bb966959cdf7f6ec4f97",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "224a4fb2b05d388613eb6928d3f05e5e4cadb1098000bb966959cdf7f6ec4f97",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.aseprite",
+      "sha256": "0ff2da67d869c099f49f37903da130aecebf9fccc4ca9d715975b6254cac11f4",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "0ff2da67d869c099f49f37903da130aecebf9fccc4ca9d715975b6254cac11f4",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+      "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.png",
+      "sha256": "f087da033136cf4fae6276ee3901fcbc44bc82c75b3eddd182f4236af5e50c99",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "f087da033136cf4fae6276ee3901fcbc44bc82c75b3eddd182f4236af5e50c99",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.aseprite",
+      "sha256": "b9a8baa117943a809008be5575c6097f3266dcbe2c530ca619acaaca10c4e2c9",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "b9a8baa117943a809008be5575c6097f3266dcbe2c530ca619acaaca10c4e2c9",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.aseprite",
+      "sha256": "625f1cd281ed500d331d922c9e93c5f686f1dd56763ddd0f1eab982c72e79bc6",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "625f1cd281ed500d331d922c9e93c5f686f1dd56763ddd0f1eab982c72e79bc6",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+      "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.png",
+      "sha256": "ba579ee42f0d6e0b5ea87c89626f547691236fdf5a5e028edb46cdc60d24c87d",
+      "role": "unchanged elevated key; focused alias hash check only",
+      "declaredSha256": "ba579ee42f0d6e0b5ea87c89626f547691236fdf5a5e028edb46cdc60d24c87d",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.aseprite",
+      "sha256": "4db32e40a433019ba6e9fa3f0b63ab561f475af1b49ef0814ff353f5bd7cc35f",
+      "role": "current repaired impact",
+      "declaredSha256": "4db32e40a433019ba6e9fa3f0b63ab561f475af1b49ef0814ff353f5bd7cc35f",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-composite.aseprite",
+      "sha256": "16c239dc7c580a2727cba98af5536eccac278aeee51a9af930d339fe4e9458c4",
+      "role": "current repaired impact",
+      "declaredSha256": "16c239dc7c580a2727cba98af5536eccac278aeee51a9af930d339fe4e9458c4",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.png",
+      "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "role": "current repaired impact",
+      "declaredSha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-composite.png",
+      "sha256": "6a035a842c2a2453665fe6dc8b20d9792966754b92c0d3f4582e3dcda24475c4",
+      "role": "current repaired impact",
+      "declaredSha256": "6a035a842c2a2453665fe6dc8b20d9792966754b92c0d3f4582e3dcda24475c4",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-composite.png",
+      "sha256": "aecd9d4580a9d476fba3ce4f688c11835106bd80536201c20cd8f9a16f0886d3",
+      "role": "previous reviewed impact",
+      "declaredSha256": "aecd9d4580a9d476fba3ce4f688c11835106bd80536201c20cd8f9a16f0886d3",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-native.png",
+      "sha256": "a6317e94aa2e50aaaa23bdc8bd2e0483f27bd59201d1d2ec91e3aadb2197c5c5",
+      "role": "previous reviewed impact",
+      "declaredSha256": "a6317e94aa2e50aaaa23bdc8bd2e0483f27bd59201d1d2ec91e3aadb2197c5c5",
+      "declaredMatches": true
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/keys-axe-result.json",
+      "sha256": "0a14a9a8b5a0a7aa01760952a75ac394476ddb09bcf1f047cd96830a6a9c2f56",
+      "role": "same reviewer original BODY-01 result",
+      "declaredSha256": "0a14a9a8b5a0a7aa01760952a75ac394476ddb09bcf1f047cd96830a6a9c2f56",
+      "declaredMatches": true
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/impact-repair1-checks.json",
+      "sha256": "f05dacca0cf6a6b43714f481293644f5b8e592d98fe261f97b35e1c384fba7df",
+      "role": "independent local before-after/crop check"
+    }
+  ],
+  "limitations": [
+    "This closes endpoint readability BODY-01 only and permits the next body-key stage; it does not demonstrate a complete 1x cycle",
+    "No intermediate descent or recovery has been reviewed",
+    "No weapon present: item trajectory, torque, equipment clearance, attachment and final grip are unproven",
+    "No universal fist-above-crown rule applied",
+    "Producer Aseprite reexport checks were read; QA independently compared final PNG pixels and read saved timing headers, without reexporting masters",
+    "F02/F08 QA and partial full-front-r-sword production not revisited"
+  ],
+  "nextAction": "Root may proceed to intermediates from this exact repaired impact plus unchanged hoist/apex, then submit complete body motion for QA at native scale and normal playback speed. Stop here awaiting Root.",
+  "report": "experiments/main-orc-combat-rescue-v5/qa-sol/impact-repair1-report.md",
+  "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-sol/"
+}

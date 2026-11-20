@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Orc V1 — 9 Chaves Anatômicas Traseiras (back_r/Sword, back_l/Sword, back_l/Axe)</title>
+<style>
+body { background: #181a1f; color: #e1e4ea; font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 28px; line-height: 1.5; }
+h1 { color: #f5f6f8; font-size: 24px; margin-bottom: 4px; }
+h2 { color: #7cb7ff; font-size: 19px; border-bottom: 1px solid #333945; padding-bottom: 6px; margin-top: 36px; }
+h3 { color: #e5b95f; font-size: 16px; margin: 8px 0; }
+.badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.badge-ready { background: #1c4b2b; color: #6ee7b7; border: 1px solid #059669; }
+.badge-req { background: #4a2818; color: #fca5a5; border: 1px solid #dc2626; }
+.row { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 12px; }
+article { background: #20242c; border: 1px solid #2f3542; border-radius: 8px; padding: 16px; width: 340px; box-sizing: border-box; }
+svg { width: 300px; height: 300px; background: #0e1013; image-rendering: pixelated; border-radius: 4px; border: 1px solid #262b35; display: block; }
+.btn { background: #2c3340; color: #e1e4ea; border: 1px solid #434c5e; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-size: 14px; margin-right: 8px; }
+.btn:hover { background: #3b4455; }
+.marks { display: none; }
+body.annotated .marks { display: block; }
+.legend { margin: 12px 0 20px 0; font-size: 13px; color: #9aa0a6; }
+.gold { color: #ffd25a; font-weight: bold; }
+.cyan { color: #6adce5; font-weight: bold; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>Orc V1 — Especialidade Corporal: 9 Chaves Anatômicas Traseiras</h1>
+<p>
+  <span class="badge badge-ready">READY_FOR_QA</span>
+  <span class="badge badge-ready">TECHNICALLY_COMPLETE</span>
+  <span class="badge badge-ready">VISUAL_REVIEW_REQUIRED</span>
+  <span class="badge badge-req">ARTISTIC_REVISION_REQUIRED (Global)</span>
+  <span class="badge badge-req">PENDING_CREATOR</span>
+</p>
+<p>Entrega dos 3 corpos traseiros restantes (3 chaves × 3 vistas/armas = 9 chaves). Regime <strong>layers-off desarmado estrito</strong> (camada única <code>body</code>), sem carimbo de armas, crânio occipital verde autêntico, placas dorsais anatômicas, solo nativo 126 / composto 190, 160 ms (0.160s Lua), zero pixels RGB &gt; 190.</p>
+
+<button class="btn" onclick="document.body.classList.toggle('annotated')">Alternar Anotações Articulares</button>
+<div class="legend">
+  Legenda articular: <span class="gold">● Amarelo Dourado</span> = Cadeia ativa direita (ombro-cotovelo-punho-palma) e apoio direito | <span class="cyan">● Ciano</span> = Cadeia inativa esquerda, pelve e apoio esquerdo.
+</div>
+
+
+<h2>back_r / Sword (Espada)</h2>
+<p><a href="../back_r-Sword-keys/representative.json">representative.json</a> · <a href="../back_r-Sword-keys/clip.json">clip.json</a> · <a href="../back_r-Sword-keys/checkpoint.json">checkpoint.json</a> · <a href="../back_r-Sword-keys/report.md">report.md</a></p>
+<div class="row">
+  
+  <article>
+    <h3>01-hoist</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_r-Sword-keys/01-native.png"/>
+      <g class="marks">
+        <polyline points="82,47 106,63 101,42 98,48" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="82" cy="47" r="1.5" fill="#ffd25a"><title>Ativo 0: [82, 47]</title></circle><circle cx="106" cy="63" r="1.5" fill="#ffd25a"><title>Ativo 1: [106, 63]</title></circle><circle cx="101" cy="42" r="1.5" fill="#ffd25a"><title>Ativo 2: [101, 42]</title></circle><circle cx="98" cy="48" r="1.5" fill="#ffd25a"><title>Ativo 3: [98, 48]</title></circle>
+        <polyline points="43,49 29,67 27,85 28,86" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="43" cy="49" r="1.5" fill="#6adce5"><title>Inativo 0: [43, 49]</title></circle><circle cx="29" cy="67" r="1.5" fill="#6adce5"><title>Inativo 1: [29, 67]</title></circle><circle cx="27" cy="85" r="1.5" fill="#6adce5"><title>Inativo 2: [27, 85]</title></circle><circle cx="28" cy="86" r="1.5" fill="#6adce5"><title>Inativo 3: [28, 86]</title></circle>
+        <circle cx="67" cy="82" r="1.5" fill="#6adce5"><title>Pelve: [67, 82]</title></circle>
+        <circle cx="86" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [86, 102]</title></circle>
+        <circle cx="45" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [45, 102]</title></circle>
+        <circle cx="92" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [92, 126]</title></circle>
+        <circle cx="38" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [38, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Braço direito flexionado à altura do ombro, punho fechado em manopla vinho-marrom legível. Braço esquerdo abaixado como contrapeso. Placa dorsal com crista vertebral.</p>
+  </article>
+  
+  <article>
+    <h3>02-apex</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_r-Sword-keys/02-native.png"/>
+      <g class="marks">
+        <polyline points="84,39 100,47 114,55 118,56" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="84" cy="39" r="1.5" fill="#ffd25a"><title>Ativo 0: [84, 39]</title></circle><circle cx="100" cy="47" r="1.5" fill="#ffd25a"><title>Ativo 1: [100, 47]</title></circle><circle cx="114" cy="55" r="1.5" fill="#ffd25a"><title>Ativo 2: [114, 55]</title></circle><circle cx="118" cy="56" r="1.5" fill="#ffd25a"><title>Ativo 3: [118, 56]</title></circle>
+        <polyline points="46,40 29,62 25,79 26,79" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="46" cy="40" r="1.5" fill="#6adce5"><title>Inativo 0: [46, 40]</title></circle><circle cx="29" cy="62" r="1.5" fill="#6adce5"><title>Inativo 1: [29, 62]</title></circle><circle cx="25" cy="79" r="1.5" fill="#6adce5"><title>Inativo 2: [25, 79]</title></circle><circle cx="26" cy="79" r="1.5" fill="#6adce5"><title>Inativo 3: [26, 79]</title></circle>
+        <circle cx="68" cy="80" r="1.5" fill="#6adce5"><title>Pelve: [68, 80]</title></circle>
+        <circle cx="88" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [88, 102]</title></circle>
+        <circle cx="44" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [44, 102]</title></circle>
+        <circle cx="96" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [96, 126]</title></circle>
+        <circle cx="36" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [36, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Extensão lateral do corte de espada à frente-direita. Cadeia articular contínua ombro-cotovelo-punho fechado. Tronco inclinado acompanhando o arco.</p>
+  </article>
+  
+  <article>
+    <h3>03-impact</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_r-Sword-keys/03-native.png"/>
+      <g class="marks">
+        <polyline points="84,51 101,67 95,85 95,87" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="84" cy="51" r="1.5" fill="#ffd25a"><title>Ativo 0: [84, 51]</title></circle><circle cx="101" cy="67" r="1.5" fill="#ffd25a"><title>Ativo 1: [101, 67]</title></circle><circle cx="95" cy="85" r="1.5" fill="#ffd25a"><title>Ativo 2: [95, 85]</title></circle><circle cx="95" cy="87" r="1.5" fill="#ffd25a"><title>Ativo 3: [95, 87]</title></circle>
+        <polyline points="45,49 29,70 28,89 28,89" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="45" cy="49" r="1.5" fill="#6adce5"><title>Inativo 0: [45, 49]</title></circle><circle cx="29" cy="70" r="1.5" fill="#6adce5"><title>Inativo 1: [29, 70]</title></circle><circle cx="28" cy="89" r="1.5" fill="#6adce5"><title>Inativo 2: [28, 89]</title></circle><circle cx="28" cy="89" r="1.5" fill="#6adce5"><title>Inativo 3: [28, 89]</title></circle>
+        <circle cx="69" cy="83" r="1.5" fill="#6adce5"><title>Pelve: [69, 83]</title></circle>
+        <circle cx="89" cy="103" r="1.5" fill="#ffd25a"><title>Joelho D: [89, 103]</title></circle>
+        <circle cx="43" cy="103" r="1.5" fill="#6adce5"><title>Joelho E: [43, 103]</title></circle>
+        <circle cx="96" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [96, 126]</title></circle>
+        <circle cx="34" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [34, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Impacto e follow-through: braço direito desce junto ao quadril direito com punho fechado. Tronco flexionado, base cravada no solo126.</p>
+  </article>
+  
+</div>
+
+<h2>back_l / Sword (Espada)</h2>
+<p><a href="../back_l-Sword-keys/representative.json">representative.json</a> · <a href="../back_l-Sword-keys/clip.json">clip.json</a> · <a href="../back_l-Sword-keys/checkpoint.json">checkpoint.json</a> · <a href="../back_l-Sword-keys/report.md">report.md</a></p>
+<div class="row">
+  
+  <article>
+    <h3>01-hoist</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Sword-keys/01-native.png"/>
+      <g class="marks">
+        <polyline points="78,37 101,53 97,34 97,34" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="78" cy="37" r="1.5" fill="#ffd25a"><title>Ativo 0: [78, 37]</title></circle><circle cx="101" cy="53" r="1.5" fill="#ffd25a"><title>Ativo 1: [101, 53]</title></circle><circle cx="97" cy="34" r="1.5" fill="#ffd25a"><title>Ativo 2: [97, 34]</title></circle><circle cx="97" cy="34" r="1.5" fill="#ffd25a"><title>Ativo 3: [97, 34]</title></circle>
+        <polyline points="42,38 28,56 25,75 25,76" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="42" cy="38" r="1.5" fill="#6adce5"><title>Inativo 0: [42, 38]</title></circle><circle cx="28" cy="56" r="1.5" fill="#6adce5"><title>Inativo 1: [28, 56]</title></circle><circle cx="25" cy="75" r="1.5" fill="#6adce5"><title>Inativo 2: [25, 75]</title></circle><circle cx="25" cy="76" r="1.5" fill="#6adce5"><title>Inativo 3: [25, 76]</title></circle>
+        <circle cx="65" cy="80" r="1.5" fill="#6adce5"><title>Pelve: [65, 80]</title></circle>
+        <circle cx="86" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [86, 102]</title></circle>
+        <circle cx="43" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [43, 102]</title></circle>
+        <circle cx="90" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [90, 126]</title></circle>
+        <circle cx="36" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [36, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Vista noroeste: ombro e braço direito ativos erguidos com cotovelo dobrado, punho fechado na manopla vinho-marrom junto ao pescoço. Braço esquerdo de guarda baixo.</p>
+  </article>
+  
+  <article>
+    <h3>02-apex</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Sword-keys/02-native.png"/>
+      <g class="marks">
+        <polyline points="79,41 97,49 110,56 114,57" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="79" cy="41" r="1.5" fill="#ffd25a"><title>Ativo 0: [79, 41]</title></circle><circle cx="97" cy="49" r="1.5" fill="#ffd25a"><title>Ativo 1: [97, 49]</title></circle><circle cx="110" cy="56" r="1.5" fill="#ffd25a"><title>Ativo 2: [110, 56]</title></circle><circle cx="114" cy="57" r="1.5" fill="#ffd25a"><title>Ativo 3: [114, 57]</title></circle>
+        <polyline points="41,41 25,62 20,79 20,79" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="41" cy="41" r="1.5" fill="#6adce5"><title>Inativo 0: [41, 41]</title></circle><circle cx="25" cy="62" r="1.5" fill="#6adce5"><title>Inativo 1: [25, 62]</title></circle><circle cx="20" cy="79" r="1.5" fill="#6adce5"><title>Inativo 2: [20, 79]</title></circle><circle cx="20" cy="79" r="1.5" fill="#6adce5"><title>Inativo 3: [20, 79]</title></circle>
+        <circle cx="66" cy="81" r="1.5" fill="#6adce5"><title>Pelve: [66, 81]</title></circle>
+        <circle cx="87" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [87, 102]</title></circle>
+        <circle cx="42" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [42, 102]</title></circle>
+        <circle cx="94" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [94, 126]</title></circle>
+        <circle cx="33" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [33, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Extensão transversal do golpe de espada através da silhueta corporal. Punho direito projetado à frente-direita. Braço esquerdo de guarda baixo.</p>
+  </article>
+  
+  <article>
+    <h3>03-impact</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Sword-keys/03-native.png"/>
+      <g class="marks">
+        <polyline points="78,48 97,65 90,82 90,84" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="78" cy="48" r="1.5" fill="#ffd25a"><title>Ativo 0: [78, 48]</title></circle><circle cx="97" cy="65" r="1.5" fill="#ffd25a"><title>Ativo 1: [97, 65]</title></circle><circle cx="90" cy="82" r="1.5" fill="#ffd25a"><title>Ativo 2: [90, 82]</title></circle><circle cx="90" cy="84" r="1.5" fill="#ffd25a"><title>Ativo 3: [90, 84]</title></circle>
+        <polyline points="39,46 23,67 23,86 23,86" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="39" cy="46" r="1.5" fill="#6adce5"><title>Inativo 0: [39, 46]</title></circle><circle cx="23" cy="67" r="1.5" fill="#6adce5"><title>Inativo 1: [23, 67]</title></circle><circle cx="23" cy="86" r="1.5" fill="#6adce5"><title>Inativo 2: [23, 86]</title></circle><circle cx="23" cy="86" r="1.5" fill="#6adce5"><title>Inativo 3: [23, 86]</title></circle>
+        <circle cx="66" cy="82" r="1.5" fill="#6adce5"><title>Pelve: [66, 82]</title></circle>
+        <circle cx="88" cy="103" r="1.5" fill="#ffd25a"><title>Joelho D: [88, 103]</title></circle>
+        <circle cx="40" cy="103" r="1.5" fill="#6adce5"><title>Joelho E: [40, 103]</title></circle>
+        <circle cx="95" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [95, 126]</title></circle>
+        <circle cx="31" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [31, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Follow-through baixo do corte de espada: punho direito desce ao lado do quadril com volume e punho fechado nítidos. Braço esquerdo estabilizado.</p>
+  </article>
+  
+</div>
+
+<h2>back_l / Axe (Machado)</h2>
+<p><a href="../back_l-Axe-keys/representative.json">representative.json</a> · <a href="../back_l-Axe-keys/clip.json">clip.json</a> · <a href="../back_l-Axe-keys/checkpoint.json">checkpoint.json</a> · <a href="../back_l-Axe-keys/report.md">report.md</a></p>
+<div class="row">
+  
+  <article>
+    <h3>01-hoist</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Axe-keys/01-native.png"/>
+      <g class="marks">
+        <polyline points="79,38 101,31 81,15 81,15" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="79" cy="38" r="1.5" fill="#ffd25a"><title>Ativo 0: [79, 38]</title></circle><circle cx="101" cy="31" r="1.5" fill="#ffd25a"><title>Ativo 1: [101, 31]</title></circle><circle cx="81" cy="15" r="1.5" fill="#ffd25a"><title>Ativo 2: [81, 15]</title></circle><circle cx="81" cy="15" r="1.5" fill="#ffd25a"><title>Ativo 3: [81, 15]</title></circle>
+        <polyline points="42,41 27,55 25,75 25,76" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="42" cy="41" r="1.5" fill="#6adce5"><title>Inativo 0: [42, 41]</title></circle><circle cx="27" cy="55" r="1.5" fill="#6adce5"><title>Inativo 1: [27, 55]</title></circle><circle cx="25" cy="75" r="1.5" fill="#6adce5"><title>Inativo 2: [25, 75]</title></circle><circle cx="25" cy="76" r="1.5" fill="#6adce5"><title>Inativo 3: [25, 76]</title></circle>
+        <circle cx="65" cy="80" r="1.5" fill="#6adce5"><title>Pelve: [65, 80]</title></circle>
+        <circle cx="87" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [87, 102]</title></circle>
+        <circle cx="43" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [43, 102]</title></circle>
+        <circle cx="91" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [91, 126]</title></circle>
+        <circle cx="36" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [36, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Preparação do machado: braço direito erguido para trás, cotovelo flexionado acima da cabeça, punho fechado em manopla vinho-marrom. Braço esquerdo de guarda baixo.</p>
+  </article>
+  
+  <article>
+    <h3>02-apex</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Axe-keys/02-native.png"/>
+      <g class="marks">
+        <polyline points="78,40 95,19 65,10 65,10" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="78" cy="40" r="1.5" fill="#ffd25a"><title>Ativo 0: [78, 40]</title></circle><circle cx="95" cy="19" r="1.5" fill="#ffd25a"><title>Ativo 1: [95, 19]</title></circle><circle cx="65" cy="10" r="1.5" fill="#ffd25a"><title>Ativo 2: [65, 10]</title></circle><circle cx="65" cy="10" r="1.5" fill="#ffd25a"><title>Ativo 3: [65, 10]</title></circle>
+        <polyline points="40,43 25,58 20,78 20,78" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="40" cy="43" r="1.5" fill="#6adce5"><title>Inativo 0: [40, 43]</title></circle><circle cx="25" cy="58" r="1.5" fill="#6adce5"><title>Inativo 1: [25, 58]</title></circle><circle cx="20" cy="78" r="1.5" fill="#6adce5"><title>Inativo 2: [20, 78]</title></circle><circle cx="20" cy="78" r="1.5" fill="#6adce5"><title>Inativo 3: [20, 78]</title></circle>
+        <circle cx="66" cy="81" r="1.5" fill="#6adce5"><title>Pelve: [66, 81]</title></circle>
+        <circle cx="88" cy="102" r="1.5" fill="#ffd25a"><title>Joelho D: [88, 102]</title></circle>
+        <circle cx="42" cy="102" r="1.5" fill="#6adce5"><title>Joelho E: [42, 102]</title></circle>
+        <circle cx="94" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [94, 126]</title></circle>
+        <circle cx="33" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [33, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Ápice sobre a cabeça: antebraço arqueado acima da coroa com punho fechado [65, 10]. Espaço negativo triangular sob o braço e acima do pescoço cirurgicamente limpo para alfa 0 transparente (94 px removidos).</p>
+  </article>
+  
+  <article>
+    <h3>03-impact</h3>
+    <svg viewBox="0 0 128 128">
+      <image width="128" height="128" href="../back_l-Axe-keys/03-native.png"/>
+      <g class="marks">
+        <polyline points="78,53 92,68 89,85 89,87" fill="none" stroke="#ffd25a" stroke-width="0.8"/>
+        <circle cx="78" cy="53" r="1.5" fill="#ffd25a"><title>Ativo 0: [78, 53]</title></circle><circle cx="92" cy="68" r="1.5" fill="#ffd25a"><title>Ativo 1: [92, 68]</title></circle><circle cx="89" cy="85" r="1.5" fill="#ffd25a"><title>Ativo 2: [89, 85]</title></circle><circle cx="89" cy="87" r="1.5" fill="#ffd25a"><title>Ativo 3: [89, 87]</title></circle>
+        <polyline points="38,50 23,70 22,86 22,86" fill="none" stroke="#6adce5" stroke-width="0.8"/>
+        <circle cx="38" cy="50" r="1.5" fill="#6adce5"><title>Inativo 0: [38, 50]</title></circle><circle cx="23" cy="70" r="1.5" fill="#6adce5"><title>Inativo 1: [23, 70]</title></circle><circle cx="22" cy="86" r="1.5" fill="#6adce5"><title>Inativo 2: [22, 86]</title></circle><circle cx="22" cy="86" r="1.5" fill="#6adce5"><title>Inativo 3: [22, 86]</title></circle>
+        <circle cx="66" cy="83" r="1.5" fill="#6adce5"><title>Pelve: [66, 83]</title></circle>
+        <circle cx="88" cy="103" r="1.5" fill="#ffd25a"><title>Joelho D: [88, 103]</title></circle>
+        <circle cx="38" cy="103" r="1.5" fill="#6adce5"><title>Joelho E: [38, 103]</title></circle>
+        <circle cx="94" cy="126" r="1.5" fill="#ffd25a"><title>Apoio D: [94, 126]</title></circle>
+        <circle cx="29" cy="126" r="1.5" fill="#6adce5"><title>Apoio E: [29, 126]</title></circle>
+      </g>
+    </svg>
+    <p style="font-size: 13px; color: #c5cbd6; margin-top: 10px;">Impacto vertical do machado: tronco flexionado para a frente, braço direito projetado para baixo com cotovelo, antebraço e punho contínuos ao lado do quadril/coxa. Joelhos dobrados sustentando o golpe.</p>
+  </article>
+  
+</div>
+
+
+</body>
+</html>

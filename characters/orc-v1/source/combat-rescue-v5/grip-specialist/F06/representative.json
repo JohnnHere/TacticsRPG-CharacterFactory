@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-grip-specialist-F06",
+  "character": "orc-v1",
+  "category": "Sword",
+  "direction": "front_r",
+  "state": "Attack",
+  "representativeOnly": true,
+  "frameCount": 1,
+  "sourceFrameIndices": [
+    6
+  ],
+  "durationsMs": [
+    35
+  ],
+  "totalDurationMs": 35,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "master": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/source/composite.aseprite",
+  "masterSha256": "f425b14e9f265e8f0135ae18d9bf58af140e81c3f5772b279dc852ec76b95c67",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/source/body-256.aseprite",
+  "bodyMasterSha256": "85bba783825617b4f6c2a4f407aaf6036d69a36b67522603ec56fd9e7f11da21",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/source/body-128.aseprite",
+  "nativeMasterSha256": "4b64f0e0e59ff553859668c0dc528cf4432914c62158736b432f7a698bf184a1",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "sourceFrameIndex": 6,
+      "durationMs": 35,
+      "phase": "slash-release",
+      "weaponVisible": true,
+      "rightGrip": [
+        155,
+        114
+      ],
+      "rotationDeg": 32,
+      "scale": 1,
+      "flipBit": false,
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/composite-256.png",
+      "sha256": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/body-128.png",
+      "nativeSha256": "f25fa8c548f6fc0baafb68ea8212a450da11a3905d0fd75263a0e01e05e3ffaf",
+      "compositeNativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/composite-native-128.png",
+      "compositeNativeSha256": "97150ceb8c70a64b663d6e74927392a22f78ad030ab53ca1a240d183149dbcd0",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/layers/weaponBack.png",
+          "sha256": "142197915f2491ff6103dab140a171be6e593ac8df031c2390565642de448a80"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/layers/body.png",
+          "sha256": "1d0b88a2ba2772f59f87aeb0dc90e62339c414a11de5f34f1e7b28ca0b3a3687"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/layers/weaponFront.png",
+          "sha256": "c864cf36661414f5699da37739b66466c703a4dfe1f2ccd07ff1e47e4330cc6c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/layers/handFront.png",
+          "sha256": "c65a9bb30442f9417b17ce327b00d93f7ab75b582bbae29201119df6ba83189b"
+        }
+      }
+    }
+  ],
+  "weapon": {
+    "id": "recruit-sword",
+    "name": "Espada do Recruta",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "spriteSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+    "masterSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json"
+  },
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "itemTransform": {
+    "itemGrip": [
+      48,
+      66
+    ],
+    "bodyGrip": [
+      155,
+      114
+    ],
+    "angleDeg": 32,
+    "scale": 1,
+    "flipX": false,
+    "reason": "Hilt seated through existing glove; blade exits diagonally up/right into free space beyond the active hand, with independent guard and pommel outside the traced finger region"
+  },
+  "anatomyEvidence": "experiments/main-orc-combat-rescue-v5/grip-specialist/anatomy.json",
+  "sourceParentClip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+  "sourceParentClipSha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+  "sourceBodyFrame": {
+    "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/06.png",
+    "sha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2"
+  },
+  "sourceTimingClip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "checkpoint": "GRIP_F06_READY",
+  "representativeAcceptableForPropagation": false,
+  "propagationPolicy": "DO_NOT_PROPAGATE_UNTIL_SAME_QA_VERDICT_FROM_ROOT",
+  "eligibleForIntegration": false,
+  "provenance": {
+    "authoring": "Aseprite Lua; exact source body and item; hand source traced from actual glove plus9 local interior highlight/crease pixels",
+    "script": "experiments/main-orc-combat-rescue-v5/grip-specialist/author-F06.lua",
+    "scriptSha256": "687e806af6bca14d4932024715d8529a698430cd5d1caf7775a944c0930c12a0",
+    "sourceSnapshot": "experiments/main-orc-combat-rescue-v5/grip-specialist/input-snapshot.json",
+    "bodyChoreographyChanged": false,
+    "timingChanged": false,
+    "newPixelLabCalls": 0,
+    "runtimeImplemented": false
+  }
+}

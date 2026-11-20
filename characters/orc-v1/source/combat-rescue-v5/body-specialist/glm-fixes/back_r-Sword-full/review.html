@@ -1,0 +1,28 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>back_r-Sword-full — GLM fix</title>
+<style>body{background:#141418;color:#ddd;font-family:monospace;margin:16px}canvas,img{background:#222}
+button,select{background:#333;color:#ddd;border:1px solid #666}</style></head><body>
+<h1>back_r-Sword-full</h1><p><b>Defeito:</b> REAR-01-RESIDUAL-A/B (F06)<br><b>Correção:</b> 5 px flutuantes -> alfa 0; 30 px vinho -> malha (doadores F05/F07 mesmas coords); 0 fora do permitido</p>
+<div class="player"><canvas id="c_back_r_Sword_full" width="128" height="128"
+ style="image-rendering:pixelated;width:256px;height:256px"></canvas>
+<div><button onclick="step_back_r_Sword_full(-1)">&lt;</button><button onclick="toggle_back_r_Sword_full()">play</button>
+<button onclick="step_back_r_Sword_full(1)">&gt;</button>
+<select onchange="sp_back_r_Sword_full=parseFloat(this.value)">
+<option value="1">1.0x</option><option value="0.75">0.75x</option>
+<option value="0.5">0.5x</option><option value="0.25">0.25x</option></select>
+<span id="i_back_r_Sword_full"></span></div></div>
+<script>(function(){
+var D=[40,60,60,70,70,40,40,90,70,70,60,60],N=12,i=0,run=null,sp=1,imgs=[];
+for(var k=0;k<N;k++){var im=new Image();im.onload=draw;im.src='native/XX.png'.replace('XX',('0'+k).slice(-2));imgs.push(im);}
+var cv=document.getElementById('c_back_r_Sword_full'),ctx=cv.getContext('2d');
+function draw(){ctx.clearRect(0,0,128,128);ctx.drawImage(imgs[i],0,0);
+document.getElementById('i_back_r_Sword_full').textContent=' F'+('0'+(i+1)).slice(-2)+'/'+D[i]+'ms';}
+function next(){i=(i+1)%N;draw();if(run)run=setTimeout(next,D[i]/sp);}
+window.step_back_r_Sword_full=function(d){if(!run){i=(i+d+N)%N;draw();}};
+window.toggle_back_r_Sword_full=function(){if(run){clearTimeout(run);run=null;}else{run=setTimeout(next,D[i]/sp);}};
+window.sp_back_r_Sword_full=sp;var so=document.querySelector('select');if(so){so.onchange=function(){sp=parseFloat(this.value);};}
+draw();})();</script>
+
+<p><img src="../glm-back_r-Sword-f06-before-after.png" style="image-rendering:pixelated;max-width:100%"></p>
+<p>Frames nativos: <a href="native-strip.png" style="color:#8ad">strip</a> ·
+Compostos: <a href="body256-strip.png" style="color:#8ad">strip 256</a></p>
+</body></html>

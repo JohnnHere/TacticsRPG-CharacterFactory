@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "direction": "back_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "ppu": 100,
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "bodyMaster": "Corpo.aseprite",
+  "handMaster": "Dedos.aseprite",
+  "frames": [
+    {
+      "index": 0,
+      "body": {
+        "png": "Camadas/body/00.png",
+        "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/00.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 40,
+      "phase": "rest",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 1,
+      "body": {
+        "png": "Camadas/body/01.png",
+        "sha256": "d2780500bcbb2f36ad8c1d0f89c8bfdba4c0101908cbd7a163435211aa9f5827"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/01.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 2,
+      "body": {
+        "png": "Camadas/body/02.png",
+        "sha256": "d2780500bcbb2f36ad8c1d0f89c8bfdba4c0101908cbd7a163435211aa9f5827"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/02.png",
+        "sha256": "cff09f14645301888c78b1aad71d6c8b4d97cbb13dedca3000754673fac60121"
+      },
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "grip": [
+        154,
+        131
+      ],
+      "angle": 60,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 3,
+      "body": {
+        "png": "Camadas/body/03.png",
+        "sha256": "ab8df3ca84064d227fb56bcc6cd4826c5486e2701cfa921baadc146fd624a172"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/03.png",
+        "sha256": "af7d72de553ff99e2cf413eae5aa8be2a3921dd4ef4a6912b0d2ec69a3a8dee7"
+      },
+      "durationMs": 80,
+      "phase": "raise",
+      "grip": [
+        167,
+        118
+      ],
+      "angle": 35,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 4,
+      "body": {
+        "png": "Camadas/body/04.png",
+        "sha256": "c0c68569c76d80d04994edd6b4711839e2f39270c084dbc2f160d3cb990a37eb"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/04.png",
+        "sha256": "0ae22d2e67cd9ec3625b98254ea296569225f47c755d56e0c3c38e4580a010ab"
+      },
+      "durationMs": 155,
+      "phase": "cocked-shoulder",
+      "grip": [
+        157,
+        100
+      ],
+      "angle": 10,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 5,
+      "body": {
+        "png": "Camadas/body/05.png",
+        "sha256": "2dd8b03114838725f47f23956ce2118806cb7077904bfdfba47055ccec0383cf"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/05.png",
+        "sha256": "2616d647967147778f642b93ab44e9c09dd19a781b62bfa9309410cdea3b56be"
+      },
+      "durationMs": 35,
+      "phase": "release",
+      "grip": [
+        109,
+        119
+      ],
+      "angle": 325,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 6,
+      "body": {
+        "png": "Camadas/body/06.png",
+        "sha256": "51d623f92ace4ead3f32a8c3c0f5f61e895a3ab0fb3a30b55deaa23e44f3c1ce"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/06.png",
+        "sha256": "2da91c494616a66e6a7ef029b94065b427f0c4a8da0ba4e1d7587b2691783a31"
+      },
+      "durationMs": 115,
+      "phase": "impact",
+      "grip": [
+        107,
+        143
+      ],
+      "angle": 275,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 7,
+      "body": {
+        "png": "Camadas/body/07.png",
+        "sha256": "305c1344642a15271252f4eb51ccacf31ba85cfbc38206a09c39f9f840ac2fe3"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/07.png",
+        "sha256": "76bb6082cd38b90d7941009bcd276d22c037bbb1e6ef84cf96ca1b119823e18e"
+      },
+      "durationMs": 110,
+      "phase": "follow-through",
+      "grip": [
+        117,
+        148
+      ],
+      "angle": 270,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 8,
+      "body": {
+        "png": "Camadas/body/08.png",
+        "sha256": "a1ab8c6d98c40b0530e6d2b8e3a70782e0b629ea6941fc949e6446c3703d7cf0"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/08.png",
+        "sha256": "ae436bcf0f842fa6562ae007583ce634e72240c0d647dc285d997db036b0de96"
+      },
+      "durationMs": 130,
+      "phase": "recovery",
+      "grip": [
+        126,
+        148
+      ],
+      "angle": 280,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 9,
+      "body": {
+        "png": "Camadas/body/09.png",
+        "sha256": "a1ab8c6d98c40b0530e6d2b8e3a70782e0b629ea6941fc949e6446c3703d7cf0"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/09.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 50,
+      "phase": "action-complete",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 10,
+      "body": {
+        "png": "Camadas/body/10.png",
+        "sha256": "b93ea08334de74cece484bb76d3704e26a6fc02bcf46236e78dfecf090552b6b"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/10.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 90,
+      "phase": "after-attack-settle",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 11,
+      "body": {
+        "png": "Camadas/body/11.png",
+        "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb"
+      },
+      "handFront": {
+        "png": "Camadas/handFront/11.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 100,
+      "phase": "return-unarmed",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    }
+  ],
+  "itemContract": {
+    "grip": "Integer local point on actual handle",
+    "scale": 1,
+    "canvas": "Per-item native dimensions; no automatic body regeneration",
+    "category": "Axe",
+    "direction": "back_r",
+    "occlusion": "weaponBack -> body -> weaponFront -> handFront",
+    "compatibility": "One-handed items of this category only; check shaft width, blade/head/guard clearance and camera"
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR"
+}

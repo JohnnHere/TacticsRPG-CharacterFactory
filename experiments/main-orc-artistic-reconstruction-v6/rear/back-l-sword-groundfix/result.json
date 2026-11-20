@@ -1,0 +1,152 @@
+{
+  "finding": "V6-QA-02",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "pixelLabCalls": 0,
+  "bodyPixelsChanged": 0,
+  "glovePixelsChanged": 0,
+  "gripChanged": false,
+  "scaleChanged": false,
+  "durationsAndBookendsPreserved": true,
+  "protectedFilesByteIdentical": 299,
+  "before": {
+    "7": {
+      "weaponBboxInclusive": [
+        150,
+        142,
+        193,
+        201
+      ],
+      "weaponPixelsBelowGround": 87,
+      "belowGroundBboxInclusive": [
+        180,
+        191,
+        193,
+        201
+      ],
+      "weaponMaxY": 201
+    },
+    "8": {
+      "weaponBboxInclusive": [
+        138,
+        143,
+        163,
+        214
+      ],
+      "weaponPixelsBelowGround": 195,
+      "belowGroundBboxInclusive": [
+        148,
+        191,
+        158,
+        214
+      ],
+      "weaponMaxY": 214
+    },
+    "9": {
+      "weaponBboxInclusive": [
+        138,
+        140,
+        163,
+        211
+      ],
+      "weaponPixelsBelowGround": 166,
+      "belowGroundBboxInclusive": [
+        143,
+        191,
+        153,
+        211
+      ],
+      "weaponMaxY": 211
+    }
+  },
+  "after": {
+    "7": {
+      "weaponBboxInclusive": [
+        147,
+        144,
+        207,
+        187
+      ],
+      "weaponPixelsBelowGround": 0,
+      "belowGroundBboxInclusive": null,
+      "weaponMaxY": 187,
+      "clearancePx": 3
+    },
+    "8": {
+      "weaponBboxInclusive": [
+        138,
+        147,
+        200,
+        185
+      ],
+      "weaponPixelsBelowGround": 0,
+      "belowGroundBboxInclusive": null,
+      "weaponMaxY": 185,
+      "clearancePx": 5
+    },
+    "9": {
+      "weaponBboxInclusive": [
+        139,
+        144,
+        207,
+        173
+      ],
+      "weaponPixelsBelowGround": 0,
+      "belowGroundBboxInclusive": null,
+      "weaponMaxY": 173,
+      "clearancePx": 17
+    }
+  },
+  "clipSha256": "ad2b2ebf02c90530f946665ca4cec92e0d8e576ba02989b004a641bddb115813",
+  "masterSha256": "d52e5c021e5924cc0b52bd2d74160a99fbd2330ba6ad8dc9dfa9c41d170f0c20",
+  "weaponMasterSha256": "ad8b2bf751359063125e01306a04996b29e48aa2e882ccb40aa0c701db8693ea",
+  "nativeMasterSha256": "5865e030e5e07cccbfa14563574f441c6f305e0efd4376d6135da8e6f4d799fb",
+  "nativeStripSha256": "d95059710a5f9ab4a830ac47444c9b22aa495eb3481de187bc686e442811ac84",
+  "compositeStripSha256": "e7311caacd7ac7c5a1f7e8000168474c397db0e9b02e594e26bd564e5fc6c217",
+  "updatedManifests": [
+    {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/rear/patch-manifest-stage-d.json",
+      "sha256": "169f4ff9d958e04db7079580894e767833ec8d4e1c56ac6e39ecccb6d8256391",
+      "changedTargetFields": [
+        "clipSha256"
+      ]
+    },
+    {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/rear/patch-manifest.json",
+      "sha256": "30edea8c48a88250aafe447b9d2973a8247b5b0f80de08aecabfa243b03765d2",
+      "changedTargetFields": [
+        "clipSha256"
+      ]
+    },
+    {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/weapon-patch.json",
+      "sha256": "f74d1267d6115390c5616ecca221969f5aac3fae1a99238ea07ee7cebb1cbdf3",
+      "changedTargetFields": [
+        "clipSha256"
+      ]
+    },
+    {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+      "sha256": "ce2a74c018610993c4140644a1c6c98166955860881474b4c7fb93c269498576",
+      "changedTargetFields": [
+        "clipSha256",
+        "masterSha256"
+      ]
+    }
+  ],
+  "roundtrip": {
+    "bodyAndGlovePixelsAndPositionsPreserved": true,
+    "frames": 12,
+    "savedCompositeReopened": true,
+    "savedWeaponMasterReopened": true,
+    "stripTilesVerified": 12,
+    "timingPreserved": true,
+    "weaponAboveGroundAsserted": true,
+    "weaponFramesChanged": [
+      7,
+      8,
+      9
+    ]
+  }
+}

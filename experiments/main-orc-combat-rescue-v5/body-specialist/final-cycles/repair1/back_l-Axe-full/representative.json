@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "status": "BODY_BACK_L_AXE_REPAIR1_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Axe",
+  "scope": "Repaired body-only overhead axe cycle, empty-handed layers-off, REAR-02 embedded axe removed and clenched fist rebuilt",
+  "repairedDefect": "REAR-02",
+  "repairedFrame": 2,
+  "clip": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/clip.json",
+    "sha256": "8a5fb783d38f47da30fb1b6d115acc855dec907350844f8f80002cbdf4a84604"
+  },
+  "master": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/body256.aseprite",
+    "sha256": "28e4693474b6ff9e093c7f65e5b776400a4e34c1be5314928acd557b3c8a0ef4"
+  },
+  "nativeMaster": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/native128.aseprite",
+    "sha256": "7e602c4e321d3fb175de35e234f160fb006cabf6b54e3d1c05bc8513789afbf5"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 1100,
+  "acceptedKeyReuse": [
+    {
+      "frameIndex": 3,
+      "keyName": "01-hoist",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-native.png",
+        "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/native/03.png",
+        "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 4,
+      "keyName": "02-apex",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-native.png",
+        "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/native/04.png",
+        "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 7,
+      "keyName": "03-impact",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-native.png",
+        "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/native/07.png",
+        "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    }
+  ],
+  "generationAccounting": {
+    "jobs": [
+      {
+        "tool": "animate_image",
+        "jobId": "7c0b1ca2-c9af-420b-9fb5-c0e606650b00",
+        "segment": "entry",
+        "cost": 1.0,
+        "seed": 310301
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "6f8e537c-60db-4504-a5d5-400b4cf0eb29",
+        "segment": "descent",
+        "cost": 1.0,
+        "seed": 310302
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "3061a847-428c-4dad-a57e-bed16eb34720",
+        "segment": "recovery",
+        "cost": 1.0,
+        "seed": 310303
+      }
+    ],
+    "repairGenerationsCharged": 0.0,
+    "note": "Surgical pixel retouch authored strictly in Aseprite batch via Lua; 0 API calls, 0 credits spent"
+  }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Orc V1 — back_r / Axe — Natural Grip Keys (F04 Apex & F07 Impact)</title>
+  <style>
+    :root {
+      --bg: #121418;
+      --card-bg: #1a1d24;
+      --border: #2a2f3a;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --success: #4ade80;
+      --warning: #facc15;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 24px;
+    }
+    header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #fff; }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 8px;
+    }
+    .badge-success { background: rgba(74, 222, 128, 0.2); color: var(--success); border: 1px solid var(--success); }
+    .badge-info { background: rgba(56, 189, 248, 0.2); color: var(--accent); border: 1px solid var(--accent); }
+    .badge-warning { background: rgba(250, 204, 21, 0.2); color: var(--warning); border: 1px solid var(--warning); }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .compare-container {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      background: #090a0d;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .viewport {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .viewport-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-family: monospace;
+    }
+    img.pixelated {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      border: 1px solid #232731;
+      background: repeating-conic-gradient(#1e222b 0% 25%, #181b22 0% 50%) 50% / 16px 16px;
+    }
+    
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    button {
+      background: #252a35;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    button:hover { background: #323847; }
+    button.active {
+      background: #0284c7;
+      border-color: var(--accent);
+      color: #fff;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--text-muted); font-weight: 500; }
+    td code { font-family: monospace; color: var(--accent); font-size: 12px; }
+    
+    .evidence-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Orc V1 — back_r / Axe — Natural Grip Keys Review</h1>
+    <div>
+      <span class="badge badge-success">CHECKPOINT: REAR_AXE_GRIP_KEYS_READY</span>
+      <span class="badge badge-info">TECHNICALLY_COMPLETE</span>
+      <span class="badge badge-warning">VISUAL_REVIEW_REQUIRED</span>
+      <span class="badge badge-info">PENDING_ROOT_QA (863ae631)</span>
+    </div>
+    <p style="margin-top: 8px; color: var(--text-muted); font-size: 14px;">
+      Validação dos dois quadros-chave independentes do machado (<strong>F04 Apex</strong> e <strong>F07 Impact</strong>).
+      Fonte corporal: <code>characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json</code> (12f preservado, delta RGBA = 0).
+      Arma independente: <code>Machado de Milícia</code> (96x96, grip 36, 55).
+    </p>
+  </header>
+
+  <!-- Interactive 2-Key Switcher & Player -->
+  <section class="card" style="margin-bottom: 24px;">
+    <div class="card-title">
+      <span>Painel Interativo de Comparação e Inspeção</span>
+      <div class="controls" style="margin: 0;">
+        <button id="btn-scale-2" class="active" onclick="setScale(2)">Zoom 2x</button>
+        <button id="btn-scale-3" onclick="setScale(3)">Zoom 3x</button>
+        <button id="btn-scale-4" onclick="setScale(4)">Zoom 4x</button>
+        <button id="btn-mode-native" class="active" onclick="setMode('native')">Native 128</button>
+        <button id="btn-mode-tactical" onclick="setMode('tactical')">Tactical 256</button>
+        <button id="btn-play" onclick="togglePlay()">Play Loop (110ms)</button>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+      <button id="btn-f04" class="active" onclick="showFrame('F04')">F04 — Validated Apex (110ms)</button>
+      <button id="btn-f07" onclick="showFrame('F07')">F07 — Validated Impact (110ms)</button>
+    </div>
+
+    <div class="compare-container">
+      <div class="viewport">
+        <img id="img-before" class="pixelated" src="../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/body-128.png" width="256" height="256" alt="Before">
+        <span class="viewport-label" id="lbl-before">Unarmed Body (0 Delta)</span>
+      </div>
+      <div class="viewport">
+        <img id="img-after" class="pixelated" src="../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/composite-native-128.png" width="256" height="256" alt="After">
+        <span class="viewport-label" id="lbl-after">Armed Composite (Militia Axe)</span>
+      </div>
+      <div class="viewport">
+        <img id="img-zoom" class="pixelated" src="evidence/F04-zoom-grip-16x.png" width="256" height="256" alt="Grip Zoom">
+        <span class="viewport-label">Grip Detail (16x Real Trace)</span>
+      </div>
+    </div>
+
+    <div style="font-size: 13px; color: var(--text-muted); display: flex; justify-content: space-between;">
+      <span id="txt-desc">F04: Braço direito no ápice do golpe overhead (330° / -30°), cabeça do machado em espaço negativo acima da coroa sem colisão corporal.</span>
+      <span>Duração: <strong>110 ms</strong> | Solo: <strong>126 native / 190 composite</strong></span>
+    </div>
+  </section>
+
+  <!-- Side-by-Side Static Evidence -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">F04 (Apex) — Comparativo & Cadeia Anatômica</div>
+      <img class="evidence-img" src="evidence/F04-before-after.png" alt="F04 Before After">
+      <img class="evidence-img" src="evidence/F04-anatomy-trace.png" alt="F04 Anatomy Trace">
+    </div>
+
+    <div class="card">
+      <div class="card-title">F07 (Impact) — Comparativo & Cadeia Anatômica</div>
+      <img class="evidence-img" src="evidence/F07-before-after.png" alt="F07 Before After">
+      <img class="evidence-img" src="evidence/F07-anatomy-trace.png" alt="F07 Anatomy Trace">
+    </div>
+  </div>
+
+  <!-- Evidence Overview & Metrics Table -->
+  <section class="card" style="margin-bottom: 24px;">
+    <div class="card-title">Visão Geral dos Representantes (Evidence Overview)</div>
+    <img class="evidence-img" src="evidence/keys-overview.png" alt="Keys Overview">
+  </section>
+
+  <section class="card">
+    <div class="card-title">Métricas Técnicas de Validação e Procedência</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Quadro</th>
+          <th>Fase</th>
+          <th>Duração</th>
+          <th>Grip Corporal (256)</th>
+          <th>Rotação</th>
+          <th>Retouches</th>
+          <th>Delta RGBA Corpo</th>
+          <th>Mestres Aseprite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>F04</strong></td>
+          <td><code>validated-apex</code></td>
+          <td>110 ms</td>
+          <td><code>[139, 72]</code></td>
+          <td>330° (-30°)</td>
+          <td>6 px genuínos</td>
+          <td><strong style="color: var(--success);">0 pixels</strong></td>
+          <td><a href="../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/source/composite.aseprite" style="color: var(--accent);">composite.aseprite</a></td>
+        </tr>
+        <tr>
+          <td><strong>F07</strong></td>
+          <td><code>validated-impact</code></td>
+          <td>110 ms</td>
+          <td><code>[157, 146]</code></td>
+          <td>120°</td>
+          <td>6 px genuínos</td>
+          <td><strong style="color: var(--success);">0 pixels</strong></td>
+          <td><a href="../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/source/composite.aseprite" style="color: var(--accent);">composite.aseprite</a></td>
+        </tr>
+        <tr>
+          <td><strong>Combined</strong></td>
+          <td>2 frames</td>
+          <td>220 ms</td>
+          <td>Ambos</td>
+          <td>Ambos</td>
+          <td>12 px total</td>
+          <td><strong style="color: var(--success);">0 pixels</strong></td>
+          <td><a href="../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/composite.aseprite" style="color: var(--accent);">source/composite.aseprite</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    let currentKey = 'F04';
+    let currentScale = 2;
+    let currentMode = 'native'; // 'native' (128) or 'tactical' (256)
+    let playInterval = null;
+
+    const data = {
+      F04: {
+        beforeNative: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/body-128.png',
+        afterNative: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/composite-native-128.png',
+        beforeTactical: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/layers/body.png',
+        afterTactical: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F04/composite-256.png',
+        zoom: 'evidence/F04-zoom-grip-16x.png',
+        desc: 'F04: Braço direito no ápice do golpe overhead (330° / -30°), cabeça do machado em espaço negativo acima da coroa sem colisão corporal.'
+      },
+      F07: {
+        beforeNative: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/body-128.png',
+        afterNative: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/composite-native-128.png',
+        beforeTactical: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/layers/body.png',
+        afterTactical: '../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/F07/composite-256.png',
+        zoom: 'evidence/F07-zoom-grip-16x.png',
+        desc: 'F07: Impacto descendente com dobradiça corporal (120°), gume cortante do machado mordendo exatamente no solo y=190 (native 126).'
+      }
+    };
+
+    function updateView() {
+      const d = data[currentKey];
+      const baseSize = currentMode === 'native' ? 128 : 256;
+      const pxSize = baseSize * currentScale;
+
+      const imgBefore = document.getElementById('img-before');
+      const imgAfter = document.getElementById('img-after');
+      const imgZoom = document.getElementById('img-zoom');
+
+      imgBefore.src = currentMode === 'native' ? d.beforeNative : d.beforeTactical;
+      imgAfter.src = currentMode === 'native' ? d.afterNative : d.afterTactical;
+      imgZoom.src = d.zoom;
+
+      imgBefore.width = pxSize;
+      imgBefore.height = pxSize;
+      imgAfter.width = pxSize;
+      imgAfter.height = pxSize;
+
+      document.getElementById('txt-desc').textContent = d.desc;
+      document.getElementById('lbl-before').textContent = `Unarmed Body (${currentMode === 'native' ? '128' : '256'})`;
+      document.getElementById('lbl-after').textContent = `Armed Composite (${currentMode === 'native' ? '128' : '256'})`;
+
+      document.getElementById('btn-f04').className = currentKey === 'F04' ? 'active' : '';
+      document.getElementById('btn-f07').className = currentKey === 'F07' ? 'active' : '';
+    }
+
+    function showFrame(key) {
+      currentKey = key;
+      updateView();
+    }
+
+    function setScale(s) {
+      currentScale = s;
+      document.querySelectorAll('[id^="btn-scale-"]').forEach(b => b.className = '');
+      document.getElementById(`btn-scale-${s}`).className = 'active';
+      updateView();
+    }
+
+    function setMode(m) {
+      currentMode = m;
+      document.getElementById('btn-mode-native').className = m === 'native' ? 'active' : '';
+      document.getElementById('btn-mode-tactical').className = m === 'tactical' ? 'active' : '';
+      updateView();
+    }
+
+    function togglePlay() {
+      const btn = document.getElementById('btn-play');
+      if (playInterval) {
+        clearInterval(playInterval);
+        playInterval = null;
+        btn.textContent = 'Play Loop (110ms)';
+        btn.className = '';
+      } else {
+        btn.textContent = 'Stop Loop';
+        btn.className = 'active';
+        playInterval = setInterval(() => {
+          showFrame(currentKey === 'F04' ? 'F07' : 'F04');
+        }, 110);
+      }
+    }
+
+    updateView();
+  </script>
+</body>
+</html>

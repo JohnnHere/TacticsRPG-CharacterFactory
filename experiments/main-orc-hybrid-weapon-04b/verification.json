@@ -1,0 +1,407 @@
+{
+  "status": "PASS",
+  "direction": "front_r",
+  "sourceClip": "characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_r-sword",
+  "sourceClipSha256": "2ae94ce07002a1acb5361866e142ef9209a7f076b04f5d47b4c6d43b955858ca",
+  "acceptanceCriteria": [
+    "body and handFront byte-identical to the front_r source in both variants",
+    "variant A byte-identical to the original weapon layers",
+    "variant B never changes the weapon silhouette",
+    "variant B never repaints guard-region pixels with a non-ink colour",
+    "leftover original-blade pixels <= 20 per frame",
+    "frame durations preserved",
+    "no file under characters/, assets/ or reports/ changed or added"
+  ],
+  "guardRegionDefinition": "along-axis distance from grip s < 9 px is guard/handle; ink means max channel <= 40",
+  "bodyHandReuse": {
+    "comparisons": 28,
+    "rows": [
+      {
+        "frame": 0,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 0,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 1,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 1,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 2,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 2,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 3,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 3,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 4,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 4,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 5,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 5,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 6,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 6,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 7,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 7,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 8,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 8,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 9,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 9,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 10,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 10,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 11,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 11,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 12,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 12,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 13,
+        "layer": "body",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      },
+      {
+        "frame": 13,
+        "layer": "handFront",
+        "aEqualsSource": true,
+        "bEqualsSource": true,
+        "aEqualsB": true,
+        "rgbaEqual": true
+      }
+    ]
+  },
+  "weaponComparison": [
+    {
+      "frame": 2,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 474,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 474,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 3,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 473,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 473,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 4,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 473,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 473,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 5,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 472,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 472,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 6,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 473,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 473,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 7,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 470,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 470,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 8,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 473,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 473,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 9,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 474,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 474,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 10,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 472,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 472,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    },
+    {
+      "frame": 11,
+      "silhouetteChangedPixels": 0,
+      "changedPixels": 473,
+      "guardRegionChangedPixels": 0,
+      "guardRegionNonInkPixels": 0,
+      "bladeRegionChangedPixels": 473,
+      "leftoverOriginalBladePixels": 0,
+      "variantAVsSourcePixels": 0
+    }
+  ],
+  "timing": {
+    "declared": [
+      30,
+      65,
+      35,
+      50,
+      45,
+      35,
+      30,
+      35,
+      35,
+      100,
+      55,
+      80,
+      45,
+      90
+    ],
+    "variantA": [
+      30,
+      65,
+      35,
+      50,
+      45,
+      35,
+      30,
+      35,
+      35,
+      100,
+      55,
+      80,
+      45,
+      90
+    ],
+    "variantB": [
+      30,
+      65,
+      35,
+      50,
+      45,
+      35,
+      30,
+      35,
+      35,
+      100,
+      55,
+      80,
+      45,
+      90
+    ],
+    "preserved": true
+  },
+  "assetReuse": {
+    "sword-a.png": true,
+    "sword-a.aseprite": true,
+    "sword-b.png": true,
+    "sword-b.aseprite": true
+  },
+  "protectedFiles": 22556,
+  "protectedChanged": [],
+  "protectedAdded": []
+}

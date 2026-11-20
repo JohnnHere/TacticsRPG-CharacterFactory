@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "qaSession": "qa-glm-fresh",
+  "scope": "textual-operational-resume-test",
+  "status": "VISUAL_REVIEW_STARTED",
+  "role": "independent QA (fresh context)",
+  "model": "glm-5.3",
+  "provider": "cline-glm-api",
+  "agentRuntime": "Cline",
+  "stageLog": [
+    {
+      "stage": "textual-resume-test",
+      "status": "QA_RUNTIME_READY",
+      "timestampUtc": "2026-10-29T13:31:14Z",
+      "note": "model then recorded as GLM/Z.ai; corrected to cline-glm-api/glm-5.3 per orchestrator session declaration"
+    },
+    {
+      "stage": "artistic-review-single-frame-F06",
+      "status": "VISUAL_REVIEW_STARTED",
+      "timestampUtc": "2026-10-29T13:33:11Z",
+      "target": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/composite-256.png",
+      "targetSha256VerifiedBeforeOpen": "70cf751fd0769717a8cad7f9934f8c5de78136e3d8d040867c4110fed82a439e",
+      "note": "authorized by orchestrator; creator already requested this QA; single frame only, no clip/matrix"
+    }
+  ],
+  "requestedBy": "creator (token-saving independent QA, clean context)",
+  "timestampUtc": "2026-10-29T13:31:14Z",
+  "target": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/representative.json",
+    "absolutePath": "C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory/characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/representative.json",
+    "sha256": "e9daacf07836ade4d66cd58a1cc97ffa25733001f535a50f9053ecbf2742ac1e",
+    "hashMethod": "local PowerShell Get-FileHash -Algorithm SHA256",
+    "readMode": "text-only (JSON), no image opened"
+  },
+  "declaredReadingsFromTarget": {
+    "revision": "main-orc-combat-rescue-v5-grip-specialist-F06",
+    "technicalStatus": "TECHNICALLY_COMPLETE",
+    "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+    "artisticApproval": "PENDING_CREATOR",
+    "propagationPolicy": "DO_NOT_PROPAGATE_UNTIL_SAME_QA_VERDICT_FROM_ROOT"
+  },
+  "artisticApprovalByThisQa": "NONE",
+  "artisticVerdict": "NOT_PERFORMED",
+  "constraints": {
+    "imagesOpened": false,
+    "matrixReviewed": false,
+    "subagentsUsed": false,
+    "spritesOrUnityOrPointersEdited": false,
+    "writtenPaths": [
+      "experiments/main-orc-combat-rescue-v5/qa-glm-fresh/checkpoint.json"
+    ]
+  },
+  "nextStep": "STOP as instructed; awaiting creator before any artistic inspection"
+}

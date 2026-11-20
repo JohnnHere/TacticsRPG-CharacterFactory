@@ -1,0 +1,24 @@
+# V7 back_l — escada de orçamento autorizada
+
+Sua hipótese está registrada; o bloqueio que você relatou é legítimo (skeleton exige ≥3 quadros; inpaint custa 10). O orquestrador autoriza a escada abaixo, **nesta ordem**, com parada obrigatória no primeiro caminho que funcionar.
+
+## Degrau 1 — Custo ZERO: reconstrução local do membro no Aseprite
+Antes de qualquer geração, aproveite o que já existe nesta vista:
+- `characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/` e `.../back_l-axe/` (poses do V6, rejeitadas pela **técnica**, não necessariamente pela visibilidade do braço);
+- os conjuntos de chaves traseiras aceitos em `characters/orc-v1/source/artistic-reconstruction-v6/rear/` e `characters/orc-v1/source/combat-rescue-v5/body-specialist/` (hoist/apex/impact com punho visível).
+
+Trabalho: escolher o doador de membro **da mesma vista** com junta compatível, medindo ombro/cotovelo/punho e o espaço negativo; reconstruir no Aseprite a cadeia do braço **e o plano do arco** para que a passagem da arma seja vertical/diagonal (ápice alto acima da cabeça → impacto baixo à frente), não horizontal. Zero gerações.
+
+Se a anatomia do doador não sustentar a pose elevada, registre a medida que falhou e desça um degrau.
+
+## Degrau 2 — 3 gerações: um único job com esqueleto, 3 poses, resolução maior
+Um job `animate_with_skeleton_v3` com **exatamente 3 poses** (ápice, meio da descida, impacto), em resolução nativa maior (256 se a ferramenta permitir). Exija no esqueleto e na descrição corporal (sem nomear arma): punho acima da linha da cabeça, antebraço fora da silhueta do tronco, espaço negativo visível entre braço e cabeça/pescoço, cotovelo com ângulo legível, mão fechada.
+Se a cadeia sumir de novo, **não** repita: desça ao degrau 3.
+
+## Degrau 3 — 10 gerações: uma edição condicionada por pose
+Uma única edição/inpaint condicionada por pose sobre o melhor corpo existente com braço visível, para corrigir a colocação do membro. Máximo **um** job. Justifique no relatório por que os degraus 1 e 2 não bastaram.
+
+## Parada
+- Sucesso em qualquer degrau → siga para as demais fases e monte o ciclo `back_l` Sword; depois o Axe com o mesmo método.
+- Falha nos três degraus → **pare** e reporte o bloqueio com: hipótese, medidas de cada tentativa, recibos/saldo, e a recomendação técnica concreta para o orquestrador decidir (ex.: mudar a técnica de geração, mudar o pipeline de braço, ou aceitar reconstrução manual completa da sequência).
+- Registre o saldo antes e depois de cada degrau. Sem compras.

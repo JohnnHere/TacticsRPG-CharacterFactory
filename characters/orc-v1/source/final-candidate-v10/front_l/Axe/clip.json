@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-final-v10",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "front_l",
+  "category": "Axe",
+  "state": "Attack",
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    65,
+    35,
+    80,
+    155,
+    35,
+    115,
+    110,
+    130,
+    50,
+    90,
+    100
+  ],
+  "totalDurationMs": 1005,
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "contactEvent": {
+    "frame": 6,
+    "timeMs": 410,
+    "phase": "heavy-impact",
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "loop": false,
+  "oneShot": true,
+  "runtimeImplemented": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "weaponDefinition": "characters/orc-v1/source/final-candidate-v10/weapons/Axe/weapon.json",
+  "master": "characters/orc-v1/source/aseprite/final-candidate-v10/composite/front_l/axe.aseprite",
+  "masterSha256": "4fe1c5758ef64a0f18d4cb9f305ae01cc91ab98fb832165d3de62c36e35f24ff",
+  "nativeMaster": "characters/orc-v1/source/aseprite/final-candidate-v10/native/axe-front_l.aseprite",
+  "nativeMasterSha256": "0e3e564ef4386eba635ff808f4c76fedb7cea940ba310687b728c8f0aeaa8ed3",
+  "compositeStrip": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/composite-strip.png",
+  "compositeStripSha256": "ac90a50636c8badd5a2353064d254a2af8f56bfa896058b182ce6b4046fa80a1",
+  "strip": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native-strip.png",
+  "stripSha256": "629810126f469bc44dbf45932c62a28933645f9bb6e7fe14ee845c6efad8649d",
+  "nativeStrip": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native-strip.png",
+  "nativeStripSha256": "629810126f469bc44dbf45932c62a28933645f9bb6e7fe14ee845c6efad8649d",
+  "notes": "Preserved frontal choreography with armpit/perimeter contour stabilization, Idle F00 bookends, and cleaned militia-axe.",
+  "frames": [
+    {
+      "index": 0,
+      "phase": "rest",
+      "durationMs": 40,
+      "startMs": 0,
+      "endMs": 40,
+      "weaponVisible": false,
+      "grip": null,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "occlusionMode": null,
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/00.png",
+      "sha256": "92891aeb18585a321a17bac5474766b14527a869e8b40172791eff090bb660b0",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/00.png",
+      "nativeSha256": "c97173b46eb06cb1b53bc7c5ed9dab89289a7e293e724a47a425ae4ac240c9cd",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/00.png",
+          "sha256": "92891aeb18585a321a17bac5474766b14527a869e8b40172791eff090bb660b0"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "startMs": 40,
+      "endMs": 105,
+      "weaponVisible": false,
+      "grip": null,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "occlusionMode": null,
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/01.png",
+      "sha256": "9f6d79135b792cb4baa353791ea6361ef6e32247adc473774be504747b49d197",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/01.png",
+      "nativeSha256": "2574b69866546d981c4b7b38dbffba50ade741b423e191f01df8b556f30e3c72",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/01.png",
+          "sha256": "9f6d79135b792cb4baa353791ea6361ef6e32247adc473774be504747b49d197"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "startMs": 105,
+      "endMs": 140,
+      "weaponVisible": true,
+      "grip": [
+        156,
+        128
+      ],
+      "rightGrip": [
+        156,
+        128
+      ],
+      "rotationDeg": 56,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/02.png",
+      "sha256": "8c9f78dd0e531256dd5d08d3dd75ad4668b997baf1943dfbf5611061695f644f",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/02.png",
+      "nativeSha256": "f0429bcb9d4f572f86b6115c0d20a574dfc53b33f656ca9f017ad2446edf21a0",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/02.png",
+          "sha256": "fb3ce2bdb4161cec170f09822a0ab4394d6c4ecfea608f43c1fcdb17bfb1e6db"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/02.png",
+          "sha256": "f66cde2cd5fcd25841870c7cc7462114b4e985a8cf790c586046f9984d3d6a14"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/02.png",
+          "sha256": "de6d33e8c68eae6be8b2aea0d084abb131d8d952daf9370289bd2aa567a5d02d"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/02.png",
+          "sha256": "ce11ff221fd11691a76523f4ac8296d57fae4dd567bcaaaead8eb661491048a7"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "phase": "anticipation",
+      "durationMs": 80,
+      "startMs": 140,
+      "endMs": 220,
+      "weaponVisible": true,
+      "grip": [
+        167,
+        120
+      ],
+      "rightGrip": [
+        167,
+        120
+      ],
+      "rotationDeg": 36,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/03.png",
+      "sha256": "e3682a5c48d57d114bc7f15615bbd7057e02aac70e6e154a645d34ef1016d856",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/03.png",
+      "nativeSha256": "2805fd43dd9506963a602206a80ef7bdc954aaa5980e82a433d491d7983c26ce",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/03.png",
+          "sha256": "6c5775ad49b4b100f2b5643a74f91806289f537fcf61cef00a3633296b3bfea1"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/03.png",
+          "sha256": "52b07382ce294334630c0e159fd0398f5ab7d8242d2a632bfc6156a91a397458"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/03.png",
+          "sha256": "39b7aed02296c482caaaf77d71e2cd3826360a72e8ff85ebeaeea184f7ddc667"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/03.png",
+          "sha256": "02463cd6e5e90e5b08aa085dd728a84257b7c36aac983b8f1b973d2fae3a9a70"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "phase": "overhead-coil",
+      "durationMs": 155,
+      "startMs": 220,
+      "endMs": 375,
+      "weaponVisible": true,
+      "grip": [
+        169,
+        108
+      ],
+      "rightGrip": [
+        169,
+        108
+      ],
+      "rotationDeg": 14,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/04.png",
+      "sha256": "4e434d6978a8f48c8f38f2c0b71f6bee79c4e1ce68d1c7d6b37118f071611f35",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/04.png",
+      "nativeSha256": "ebb8aa639547b6388f8081820b2308ad7a7fa1c7c0f9766b5774fbac5456ba4d",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/04.png",
+          "sha256": "3a00cbae8cc32d7f104e7b6a70713e268dc509664358b5f4cb9b13a19b1b4223"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/04.png",
+          "sha256": "64c01f55a09135e57fe8c5edcb0c071c3346b1587118e5e14413e78df35094e7"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/04.png",
+          "sha256": "9a42db96d8d5f79962336e8a8b7dac5a5e5000273b1dd8c7bc32283c2854e851"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/04.png",
+          "sha256": "01cb777fd7eb84838a7420bbd5d5fae89896be6de1b61efedc0a35029cc320f9"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "phase": "cleave-drive",
+      "durationMs": 35,
+      "startMs": 375,
+      "endMs": 410,
+      "weaponVisible": true,
+      "grip": [
+        101,
+        112
+      ],
+      "rightGrip": [
+        101,
+        112
+      ],
+      "rotationDeg": 296,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/05.png",
+      "sha256": "07b26c9520ee71b45224fec92ba864ab8a982edc3e2a1551ccf27bdf6cb31540",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/05.png",
+      "nativeSha256": "2f62f6573f48b3862ba3f3c3486993a5aa40f410707db338142be0a28218f885",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/05.png",
+          "sha256": "f5f7da1a469f52824cd063d75527ff50ae3dce2ab0d471e9f6d4ecd5cc8d51b9"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/05.png",
+          "sha256": "75e7c420b00d29917c923ecb9dd30fb53682ad27119c7c9a2fa547398a2253e2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/05.png",
+          "sha256": "74860d36e0021f2598852dd4866c81438b98a741b34c7036732bb5c9fc27b86e"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/05.png",
+          "sha256": "6aadca4667e6bf7c6f9c8e954ad230a530043e30b235e43f5bfad5e7e955944b"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "phase": "heavy-impact",
+      "durationMs": 115,
+      "startMs": 410,
+      "endMs": 525,
+      "weaponVisible": true,
+      "grip": [
+        105,
+        141
+      ],
+      "rightGrip": [
+        105,
+        141
+      ],
+      "rotationDeg": 242,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/06.png",
+      "sha256": "c0874103045b1fdb69f9bc44c3fe78a1a0daf96798a32406116289806d3cd555",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/06.png",
+      "nativeSha256": "faa7dd5de5a24d8b36df8098a1f953aae1715d6f6a36d4f75d541e456db911c3",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/06.png",
+          "sha256": "6505ffadce815276043c871a4e6195a5fe583668bf836105d94b2c81d9a5313d"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/06.png",
+          "sha256": "93fec3e23ad5db37a6c9dabdef33570d20a808c5c61ddd8c18629bda0e596cfc"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/06.png",
+          "sha256": "0cc93abb61148566790cc161871a94b197b0ff11f61ecb1eb9176cfb46485558"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/06.png",
+          "sha256": "13ed6fef1150fd5035e184a30fed845b470b38f245f17fe16a0286238a2ede68"
+        }
+      }
+    },
+    {
+      "index": 7,
+      "phase": "weight-settle",
+      "durationMs": 110,
+      "startMs": 525,
+      "endMs": 635,
+      "weaponVisible": true,
+      "grip": [
+        114,
+        146
+      ],
+      "rightGrip": [
+        114,
+        146
+      ],
+      "rotationDeg": 254,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/07.png",
+      "sha256": "8552dad605bd0fae2f5f970812a1fca9f51e735a9987e12823b364d31431d59a",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/07.png",
+      "nativeSha256": "98d3e58032d28d951a7bedfe718fbabbe84d9e7fbf044a4b0a190736fda7a2b6",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/07.png",
+          "sha256": "e9078830f6e9b87ce1f4d4472a1deaf08911f6b76ae52a5cd55873d9a7e5c3af"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/07.png",
+          "sha256": "22f9ede20d9f74eb67cf151efe43191fc235771d064ead06a83ab1bc5ddd6cb9"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/07.png",
+          "sha256": "7f22209b334dfa2fe11f879d13183b5df7ad31b6a8fd52d8c8b0dd92a4e4bc27"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/07.png",
+          "sha256": "b1b5281b3996ff96e9e54bcc1c668855671d233a517100bf9e4d2d097999465d"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "phase": "wrench-recovery",
+      "durationMs": 130,
+      "startMs": 635,
+      "endMs": 765,
+      "weaponVisible": true,
+      "grip": [
+        120,
+        142
+      ],
+      "rightGrip": [
+        120,
+        142
+      ],
+      "rotationDeg": 264,
+      "occlusionMode": "front_grip",
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/08.png",
+      "sha256": "56e8d37d842ea56f1d0e7765326a5b3034b9221f85191ea7bbb2c8b964182501",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/08.png",
+      "nativeSha256": "f538b7c3c9ab25f34fc597c8248b72406b91d47fdcc4a7a95a97089be204eccf",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/08.png",
+          "sha256": "f1bfe867641eaf576c0198ccd944034f25baceeadd6fcb1cf7382ed81264a32d"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/08.png",
+          "sha256": "cf60d6d4dd04e87936e4896c076eff154e90dd4d3d6bd830fc03320dec049e93"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/08.png",
+          "sha256": "c5638b631ba50adce647e3ef38d96c7a487fac6ca6f604cbc65ae44746c19e2e"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/08.png",
+          "sha256": "3f6bb320000f8130a3c01d50eae04d5c29c4437d7a2edb3bad310d90cb886b51"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "phase": "release-grip",
+      "durationMs": 50,
+      "startMs": 765,
+      "endMs": 815,
+      "weaponVisible": false,
+      "grip": null,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "occlusionMode": null,
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/09.png",
+      "sha256": "517176b7bd037f91cdda4473702478c341be31485f7a2ddf9ac213734162308b",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/09.png",
+      "nativeSha256": "34d8378fcfa82df60f81fab1f3977ba40eafa51fe044629544c6935523dbaa79",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/09.png",
+          "sha256": "517176b7bd037f91cdda4473702478c341be31485f7a2ddf9ac213734162308b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 10,
+      "phase": "shoulder-reset",
+      "durationMs": 90,
+      "startMs": 815,
+      "endMs": 905,
+      "weaponVisible": false,
+      "grip": null,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "occlusionMode": null,
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/10.png",
+      "sha256": "3da15b6c5bc5c85490d0d39307fd4f0333c803f7cf369eb039d4c53c96766800",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/10.png",
+      "nativeSha256": "b87a27c87c9c82aa702fdd51ed3ee1c9faa764792b728ae60ffe74f38e8566c5",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/10.png",
+          "sha256": "3da15b6c5bc5c85490d0d39307fd4f0333c803f7cf369eb039d4c53c96766800"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 11,
+      "phase": "return-to-guard",
+      "durationMs": 100,
+      "startMs": 905,
+      "endMs": 1005,
+      "weaponVisible": false,
+      "grip": null,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "occlusionMode": null,
+      "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/frames/11.png",
+      "sha256": "92891aeb18585a321a17bac5474766b14527a869e8b40172791eff090bb660b0",
+      "nativePng": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/native/11.png",
+      "nativeSha256": "c97173b46eb06cb1b53bc7c5ed9dab89289a7e293e724a47a425ae4ac240c9cd",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/body/11.png",
+          "sha256": "92891aeb18585a321a17bac5474766b14527a869e8b40172791eff090bb660b0"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/final-candidate-v10/front_l/Axe/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "basic.sword-slash.body-specialist.glm-fixes",
+  "revision": "body-specialist-glm-fixes-back-r-sword-v1",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "back_r",
+  "scope": "GLM body-fixes: F06 flutuantes zerados + malha reconstruida com doadores F05/F07 (prescrito pelo QA); demais frames byte-herdados de repair1",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    60,
+    60,
+    70,
+    70,
+    40,
+    40,
+    90,
+    70,
+    70,
+    60,
+    60
+  ],
+  "totalDurationMs": 730,
+  "master": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256.aseprite",
+  "masterSha256": "3da678e9b7980074f08a8e0c5a89e22d9b1f771719cc5c9775cc4ecf81438303",
+  "bodyMaster": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256.aseprite",
+  "bodyMasterSha256": "3da678e9b7980074f08a8e0c5a89e22d9b1f771719cc5c9775cc4ecf81438303",
+  "nativeMaster": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native128.aseprite",
+  "nativeMasterSha256": "acccc22600ce9d3b787dbb77ce02f9078b8382b099b2a7ee97e319437a24e27b",
+  "strip": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native-strip.png",
+  "stripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646",
+  "compositeStrip": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256-strip.png",
+  "compositeStripSha256": "b53c558f95bbbd10a736d17f229093273bfe9fc9ae651405229631cc3e03463c",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "propagationAllowed": false,
+  "frames": [
+    {
+      "index": 0,
+      "durationMs": 40,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/00.png",
+        "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/00.png",
+        "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 1,
+      "durationMs": 60,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/01.png",
+        "sha256": "d5dc0e0544a67229f5e42f8493b70bdabf8ff8d0f5cfa48354f2efb8c7c1b2a1"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/01.png",
+        "sha256": "9b06a1c0872ede98a3bee13e1d728de476d6130ef4eceadce88e17b0910feed3"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 2,
+      "durationMs": 60,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/02.png",
+        "sha256": "ae92de3e04844e0fd4d90984532726f66067a319a05942d6d425df0b516015fd"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/02.png",
+        "sha256": "330081ae8c98eadb734411a939676b3abe95d689c52148f075f0f4fa9c35fb75"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 3,
+      "durationMs": 70,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/03.png",
+        "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/03.png",
+        "sha256": "357318e1369e6eb2c0f3079d06eb31828a53fb60b6cd5d7055d8cf7a1e91d408"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": true,
+      "keyName": "01-hoist",
+      "keySourceSha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2",
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "index": 4,
+      "durationMs": 70,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/04.png",
+        "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/04.png",
+        "sha256": "5e0a6fdad43972e6b4c17c2dac475764a4caff469faa76a15579735aaa0da3b4"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": true,
+      "keyName": "02-apex",
+      "keySourceSha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d",
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "index": 5,
+      "durationMs": 40,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/05.png",
+        "sha256": "68da48cb97bdb41192a89a5b374c8490ac6c9d8fa7a5c9d53162403eea34f6f1"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/05.png",
+        "sha256": "fd5982dc74d8cb748de669fc277aa4a812dbd0e81dc1339b913726c7dea41e60"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 6,
+      "durationMs": 40,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/06.png",
+        "sha256": "88a125c47494c08db45551e12a115a9c2dc83344322afaf19e6cbdd892dba402"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/06.png",
+        "sha256": "14d17af1422597791bdf1653b77f6795fba39fba178e90a9e9ba159ef0362faf"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false,
+      "repairedDefect": "REAR-01-RESIDUAL-A + REAR-01-RESIDUAL-B",
+      "repairedBy": "glm-fixes"
+    },
+    {
+      "index": 7,
+      "durationMs": 90,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/07.png",
+        "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/07.png",
+        "sha256": "db68354428eb3608c28bf2ec475f5737d7b1b1cb8db702bcd9d97b8b004735da"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": true,
+      "keyName": "03-impact",
+      "keySourceSha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107",
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "index": 8,
+      "durationMs": 70,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/08.png",
+        "sha256": "a56f919556d8f3ccd7dba9aa4eae5affec04bb026588e2278b7ce39aa536b06e"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/08.png",
+        "sha256": "6a46e11c4daed604d1ca02ef72584fde0395da86b6ab160a7a2856a97c309ec4"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 9,
+      "durationMs": 70,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/09.png",
+        "sha256": "8cf010d9d9ba9be4c610bc19c3742c45841dc08e82b0e6e86ff917773fad7ea7"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/09.png",
+        "sha256": "a0dfcba378d15c4614c03efdabb3e4fd2fab4eb8112ce5d369aa2f1c532f70d0"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 10,
+      "durationMs": 60,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/10.png",
+        "sha256": "2b88d9b4970218314edba51909f148c40ea3f1dcb23a422f1cd25ca58b545c34"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/10.png",
+        "sha256": "a629890d98a55fe99fe001d600493ee35be4da4df43b718197fb1981481cb708"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    },
+    {
+      "index": 11,
+      "durationMs": 60,
+      "nativePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native/11.png",
+        "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb"
+      },
+      "compositePng": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256/11.png",
+        "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+      },
+      "weaponVisible": false,
+      "isAcceptedKey": false
+    }
+  ]
+}

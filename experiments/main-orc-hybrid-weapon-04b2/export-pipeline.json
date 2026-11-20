@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "experimentId": "main-orc-hybrid-weapon-04b2",
+  "pilot": "B2",
+  "architecture": "Architecture C (Hybrid Weapon Architecture)",
+  "direction": "back_r",
+  "action": "Sword",
+  "authoritativeSource": {
+    "clip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/clip.json",
+    "clipSha256": "25f40ef43d276cb93900c4625c92d5c19303700dfb9b8eb6c819ee0fe9723fe4",
+    "master": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/composite.aseprite",
+    "masterSha256": "b1109f1a2d189b52108a0e2998aa82381109bb0f68327eecda4862aa2ae522db"
+  },
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "variants": {
+    "A": {
+      "id": "recruit-sword",
+      "name": "Espada do Recruta (Variant A)",
+      "master": "experiments/main-orc-hybrid-weapon-04b2/full/a/composite.aseprite",
+      "masterSha256": "b1109f1a2d189b52108a0e2998aa82381109bb0f68327eecda4862aa2ae522db",
+      "strip": "experiments/main-orc-hybrid-weapon-04b2/full/a/strip.png",
+      "stripSha256": "49050df099c4ce08c28793a8fa822074f3ab9f52e13099992e37a936ebb7a207",
+      "clipManifest": "experiments/main-orc-hybrid-weapon-04b2/full/a/clip.json",
+      "clipManifestSha256": "0e900ef18acaa92d33873221bbb5a0066902865d97a1696d8b5fe6bb623c52dc"
+    },
+    "B": {
+      "id": "faceted-steel-sword-b",
+      "name": "Espada de Aço Facetada (Variant B)",
+      "master": "experiments/main-orc-hybrid-weapon-04b2/full/b/composite.aseprite",
+      "masterSha256": "fd9af0f5e74767c26cd04586aafcaa9b6195581b926b5b3343651ec8b7c00c4d",
+      "strip": "experiments/main-orc-hybrid-weapon-04b2/full/b/strip.png",
+      "stripSha256": "25004220025e4f1e87fe7b01dd1e380470d83a64d69b567354902d105489d01e",
+      "clipManifest": "experiments/main-orc-hybrid-weapon-04b2/full/b/clip.json",
+      "clipManifestSha256": "258dccb782eb29dc50705f0387c9ad989cadd4c49523b4f95983292768a8d018"
+    }
+  },
+  "reusableStages": [
+    "representative (F02, F05, F08, F11)",
+    "full (F00..F13, 730 ms)"
+  ]
+}

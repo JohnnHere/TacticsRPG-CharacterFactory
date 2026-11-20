@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "character": "orc-v1",
+  "sourceTruth": "reports/orc-production-current.json",
+  "directions": [
+    "back_l",
+    "back_r",
+    "front_r",
+    "front_l"
+  ],
+  "actions": [
+    "Idle",
+    "Walk",
+    "Unarmed",
+    "Sword",
+    "Axe",
+    "Hit",
+    "Defeat"
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "visibilityPolicy": "attack-only-v1",
+  "armedIdle": false,
+  "armedWalk": false,
+  "profiles": {
+    "Idle": "idle-balanced-v1",
+    "Walk": "locomotion.walk-v1",
+    "Unarmed": "basic.unarmed",
+    "Sword": "basic.sword-slash",
+    "Axe": "basic.axe-chop",
+    "Hit": "reaction.hit",
+    "Defeat": "reaction.defeat"
+  },
+  "clips": [
+    {
+      "state": "Idle",
+      "category": null,
+      "direction": "back_l",
+      "profile": "idle-balanced-v1",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/idle-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/idle-back_l.aseprite"
+    },
+    {
+      "state": "Walk",
+      "category": null,
+      "direction": "back_l",
+      "profile": "locomotion.walk-v1",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/walk-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/walk-back_l.aseprite"
+    },
+    {
+      "state": "Unarmed",
+      "category": null,
+      "direction": "back_l",
+      "profile": "basic.unarmed",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Unarmed/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/unarmed-attack.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/attack-back_l.aseprite"
+    },
+    {
+      "state": "Hit",
+      "category": null,
+      "direction": "back_l",
+      "profile": "reaction.hit",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Hit/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/hit-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/hit-back_l.aseprite"
+    },
+    {
+      "state": "Defeat",
+      "category": null,
+      "direction": "back_l",
+      "profile": "reaction.defeat",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/defeat-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/defeat-back_l.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "direction": "back_l",
+      "profile": "basic.sword-slash",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/back_l/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "direction": "back_l",
+      "profile": "basic.axe-chop",
+      "clip": "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/back_l/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/axe-attack.aseprite"
+    },
+    {
+      "state": "Idle",
+      "category": null,
+      "direction": "back_r",
+      "profile": "idle-balanced-v1",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/idle-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/idle-back_r.aseprite"
+    },
+    {
+      "state": "Walk",
+      "category": null,
+      "direction": "back_r",
+      "profile": "locomotion.walk-v1",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/walk-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/walk-back_r.aseprite"
+    },
+    {
+      "state": "Unarmed",
+      "category": null,
+      "direction": "back_r",
+      "profile": "basic.unarmed",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Unarmed/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/unarmed-attack.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/attack-back_r.aseprite"
+    },
+    {
+      "state": "Hit",
+      "category": null,
+      "direction": "back_r",
+      "profile": "reaction.hit",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Hit/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/hit-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/hit-back_r.aseprite"
+    },
+    {
+      "state": "Defeat",
+      "category": null,
+      "direction": "back_r",
+      "profile": "reaction.defeat",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/defeat-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/defeat-back_r.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "direction": "back_r",
+      "profile": "basic.sword-slash",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "direction": "back_r",
+      "profile": "basic.axe-chop",
+      "clip": "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/back_r/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/axe-attack.aseprite"
+    },
+    {
+      "state": "Idle",
+      "category": null,
+      "direction": "front_r",
+      "profile": "idle-balanced-v1",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/idle-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/idle-front_r.aseprite"
+    },
+    {
+      "state": "Walk",
+      "category": null,
+      "direction": "front_r",
+      "profile": "locomotion.walk-v1",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/walk-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_r.aseprite"
+    },
+    {
+      "state": "Unarmed",
+      "category": null,
+      "direction": "front_r",
+      "profile": "basic.unarmed",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Unarmed/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/unarmed-attack.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/attack-front_r.aseprite"
+    },
+    {
+      "state": "Hit",
+      "category": null,
+      "direction": "front_r",
+      "profile": "reaction.hit",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Hit/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/hit-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/hit-front_r.aseprite"
+    },
+    {
+      "state": "Defeat",
+      "category": null,
+      "direction": "front_r",
+      "profile": "reaction.defeat",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Defeat/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/defeat-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/defeat-front_r.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "direction": "front_r",
+      "profile": "basic.sword-slash",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/front_r/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "direction": "front_r",
+      "profile": "basic.axe-chop",
+      "clip": "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/front_r/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/axe-attack.aseprite"
+    },
+    {
+      "state": "Idle",
+      "category": null,
+      "direction": "front_l",
+      "profile": "idle-balanced-v1",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Idle/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/idle-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/idle-front_l.aseprite"
+    },
+    {
+      "state": "Walk",
+      "category": null,
+      "direction": "front_l",
+      "profile": "locomotion.walk-v1",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/walk-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/walk-front_l.aseprite"
+    },
+    {
+      "state": "Unarmed",
+      "category": null,
+      "direction": "front_l",
+      "profile": "basic.unarmed",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Unarmed/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/unarmed-attack.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/attack-front_l.aseprite"
+    },
+    {
+      "state": "Hit",
+      "category": null,
+      "direction": "front_l",
+      "profile": "reaction.hit",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Hit/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/hit-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/hit-front_l.aseprite"
+    },
+    {
+      "state": "Defeat",
+      "category": null,
+      "direction": "front_l",
+      "profile": "reaction.defeat",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Defeat/clip.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/defeat-unarmed.aseprite",
+      "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/defeat-front_l.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Sword",
+      "direction": "front_l",
+      "profile": "basic.sword-slash",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/front_l/Sword/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/sword-attack.aseprite"
+    },
+    {
+      "state": "Attack",
+      "category": "Axe",
+      "direction": "front_l",
+      "profile": "basic.axe-chop",
+      "clip": "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/clip.json",
+      "binding": "characters/orc-v1/source/complete-v1/front_l/Axe/Attack/profile.json",
+      "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_l/axe-attack.aseprite"
+    }
+  ],
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

@@ -1,0 +1,26 @@
+QA INDEPENDENTE — revisão final do candidato integrado do Orc V1. Você não produziu nada nesta versão e não deve editar arte; seu veredito é sobre o pacote pronto para o criador.
+
+CONTEXTO CURTO (não releia histórico longo):
+- Task: corrigir Sword Attack e Axe Attack nas 4 vistas, priorizando traseiras; pegada natural; defeito de axila em front_l/Sword; contornos claros indesejados; política attack-only; sem Unity; sem tocar Idle/Walk/Unarmed/Hit/Defeat.
+- A produção `main-orc-combat-rescue-v5` terminou e um revisor multimodal (Gemini 3.8 Flash/Antigravity, sessões separadas dos produtores) aceitou cada um dos 8 clipes armados individualmente e depois o pacote integrado com `READY_FOR_CREATOR_REVIEW`. Esses laudos estão em `experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/` (qa-result.json, front-r-sword-full-result.json, rear-axe-full-result.json, rear-sword-l-back-full-result.json, rear-two-remaining-result.json, integrated-candidate-result.json).
+- O criador agora exige a ordem de QA: Sol/Codex primeiro. Você é essa revisão de primeira preferência. Não repita auditorias estruturais que já passaram; julgue a ARTE com seus próprios olhos e confronte os critérios de aceite da task.
+
+OBJETO:
+- Manifesto: `characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json` (SHA-256 58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794). 13 células ativas (8 Sword/Axe, 4 Unarmed, back_l/Walk) + 15 aliases, 226 quadros.
+- Página de revisão real com player 1×/0,5×/passo/escala tática: `Biblioteca de Arte/Estudos Comparativos/Orc principal - Resgate de combate/index.html` (abra no navegador; ela desenha pixels reais).
+- Fontes dos 8 clipes armados: `characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword|front_l-Sword-full|front_r-Axe-full|front_l-Axe-full/` e `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe|full-back-l-sword|full-back-r-sword|full-back-l-axe/` — cada uma com clip.json, camadas weaponBack/body/weaponFront/handFront, compostos 256, nativos 128 e mestres .aseprite.
+
+O QUE JULGAR (matriz Requisito → Evidência → PASS/FAIL/NÃO VERIFICADO), conforme §15 da task:
+1. Sword traseiras: pernas/stance/transferência de peso coerentes em back_r; back_l sem poses incompatíveis; as duas vistas comunicam UM ataque de espada; trajetória legível; punho/pulso plausíveis; grip convincente em todos os quadros; sem descontinuidade; recuperação natural.
+2. Axe traseiras: golpe one-handed crível, cadeia Stance→Torso→Ombro→Braço→Mão→Machado, peso sem rigidez mecânica, ombro/cotovelo/pulso conectados, impacto e follow-through legíveis.
+3. front_l/Sword: defeito da axila sob o braço atacante corrigido (confira os frames, não o relato).
+4. Contornos claros indesejados ausentes nos clipes corrigidos, sem apagar highlights metálicos legítimos; sem escurecimento global.
+5. Armas somente no intervalo do ataque; bookends desarmados; sem arma teleportando entre poses incompatíveis; primeira pose armada estabelece pegada crível.
+6. Preservação: coreografia frontal bem-sucedida intacta; identidade do Orc V1; itens independentes; proporções one-handed; nenhum outro estado modificado (aliases byte-idênticos — a validação 964 hashes já cobre isso; você confirma amostrando).
+7. Percepção temporal: assista 1× E 0,5× na página real e declare o que percebeu; frame-a-frame para investigar. Não afirme fluidez que não observou; declare limitação se seu ambiente não mostrar a animação.
+
+REGISTRO:
+- Grave `experiments/main-orc-combat-rescue-v5/qa-sol-integrated/result.json` e `report.md` (crie a pasta). Inclua o hash do manifesto, a matriz de critérios, achados com frame/coordenadas quando houver, limitações e o veredito final: `READY_FOR_CREATOR_REVIEW`, `REVISIONS_REQUIRED` (achados por severidade) ou `INCONCLUSIVE`.
+- Não aprove em nome do criador; não autorize Unity; zero chamadas PixelLab; custo LLM não informado (não invente $0). Não crie subagentes; não edite fontes de arte, manifesto, docs ou matriz.
+
+Se encontrar defeitos artísticos confirmados, seja específico (célula/frame/coordenada/causa provável) para que o orquestrador encaminhe ao especialista certo sem reabrir produção válida.

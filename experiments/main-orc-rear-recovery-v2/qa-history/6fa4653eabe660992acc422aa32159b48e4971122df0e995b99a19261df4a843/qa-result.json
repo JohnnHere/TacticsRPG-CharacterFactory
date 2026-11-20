@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-27",
+  "reviewer": {
+    "displayName": "GPT Sol6.1 via GitHub Copilot",
+    "model": "GPT-6.1 Sol",
+    "modelId": "gpt-6.1-sol",
+    "provider": "GitHub Copilot",
+    "notCodex": true,
+    "role": "Independent integrated QA fallback",
+    "priorAttempts": "Argon Antigravity and GLM Cline ended without a verdict; their evidence is preserved, not treated as visual approval."
+  },
+  "freezeId": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843",
+  "freezeChecks": {
+    "entry": "PASS",
+    "preReport": "PASS",
+    "final": "PASS",
+    "finalEvidence": "qa-copilot\\final-freeze-check.json",
+    "checkedFiles": 3794,
+    "changed": []
+  },
+  "verdict": "REVISIONS_REQUIRED",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": false,
+  "runtimeImplemented": false,
+  "reviewState": "FINISHED_RETURNING_IDLE",
+  "scope": {
+    "character": "orc-v1",
+    "baselineBuild": "dist\\editor\\orc-v1-complete-v1\\b178422e1f7fc19f068c",
+    "manifest": "characters\\orc-v1\\source\\rear-recovery-v2\\candidate28manifest.json",
+    "clips": 28,
+    "affectedClips": 12,
+    "unchangedAliases": 16,
+    "compositeFrames": 210,
+    "affectedClipFrames": 78,
+    "aliasFrames": 132,
+    "uniqueActiveMasters": 28,
+    "additionalVisualScope": "Retained Hit in all four directions"
+  },
+  "capabilities": {
+    "terminal": "AVAILABLE_AND_USED",
+    "directPngInspection": "AVAILABLE_AND_USED",
+    "paseoBrowser": "UNAVAILABLE_NO_PASEO_WORKSPACE",
+    "localHeadlessChromium": "AVAILABLE_AND_USED",
+    "actualReviewPageRafPlayback": "AVAILABLE_AND_USED",
+    "continuousVideoRecording": "UNAVAILABLE_MISSING_PLAYWRIGHT_FFMPEG",
+    "animatedGifVisualInspection": "NOT_CLAIMED",
+    "aseprite": {
+      "version": "Aseprite 1.3.18.6-x64",
+      "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+      "mode": "Hidden --batch --noinapp, isolated profile, copied masters, QA-only outputs",
+      "freshBodyLayerExports": 4,
+      "freshExactBodyFrames": 32
+    }
+  },
+  "evidenceRoot": "experiments\\main-orc-rear-recovery-v2",
+  "evidence": {
+    "report": "qa-argon-final.md",
+    "sourceIntegrity": "qa-copilot\\source-integrity.json",
+    "sourceScript": "qa-copilot\\inspect-sources.mjs",
+    "playbackVerification": "qa-copilot\\playback-verification.json",
+    "playbackScript": "qa-copilot\\inspect-playback.mjs",
+    "testExitCodes": "qa-copilot\\test-exit-codes.json",
+    "initialHarnessErrorPreserved": "qa-copilot\\playback-initial-path-assumption.json",
+    "sourceImages": "qa-copilot\\images",
+    "actualPlaybackFilmstrips": "qa-copilot\\playback"
+  },
+  "structuralChecks": {
+    "sourceExportIntegrity": "PASS",
+    "semanticWeaponBodySeparation": "FAIL",
+    "reusedArgonExportSetsReboundToFrozenMasters": 44,
+    "reuseValidation": "SHA-256 of every copied saved master against the freeze; every exported sheet tile checked against current decoded RGBA and timing.",
+    "all28CellsPaintedAndStatusMatched": true,
+    "stagedCanonicalPixelAndTimingMatches": 210,
+    "browserErrors": [],
+    "fullPlaybackRuns": 48,
+    "speeds": [1, 0.75, 0.5],
+    "allFramesObservedInEveryRun": true,
+    "nonterminalRunsWithObservedLoopBoundary": 42,
+    "frontDefeatTerminalHoldRuns": 6,
+    "displayScales": "Full composite 256, native-center 128 and approximate-game 64; diagnostic filmstrips at half composite display scale.",
+    "nodeTestsPassed": 26,
+    "nodeTestsFailed": 0,
+    "readOnlyChecks": [
+      "validate_candidate_manifest.mjs",
+      "verify_new_representatives.mjs --check",
+      "verify_front_f02_and_protected_frames.mjs",
+      "verify_four_early_clip_source_metadata.mjs",
+      "test_rear_recovery_review.py",
+      "test_review_js_runtime.mjs"
+    ],
+    "allListedCheckExitCodes": 0,
+    "semanticLessons": 12,
+    "operationalLessons": 5,
+    "nonemptyEvidenceFieldsPerLesson": 9
+  },
+  "preservation": {
+    "manifestPartitionAndHashes": "Checked by newly executed strict manifest and read-only validators.",
+    "frontUnarmedProtectedFrames": "Eight protected frames verified by newly executed localized F02 checker.",
+    "rootEvidenceReused": {
+      "baselineEntries": 793,
+      "unchangedEntries": 792,
+      "authorizedChangedEntry": "config\\artistic-quality-gates-v1.json",
+      "baselineMasters": 73,
+      "frontDefeatPreservedStages": 8
+    },
+    "existingLibrariesAndCurrentSelection": "Preserved in the checked freeze; no promotion performed.",
+    "unity": "No Unity operation or sibling-tree write by this reviewer; no new cross-project runtime audit claimed."
+  },
+  "accounting": {
+    "jobs": 17,
+    "generationUnits": 78,
+    "originalCap": 66,
+    "earlyExecutionDeviationUnits": 3,
+    "laterExplicitAuthorizationUnits": [6, 3],
+    "rejectedUnits": 14,
+    "incompatibleCachedUnits": 24,
+    "nonWeaponContributions": 28,
+    "weaponBodyCycleUnits": 12,
+    "newHitGenerations": 0,
+    "additionalGenerationAuthorization": 0,
+    "balanceObservation": "1418.70 belongs only to the 69-unit checkpoint, not a current final balance.",
+    "tokenTotal": null,
+    "usdTotal": null,
+    "newPaidCallsByReviewer": 0
+  },
+  "findings": [
+    {
+      "id": "QA-01",
+      "severity": "HIGH",
+      "confirmed": true,
+      "cell": "back_l/Sword",
+      "frameIndexBase": 0,
+      "frames": [1, 2, 3, 4, 5, 6, 7],
+      "title": "Extra blade/shaft pixels baked into body, including recovery outside weapon interval",
+      "observation": "Light blade/head-and-shaft shape beside the non-striking image-right hand/hip survives layers-off through F07. F05 also contains a pale blade-like upper-shoulder strip.",
+      "confidence": 9,
+      "confidenceScale": 10,
+      "canonicalPackage": "characters\\orc-v1\\source\\rear-recovery-v2\\back_l\\Sword\\Attack-representative-v1",
+      "exactExamples": ["native\\01.png", "native\\05.png", "native\\07.png", "layers\\body\\05.png", "layers\\body\\07.png", "07.png"],
+      "master": "characters\\orc-v1\\source\\aseprite\\rear-recovery-v2\\composite\\back_l\\sword-attack-representative-v1.aseprite",
+      "layer": "body",
+      "evidence": ["qa-copilot\\images\\back_l_Sword-body-detail.png", "qa-copilot\\images\\back_l_Sword-composite.png", "qa-copilot\\playback\\back_l_Sword.png"],
+      "boundedFix": "Remove extra blade/shaft clusters from affected body cels in Aseprite, restore gauntlet/shoulder contours, retain valid poses, and re-export saved-master derivatives. F07 must be visibly unarmed."
+    },
+    {
+      "id": "QA-02",
+      "severity": "HIGH",
+      "confirmed": true,
+      "cell": "back_r/Axe",
+      "frameIndexBase": 0,
+      "frames": [1, 2, 3],
+      "title": "Generated axe head and shaft remain in the body layer",
+      "observation": "F01 retains a second curved axe-head shape by the raised forearm. F02-F03 retain brown shaft pixels above the raised hand. The independent weapon layers add another axe silhouette.",
+      "confidence": 10,
+      "confidenceScale": 10,
+      "canonicalPackage": "characters\\orc-v1\\source\\rear-recovery-v2\\back_r\\Axe\\Attack-representative-v1",
+      "exactExamples": ["native\\01.png", "native\\02.png", "native\\03.png", "layers\\body\\01.png", "layers\\body\\02.png", "layers\\body\\03.png"],
+      "master": "characters\\orc-v1\\source\\aseprite\\rear-recovery-v2\\composite\\back_r\\axe-attack-representative-v1.aseprite",
+      "layer": "body",
+      "evidence": ["qa-copilot\\images\\back_r_Axe-body-detail.png", "qa-copilot\\images\\back_r_Axe-composite.png", "qa-copilot\\playback\\back_r_Axe.png"],
+      "boundedFix": "Remove generated equipment from the body in Aseprite; restore the actual empty fist/forearm as needed using same-view anatomy. Keep the militia axe solely in equipment layers and inspect the whole layers-off body."
+    },
+    {
+      "id": "QA-03",
+      "severity": "HIGH",
+      "confirmed": true,
+      "cell": "back_r/Axe",
+      "frameIndexBase": 0,
+      "frames": [4, 5],
+      "title": "Disconnected commit arm and doubled lower-arm assembly",
+      "observation": "F04 places the horizontal grip/forearm assembly beyond a truncated body arm without a continuous anatomical connection. F05 retains the old diagonal forearm alongside the added grip assembly.",
+      "confidence": 9,
+      "confidenceScale": 10,
+      "canonicalPackage": "characters\\orc-v1\\source\\rear-recovery-v2\\back_r\\Axe\\Attack-representative-v1",
+      "exactExamples": ["04.png", "05.png", "layers\\body\\04.png", "layers\\body\\05.png", "layers\\handFront\\04.png", "layers\\handFront\\05.png"],
+      "master": "characters\\orc-v1\\source\\aseprite\\rear-recovery-v2\\composite\\back_r\\axe-attack-representative-v1.aseprite",
+      "layers": ["body", "handFront"],
+      "evidence": ["qa-copilot\\images\\back_r_Axe-body-detail.png", "qa-copilot\\images\\back_r_Axe-composite.png", "qa-copilot\\playback\\back_r_Axe.png"],
+      "boundedFix": "Repair F04-F05 into one connected shoulder/elbow/wrist chain; remove the obsolete forearm before front-hand occlusion and align the existing axe to the real fist. Preserve successful preparation and timing unless a demonstrated motion need requires change."
+    },
+    {
+      "id": "QA-04",
+      "severity": "MEDIUM",
+      "confirmed": true,
+      "cell": "back_l/Axe",
+      "frameIndexBase": 0,
+      "frames": [2, 3],
+      "title": "Extraneous hook/strand pops from the far shoulder",
+      "observation": "A thin light near-horizontal hook/strand projects from the image-right shoulder above the normal pauldron spikes in the body-only frames and disappears in follow-through.",
+      "causeStatus": "Exact origin unproven; not asserted to be a second complete axe or the repaired raised fist.",
+      "confidence": 8,
+      "confidenceScale": 10,
+      "canonicalPackage": "characters\\orc-v1\\source\\rear-recovery-v2\\back_l\\Axe\\Attack-representative-v1",
+      "exactExamples": ["native\\02.png", "native\\03.png", "layers\\body\\02.png", "layers\\body\\03.png"],
+      "master": "characters\\orc-v1\\source\\aseprite\\rear-recovery-v2\\composite\\back_l\\axe-attack-representative-v1.aseprite",
+      "layer": "body",
+      "evidence": ["qa-copilot\\images\\back_l_Axe-body-detail.png", "qa-copilot\\images\\back_l_Axe-composite.png", "qa-copilot\\playback\\back_l_Axe.png"],
+      "boundedFix": "Clean the protruding strand in body cels F02-F03 and restore consistent far-pauldron contour while preserving the visible raised fist, same-view donor repair and previous 27-pixel cleanup."
+    }
+  ],
+  "affectedClipReviews": [
+    {
+      "cell": "back_r/Walk",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Alternating support/swing, coherent rear body and attached legs; full F07-F00 loop observed at all three speeds.",
+      "sourceImage": "qa-copilot\\images\\back_r_Walk-body-detail.png",
+      "playback": "qa-copilot\\playback\\back_r_Walk.png"
+    },
+    {
+      "cell": "back_l/Walk",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Own NW perspective and readable support exchange rather than vertical bob; loop retained.",
+      "sourceImage": "qa-copilot\\images\\back_l_Walk-body-detail.png",
+      "playback": "qa-copilot\\playback\\back_l_Walk.png"
+    },
+    {
+      "cell": "back_r/Unarmed",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Coil, extended F02 gauntlet, retraction and settle communicate an attached, weapon-free NE punch.",
+      "sourceImage": "qa-copilot\\images\\back_r_Unarmed-body-detail.png",
+      "playback": "qa-copilot\\playback\\back_r_Unarmed.png"
+    },
+    {
+      "cell": "back_l/Unarmed",
+      "assessment": "NO_ADDITIONAL_BLOCKING_FINDING",
+      "observation": "Clear preparation and extension; abrupt F03 recovery still reads as punch/recovery over the complete cycle. Reuse alone is not a defect.",
+      "sourceImage": "qa-copilot\\images\\back_l_Unarmed-body-detail.png",
+      "playback": "qa-copilot\\playback\\back_l_Unarmed.png"
+    },
+    {
+      "cell": "back_r/Sword",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Fist-following one-handed overhead load/cut/recovery; no confirmed floating blade, neck crossing or extra body equipment.",
+      "sourceImage": "qa-copilot\\images\\back_r_Sword-body-detail.png",
+      "compositeImage": "qa-copilot\\images\\back_r_Sword-composite.png",
+      "playback": "qa-copilot\\playback\\back_r_Sword.png"
+    },
+    {
+      "cell": "back_l/Sword",
+      "assessment": "ARTISTIC_REVISION_REQUIRED",
+      "findings": ["QA-01"],
+      "sourceImage": "qa-copilot\\images\\back_l_Sword-body-detail.png",
+      "compositeImage": "qa-copilot\\images\\back_l_Sword-composite.png",
+      "playback": "qa-copilot\\playback\\back_l_Sword.png"
+    },
+    {
+      "cell": "back_r/Axe",
+      "assessment": "ARTISTIC_REVISION_REQUIRED",
+      "findings": ["QA-02", "QA-03"],
+      "observation": "Distinct compact overhead chop is present, but duplicate equipment and broken arm assembly invalidate the critical strike.",
+      "sourceImage": "qa-copilot\\images\\back_r_Axe-body-detail.png",
+      "compositeImage": "qa-copilot\\images\\back_r_Axe-composite.png",
+      "playback": "qa-copilot\\playback\\back_r_Axe.png"
+    },
+    {
+      "cell": "back_l/Axe",
+      "assessment": "ARTISTIC_REVISION_REQUIRED",
+      "findings": ["QA-04"],
+      "observation": "Raised fist is visible inside the native canvas; overhead/downstroke/recovery read correctly apart from the shoulder strand. Preserve successful same-view donor repair.",
+      "sourceImage": "qa-copilot\\images\\back_l_Axe-body-detail.png",
+      "compositeImage": "qa-copilot\\images\\back_l_Axe-composite.png",
+      "playback": "qa-copilot\\playback\\back_l_Axe.png"
+    },
+    {
+      "cell": "front_r/Unarmed",
+      "assessment": "NO_BLOCKING_FINDING_IN_LOCALIZED_REPAIR",
+      "observation": "Visible closed gauntlet at F02; other four frames and timings preserved; readable complete 450 ms attack.",
+      "sourceImage": "qa-copilot\\images\\front_r_Unarmed-body-detail.png",
+      "playback": "qa-copilot\\playback\\front_r_Unarmed.png"
+    },
+    {
+      "cell": "front_l/Unarmed",
+      "assessment": "NO_BLOCKING_FINDING_IN_LOCALIZED_REPAIR",
+      "observation": "Coherent F02 closed-gauntlet restoration; other four frames/timings preserved without a new detached fist.",
+      "sourceImage": "qa-copilot\\images\\front_l_Unarmed-body-detail.png",
+      "playback": "qa-copilot\\playback\\front_l_Unarmed.png"
+    },
+    {
+      "cell": "front_r/Defeat",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Grounded head-down terminal retains bulk and no longer reads as an active propped kneel; terminal held at every speed.",
+      "sourceImage": "qa-copilot\\images\\front_r_Defeat-body-detail.png",
+      "playback": "qa-copilot\\playback\\front_r_Defeat.png"
+    },
+    {
+      "cell": "front_l/Defeat",
+      "assessment": "NO_BLOCKING_FINDING",
+      "observation": "Own-direction collapsed terminal preserves head/chest/pauldron mass; earlier four stages preserved and final frame held.",
+      "sourceImage": "qa-copilot\\images\\front_l_Defeat-body-detail.png",
+      "playback": "qa-copilot\\playback\\front_l_Defeat.png"
+    }
+  ],
+  "retainedHitReviews": [
+    { "cell": "front_r/Hit", "assessment": "RETAIN_FOR_CREATOR_REVIEW", "durationMs": 450, "observation": "Readable recoil/brace and return, planted feet, distinct from breathing.", "playback": "qa-copilot\\playback\\front_r_Hit.png" },
+    { "cell": "front_l/Hit", "assessment": "RETAIN_FOR_CREATOR_REVIEW", "durationMs": 450, "observation": "Coherent shoulder/trunk recoil and recovery; slower playback alone does not establish overacting.", "playback": "qa-copilot\\playback\\front_l_Hit.png" },
+    { "cell": "back_r/Hit", "assessment": "RETAIN_FOR_CREATOR_REVIEW", "durationMs": 450, "observation": "Rear armor masses move together; fast onset remains identifiable and grounded.", "playback": "qa-copilot\\playback\\back_r_Hit.png" },
+    { "cell": "back_l/Hit", "assessment": "RETAIN_FOR_CREATOR_REVIEW", "durationMs": 450, "observation": "Rear perspective, connected limbs and recovery remain legible.", "playback": "qa-copilot\\playback\\back_l_Hit.png" }
+  ],
+  "limitations": [
+    "Headless real playback was inspected through complete captured temporal samples and PNG screenshots, not a human live-GUI or continuous-video viewing session.",
+    "Playwright FFmpeg was unavailable; no video or animated-GIF inspection is claimed.",
+    "Approximate 64-pixel display is not verified Unity camera output; camera, events, hit-stop and combat cadence remain deferred.",
+    "Historical preservation findings are explicitly reused from frozen Root evidence alongside fresh freeze/manifest/front-F02 checks.",
+    "Exact generative origin of the AxeL shoulder strand is unproven; only the extraneous silhouette and temporal pop are confirmed.",
+    "No future correction is preapproved and no creator artistic approval is granted."
+  ],
+  "productionChangesByReviewer": [],
+  "extraAgentsSpawned": 0,
+  "requiredNextStep": "Root coordinates bounded Aseprite corrections for SwordL, AxeR and the AxeL shoulder strand, then returns a new freeze and relevant regressions to this same reviewer. Retain successful unaffected work; no full-library rebuild or paid regeneration is requested."
+}

@@ -1,0 +1,164 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orc V1 — Axe front_l 12f</title>
+<style>
+body{margin:24px;background:#171a20;color:#e8ebf1;font:15px system-ui}
+h1{font-size:22px}
+p{max-width:1150px;line-height:1.5}
+a{color:#9ed8ff}
+button,select,input{font:inherit}
+button,select{padding:6px;background:#303845;border:1px solid #737d8e;color:inherit}
+label{display:inline-block;margin:6px 12px 6px 0}
+.row{display:flex;gap:18px;flex-wrap:wrap}
+.panel{padding:12px;background:#252b34;border:1px solid #5a6475}
+.panel h2{font-size:16px;margin-top:0}
+canvas{display:block;background:#2b2c31;image-rendering:pixelated}
+.controls{margin:18px 0}
+#frame{width:300px}
+#status,#frameLabel{color:#e4cc87}
+.sheet{max-width:100%;image-rendering:pixelated}
+</style>
+<h1>Orc V1 · Machado de Milícia · front_l · ciclo 12f / 1005ms</h1>
+<p><b>GRIP_FRONT_L_AXE_FULL_READY · TECHNICALLY_COMPLETE · VISUAL_REVIEW_REQUIRED · PENDING_CREATOR.</b></p>
+<p>Ciclo completo equipado candidato para QA independente. Corpo frontal 100% preservado (0 delta RGBA). Pegada genuína com luvas rastreadas do corpo base; arma visível exclusivamente no visibleInterval (2..8).</p>
+<div class="controls">
+<button id="play">Pausar</button> <button id="restart">Reiniciar</button> <button id="prev">◀ Quadro</button> <button id="next">Quadro ▶</button>
+<label>Velocidade <select id="speed"><option value="1">1×</option><option value="0.75">0,75×</option><option value="0.5">0,5×</option><option value="0.25">0,25×</option></select></label>
+<label>Escala <select id="scale"><option value="1">Canvas 256 / corpo 128px</option><option value="0.5">Canvas 128 / corpo 64px</option><option value="2">Canvas 512 / corpo 256px</option></select></label>
+<label><input id="loop" type="checkbox" checked>Repetir ciclo para revisão</label>
+</div>
+<p><input id="frame" type="range" min="0" max="11" value="0" step="1"> <span id="frameLabel">Carregando…</span></p>
+<div class="row">
+<section class="panel"><h2>Antes: passe anterior combat-rescue-v5</h2><canvas id="before" width="256" height="256"></canvas></section>
+<section class="panel"><h2>Depois: grip especialista, corpo preservado</h2><canvas id="after" width="256" height="256"></canvas></section>
+<section class="panel"><h2>Pegada 8× (diagnóstico)</h2><canvas id="grip" width="224" height="224"></canvas></section>
+</div>
+<p>
+<label><input data-layer="weaponBack" type="checkbox" checked>weaponBack</label>
+<label><input data-layer="body" type="checkbox" checked>body</label>
+<label><input data-layer="weaponFront" type="checkbox" checked>weaponFront</label>
+<label><input data-layer="handFront" type="checkbox" checked>handFront</label>
+<button id="bodyOnly">Só corpo</button> <button id="restore">Restaurar camadas</button>
+</p>
+<p id="status">Carregando exports reais…</p>
+<p><a href="report.md">Relatório</a> · <a href="checkpoint.json">Checkpoint</a> · <a href="clip.json">clip.json</a> · <a href="representative.json">representative.json</a> · <a href="checks.json">checks.json</a></p>
+<details><summary>Strip Composto Completo (256px)</summary><img class="sheet" src="composite-strip.png" alt="Composto"></details>
+<details><summary>Strip Nativo Completo (128px)</summary><img class="sheet" src="native-strip.png" alt="Nativo"></details>
+<script>
+const DATA = {"durations": [40, 65, 35, 80, 155, 35, 115, 110, 130, 50, 90, 100], "total": 1005, "frames": [{"index": 0, "phase": "rest", "grip": null, "visible": false, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/00.png", "flat": "00.png", "layers": {"weaponBack": "layers/weaponBack/00.png", "body": "layers/body/00.png", "weaponFront": "layers/weaponFront/00.png", "handFront": "layers/handFront/00.png"}}, {"index": 1, "phase": "body-preparation", "grip": null, "visible": false, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/01.png", "flat": "01.png", "layers": {"weaponBack": "layers/weaponBack/01.png", "body": "layers/body/01.png", "weaponFront": "layers/weaponFront/01.png", "handFront": "layers/handFront/01.png"}}, {"index": 2, "phase": "establish-grip", "grip": [152, 130], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/02.png", "flat": "02.png", "layers": {"weaponBack": "layers/weaponBack/02.png", "body": "layers/body/02.png", "weaponFront": "layers/weaponFront/02.png", "handFront": "layers/handFront/02.png"}}, {"index": 3, "phase": "anticipation", "grip": [165, 119], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/03.png", "flat": "03.png", "layers": {"weaponBack": "layers/weaponBack/03.png", "body": "layers/body/03.png", "weaponFront": "layers/weaponFront/03.png", "handFront": "layers/handFront/03.png"}}, {"index": 4, "phase": "overhead-coil", "grip": [157, 100], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/04.png", "flat": "04.png", "layers": {"weaponBack": "layers/weaponBack/04.png", "body": "layers/body/04.png", "weaponFront": "layers/weaponFront/04.png", "handFront": "layers/handFront/04.png"}}, {"index": 5, "phase": "cleave-drive", "grip": [105, 132], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/05.png", "flat": "05.png", "layers": {"weaponBack": "layers/weaponBack/05.png", "body": "layers/body/05.png", "weaponFront": "layers/weaponFront/05.png", "handFront": "layers/handFront/05.png"}}, {"index": 6, "phase": "heavy-impact", "grip": [104, 144], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/06.png", "flat": "06.png", "layers": {"weaponBack": "layers/weaponBack/06.png", "body": "layers/body/06.png", "weaponFront": "layers/weaponFront/06.png", "handFront": "layers/handFront/06.png"}}, {"index": 7, "phase": "weight-settle", "grip": [114, 151], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/07.png", "flat": "07.png", "layers": {"weaponBack": "layers/weaponBack/07.png", "body": "layers/body/07.png", "weaponFront": "layers/weaponFront/07.png", "handFront": "layers/handFront/07.png"}}, {"index": 8, "phase": "wrench-recovery", "grip": [121, 147], "visible": true, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/08.png", "flat": "08.png", "layers": {"weaponBack": "layers/weaponBack/08.png", "body": "layers/body/08.png", "weaponFront": "layers/weaponFront/08.png", "handFront": "layers/handFront/08.png"}}, {"index": 9, "phase": "release-grip", "grip": null, "visible": false, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/09.png", "flat": "09.png", "layers": {"weaponBack": "layers/weaponBack/09.png", "body": "layers/body/09.png", "weaponFront": "layers/weaponFront/09.png", "handFront": "layers/handFront/09.png"}}, {"index": 10, "phase": "shoulder-reset", "grip": null, "visible": false, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/10.png", "flat": "10.png", "layers": {"weaponBack": "layers/weaponBack/10.png", "body": "layers/body/10.png", "weaponFront": "layers/weaponFront/10.png", "handFront": "layers/handFront/10.png"}}, {"index": 11, "phase": "return-to-guard", "grip": null, "visible": false, "before": "../../../../characters/orc-v1/source/combat-rescue-v5/combat/front_l/Axe/11.png", "flat": "11.png", "layers": {"weaponBack": "layers/weaponBack/11.png", "body": "layers/body/11.png", "weaponFront": "layers/weaponFront/11.png", "handFront": "layers/handFront/11.png"}}]};
+const names = ['weaponBack','body','weaponFront','handFront'];
+const loaded = [];
+let elapsed = 0, playing = true, speed = 1, loop = true, current = -1, last = performance.now();
+const starts = [0];
+for (const d of DATA.durations) starts.push(starts.at(-1) + d);
+window.reviewReady = false;
+window.reviewTrace = [];
+
+function context(id) {
+  const x = document.getElementById(id).getContext('2d');
+  x.imageSmoothingEnabled = false;
+  return x;
+}
+function frameAt(t) {
+  for (let i = 0; i < 12; i++) if (t < starts[i+1]) return i;
+  return 11;
+}
+function render(force = false) {
+  const i = frameAt(elapsed);
+  if (!force && i === current) return;
+  const changed = i !== current;
+  current = i;
+  const a = context('after'), b = context('before'), g = context('grip');
+  a.clearRect(0,0,256,256); b.clearRect(0,0,256,256); g.clearRect(0,0,224,224);
+  if (loaded[i].before) b.drawImage(loaded[i].before,0,0);
+  for (const n of names) if (document.querySelector('[data-layer="'+n+'"]').checked) a.drawImage(loaded[i][n],0,0);
+  if (DATA.frames[i].visible && DATA.frames[i].grip) {
+    const [x,y] = DATA.frames[i].grip;
+    g.drawImage(document.getElementById('after'), x-14, y-14, 28, 28, 0, 0, 224, 224);
+  } else {
+    g.fillStyle = '#ced6e3'; g.font = '16px system-ui';
+    g.fillText('Sem arma neste quadro', 16, 105);
+  }
+  document.getElementById('frame').value = i;
+  document.getElementById('frameLabel').textContent = 'F' + String(i).padStart(2,'0') + ' · ' + DATA.durations[i] + 'ms · ' + DATA.frames[i].phase;
+  document.getElementById('play').textContent = playing ? 'Pausar' : 'Reproduzir';
+  if (changed) {
+    window.reviewTrace.push({frame:i, time:performance.now(), speed, elapsed, playing});
+    if (window.reviewTrace.length > 600) window.reviewTrace.shift();
+  }
+}
+function seek(i) {
+  playing = false;
+  elapsed = starts[Math.max(0, Math.min(11, i))];
+  last = performance.now();
+  render(true);
+}
+function setPlaying(v) {
+  playing = !!v;
+  if (playing && elapsed >= DATA.total) elapsed = 0;
+  last = performance.now();
+  render(true);
+}
+function setSpeed(v) {
+  speed = Number(v);
+  document.getElementById('speed').value = String(speed);
+  last = performance.now();
+}
+function tick(now) {
+  const dt = Math.min(now - last, 100);
+  last = now;
+  if (window.reviewReady && playing) {
+    let ended = false;
+    elapsed += dt * speed;
+    if (elapsed >= DATA.total) {
+      if (loop) elapsed %= DATA.total;
+      else { elapsed = DATA.total; playing = false; ended = true; }
+    }
+    render(ended);
+  }
+  requestAnimationFrame(tick);
+}
+const load = p => new Promise((resolve, reject) => {
+  const im = new Image;
+  im.onload = () => resolve(im);
+  im.onerror = () => {
+    // fallback if before frame does not load
+    resolve(null);
+  };
+  im.src = p;
+});
+Promise.all(DATA.frames.map(async f => {
+  const im = { before: await load(f.before), flat: await load(f.flat) };
+  await Promise.all(names.map(async n => im[n] = await load(f.layers[n])));
+  return im;
+})).then(frames => {
+  loaded.push(...frames);
+  window.reviewReady = true;
+  last = performance.now();
+  render(true);
+  document.getElementById('status').textContent = '12 quadros carregados com sucesso. Pronto para inspeção perceptual e QA independente.';
+}).catch(e => document.getElementById('status').textContent = 'Erro: ' + e.message);
+
+document.getElementById('play').onclick = () => setPlaying(!playing);
+document.getElementById('restart').onclick = () => { elapsed = 0; setPlaying(true); };
+document.getElementById('prev').onclick = () => seek(current - 1);
+document.getElementById('next').onclick = () => seek(current + 1);
+document.getElementById('frame').oninput = e => seek(Number(e.target.value));
+document.getElementById('speed').onchange = e => setSpeed(e.target.value);
+document.getElementById('scale').onchange = e => ['before','after'].forEach(id => {
+  const c = document.getElementById(id);
+  c.style.width = 256 * Number(e.target.value) + 'px';
+  c.style.height = 256 * Number(e.target.value) + 'px';
+});
+document.getElementById('loop').onchange = e => loop = e.target.checked;
+document.querySelectorAll('[data-layer]').forEach(e => e.onchange = () => render(true));
+document.getElementById('restore').onclick = () => { document.querySelectorAll('[data-layer]').forEach(e => e.checked = true); render(true); };
+document.getElementById('bodyOnly').onclick = () => { document.querySelectorAll('[data-layer]').forEach(e => e.checked = (e.dataset.layer === 'body')); render(true); };
+window.reviewApi = {
+  seek, setPlaying, setSpeed,
+  setLoop(v) { loop = !!v; document.getElementById('loop').checked = loop; },
+  restart() { elapsed = 0; setPlaying(true); },
+  state() { return { frame: current, elapsed, playing, speed, loop }; },
+  resetTrace() { window.reviewTrace = []; }
+};
+requestAnimationFrame(tick);
+</script></html>

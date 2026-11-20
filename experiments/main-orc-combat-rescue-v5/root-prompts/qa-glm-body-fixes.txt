@@ -1,0 +1,32 @@
+Painel de QA independente (mesma sessão, escopo novo): revisar SOMENTE as duas correções corporais entregues em `GLM_BODY_FIXES_READY` pelo produtor `15ef8466-7a3d-431c-baee-4abbf7da3698`, após as duas reprovações anteriores.
+
+Escopo exato:
+- `back_r/Sword` F06 — DEFECT-REAR-01-RESIDUAL-A (5 pixels flutuantes) e RESIDUAL-B (couro vinho sobre cota de malha em y88..94/x45..55).
+- `back_l/Axe` F02 — DEFECT-REAR-02 persistente (haste de madeira sobre trapézio/pescoço e bloco de couro no lugar da mão). Segunda reprovação escalou o produtor.
+
+Fora de escopo: `back_l/Sword` (já liberado), `back_r/Axe` completo (outra revisão em curso ou já feita), os ciclos frontais, a matriz de 28 células, Unity.
+
+Fontes e evidência a inspecionar:
+- `characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json`
+- `characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json`
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/report.md`
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/checkpoint.json`
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/patch-manifest.json`
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/review.html` (players e antes/depois)
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/verify-fix-a.json`, `validate-fix-b.json`
+- `experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/pixellab-inpaint-f02-*.json` e recibos de saldo
+
+Atenção metodológica obrigatória: este produtor declarou explicitamente que **não abriu nenhuma imagem** — só trabalhou com Pillow textual, Aseprite Lua e um job PixelLab `inpaint_image_pro_flash` (`540302e4-2690-4282-8de5-c609f15b1142`) dentro de máscara x68..100/y8..33. Portanto os números dele (delta 510 px, componentes, ausência de runs ≥8px) são hipóteses técnicas, não prova visual. Julgue pelos pixels.
+
+O que você deve confirmar com inspeção real:
+1. F06 de `back_r/Sword`: os 5 pixels flutuantes sumiram sem abrir buraco no ar/silhueta; a faixa y88..94/x45..55 voltou a ser malha/aço coerente com F05 e F07, sem resto vinho, sem emenda diagonal visível, sem alterar o tasset legítimo.
+2. F02 de `back_l/Axe`: a haste de madeira transversal e o pino vertical sumiram; a silhueta do braço direito é anatomicamente contínua do ombro ao punho fechado vazio, coerente entre F01 (mão baixa no quadril) e F03 (hoist com punho junto à cabeça); sem bloco retangular de couro, sem braço amputado, sem buraco de transparência no contorno, sem sobra de sombra da haste, sem artefato de inpaint (borrão, textura repetida, desalinhamento de contorno, dedos derretidos).
+3. Identidade Orc V1, roupa, armadura e escala preservadas; layers-off (sem arma desenhada).
+4. Integridade estrutural: 12 quadros, 730 ms/1100 ms, 9 chaves F03/F04/F07 byte-idênticas às aceitas, os outros 11 frames de cada clipe inalterados, mestres 128/256 salvos e reexportados coerentes.
+5. Contraste com F05/F06/F07 vizinhos de F02 e com F05/F07 de F06 para garantir que a correção não criou novo artefato fora da área apontada.
+
+Grave NOVO `glm-body-fixes-result.json` e `glm-body-fixes-report.md` na pasta `qa-antigravity-flash`, preservando os pareceres anteriores. Inclua hashes SHA-256 reais dos dois `clip.json`, evidência por achado com coordenadas, e limitações.
+
+Verdito por clipe: `READY_FOR_REAR_GRIPS`, `REVISIONS_REQUIRED` (com achado exato) ou `INCONCLUSIVE`.
+
+Restrições: não editar arte/fontes/matriz/Unity/ponteiros; não criar subagentes; zero PixelLab de produção nesta revisão; custo LLM não informado; aprovação do criador continua pendente. Pare após o laudo persistente.

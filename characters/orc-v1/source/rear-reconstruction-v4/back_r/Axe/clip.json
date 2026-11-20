@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-rear-reconstruction-v4",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 8,
+  "durationsMs": [
+    90,
+    80,
+    90,
+    80,
+    100,
+    80,
+    100,
+    110
+  ],
+  "totalDurationMs": 730,
+  "master": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/source/composite.aseprite",
+  "bodyMaster": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/source/body.aseprite",
+  "nativeMaster": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/source/native.aseprite",
+  "strip": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native-strip.png",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.png",
+    "master": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.aseprite",
+    "spriteSha256": "e28a9477ad29af127ddeabad754ee0e231be12b96437bfe8aec49d444f80581c",
+    "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "source": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.aseprite",
+    "sourceSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "definition": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/weapon.json",
+    "scale": 1
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/clip.json",
+    "parentMaster": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+    "parentMasterSha256": "44da0baaf0b5fc6434ae67d15d0db2553e67692bab188a01aa786b8e62f1540e",
+    "authoringScript": "experiments/main-orc-rear-reconstruction-v4/dev/compose-material-forks.lua",
+    "weaponArtScript": "experiments/main-orc-rear-reconstruction-v4/dev/author-weapons.lua",
+    "paidGenerationCalls": 0,
+    "bodyArtChanged": true,
+    "bodyArtScope": "back_r scalp only:83 traced gray outline pixels per clip acrossF01..07; all other body RGBA exact",
+    "scalpCoordinateEvidence": "experiments/main-orc-rear-reconstruction-v4/dev/scalp-outline-points.json",
+    "handArtChanged": false,
+    "choreographyChanged": false,
+    "timingChanged": false,
+    "sourceRegistration": "experiments/main-orc-rear-reconstruction-v4/dev/weapon-registration.json",
+    "priorRearContourOverrides": "Exact old dark weapon pixels retained only where layer differs from raw source; no new luma filter applied. Quantities in material-composition-evidence.json."
+  },
+  "frames": [
+    {
+      "index": 0,
+      "durationMs": 90,
+      "phase": "guard-start",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/00.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "index": 1,
+      "durationMs": 80,
+      "phase": "reach",
+      "weaponVisible": true,
+      "rightGrip": [
+        175,
+        106
+      ],
+      "rotationDeg": 315,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/01.png",
+          "sha256": "f4928746dbc376f432bfb9a1710c09bc3682ffeaa1256d594bc8aab7bfd8b063"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/01.png",
+          "sha256": "48f6a27e2d501ee823040946b11a62fa62e0913449646c0c26863a85580ae633"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/01.png",
+          "sha256": "18e91de02c7d3dcd0a4cbda5742c8abb84de01574fe06625a9823d5fe99d3e7e"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/01.png",
+      "sha256": "88a42521384866e6735a481652180ab65b4217f3edddd862d0afca968dd6a7bb",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/01.png",
+      "nativeSha256": "61ef75a12c8d6feaecd4ad70e4443a9c9fda471642c82fbdb986cdcc039ee2d8",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 2,
+      "durationMs": 90,
+      "phase": "cocked-shoulder",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        73
+      ],
+      "rotationDeg": 350,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/02.png",
+          "sha256": "b0d731f06bd3dc1307432ed8194a99435c1418b4cf2701b740d6a7cefa876ff1"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/02.png",
+          "sha256": "62b169369a15a2b8213c91dcf59e50774ef738c1eef13c01cbe7fa533c5850dc"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/02.png",
+          "sha256": "f22e838cb82a2fbd39a8f7ae803d6889201523cc09c4a88df7e273df4f73a7ea"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/02.png",
+          "sha256": "3f098416d82510a057c018f60bc559f6db5e97eaac95345a32f74d626c7a515f"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/02.png",
+      "sha256": "02f06874b07352a78646a62ab7e75e0dd305ee8e6d662c719e80e5a0aafa51fc",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/02.png",
+      "nativeSha256": "4640b446cf48b74ec7eff7a0205e786eea1f5860b5af552844d995a89fd1127e",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 3,
+      "durationMs": 80,
+      "phase": "overhead-hold",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        78
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/03.png",
+          "sha256": "dc79763a8a5711c3f5d1575e7f2baf232297c7bce3c2bda03aa66ee4d83c12df"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/03.png",
+          "sha256": "f328955465d3a76aa1c07c864e683736611337b4990cb8ee9fb7e8a6e7261212"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/03.png",
+          "sha256": "1ab4f67fefda9b9dfa3babf15390eaf3032a53eaa1fec53725bab48ae4426d05"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/03.png",
+          "sha256": "96b57150b219327e7083f1cf8782d0d9d0e31e127dd3400a37bc8d664c874946"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/03.png",
+      "sha256": "db604e2eeb56ec700f545e6b951727e1227ea11d3d595e99b0d14191c1d68929",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/03.png",
+      "nativeSha256": "d077dd0a6ee2d27509cec4c956e8fb347779ba44580b4f2fedfdf3c0fca16656",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 4,
+      "durationMs": 100,
+      "phase": "downward-commit",
+      "weaponVisible": true,
+      "rightGrip": [
+        181,
+        118
+      ],
+      "rotationDeg": 70,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/04.png",
+          "sha256": "8d80f97483940cd076d567a1aac38b6b7cbc717ef685da77dfaf4d8180c9bd6d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/04.png",
+          "sha256": "139b5f8c86d5afe0f8c034122f6ff54b16882540183c1a4f0497bed81ef927ca"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/04.png",
+          "sha256": "c3ce5f77ddb1212d63a05c12ebcc7bc03e0518adb7dd034bfbe661e8ffad4b4d"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/04.png",
+      "sha256": "e391e69d7c2c4b694e0684968de48e31712ae3d077b52d297cdcfc9be544c2e8",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/04.png",
+      "nativeSha256": "35b07b32a816a33e642b2562d0e1ed4c1c43f1d75ba634dd62308c517a079d72",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 5,
+      "durationMs": 80,
+      "phase": "impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        181,
+        122
+      ],
+      "rotationDeg": 105,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/05.png",
+          "sha256": "78dbf8033788c724ef47fd8c693d1b15f30f5fa795d66538d83c652e570cebd5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/05.png",
+          "sha256": "37a0b11c7e31f6b83ad85553e88f6dedb53f571a0149e73b3a37997d50e6ccb0"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/05.png",
+          "sha256": "851156fb026aa013271a53574c098979161f05e1256cb43c20eb76853f387d13"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/05.png",
+      "sha256": "5da90383cac0778d55c12cdff544c2f74b3561a3cb3646eab15d9614c97f25d8",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/05.png",
+      "nativeSha256": "92a22a7ffc60cfe9bc4ba500f4ee7b5d9b0ef047daa67a956e53525fcdc41c37",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 6,
+      "durationMs": 100,
+      "phase": "lowered-follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        156,
+        139
+      ],
+      "rotationDeg": 135,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/06.png",
+          "sha256": "23e5708bb779a33d9d156056d2c96c0e8642dcd7202aa0dc30eeea70e35af0b5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/06.png",
+          "sha256": "32208f3b6fae24aa708c86ce5bf0b02a40ae462cf1c10e50fb5fef42fc6344b2"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/06.png",
+          "sha256": "87f0e0a8d6c318d8b0eb4cf6a04f6be2c8d5fdf254ec3f0c19f3864c5ef5c65b"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/06.png",
+      "sha256": "738ac15c825b695a39a17af481cb4e56d2aa4a004ea3971cdbe0a3d7fc650326",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/06.png",
+      "nativeSha256": "22a9f3348a3aec7abefc6ed87c27191ebdd2a558d67787f41cb5f57c9538a681",
+      "flipBit": false,
+      "registrationEvidence": "Exact original occupied mask; source color match before material edit"
+    },
+    {
+      "index": 7,
+      "durationMs": 110,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/body/07.png",
+          "sha256": "9c318c138ad3eb2ccdc7f5e9d45e3963a402820c05e43cffe4aee0046cf3659d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "png": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/07.png",
+      "sha256": "9c318c138ad3eb2ccdc7f5e9d45e3963a402820c05e43cffe4aee0046cf3659d",
+      "nativePng": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/native/07.png",
+      "nativeSha256": "9eb5f4d1b89efbef9ba5f124bbb3f92a362ae344a1f895bb970b035a13363f11"
+    }
+  ],
+  "masterSha256": "9ba3f2c6fbb345cb58b0a4dedebf0d5b8ad6e2cc07d883d74e85f5b4b94eaa6a",
+  "bodyMasterSha256": "71897f8ab26fc8c3b6cd877e10fbe90116adb82fa74f3f4f9864e61bf8ead4fa",
+  "nativeMasterSha256": "a40d0b05c0ba5ce3c49b245c063911cc2bc940a58ff9e50c4934d7f4394d0c37",
+  "stripSha256": "02c9b6ec2cd6210189fabf927b659d100d910f9a3080bc551eb819b26ab98125",
+  "nativeStripSha256": "02c9b6ec2cd6210189fabf927b659d100d910f9a3080bc551eb819b26ab98125",
+  "compositeStrip": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/composite-strip.png",
+  "visibilityPolicy": "attack-only-v1",
+  "hideAfterAction": true,
+  "parentClip": "characters/orc-v1/source/rear-recovery-v2/back_r/Axe/Attack-representative-v1/clip.json",
+  "parentClipSha256": "0f98a68e44181ecb3948cdc5b3ab8821cdb22c94e594eee8eb8b1cc516cdd80b",
+  "eligibleForIntegration": false,
+  "integrationStatus": "ISOLATED_MATERIAL_AND_SCALP_REFINEMENT_RECONSTRUCTION_UNRESOLVED",
+  "compositeStripSha256": "b53fa2bff6681fb41b9d32fa1ee148d7b5ff4bd61e625949696e4904503a89d6"
+}

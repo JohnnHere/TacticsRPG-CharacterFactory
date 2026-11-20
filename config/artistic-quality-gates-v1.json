@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "contractId": "factory.artistic-quality-gates.v1",
+  "authority": "Local production contract for the Character Factory; documentation in docs/ARTISTIC_QUALITY_GATES.md. Not a Unity implementation and not an artistic approval.",
+  "createdAt": "2026-10-25",
+  "scope": "Any character/animation package presented as ready: technical completeness plus visual/artistic review before delivery.",
+  "runtimeImplemented": false,
+  "artisticApprovalIsCreatorOnly": true,
+  "automationCannotApproveArt": true,
+  "visualReviewSurfaces": [
+    "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+    "Biblioteca de Arte/Estudos Comparativos/Orc principal - Biblioteca completa/index.html"
+  ],
+  "statusTaxonomy": {
+    "progression": [
+      "TECHNICALLY_COMPLETE",
+      "VISUAL_REVIEW_REQUIRED",
+      "CREATOR_APPROVED"
+    ],
+    "progressionMeaning": "The normal path. Each step requires the previous one: approval requires a visual review, a visual review requires technical completeness.",
+    "blockingRule": "ARTISTIC_REVISION_REQUIRED overrides every other label while the defect is open. A package can never be shown as VISUAL_REVIEW_REQUIRED, and never as CREATOR_APPROVED, while a known artistic defect is unresolved.",
+    "statuses": {
+      "TECHNICALLY_COMPLETE": {
+        "definition": "Dimensions, groundY, binary alpha, hashes, Aseprite masters and frame counts pass automated checks.",
+        "implies": "The package exists, is reproducible and is internally consistent.",
+        "neverImplies": [
+          "visual quality",
+          "anatomical correctness",
+          "perspective coherence between views",
+          "artistic approval"
+        ],
+        "canBeSetBy": "automated validation, audit tools, DEV"
+      },
+      "VISUAL_REVIEW_REQUIRED": {
+        "definition": "Technically complete and free of the automated artistic-defect gates below, awaiting human visual inspection in the interactive review studio.",
+        "implies": "Ready for the creator to inspect; defects would be news, not a rework of known problems.",
+        "canBeSetBy": "DEV after the gates in this contract pass, or by the orchestrator"
+      },
+      "ARTISTIC_REVISION_REQUIRED": {
+        "definition": "Creator or visual QA identified anatomy, perspective, silhouette, choreography or pixel-cleanup defects that require revision.",
+        "implies": "Do not present, promote or export as ready. Must name the action, direction and frame range.",
+        "canBeSetBy": "creator, independent visual QA, or DEV with measured evidence",
+        "creatorMayOverrule": true
+      },
+      "CREATOR_APPROVED": {
+        "definition": "Explicit artistic sign-off granted by the creator after visual inspection.",
+        "implies": "Only the creator can grant it, per package and per recorded evidence. Never inferred from passing tests.",
+        "canBeSetBy": "creator only",
+        "requires": [
+          "VISUAL_REVIEW_REQUIRED satisfied",
+          "explicit creator statement recorded with date and scope"
+        ]
+      }
+    },
+    "forbiddenLabels": [
+      "READY (without a status from this taxonomy)",
+      "DONE (for art that no human inspected)",
+      "APPROVED (when granted by tooling or by an agent)"
+    ]
+  },
+  "directionalViewGate": {
+    "id": "directional-view-gate-v1",
+    "appliesTo": [
+      "back_r",
+      "back_l"
+    ],
+    "principle": "A rear view is a construction, not a repaint of a front sprite.",
+    "forbiddenShortcut": "Deriving a back view by painting over the face (or by erasing facial features) on a front sprite. If the skull, nape and dorsal armor were not rebuilt, the view fails regardless of surface polish.",
+    "requiredRearMarkers": [
+      "occipital skull with no face, brow, nose, mouth, tusks or eye sockets",
+      "nape and trapezius visible between skull and collar",
+      "rear high collar/gorget, open to the back",
+      "dorsal backplate with a central spine channel",
+      "scapula plates instead of pectoral plates or chest scars",
+      "rear belt/sash closure, without the front sternum peak",
+      "no front abdominal point-plate",
+      "rear split tassets and rear chainmail fall",
+      "popliteal knee straps and calf greaves",
+      "no front kneecap poleyns",
+      "boot heels and toes angled away from the viewer"
+    ],
+    "distinctness": {
+      "backRFacing": "North-East",
+      "backLFacing": "North-West",
+      "mustDifferIn": [
+        "three-quarter perspective",
+        "shoulder occlusion (which pauldron is nearer)",
+        "top-left lighting"
+      ],
+      "pureMirrorIsInsufficient": true,
+      "reason": "A mirror flips the light source to the top-right and swaps the near shoulder, which the camera and the light do not do."
+    },
+    "measurableChecks": {
+      "noFrontFacePixels": "The head region of a rear view must contain zero pixels from the front face palette (eyes, tusks, mouth).",
+      "markerPresence": "Every requiredRearMarkers entry must be identifiable in at least the Idle frames of that view.",
+      "mirrorDependence": "Compare back_r against horizontally flipped back_l. Pixel agreement above 97% indicates a mirrored copy rather than a constructed view.",
+      "lightingSide": "The highlight centroid must sit above the body centroid and on a consistent horizontal side across all four views."
+    }
+  },
+  "choreographyGate": {
+    "id": "animation-choreography-gate-v1",
+    "principle": "An action must communicate its meaning in silhouette and timing, not only in shading.",
+    "hit": {
+      "id": "hit-impact-reaction-v1",
+      "mustReadAs": "clear heavy-armored impact reaction",
+      "requiredComponents": [
+        "readable bodily impact recoil",
+        "shoulder hunch or guard brace",
+        "torso recoil consistent with character mass",
+        "knee compression anchored on groundY",
+        "clear recovery to rest"
+      ],
+      "forbidden": "Completely unreactive poses, displacement unanchored from groundY, or animations indistinguishable from idle breathing at 1x playback. Subtle 1-2px displacement serves as a diagnostic review prompt rather than an automatic universal technical failure across all body masses.",
+      "phases": [
+        "impact-onset",
+        "peak-recoil",
+        "stagger-brace",
+        "recovery-rise",
+        "recovery-settle"
+      ],
+      "minFrames": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "totalDurationMs": 450,
+      "loop": false,
+      "measurableChecks": {
+        "bottomPinnedToGroundY": true,
+        "heightCompressionDefinition": "Max standing height across the clip/Idle rest minus minimum compressed height during impact recoil (max(h) - min(h)).",
+        "motionEnergyDefinition": "Time-normalized inter-frame changed-pixel rate (changedPixelPct / frameDurationMs) in the torso and head bands, divided by the same time-normalized rate measured on the Idle clip of the same direction."
+      },
+      "diagnosticWarnings": {
+        "severity": "warning",
+        "artisticInterpretation": true,
+        "notHardFailures": true,
+        "contextSensitive": true,
+        "reviewPrompt": "Hit must read as a heavy-armored impact at 1x playback and practical game scale; amplitude is diagnostic, not a universal artistic score. A smaller, well-animated reaction may be better than an exaggerated one that merely passes numeric thresholds.",
+        "measurements": {
+          "headTopExcursionPx": {
+            "observed": 12,
+            "role": "diagnostic",
+            "note": "Historical measured value for build b178422e1f7fc19f068c; not a hard minimum. Reassess at 1x/0.75x/0.5x and game scale before changing amplitude."
+          },
+          "centroidDisplacementPx": {
+            "observed": 5.74,
+            "role": "diagnostic",
+            "note": "Historical measured value; diagnostic only."
+          },
+          "heightCompressionPx": {
+            "observed": 12,
+            "role": "diagnostic",
+            "note": "Historical measured value; diagnostic only."
+          },
+          "motionEnergyVsIdle": {
+            "observed": 5.6,
+            "role": "diagnostic",
+            "note": "Time-normalized ratio; diagnostic only. Raw non-normalized proxy was 1.14-1.69."
+          }
+        },
+        "contextualProfiles": {
+          "heavyOrc": {
+            "appliesTo": [
+              "orc-v1"
+            ],
+            "principle": "Heavy armored orc impact must communicate readable impact and justified body mechanics; head snap is not a universal requirement for every race.",
+            "requiredReadable": [
+              "impact readable at 1x playback",
+              "clear recovery to rest"
+            ],
+            "requiredBodyMechanics": [
+              "justified torso/shoulder recoil consistent with armor weight",
+              "ground contact preserved"
+            ],
+            "headSnapOptional": true,
+            "headSnapOptionalNote": "Head snap is a contextual diagnostic for heavy orc, not a hard gate for every race. A smaller, well-animated reaction with readable impact/recovery may pass visual review without head snap."
+          }
+        },
+        "hardIntegrityChecksRetained": [
+          "bottomPinnedToGroundY",
+          "file validity",
+          "frame count and duration metadata",
+          "export hashes and provenance"
+        ]
+      },
+      "contextualComponents": {
+        "headSnap": "Contextual diagnostic; optional for heavy-armored or muscular archetypes (heavyOrc profile) where armor mass and neck musculature distribute impact to torso/shoulders without exaggerated neck snap."
+      }
+    },
+    "defeat": {
+      "id": "defeat-collapse-v1",
+      "mustReadAs": "believable multi-stage physical collapse",
+      "stages": [
+        "fatal-stagger",
+        "knees-buckle",
+        "drop-to-knees",
+        "collapse-impact",
+        "terminal-defeated"
+      ],
+      "minFrames": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "totalDurationMs": 700,
+      "loop": false,
+      "terminalFrame": 4,
+      "forbidden": "Global 2D rotation of a standing sprite combined with vertical squashing (for example vScale = 0.52). A squashed standing pose is not a collapse.",
+      "requiredPreservation": [
+        "head volume",
+        "pauldron volume",
+        "chest volume",
+        "contact on the ground line (groundY) in every frame"
+      ],
+      "measurableChecks": {
+        "bottomPinnedToGroundY": true,
+        "terminalAspectRatioWidthOverHeightMin": 1.3,
+        "terminalWidthGrowthMinPct": 10,
+        "maxSingleStageHeightDropRatio": 0.35,
+        "maxSingleStageHeightDropRatioMeaning": "No single transition may remove more than 35% of the standing height; a collapse that erases the torso in one step is a flatten, not a collapse.",
+        "volumeRetention": "Terminal frame keeps readable head, pauldron and chest masses; a silhouette reduced to a horizontal strip fails."
+      },
+      "principle": "Believable multi-stage physical collapse with volumetric ground retention; terminal volume and grounded presence across directions supersede any rigid single-pose kneeling formula.",
+      "contextualDiagnosticNotes": {
+        "terminalHeightMinPx": 58,
+        "terminalAspectRatioMin": 1.3,
+        "scope": "Local diagnostic baseline for current heavy humanoid (orc-v1 on 128 canvas). Not a universal hard artistic gate for future non-humanoid, winged, quadruped or lighter anatomies.",
+        "hardInvariants": "bottomPinnedToGroundY, file existence, valid frame timings, and hash integrity remain hard checks."
+      }
+    },
+    "frontalAttackHead": {
+      "id": "frontal-attack-head-cleanup-v1",
+      "appliesTo": [
+        "Sword Attack",
+        "Axe Attack",
+        "Unarmed"
+      ],
+      "inkColor": {
+        "rgb": [
+          12,
+          15,
+          18
+        ],
+        "hex": "#0C0F12"
+      },
+      "requirements": [
+        "dark INK outline around the head crown",
+        "palette-accurate green skin border inside the outline",
+        "zero light-grey or white anti-aliasing halo pixels around the crown",
+        "stabilized head-top trajectory across the clip"
+      ],
+      "measurableChecks": {
+        "maxNeutralHaloPixelsInHeadCrown": 0,
+        "haloThreshold": "min(R,G,B) >= 90 with |R-G| <= 10 and |G-B| <= 16 on the 4-neighborhood boundary of green skull pixels in y = 68..83, x = 116..149 of the 256x256 composite",
+        "headBand": "y = 68..83, x = 116..149 (green skull dome above the brow/eye line in the 256 composite)",
+        "maxConsecutiveReversalPx": 5,
+        "maxConsecutiveReversalPxMeaning": "The head-top trajectory may rise and fall with the action, but an isolated reversal larger than 5px indicates jitter rather than intent."
+      }
+    }
+  },
+  "completeSetReviewContract": {
+    "id": "complete-set-review-v1",
+    "principle": "Review the set as a set. A single beautiful direction does not carry a library.",
+    "matrix": {
+      "directions": [
+        "front_r",
+        "front_l",
+        "back_r",
+        "back_l"
+      ],
+      "actions": [
+        "Idle",
+        "Walk",
+        "Unarmed",
+        "Sword Attack",
+        "Axe Attack",
+        "Hit",
+        "Defeat"
+      ],
+      "requiredCells": 28
+    },
+    "studioRequirements": [
+      "all 4 directions x 7 actions reachable in one click from a single page",
+      "step-by-frame, play, speed control and zoom without leaving the page",
+      "before/after comparison for every revised action",
+      "transitions Idle -> Attack -> Idle, Walk -> Idle, Hit -> Idle and Defeat -> terminal pose",
+      "no smoothing, no invented frames, no interpolation in the preview"
+    ],
+    "beforeAfterIntegrity": {
+      "rule": "A before/after comparison must come from the superseded build or the archived pre-revision frames.",
+      "check": "If the 'before' image is byte-identical to the current output, the capture happened after the rewrite and the comparison is invalid.",
+      "lesson": "Capture the before state before touching the pixels, then verify the hashes differ."
+    },
+    "reviewerDuties": [
+      "inspect anatomy, perspective, silhouette, cluster cleanliness and motion",
+      "state the action, direction and frame range of every defect",
+      "never report file counts or JSON schemas as artistic evidence"
+    ]
+  },
+  "productionLessons": [
+    {
+      "id": "rear-anatomy-construction",
+      "legacyId": "lesson-2",
+      "title": "A rear-facing character needs real rear anatomy",
+      "symptom": "Rear views (back_r, back_l) look unnatural, uncanny, or read as a deformed front sprite with masked facial features.",
+      "verifiedCause": "Deriving rear views by painting over or erasing front facial features (eyes, tusks, mouth) retains frontal sternal collar, chest plates, abdominal contours, and frontal knee angles that violate rear perspective.",
+      "failedApproach": "Overpainting the face of a frontal sprite and calling it a rear view without restructuring underlying skeletal landmarks.",
+      "successfulCorrection": "[Verified Evidence] Reconstrução anatômica comprovada nos mestres e PNGs do orc-v1 com os 11 marcadores traseiros (crânio occipital sem rosto, nuca/trapézio, placa dorsal com canal vertebral, escapulares articuladas, fecho traseiro sem pico esternal, tassets traseiros bipartidos e calcanhares angulados). [Hypothesis/Pending] Aplicação normativa a futuras raças/classes não-humanoides permanece como diretriz conceitual a ser comprovada caso a caso.",
+      "reuse": "Vistas frontais preservadas intactas; bases traseiras construídas formam fundação reutilizável para todos os clipes de costas.",
+      "prevention": "directionalViewGate mandates zero front face palette pixels in rear head, distinct lighting side, and verification of all 11 rear anatomical markers before authoring animations.",
+      "validation": "Directional base validation, mirror difference check (<97% pixel agreement with flipped opposite view), and creator visual inspection in interactive review studio.",
+      "cost": "Reconstruction requires ~5-6% canvas alteration on baseline; prevents discarding entire animation sets later.",
+      "applicability": "All rear-facing humanoid sprites (back_r, back_l) across all character races and jobs."
+    },
+    {
+      "id": "rear-motion-needs-rear-construction",
+      "legacyId": "lesson-11",
+      "title": "Correct rear static artwork does not guarantee good rear animation",
+      "symptom": "Rear Walk, Unarmed, Sword, and Axe read as visually broken, sliding, or confusing despite having improved, valid rear static base sprites.",
+      "verifiedCause": "Static rear anatomical markers do not automatically provide coherent locomotion or striking mechanics; limbs in motion require perspective foreshortening, alternating support/swing foot clearance, and rear torso torque that cannot be inferred from a single resting pose.",
+      "failedApproach": "Propagating static rear base sprites directly into 28-cell full animation batches using frontal or unadapted timing and interpolation.",
+      "successfulCorrection": "[Verified Evidence] Falha do Draft-01 comprovou que bases estáticas isoladas não geram locomoção; Método 02 comprovou cinemática de passada com alternância de apoio e balanço em ciclo temporal de 8 quadros em back_r e back_l. [Hypothesis/Pending] Mecânica de combate traseiro (soco/armas) montada em chave única permanece pendente de validação visual pelo criador e pelo Root.",
+      "reuse": "Approved front Idle/Walk and rear static bases preserved; rear kinetic mechanics authored specifically for back angles.",
+      "prevention": "Require validated keyframe mechanics and passing poses prior to batching; track reuse classification (REUSE_DIRECT, REUSE_ADAPTED, REQUIRES_EXTENSION, CREATE_NEW).",
+      "validation": "1x, 0.75x, and 0.5x multi-speed playback in interactive review studio; frame-by-frame contact sheet analysis.",
+      "cost": "Prevents mass rework across 599 frames; local keyframe verification takes minimal generations.",
+      "applicability": "All rear and three-quarter rear movement clips (Walk, Run, Attack, Hit, Defeat) for humanoid characters."
+    },
+    {
+      "id": "weapon-anchor-vs-natural-choreography",
+      "legacyId": "lesson-3",
+      "title": "Weapon-anchor alignment does not prove natural combat choreography",
+      "symptom": "Attacks look robotic, disconnected, or visually unconvincing even when weapon grip coordinates perfectly match hand sockets.",
+      "verifiedCause": "Correct mathematical alignment of weapon roots and hand layers only guarantees spatial attachment; it does not supply anticipation, weight transfer, torso wind-up, kinetic chain extension, or believable follow-through.",
+      "failedApproach": "Avaliar qualidade de combate puramente por testes automatizados de sobreposição de bounding box, checagem de coordenadas de soquete ou testes verdes de exportação. Na Wave 2, as 24 chaves exploratórias isoladas geradas anteriormente eram geometria de corpo inteiro incompatível/não utilizada, e o achatamento de corpo+arma e inversão de camadas em author_rear_weapons.lua foram falhas posteriores de composição em Lua.",
+      "successfulCorrection": "[Verified Evidence] A resolução comprovada nos 4 representantes de armas traseiros (Sword R/L, Axe R/L: 8f, 730ms) exigiu separação estrita de 4 camadas independentes (weaponBack, body, weaponFront, handFront), mestres nativos 128 exclusivos de corpo, verificação com camadas de armas desligadas (layers-off), e grip cravado nas manoplas reais dos quadros nativos. AxeL recebeu reparo cirúrgico no Aseprite para punho cortado (doador da mesma vista de SwordL) e remoção exata de 27px de braço residual e restos de cabo marrom. Todos os 4 representantes receberam aprovação de expansão/integração interna do Root.",
+      "reuse": "Weapon assets remain shared and modular across classes/races (per WEAPON_ART_STANDARD); attack motion profiles (Sword vs Axe) are reusable within weapon families.",
+      "prevention": "Never treat automated grip alignment or layer composition tests as evidence of natural combat motion; require visual choreography review.",
+      "validation": "Interactive studio inspection with weapon layer toggle (body-only vs composed), hold-at-impact inspection, and swing trajectory review.",
+      "cost": "Decoupling weapons reduces asset authoring costs by reusing strike profiles across compatible items.",
+      "applicability": "All armed attacks and weapon-bearing actions across all character classes and races."
+    },
+    {
+      "id": "incompatible-attack-reuse",
+      "legacyId": "lesson-4-superseded-by-choreography",
+      "title": "Reusing incompatible attack poses creates unnatural animations",
+      "symptom": "Attack animations exhibit jarring limb jumps, warped depth, or inconsistent silhouette rotation during swings.",
+      "verifiedCause": "Reusing frontal strike keyframes for rear views, or forcing a single universal swing profile across incompatible weapon types (e.g. treating heavy axe chops as light sword slashes), breaks depth continuity and torso perspective.",
+      "failedApproach": "Attempting cross-fades, global rotations, or copying raw keyframes between frontal and rear views or between distinct weapon archetypes.",
+      "successfulCorrection": "[Verified Evidence] Transposição de poses frontais para traseiras ou unificação de machado/espada comprovadamente causou aberrações de rotação. [Hypothesis/Pending] Criação de perfis coreográficos independentes por família (espada propulsora vs machado engatilhado no ombro) adotada na Wave 2; aguarda comprovação visual definitiva após correção de camadas.",
+      "reuse": "Poses and timings can be shared within the same weapon category and angle, but never blindly mapped across incompatible perspectives.",
+      "prevention": "Validate that strike arc, elbow lead, and torso torque match both the perspective angle and weapon weight class before assembling composites.",
+      "validation": "Directional comparison in review studio; trajectory curve checks without anomalous reversal spikes.",
+      "cost": "Initial profile authoring takes focused iteration; prevents repeated rejections of hybridized attack sets.",
+      "applicability": "All melee and ranged attack animations across all directions."
+    },
+    {
+      "id": "numeric-hit-thresholds-diagnostic-warning",
+      "legacyId": "lesson-12",
+      "title": "Numeric Hit thresholds can encourage overacting",
+      "symptom": "Hit reactions appear exaggerated, cartoonish, or twitchy at 1x playback speed, disrupting grounded tactical tone.",
+      "verifiedCause": "Universal hard minimums for head excursion, center-of-mass displacement, and motion energy forced animators to exaggerate movement to satisfy numeric tests, penalizing grounded, armored characters.",
+      "failedApproach": "Enforcing rigid universal numbers (e.g., >=6px head snap, >=4px COM shift, 1-2px displacement strictly forbidden) across all races, body types, and armor weights.",
+      "successfulCorrection": "[Verified Evidence] Conversão contratual implementada em config/artistic-quality-gates-v1.json (diagnosticWarnings, severity: warning, notHardFailures: true) e formulação do perfil heavyOrc com base cravada em groundY. [Hypothesis/Pending] Adequação visual da reação e timing exato no jogo permanecem como hipótese aguardando inspeção do criador em velocidade real de 1x.",
+      "reuse": "Historical measurements (12px excursion, 5.74px centroid displacement for build b178422e1f7fc19f068c) retained as diagnostic baselines, not mandatory minima.",
+      "prevention": "Disallow universal pass/fail numeric gates for subjective animation amplitude; reserve hard gates for file/structural integrity and ground pinning.",
+      "validation": "Visual review in interactive studio at 1x, 0.75x, and 0.5x speed; confirmation of readable impact and grounded foot contact.",
+      "cost": "Eliminates cycles of artificial overacting and subsequent toning-down rework.",
+      "applicability": "Hit and flinch animations across all characters, jobs, and body weight classes."
+    },
+    {
+      "id": "defeat-consistent-terminal-outcome",
+      "legacyId": "lesson-5",
+      "title": "Defeat must communicate a consistent terminal outcome across directions",
+      "symptom": "Defeat animations produce flat strips, unconvincing falls, or drastically differing resting corpse volumes depending on view angle.",
+      "verifiedCause": "Applying 2D global transformations (e.g. rotation + vScale squash) or imposing a single rigid kneeling formula regardless of directional anatomy destroys 3D mass and ground presence.",
+      "failedApproach": "Global 2D rotation + 0.52 vertical scale squash; forcing rigid uniform kneeling sequences that collapse into flat horizontal bars or disjointed final silhouettes.",
+      "successfulCorrection": "[Verified Evidence] Proibição de vScale=0.52 e colapso volumétrico em 5 estágios comprovados no build b178422e1f7fc19f068c (altura terminal 60px vs 21px). [Hypothesis/Pending] Os parâmetros de altura terminal >= 58px e aspect >= 1.3 são diagnósticos para o orc-v1 pesado; sua aplicação a outras morfologias raciais é hipótese dependente de ficha de raça.",
+      "reuse": "Directional terminal corpses provide consistent, grounded fallen states reusable across game encounters.",
+      "prevention": "Automated checks enforce terminal volumetric floor, ground contact retention, and forbid 2D global squashing; directional staging must lead to visually cohesive fallen silhouettes.",
+      "validation": "Terminal frame volume checks (height, width, aspect ratio, groundY pinning) and interactive studio hold-at-terminal review.",
+      "cost": "Authoring volumetric collapse stages takes deliberate posing but prevents jarring visual popping on unit defeat.",
+      "applicability": "Defeat and incapacitation animations across all characters and perspectives."
+    },
+    {
+      "id": "technical-completion-not-artistic-approval",
+      "legacyId": "lesson-1",
+      "title": "Technical completion is not artistic approval",
+      "symptom": "Assets with zero validation errors, matching dimensions, and passing hash checks are deployed or promoted but look completely unacceptable visually.",
+      "verifiedCause": "Automated scripts and linters measure file existence, byte integrity, dimensions, alpha channels, and metadata schema compliance; they cannot evaluate anatomy, silhouette, perspective, appeal, or visual weight.",
+      "failedApproach": "Declaring an animation package 'ready', 'done', or 'approved' solely because automated test suites returned 0 FAIL.",
+      "successfulCorrection": "[Verified Evidence] Múltiplos pacotes tecnicamente perfeitos (749 passes) foram rejeitados por falhas visuais graves (repintura de costas, armas achatadas). A taxonomia estrita de 4 status bloqueia promoção indevida. [Hypothesis/Pending] A aprovação final só pode ser emitida pelo criador humano; nenhum status ready ou approved é assumido.",
+      "reuse": "Automated validators remain essential for catching regressions and structural flaws without masquerading as artistic evaluation.",
+      "prevention": "Forbid terms like READY, DONE, or APPROVED without explicit taxonomy status; enforce creator-only approval gate before any engine handoff.",
+      "validation": "Machine-readable status in coverage reports and quality gate JSON, signed off by explicit creator record.",
+      "cost": "Zero extra asset creation cost; saves immense integration and debugging overhead from premature promotion.",
+      "applicability": "Universal across all Character Factory assets, characters, animations, and equipment."
+    },
+    {
+      "id": "validated-poses-reused-not-regenerated",
+      "legacyId": "lesson-7",
+      "title": "Validated poses should be reused instead of regenerated",
+      "symptom": "Fixing a localized issue causes approved angles, frontal idle poses, or working combat choreography to degrade or change silently.",
+      "verifiedCause": "Regenerating entire animation batches or running unmasked full-figure generative passes when correcting specific weak areas overwrites established, creator-approved art.",
+      "failedApproach": "Re-exporting or regenerating the whole library from scratch to repair rear views, silently replacing approved frontal Idle and Walk frames.",
+      "successfulCorrection": "[Verified Evidence] Poses frontais aprovadas (front_r Idle, Walk, Sword, Axe) permaneceram 100% byte-idênticas comprovadas por testes de SHA-256 contra protected-art.json em todos os builds. [Hypothesis/Pending] O fluxo de proteção por hash é mantido como protocolo mandatório permanente para qualquer expansão futura.",
+      "reuse": "Maximum reuse of validated assets (e.g. idle-balanced-v1, approved frontal walk cycles, established weapon grips).",
+      "prevention": "Maintain protected art hashes map; run before/after byte comparisons and assert identical SHA-256 for protected canonical files.",
+      "validation": "Automated test asserting byte identity of protected canonical files against baseline hashes.",
+      "cost": "Dramatically reduces credit consumption, token usage, and review fatigue by preserving approved work.",
+      "applicability": "All iterative refinement and recovery workflows across all characters."
+    },
+    {
+      "id": "failed-artistic-foundations-downstream-rework",
+      "legacyId": "lesson-6-foundation",
+      "title": "Small failed artistic foundations can create extensive downstream rework",
+      "symptom": "An entire set of 28 clips or dozens of frames must be completely scrapped because fundamental flaws are discovered late in production.",
+      "verifiedCause": "Propagating an unvalidated keyframe, flawed anatomy base, or unverified grip socket into full animation cycles and composite variations multiplies the error across hundreds of frames.",
+      "failedApproach": "Pular do conceito inicial diretamente para a geração de folhas completas multidirecionais sem marcos intermediários de aprovação. Na Wave 2, 24 gerações isoladas permaneceram como geometria não utilizada/incompatível antes de um ciclo representativo funcional ser validado no corpo.",
+      "successfulCorrection": "[Verified Evidence] A produção e validação do representante SwordR (8f com 4 camadas) evitou expansão prematura e forneceu fundação verificada para a autorização estrita de SwordL e AxeR. [Hypothesis/Pending] Imposição de portões obrigatórios (Gate 1 -> Gate 2 -> chave representativa) é diretriz para blindar o pipeline contra retrabalho a jusante.",
+      "reuse": "High-quality foundations enable frictionless expansion across actions, weapons, and outfit variants.",
+      "prevention": "Never expand an action to all 4 directions or across weapon variants until the primary direction cycle passes visual review.",
+      "validation": "Milestone checkpoints (base validation, representative keyframe reviews) recorded in experiment logs.",
+      "cost": "Spending a few iterations on solid key foundations saves hundreds of frames of rework.",
+      "applicability": "All new character pipelines, variant creation, and action expansion tasks."
+    },
+    {
+      "id": "complete-review-interface-mandatory",
+      "legacyId": "lesson-8",
+      "title": "A complete review interface is mandatory for meaningful creator approval",
+      "symptom": "Reviewers miss critical animation bugs, foot sliding, or perspective mismatches when reviewing disjointed loose PNG files or static sheets.",
+      "verifiedCause": "Pixel art animation reads differently in motion, at different playback speeds, and in comparative context; inspecting static frames or folders fails to expose temporal hitches.",
+      "failedApproach": "Delivering raw folders of PNG files or static contact sheets with manual viewing instructions.",
+      "successfulCorrection": "[Verified Evidence] A inspeção no estúdio interativo permitiu identificar a deficiência do soco (F03..F06) e os erros de sobreposição de armas que passaram despercebidos em saídas de log. [Hypothesis/Pending] A extensão do estúdio para exibir as 28 células com chaveamento de antes/depois isolado do build canônico está sob responsabilidade do Preview Owner GLM (8591).",
+      "reuse": "Studio review template is reusable across all character packages and comparative studies.",
+      "prevention": "Automated tests verify review studio file presence, 28-cell accessibility, status badge display, and valid before/after image references with distinct hashes.",
+      "validation": "Interactive studio test assertions in automated test suite; visual verification by creator.",
+      "cost": "Low tooling cost to build/maintain review script; drastically accelerates decision cycles and reduces misunderstandings.",
+      "applicability": "All character animation deliveries, recovery passes, and comparative art reviews."
+    },
+    {
+      "id": "successful-methods-documented-equally",
+      "legacyId": "lesson-9-methods",
+      "title": "Successful methods must be documented as carefully as failed methods",
+      "symptom": "Teams repeat failed experiments or fail to replicate successful breakthroughs because only end outputs are saved without documenting the procedural technique.",
+      "verifiedCause": "Capturing only final assets leaves the methodology invisible; subsequent passes or agents revert to trial-and-error, reinventing the wheel or re-triggering known failure modes.",
+      "failedApproach": "Logging only bugs and rejections while treating successful generations as happy accidents without recording prompts, anchors, scripts, or layering recipes.",
+      "successfulCorrection": "[Verified Evidence] Documentação contábil rigorosa de 17 jobs totais (13 históricos [66 gen], 1 desvio pré-checkpoint job 31e61c4b [3 gen], e 3 autorizados: SwordL 8f0f4e44 [3 gen], AxeR 8b6ad151 [3 gen] e AxeL 5296ac98 [3 gen] = 78 gerações consumidas), categorizando 14 falhas, 24 chaves isoladas não utilizadas/incompatíveis, 28 contribuições não-arma aceitas e 12 unidades de corpo para ciclos de armas. [Hypothesis/Pending] A exigência contratual de 9 campos de evidência por lição é a garantia contra perda de know-how.",
+      "reuse": "Proven production recipes and Lua authoring scripts can be directly re-applied to other directions, actions, and characters.",
+      "prevention": "Require every major recovery or production task to output structured lessons containing symptom, verifiedCause, failedApproach, successfulCorrection, reuse, prevention, validation, cost, and applicability.",
+      "validation": "Automated contract test enforcing presence and field coverage of all required semantic lessons.",
+      "cost": "Brief documentation time delivers massive compounded efficiency for subsequent production runs.",
+      "applicability": "All Character Factory R&D, tooling development, and production pipelines."
+    },
+    {
+      "id": "speed-and-scale-evaluation",
+      "legacyId": "lesson-10-scale",
+      "title": "Quality should be evaluated at actual playback speed and practical game scale",
+      "symptom": "Animations that look crisp and detailed when stepped through frame-by-frame at 400% zoom look unreadable, stiff, or noisy at 1x in-game scale; conversely, subtle reactions that look minimal when zoomed read perfectly at game scale.",
+      "verifiedCause": "Human perception of pixel art motion depends heavily on temporal integration and display scale; high-frequency pixel detailing can turn into visual noise during rapid playback, while motion amplitude reads differently at native 1x scale.",
+      "failedApproach": "Judging animation quality exclusively via static magnified inspection (e.g. 8x zoom in editor) or relying solely on mathematical pixel displacement deltas.",
+      "successfulCorrection": "[Verified Evidence] A reação de Hit com 3px parecia um micro-recuo em zoom estático, mas em 1x lia-se como respiração; a avaliação de soco revelou ausência de projeção no movimento real. [Hypothesis/Pending] A avaliação final em escala 1x pelo criador é o critério decisivo de aprovação.",
+      "reuse": "Evaluation guidelines and multi-speed studio controls apply to all character and effect reviews.",
+      "prevention": "Include 1x native scale preview alongside zoomed views in all review interfaces; evaluate impact and recoil readability in real-time context before adjusting amplitude.",
+      "validation": "Interactive review studio playback controls; visual sign-off across multiple playback speeds.",
+      "cost": "Prevents unnecessary over-detailing or over-animating that adds no value at in-game resolution.",
+      "applicability": "All character sprites, combat animations, and visual effect assets."
+    },
+    {
+      "id": "external-crossfade-raster-interpolation-failure",
+      "legacyId": "lesson-13",
+      "title": "Interpolação por cross-fade externo não produz locomoção e viola a regra de autoria Aseprite",
+      "symptom": "Draft de caminhada traseira (back_r Walk, Draft-01) resultou em pixels borrados/fantasma sem leitura de passadas reais; o personagem parece deslizar em pose estática trêmula com bob de 1 px, sem alternância nítida de apoio, passagem e elevação de joelho/pé.",
+      "verifiedCause": "O método tentou sintetizar quadros intermediários via interpolação linear (PIL Image.blend + limiar de alfa) entre duas poses estáticas/quase-estáticas geradas por inpaint e a base estática, além de gerar pixels fora do Aseprite (violação direta de AGENTS.md). Poses de entrada quase-estáticas combinadas com fusão de opacidade não produzem cinética de membros. O ground-snap global desloca a figura inteira e mascara a raiz de movimento sem substituir a ausência de poses articulares de passada.",
+      "failedApproach": "1) Inpainting de duas poses com descrição de passada que gerou variações de sombreamento/postura mas sem descolamento suficiente da perna de balanço (ambos os pés permaneceram em contato próximo com o solo). 2) Interpolação matemática externa (Python/PIL) para preencher os quadros. 3) Snap global de chão aplicado cegamente sobre a bounding box de quadros sem cinemática articular.",
+      "successfulCorrection": "[Verified Evidence] Substituição comprovada por construção no Aseprite Lua; método falho arquivado e descontinuado com evidências preservadas. [Hypothesis/Pending] Rigor de autoria exclusivamente interna em Aseprite é mantido como política absoluta.",
+      "reuse": "As duas imagens geradas (af1e7ba8-655e-45fd-9798-2ba4b8cda7e9 e ed109b13-7b60-4200-8a43-ed8a9fb8f561) permanecem arquivadas como evidência em experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/, utilizáveis para inspeção de textura de botas e tassets.",
+      "prevention": "1) Proibido gerar pixels de produção por interpolação de raster/cross-fade no Python. 2) O snap de solo não substitui pose de passada: cada quadro de caminhada precisa ter um pé de apoio explicitamente registrado no solo (groundY = 126) enquanto o membro em balanço articula livremente acima do solo. 3) O esqueleto V3 com 18 juntas COCO manuais permanece rota legal sem REST caso geração temporal apresente desvios.",
+      "validation": "Prancha 4x4 grid-walk-back_r-candidate.png e GIF walk_back_r_candidate.gif arquivados em experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/.",
+      "cost": "12 gerações PixelLab Pro Flash consumidas no Draft-01 rejeitado (2 chamadas inpaint de 6 gerações cada: jobs af1e7ba8-655e-45fd-9798-2ba4b8cda7e9 e ed109b13-7b60-4200-8a43-ed8a9fb8f561). Registrado separadamente do trabalho subsequente.",
+      "applicability": "Locomoção traseira e lateral de bípedes pesados (orc-v1 e variantes).",
+      "status": "FAILED_METHOD_ARCHIVED"
+    },
+    {
+      "id": "continuous-temporal-anchored-generation",
+      "legacyId": "lesson-14",
+      "title": "Geração temporal contínua com ancoragem restringe ciclo de locomoção com alta eficiência",
+      "symptom": "Inpainting de poses isoladas sem modelo de movimento gera poses estáticas desconectadas e exige múltiplos disparos caros.",
+      "verifiedCause": "A ferramenta animate_image calcula a cinemática como uma trajetória temporal coordenada. A ancoragem de first_frame_base64 e last_frame_base64 na base aprovada restringe as extremidades do ciclo, mas não garante matematicamente ausência total de deriva intermediária ou cinemática perfeita de passada sem registro do pé de apoio e ajuste de temporização no Aseprite Lua.",
+      "failedApproach": "Tentativas de sintetizar locomoção por inpainting isolado de quadros soltos cobrando 6 gerações por frame sem garantia de descolamento de passada (12 gerações para 2 frames quase estáticos no Draft-01).",
+      "successfulCorrection": "[Verified Evidence] animate_image com frame_count=8 e ancoragem na base traseira produziu passadas funcionais em back_r e back_l (recibos comprovados de 2 gerações cada: jobs 1bdc9771 e 64cd4cb7). O 9º quadro duplicado foi descartado no script Lua e o pé de apoio registrado em groundY=126. [Hypothesis/Pending] A estabilidade em vistas de perfil e a aplicação em quadrupédes ou outros bípedes permanece hipótese a verificar.",
+      "reuse": "Metodologia comprovada para back_r e back_l Walk; extensível como hipótese a outros ciclos de locomoção.",
+      "prevention": "Preferir geração temporal contínua para locomoção; verificar frames intermediários contra deriva de massa; montar e ancorar pé de apoio no Aseprite Lua; descartar o quadro de retorno duplicado.",
+      "validation": "Jobs 1bdc9771 e 64cd4cb7 (2 gerações cada), pranchas e GIFs de loop temporal, masters em characters/orc-v1/source/aseprite/rear-recovery-v2/.",
+      "cost": "2 gerações PixelLab por clipe de caminhada (total 4 gerações para as duas caminhadas traseiras).",
+      "applicability": "Demonstrado e verificado especificamente nas 2 vistas traseiras (back_r e back_l) no experimento de bípede Orc 128x128 (orc-v1). A extensão para as 4 ou 8 direções e outras anatomias raciais permanece como hipótese técnica a ser verificada experimentalmente.",
+      "status": "PASS_FOR_INTERNAL_EXPANSION_WALK_ONLY"
+    },
+    {
+      "id": "weapon-contamination-and-layers-off-inspection",
+      "legacyId": "lesson-15",
+      "title": "Prompts de corpo desarmado exigem inspeção semântica com camadas de armas desligadas (layers-off) e continuidade articular",
+      "symptom": "Artefatos espúrios de lâmina, machado, cabo ou lâminas secundárias gerados acidentalmente pela IA aparecem fundidos ao corpo base ou armadura (ex: QA-01 lâmina/haste junto ao quadril em back_l/Sword F01-F07; QA-02 cabeça de machado em back_r/Axe F01 e haste em F02-F03; QA-04 filamento no ombro em back_l/Axe F02-F03), ou desconexão articular ombro-cotovelo-punho (QA-03 braço truncado em F04 e antebraço duplo em F05 de back_r/Axe).",
+      "verifiedCause": "Modelos generativos de difusão/esqueleto podem alucinar armas nas mãos ou ombros mesmo sob prompts de corpo desarmado. Checagens matemáticas de pipeline (body == master == crop nativo e alfa-over == compósito) provam apenas integridade estrutural e consistência raster, NÃO ausência semântica de armas pintadas no corpo. Adicionalmente, composições sobrepostas sem validação contínua da cadeia articular ombro-cotovelo-punho geram membros truncados ou duplicados.",
+      "failedApproach": "Confiar em validações de igualdade estrutural de camadas ou em prompts textuais sem inspecionar visualmente o corpo inteiro com camadas de armas desligadas, e compor armas sobre membros com articulações descontinuadas.",
+      "successfulCorrection": "[Verified Evidence] Inspeção independente de QA Copilot (GPT Sol6.1 em freeze 6fa4653e) formalizou apontamentos QA-01..QA-04; Art Producer Luna (8eb61d74) assumiu reparo cirúrgico local no Aseprite sem chamadas pagas, limpando pixels contaminados no body e restabelecendo continuidade cinemática antes da recompilação. [Hypothesis/Pending] A regra de inspeção semântica com layers-off e cadeia articular ininterrupta é obrigatória antes de qualquer novo freeze.",
+      "reuse": "Procedimento de checagem visual semântica 'layers-off' reutilizável para qualquer personagem com sistema de equipamento modular.",
+      "prevention": "1) Inspecionar visualmente o corpo inteiro gerado com todas as camadas de armas desligadas (layers-off) para assegurar ausência semântica total de lâminas, hastes e cabos. 2) Validar a cadeia cinemática contínua ombro-cotovelo-punho antes de sobrepor a manopla de oclusão frontal (handFront) ou a arma.",
+      "validation": "Inspeção visual direta de folhas de contato layers-off, verificação de continuidade esquelética e re-revisão por QA independente sob novo freeze.",
+      "cost": "Zero gerações adicionais; apenas inspeção visual e reparo cirúrgico local no Aseprite.",
+      "applicability": "Todos os personagens e animações de combate com camadas de equipamento desacopladas."
+    },
+    {
+      "id": "donor-cluster-verification-before-reuse",
+      "legacyId": "lesson-16",
+      "title": "Verificação obrigatória do cluster de pixels do doador antes do reuso anatômico",
+      "symptom": "Tentativas de transplante de membros geram remendos transparentes ou recortes parciais sem geometria anatômica reconhecível.",
+      "verifiedCause": "Recortes baseados apenas em bounding boxes estimadas ou áreas aproximadas podem capturar fundo transparente ou apenas o antebraço sem a mão.",
+      "failedApproach": "Copiar regiões estimadas por coordenadas sem verificar a presença física do punho ou manopla fechada no doador.",
+      "successfulCorrection": "[Verified Evidence] Validação de cluster real antes do reuso: o doador deve conter manopla/punho levantado completo e visível dentro do canvas; fundos vazios ou recortes de antebraço são terminantemente rejeitados. Comprovado na validação de F02 e na reparação de AxeL. [Hypothesis/Pending] Biblioteca de doadores certificados por vista e escala.",
+      "reuse": "Manoplas aprovadas do mesmo indivíduo e mesma vista servem como doadores canônicos para reparos cirúrgicos.",
+      "prevention": "Inspecionar a máscara de seleção no Aseprite e confirmar visualmente a presença do membro anatômico completo antes do transplante.",
+      "validation": "Contagem de pixels opacos e conferência de silhueta no Aseprite e nas ferramentas de verificação de exportação.",
+      "cost": "Economiza chamadas pagas de regeneração evitando transplantes vazios.",
+      "applicability": "Reparos anatômicos locais em pixel art para todas as raças."
+    },
+    {
+      "id": "surgical-same-view-donor-repair",
+      "legacyId": "lesson-17",
+      "title": "Reparo cirúrgico no Aseprite com doador da mesma vista e remoção exata de resíduos",
+      "symptom": "Membros cortados pela borda do canvas (ex: punho cortado em AxeL nos quadros 01–02) ou resíduos desconectados de membros antigos (27 pixels soltos) corrompem a leitura anatômica.",
+      "verifiedCause": "O gerador de esqueleto cortou a mão erguida no topo do canvas 128x128; tentativas de correção deixaram fragmentos do braço anterior e restos de cabo marrom.",
+      "failedApproach": "Regenerar o ciclo completo consumindo créditos adicionais ou usar doador de vista frontal com perspectiva e iluminação incompatíveis.",
+      "successfulCorrection": "[Verified Evidence] Reparo cirúrgico em Aseprite Lua utilizando braço e manopla da mesma vista e mesmo indivíduo (back_l/Sword), preservando torso, pernas, armadura, perspectiva NO e luz de AxeL, com remoção cirúrgica de exatamente 27 pixels de resíduo do braço antigo e restos de cabo marrom via máscara de coordenadas. [Hypothesis/Pending] Generalização da técnica para qualquer membro cortado em animações de ataque.",
+      "reuse": "Scripts Lua de reparo local (clean_generated_axe_and_build_body.lua, repair_back_l_axe_clipped_arm.lua) preservados para referência.",
+      "prevention": "Verificar se o movimento atinge os limites do canvas na geração; ao reparar, priorizar doadores da mesma vista e do mesmo indivíduo.",
+      "validation": "axeL-local-repair-provenance.json, inspeção visual de 1x pelo Root (root-axeL-final-playback.json) e aprovação de integração interna.",
+      "cost": "Zero chamadas adicionais de API; reparo concluído com o orçamento autorizado de 3 gerações do job 5296ac98.",
+      "applicability": "Membros cortados ou artefatos gerados em sprites de combate."
+    }
+  ],
+  "currentAssessment": {
+    "characterId": "orc-v1",
+    "revision": "main-orc-rear-recovery-v2",
+    "candidateManifest": "characters/orc-v1/source/rear-recovery-v2/candidate28manifest.json",
+    "baselineBuild": "dist/editor/orc-v1-complete-v1/b178422e1f7fc19f068c",
+    "technicalStatus": "TECHNICALLY_COMPLETE",
+    "setStatus": "VISUAL_REVIEW_REQUIRED",
+    "creatorApproval": "PENDING_CREATOR",
+    "runtimeImplemented": false,
+    "independentQAStatus": "PENDING_REVIEW_OF_REVISED_FREEZE",
+    "independentQAVerdict": "Previous freeze6fa4653e REVISIONS_REQUIRED is historical; revised sources require the SAME Copilot reviewer on new delivery-freeze.json. Actual version-specific verdict is qa-result.json.",
+    "independentQAReference": "experiments/main-orc-rear-recovery-v2/qa-argon-final.md",
+    "independentQAResultJson": "experiments/main-orc-rear-recovery-v2/qa-result.json",
+    "perActionStatus": {
+      "Idle": "VISUAL_REVIEW_REQUIRED",
+      "Walk": "VISUAL_REVIEW_REQUIRED",
+      "Unarmed": "VISUAL_REVIEW_REQUIRED",
+      "Sword Attack": "VISUAL_REVIEW_REQUIRED",
+      "Axe Attack": "VISUAL_REVIEW_REQUIRED",
+      "Hit": "VISUAL_REVIEW_REQUIRED",
+      "Defeat": "VISUAL_REVIEW_REQUIRED"
+    },
+    "accounting": {
+      "totalJobs": 17,
+      "jobsBreakdown": "13 históricos (66 gen) + 1 desvio precoce (job 31e61c4b, 3 gen) + 3 autorizados (SwordL 8f0f4e44, 3 gen; AxeR 8b6ad151, 3 gen; AxeL 5296ac98, 3 gen)",
+      "sessionCapGenerations": 66,
+      "totalGenerationsConsumed": 78,
+      "failedGenerations": 14,
+      "failedBreakdown": "12 gen Draft-01 inpaint (af1e7ba8, ed109b13) + 2 gen rascunho de soco fraco (2ace783c)",
+      "unusedIncompatibleGenerations": 24,
+      "unusedIncompatibleNote": "24 gerações de geometria de corpo inteiro isolada em cache, não utilizadas/incompatíveis com a mecânica final de camadas; a falha de achatamento/grip foi um defeito posterior de composição em Lua",
+      "acceptedNonWeaponContributions": 28,
+      "acceptedNonWeaponNote": "28 gerações de contribuições aceitas de ciclos/términos não-arma (caminhada, desarmado, derrota; NÃO Hit)",
+      "priorRepresentativeGenerationDeviation": 3,
+      "priorRepresentativeDeviationNote": "Job 31e61c4b executado precocemente antes de autorização explícita do Root; preservado como desvio histórico e posteriormente autorizado para refinamento local",
+      "newlyAuthorizedRepresentativeJobs": 3,
+      "newlyAuthorizedRepresentativeGenerations": 9,
+      "newlyAuthorizedJobsBreakdown": "SwordL (job 8f0f4e44, 3 gen) + AxeR (job 8b6ad151, 3 gen) + AxeL (job 5296ac98-b253-4133-8468-155f7e90c68e, 3 gen) sob autorização expressa do Root",
+      "weaponBodyCycleGenerations": 12,
+      "weaponBodyCycleNote": "12 unidades de geração correspondentes aos 4 ciclos de corpo para armas (Sword/Axe em ambas as vistas), com refinamento local posterior",
+      "balanceNote": "Saldo verificado de 1418.70 pertence ao checkpoint anterior de 69 gerações; saldo corrente após 78 não é estimado sem novo recibo (nenhum token ou valor monetário inventado)",
+      "futurePaidJobsAuthorized": 0,
+      "matrixStructure": "12 affected ACTIVE_CANDIDATE cells and16 UNCHANGED_ALIAS cells; repaired source delivery pending exact-version independent QA and creator review.",
+      "activeCandidatesCount": 12,
+      "inRevisionCount": 0,
+      "unchangedAliasesCount": 16,
+      "totalClipsInMatrix": 28,
+      "referencedActiveMasters": 28,
+      "totalCompositeFrames": 210,
+      "candidateFrames": 78,
+      "baselineAliasFrames": 132,
+      "productionPreservation": {
+        "filesTracked": 793,
+        "byteIdenticalFiles": 792,
+        "authorizedConfigChanged": 1,
+        "mastersPreserved": 73,
+        "notes": "792 arquivos byte-idênticos + 1 alteração autorizada de configuração de gates; 73 mestres baseline preservados; referência histórica de 525 superada"
+      }
+    },
+    "criticalFindings": [
+      "Previous independent Copilot review rejected freeze6fa4653e with QA-01..04; original report/result/freeze retained under experiments/main-orc-rear-recovery-v2/qa-history/. No previous approval is inferred.",
+      "Local repair: sole ART GPT6.1 Sol Codex/Paseo b8ca8bb5 replaced rejected Luna partial after Luna returned idle. SwordL body weapon remnants and shoulder strip removed, AxeR empty fist and single connected arm restored, AxeL extraneous hook cleaned in saved Aseprite masters. Actual masks/donors/source hashes in qa-revision-1-repair/provenance.json and source-proof.json. Internal composition checkpoint is not independent QA.",
+      "Current matrix12 candidates/16 aliases,210 composite frames including78 in affected clips,28 referenced composite/native masters. Successful9 affected source clips and16 aliases, original independent weapon sources and baseline verified unchanged by root-check-qa-regressions.mjs (1911 files).",
+      "Layer algebra and exact body/native/master crops establish structural export consistency only. Semantic absence of painted weapons requires whole-body layers-off visual inspection. Validate continuous shoulder/elbow/wrist/fist before equipment and hand occlusion.",
+      "All rear weapon representatives remain8 frames/730ms/four layers; weapons appear onlyF01..F06. No new paid calls:78 units/17jobs total, zero remaining generation authorization. No invented token/USD totals.",
+      "Front Unarmed F00/F01/F03/F04 preserve decoded RGBA and timing; candidate PNG encoding differs. Original baseline bytes remain preserved. Front Defeat stages0..3 unchanged; terminal only repaired. Hit pixels/450ms retained after all-view1/.75/.5 observation; Unity calibration deferred.",
+      "Preview integration by Root; no current GLM preview owner. New integrated revision must be frozen and reviewed by SAME independent GPT Sol6.1 GitHub Copilot08686; qa-result.json identifies actual reviewed freeze. Creator PENDING_CREATOR; runtimeImplemented:false; no Unity changes."
+    ],
+    "previousRejectedFreeze": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843"
+  },
+  "gateOrdering": [
+    "TECHNICAL_GATE: validate, exportAseprite, hashes, coverage matrix",
+    "ARTISTIC_DEFECT_GATES: directionalViewGate, choreographyGate, completeSetReviewContract",
+    "VISUAL_REVIEW: creator inspects the studio",
+    "CREATOR_APPROVED: creator sign-off recorded"
+  ],
+  "doesNotGrant": [
+    "artistic approval",
+    "Unity integration",
+    "runtime weapon overlay support",
+    "permission to change canonical art outside the declared scope"
+  ],
+  "legacyRecords": {
+    "supersededNotes": {
+      "legacy-rule-4": "SUPERSEDED by numeric-hit-thresholds-diagnostic-warning and contextualProfiles.heavyOrc. Universal head snap is optional/diagnostic; 1-2px displacement serves as a diagnostic prompt, not universal failure.",
+      "legacy-rule-5": "SUPERSEDED by defeat-consistent-terminal-outcome. The rigid 5-stage kneeling formula fatal-stagger -> knees-buckle -> drop-to-knees -> collapse-impact -> terminal-defeated is superseded as a rigid formula: volumetric ground retention (head/pauldron/chest masses preserved on ground) and consistent terminal outcome across directions take precedence over forcing a single fixed kneeling stage progression on every armor type or perspective."
+    },
+    "historicalRules": [
+      {
+        "id": "legacy-1",
+        "title": "Completude técnica não é aprovação artística",
+        "rule": "Hashes, canvas e teste verde não dizem se a arte lê.",
+        "antiPattern": "Declarar pronto por validação zero FAIL."
+      },
+      {
+        "id": "legacy-2",
+        "title": "Vista traseira é construção",
+        "rule": "back_r e back_l devem ser construídos a partir de crânio, nuca, dorsal e cinto traseiro.",
+        "antiPattern": "Apagar olhos de sprite frontal."
+      },
+      {
+        "id": "legacy-3",
+        "title": "Coerência direcional para o conjunto",
+        "rule": "7 ações x 4 direções com mesma anatomia, perspectiva e luz.",
+        "antiPattern": "Idle traseiro com ataque que vira frontal."
+      },
+      {
+        "id": "legacy-4",
+        "title": "Hit precisa comunicar impacto",
+        "status": "SUPERSEDED_IN_PART",
+        "note": "Superado por contextualProfiles.heavyOrc e numeric-hit-thresholds-diagnostic-warning (head snap opcional no heavyOrc; amplitude diagnóstica, não piso rígido)."
+      },
+      {
+        "id": "legacy-5",
+        "title": "Defeat colapso em estágios",
+        "status": "SUPERSEDED_IN_PART",
+        "note": "Superado por defeat-consistent-terminal-outcome (volume terminal e consistência direcional sobrepõem fórmula única rígida de ajoelhamento)."
+      },
+      {
+        "id": "legacy-6",
+        "title": "Artefato local corrige cirurgicamente",
+        "rule": "Halo, pixel perdido ou tremor se corrige no lugar.",
+        "antiPattern": "Reconstruir clipe inteiro para tirar 6 pixels."
+      },
+      {
+        "id": "legacy-7",
+        "title": "Preserve o que já funciona",
+        "rule": "Idle, Walk e ataques frontais aprovados permanecem byte-idênticos.",
+        "antiPattern": "Regenerar biblioteca inteira e mudar arte aprovada."
+      },
+      {
+        "id": "legacy-8",
+        "title": "Superfície de revisão trivial",
+        "rule": "28 células em um clique, antes/depois, passo a quadro.",
+        "antiPattern": "Pasta de PNGs soltos com README."
+      },
+      {
+        "id": "legacy-9",
+        "title": "Portão técnico e revisão visual",
+        "rule": "Os dois, nesta ordem, antes de apresentar como pronto.",
+        "antiPattern": "Entregar no portão técnico sem inspeção visual."
+      },
+      {
+        "id": "legacy-10",
+        "title": "QA independente inspeciona critério visual",
+        "rule": "QA inspeciona anatomia, perspectiva, silhueta, coreografia, pixels.",
+        "antiPattern": "Aprovação técnica baseada em hashes sem olhar a arte."
+      }
+    ]
+  }
+}

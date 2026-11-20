@@ -1,0 +1,39 @@
+DEV ARTÍSTICO PRINCIPAL — reconstrução V6 das retaguardas do Orc V1. Você não é QA nem orquestrador; não crie revisores. Esta é a frente mais crítica do projeto: o criador rejeitou artisticamente várias iterações anteriores, incluindo uma que passou em QA independente duplo. Sua entrega será julgada pela arte, não pelos validadores.
+
+CONTEXTO ESSENCIAL (não releia histórico longo; vá aos artefatos):
+- Task: reconstruir Sword/Axe Attack do Orc V1, prioridade `back_l` (reconstrução maior), depois `back_r` (continuidade/pernas), grips naturais, sem contornos claros indevidos. Idle/Walk/Unarmed/Hit/Defeat intocáveis. Sem Unity, sem commits.
+- Objeções do criador, textualmente: back_l (ambas as armas) tem "anatomia inconsistente, movimento antinatural, posicionamento incorreto da arma, continuidade ruim entre quadros, poses rígidas e desconectadas, trajetória não convincente, artefatos de contorno claro"; o Axe back_l especificamente "rígido, antinatural, sérios problemas de posicionamento e uniformidade de movimento". back_r: "inconsistências de quadros perto das pernas, especialmente no Sword traseiro".
+- Candidato rejeitado (fonte de auditoria, NÃO editar): manifesto `characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json`. Células alvo: `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json`, `full-back-l-axe/clip.json`, `full-back-r-sword/clip.json`, `full-back-r-axe/clip.json` (cada uma com clip.json, layers weaponBack/body/weaponFront/handFront, compostos 256, nativos 128, mestres .aseprite, anatomy-plan, author.lua).
+- O corpo V5 desses clipes veio de interpolação PixelLab sobre chaves estruturais; o criador ainda o rejeita. Portanto NÃO trate as poses existentes como protegidas por aprovação.
+
+ETAPA A — AUDITORIA (faça primeiro, documente):
+Para cada um dos 4 clipes: inspecione corpo (layers-off) e composto, quadro a quadro e em 1×. Classifique cada quadro importante: KEEP / TARGETED_PIXEL_FIX / TIMING_FIX / REAUTHOR_KEYFRAME / REMOVE_OR_REPLACE, com uma linha de justificativa. Suspeite de: pernas mudando de comprimento/stance, quadril sem transferência de peso, braços desconectados do tronco, arma orbitando um braço estático, cabeça do machado mudando de lado/tamanho, contornos claros, poses repetidas indevidamente.
+
+ETAPA B — REFERÊNCIA back_l (núcleo da task):
+Reconstrua Sword e Axe de `back_l` como UM ataque contínuo por família:
+- Se poses são incompatíveis, REAUTORIE os keyframes a partir do corpo base atual do Orc (identidade V1, desarmado, limpo). Não espelhe back_r nem frontal; não duplique arte entre famílias.
+- Progressão exigida: início compatível com Idle → antecipação → aceleração → impacto → follow-through → recuperação. Weight transfer real: quadril/tronco/joelhos participam; Axe mais pesado/comprometido que Sword; ambos estritamente one-handed, mão direita anatômica dominante nas duas vistas traseiras.
+- Sword = corte diagonal coerente; Axe = chop vertical com massa na cabeça, sem rotação mecânica de subir/descer.
+- A validade é VISUAL: valide a referência em playback 1× antes de considerar pronta.
+
+ETAPA C–D ficam BLOQUEADAS até o orquestrador revisar seu checkpoint (não propague back_r ainda).
+
+CONTRATOS TÉCNICOS (obrigatórios):
+- Escreva SOMENTE em `characters/orc-v1/source/artistic-reconstruction-v6/rear/` e `experiments/main-orc-artistic-reconstruction-v6/rear/` + perfil exclusivo `tmp/aseprite-v6-rear-profile`. Preserve fontes anteriores intocadas (worktree suja de trabalho não relacionado).
+- Aseprite 1.3.18.6 batch --noinapp (`F:\SteamLibrary\steamapps\common\Aseprite\Aseprite.exe`); Lua `Frame.duration` em SEGUNDOS. Python existente: `tmp\pixel-venv\Scripts\python.exe`; Pillow somente leitura/diagnóstico, nunca autoria raster.
+- Canvas composto 256×256, body offset [64,64], groundY 190; nativo 128×128, groundY 126; honre `cel.position`; `nativePng` = recorte do CORPO.
+- Quatro camadas `weaponBack → body → weaponFront → handFront`; arma somente no intervalo do ataque, bookends 100% transparentes e composto igual ao corpo; item independente (Sword/Axe existentes em `combat-rescue-v5/combat/weapons/`); grip = luva genuína por pose rastreando palma/pulso/antebraço, sem socket fixo nem carimbo.
+- Zero pixel de arma na camada body.
+
+PIXELLAB (autorizado pelo criador, sem compras):
+- Cliente oficial `tools/pixellab-mcp.py` (`--list --output schema.json`; `--call TOOL --input request.json --output receipt.json`); meça `get_balance` antes/depois e guarde recibos. Saldo conhecido ~1336,70.
+- Lição crítica V5: prompt de CORPO nunca nomeia a arma (nem negativamente) — nomes de equipamento induziram arma embutida. Descreva só anatomia/pose/mãos vazias. skeleton_v3 com esqueletos explícitos por pose funcionou; interpolação em ponte contaminou — audite cada saída layers-off antes de usar.
+- Gere o mínimo necessário; prefira Aseprite local para retoques; preserve raws e jobs com seeds.
+
+ENTREGA (checkpoint `V6_BACK_L_REFERENCE_READY`):
+- Dois ciclos completos back_l (Sword e Axe) com mestres reais 256/128 salvos, reabertos e reexportados (pixels+timing conferidos), clip.json com paths/hashes/durações/visibleInterval/provenance, patch-manifest com as 2 células.
+- Preview HTML com 1×, 0,5×, passo, zoom nativo, escala tática, body-only, composto e before/after contra o V5 rejeitado (mesmas células).
+- `report.md`: classificação da auditoria (Etapa A), o que foi KEEP vs REAUTHOR e por quê, proveniência de cada pose (PixelLab job/edição Aseprite), contabilidade PixelLab com recibos, limitações honestas. NUNCA declare "aprovado" ou "zero defeitos" — o criador julga.
+- PARE no checkpoint. O orquestrador revisará e encaminhará validação; back_r e frontais vêm depois.
+
+Se algo bloquear (cota, ferramenta), persista checkpoint com o bloqueio exato e pare sem fingir progresso.

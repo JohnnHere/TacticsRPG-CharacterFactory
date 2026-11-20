@@ -1,0 +1,56 @@
+# V8 — alinhar as duas vistas traseiras à grade temporal do frontal
+
+## Decisão de estratégia (dois QAs independentes recomendaram a mesma direção)
+O criador rejeitou o V7 com três observações: problemas de frame pioraram, flash na espada frontal continua, ataque de costas menos uniforme. Ele autorizou o orquestrador a decidir e pediu para tentar arrumar tudo.
+
+Sua frente: **uniformidade e frame**. A causa medida da desuniformidade foi a integração de ritmos diferentes na mesma família:
+
+| Família | frontal (protegido) | back_r | back_l |
+|---|---|---|---|
+| Sword | 13f / 730 ms | 12f / 950 ms | 15f / 860 ms |
+| Axe | 12f / 1005 ms | 12f / 1320 ms | 15f / 1230 ms |
+
+Impacto no chão: frontal ~260 ms, `back_l` 425 ms, `back_r` 490 ms. Isso destrói o critério central do criador.
+
+## Regra canônica
+O frontal é o metrônomo. Use exatamente estas grades:
+
+- **Sword**: 13 quadros, 730 ms, durações `[30, 65, 35, 50, 45, 65, 35, 35, 100, 55, 80, 45, 90]`
+- **Axe**: 12 quadros, 1005 ms, durações `[40, 65, 35, 80, 155, 35, 115, 110, 130, 50, 90, 100]`
+
+Leia o `clip.json` do frontal correspondente (`characters/orc-v1/source/combat-recovery-v7/frontal/full-front-r-sword/clip.json` e `.../front_r-Axe-full/clip.json`) e **derive o mapa de fases por posição de quadro** (bookend, antecipação, ápice, descida, impacto, follow-through, recuperação), usando o relógio acumulado. Esse mapa é a especificação das vistas traseiras.
+
+## O que produzir
+### 1. `back_l / Sword` e `back_l / Axe` — reconstruir sobre a grade
+- **Reaproveite a pose de ápice do V7** (`characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-sword/`), que passou nos critérios: ponta 48 px acima do crânio, punho 14 px acima da linha do ombro, espaço negativo 4 px, cotovelo 68,41°.
+- **Descarte o flutter**: o V7 tem 15 quadros com seis poses de 35–45 ms, que o QA temporal descreveu como stutter. A grade de 13/12 quadros resolve por construção.
+- Cada quadro da nova grade precisa de pose que implemente a fase correspondente com continuidade de gesto — não preencha posição apenas para completar contagem.
+- Direção: elevação para cima/atrás, descida em plano vertical/diagonal, impacto, recuperação. Nunca passagem lateral.
+- Mão direita anatômica dominante; item independente; luva rastreando palma/pulso por pose.
+
+### 2. `back_r / Sword` e `back_r / Axe` — alinhar à mesma grade
+- **Preserve o que já foi conquistado**: a pegada do machado corrigida (não underhand), os contornos limpos e os bookends normalizados (F00 67→7, F11 67→5).
+- Re-timing: mova as poses existentes para a grade frontal, ajustando durações e autorando somente a transição que faltar — sem refazer o que está bom.
+- O impacto deve cair no mesmo instante relativo do frontal e do `back_l`.
+
+### 3. Bookends
+Todos os quatro clipes traseiros com bookends coerentes com o corpo de ataque adjacente (sem salto de luminância) e desarmados.
+
+## Contratos
+- Escreva em `characters/orc-v1/source/combat-recovery-v8/rear/` e `experiments/main-orc-combat-recovery-v8/rear/`, perfil `tmp/aseprite-v8-rear-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS.
+- Composto 256 (offset [64,64], ground 190); nativo 128 (ground 126); `nativePng` = recorte do corpo; `cel.position` real.
+- Camadas `weaponBack → body → weaponFront → handFront`; arma só no intervalo do ataque; bookends transparentes; zero pixel de arma abaixo de `groundY`.
+- `clip.json` com hashes reais, durações, `visibleInterval`, proveniência; incluir `native-strip` e `composite-strip`.
+- Mestres 256/128 salvos, reabertos e reexportados conferidos.
+- **ZERO gerações PixelLab** — frente 100% Aseprite local. Se concluir que é impossível sem geração, pare e reporte com medição.
+- Não toque em `combat-recovery-v7/frontal/` (outra sessão) nem nas fontes V5/V6/V7. Sem Unity, sem commits.
+
+## Valide antes de propagar
+Para `back_l`, valide primeiro o **mapa de fases** contra o frontal: mesmo número de fases, mesma ordem, impacto no mesmo instante relativo. Só então monte o ciclo completo. Não propague ciclo com salto de pose óbvio.
+
+## Entrega (checkpoint `V8_REAR_ALIGNED`)
+- Quatro clipes traseiros na grade canônica, mestres e `clip.json` válidos.
+- **Tabela de fases comparativa**: frontal × back_r × back_l por família, com o instante do impacto de cada um (devem coincidir).
+- Preview HTML com 1×/0,5×/passo/zoom/tático/body-only/composto e as quatro direções lado a lado por família.
+- `report.md`: o que reusou, o que reautorou, o que re-timing, o que descartou do V7 e por quê, limitações. Sem declarar aprovado.

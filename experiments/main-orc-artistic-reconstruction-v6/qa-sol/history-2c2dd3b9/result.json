@@ -1,0 +1,35 @@
+{
+  "revision": "main-orc-artistic-reconstruction-v6",
+  "manifest": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+  "manifestSha256": "2c2dd3b9fa8e28e9243f1554ffc23ec81593921a13465c957653b1dd7b1fa756",
+  "reviewDate": "2026-10-30",
+  "reviewer": "Codex current session; exact model ID not exposed",
+  "verdict": "ARTISTIC_ISSUES_FOUND",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": false,
+  "previousV5VerdictReused": false,
+  "temporalReview": {"status":"NOT_VERIFIED","normalSpeedWatched":false,"halfSpeedWatched":false,"tacticalScaleWatched":false,"reason":"Browser is not available: iab; browser inventory empty"},
+  "findings": [
+    {"id":"V6-QA-01","severity":"MEDIUM","cell":"front_l/Sword","frames":[3,4],"compositeRoiInclusive":[140,108,154,127],"summary":"Persistent irregular dark armpit projection; target ROI remains RGBA identical to rejected V5.","owner":"frontal art specialist","evidence":["front_l-Sword-F3-axilla.png","front_l-Sword-F4-axilla.png","inspection-checks.json"]},
+    {"id":"V6-QA-02","severity":"MEDIUM","cell":"back_l/Sword","frames":[7,8,9],"summary":"Downward recovery reads as sword penetrating ground; F08 weapon tip reaches y214 versus feet/declared groundY190.","owner":"rear art specialist","evidence":["back_l-Sword-composite.png"],"diagnosticOnlyMeasurement":{"groundY":190,"weaponPixelsBelowGround":[{"frame":7,"count":87,"bbox":[180,191,193,201]},{"frame":8,"count":195,"bbox":[148,191,158,214]},{"frame":9,"count":166,"bbox":[143,191,153,211]}]}}
+  ],
+  "matrix": [
+    {"criterion":1,"status":"FAIL","temporal":"NOT_VERIFIED","finding":"V6-QA-02"},
+    {"criterion":2,"status":"NOT_VERIFIED","staticSubset":"PASS"},
+    {"criterion":3,"status":"NOT_VERIFIED","staticSubset":"PASS"},
+    {"criterion":4,"status":"FAIL","finding":"V6-QA-01"},
+    {"criterion":5,"status":"PASS","scope":"general static visual inspection; not exhaustive pixel certification"},
+    {"criterion":6,"status":"NOT_VERIFIED","scope":"no gross disconnection observed; exhaustive grip/pommel and temporal review outstanding"},
+    {"criterion":7,"status":"PASS","scope":"bookends and body-only visual sample; 20 unchanged clip references/hashes"},
+    {"criterion":8,"status":"PASS","scope":"static visual inspection"},
+    {"criterion":9,"status":"PASS","scope":"frontal body pixel comparison; full all-layer/timing audit not repeated"}
+  ],
+  "report":"report.md",
+  "artEdited":false,
+  "manifestEdited":false,
+  "unityEdited":false,
+  "pixelLabCalls":0,
+  "subagentsCreated":0,
+  "llmCost":"NOT_REPORTED"
+}

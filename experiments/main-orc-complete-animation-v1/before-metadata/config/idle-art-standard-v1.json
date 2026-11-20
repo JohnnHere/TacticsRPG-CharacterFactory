@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "status": "MANDATORY_CREATOR_STANDARD",
+  "referenceCharacter": "orc-pixellab-05",
+  "referenceClip": "characters/orc-pixellab-05/source/studies/Idle/clip.json",
+  "referenceRevision": "infante-idle-balanced-v3",
+  "evidence": "characters/orc-pixellab-05/source/creator-approval-idle-balanced-v3.json",
+  "referenceMeasurements": {
+    "canvas": [
+      128,
+      128
+    ],
+    "headExcursionPx": 2,
+    "cycleMs": 2200,
+    "frames": 5,
+    "durationsMs": [
+      400,
+      450,
+      500,
+      450,
+      400
+    ]
+  },
+  "principles": [
+    "Quiet readable presence; not exaggerated effort",
+    "Contained coherent breathing; planted feet and natural stable head",
+    "Smooth loop and natural cadence",
+    "Preserve anatomy, palette, materials and pixel clusters",
+    "Aseprite editable master; no regional torso compression or disconnected pasted pieces"
+  ],
+  "adaptation": "Only fit the same approved motion to the character anatomy and resolution. Do not independently change cadence, phases, intensity or personality of the normal Idle. At 128x128 humanoid scale use the approved 2px head excursion; other scales preserve proportional amplitude. If the anatomy cannot fit the standard, stop and obtain explicit creator exception before producing a different Idle.",
+  "scope": "Mandatory normal Idle design for all future character creation and variants. Historical assets are not rewritten automatically; their old parameters are not a new-design precedent. No Unity changes or automatic artistic gates.",
+  "id": "idle-balanced-v1",
+  "requiredForNewCharacters": true,
+  "requiredPlayback": {
+    "keyPoses": 5,
+    "cycleMs": 2200,
+    "durationsMs": [
+      400,
+      450,
+      500,
+      450,
+      400
+    ],
+    "headExcursionAt128Px": 2
+  },
+  "exceptionPolicy": "Explicit creator authorization with reason, scope and evidence recorded; agent preference, Job, armor or personality do not grant an exception.",
+  "creatorClarification": "É importante que esteja documentado como padrão fixo na criação de personagens mesmo, pois eu nao quero que cada boneco tenha um padrão de idle diferente"
+}

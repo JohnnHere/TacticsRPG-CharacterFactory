@@ -1,0 +1,41 @@
+{
+  "status": "READY_FOR_QA",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "bodiesCovered": [
+    "back_r/Sword",
+    "back_l/Sword",
+    "back_l/Axe"
+  ],
+  "totalKeysDelivered": 9,
+  "breakdown": {
+    "back_r/Sword": {
+      "keys": 3,
+      "status": "READY_FOR_QA",
+      "folder": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/"
+    },
+    "back_l/Sword": {
+      "keys": 3,
+      "status": "READY_FOR_QA",
+      "folder": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/"
+    },
+    "back_l/Axe": {
+      "keys": 3,
+      "status": "READY_FOR_QA",
+      "folder": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/"
+    }
+  },
+  "qaCreated": false,
+  "unityImplemented": false,
+  "creatorApproved": false,
+  "propagationAllowed": false,
+  "nextAction": "Forward this freeze of 9 anatomical rear keys to independent QA (non-Copilot); await QA verdict before authoring intermediate frames.",
+  "generationAccounting": {
+    "previousJobsBilled": 16,
+    "substituteAgentCost": 0,
+    "totalGenerationsRemaining": 1351.7,
+    "notes": "No paid API calls in current turn. 100% of refinement, registration, and exports completed via local Aseprite batch engine."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "revision": "main-orc-artistic-reconstruction-v6",
+  "reviewType": "CLOSURE_REVIEW",
+  "reviewDate": "2026-10-30",
+  "manifest": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+  "manifestSha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+  "previousReviewedManifestSha256": "2c2dd3b9fa8e28e9243f1554ffc23ec81593921a13465c957653b1dd7b1fa756",
+  "totalClips": 28,
+  "activeCandidatesCount": 13,
+  "totalFrames": 226,
+  "verdict": "READY_FOR_CREATOR_REVIEW",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": true,
+  "previousV5VerdictReused": false,
+  "findings": [
+    {
+      "id": "V6-QA-01",
+      "cell": "front_l/Sword",
+      "frames": [
+        3,
+        4
+      ],
+      "status": "CLOSED",
+      "verification": "PASS_STATIC",
+      "evidence": "closure-5d68b52d/report.md"
+    },
+    {
+      "id": "V6-QA-02",
+      "cell": "back_l/Sword",
+      "frames": [
+        7,
+        8,
+        9
+      ],
+      "status": "CLOSED",
+      "verification": "PASS_STATIC",
+      "maxWeaponY": [
+        187,
+        185,
+        173
+      ],
+      "pixelsBelowGround": [
+        0,
+        0,
+        0
+      ],
+      "evidence": "closure-5d68b52d/closure-checks.json"
+    }
+  ],
+  "openConfirmedArtisticFindings": [],
+  "temporalReview": {
+    "status": "COVERED_BY_SEPARATE_REVIEWER",
+    "reviewFile": "experiments/main-orc-artistic-reconstruction-v6/qa-temporal/result.json",
+    "reportFile": "experiments/main-orc-artistic-reconstruction-v6/qa-temporal/report.md",
+    "browserUsed": "Chromium Headless Shell 156.0.8078.4 (Playwright) via CDP/Direct rendering; fallback Edge 156.0.4314.50 verificado",
+    "loopsPerClip": {
+      "front_r/Sword": {
+        "playback1xLoops": 4,
+        "playback05xLoops": 2
+      },
+      "front_l/Sword": {
+        "playback1xLoops": 4,
+        "playback05xLoops": 2
+      },
+      "back_r/Sword": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      },
+      "back_l/Sword": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      },
+      "front_r/Axe": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      },
+      "front_l/Axe": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      },
+      "back_r/Axe": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      },
+      "back_l/Axe": {
+        "playback1xLoops": 3,
+        "playback05xLoops": 1
+      }
+    },
+    "manifestSha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+    "verdict": "TEMPORAL_PASS",
+    "perceptionAttribution": "A percepção em 1x e 0.5x vem do revisor temporal separado, não deste QA Sol; este QA consolidou os artefatos persistidos sem assistir novamente ao playback.",
+    "personallyWatchedByConsolidator": false
+  },
+  "remainingRequiredWork": null,
+  "report": "report.md",
+  "scope": "Consolidation of CLOSED static findings with independent temporal review of the same freeze; no creator approval.",
+  "artEdited": false,
+  "manifestEdited": false,
+  "unityEdited": false,
+  "pixelLabCalls": 0,
+  "subagentsCreated": 0,
+  "llmCost": "NOT_REPORTED"
+}

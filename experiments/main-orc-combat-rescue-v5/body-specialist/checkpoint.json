@@ -1,0 +1,45 @@
+{
+  "status": "BODY_AXE_KEYS_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "keys": 3,
+  "otherClipsGenerated": 0,
+  "intermediateFramesGenerated": 0,
+  "qaCreated": false,
+  "unityImplemented": false,
+  "creatorApproved": false,
+  "propagationAllowed": false,
+  "representative": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/representative.json",
+    "sha256": "a775b7663c3d34ca13c2e39d2672ac88b7400eec11029f7d214b7e2b21896bca"
+  },
+  "nextAction": "Root forwards this exact three-key freeze to the SAME independent Grok QA; wait before any intermediate or other rear clip.",
+  "generationAccounting": {
+    "jobs": [
+      {
+        "id": "e1b57e4c-e707-4e12-ace7-0745bd9bbb44",
+        "tool": "animate_with_skeleton_v3",
+        "charged": 2,
+        "outputs": 3,
+        "used": "impact; hoist/apex refined because top edge clipped"
+      },
+      {
+        "id": "74f03969-32ca-4150-9778-628df917f790",
+        "tool": "edit_image",
+        "charged": 10,
+        "outputs": 2,
+        "used": "hoist and apex"
+      }
+    ],
+    "totalCharged": 12,
+    "balanceBefore": 1382.7,
+    "balanceAfterMeasured": 1370.7,
+    "receipts": [
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-edit-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\balance-final.json"
+    ],
+    "validationRejectedBeforeQueue": "First skeleton request action exceeded 100 chars; validation error, no job ID or charge reported."
+  }
+}

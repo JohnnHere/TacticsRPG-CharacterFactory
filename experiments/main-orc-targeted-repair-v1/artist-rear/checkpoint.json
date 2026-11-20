@@ -1,0 +1,177 @@
+{
+  "pool": "main-orc-targeted-repair-v1/artist-rear",
+  "updatedAt": "2026-10-27",
+  "scope": "somente os quatro ataques traseiros (back_r/back_l x Sword/Axe) de orc-v1, em candidato isolado",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "promoted": false,
+  "committed": false,
+  "unityWrites": 0,
+  "generationCalls": 0,
+  "externalCost": 0,
+  "representativeIsolated": "back_r/Sword",
+  "deliverables": {
+    "report": "experiments/main-orc-targeted-repair-v1/artist-rear/report.md",
+    "comparator": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/comparator.html",
+    "hashes": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/hashes.json",
+    "verifyAxe": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/verify-axe-vs-freeze.json",
+    "verifySword": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/verify-vs-freeze.json",
+    "diagnosticsDir": "experiments/main-orc-targeted-repair-v1/artist-rear/diagnostics",
+    "lua": [
+      "experiments/main-orc-targeted-repair-v1/artist-rear/lua/author_handfront_occlusion_back_r_sword.lua",
+      "experiments/main-orc-targeted-repair-v1/artist-rear/lua/author_axe_microclean.lua",
+      "experiments/main-orc-targeted-repair-v1/artist-rear/lua/export_candidate_back_r_sword.lua",
+      "experiments/main-orc-targeted-repair-v1/artist-rear/lua/export_candidate_back_r_axe.lua"
+    ]
+  },
+  "clips": {
+    "back_r/Sword": {
+      "candidateDir": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Sword/Attack-representative-v2-occlusion-v1",
+      "master": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/aseprite/sword-attack-representative-v2-occlusion-v1.aseprite",
+      "masterSha256": "8fff070b811af541f22e6b9f738ff99ed04820e35c1b850eb18088022717f4b7",
+      "pixelsChanged": 110,
+      "framesTouched": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "status": "REJECTED_BY_SEMANTIC_AUDIT",
+      "integrated": false,
+      "reason": "a auditoria de faixas da arma mostra que os pixels restaurados escondem guarda (14) e pomo (50), nao o punho; mascara nao corrige pegada, o defeito e de posicionamento da arma",
+      "auditBands": {
+        "guard": 14,
+        "grip": 7,
+        "pommel": 50
+      },
+      "auditFile": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/audit-expansion-bands.txt",
+      "clipJsonSha256": "eb4f818e07b7b36153bdbb20fb003f5eafde3d912728dcdbe0a05cbe536f8953"
+    },
+    "back_r/Axe": {
+      "candidateDir": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/clip/back_r/Axe/Attack-representative-v1-microclean",
+      "master": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/aseprite/axe-attack-representative-v1-microclean.aseprite",
+      "masterSha256": "1048aba06696240581170d651556864bdf0c148adfb36c329e1071288312e779",
+      "pixelsChanged": 11,
+      "framesTouched": [
+        1,
+        2,
+        6
+      ],
+      "status": "HYPOTHESIS_NOT_INTEGRATED",
+      "integrated": false,
+      "reason": "nenhum dos 11 px foi provado defeito; conectividade e limiar de cor nao decidem intencao artistica",
+      "cases": [
+        {
+          "id": "A",
+          "frame": 1,
+          "compositePixels": "x=110..117, y=191",
+          "nativePixels": "x=46..53, y=127",
+          "count": 8,
+          "colour": "rgb(122,123,125) uniforme",
+          "measuredContext": "linha y=190 imediatamente acima e contorno ink (2,2,3)/(7,7,10); y=192 vazio",
+          "reading": "rebordo claro da sola projetando 1 px abaixo do contorno, e o mesmo defeito sistemico de rebordo palido que este pool decidiu nao tocar",
+          "risk": "remover recorta a sola em 1 px e deixa o contorno ink como borda inferior"
+        },
+        {
+          "id": "B",
+          "frame": 2,
+          "compositePixels": "144,64 e 145,64",
+          "nativePixels": "80,0 e 81,0",
+          "count": 2,
+          "colour": "rgb(33,34,40) e rgb(24,24,30)",
+          "measuredContext": "primeira linha do recorte nativo, sem vizinhos em nenhuma direcao",
+          "reading": "pode ser fragmento de membro ou de arma cortado pelo recorte nativo 128",
+          "risk": "remover apaga pedaco de silhueta cortada pelo enquadramento"
+        },
+        {
+          "id": "C",
+          "frame": 6,
+          "compositePixels": "171,151",
+          "nativePixels": "107,87",
+          "count": 1,
+          "colour": "rgb(24,24,30)",
+          "measuredContext": "a 2 px do aglomerado escuro real em (168,152)-(169,154)",
+          "reading": "pode ser fleco intencional do aglomerado vizinho",
+          "risk": "remover retira detalhe intencional"
+        }
+      ],
+      "clipJsonSha256": "ecfc1496281f186c920f0db4f07d4b7f3c63290d9ca2fb181fcb26042623ed9d"
+    }
+  },
+  "confirmedCauses": [
+    "rebordo palido sistemico no corpo traseiro gerado (ja nos quadros brutos do PixelLab; Idle traseira protegida ~0%)",
+    "duas linguagens de contorno no mesmo clipe (F00/F07 ink; F01-F06 rebordo palido)",
+    "arma composta por cima do punho: 35/47/143/115 px de cabo/arma pintados sobre a mao por clipe",
+    "pomo enterrado no punho: ancora no meio da empunhadura com punho tao alto quanto empunhadura + pomo"
+  ],
+  "disprovedHypotheses": [
+    "ancora de pegada no contorno (todas as pegadas dentro da palma, ocupacao 5x5 opaca; ancora 48,66 = meio real da empunhadura y 60-70)",
+    "reparo por mascara resolve a pegada (auditoria de faixas da arma)"
+  ],
+  "comparator": {
+    "file": "experiments/main-orc-targeted-repair-v1/artist-rear/candidate/comparator.html",
+    "sha256": "07149cf11f39188eb5cdae930c8fb2d4b61397e8be06ed835fe942a58c5ee8da",
+    "accessModes": [
+      "file:// (URLs relativas a propria pagina)",
+      "servidor local: node experiments/main-orc-targeted-repair-v1/artist-rear/tools/serve.mjs -> http://127.0.0.1:8791/...comparator.html"
+    ],
+    "bugFixed": "canvas vazio na abertura: img.onload chamava apenas health() e nao redesenhava; estado inicia pausado e o render inicial ocorria antes das imagens carregarem",
+    "fix": "onload/onerror agendam redesenho coalescido por requestAnimationFrame, sem novo request e com guarda de 4000 repinturas; falha de recurso desenha marca vermelha no canvas; leitura de pixel restrita mostra aviso explicito no painel de diff",
+    "verificationsActuallyRun": [
+      "navegador integrado via http, estado pausado, sem interacao: abertura axe f0 -> #ca 5745 px opacos, #cb 5745 px, 48/48 recursos, 0 falhas",
+      "troca de par para sword -> #ca 6137, #cb 6137, ok, 0 falhas",
+      "camada body (axe) -> 5745/5745; camada handFront (axe, f0) -> 0/0 com ok=true (vazio legitimo: 0 px opacos em freeze e candidato)",
+      "comp (axe, f2) -> 6051/6049 (diferenca de 2 px = caso B)",
+      "resolucao de caminhos: 128/128 URLs resolvem a partir do diretorio da propria pagina"
+    ],
+    "limitations": [
+      "file:// NAO foi executado por mim: a ferramenta de navegador disponivel aceita apenas http/https; a evidencia para file:// e a resolucao estatica de 128/128 caminhos relativos mais zero falhas no servidor local",
+      "screenshot da pagina indisponivel: aba em segundo plano nao compoe ('tab has not painted'); nao ha confirmacao visual do layout, apenas DOM, recursos e leitura de pixels"
+    ]
+  },
+  "motionValidation": {
+    "continuousVisualObservation": false,
+    "claim": "NAO afirmo validacao visual de movimento continuo",
+    "evidenceAvailable": [
+      "amostragem numerica do relogio do player em reproducao real 1x: fronteiras de quadro em 0,90,170,260,340,440,520,620 ms dentro de um tick de rAF e termino exato em 730 ms",
+      "imagens estaticas ampliadas (diagnostics/PREVIEW-*)"
+    ],
+    "remaining": "continuidade otica depende de percepcao humana"
+  },
+  "preservation": {
+    "freezeUntouched": true,
+    "filesByteIdenticalToFreeze": {
+      "back_r/Axe": 44,
+      "back_r/Sword": 49
+    },
+    "filesRemoved": 0,
+    "layersChanged": {
+      "back_r/Axe": [
+        "body"
+      ],
+      "back_r/Sword": [
+        "handFront"
+      ]
+    },
+    "timingChanged": false,
+    "durationsMs": [
+      90,
+      80,
+      90,
+      80,
+      100,
+      80,
+      100,
+      110
+    ],
+    "totalDurationMs": 730,
+    "authoring": "Aseprite, Lua, autoria programatica do agente (nao desenho manual)"
+  },
+  "nextSteps": [
+    "decisao do criador sobre os casos A/B/C: manter (nenhum defeito provado) ou autorizar remocao com risco de recortar sola, fragmento de membro e fleco",
+    "pegada traseira exige re-assentar a arma ao longo do eixo do cabo (pomo fora da silhueta do punho) em 24 quadros: fora deste passe, nao autorizado",
+    "rebordo palido: decisao de direcao de arte (re-tinta de contorno ou aceitar como linguagem do gerador), nao reparo local"
+  ]
+}

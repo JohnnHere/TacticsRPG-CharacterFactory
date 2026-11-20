@@ -1,0 +1,34 @@
+Painel de QA independente (mesma sessão, escopo novo): revisar o ciclo completo `back_l/Sword` de 12 quadros/730 ms, entregue em `REAR_SWORD_L_BACK_FULL_READY` pelo especialista de pegada `7db0e7b6-ab88-49e9-9362-a19121c8ebf5`, usando o corpo `back_l/Sword` que você já liberou em `rear-bodies-repair1-result.json`.
+
+Escopo exato: apenas este clipe. Não aprove os outros dois traseiros ainda sem pegada (`back_r/Sword`, `back_l/Axe`), nem a matriz de 28 células, nem Unity, nem o criador.
+
+Fontes e evidência:
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/anatomy-plan.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/checks.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/input-snapshot.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/author.lua`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/patch-manifest.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-sword/index.html` (player real)
+- Camadas e compostos por quadro em `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/`.
+
+Contratos declarados que você deve verificar em disco, não aceitar como atestado:
+1. Corpo byte-idêntico ao `body-specialist/final-cycles/repair1/back_l-Sword-full/body256.aseprite`, delta RGBA zero nos 12 quadros, inclusive nativo 128.
+2. Chaves estruturais F03/F04/F07 preservadas byte-a-byte em todas as camadas.
+3. `visibleInterval [2, 8]`; F00, F01, F09, F10, F11 com equipamento totalmente transparente e compósito igual ao corpo.
+4. Mestres `composite.aseprite`, `body.aseprite`, `hand.aseprite`, `native.aseprite` salvos, reabertos e reexportados; duração 730 ms com durações por quadro reais.
+
+Julgamento artístico com inspeção real de pixels:
+- Nos quadros armados F02..F08: luva direita genuína envolvendo o cabo, unida ao pulso e antebraço, sem carimbo, sem mão inativa pegando a arma, sem guarda/pomo escondidos.
+- Este é SWORD, corte diagonal: confirme que o item usado é a espada correta (`combat/weapons/Sword/weapon.json`), não o machado, e que a trajetória declarada (10°, 350°, 320°, 285°, 265°, 245°, 240°) descreve um corte coerente e não um golpe de machado relabelado.
+- Folga do solo: F07 em y=175 e F08 em y=180 sobre `groundY` 190 — verificar se essa folga é convincente para um corte que passa perto do chão e se não há lâmina enterrada, flutuando alto demais ou atravessando perna/corpo.
+- Continuidade entre F02→F08, ausência de teleporte do item, colisão com o corpo, rastro pintado no corpo, perda de massa da lâmina ou piscada.
+- Retorno neutro F09..F11 desarmado e sem resíduo.
+- Legibilidade em escala nativa 128 e tática 64.
+- Diferencie inspeção estática/quadro a quadro da percepção contínua em 1x; não declare o que não observou.
+
+Grave NOVO `rear-sword-l-back-full-result.json` e `rear-sword-l-back-full-report.md` na pasta `qa-antigravity-flash`, preservando os pareceres anteriores. Inclua o SHA-256 real do `clip.json`, evidências por quadro e limitações.
+
+Verdito: `READY_FOR_MATRIX_REVIEW`, `REVISIONS_REQUIRED` com achados exatos por quadro, ou `INCONCLUSIVE`.
+
+Restrições: não editar arte/fontes/matriz/Unity/ponteiros; não criar subagentes; zero PixelLab de produção nesta revisão; custo LLM não informado; aprovação do criador continua pendente. Pare após o laudo persistente.

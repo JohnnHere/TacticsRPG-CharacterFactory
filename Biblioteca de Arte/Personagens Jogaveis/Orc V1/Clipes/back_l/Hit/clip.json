@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "reaction.hit",
+  "character": "orc-v1",
+  "state": "Hit",
+  "legacySlotState": "Hit",
+  "direction": "back_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    45,
+    95,
+    115,
+    95,
+    100
+  ],
+  "totalDurationMs": 450,
+  "master": "Hit.aseprite",
+  "masterSha256": "0da0cb76db6813b8fcfc4ebbf316463d9f44c8f74a76b3a359118fc2ec225aa0",
+  "nativeMaster": "Hit-128.aseprite",
+  "nativeMasterSha256": "4e088980061599caa7153ee81b03d93ad03ae95e054b93ff6717f2ba1b2a73d6",
+  "strip": "Folha.png",
+  "stripSha256": "9b24ab1b8601975d94541e2b1b03b13737831924393a215153767c7ab0bf2e2b",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": null,
+  "frames": [
+    {
+      "index": 0,
+      "png": "Quadros/00.png",
+      "sha256": "6e96b2b5a110b1b720d771c518380993fc0c82a2581ac81d4891e5fc1ac15b53",
+      "nativePng": "Nativo128/00.png",
+      "nativeSha256": "9474c53c8976c8f424aeba9fa4f8f6029ea402802ea9dba0872140cbdf0cd95f",
+      "durationMs": 45,
+      "phase": "impact-onset",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "Quadros/01.png",
+      "sha256": "9059b0c548a5adaf7d7997b1764c30edceb7364a4a88a0ae5773c146539af968",
+      "nativePng": "Nativo128/01.png",
+      "nativeSha256": "46b66a1edf4603b5f834efd6261dbe3044d500439a07ab3a84535c5e076b886a",
+      "durationMs": 95,
+      "phase": "peak-recoil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "Quadros/02.png",
+      "sha256": "b57a7f50126f8b49b50478fa02deec2f6591371ac293ebd3f99e7f0081fc9700",
+      "nativePng": "Nativo128/02.png",
+      "nativeSha256": "3069346b530599ff92518494b6dd4265b08b43483998aad46c5238b9d5b1187a",
+      "durationMs": 115,
+      "phase": "stagger-brace",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "Quadros/03.png",
+      "sha256": "f928cca4e9757d56b6463ab31fe68983aefa26238e550b163548a66197970c22",
+      "nativePng": "Nativo128/03.png",
+      "nativeSha256": "cd4d9d4bc0c139feef4fc74a5057cbecddda5f5c203bf3381204d7fd048b24be",
+      "durationMs": 95,
+      "phase": "recovery-rise",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "Quadros/04.png",
+      "sha256": "2a28556efd808a9c1090d9fab93a20f16f50213cc90bff9bb42854d7da72f715",
+      "nativePng": "Nativo128/04.png",
+      "nativeSha256": "8f55e6e931deccacc68c6e15ec33cd403ac4dfbc29ca290a2f74407370a45bd6",
+      "durationMs": 100,
+      "phase": "recovery-settle",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

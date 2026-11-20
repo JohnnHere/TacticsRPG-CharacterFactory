@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "patchId": "orc-v1.artistic-reconstruction-v6.weapon-patch",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "revision": "main-orc-artistic-reconstruction-v6",
+  "parentManifest": "characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json",
+  "parentManifestSha256": "58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794",
+  "scope": "Eight reconstructed/localized Sword/Axe attack cycles replacing the creator-rejected V5 cells.",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "weapons": {
+    "Sword": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "Axe": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json"
+  },
+  "cells": [
+    {
+      "direction": "back_l",
+      "action": "Sword",
+      "cellId": "back_l/Sword",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/clip.json",
+      "clipSha256": "ad2b2ebf02c90530f946665ca4cec92e0d8e576ba02989b004a641bddb115813",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json",
+      "notes": "QA V6-QA-02 fix: back_l/Sword F07-F09 recovery binding adjusted so the blade tip stays above groundY (tips at y=187/185/173)."
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe",
+      "cellId": "back_l/Axe",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/clip.json",
+      "clipSha256": "ae905d2ce12f13a696bdc450c3b955ccc6cc53a4eeb6155761e2d3a9e4afef50",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json",
+      "notes": "Rear artistic reconstruction from the V6 reference pipeline; see rear/back-r-stage-d/report.md and rear/report.md."
+    },
+    {
+      "direction": "back_r",
+      "action": "Sword",
+      "cellId": "back_r/Sword",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/clip.json",
+      "clipSha256": "625df2d398294f56a8073bbead4580bfe5719e8f90641c7f2b2c3c69422341cc",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json",
+      "notes": "Rear artistic reconstruction from the V6 reference pipeline; see rear/back-r-stage-d/report.md and rear/report.md."
+    },
+    {
+      "direction": "back_r",
+      "action": "Axe",
+      "cellId": "back_r/Axe",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-axe/clip.json",
+      "clipSha256": "8028ac7b2ae59b351e8aafa29bfd09a40ef5944d7e9bc1c5aaaa1b2d930e3c6e",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe/clip.json",
+      "notes": "Rear artistic reconstruction from the V6 reference pipeline; see rear/back-r-stage-d/report.md and rear/report.md."
+    },
+    {
+      "direction": "front_l",
+      "action": "Sword",
+      "cellId": "front_l/Sword",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/frontal-escalated/front_l-Sword-full/clip.json",
+      "clipSha256": "f6b3c694ceec2f6bdc1786a3aa24527021adfafc8b7af72324751879580606fd",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/clip.json",
+      "notes": "QA V6-QA-01 fix: front_l/Sword F03-F04 body-layer axilla geometry rebuilt (58 px total); weapons, pose and timing untouched."
+    },
+    {
+      "direction": "front_r",
+      "action": "Sword",
+      "cellId": "front_r/Sword",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/clip.json",
+      "clipSha256": "6809bfaaab103156f9a5bf4009e80e2c0f84df7f175a0430ab794f654c12d791",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+      "notes": "Localized frontal body-layer fix: 111 single-pixel edits (floating islands + confirmed bright dots); weapon layers untouched."
+    },
+    {
+      "direction": "front_r",
+      "action": "Axe",
+      "cellId": "front_r/Axe",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+      "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_r-Axe-full/clip.json",
+      "notes": "Localized frontal body-layer fix: 115 single-pixel edits (floating islands + confirmed bright dots); weapon layers untouched."
+    },
+    {
+      "direction": "front_l",
+      "action": "Axe",
+      "cellId": "front_l/Axe",
+      "clipJson": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+      "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+      "provenance": "main-orc-artistic-reconstruction-v6; replaces rejected V5 cell characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Axe-full/clip.json",
+      "notes": "Localized frontal body-layer fix: 111 single-pixel edits (floating islands + confirmed bright dots); weapon layers untouched."
+    }
+  ]
+}

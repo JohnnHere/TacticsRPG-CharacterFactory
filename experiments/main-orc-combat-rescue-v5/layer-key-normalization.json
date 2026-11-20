@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "normalizer": "experiments/main-orc-combat-rescue-v5/normalize-layer-keys.mjs",
+  "reason": "The two newest rear cycles emitted layer entries with the non-canonical key `path`; all six earlier clips and validate.mjs use `png`.",
+  "clips": [
+    {
+      "clip": "characters\\orc-v1\\source\\combat-rescue-v5\\rear-grip-flash\\full-back-r-sword\\clip.json",
+      "clipSha256Before": "eb379d1d699ab51203ec633d645a29d9c63e377e36fe8b15b8fda44fc1a9aac6",
+      "clipSha256After": "a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739",
+      "layersRenamed": 48,
+      "frames": 12,
+      "pixelDataChanged": false,
+      "note": "Only the layer file key was renamed from `path` to the canonical `png`. Every frame, native frame, timing and layer hash was verified identical, and each layer file still matches its declared hash."
+    },
+    {
+      "clip": "characters\\orc-v1\\source\\combat-rescue-v5\\rear-grip-flash\\full-back-l-axe\\clip.json",
+      "clipSha256Before": "9f7d01e726f3f6dc63b24aeb23da97ac9cad29a7fd31572ccdf59a3ee384a0f3",
+      "clipSha256After": "b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6",
+      "layersRenamed": 48,
+      "frames": 12,
+      "pixelDataChanged": false,
+      "note": "Only the layer file key was renamed from `path` to the canonical `png`. Every frame, native frame, timing and layer hash was verified identical, and each layer file still matches its declared hash."
+    }
+  ]
+}

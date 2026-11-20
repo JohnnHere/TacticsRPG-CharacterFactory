@@ -1,0 +1,59 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<title>GLM Body Fixes — Revisão</title><style>body{background:#141418;color:#ddd;font-family:monospace;
+margin:16px;max-width:1100px}h1{color:#ffd166}h2{color:#8ad}img,canvas{background:#222;border:1px solid #444}
+button,select{background:#333;color:#ddd;border:1px solid #666}.warn{color:#f88}</style></head><body>
+<h1>GLM Body Fixes — Orc V1 traseiros (candidato, sem autoaprovação)</h1>
+<p><b>Status:</b> GLM_BODY_FIXES_READY · TECHNICALLY_COMPLETE · VISUAL_REVIEW_REQUIRED ·
+PENDING_CREATOR (global: ARTISTIC_REVISION_REQUIRED preservado)</p>
+<p class="warn"><b>Limite visual declarado:</b> o DEV não possui visão de imagem; toda análise foi
+textual (Pillow/hex). Inspeção visual final cabe ao QA independente Gemini Flash Antigravity e ao Criador.</p>
+<h2>back_r-Sword-full — REAR-01-RESIDUAL-A/B (F06) (12f / 730ms)</h2><p><b>Defeito:</b> REAR-01-RESIDUAL-A/B (F06)<br><b>Correção:</b> 5 px flutuantes -> alfa 0; 30 px vinho -> malha (doadores F05/F07 mesmas coords); 0 fora do permitido</p>
+<div class="player"><canvas id="c_back_r_Sword_full" width="128" height="128"
+ style="image-rendering:pixelated;width:256px;height:256px"></canvas>
+<div><button onclick="step_back_r_Sword_full(-1)">&lt;</button><button onclick="toggle_back_r_Sword_full()">play</button>
+<button onclick="step_back_r_Sword_full(1)">&gt;</button>
+<select onchange="sp_back_r_Sword_full=parseFloat(this.value)">
+<option value="1">1.0x</option><option value="0.75">0.75x</option>
+<option value="0.5">0.5x</option><option value="0.25">0.25x</option></select>
+<span id="i_back_r_Sword_full"></span></div></div>
+<script>(function(){
+var D=[40,60,60,70,70,40,40,90,70,70,60,60],N=12,i=0,run=null,sp=1,imgs=[];
+for(var k=0;k<N;k++){var im=new Image();im.onload=draw;im.src='./back_r-Sword-full/native/XX.png'.replace('XX',('0'+k).slice(-2));imgs.push(im);}
+var cv=document.getElementById('c_back_r_Sword_full'),ctx=cv.getContext('2d');
+function draw(){ctx.clearRect(0,0,128,128);ctx.drawImage(imgs[i],0,0);
+document.getElementById('i_back_r_Sword_full').textContent=' F'+('0'+(i+1)).slice(-2)+'/'+D[i]+'ms';}
+function next(){i=(i+1)%N;draw();if(run)run=setTimeout(next,D[i]/sp);}
+window.step_back_r_Sword_full=function(d){if(!run){i=(i+d+N)%N;draw();}};
+window.toggle_back_r_Sword_full=function(){if(run){clearTimeout(run);run=null;}else{run=setTimeout(next,D[i]/sp);}};
+window.sp_back_r_Sword_full=sp;var so=document.querySelector('select');if(so){so.onchange=function(){sp=parseFloat(this.value);};}
+draw();})();</script>
+<p><img src="glm-back_r-Sword-f06-before-after.png" alt="antes/depois back_r-Sword-full" style="image-rendering:pixelated;max-width:100%"></p><h2>back_l-Axe-full — REAR-02-PERSISTENT (F02) (12f / 1100ms)</h2><p><b>Defeito:</b> REAR-02-PERSISTENT (F02)<br><b>Correção:</b> Re-autoria anatomica via inpaint PixelLab (job 540302e4, seed 20261029, 6.0 gen) composta no Aseprite; delta 510 px confinado a mascara x68..100/y8..33; braco conectado ombro->punho</p>
+<div class="player"><canvas id="c_back_l_Axe_full" width="128" height="128"
+ style="image-rendering:pixelated;width:256px;height:256px"></canvas>
+<div><button onclick="step_back_l_Axe_full(-1)">&lt;</button><button onclick="toggle_back_l_Axe_full()">play</button>
+<button onclick="step_back_l_Axe_full(1)">&gt;</button>
+<select onchange="sp_back_l_Axe_full=parseFloat(this.value)">
+<option value="1">1.0x</option><option value="0.75">0.75x</option>
+<option value="0.5">0.5x</option><option value="0.25">0.25x</option></select>
+<span id="i_back_l_Axe_full"></span></div></div>
+<script>(function(){
+var D=[70,80,90,100,110,50,60,110,100,100,100,130],N=12,i=0,run=null,sp=1,imgs=[];
+for(var k=0;k<N;k++){var im=new Image();im.onload=draw;im.src='./back_l-Axe-full/native/XX.png'.replace('XX',('0'+k).slice(-2));imgs.push(im);}
+var cv=document.getElementById('c_back_l_Axe_full'),ctx=cv.getContext('2d');
+function draw(){ctx.clearRect(0,0,128,128);ctx.drawImage(imgs[i],0,0);
+document.getElementById('i_back_l_Axe_full').textContent=' F'+('0'+(i+1)).slice(-2)+'/'+D[i]+'ms';}
+function next(){i=(i+1)%N;draw();if(run)run=setTimeout(next,D[i]/sp);}
+window.step_back_l_Axe_full=function(d){if(!run){i=(i+d+N)%N;draw();}};
+window.toggle_back_l_Axe_full=function(){if(run){clearTimeout(run);run=null;}else{run=setTimeout(next,D[i]/sp);}};
+window.sp_back_l_Axe_full=sp;var so=document.querySelector('select');if(so){so.onchange=function(){sp=parseFloat(this.value);};}
+draw();})();</script>
+<p><img src="glm-back_l-Axe-f02-before-after.png" alt="antes/depois back_l-Axe-full" style="image-rendering:pixelated;max-width:100%"></p>
+<h2>Verificação técnica (textual)</h2>
+<pre>FIX A (back_r-Sword F06): diff 35 px, 0 fora do permitido; 5 flutuantes alfa 0;
+0 px vinho em y88..94/x45..55; 11 frames byte-idênticos; ground 126/190; composto exato → PASS
+FIX B (back_l-Axe F02): diff 510 px, 0 fora da máscara; 0 runs de trave ≥8px;
+componente braço 673 px (y10..37) conectado ombro→zona punho; punho marrom 15 px (x83..91/y16..20);
+y≥40 idêntico ao original; 11 frames byte-idênticos; ground 126/190; composto exato → PASS
+Chaves F03/F04/F07: SHA-256 idênticos aos aceitos pelo QA (assert no gerador) — os 6 arquivos.
+PixelLab: saldo 1342.70 → 1336.70 (1 job inpaint 6.0 gen). Custo LLM não informado.</pre>
+</body></html>

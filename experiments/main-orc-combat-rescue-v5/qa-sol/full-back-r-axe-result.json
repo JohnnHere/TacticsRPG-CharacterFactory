@@ -1,0 +1,1057 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T14:12:09.952Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "sessionLabel": "qa-sol",
+    "sameReviewer": true,
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false
+  },
+  "verdict": "INCONCLUSIVE",
+  "verdictReason": "Continuous perceptual observation at native/game scale and normal playback speed was not available through this image/screenshot interface. Functional Chromium playback and discrete frame inspection succeeded, but do not establish continuous motion quality.",
+  "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+  "confirmedArtisticBlockingFindings": [],
+  "revisionRequested": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "fullCycleArtisticallyApproved": false,
+  "automaticPropagationAllowed": false,
+  "integrationAllowed": false,
+  "runtimeImplemented": false,
+  "otherQaArtifactsRead": false,
+  "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-sol/",
+  "temporalPerception": {
+    "continuous1xVisuallyObserved": false,
+    "continuousSlowVisuallyObserved": false,
+    "actualChromiumPlaybackExecuted": true,
+    "frameStepAndStaticScreenshotsObserved": true,
+    "staticNativeAndNearGameScaleObserved": true,
+    "limitationIsReviewCapabilityNotProvenArtDefect": true
+  },
+  "remainingGate": "Perceptually observe the exact complete cycle continuously at native128/near-game64 scale and 1x, then slow/frame-step for mechanics. Do not request pixel revisions or regeneration solely because this interface cannot provide that observation.",
+  "inputFreeze": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-cycles-input-freeze.json",
+    "sha256": "465966f8613aaa83f652dd1313094687da43c8a953f03fe776a7512a49291af5"
+  },
+  "scope": "Complete back_r/Axe body-only candidate 12f/1100ms; no item or grip",
+  "requestedPositiveVerdictNotIssued": "BODY_CYCLE_READY_FOR_EQUIPMENT_AND_REAR_EXPANSION",
+  "readyForEquipmentAndRearExpansion": false,
+  "clip": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+    "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 1100,
+  "weaponPresent": false,
+  "weaponArcProven": false,
+  "gripApproved": false,
+  "body01Status": "RESOLVED_FOR_KEY_GATE; exact repaired impact preserved at F07",
+  "frames": [
+    {
+      "index": 0,
+      "phase": "guard",
+      "durationMs": 70,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/00.png",
+        "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/00.png",
+        "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+      },
+      "staticObservation": "Original unarmed rear guard; authentic two low hands, occipital skull, dorsal construction and planted boots.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 1,
+      "phase": "load-begin",
+      "durationMs": 80,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/01.png",
+        "sha256": "076fe3d6000edafd42af8c4ee65c2de05ff5b79a1c3737b3f14c5c9d6dd25efb"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/01.png",
+        "sha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94"
+      },
+      "staticObservation": "Subtle load begins; right arm shifts without disappearing, inactive left glove remains its own endpoint.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 2,
+      "phase": "elbow-hoist",
+      "durationMs": 90,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/02.png",
+        "sha256": "b46954ccb3c56cb74a9e68245c03d022f029ebe8b123daf157cb454e2098dc58"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/02.png",
+        "sha256": "c12e31d7bb5cbafbbc0c1987f8bd854a2d85d9d589bb2bbba8f84c772620f9c1"
+      },
+      "staticObservation": "Right anatomical arm rises on image-right; flexed elbow, forearm and closed hand traceable; body remains grounded.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 3,
+      "phase": "validated-hoist",
+      "durationMs": 100,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/03.png",
+        "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/03.png",
+        "sha256": "5e2cde43603244592dacfd1de856d7552a8ebeb1a32bfd182493ecda62994f98"
+      },
+      "staticObservation": "Previous hoist reused byte-exact; continuous raised right chain and readable low inactive hand.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 4,
+      "phase": "validated-apex",
+      "durationMs": 110,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/04.png",
+        "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/04.png",
+        "sha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86"
+      },
+      "staticObservation": "Previous apex reused byte-exact; glove enclosed, near native upper edge; equipment clearance still pending.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 5,
+      "phase": "drop-initiation",
+      "durationMs": 50,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/05.png",
+        "sha256": "71d9f64d233201aa0ed99a77295713dafcfa7a357a44a1d55f56d546a137dca3"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/05.png",
+        "sha256": "cb09b1e1950a6458b4c774268e9977e42f526992d68e75a8a6906a5c19174d4f"
+      },
+      "staticObservation": "Descent begins with right hand high and elbow folded; head/dorsal and torso start dropping together; no doubled limb visible.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 6,
+      "phase": "forward-down-cleave",
+      "durationMs": 60,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/06.png",
+        "sha256": "c38fbf93ecfe01e0c6c8b89360c4e4080f9912a2eaa86f8e47622c810bfbac1b"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/06.png",
+        "sha256": "fe661fd28e0539c3bcaef0fffd006d22aa2b8312d4b1885df73f48f1ee4c3219"
+      },
+      "staticObservation": "Right forearm projects forward/sideward during descent, ending in wine glove; trunk lowered. Passing pose, not proof of an overhead apex or item arc.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 7,
+      "phase": "validated-impact",
+      "durationMs": 110,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/07.png",
+        "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/07.png",
+        "sha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99"
+      },
+      "staticObservation": "Previous impact repair1 reused byte-exact. Wrist and closed right glove readable; low shoulder girdle/pelvis, flexed knees and widened planted supports.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 8,
+      "phase": "recover-low",
+      "durationMs": 100,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/08.png",
+        "sha256": "b27552896251258c5c02dcfed998b8dbb8a56e76eececf710fd5d99c16025b08"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/08.png",
+        "sha256": "05bb4dc666097aeba4289193137ca1907b315d57b5a6735812c9c1d4bf1f4731"
+      },
+      "staticObservation": "Right arm settles down beside body, left hand authentic; trunk begins rising; no floating endpoint observed.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 9,
+      "phase": "recover-pelvis",
+      "durationMs": 100,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/09.png",
+        "sha256": "a8efcc0f091b0def57d1dba01fb70de3acd26c9fa22a4fc156a33bf9d31e9272"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/09.png",
+        "sha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039"
+      },
+      "staticObservation": "Dorsal/pelvis rise toward guard; hands and knees recover without static loss of anatomy.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 10,
+      "phase": "recover-guard",
+      "durationMs": 100,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/10.png",
+        "sha256": "20c7656a41b2a4878bcf47ef83c919b4168d2e35503dd96c6655980ea48b676e"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/10.png",
+        "sha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db"
+      },
+      "staticObservation": "Near-guard settling pose; both hands and rear silhouette remain identifiable.",
+      "blockingStaticDefectObserved": false
+    },
+    {
+      "index": 11,
+      "phase": "guard-return",
+      "durationMs": 130,
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/11.png",
+        "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/11.png",
+        "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+      },
+      "staticObservation": "Unarmed guard return; no weapon persists.",
+      "blockingStaticDefectObserved": false
+    }
+  ],
+  "wholeBodyObservations": {
+    "dominance": "Anatomical right active arm stays on image-right in rear view; inactive left hand is separate and authentic throughout inspected poses",
+    "identity": "Rear green occipital skull, collar/dorsal plate, wine leather, chainmail, greaves and boots retain V1 language; no frontal face observed",
+    "massAndSupports": "Loading, descending torso/shoulder/pelvis, knee flexion, wider impact base and recovery are represented in the pose sequence; dynamic weight perception is unproven",
+    "silhouette": "No visible painted weapon/shaft, double forearm or detached limb in inspected static poses",
+    "halos": "No visible light crown fringe; all12 native bodies have zero pixels with all RGB channels >190. Numeric bright-pixel check is not universal halo proof."
+  },
+  "temporalWatchpoints": [
+    {
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "reason": "Large descending/forward right-arm displacement during50/60/110ms holds; requires direct perception of continuous weight and arc, not coordinate inference"
+    },
+    {
+      "frames": [
+        7,
+        8
+      ],
+      "reason": "Check upward recovery starts without a perceived snap"
+    },
+    {
+      "frames": [
+        10,
+        11
+      ],
+      "reason": "Check guard restoration at normal speed"
+    }
+  ],
+  "independentTechnicalChecks": {
+    "sourceHashes": {
+      "name": "full-back-r-axe",
+      "clip": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+        "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3"
+      },
+      "frameCount": 12,
+      "durationsMs": [
+        70,
+        80,
+        90,
+        100,
+        110,
+        50,
+        60,
+        110,
+        100,
+        100,
+        100,
+        130
+      ],
+      "totalDurationMs": 1100,
+      "evidenceFiles": [
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/checkpoint.json",
+          "sha256": "94d0ebd15bede1cc873773381a048733e180aff3ca3e07a52459640899100d92",
+          "role": "submission checkpoint"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/report.md",
+          "sha256": "75d05da6c9752ad0bf27253e9474de829872a314046a2710ce33f05f5d41f8db",
+          "role": "producer report"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+          "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+          "declaredSha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+          "declaredMatches": true,
+          "role": "exact reviewed full clip"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/review.html",
+          "sha256": "53997239832678874d2d973239bcbe317f62ee7a2136fe34551a4a5f45b7ce7c",
+          "role": "original player opened in Chromium"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/representative.json",
+          "sha256": "50eb4b78aa86a51ea8ea6e81ebaa563f30043a6ca0c306cd2b1d82900b39bb85",
+          "declaredSha256": "50eb4b78aa86a51ea8ea6e81ebaa563f30043a6ca0c306cd2b1d82900b39bb85",
+          "declaredMatches": true,
+          "role": "submission representative"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256.aseprite",
+          "sha256": "2d89c3c2565d4ac31b11ee9cbed4c35c3b8faaf641aa1ebf7ee79ce12e19317e",
+          "declaredSha256": "2d89c3c2565d4ac31b11ee9cbed4c35c3b8faaf641aa1ebf7ee79ce12e19317e",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native128.aseprite",
+          "sha256": "f789d6b90d520ba1b9a809d00a2f02ec8941746439365863b29e66d0dc15e918",
+          "declaredSha256": "f789d6b90d520ba1b9a809d00a2f02ec8941746439365863b29e66d0dc15e918",
+          "declaredMatches": true,
+          "role": "saved Aseprite source"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "declaredSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/00.png",
+          "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+          "declaredSha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/01.png",
+          "sha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94",
+          "declaredSha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/01.png",
+          "sha256": "076fe3d6000edafd42af8c4ee65c2de05ff5b79a1c3737b3f14c5c9d6dd25efb",
+          "declaredSha256": "076fe3d6000edafd42af8c4ee65c2de05ff5b79a1c3737b3f14c5c9d6dd25efb",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/02.png",
+          "sha256": "c12e31d7bb5cbafbbc0c1987f8bd854a2d85d9d589bb2bbba8f84c772620f9c1",
+          "declaredSha256": "c12e31d7bb5cbafbbc0c1987f8bd854a2d85d9d589bb2bbba8f84c772620f9c1",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/02.png",
+          "sha256": "b46954ccb3c56cb74a9e68245c03d022f029ebe8b123daf157cb454e2098dc58",
+          "declaredSha256": "b46954ccb3c56cb74a9e68245c03d022f029ebe8b123daf157cb454e2098dc58",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/03.png",
+          "sha256": "5e2cde43603244592dacfd1de856d7552a8ebeb1a32bfd182493ecda62994f98",
+          "declaredSha256": "5e2cde43603244592dacfd1de856d7552a8ebeb1a32bfd182493ecda62994f98",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/03.png",
+          "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+          "declaredSha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/04.png",
+          "sha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86",
+          "declaredSha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/04.png",
+          "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+          "declaredSha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/05.png",
+          "sha256": "cb09b1e1950a6458b4c774268e9977e42f526992d68e75a8a6906a5c19174d4f",
+          "declaredSha256": "cb09b1e1950a6458b4c774268e9977e42f526992d68e75a8a6906a5c19174d4f",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/05.png",
+          "sha256": "71d9f64d233201aa0ed99a77295713dafcfa7a357a44a1d55f56d546a137dca3",
+          "declaredSha256": "71d9f64d233201aa0ed99a77295713dafcfa7a357a44a1d55f56d546a137dca3",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/06.png",
+          "sha256": "fe661fd28e0539c3bcaef0fffd006d22aa2b8312d4b1885df73f48f1ee4c3219",
+          "declaredSha256": "fe661fd28e0539c3bcaef0fffd006d22aa2b8312d4b1885df73f48f1ee4c3219",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/06.png",
+          "sha256": "c38fbf93ecfe01e0c6c8b89360c4e4080f9912a2eaa86f8e47622c810bfbac1b",
+          "declaredSha256": "c38fbf93ecfe01e0c6c8b89360c4e4080f9912a2eaa86f8e47622c810bfbac1b",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/07.png",
+          "sha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99",
+          "declaredSha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/07.png",
+          "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+          "declaredSha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/08.png",
+          "sha256": "05bb4dc666097aeba4289193137ca1907b315d57b5a6735812c9c1d4bf1f4731",
+          "declaredSha256": "05bb4dc666097aeba4289193137ca1907b315d57b5a6735812c9c1d4bf1f4731",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/08.png",
+          "sha256": "b27552896251258c5c02dcfed998b8dbb8a56e76eececf710fd5d99c16025b08",
+          "declaredSha256": "b27552896251258c5c02dcfed998b8dbb8a56e76eececf710fd5d99c16025b08",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/09.png",
+          "sha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039",
+          "declaredSha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/09.png",
+          "sha256": "a8efcc0f091b0def57d1dba01fb70de3acd26c9fa22a4fc156a33bf9d31e9272",
+          "declaredSha256": "a8efcc0f091b0def57d1dba01fb70de3acd26c9fa22a4fc156a33bf9d31e9272",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/10.png",
+          "sha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db",
+          "declaredSha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/10.png",
+          "sha256": "20c7656a41b2a4878bcf47ef83c919b4168d2e35503dd96c6655980ea48b676e",
+          "declaredSha256": "20c7656a41b2a4878bcf47ef83c919b4168d2e35503dd96c6655980ea48b676e",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/11.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "declaredSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+          "declaredMatches": true,
+          "role": "final full256 export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/11.png",
+          "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+          "declaredSha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+          "declaredMatches": true,
+          "role": "final native128 body export"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+          "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+          "declaredSha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+          "declaredMatches": true,
+          "role": "previous accepted key"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+          "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+          "declaredSha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+          "declaredMatches": true,
+          "role": "previous accepted key"
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.png",
+          "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+          "declaredSha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+          "declaredMatches": true,
+          "role": "previous accepted key"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/final-sequence-diagnostic.png",
+          "sha256": "8aa5e72786a7f66ab8c4eb34466fa31d7dad131c43b1a3f079ed4c3a89e72ee1",
+          "role": "producer unmarked sequence diagnostic viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-browser-check.json",
+          "sha256": "503861912f68394991adefa63b700e091bccf463f10ab6be2eddad2da7df5997",
+          "role": "independent functional Chromium playback traces; not continuous perception"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F05-chromium.png",
+          "sha256": "12bbaf055024a49c938a35a126b03913207def8fac7cfd0ecf281174aaf4e698",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F06-chromium.png",
+          "sha256": "29c6a2e49e9d7cc461700a39ee0e72e46102ebaafb7025d1b9812389a87f0f8a",
+          "role": "independent discrete Chromium screenshot viewed"
+        },
+        {
+          "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F07-chromium.png",
+          "sha256": "b0edb39a0ecd69e8ebb46f4d2edb5e193ddeada0f25e958e1c1d1d79ed001dda",
+          "role": "independent discrete Chromium screenshot viewed"
+        }
+      ],
+      "declaredHashMismatches": 0,
+      "masterTiming": [
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256.aseprite",
+          "frameCount": 12,
+          "durationsMs": [
+            70,
+            80,
+            90,
+            100,
+            110,
+            50,
+            60,
+            110,
+            100,
+            100,
+            100,
+            130
+          ],
+          "totalDurationMs": 1100
+        },
+        {
+          "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native128.aseprite",
+          "frameCount": 12,
+          "durationsMs": [
+            70,
+            80,
+            90,
+            100,
+            110,
+            50,
+            60,
+            110,
+            100,
+            100,
+            100,
+            130
+          ],
+          "totalDurationMs": 1100
+        }
+      ],
+      "allMasterTimingsMatch": true,
+      "acceptedKeyReuse": [
+        {
+          "frame": 3,
+          "byteExact": true
+        },
+        {
+          "frame": 4,
+          "byteExact": true
+        },
+        {
+          "frame": 7,
+          "byteExact": true
+        }
+      ],
+      "parentTimingMatches": null
+    },
+    "bodyPixels": {
+      "cycle": "full-back-r-axe",
+      "frames": [
+        {
+          "frame": 0,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 1,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 2,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 3,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 4,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 5,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 6,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 7,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 8,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 9,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 10,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        },
+        {
+          "frame": 11,
+          "body128CropArgbDelta": 0,
+          "nativeGroundY": 126,
+          "brightBodyPixels": 0,
+          "parentBodyArgbDelta": null,
+          "hiddenFrameEquipmentNontransparentPixels": null
+        }
+      ]
+    },
+    "broadHistoricalAuditRepeated": false,
+    "asepriteReexportRepeated": false
+  },
+  "browserEvidence": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-browser-check.json",
+    "sha256": "503861912f68394991adefa63b700e091bccf463f10ab6be2eddad2da7df5997",
+    "engine": "Installed Microsoft Edge Chromium headless via CDP",
+    "scales": [
+      {
+        "id": "main",
+        "width": 384,
+        "height": 384
+      },
+      {
+        "id": "native",
+        "width": 128,
+        "height": 128
+      },
+      {
+        "id": "tactical",
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "traces": [
+      {
+        "speed": 1,
+        "wallMs": 1102.699999988079,
+        "frameIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "terminal": {
+          "index": 11,
+          "elapsed": 1100,
+          "playing": false,
+          "total": 1100,
+          "speed": 1
+        }
+      },
+      {
+        "speed": 0.5,
+        "wallMs": 2212.099999964237,
+        "frameIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "terminal": {
+          "index": 11,
+          "elapsed": 1100,
+          "playing": false,
+          "total": 1100,
+          "speed": 0.5
+        }
+      }
+    ],
+    "screenshotsAreDiscrete": true
+  },
+  "evidenceFiles": [
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/checkpoint.json",
+      "sha256": "94d0ebd15bede1cc873773381a048733e180aff3ca3e07a52459640899100d92",
+      "role": "submission checkpoint"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/report.md",
+      "sha256": "75d05da6c9752ad0bf27253e9474de829872a314046a2710ce33f05f5d41f8db",
+      "role": "producer report"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+      "sha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+      "declaredSha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+      "declaredMatches": true,
+      "role": "exact reviewed full clip"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/review.html",
+      "sha256": "53997239832678874d2d973239bcbe317f62ee7a2136fe34551a4a5f45b7ce7c",
+      "role": "original player opened in Chromium"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/representative.json",
+      "sha256": "50eb4b78aa86a51ea8ea6e81ebaa563f30043a6ca0c306cd2b1d82900b39bb85",
+      "declaredSha256": "50eb4b78aa86a51ea8ea6e81ebaa563f30043a6ca0c306cd2b1d82900b39bb85",
+      "declaredMatches": true,
+      "role": "submission representative"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256.aseprite",
+      "sha256": "2d89c3c2565d4ac31b11ee9cbed4c35c3b8faaf641aa1ebf7ee79ce12e19317e",
+      "declaredSha256": "2d89c3c2565d4ac31b11ee9cbed4c35c3b8faaf641aa1ebf7ee79ce12e19317e",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native128.aseprite",
+      "sha256": "f789d6b90d520ba1b9a809d00a2f02ec8941746439365863b29e66d0dc15e918",
+      "declaredSha256": "f789d6b90d520ba1b9a809d00a2f02ec8941746439365863b29e66d0dc15e918",
+      "declaredMatches": true,
+      "role": "saved Aseprite source"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "declaredSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/00.png",
+      "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+      "declaredSha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/01.png",
+      "sha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94",
+      "declaredSha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/01.png",
+      "sha256": "076fe3d6000edafd42af8c4ee65c2de05ff5b79a1c3737b3f14c5c9d6dd25efb",
+      "declaredSha256": "076fe3d6000edafd42af8c4ee65c2de05ff5b79a1c3737b3f14c5c9d6dd25efb",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/02.png",
+      "sha256": "c12e31d7bb5cbafbbc0c1987f8bd854a2d85d9d589bb2bbba8f84c772620f9c1",
+      "declaredSha256": "c12e31d7bb5cbafbbc0c1987f8bd854a2d85d9d589bb2bbba8f84c772620f9c1",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/02.png",
+      "sha256": "b46954ccb3c56cb74a9e68245c03d022f029ebe8b123daf157cb454e2098dc58",
+      "declaredSha256": "b46954ccb3c56cb74a9e68245c03d022f029ebe8b123daf157cb454e2098dc58",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/03.png",
+      "sha256": "5e2cde43603244592dacfd1de856d7552a8ebeb1a32bfd182493ecda62994f98",
+      "declaredSha256": "5e2cde43603244592dacfd1de856d7552a8ebeb1a32bfd182493ecda62994f98",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/03.png",
+      "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "declaredSha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/04.png",
+      "sha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86",
+      "declaredSha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/04.png",
+      "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "declaredSha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/05.png",
+      "sha256": "cb09b1e1950a6458b4c774268e9977e42f526992d68e75a8a6906a5c19174d4f",
+      "declaredSha256": "cb09b1e1950a6458b4c774268e9977e42f526992d68e75a8a6906a5c19174d4f",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/05.png",
+      "sha256": "71d9f64d233201aa0ed99a77295713dafcfa7a357a44a1d55f56d546a137dca3",
+      "declaredSha256": "71d9f64d233201aa0ed99a77295713dafcfa7a357a44a1d55f56d546a137dca3",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/06.png",
+      "sha256": "fe661fd28e0539c3bcaef0fffd006d22aa2b8312d4b1885df73f48f1ee4c3219",
+      "declaredSha256": "fe661fd28e0539c3bcaef0fffd006d22aa2b8312d4b1885df73f48f1ee4c3219",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/06.png",
+      "sha256": "c38fbf93ecfe01e0c6c8b89360c4e4080f9912a2eaa86f8e47622c810bfbac1b",
+      "declaredSha256": "c38fbf93ecfe01e0c6c8b89360c4e4080f9912a2eaa86f8e47622c810bfbac1b",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/07.png",
+      "sha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99",
+      "declaredSha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/07.png",
+      "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "declaredSha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/08.png",
+      "sha256": "05bb4dc666097aeba4289193137ca1907b315d57b5a6735812c9c1d4bf1f4731",
+      "declaredSha256": "05bb4dc666097aeba4289193137ca1907b315d57b5a6735812c9c1d4bf1f4731",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/08.png",
+      "sha256": "b27552896251258c5c02dcfed998b8dbb8a56e76eececf710fd5d99c16025b08",
+      "declaredSha256": "b27552896251258c5c02dcfed998b8dbb8a56e76eececf710fd5d99c16025b08",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/09.png",
+      "sha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039",
+      "declaredSha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/09.png",
+      "sha256": "a8efcc0f091b0def57d1dba01fb70de3acd26c9fa22a4fc156a33bf9d31e9272",
+      "declaredSha256": "a8efcc0f091b0def57d1dba01fb70de3acd26c9fa22a4fc156a33bf9d31e9272",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/10.png",
+      "sha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db",
+      "declaredSha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/10.png",
+      "sha256": "20c7656a41b2a4878bcf47ef83c919b4168d2e35503dd96c6655980ea48b676e",
+      "declaredSha256": "20c7656a41b2a4878bcf47ef83c919b4168d2e35503dd96c6655980ea48b676e",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/body256/11.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "declaredSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "declaredMatches": true,
+      "role": "final full256 export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/native/11.png",
+      "sha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+      "declaredSha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb",
+      "declaredMatches": true,
+      "role": "final native128 body export"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+      "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "declaredSha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490",
+      "declaredMatches": true,
+      "role": "previous accepted key"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+      "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "declaredSha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba",
+      "declaredMatches": true,
+      "role": "previous accepted key"
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.png",
+      "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "declaredSha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a",
+      "declaredMatches": true,
+      "role": "previous accepted key"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/final-sequence-diagnostic.png",
+      "sha256": "8aa5e72786a7f66ab8c4eb34466fa31d7dad131c43b1a3f079ed4c3a89e72ee1",
+      "role": "producer unmarked sequence diagnostic viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-browser-check.json",
+      "sha256": "503861912f68394991adefa63b700e091bccf463f10ab6be2eddad2da7df5997",
+      "role": "independent functional Chromium playback traces; not continuous perception"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F05-chromium.png",
+      "sha256": "12bbaf055024a49c938a35a126b03913207def8fac7cfd0ecf281174aaf4e698",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F06-chromium.png",
+      "sha256": "29c6a2e49e9d7cc461700a39ee0e72e46102ebaafb7025d1b9812389a87f0f8a",
+      "role": "independent discrete Chromium screenshot viewed"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-F07-chromium.png",
+      "sha256": "b0edb39a0ecd69e8ebb46f4d2edb5e193ddeada0f25e958e1c1d1d79ed001dda",
+      "role": "independent discrete Chromium screenshot viewed"
+    }
+  ],
+  "limitations": [
+    "Complete poses and the functional player were inspected; continuous visual1x perception was not available",
+    "No item exists here: item trajectory/torque/grip/clearance remain unproven",
+    "Aseprite master reexport and80-file historical preservation audit were not repeated",
+    "Static readability does not establish animation naturalness"
+  ],
+  "report": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/full-back-r-axe-report.md",
+    "sha256": "c3db16155cbf9081039bbe842f655b2e3e36910e6660abd0b508cfc6128f8a7c"
+  },
+  "nextAction": "Stop at this review. Root retains the temporal gate and may arrange actual continuous perceptual observation of this exact freeze; no specific art rework is requested."
+}

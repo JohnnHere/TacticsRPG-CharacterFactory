@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-v7-axilla-recovery",
+  "checkpoint": "V7_ECON_FORENSICS_AND_FRONTAL_READY",
+  "character": "orc-v1",
+  "scope": "Four frontal combat cells only: forensics on the two rear Sword clips (T1, read-only), axilla repair of front_l/Sword F03/F04 (T2), light-contour search on all four frontal clips (T3). No rear asset, no V5 or V6 source, no Unity file was written.",
+  "status": {
+    "technicalStatus": "TECHNICALLY_COMPLETE",
+    "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+    "artisticApproval": "PENDING_CREATOR",
+    "runtimeImplemented": false,
+    "eligibleForIntegration": false,
+    "fullClipIndependentQA": "PENDING"
+  },
+  "budget": {
+    "newPixelLabCalls": 0,
+    "costUsd": 0.0,
+    "paidServicesUsed": []
+  },
+  "authority": {
+    "v6CandidateManifest": {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+      "sha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+      "standing": "ARTISTICALLY REJECTED by the creator. Nothing in this checkpoint promotes, re-registers or re-uses that manifest's status; the V7 cell is an independent candidate pending creator review."
+    },
+    "baselineForT2": {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/frontal-escalated/front_l-Sword-full",
+      "clipJsonSha256": "f6b3c694ceec2f6bdc1786a3aa24527021adfafc8b7af72324751879580606fd",
+      "note": "Read-only baseline. Still byte-identical after this checkpoint (see preservation)."
+    },
+    "preEscalationReference": {
+      "path": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Sword-full",
+      "note": "Non-escalated frontal clip; source of the native pixel values used by the T2 repair."
+    },
+    "v5Control": {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist",
+      "note": "Read-only control for the T3 detectors."
+    }
+  },
+  "preservation": {
+    "inputManifest": "experiments/main-orc-combat-recovery-v7/input-preservation.json",
+    "capturedAt": "2026-10-30T14:56:00.783Z",
+    "inputScope": "Existing Orc V1 files, independent starter weapons, identity authority; excludes new isolated candidate",
+    "checked": 6647,
+    "identical": 6647,
+    "changed": [],
+    "missing": [],
+    "verdict": "All tracked pre-existing Orc V1 inputs, weapons and identity authority files are byte-identical to the snapshot taken at the start of this task."
+  },
+  "tasks": {
+    "T1": {
+      "title": "Numeric forensics of the rear Sword white flash",
+      "mode": "READ_ONLY",
+      "artChanged": false,
+      "verdict": "The flash is authored content in the saved master. A fresh Aseprite export of the master equals the committed layers, the committed frames and the alpha-over recompose with 0 differing pixels. Cause: layers/body/00.png and body/11.png are byte-identical to complete-v1/back_l/Idle/00.png, so the preserved idle bookends carry a light-metal highlight the generated attack bodies lack.",
+      "reports": [
+        "experiments/main-orc-combat-recovery-v7/forensics/white-flash.md",
+        "experiments/main-orc-combat-recovery-v7/forensics/white-flash.json"
+      ],
+      "measured": {
+        "back_l/Sword": {
+          "leftHalfLightPxF00": 61,
+          "F01": 13,
+          "F10": 21,
+          "F11": 61,
+          "contiguousMass": {
+            "bbox": [
+              97,
+              117,
+              108,
+              137
+            ],
+            "rgb(153,154,155)": 36,
+            "rgb(171,173,173)": 25
+          },
+          "isolated": {
+            "bbox": [
+              103,
+              117,
+              108,
+              119
+            ],
+            "px": 9
+          }
+        },
+        "back_r/Sword": {
+          "leftHalfLightPxF00": 46,
+          "F01": 2,
+          "mirrorOf": "back_l/Sword"
+        },
+        "isolatedClusterInF01ToF10": 0
+      },
+      "notClaimed": "No claim about how the highlight reads at playback speed. T1 identifies the source of the pixels; it does not judge them."
+    },
+    "T2": {
+      "title": "front_l/Sword axilla repair",
+      "mode": "AUTHORED_IN_ASEPRITE",
+      "cell": "front_l/Sword",
+      "framesChanged": [
+        3,
+        4
+      ],
+      "pixelsChanged": 19,
+      "pixelsChangedPerFrame": {
+        "3": 9,
+        "4": 10
+      },
+      "layerTouched": "body (and the derived composite/native masters)",
+      "rule": "Restore the native colour each repainted pixel held in the non-escalated V6 clip; where that would leave 3+ consecutive identical colours on the new medial edge, take the value the adjacent column (x+1) held on the same row. No colour invented, no pixel filled, no pose or timing change.",
+      "defectsFixed": [
+        "D1 flat rgb(12,15,18) ink plate on x=147 y117..122 in F03 and F04 (+(148,116) both, +(149,115) F04)",
+        "D2 retrograde step at y=123 (left boundary 147 -> 148 -> 147)",
+        "D3 orphan rgb(95,96,99) at (149,122) in F03 with zero opaque neighbours",
+        "D4 comb-tooth island rgb(77,79,82) at (152,115) in F04 between the 2 px pinhole and the main opening"
+      ],
+      "ruledOut": [
+        "The light column x=147 y127..133 is identical in the non-escalated clip: a pre-existing rim, not a V6 artifact.",
+        "The 5 px apex at F03 y116 is consistent with its neighbours (F04 y114 is also 5 px)."
+      ],
+      "measurements": {
+        "bodyRgbaDeltaFrame3": {
+          "before": 30,
+          "after": 27
+        },
+        "bodyRgbaDeltaFrame4": {
+          "before": 28,
+          "after": 24
+        },
+        "byteIdenticalFilesOutsidePatch": 84,
+        "onlyDeclaredPixelsChanged": true,
+        "undeclaredPixels": [],
+        "weaponAndHandLayersIdentical": true,
+        "weaponExportsByteIdentical": "39/39 (weaponBack + weaponFront + handFront over 13 frames)",
+        "monotoneLeftBoundary": true,
+        "danglingPixels": 0,
+        "leftBoundaryF03": [
+          148,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          146
+        ],
+        "leftBoundaryF04": [
+          154,
+          149,
+          148,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          147,
+          146
+        ],
+        "timingChanged": false,
+        "poseChanged": false
+      },
+      "authoring": {
+        "editor": "Aseprite 1.3.18.6 --batch --noinapp",
+        "profile": "tmp/aseprite-v7-econ-profile (isolated)",
+        "script": "experiments/main-orc-combat-recovery-v7/scripts/author-frontl-sword-v7.lua",
+        "scriptOutput": "APPLIED 57 EDITS (19 declared pixels x 3 masters)",
+        "authoredProgrammatically": true,
+        "visualLimitation": "DEV worked without image perception; the repair is derived from measured native pixel values, not from sight."
+      }
+    },
+    "T3": {
+      "title": "Light-contour search in the four frontal clips",
+      "mode": "MEASUREMENT_ONLY",
+      "artChanged": false,
+      "pixelsChanged": 0,
+      "verdict": "NO CONFIRMED ARTIFACT",
+      "operatingThreshold": 145.0,
+      "thresholdRationale": "L >= 145 is the highest value that still includes the body rim family rgb(147,148,149) (L=147.9) while separating the metal bands (153.9, 177.7). The palette maximum is only L=177.72, so an 'L >= 200 white' rule would match nothing.",
+      "clips": {
+        "front_l/Sword": {
+          "bodyBoundaryLight": 9,
+          "weaponBoundaryLight": 16,
+          "smallLightOnBoundary": 16,
+          "insetLightLine": 282,
+          "spike": 115
+        },
+        "front_l/Axe": {
+          "bodyBoundaryLight": 5,
+          "weaponBoundaryLight": 23,
+          "smallLightOnBoundary": 22,
+          "insetLightLine": 34,
+          "spike": 135
+        },
+        "front_r/Axe": {
+          "bodyBoundaryLight": 0,
+          "weaponBoundaryLight": 23,
+          "smallLightOnBoundary": 17,
+          "insetLightLine": 34,
+          "spike": 135
+        },
+        "front_r/Sword": {
+          "bodyBoundaryLight": 0,
+          "weaponBoundaryLight": 16,
+          "smallLightOnBoundary": 7,
+          "insetLightLine": 282,
+          "spike": 118
+        }
+      },
+      "controlEvidence": {
+        "boundaryCensusV5VsV7": "Identical at T=145 on every frame of all four clips; the only difference anywhere is front_l/Sword F03 at T=120, where V7 has 2 FEWER light boundary pixels (the T2 erasure).",
+        "weaponLayersV5VsV7": "0 px changed on every frame of every frontal clip",
+        "bodyRimTuplesV5VsV7": {
+          "front_l-Sword-full": {
+            "v5": 9,
+            "v7": 9,
+            "common": 9,
+            "onlyV5": 0,
+            "onlyV7": 0
+          },
+          "front_l-Axe-full": {
+            "v5": 5,
+            "v7": 5,
+            "common": 5,
+            "onlyV5": 0,
+            "onlyV7": 0
+          },
+          "front_r-Axe-full": {
+            "v5": 0,
+            "v7": 0,
+            "common": 0,
+            "onlyV5": 0,
+            "onlyV7": 0
+          },
+          "full-front-r-sword": {
+            "v5": 0,
+            "v7": 0,
+            "common": 0,
+            "onlyV5": 0,
+            "onlyV7": 0
+          }
+        }
+      },
+      "whyEachClassIsLegitimate": {
+        "bodyBoundaryLight": "All 14 body instances are rgb(147,148,149) sitting at the top of a continuous 5-step ramp (148 -> 140 -> 108 -> 91 -> 74 -> 57), appear only on the lit-facing left views, and all 14 predate V6 at the same coordinate.",
+        "weaponBoundaryLight": "Weapon layers are byte-identical V5 vs V7; edge lighting of a metal band, run 1-2 px.",
+        "insetLightLine": "281/282 and 33/34 are weaponFront blade/axe-head shading lines, run 3-19 px.",
+        "spike": "Body ink contour rgb(6,6,8)/rgb(0,0,1)/rgb(2,2,3); F00/F01 counts identical in all four clips."
+      },
+      "report": "experiments/main-orc-combat-recovery-v7/frontal/light-contours.md",
+      "notRuledOut": [
+        "A light contour that is continuous with a legitimate rim and stayed below T=145.",
+        "Perceived flicker at playback speed (per-frame tables show no isolated single-frame spike, but that is a proxy).",
+        "Hue/saturation artifacts at identical lightness (all reported classes were additionally matched by exact RGBA against the palette ladder)."
+      ]
+    }
+  },
+  "cells": [
+    {
+      "cell": "front_l/Sword",
+      "clipDir": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full",
+      "baselineDir": "characters/orc-v1/source/artistic-reconstruction-v6/frontal-escalated/front_l-Sword-full",
+      "clipId": "basic.sword-slash",
+      "category": "Sword",
+      "direction": "front_l",
+      "frameCount": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "visibilityPolicy": "attack-only-v1",
+      "visibleInterval": [
+        2,
+        10
+      ],
+      "state": "CHANGED",
+      "byteIdentity": {
+        "baselineFiles": 98,
+        "candidateFiles": 98,
+        "byteIdentical": 84,
+        "changed": 14,
+        "onlyInBaseline": [],
+        "onlyInCandidate": []
+      },
+      "hashes": {
+        "clipJson": "41c770a6fc6bf501bb4aa1bc5d193148858471a379f34bff4cf6b83e2ea677d2",
+        "masterComposite": "eacd51add651c085a6fc6b8a97b0be498537516554c096d348620115f2338587",
+        "bodyMaster": "68fbf09554947c151e22c150e3312ffee6bd457076a1890408885b9e6784f3f5",
+        "nativeMaster": "78a7b6366058244c6e169fe87a6592576f2cab743d614173749a79c3a65d4fa6",
+        "handMaster": "ef3b39734317c7e60fea6be473486efbb366f613061af8f8c4039d20c71815df",
+        "nativeStrip": "3c3aa126759315050aa6473d2c0e9d2904bc1be2a1c1905118df63f04906c1f5",
+        "compositeStrip": "43e01b8b3b15cb2ea49f21c00bdf094360440e91afbbca4618be3d1f75354ebe"
+      },
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "artisticApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "eligibleForIntegration": false,
+      "newPixelLabCalls": 0,
+      "costUsd": 0.0,
+      "framesChanged": [
+        3,
+        4
+      ],
+      "pixelsChanged": 19,
+      "pixelsChangedPerFrame": {
+        "3": 9,
+        "4": 10
+      },
+      "changedFiles": [
+        "03.png",
+        "04.png",
+        "clip.json",
+        "composite-strip.png",
+        "frames/03.png",
+        "frames/04.png",
+        "layers/body/03.png",
+        "layers/body/04.png",
+        "native-strip.png",
+        "native/03.png",
+        "native/04.png",
+        "source/body.aseprite",
+        "source/composite.aseprite",
+        "source/native.aseprite"
+      ],
+      "defects": [
+        "D1 flat ink plate: x=147 y117..122 held one single colour rgb(12,15,18) in both frames (plus (148,116) in both and (149,115) in F04); every untouched contour pixel in the same frames varies between 0,0,1 / 2,2,3 / 6,6,8 / 20,20,26 / 27,28,34",
+        "D2 retrograde step at y=123: left boundary width sequence was 147,147,...,147 (y117..y122), 148 (y123), 147 (y124) in both frames - the opening narrowed by 1 px then widened again",
+        "D3 detached pixel (149,122) rgb(95,96,99) with zero opaque 8-neighbours in F03",
+        "D4 comb tooth (152,115) rgb(77,79,82) in F04: a 1 px island between the 2 px pinhole (150..151) created by V6 and the main opening (153..162); only its top edge touched the body"
+      ],
+      "rule": "Restore the native colour each repainted pixel held in the non-escalated V6 clip; where that would leave 3+ consecutive identical colours on the new medial edge, take the value the adjacent column (x+1) held on the same row. No colour is invented and no pixel is filled.",
+      "residualRisk": "The medial edge of the opening still runs at x=147 for nine consecutive rows (y117..y125). Vertical runs of that length also exist in the untouched frames (F05 x=146 y123..129), so this was treated as the V6 author's opening choice and not re-cut. Only the colour plate, the notch and the detached pixels were repaired.",
+      "bodyRgbaDelta": {
+        "frame3": "30 -> 27",
+        "frame4": "28 -> 24"
+      }
+    },
+    {
+      "cell": "front_l/Axe",
+      "clipDir": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Axe-full",
+      "baselineDir": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full",
+      "clipId": "basic.axe-chop",
+      "category": "Axe",
+      "direction": "front_l",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "visibilityPolicy": "attack-only-v1",
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "state": "VERIFIED_UNCHANGED",
+      "byteIdentity": {
+        "baselineFiles": 79,
+        "candidateFiles": 79,
+        "byteIdentical": 79,
+        "changed": 0,
+        "onlyInBaseline": [],
+        "onlyInCandidate": []
+      },
+      "hashes": {
+        "clipJson": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+        "masterComposite": "acb4c5a170b88b3a9d33ad3618a9e4e3939c4c30b2dec7cda7a529747f9bbe6f",
+        "bodyMaster": "4a39e5bea32cb7b94681aadc1d19fc15693adef86ca1222a9ee1c7eaa42ce3f0",
+        "nativeMaster": "6eab4c84edcf2855d6e9270786fbf66286394f121fe1259597bf400388ee5fd0",
+        "handMaster": "8413a438e0db29f486b8b1095fad62aa68c70741c551e6ac7bb162c36c874956",
+        "nativeStrip": "e42685f300a6cf2b5f5b63f0b894cd21862fbcbddfc71531e48a66afe158fffb",
+        "compositeStrip": "0f3771125683e9029e0a4c8fd7b7620b8351eeb2b1b195c23c0ac997fc812bc8"
+      },
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "artisticApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "eligibleForIntegration": false,
+      "newPixelLabCalls": 0,
+      "costUsd": 0.0,
+      "note": "Byte-identical copy of the V6 frontal source, kept as a measurement carrier so the four frontal cells can be reviewed together. Its clip.json is the unmodified V6 file, which stays valid because every PNG is identical."
+    },
+    {
+      "cell": "front_r/Axe",
+      "clipDir": "characters/orc-v1/source/combat-recovery-v7/frontal/front_r-Axe-full",
+      "baselineDir": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full",
+      "clipId": "basic.axe-chop",
+      "category": "Axe",
+      "direction": "front_r",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "visibilityPolicy": "attack-only-v1",
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "state": "VERIFIED_UNCHANGED",
+      "byteIdentity": {
+        "baselineFiles": 79,
+        "candidateFiles": 79,
+        "byteIdentical": 79,
+        "changed": 0,
+        "onlyInBaseline": [],
+        "onlyInCandidate": []
+      },
+      "hashes": {
+        "clipJson": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+        "masterComposite": "f98b594602737fa47a7683fba5d050d7bc0647e82ee28550a1bb7d59b2e8b8ae",
+        "bodyMaster": "9f7e750a82b83b626d61a44d1d38c4beb6d0cd82d829dfa27a0705e4d62111a4",
+        "nativeMaster": "0d58600371c35b4ef60a58c003e3484fe8465cf291fe582258a40db25905fbab",
+        "handMaster": "4cc7675331ac2a965c931cacdf11b11a22cb022d480faa1b450a087cd959ac0d",
+        "nativeStrip": "ace3c425b187d0bc65e0da5b6fb34f27b3de11cc7562b67e1f12b8c047d30cd1",
+        "compositeStrip": "97583eede6b43ab229481340b1fab2ea56742e1e910b2219ea3cac7a413dbb80"
+      },
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "artisticApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "eligibleForIntegration": false,
+      "newPixelLabCalls": 0,
+      "costUsd": 0.0,
+      "note": "Byte-identical copy of the V6 frontal source, kept as a measurement carrier so the four frontal cells can be reviewed together. Its clip.json is the unmodified V6 file, which stays valid because every PNG is identical."
+    },
+    {
+      "cell": "front_r/Sword",
+      "clipDir": "characters/orc-v1/source/combat-recovery-v7/frontal/full-front-r-sword",
+      "baselineDir": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword",
+      "clipId": "basic.sword-slash",
+      "category": "Sword",
+      "direction": "front_r",
+      "frameCount": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeGroundY": 126,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "visibilityPolicy": "attack-only-v1",
+      "visibleInterval": [
+        2,
+        10
+      ],
+      "state": "VERIFIED_UNCHANGED",
+      "byteIdentity": {
+        "baselineFiles": 85,
+        "candidateFiles": 85,
+        "byteIdentical": 85,
+        "changed": 0,
+        "onlyInBaseline": [],
+        "onlyInCandidate": []
+      },
+      "hashes": {
+        "clipJson": "6809bfaaab103156f9a5bf4009e80e2c0f84df7f175a0430ab794f654c12d791",
+        "masterComposite": "e69cbcfb320e5f1a2ab9e7f07027f71a2d92f5c5383bcaad9e6f44854ac78431",
+        "bodyMaster": "27c403813274d57165cb8d0a031f9bd48fc9c219cf7c80d2c8f9ddeee5dcc645",
+        "nativeMaster": "ee2da3c214ab768773f481dc5265753353ec72f7b6373179e269587c758c9072",
+        "handMaster": "d2c6a911295e08ac057ae81c79ec77d3fcad23cee0d1c769e28c147d165a4fce",
+        "nativeStrip": "f9bcdf2b7d2c0d21ec8d4f3e7fffe9ef8ffc291de833ee2b4b7a0683142fc4a0",
+        "compositeStrip": "1409049701dbbdaac613b490f3ccdafd949c632ad330536d9e6bae388705a91f"
+      },
+      "technicalStatus": "TECHNICALLY_COMPLETE",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+      "artisticApproval": "PENDING_CREATOR",
+      "runtimeImplemented": false,
+      "eligibleForIntegration": false,
+      "newPixelLabCalls": 0,
+      "costUsd": 0.0,
+      "note": "Byte-identical copy of the V6 frontal source, kept as a measurement carrier so the four frontal cells can be reviewed together. Its clip.json is the unmodified V6 file, which stays valid because every PNG is identical."
+    }
+  ],
+  "deliverables": {
+    "taskText": {
+      "path": "experiments/main-orc-combat-recovery-v7/econ-dev-prompt.txt",
+      "sha256": "eb163eec201814cf2e4be5af7b9abfaec0489fe3aa9f4888e627a72d2b063a40",
+      "exists": true
+    },
+    "forensicsReport": {
+      "path": "experiments/main-orc-combat-recovery-v7/forensics/white-flash.md",
+      "sha256": "5ac4c05a6909df0038d25c1c7272a67e026344f95aa7396e1643a10840fef1c1",
+      "exists": true
+    },
+    "forensicsData": {
+      "path": "experiments/main-orc-combat-recovery-v7/forensics/white-flash.json",
+      "sha256": "f30aea89e262ad30f54eede7b412f43e59df2284948023d31008f18caa275c0d",
+      "exists": true
+    },
+    "lightContoursReport": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/light-contours.md",
+      "sha256": "a932e7257425c1923966aa23fff4a8fd2a117bc87e0d24aa42feeefde6101b21",
+      "exists": true
+    },
+    "lightContoursData": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/detect/body-rim-census.json",
+      "sha256": "68ac603bb016ee359232b4435776270f97060e32c7bd479245324df5574ee255",
+      "exists": true
+    },
+    "lightContoursV5Control": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/detect/body-rim-v5-control.json",
+      "sha256": "45fc216a23702d2fa41b5639b3a0ce86fccdf507a2125d8e907f5e5717accee2",
+      "exists": true
+    },
+    "boundaryCensusV5VsV7": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/detect/v5-vs-v7-boundary.json",
+      "sha256": "e0c2b44d98c9482885f1fc6aae4f2f2b5358925109fa6272673cb19f79453f49",
+      "exists": true
+    },
+    "layerDiffV5VsV7": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/detect/v5-vs-v7-layers.json",
+      "sha256": "a63b1c9a9bc5be9dab9f9d0769615d55fb2b1f26c83bcbbf6ef308faa2d2df51",
+      "exists": true
+    },
+    "editPlan": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/edit-plan-v7.json",
+      "sha256": "935e9a25416d3d72bda4c49b99547fb658f1120f7e692dcab7ba5f5bcac1c8ef",
+      "exists": true
+    },
+    "editTable": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/edit-table-v7.json",
+      "sha256": "ebf01c4b00d64373242120a1de58146ebd1b9fc19bae81381b31417e79475dd7",
+      "exists": true
+    },
+    "verification": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/verification-v7.json",
+      "sha256": "a9e13af9797a399207435408241a7696ec0a1790c3f5199019c43d7d702e1157",
+      "exists": true
+    },
+    "reviewSurface": {
+      "path": "experiments/main-orc-combat-recovery-v7/frontal/review.html",
+      "sha256": "7a3ce0c34837ab8b81420ce737970690b35e04d5c5c143fa4967ae14de9ae8fc",
+      "exists": true
+    },
+    "authorScript": {
+      "path": "experiments/main-orc-combat-recovery-v7/scripts/author-frontl-sword-v7.lua",
+      "sha256": "b4e32cfe59301c68dbb858ad01136e06a8b0085ac85a3350de534f5d126289cb",
+      "exists": true
+    },
+    "report": {
+      "path": "experiments/main-orc-combat-recovery-v7/report.md",
+      "sha256": "f8003cdf007ee20c9118677709ff0de0b23255eabef9d13ec7ada07d4eb09982",
+      "exists": true
+    }
+  },
+  "guarantees": {
+    "v5SourcesTouched": false,
+    "v6SourcesTouched": false,
+    "rearCellsTouched": false,
+    "unityFilesTouched": false,
+    "commitsCreated": 0,
+    "runtimeImplemented": false,
+    "qaPerformedHere": false,
+    "integrationPerformedHere": false
+  },
+  "stop": {
+    "checkpoint": "V7_ECON_FORENSICS_AND_FRONTAL_READY",
+    "nextOwner": "Orchestrator: independent QA of the front_l/Sword cell at 1x and normal playback speed, then creator review. Nothing here is approved."
+  }
+}

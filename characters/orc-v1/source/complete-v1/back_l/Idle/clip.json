@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "idle-balanced-v1",
+  "character": "orc-v1",
+  "state": "Idle",
+  "legacySlotState": "Idle",
+  "direction": "back_l",
+  "loop": true,
+  "oneShot": false,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    400,
+    450,
+    500,
+    450,
+    400
+  ],
+  "totalDurationMs": 2200,
+  "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/idle-unarmed.aseprite",
+  "masterSha256": "6e6c9fddd95387973bf6e587a05ee2ff0f42a6a31dd968ed2b38e050af66e172",
+  "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/idle-back_l.aseprite",
+  "nativeMasterSha256": "f5a3032c6c13ef69505bad9d630d44422a54c006a7d57262e7fd404f7b0ed45b",
+  "strip": "characters/orc-v1/source/complete-v1/back_l/Idle/native-strip.png",
+  "stripSha256": "99fef0b03e0c2bebf3b0b0f5ddf2161ce5501c7b06ea26a1fb602f7af970e4f4",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": null,
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Idle/00.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "nativePng": "characters/orc-v1/sprites/Animations/Idle/idle_back_l_00.png",
+      "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+      "durationMs": 400,
+      "phase": "rest-0",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Idle/01.png",
+      "sha256": "2d16e7bd8ae2fd79925c1f714d55475478b1ef4c95bdbf0d8767fea09a76170c",
+      "nativePng": "characters/orc-v1/sprites/Animations/Idle/idle_back_l_01.png",
+      "nativeSha256": "3b77cb36c07e0ddbcab210bc29ef4489f50ef9258854c1abefbfee8c000820f3",
+      "durationMs": 450,
+      "phase": "inhale-1",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Idle/02.png",
+      "sha256": "89c420e98a78cbbdd4fbd8f1bbaa2d1f1343349d5ef61de925698447173d5396",
+      "nativePng": "characters/orc-v1/sprites/Animations/Idle/idle_back_l_02.png",
+      "nativeSha256": "6fa12e7952dc4d08138c7b68556af54dea2fdfa448c9d98cca9979f7b4ebd882",
+      "durationMs": 500,
+      "phase": "peak-2",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Idle/03.png",
+      "sha256": "2d16e7bd8ae2fd79925c1f714d55475478b1ef4c95bdbf0d8767fea09a76170c",
+      "nativePng": "characters/orc-v1/sprites/Animations/Idle/idle_back_l_03.png",
+      "nativeSha256": "3b77cb36c07e0ddbcab210bc29ef4489f50ef9258854c1abefbfee8c000820f3",
+      "durationMs": 450,
+      "phase": "exhale-3",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Idle/04.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "nativePng": "characters/orc-v1/sprites/Animations/Idle/idle_back_l_04.png",
+      "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+      "durationMs": 400,
+      "phase": "rest-4",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

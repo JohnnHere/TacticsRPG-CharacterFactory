@@ -1,0 +1,230 @@
+{
+  "timestamp": "2026-10-27T05:05:57.380Z",
+  "validator": "experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.mjs",
+  "manifestId": "orc-v1.rear-recovery-v2.candidate28",
+  "mode": "FINAL",
+  "summary": {
+    "totalClips": 28,
+    "activeCandidatesCount": 12,
+    "inRevisionCount": 0,
+    "unchangedAliasesCount": 16,
+    "inProductionCount": 0,
+    "affectedCount": 12,
+    "testPass": 338,
+    "testFail": 0,
+    "complete": true
+  },
+  "governance": {
+    "artisticApproval": "PENDING_CREATOR",
+    "runtimeImplemented": false,
+    "noOpaqueGripProofOfArt": true,
+    "reexportVerificationNote": "Official Aseprite re-export validation is separately covered by ART exporter verification (dist/editor/main-orc-rear-recovery-v2-representative-export/)"
+  },
+  "failures": [],
+  "cells": [
+    {
+      "cellId": "front_r/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Walk",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Sword",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Axe",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Walk",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Sword",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Axe",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Idle",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Hit",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Defeat",
+      "status": "UNCHANGED_ALIAS",
+      "reviewStatus": "PROTECTED_BASELINE_CANONICAL",
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "PASS_FOR_INTERNAL_INTEGRATION",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 450,
+      "valid": true
+    },
+    {
+      "cellId": "front_r/Defeat",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ACTIVE_CANDIDATE",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 700,
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "PASS_FOR_INTERNAL_INTEGRATION",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 450,
+      "valid": true
+    },
+    {
+      "cellId": "front_l/Defeat",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ACTIVE_CANDIDATE",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 700,
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Walk",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ROOT_PASSED_FOR_INTERNAL_EXPANSION",
+      "isArmed": false,
+      "frameCount": 8,
+      "totalDurationMs": 1280,
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ACTIVE_CANDIDATE",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 450,
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "PASS_FOR_INTERNAL_EXPANSION",
+      "isArmed": true,
+      "frameCount": 8,
+      "totalDurationMs": 730,
+      "valid": true
+    },
+    {
+      "cellId": "back_r/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "VISUAL_REVIEW_REQUIRED",
+      "isArmed": true,
+      "frameCount": 8,
+      "totalDurationMs": 730,
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Walk",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ROOT_PASSED_FOR_INTERNAL_EXPANSION",
+      "isArmed": false,
+      "frameCount": 8,
+      "totalDurationMs": 1280,
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Unarmed",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "ACTIVE_CANDIDATE",
+      "isArmed": false,
+      "frameCount": 5,
+      "totalDurationMs": 450,
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Sword",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "VISUAL_REVIEW_REQUIRED",
+      "isArmed": true,
+      "frameCount": 8,
+      "totalDurationMs": 730,
+      "valid": true
+    },
+    {
+      "cellId": "back_l/Axe",
+      "status": "ACTIVE_CANDIDATE",
+      "reviewStatus": "VISUAL_REVIEW_REQUIRED",
+      "isArmed": true,
+      "frameCount": 8,
+      "totalDurationMs": 730,
+      "valid": true
+    }
+  ]
+}

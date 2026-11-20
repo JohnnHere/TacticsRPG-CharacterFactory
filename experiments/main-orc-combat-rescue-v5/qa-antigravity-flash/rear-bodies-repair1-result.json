@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T16:51:30Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "model": "Gemini 3.8 Flash (High) via Antigravity",
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false,
+    "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/"
+  },
+  "overallVerdict": "REVISIONS_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "runtimeImplemented": false,
+  "integrationAllowed": false,
+  "automaticPropagationAllowed": false,
+  "escalationRequired": true,
+  "escalationReason": "Second consecutive rejection of DEFECT-REAR-02 on back_l-Axe-full by the same body specialist session (3c2b5bd7). Weapon haft/wooden beam remains embedded across the right shoulder in F02.",
+  "scope": {
+    "description": "Evaluation of repair1 for 3 complete rear unarmed body cycles (Orc V1): back_r/Sword, back_l/Sword, back_l/Axe",
+    "producerCheckpoint": "BODY_THREE_REPAIR1_READY",
+    "producerSession": "3c2b5bd7",
+    "clipsInspected": [
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Sword-full/clip.json",
+        "sha256": "74da046b19f98297410327063db70b5a8dad644fea9a53f0f4f5f589fcb5ab32"
+      },
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/clip.json",
+        "sha256": "e022c53bf240ad312aff191eb95a8371522f15e422af10bac0f2115238b768a1"
+      },
+      {
+        "clip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/clip.json",
+        "sha256": "d0bf1f8be1f7d8f33e15ffa1564f370fd92a02d0d9e42c25ed59cc42daa9f702"
+      }
+    ]
+  },
+  "temporalPerception": {
+    "continuous1xVisuallyObserved": false,
+    "discreteFrameByFrameViewed": true,
+    "native128Observed": true,
+    "tactical64Observed": true,
+    "diagnosticZoomObserved": true,
+    "sideBySideDiffObserved": true,
+    "notes": "Direct visual inspection executed via multimodal image decoding on side-by-side before/after comparisons, native strips, composite strips, and all individual frames. Continuous 1x playback in engine/browser was not observed in live motion; frame-by-frame static audit performed on all 36 frames."
+  },
+  "packageVerdicts": {
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Sword-full/clip.json": {
+      "cycleName": "back_l-Sword-full",
+      "direction": "back_l",
+      "category": "Sword",
+      "frameCount": 12,
+      "totalDurationMs": 730,
+      "verdict": "READY_FOR_REAR_GRIPS",
+      "clipSha256": "74da046b19f98297410327063db70b5a8dad644fea9a53f0f4f5f589fcb5ab32",
+      "defectResolved": "DEFECT-REAR-03 (Hook 7px in F05)",
+      "defectResolutionConfirmed": true,
+      "evidence": "Coordinates x:94..98, y:28..33 are 100% transparent (0 hook pixels remaining); authentic pauldron ridge at y=34 intact; no holes or regressions.",
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0,
+        "layersOffClean": true
+      },
+      "findings": []
+    },
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/clip.json": {
+      "cycleName": "back_r-Sword-full",
+      "direction": "back_r",
+      "category": "Sword",
+      "frameCount": 12,
+      "totalDurationMs": 730,
+      "verdict": "REVISIONS_REQUIRED",
+      "clipSha256": "e022c53bf240ad312aff191eb95a8371522f15e422af10bac0f2115238b768a1",
+      "defectResolved": "DEFECT-REAR-01 (Swoosh 272px in F06)",
+      "defectResolutionConfirmed": false,
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0
+      },
+      "findings": [
+        {
+          "id": "DEFECT-REAR-01-RESIDUAL-A",
+          "severity": "MEDIUM",
+          "frame": "F06 (native/06.png / body256/06.png)",
+          "symptom": "Five isolated floating pixels in empty air to the right of the right hand.",
+          "evidence": "Coordinates (112,64), (110,69), (109,70), (108,71), (107,72) contain detached grey pixels (rgba 134..151) floating 2-7 pixels away from the body outline, remnants of the uncleaned swoosh tip.",
+          "cause": "Incomplete clearing of the outer swoosh boundary in Lua batch script.",
+          "impact": "Visual floating speck artifact visible against transparent background.",
+          "safeSuggestion": "Set the 5 detached pixels at (112,64) and (107..110, 69..72) to rgba(0,0,0,0) in Aseprite."
+        },
+        {
+          "id": "DEFECT-REAR-01-RESIDUAL-B",
+          "severity": "LOW",
+          "frame": "F06 (native/06.png / body256/06.png)",
+          "symptom": "Material mismatch in infill across central skirt.",
+          "evidence": "In y:88..94, x:45..55, the swoosh infill was filled with burgundy red tunic color (#592d2b / #34181e) cutting diagonally across the chainmail skirt, whereas F05 and F07 have steel chainmail texture (#413f4c / #1f1c24).",
+          "cause": "Tunic color flood applied across chainmail region during material reconstruction.",
+          "impact": "1-frame material jump across chainmail skirt.",
+          "safeSuggestion": "Recolor the infill at y:88..94, x:45..55 to match the steel chainmail greys of F05/F07."
+        }
+      ]
+    },
+    "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/repair1/back_l-Axe-full/clip.json": {
+      "cycleName": "back_l-Axe-full",
+      "direction": "back_l",
+      "category": "Axe",
+      "frameCount": 12,
+      "totalDurationMs": 1100,
+      "verdict": "REVISIONS_REQUIRED",
+      "clipSha256": "d0bf1f8be1f7d8f33e15ffa1564f370fd92a02d0d9e42c25ed59cc42daa9f702",
+      "defectResolved": "DEFECT-REAR-02 (Axe and haft in F02)",
+      "defectResolutionConfirmed": false,
+      "secondRejection": true,
+      "keyPreservation": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "halos": 0
+      },
+      "findings": [
+        {
+          "id": "DEFECT-REAR-02-PERSISTENT",
+          "severity": "HIGH",
+          "frame": "F02 (native/02.png / body256/02.png)",
+          "symptom": "Wooden weapon haft and severed wooden block/stub persist resting horizontally across the right shoulder and neck.",
+          "evidence": "While the iron blade was erased, the horizontal wooden shaft resting across the trapezius remains, terminating in a brown rectangular wooden block at x:83..92, y:15..20 and a vertical black peg at x:70, y:14..18. The right arm does not represent a clenched fist rising naturally between F01 (hand at hip) and F03 (hoist with raised fist), but a horizontal beam resting on the neck.",
+          "cause": "Developer truncated only the metallic axe blade and colored the end of the shaft brown, failing to remove the weapon haft and failing to reconstruct a natural anatomical arm/glove transition.",
+          "impact": "Direct persistence of layers-off violation and severe kinematic break. When independent rear axe equipment is attached, the horizontal shaft will duplicate/collide.",
+          "safeSuggestion": "Requires genuine anatomical re-authoring of the right arm/glove in F02 transitioning from low rest (F01) to raised hoist (F03), completely removing the horizontal shaft and shoulder block."
+        }
+      ]
+    }
+  },
+  "generationAccounting": {
+    "productionPixelLabCalls": 0,
+    "costLlm": "Custo LLM não informado",
+    "notes": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado."
+  }
+}

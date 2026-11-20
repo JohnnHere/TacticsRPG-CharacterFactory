@@ -1,0 +1,2 @@
+$env:ASEPRITE_USER_FOLDER=(Resolve-Path 'experiments\main-orc-rear-reconstruction-v4\specialist\profile').Path
+$r = Start-Process -FilePath 'F:\SteamLibrary\steamapps\common\Aseprite\Aseprite.exe' -ArgumentList '--batch','--noinapp','--script','experiments/main-orc-rear-reconstruction-v4/specialist/author-impact.lua' -NoNewWindow -Wait -PassThru -RedirectStandardOutput o.txt -RedirectStandardError e.txt; $r.ExitCode; Get-Content o.txt; Get-Content e.txt; Remove-Item o.txt,e.txt

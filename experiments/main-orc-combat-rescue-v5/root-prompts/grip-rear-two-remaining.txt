@@ -1,0 +1,30 @@
+Dois ciclos finais autorizados pelo Root. Os dois corpos traseiros restantes foram liberados pelo QA independente como `READY_FOR_REAR_GRIPS` em `experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/glm-body-fixes-result.json`. Use exatamente essas fontes, sem alterar um único pixel de corpo:
+
+1. `back_r/Sword` — corpo `characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json`, clip SHA-256 `aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88`, 12 quadros, 730 ms. Item da família SWORD (`combat/weapons/Sword/weapon.json`), corte diagonal.
+2. `back_l/Axe` — corpo `characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json`, clip SHA-256 `d87cd8331b46e48e962ac118c01b0fd10d7ad86dcd101f7bc8f3e6093f539ef2`, 12 quadros, 1100 ms. Item da família AXE (`combat/weapons/Axe/weapon.json`), golpe overhead pesado.
+
+Entregue os dois ciclos em diretórios NOVOS, no mesmo padrão que você já usou para `full-back-r-axe` e `full-back-l-sword`:
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/`
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/`
+- espelhos correspondentes em `experiments/main-orc-combat-rescue-v5/rear-grip-flash/`
+- perfil Aseprite próprio já existente (`tmp/aseprite-rear-grip-flash-profile`)
+
+Método obrigatório já aceito pelo QA neste projeto:
+- Quatro camadas `weaponBack → body → weaponFront → handFront`.
+- Luva genuína rastreada por quadro sobre a palma/pulso reais; nada de carimbo geométrico, socket fixo reaproveitado, contagem literal de dedos ou mão inventada.
+- `handFront` somente sobre pixels de luva reais, com retoques internos mínimos e contagem declarada por quadro.
+- Arma apenas dentro do intervalo do ataque; bookends totalmente transparentes e compósito byte-idêntico ao corpo.
+- Nenhum pixel de arma na camada `body`; nenhuma arma desenhada em Idle/Walk/Hit/Defeat/recuperação.
+- Mestres 256 composto / body 256 / hand 256 / nativo 128 salvos, reabertos e reexportados; Lua `Frame.duration` em SEGUNDOS; offset [64,64], ground 190, nativo 128 ground 126.
+- Clip JSON com caminhos, durações, hashes, `weapon`, `weaponDefinition`, `visibleInterval`, `provenance` e o hash do corpo pai.
+- Preview HTML com 1x/0.5x/passo/escala tática e antes/depois, além de tiras de contato.
+- Zero gerações PixelLab previstas; registre saldo real apenas se alguma chamada for genuinamente necessária.
+
+Cuidado específico por família:
+- No `back_r/Sword`, o corpo tem F06 recém-reparado (resíduos removidos e malha restaurada). Não reintroduza rastro de corte nem reaproveite artefatos de outros frames.
+- No `back_l/Axe`, F02 é o frame reautorado após duas reprovações. A mão direita agora é uma luva vazia fechada subindo entre F01 e F03: ao compor a pegada, o cabo deve entrar nessa mão existente sem alongar, deformar ou "refazer" o braço, e o antebraço não pode mudar de forma.
+- Não aplique o arco de machado ao clipe de espada nem o contrário.
+
+Não toque em `front_r/Sword`, `front_l/Sword`, `front_r/Axe`, `front_l/Axe`, nos ciclos traseiros já aprovados, na matriz de 28 células, em `docs/`, em qualquer pasta de QA ou no Unity. Não crie subagentes nem QA interno.
+
+Pare em `REAR_TWO_REMAINING_FULL_READY` com relatório, checkpoint e um patch manifest contendo as duas células (`direction`/`action`/`clipJson`/`clipSha256`). O Root enviará ao mesmo QA independente; nenhuma autoaprovação.

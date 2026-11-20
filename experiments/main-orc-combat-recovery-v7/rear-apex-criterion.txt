@@ -1,0 +1,23 @@
+# V7 back_l — critério de ápice corrigido + uma tentativa final de geração
+
+## Correção do orquestrador (minha responsabilidade)
+A REGRA 3 anterior exigia "punho acima da linha da cabeça" como passe/falha. Nesta vista 3/4 traseira, à esquerda, o punho naturalmente se sobrepõe à silhueta do crânio. Esse critério era geométrico e provavelmente inatingível nesta escala — a "falha" repetida pode ser do critério, não só do gerador. Retiro essa exigência rígida.
+
+## Critério de ápice agora válido (o que precisa ser inequívoco)
+Uma pose de ápice serve se TODOS estes forem verdadeiros:
+1. **Ponta da lâmina inequivocamente acima do crânio** (é a arma que comunica elevação, não o punho).
+2. **Punho claramente acima da linha do ombro**, podendo ficar ao lado ou atrás da cabeça, com o antebraço visível em espaço negativo.
+3. **Cotovelo com ângulo legível** e distinto do tronco.
+4. **Mão fechada distinguível** (luva com contorno próprio, não massa fundida).
+5. Nenhum membro amputado, nenhum braço duplicado.
+
+## Uma última tentativa de geração — orçamento 3 gerações
+Um único job com **3 poses** (ápice, meio da descida, impacto), 256 se possível, exigindo no esqueleto/descrição (sem nomear arma):
+- braço elevado e **afastado da cabeça** no ápice (não encostado), com espaço negativo entre braço e crânio;
+- antebraço visível como volume distinto;
+- no impacto, punho à frente e abaixo do ombro, cadeia antebraço–palma legível.
+
+Se essa tentativa não entregar as 5 condições, **pare**: não gaste mais nenhuma geração. Registre a falha com medição e siga para o relatório final do degrau gerativo, recomendando explicitamente o caminho de reconstrução manual (você já recomendou isso e o orquestrador aceitou como hipótese concorrente).
+
+## O que fazer com a hipótese de braço manual
+A outra sessão está autorando manualmente a pose de ápice no Aseprite, a partir de partes da mesma vista. Não duplique esse trabalho. Sua tarefa após esta tentativa, se falhar, é apenas medir e reportar — quem entregar a pose vencedora define o pipeline.

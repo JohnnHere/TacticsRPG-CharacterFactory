@@ -1,0 +1,31 @@
+from pathlib import Path
+import json,os
+E=Path('experiments/main-orc-combat-rescue-v5/grip-specialist/F02-F08');C=Path('characters/orc-v1/source/combat-rescue-v5/grip-specialist')
+parent=json.loads(Path('characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json').read_text())
+def rel(p):return os.path.relpath(p,E).replace('\\','/')
+data={}
+for i in [2,8]:
+ key=f'F{i:02}';out=C/key
+ data[key]={'bodyOnly':rel(out/'layers/body.png'),'before':rel(parent['frames'][i]['png']),**{n:rel(out/'layers'/(n+'.png'))for n in ['weaponBack','body','weaponFront','handFront']}}
+html='''<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orc V1 — grips F02 e F08</title>
+<style>body{margin:24px;background:#171a20;color:#e8ebf1;font:15px system-ui}h1{font-size:22px}h2{font-size:19px}h3{font-size:15px}p{max-width:1100px;line-height:1.5}a{color:#a5d9ff}label{margin-right:18px}select,button{font:inherit;background:#323945;color:inherit;padding:6px;border:1px solid #6b7587}.row{display:flex;gap:16px;flex-wrap:wrap}.panel{padding:12px;background:#262b34;border:1px solid #596172}canvas{background:#2b2c31;image-rendering:pixelated;display:block}.comparison{max-width:100%;image-rendering:pixelated}#status{color:#d9c27a}</style>
+<h1>Orc V1 · Espada frontal · F02 e F08</h1><p><b>GRIP_F02_F08_READY · VISUAL_REVIEW_REQUIRED · PENDING_CREATOR.</b> Dois representantes parados, aguardando QA GLM5.3/Cline organizado pelo Root. F06 preservado. Não é o ciclo completo nem a entrega dos oito grips.</p>
+<p>Escala: <select id="scale"><option value="1">Canvas256 / corpo128px</option><option value="0.5">Canvas128 / corpo64px</option><option value="2">Canvas512 / corpo256px</option></select></p>
+<p><label><input type="checkbox" data-layer="weaponBack" checked>weaponBack</label><label><input type="checkbox" data-layer="body" checked>body</label><label><input type="checkbox" data-layer="weaponFront" checked>weaponFront</label><label><input type="checkbox" data-layer="handFront" checked>handFront</label><button id="restore">Restaurar</button></p>
+<p id="status">Carregando arquivos reais…</p>
+'''
+for key,duration in [('F02',35),('F08',100)]:
+ html+=f'<section><h2>{key} · origem {duration}ms</h2><div class="row">'
+ for panel,title in [('bodyOnly','Corpo real sem arma'),('before','Passe rejeitado qa5-repair1'),('after','Proposta especialista')]:html+=f'<div class="panel"><h3>{title}</h3><canvas id="{key}-{panel}" width="256" height="256"></canvas></div>'
+ html+=f'</div><p><a href="{key}-anatomy-annotated.png">Anatomia anotada</a> · <a href="{key}-before-after.png">Comparação e detalhe8×</a> · <a href="{rel(C/key/"representative.json")}">representative.json / hashes</a></p>'
+ if key=='F08':html+='<p>F08: a espada ultrapassa o canvas corporal128. O composto completo usa256; o corpo nativo128 está íntegro. Nenhuma espada foi cortada ou encolhida para caber.</p>'
+ html+=f'<details><summary>Mostrar prancha de {key}</summary><img class="comparison" src="{key}-before-after.png" alt="Comparação {key}"></details></section>'
+html+='''<p><a href="report.md">Relatório</a> · <a href="checks.json">Verificação técnica focada</a> · <a href="checkpoint.json">Checkpoint</a></p><script>
+const paths=DATA;const images={};window.previewReady=false;
+function context(id){const x=document.getElementById(id).getContext('2d');x.imageSmoothingEnabled=false;return x}
+function render(){for(const key of ['F02','F08']){const x=context(key+'-after');x.clearRect(0,0,256,256);for(const n of ['weaponBack','body','weaponFront','handFront'])if(document.querySelector('[data-layer="'+n+'"]').checked)x.drawImage(images[key][n],0,0)}}
+Promise.all(Object.entries(paths).flatMap(([key,items])=>Object.entries(items).map(([name,path])=>new Promise((resolve,reject)=>{const im=new Image;im.onload=()=>{(images[key]??={})[name]=im;resolve()};im.onerror=()=>reject(new Error(path));im.src=path})))).then(()=>{for(const key of ['F02','F08']){context(key+'-bodyOnly').drawImage(images[key].bodyOnly,0,0);context(key+'-before').drawImage(images[key].before,0,0)}render();window.previewReady=true;document.getElementById('status').textContent='Todos os arquivos carregados. Somente dois quadros reais; sem interpolação nem simulação de movimento.'}).catch(e=>document.getElementById('status').textContent=e.message);
+document.querySelectorAll('[data-layer]').forEach(e=>e.onchange=render);document.getElementById('restore').onclick=()=>{document.querySelectorAll('[data-layer]').forEach(e=>e.checked=true);render()};document.getElementById('scale').onchange=e=>document.querySelectorAll('canvas').forEach(c=>{c.style.width=256*Number(e.target.value)+'px';c.style.height=256*Number(e.target.value)+'px'});
+</script></html>'''.replace('DATA',json.dumps(data))
+(E/'index.html').write_text(html,encoding='utf-8')
+print('Scoped two-representative preview built; original F06 preview untouched.')

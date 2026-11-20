@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-recovery-v8-rear-arc",
+  "checkpoint": "V8_REAR_ARC_LOCAL_CANDIDATE",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Sword",
+  "state": "Attack",
+  "frameCount": 14,
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    35,
+    30,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "oneShot": true,
+  "loop": false,
+  "runtimeImplemented": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "sourceParentClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+  "sourceParentClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+  "frontalTimingReference": {
+    "front_r": {
+      "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/full-front-r-sword/clip.json",
+      "sha256": "6809bfaaab103156f9a5bf4009e80e2c0f84df7f175a0430ab794f654c12d791",
+      "legacyContactEvent": {
+        "frame": 6,
+        "timeMs": 290,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      }
+    },
+    "front_l": {
+      "clip": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/clip.json",
+      "sha256": "41c770a6fc6bf501bb4aa1bc5d193148858471a379f34bff4cf6b83e2ea677d2",
+      "legacyContactEvent": {
+        "frame": 7,
+        "timeMs": 325,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      }
+    }
+  },
+  "phaseGridAuthority": "experiments/main-orc-combat-recovery-v8/sword-inbetween-spec.md",
+  "contactEvent": {
+    "frame": 8,
+    "timeMs": 325,
+    "phase": "contact",
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "provenance": {
+    "method": "Programmatic Aseprite Lua local anchored limb repositioning; rigid sword/glove translation; immutable original bright armour clusters; no AI or external raster authorship",
+    "authorScript": "experiments/main-orc-combat-recovery-v8/author-rear-arc.lua",
+    "authorScriptSha256": "74d53b6c4f5987978cf8287b7801a8c062edb8eee62d684bcc55746701769155",
+    "generationCalls": 0,
+    "mastersSavedReopened": true,
+    "translations": {
+      "5": [
+        -6,
+        -3
+      ],
+      "8": [
+        9,
+        -20
+      ],
+      "9": [
+        0,
+        8
+      ]
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "rest",
+      "durationMs": 30,
+      "startMs": 0,
+      "endMs": 30,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/00.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/00.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/00.png",
+          "sha256": "ce98f5c5b5438e23eddbe05b2778cd8393086a82beb08db7e0936f7fed4608f9"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "weaponVisible": false,
+      "sourceFrame": 0,
+      "sourcePhase": "rest",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "sha256": "ce98f5c5b5438e23eddbe05b2778cd8393086a82beb08db7e0936f7fed4608f9",
+      "nativeSha256": "13ff9974bfe4c1d89a50ad512bf2a87a6219fe033c1f82a05c77fcf18e7914a4",
+      "poseProvenance": "Repouso traseiro original F00, preservado para manter o bookend desarmado."
+    },
+    {
+      "index": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "startMs": 30,
+      "endMs": 95,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/01.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/01.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/01.png",
+          "sha256": "acc71423458ffa27871479c57d236b534a3a542f7d0a561c14e8ef359e340f66"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "weaponVisible": false,
+      "sourceFrame": 1,
+      "sourcePhase": "body-preparation",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "sha256": "acc71423458ffa27871479c57d236b534a3a542f7d0a561c14e8ef359e340f66",
+      "nativeSha256": "5ec811e38277fd082656c9e739fa0f34787bdfcf23a20456d346837f5810870f",
+      "poseProvenance": "Preparação corporal original F01, preservada para manter a entrada desarmada."
+    },
+    {
+      "index": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "startMs": 95,
+      "endMs": 130,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/02.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/02.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/02.png",
+          "sha256": "a50f5f2f064557f70bf0fd1e30018f7e56ebacd7deb9e3958336eb28500e0057"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/02.png",
+          "sha256": "acc71423458ffa27871479c57d236b534a3a542f7d0a561c14e8ef359e340f66"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/02.png",
+          "sha256": "0877b077728cfc1c16afb59ba015c5f14d2c27d8424cb3ec991b4eb7b847fa35"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/02.png",
+          "sha256": "e60e3e790fba05c52e57d353ae54395ab704271e775e0df8ec57cbc626971771"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 2,
+      "sourcePhase": "establish-grip",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        163,
+        131
+      ],
+      "rotationDeg": 20,
+      "sha256": "7ae2d6dba8041f39066db07104c374f2e30319e8cc5a92929d79106ce086983f",
+      "nativeSha256": "5ec811e38277fd082656c9e739fa0f34787bdfcf23a20456d346837f5810870f",
+      "poseProvenance": "Estabelecimento de pegada original F02, preservado com arma ligada à luva."
+    },
+    {
+      "index": 3,
+      "phase": "anticipation",
+      "durationMs": 50,
+      "startMs": 130,
+      "endMs": 180,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/03.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/03.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/03.png",
+          "sha256": "7b536be432cad20bea5c1a3f776bd062fa69c1835e785da9e2e8bb2749c0f494"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/03.png",
+          "sha256": "31c8016ab8676f377c1d03d536a5bef9d95b846f58eb38e53cd2de6f0a2e12b1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/03.png",
+          "sha256": "2b81b2b06c3c9b1cbc59ec691344edf78cef708e7ae074096cf34bed6b34af91"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/03.png",
+          "sha256": "b1866d2972c98ab07b0c654eda5c7ffcd92c9250d694b01e29ac5d7d966ef672"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 3,
+      "sourcePhase": "anticipation",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        168,
+        98
+      ],
+      "rotationDeg": 5,
+      "sha256": "b918a15ee401d24c225d9e2e2beb8a59153cdfd0926011482a21914640a14500",
+      "nativeSha256": "3151d517fd45d65babea29d7c2c6efb9a288564060e17e211174aca335f6d42e",
+      "poseProvenance": "Antecipação original F03, preservada como elevação anterior ao coil."
+    },
+    {
+      "index": 4,
+      "phase": "coil-behind",
+      "durationMs": 45,
+      "startMs": 180,
+      "endMs": 225,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/04.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/04.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/04.png",
+          "sha256": "662240e4a6a872f1eaa234d8160bcaf7e5e13a67c4d66de109e2099f6fa21feb"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/04.png",
+          "sha256": "15fe83525dcfebc7f85568e721755bdf9e7e0189c09c9c95e81fa5b9b11fc807"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/04.png",
+          "sha256": "500510bc3384c4bdea4dd53311511495be20374c987306da0b0c64586a897f47"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/04.png",
+          "sha256": "5d43c8f1ba89b80f2875556f74829c33539b3cd9feac3ecd205cd268338787e3"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 4,
+      "sourcePhase": "coil-behind",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        162,
+        89
+      ],
+      "rotationDeg": -10,
+      "sha256": "fab4697e9544dca23a38844851f54ef4b54e006e6444c998b1ad6294bb24181c",
+      "nativeSha256": "b3ffb31e4a47b7a2e83cd577a9b384a68c221c46f8e904d00d74f131d3de4c9b",
+      "poseProvenance": "Coil original F04, preservado como início da preparação alta."
+    },
+    {
+      "index": 5,
+      "phase": "apex-hold",
+      "durationMs": 35,
+      "startMs": 225,
+      "endMs": 260,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/05.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/05.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/05.png",
+          "sha256": "12bcf4a961177e4f170b125ff9bf339bc126e8650f30e6e1ae3dad22a9adcc28"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/05.png",
+          "sha256": "5c23de67622a11c8cca5528447665715236d95088522b996c6a8ff7ab50cff73"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/05.png",
+          "sha256": "03878497ed1bb26f8bda888354e73a7e554fa34fd9edce7dd370f460e5928314"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/05.png",
+          "sha256": "8ae8972a57a74cb70e7f286d01c6c41042c58c3d302d4f4c016847abafbb499a"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 5,
+      "sourcePhase": "apex-hold",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "ASEPRITE_LOCAL_LIMB_REPOSITION",
+      "rightGrip": [
+        154.88633236983418,
+        86.10873166958693
+      ],
+      "rotationDeg": -14,
+      "sha256": "63c5259172db51268bb9ae4e78d6e5997240c462562f8f26f5d675c44d43db4d",
+      "nativeSha256": "642b2c3e604b53fe6ddabc538bdde71f6c84974964f242f44d75f41fef6e1412",
+      "poseProvenance": "Ápice derivado de F05/F04: antebraço e luva articulados -4° em torno de (163,105), com a arma acompanhando; cria compressão distinta antes da liberação.",
+      "articulation": {
+        "degrees": -4,
+        "pivot": [
+          163,
+          105
+        ],
+        "poly": [
+          [
+            154,
+            78
+          ],
+          [
+            180,
+            78
+          ],
+          [
+            180,
+            106
+          ],
+          [
+            163,
+            110
+          ],
+          [
+            154,
+            101
+          ]
+        ],
+        "rightGrip": [
+          160.88633236983418,
+          89.10873166958693
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "phase": "apex-descent",
+      "durationMs": 30,
+      "startMs": 260,
+      "endMs": 290,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/06.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/06.png",
+      "weaponVisible": true,
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceFrame": 6,
+      "sourcePhase": "apex-descent",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/06.png",
+          "sha256": "637ee0aa0eea7d3d7c710b29c0c1cb41860b03a6e01801181f844b65ac7c3a82"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/06.png",
+          "sha256": "0d33fc3f500da9b6db3f16b4d40443bacf9033540138009a20029337d4367ca9"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/06.png",
+          "sha256": "1fe5a6fabde513868bac39030ec38e25cab62e5f1b7553c5bfc3e41b7f990db0"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/06.png",
+          "sha256": "a86e13539d0584143bfec5cea69752ba21afbc33d32fa86b9288995359c30668"
+        }
+      },
+      "sha256": "66a85726dcf91deab039449ecbab6fd30dd5fa46ef867a7db144bd19d8dee35e",
+      "nativeSha256": "79e83f1b9a805fe7185d96f0a65a7bd210dc247d9551a43d1da91cab14ce096a",
+      "rightGrip": [
+        172,
+        105
+      ],
+      "rotationDeg": 25,
+      "poseProvenance": "Novo quadro autorado em Aseprite Lua; construção explícita da manga e articulação do antebraço/luva da própria vista. Plano em source/authorship.json."
+    },
+    {
+      "index": 7,
+      "phase": "slash-release",
+      "durationMs": 35,
+      "startMs": 290,
+      "endMs": 325,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/07.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/07.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/07.png",
+          "sha256": "adf91afad82411c1e420a3ae8e60467e1091e84d2e98ff09ce5160e025827bd2"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/07.png",
+          "sha256": "4bfa02d3494a0bb01d997e99fc2012e7ddf2af2194bb93943b6170b1c03657df"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/07.png",
+          "sha256": "4c2ecb4a9ad9285039fe92d88fa1fbeba933d5db89b6195f428acf3ca72bd369"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/07.png",
+          "sha256": "19612a4d4e1ad1206a666909c0dd4007cce474950a17cba6eab8580bc51dcac9"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 7,
+      "sourcePhase": "slash-release",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        178.60073510670102,
+        114.57960478079794
+      ],
+      "rotationDeg": 83,
+      "sha256": "9d3855f708b5e5fb8035cf505339d63c65b49f296709b078527ad366ac1f92a0",
+      "nativeSha256": "d24cc4a09d897e042bc224bbb88589133f805bbd3778de044a31c9199cb0bc5f",
+      "poseProvenance": "Liberação derivada de F06: antebraço e luva articulados +18° em torno de (166,121), com a arma acompanhando; antecipa a aceleração para a fase slash-release.",
+      "articulation": {
+        "degrees": 18,
+        "pivot": [
+          166,
+          121
+        ],
+        "poly": [
+          [
+            166,
+            105
+          ],
+          [
+            190,
+            105
+          ],
+          [
+            190,
+            140
+          ],
+          [
+            166,
+            140
+          ]
+        ],
+        "rightGrip": [
+          178.60073510670102,
+          114.57960478079794
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "phase": "contact",
+      "durationMs": 35,
+      "startMs": 325,
+      "endMs": 360,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/08.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/08.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/08.png",
+          "sha256": "d4816ed5fe1689e66f3ad152e02276a0980d3584e37b0081a2017cc56bf30afc"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/08.png",
+          "sha256": "e8d8e841c1e2595f4dacd63a281e165ef24d6f6ada7f64e304c9ff4a04349b12"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/08.png",
+          "sha256": "21f3289c01f170da8f76bebfafc986451051cf8b56c0f6ea3ce1fc2c4f0c1f40"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/08.png",
+          "sha256": "830f4a8f53a77383b9c0b90b31233379a343341a1c62e994510b9efb8369d955"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 8,
+      "sourcePhase": "contact",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "ASEPRITE_LOCAL_LIMB_REPOSITION",
+      "rightGrip": [
+        172,
+        134
+      ],
+      "rotationDeg": 115,
+      "sha256": "0467a63851d90fc16dbd85eeb9864123e0d87cbe9819dbc2a4dac6de62365cbf",
+      "nativeSha256": "ce43e249e70f67857570743ee3ef173e6ff0b9dfb862a06a85db8fef8b006924",
+      "poseProvenance": "Contato original F07, preservado como término da descida acelerada."
+    },
+    {
+      "index": 9,
+      "phase": "follow-through",
+      "durationMs": 100,
+      "startMs": 360,
+      "endMs": 460,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/09.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/09.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/09.png",
+          "sha256": "0fd25ac1e5e71c329ca440f9f13f2bbca54da65e34b06aa42c04f15eb03afd2f"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/09.png",
+          "sha256": "c06a34cf4f7637cea28c5149ddb489998cfa98ca6bdf0704013c68f68225accd"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/09.png",
+          "sha256": "e81698ce71a7432030cbee2e17fe9d590e61b54c87fbdb7f696214f3a67fb582"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/09.png",
+          "sha256": "d62ec81e5463b9319b37a647dc6e96a8b332b5e93dbd02ada0dee5552c8d51f3"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 9,
+      "sourcePhase": "follow-through",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "ASEPRITE_LOCAL_LIMB_REPOSITION",
+      "rightGrip": [
+        158,
+        169
+      ],
+      "rotationDeg": 115,
+      "sha256": "6aa2b311fb0d7cb1417ad1787d8233501f1f0eb642a0469d2c40b9023caf981f",
+      "nativeSha256": "a6b37cb162563a20ff0ec066c7218747e40052229c51aae74eeab44ed9863980",
+      "poseProvenance": "Follow-through original F08, preservado para manter a extensão após contato."
+    },
+    {
+      "index": 10,
+      "phase": "recoil",
+      "durationMs": 55,
+      "startMs": 460,
+      "endMs": 515,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/10.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/10.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/10.png",
+          "sha256": "94237d0b7b4ed83c52f06476679c07dffdb9387bf14c2008f615cff12ac4c66d"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/10.png",
+          "sha256": "72fdedde33aaa6b21e2b47e9c7b2a908d3d6778ff140ce1d41c8ec4916194047"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/10.png",
+          "sha256": "e32e5dbc613210260e87ee36d71892397ad4054089857e84711862d07be57d9b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/10.png",
+          "sha256": "8080f855fbac75692983cb8268620ba6ee87c92ccc5ab4517577729ee879f02a"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 10,
+      "sourcePhase": "recoil",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        159,
+        155
+      ],
+      "rotationDeg": 95,
+      "sha256": "ecc794e7c1f84f7c8138448db052904a42b46c7f760935baf330a7eb01d25eaf",
+      "nativeSha256": "05dd90c6b61c793403d226802059de3a44f7765cfb7d07bf6cd53040fb7b60e7",
+      "poseProvenance": "Recoil original F09, preservado como início da recuperação."
+    },
+    {
+      "index": 11,
+      "phase": "settle-grip",
+      "durationMs": 80,
+      "startMs": 515,
+      "endMs": 595,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/11.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/11.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/11.png",
+          "sha256": "ace6cfa04ce739db919dd667340bbe9ef886ae508db8bd20cee25623d0093846"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/11.png",
+          "sha256": "3683ec168ef5179b366b5c865e5f7910878b061703a2b773ebb1a95f24f09a85"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/11.png",
+          "sha256": "e914a414894b0df4ea6ab6943ef81ab5474d8408bdb586920f7c9ea6b87cb64c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/11.png",
+          "sha256": "f92fc82184383668b7430c61b38f71c357b09566738162ba84567cb4223329c3"
+        }
+      },
+      "weaponVisible": true,
+      "sourceFrame": 11,
+      "sourcePhase": "settle-grip",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": [
+        164.27860342318323,
+        155.09497366108894
+      ],
+      "rotationDeg": 80,
+      "sha256": "82362e0ef295ea18b52f1bd9a52247c31a746e35e97235829381f02747add4c2",
+      "nativeSha256": "81b475ecd1c417d3e516ddbc962d7e77acf9f8f700b665dbfdcc6c65d10f5ac5",
+      "poseProvenance": "Settle derivado de F10/F09: antebraço e luva articulados -15° em torno de (162,135), com a arma acompanhando; cria recolhimento distinto antes de soltar a pegada.",
+      "articulation": {
+        "degrees": -15,
+        "pivot": [
+          162,
+          135
+        ],
+        "poly": [
+          [
+            158,
+            131
+          ],
+          [
+            178,
+            129
+          ],
+          [
+            180,
+            165
+          ],
+          [
+            160,
+            165
+          ],
+          [
+            159,
+            151
+          ]
+        ],
+        "rightGrip": [
+          164.27860342318323,
+          155.09497366108894
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "phase": "release-grip",
+      "durationMs": 45,
+      "startMs": 595,
+      "endMs": 640,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/12.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/12.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/12.png",
+          "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "weaponVisible": false,
+      "sourceFrame": 12,
+      "sourcePhase": "release-grip",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb",
+      "nativeSha256": "99f39efc2270d815ce2bd2066f84404289881c4aca0ae9b72463f7c780a10cfb",
+      "poseProvenance": "Liberação original F11, preservada como recuperação desarmada."
+    },
+    {
+      "index": 13,
+      "phase": "return-to-guard",
+      "durationMs": 90,
+      "startMs": 640,
+      "endMs": 730,
+      "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/frames/13.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native/13.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponBack/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/body/13.png",
+          "sha256": "89a105e2c378b98385479950fbb48583e27fab837ba903692d1381acbe25af97"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/weaponFront/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/layers/handFront/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "weaponVisible": false,
+      "sourceFrame": 13,
+      "sourcePhase": "return-to-guard",
+      "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword/clip.json",
+      "sourceClipSha256": "0a55746eb3293ce7a14d69705c3fc821cb73899c6c996d5e218d433a6ffa22da",
+      "sourceMode": "REUSE_LAYER_PIXELS",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "sha256": "89a105e2c378b98385479950fbb48583e27fab837ba903692d1381acbe25af97",
+      "nativeSha256": "b13119e270eec4ef134e08e7e54a1c640b168d68a3f38cffa61eede056603f1f",
+      "poseProvenance": "Retorno à guarda original F12, preservado para manter o bookend desarmado."
+    }
+  ],
+  "master": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/composite.aseprite",
+  "masterSha256": "b1109f1a2d189b52108a0e2998aa82381109bb0f68327eecda4862aa2ae522db",
+  "nativeMaster": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/native.aseprite",
+  "nativeMasterSha256": "2005f0905017ae71433f680ff28cfb5ce8a60022dbce91d0c75856a8e2c53218",
+  "strip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native-strip.png",
+  "stripSha256": "2d786aabdcb718f05dd128e5566b8b7edfe935276824ab16fbdc96a7e50c18d5",
+  "nativeStrip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/native-strip.png",
+  "nativeStripSha256": "2d786aabdcb718f05dd128e5566b8b7edfe935276824ab16fbdc96a7e50c18d5",
+  "compositeStrip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/composite-strip.png",
+  "compositeStripSha256": "49050df099c4ce08c28793a8fa822074f3ab9f52e13099992e37a936ebb7a207",
+  "inheritedProvenance": {
+    "method": "Autoria programática real no Aseprite Lua: plano articular explícito, manga/cota desenhada em clusters, luva doadora da mesma vista articulada; arma independente vinculada à palma. Sem geração IA ou interpolação temporal de pixels.",
+    "authorScript": "experiments/main-orc-combat-recovery-v8/rear-inbetween/author.lua",
+    "authorScriptSha256": "ed32c731cdbbd8edcbf79d80fe9dd190603e2daf0f82125b9c3ff28f207da5c3",
+    "generationCalls": 0,
+    "mastersSavedReopened": true,
+    "timingVerified": true,
+    "inheritedFramesPreservedRGBA": 13
+  },
+  "bodyMaster": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/body.aseprite",
+  "bodyMasterSha256": "6dc8f5ba51697abd7c1003cf4cc116ac75cbaaa5524638cf91f8771564202064",
+  "handMaster": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/hand.aseprite",
+  "handMasterSha256": "b72318fe8996a1c1512a1fc2eb2e0d17ffb663eb26cb54ea382e5abee9c91d28"
+}

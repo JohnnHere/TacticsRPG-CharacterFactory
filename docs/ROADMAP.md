@@ -1,3 +1,96 @@
+> Atualização de integração — 17/11/2026: candidato consolidado `main-orc-final-v10` (`characters/orc-v1/source/final-candidate-v10/candidate28manifest.json`: 18 `ACTIVE_CANDIDATE` + 10 `UNCHANGED_ALIAS`, 232 quadros; Arquitetura C com `56/56` quadros corporais reaproveitados entre `Sword A` e `Sword B` nas 4 vistas; pacote local preparado em `dist/orc-v1/final-candidate-v10/`). Revisão única em [`Biblioteca de Arte/Estudos Comparativos/Orc principal - Candidato Final e Arquitetura C/index.html`](<../Biblioteca de Arte/Estudos Comparativos/Orc principal - Candidato Final e Arquitetura C/index.html>). Estado: `TECHNICALLY_COMPLETE` / `VISUAL_REVIEW_REQUIRED` / `PENDING_CREATOR` (`0` escritas em `../TacticsRPG`; próximo marco: avaliação visual do criador seguida do teste isolado autorizado no Unity).
+> Atualização de integração — 27/10/2026: o checkpoint pós-QA de9 ativos/3 em reparo descrito abaixo é histórico. Os três reparos locais foram integrados como candidatos: matriz atual12 ativos/16 aliases, sem aprovação do criador. A versão corrigida precisa do parecer do MESMO QA Copilot no novo freeze. Consulte o [relatório corrente](../experiments/main-orc-rear-recovery-v2/root-integration-report.md) e seu qa-result.json para o veredito da versão exata; não interpretar a rejeição6fa4653e nem o checkpoint interno como aprovação desta versão.
+
+## Reconstrução artística V6 — 2026-10-30
+
+O criador rejeitou artisticamente `main-orc-combat-rescue-v5` mesmo com parecer
+técnico e QA independente favoráveis. `main-orc-artistic-reconstruction-v6`
+corrige a arte propriamente dita: `back_l` Sword/Axe reconstruídos a partir da
+base V1 desarmada, `back_r` adaptado com esqueletos próprios da vista (sem
+espelho), axila de `front_l/Sword` reconstruída na camada `body` e recuperação
+de `back_l/Sword` com a lâmina acima do chão.
+
+Estado: `TECHNICAL_PASS` (28 células, 226 quadros, 956 hashes), 34 mestres
+reexportados (352 quadros), Chromium 21/21, preservação 5907/5907, achados do
+QA estático fechados e revisão temporal real (`TEMPORAL_PASS`) dos oito ataques
+em 1×/0,5×/passo/escala tática. Manifesto final `5d68b52d…`; as quatro
+células traseiras passaram a ter duração própria por decisão artística
+(Sword 950 ms, Axe 1320 ms, antes 730/1100 ms), com bookends desarmados
+preservados.
+[Estúdio V6](<../Biblioteca de Arte/Estudos Comparativos/Orc principal - Reconstrucao artistica/index.html>) ·
+[orquestração e QA](../experiments/main-orc-artistic-reconstruction-v6/orchestration-report.md).
+`VISUAL_REVIEW_REQUIRED` / `PENDING_CREATOR`, `eligibleForIntegration=false`:
+o próximo marco é a avaliação artística do criador, sem promoção nem Unity.
+
+## Candidato de combate concluído em QA — 2026-10-29
+
+`main-orc-combat-rescue-v5` fechou a rodada de produção: 13 células ativas
+(8 Sword/Axe com itens independentes, 4 Unarmed e `back_l/Walk` localizado)
+e 15 aliases exatos, 226 quadros. Validação técnica 28/226/964 hashes,
+42 mestres reabertos no Aseprite (448 quadros), Chromium real 21/21,
+inventário protegido 3506/3506 e freeze rejeitado preservado (210 quadros,
+868 hashes). [Estúdio unificado](../Biblioteca%20de%20Arte/Estudos%20Comparativos/Orc%20principal%20-%20Resgate%20de%20combate/index.html) ·
+[parecer integrado](../experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/integrated-candidate-result.json) ·
+[orquestração, recursos e falhas](../experiments/main-orc-combat-rescue-v5/orchestration-report.md).
+Estado `TECHNICAL_PASS` / `VISUAL_REVIEW_REQUIRED` / `PENDING_CREATOR`,
+`eligibleForIntegration=false`: o próximo marco é a avaliação artística do
+criador, sem promoção, sem Unity e sem tratar o parecer independente como
+aprovação dele.
+
+## Diagnóstico isolado e reconstrução ainda pendente — 2026-10-29
+
+Retomada em execução: `main-orc-combat-rescue-v5`, com PixelLab necessário
+autorizado pelo criador,33 unidades comprovadas até as três chaves estruturais (novos recibos do ciclo serão consolidados), e
+28 clipes integrados isoladamente. [Estado e orquestração](../experiments/main-orc-combat-rescue-v5/orchestration-report.md).
+O [QA independente](../experiments/main-orc-combat-rescue-v5/qa-grok/report.md)
+confirmou avanços de Unarmed/Defeat/limpeza, mas reprovou pegada, peso corporal
+traseiro e dominância. Próximo marco interno: representante corrigido antes
+de expansão, seguido de re-QA da matriz completa. Não confundir o PASS
+técnico com conclusão artística, nem promover ao Unity.
+
+O passe `main-orc-rear-reconstruction-v4` é diagnóstico, sem promoção:
+[estúdio de revisão](../Biblioteca%20de%20Arte/Estudos%20Comparativos/Orc%20principal%20-%20Reconstrucao%20traseira/index.html)
+e [relatório de orquestração](../experiments/main-orc-rear-reconstruction-v4/orchestration-report.md).
+Refinos de materiais de armas e contorno da coroa foram exportados em fontes
+isoladas; a tentativa representativa de golpe não estabeleceu chaves válidas e
+foi rejeitada. O pedido amplo **não está concluído**. A matriz canônica e a
+produção anterior permanecem intactas, com `PENDING_CREATOR`.
+
+Próximo marco: estabelecer antecipação, impacto e recuperação traseiros
+anatomicamente convincentes antes de propagar; revisar pegada e continuidade de
+Unarmed, localizar flicker de Walk em reprodução real e confirmar Defeat frontal
+com o criador. QA independente deve julgar os arquivos exatos, distinguindo
+integridade do pacote de resultado artístico. Hit permanece inalterado; sua
+calibração de timing depende de futura tarefa Unity autorizada.
+
+## Recuperação artística do conjunto completo — revisões requeridas por QA independente / ARTISTIC_REVISION_REQUIRED, 2026-10-27
+
+Passe de recuperação sobre `main-orc-complete-v1` (Orc V1 / Verde Warcraft) após detecção de vistas traseiras repintadas sobre o frontal, `Hit` com amplitude de respiração e `Defeat` achatado por rotação 2D. Reconstrução anatômica completa de `back_r`/`back_l` (11 marcadores: crânio occipital, nuca, gola traseira, dorsal com canal vertebral, cinto sem pico esternal, tassets, tiras poplíteas, calcanhares angulados); halo anti-aliasing eliminado nos ataques frontais (0 pixels quase brancos, `INK` `#0C0F12`); `Hit` enquadrado como aviso diagnóstico contextual sob o perfil `heavyOrc` (impacto legível e recuperação ao repouso no tronco/ombro, solo cravado em `groundY`, snapping opcional; piso numérico rígido superado); `Defeat` estruturado em colapso progressivo volumétrico retendo massas no solo (altura terminal >= 58 px, aspect ratio >= 1,3 servem como balizas diagnósticas para o Orc pesado em canvas 128, superando fórmula única rígida de ajoelhamento).
+
+**Contratos de conhecimento e lições semânticas consolidadas:** todas as 12 lições semânticas obrigatórias foram formalizadas com todos os 9 campos de evidência em `config/artistic-quality-gates-v1.json` e `docs/ARTISTIC_QUALITY_GATES.md` (diferenciando evidência comprovada de hipóteses conceituais), complementadas pelas lições operacionais da Wave 2 (falha de crossfade externo descartada, geração temporal contínua ancorada para locomoção restrita a 2 vistas traseiras, inspeção semântica com layers-off e continuidade cinemática articular). As antigas Regras 4 e 5 foram formalmente superadas. Testes automatizados cobrem semanticamente IDs e campos não-vazios. Criada a receita candidata de raça `recipes/races/orc.candidate.json` (status estrito de candidate, sem aprovação automática).
+
+**Estado real de recuperação Wave 2 (pós-QA independente Copilot, 2026-10-27):**
+- **Papéis ativos:** Sole Art Producer atual é `b8ca8bb5-e80c-4c39-ade9-09b167774d78` (`GPT-6.1 Sol Codex xhigh` via Paseo). Histórico: Luna (`8eb61d74`) encerrou idle às 04:50:23Z sem mutação de arte canônica, com parcial rejeitado por Root (erro doador 256 deslocado + 64px). Preview Owner é GLM (`8591`). QA Independente continua GPT Sol6.1 Copilot (sessão `08686`, modelo `gpt-6.1-sol`). DEV é proprietário exclusivo de documentação, contratos, receitas e testes;
+- **Veredito de QA Independente:** GPT Sol6.1 via GitHub Copilot (`gpt-6.1-sol`) concluiu revisão independente sobre o freeze `6fa4653e` em 2026-10-27 (`experiments/main-orc-rear-recovery-v2/qa-argon-final.md` e `qa-result.json`) com veredito **`REVISIONS_REQUIRED`**, rebaixando o status para **`ARTISTIC_REVISION_REQUIRED`** (`PENDING_CREATOR`);
+- **Defeitos confirmados por QA (QA-01..QA-04):**
+  - **QA-01 (HIGH - `back_l/Sword`):** O corpo base desarmado contém lâmina secundária/haste junto ao quadril direito (F01–F07) e faixa clara no ombro/pescoço (F05); F07 não retorna visualmente a desarmado com camadas desligadas;
+  - **QA-02 (HIGH - `back_r/Axe`):** Contaminação por arma no próprio corpo: cabeça de machado em F01 e haste marrom em F02–F03, duplicando silhueta ao compor o machado independente;
+  - **QA-03 (HIGH - `back_r/Axe`):** Quebra cinemática na descida do golpe: F04 com braço truncado e F05 com antebraço duplo, perdendo a cadeia contínua ombro-cotovelo-punho;
+  - **QA-04 (MEDIUM - `back_l/Axe`):** Filamento/gancho saliente no ombro direito nos quadros nativos F02–F03 (o reparo de punho erguido do doador permanece válido; o contorno do ombro precisa de limpeza);
+- **Reparo local em andamento e re-revisão:** Rejeição inicial no freeze `6fa4653e` registrada como histórico congelado. O Sole Art Producer `b8ca8bb5-e80c-4c39-ade9-09b167774d78` executa reparos cirúrgicos no Aseprite para `back_l/Sword`, `back_r/Axe` e `back_l/Axe` sem nenhuma chamada paga adicional de IA. A nova submissão será reavaliada pelo mesmo revisor QA Copilot (`08686`) sob novo freeze (status estritamente `ARTISTIC_REVISION_REQUIRED`, sem aprovação de PASS até verificação);
+- **Critério semântico obrigatório de 'layers-off' e continuidade articular:** Igualdade de camadas (`body` == `master` == `native crop`) e álgebra alfa-over provam apenas integridade de empacotamento técnico, NÃO ausência semântica de armas geradas pintadas no corpo. Prompts desarmados exigem inspeção visual de corpo inteiro com todas as camadas de armas desligadas (`layers-off`) e verificação prévia da cadeia contínua ombro-cotovelo-punho antes de sobrepor camadas de equipamento;
+- **Contabilidade rigorosa preservada (17 jobs, 78 gerações consumidas):** 13 jobs históricos (66 gen) + 1 job de desvio pré-checkpoint (`31e61c4b`, 3 gen, preservado como histórico e aprovado para refino local) + 3 jobs autorizados expressamente pelo Root (9 gen: SwordL `8f0f4e44` [3 gen], AxeR `8b6ad151` [3 gen], e AxeL `5296ac98-b253-4133-8468-155f7e90c68e` [3 gen]). Categorização das 78 gerações: 14 rejeitadas (12 Draft-01 + 2 soco fraco) + 24 chaves isoladas não utilizadas/incompatíveis em cache (geometria de corpo inteiro; falha posterior de composição em Lua) + 28 contribuições aceitas de ciclos/términos não-arma (caminhada, desarmado, derrota; NÃO Hit) + 12 unidades de corpo para ciclos de armas (`Sword`/`Axe` nas 4 vistas com refinamento local posterior). Zero gerações futuras autorizadas. Saldo de 1418.70 foi verificado no checkpoint de 69 gerações (saldo corrente não é estimado sem novo recibo; nenhum total de tokens ou dólares inventado);
+- **Preservação comprovada:** 793 arquivos de produção rastreados = 792 byte-idênticos + 1 configuração autorizada de portões alterada (`config/artistic-quality-gates-v1.json`); 73 mestres baseline preservados. Front Defeat estágios 0..3 preservados em ambas as vistas (apenas terminal alterado); Front Unarmed quadros candidatos 00/01/03/04 possuem pixels RGBA decodificados e tempos idênticos (a codificação PNG difere, enquanto os arquivos baseline originais permanecem byte-preservados); apenas F02 reparado;
+- **Matriz canônica e cobertura local:** 28 clipes no manifesto canônico `candidate28manifest.json` com 12 alvos afetados (atualmente 9 `ACTIVE_CANDIDATE` e 3 `ARTISTIC_REVISION_REQUIRED`) e 16 `UNCHANGED_ALIAS`. Cobertura local de 210 quadros compostos no total: 78 quadros nos 12 clipes alvo e 132 quadros nos 16 pseudônimos da baseline protegida. 28 mestres ativos declarados e verificados;
+- **Armas e reparos de autoria no Aseprite:** 4 representantes de armas com 4 camadas independentes (`weaponBack`, `body`, `weaponFront`, `handFront`), 8 quadros, 730 ms, e masters próprios salvos;
+- **Visualizador / Preview:** Montado sobre todos os 28 clipes com 12 seções antes/depois em tiles de 256px compostos exatos. Chromium 20/20 checks aprovados;
+- **Revisão de Hit pelo Root:** Concluída via player Chromium headless nas 4 direções em 1x, 0.75x e 0.5x em nativo 128 e aprox 64; recuo de tronco/ombro legível com postura cravada preservada; recomendação de manter pixels atuais e 450 ms para revisão do criador; calibração Unity deferida;
+- **Status geral:** `TECHNICALLY_COMPLETE` para o pacote local; `ARTISTIC_REVISION_REQUIRED` (aguardando correção local e nova submissão ao QA); `PENDING_CREATOR`. `runtimeImplemented: false`; nenhuma escrita em `../TacticsRPG`. Orc V4 permanece descartado.
+
+## Biblioteca completa de animações do Orc principal — candidato local em revisão, 2026-10-25
+
+Novo passe completo `main-orc-complete-v1` do **Orc V1 / Verde Warcraft** (`characters/orc-v1/`), cobrindo as **4 direções** (`front_r`, `front_l`, `back_r`, `back_l`) × **7 ações** (`Idle`, `Walk`, `Unarmed`, `Sword Attack`, `Axe Attack`, `Hit`, `Defeat`) + 4 bases estáticas direcionais. Fontes `.aseprite` em `characters/orc-v1/source/aseprite/complete-v1/`; clipes compostos `256×256` em `characters/orc-v1/source/complete-v1/`; PNGs nativos `128×128` em `characters/orc-v1/sprites/`; matriz de cobertura em `reports/orc-v1-animation-coverage-v1.json`; pacote Unity-ready reprodutível em `dist/orc-v1/complete-v1/` (com `unity-handoff-contract.json`); ponteiro candidato em `characters/orc-v1/source/equipment-complete-candidate.json`. Reutiliza integralmente `Idle` (`idle-balanced-v1`), `Walk` (16 poses) e `main-orc-onehanded-entry-v1` (`Sword` 13f/730ms, `Axe` 12f/1005ms) em `front_r`, preservando `characters/orc-v1/source/equipment-current.json` (v3 ativa) e `characters/orc-v1/source/equipment-entry-candidate.json`. Política `attack-only-v1` estrita: armas ocultas em `Idle`, `Walk`, `Unarmed`, `Hit`, `Defeat` e fora de `visibleInterval`. Estúdios interativos em `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html` e `Biblioteca de Arte/Estudos Comparativos/Orc principal - Biblioteca completa/index.html`. Próximo marco: avaliação artística explícita do criador (`PENDING_CREATOR`); não promover nem integrar em `../TacticsRPG` antes disso. O antigo Orc V4 permanece descartado.
+
 ## Entrada natural de combate — candidato em revisão, 2026-10-25
 
 Novo passe `main-orc-onehanded-entry-v1` parte do último **polimento v1**, preservando-o, para corrigir preparação corporal e primeira pegada. Contexto e fontes em `docs/MAIN_ORC_COMBAT_POLISH.md` (seção atual de entrada) e `experiments/main-orc-entry-v1/entry-plan.json`. Página `Biblioteca de Arte/Estudos Comparativos/Orc principal - Entrada de combate/index.html`. Não é saque/embainhamento: armas somente no ataque, sem Idle/Walk armados. Produção ativa v3 e identidade Orc V1 mantidas; antigo V4 descartado. Próximo marco é a avaliação explícita do criador da entrada refinada; não propagar ou integrar Unity automaticamente. Orquestração e QA independente via Paseo conforme pedido, sem criar QA adicional no DEV.
@@ -298,3 +391,35 @@ O staging local ja esta implementado. O registro multi-personagem e a integracao
 # Refinamento PixelLab v2 em andamento — 2026-10-23
 
 Feedback vigente: Walk 04/07 sem passada legível; Idle 04/07 precisa melhorar; Idle 06 exagerado; conceito 05 precisa de armadura mais detalhada e imponência Uruk-hai. 241 arquivos anteriores preservados por hash. Controle recuperado e Pro habilitado após atualização oficial. Walk 04 PixMiniMax16 concluído; conceito05 revisado; Idles04/05/06/07 ajustados no Aseprite com respiração0/1px e rosto/pés fixos. Walk07 gerando; Walk05 pendente. Pedido adicional: dois conceitos de padrões diferentes, IDs08 Vigia do Passo e09 Matriarca da Cinza, contextos preparados, geração posterior. Retomada exata em `reports/orc-pixellab-refinement-v2-progress.md`; prompts em `experiments/pixellab-orc-refinement-v2/brief.json`. Verificação/entrega final pendentes; sem aprovação artística ou integração Unity.
+
+
+### 2026-10-30 — Candidata local V8, axila front_l/Sword
+
+`TECHNICALLY_COMPLETE` / `VISUAL_REVIEW_REQUIRED` / `PENDING_CREATOR`. Reiluminacao interna de 25/15/33 pixels em F03/F04/F05, autoria Lua no Aseprite, sem mudar alpha/highlights/armas/grade. Celula isolada: `characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/clip.json`; evidencias em `experiments/main-orc-combat-recovery-v8/qa-armpit-v8/report.md`. Proximo passo: revisao perceptual pelo criador; troca no patch reservada ao usuario. Sem promocao, commit ou Unity.
+`nAtualização 2026-10-30: rear-arc de espada back_r/back_l V8 em characters/orc-v1/source/combat-recovery-v8/rear-arc/, TECHNICALLY_COMPLETE / VISUAL_REVIEW_REQUIRED, PENDING_CREATOR. 14 poses, 730 ms, contato F08/325 ms; relatório experiments/main-orc-combat-recovery-v8/qa-rear-arc/report.md. Próximo passo: revisão visual explícita do criador; nenhuma promoção ou integração Unity.
+
+### 2026-10-31 — Limpeza de `experiments/` adiada por decisão do criador
+
+Decisão: **só apagar `experiments/` quando o Orc Warrior estiver terminado e existir documentação
+fixa de como se faz um personagem**. Ordem correta, porque as pastas de experimento são a evidência
+que essa documentação vai citar — apagar antes de sedimentar o método deixaria as regras sem prova.
+
+Estado medido nesta data: 39 pastas, ~292 MB, das quais apenas 2,63 MB eram descartáveis
+(`main-orc-hand-restore`, já apagada) e a duplicata `experiments/experiments`, também apagada.
+As demais somam **1981 referências em 320 arquivos** (clips em `characters/`, manifests,
+`reports/*/comparison.json`, `tools/`, HTML da Biblioteca de Arte). Apagar em bloco quebraria a
+cadeia de proveniência da produção.
+
+Critérios de saída para a limpeza deixar de ser julgamento e virar execução mecânica:
+
+1. Documentação fixa do método de criação de personagem publicada e estável.
+2. Cada afirmação dessa documentação aponta para um caminho **canônico em `characters/`**, não para
+   uma pasta de experimento.
+3. Clips, manifests e relatórios reescritos para os caminhos canônicos.
+4. Nenhuma pasta de `experiments/` citada por arquivo funcional (repetir a auditoria de referências).
+5. Então: apagar as pastas com zero referências, em bloco, com um único comando.
+
+Preservar até lá, por decisão registrada: `main-orc-anatomy-pass-08` e `main-orc-anatomy-pass-08b`
+(evidência de método) e `main-orc-skeleton-first-01` (origem da lição `CONTAMINATED_BODY` no
+`docs/RECIPES.md`). Preservar sempre: `main-orc-hybrid-weapon-04`, `main-orc-hybrid-weapon-04b`,
+`main-orc-backl-v5base`, `main-orc-hand-timeline`, `main-orc-skeleton-02`.

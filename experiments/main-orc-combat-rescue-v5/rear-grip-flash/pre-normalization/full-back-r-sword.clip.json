@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-rear-grip-flash-full-back-r-sword",
+  "id": "basic.sword-attack",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "category": "Sword",
+  "weapon": "Espada do Recruta",
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "weaponDefinitionSha256": "7c090d89d004b8a4c16fd9e42b46017be295df336de113000512e8518faebe9a",
+  "state": "Attack",
+  "direction": "back_r",
+  "scope": "Independent weapon grip full 12-frame combat cycle (Diagonal Slash across north-east)",
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    60,
+    60,
+    70,
+    70,
+    40,
+    40,
+    90,
+    70,
+    70,
+    60,
+    60
+  ],
+  "totalDurationMs": 730,
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "master": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/source/composite.aseprite",
+  "masterSha256": "cf66aa1fd30280b4b143f891bdca298d8e6ad5faca4f89b4b6d5a8af0631abfb",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/source/body.aseprite",
+  "bodyMasterSha256": "f0c0b9f650882256242b574501191c0196c78959acf4e49931b0e3245b990e90",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/source/native.aseprite",
+  "nativeMasterSha256": "bea7a0cf7138e4b8dcfb85a47605ecfc82f79181ce170a180b8e83b9545ddd0a",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/source/hand.aseprite",
+  "handMasterSha256": "2018e1313ca767900e6e649d7b13f790331f97eb773ca97e8b804070ccf6e7cc",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-strip.png",
+  "stripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-strip.png",
+  "nativeStripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646",
+  "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/composite-strip.png",
+  "compositeStripSha256": "3274241434b277823fc4bbdc7c23f2337fca9a67826c6fbd3749ad9804f1a519",
+  "nativeCompositeStrip": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite-strip.png",
+  "nativeCompositeStripSha256": "812036e67ad3cd3ec4bff4dcb899470e4e3a57cfbac1a81936a8fe0cbc565cf4",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "provenance": {
+    "authorScript": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-sword/author.lua",
+    "parentBodyClip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+    "parentBodyClipSha256": "aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88",
+    "parentBodyMaster": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256.aseprite",
+    "parentBodyMasterSha256": "abdfb97f02271c66fe855e90d79673322bb16dae9841f237bf4a7fe5e69e0b82",
+    "qaVerdictSource": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/glm-body-fixes-result.json",
+    "qaReviewer": "863ae631-5582-4955-a0ef-020d51692fbb"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "durationMs": 40,
+      "phase": "guard",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/00.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/00.png",
+      "nativeCompositeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "durationMs": 60,
+      "phase": "chamber-init",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/01.png",
+      "sha256": "9b06a1c0872ede98a3bee13e1d728de476d6130ef4eceadce88e17b0910feed3",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/01.png",
+      "nativeSha256": "d619e1690a5a7527a368201f5cf944acfaf36a3122db1db128538a462bff88f3",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/01.png",
+      "nativeCompositeSha256": "d619e1690a5a7527a368201f5cf944acfaf36a3122db1db128538a462bff88f3",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/01.png",
+          "sha256": "9b06a1c0872ede98a3bee13e1d728de476d6130ef4eceadce88e17b0910feed3"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "durationMs": 60,
+      "phase": "hoist-lift",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/02.png",
+      "sha256": "9bc82b73109ef50c47f698c1e566ce915d56b24da1cbd0542ca4fa95d74f526c",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/02.png",
+      "nativeSha256": "776edad2eb4558b0726faf7fb39b91ae2f9387176cf8b00d52326f7c8d7737f4",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/02.png",
+      "nativeCompositeSha256": "c1b21c0d79645940059d98645b60b9c9ded97be654173641558cda9fca611c35",
+      "weaponVisible": true,
+      "rightGrip": [
+        168,
+        114
+      ],
+      "rotationDeg": 355,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/02.png",
+          "sha256": "4e3818db2407634cc112e0659c48f2c425351d1602791a0e37994cf3f30586a8"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/02.png",
+          "sha256": "330081ae8c98eadb734411a939676b3abe95d689c52148f075f0f4fa9c35fb75"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/02.png",
+          "sha256": "2526c9510e0e678ab635ebafbe51e919fe9ddbf6ad6012e3e53ea32132000d5c"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/02.png",
+          "sha256": "5958f08e102959b0e0cf14100c88462316433f7207a8e5dddfcad8a5e91dfacd"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "durationMs": 70,
+      "phase": "01-hoist",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/03.png",
+      "sha256": "991931bad67968b21bbc91e0fb471625a7df6efa855800b335aa4f7f275922b8",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/03.png",
+      "nativeSha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/03.png",
+      "nativeCompositeSha256": "69b82b3778c8489c99a3e5c68c6a6e3b700cfbe08b1c24129198267e082a012a",
+      "weaponVisible": true,
+      "rightGrip": [
+        164,
+        108
+      ],
+      "rotationDeg": 10,
+      "scale": 1.0,
+      "isAcceptedKey": true,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/03.png",
+          "sha256": "a415ae635811dd035aec94ab7783d5eaa9ef981f4ded83ef017faa142d781fd6"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/03.png",
+          "sha256": "357318e1369e6eb2c0f3079d06eb31828a53fb60b6cd5d7055d8cf7a1e91d408"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/03.png",
+          "sha256": "0a1843e1934a42151bb922f3dd4f9ca53afac8f322fdb4422e7f2d517711f305"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/03.png",
+          "sha256": "f6fc984b17b31dcd9a3194d833d377ab80eacd3b4c2a18dcfda2154c8acb0401"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "durationMs": 70,
+      "phase": "02-apex",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/04.png",
+      "sha256": "afb8c54c5cc4b22b7068b3cb35dba92e7a911cb60e388396cd83c1ea441898a8",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/04.png",
+      "nativeSha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/04.png",
+      "nativeCompositeSha256": "98ec66d0a749814beb4f3dd743b912dc23e7b1590dfefb770d725cef0a04c85e",
+      "weaponVisible": true,
+      "rightGrip": [
+        180,
+        116
+      ],
+      "rotationDeg": 45,
+      "scale": 1.0,
+      "isAcceptedKey": true,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/04.png",
+          "sha256": "6002b957d1d1e31d9409b4b96b451c3838e74b0d95d14bc5be37a7c46fd12639"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/04.png",
+          "sha256": "5e0a6fdad43972e6b4c17c2dac475764a4caff469faa76a15579735aaa0da3b4"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/04.png",
+          "sha256": "5cc4b197f7dfbfc7fb3d05a11dff8c0bc1389fa66070cd9d1216a2e8f6a5a513"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/04.png",
+          "sha256": "a8f0b97e8f9111255456f151f1435e5f662a45914ab2798f4b7041b4b269678a"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "durationMs": 40,
+      "phase": "slash-cleave",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/05.png",
+      "sha256": "50498fbc495446a356a940cc55ad19ec90e79e15fd734b854b66b8cb2427f0d0",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/05.png",
+      "nativeSha256": "12b051cd1e995a2da40750cf593148bb9634792b60af29fea580ae8723588fa4",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/05.png",
+      "nativeCompositeSha256": "21968486b0ee0e0dd651adb1e93af771784cd5d48896df3827ebe4bc9e4fad26",
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        131
+      ],
+      "rotationDeg": 80,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/05.png",
+          "sha256": "9bb0e442f2a8f90e57737d02f478322523ea3484e8c4486c7e47da6788f244b4"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/05.png",
+          "sha256": "fd5982dc74d8cb748de669fc277aa4a812dbd0e81dc1339b913726c7dea41e60"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/05.png",
+          "sha256": "530d66b63848f158b1b1f3d055976f789ad4e82378e1925e5e2c6bdcc69b62a2"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/05.png",
+          "sha256": "c9d35fba544c1b6b519fcedc37cf720d7f338e56f1b73513ac59290898ca40f5"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "durationMs": 40,
+      "phase": "slash-descent",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/06.png",
+      "sha256": "aad31f72b146e3f660e409539dc67072f97804d6f146bf64471c557964142b97",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/06.png",
+      "nativeSha256": "4fe7325c17907c3641dac6d299b0556c62573d07249e1f4168a6a6f679a0926a",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/06.png",
+      "nativeCompositeSha256": "7aabab261f62224a6ea8082e96657a19a1f1db72b0a733b4f705c9bfafc5074b",
+      "weaponVisible": true,
+      "rightGrip": [
+        162,
+        135
+      ],
+      "rotationDeg": 105,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/06.png",
+          "sha256": "a69a2b0d59dacf1b59b3f9b32bc79c8ab63682ed7cc129a8405e913444d97b6a"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/06.png",
+          "sha256": "14d17af1422597791bdf1653b77f6795fba39fba178e90a9e9ba159ef0362faf"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/06.png",
+          "sha256": "750b545c1f3f7810439d1a2270fe03cda15dd42e2eac09a29d5292504b952ac0"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/06.png",
+          "sha256": "c7040891b29a316d4352e74f2da278e480858d6819cab79a1153152242b25cc7"
+        }
+      },
+      "glmRepaired": true
+    },
+    {
+      "index": 7,
+      "durationMs": 90,
+      "phase": "03-impact",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/07.png",
+      "sha256": "c965ea862fae0c40d5852dc886037aa7607ae0cb392bd5e87d87bd9339a2d38b",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/07.png",
+      "nativeSha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/07.png",
+      "nativeCompositeSha256": "3805b3c82a30ed8def5455c7bf8377f46f24cddec49cee2332c10fd608f37e32",
+      "weaponVisible": true,
+      "rightGrip": [
+        151,
+        147
+      ],
+      "rotationDeg": 125,
+      "scale": 1.0,
+      "isAcceptedKey": true,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/07.png",
+          "sha256": "a238da50f44ad9ed96b570f6576ed99c0363a5ceb3c85b59d16b9cce9e1f684d"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/07.png",
+          "sha256": "db68354428eb3608c28bf2ec475f5737d7b1b1cb8db702bcd9d97b8b004735da"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/07.png",
+          "sha256": "22c34f8a254e984b8f5cde3e35f33883b504903ee21b45bf86700977f82b5a82"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/07.png",
+          "sha256": "446c14249bec977ce7b42570b51eef619b9f3bf06472f199ddb93357438433ba"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "durationMs": 70,
+      "phase": "recover-low",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/08.png",
+      "sha256": "853b963b4741f836313f3155051b1124433ca7d3008cd4ebaacf09fe5a7408bd",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/08.png",
+      "nativeSha256": "15ee3d49ca9186cde64efe4a07a97b38ee9f6cccc8d67a9bad4d156ce9a4b86b",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/08.png",
+      "nativeCompositeSha256": "d524b9131b903e963b7606cc3ba42f14229a48bf1ec96d6beadd28506ea93015",
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        146
+      ],
+      "rotationDeg": 120,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/08.png",
+          "sha256": "2ffc9931404b11f3e73ac71054ccdae6fd185822fe90fa00cb4e1ba90597900b"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/08.png",
+          "sha256": "6a46e11c4daed604d1ca02ef72584fde0395da86b6ab160a7a2856a97c309ec4"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/08.png",
+          "sha256": "fc1cb986a9df7815e3a5feddb82920389fd97c95c49b2386a86f1140942fb36a"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/08.png",
+          "sha256": "079cab67202e9d0f7b3b3088bd431e939c71a38d03eb09fd62bb844be73d274e"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "durationMs": 70,
+      "phase": "recover-pelvis",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/09.png",
+      "sha256": "a0dfcba378d15c4614c03efdabb3e4fd2fab4eb8112ce5d369aa2f1c532f70d0",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/09.png",
+      "nativeSha256": "aaf19f21ff737d1901cda01f52ce4fbc0692c6acf5d1bf34ce9fce6dbaea05ef",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/09.png",
+      "nativeCompositeSha256": "aaf19f21ff737d1901cda01f52ce4fbc0692c6acf5d1bf34ce9fce6dbaea05ef",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/09.png",
+          "sha256": "a0dfcba378d15c4614c03efdabb3e4fd2fab4eb8112ce5d369aa2f1c532f70d0"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 10,
+      "durationMs": 60,
+      "phase": "recover-guard",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/10.png",
+      "sha256": "a629890d98a55fe99fe001d600493ee35be4da4df43b718197fb1981481cb708",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/10.png",
+      "nativeSha256": "a775be2dd948b315a39ca613af96ae95b067d16387519d88bd31865bb118c58b",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/10.png",
+      "nativeCompositeSha256": "a775be2dd948b315a39ca613af96ae95b067d16387519d88bd31865bb118c58b",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/10.png",
+          "sha256": "a629890d98a55fe99fe001d600493ee35be4da4df43b718197fb1981481cb708"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 11,
+      "durationMs": 60,
+      "phase": "guard-return",
+      "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/frames/11.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native/11.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/native-composite/11.png",
+      "nativeCompositeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1.0,
+      "isAcceptedKey": false,
+      "layers": {
+        "weaponBack": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/body/11.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "path": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ]
+}

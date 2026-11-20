@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "BODY_BACK_L_AXE_FULL_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Axe",
+  "scope": "Complete body-only overhead axe cycle, empty-handed layers-off",
+  "clip": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/clip.json",
+    "sha256": "e78fc6ff2e3c444b64eef6792414dca011ffe7ca8121f4073bf0090722255aa6"
+  },
+  "master": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/body256.aseprite",
+    "sha256": "aee76e2d3113b0effbaada18cb4828098cd8669b681f403c0125ef7bca99bdbe"
+  },
+  "nativeMaster": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/native128.aseprite",
+    "sha256": "61e4e8b52fa9468386470d5ac17c73e1bafd126d8e3602e5cf8a3b21eef5b4e5"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 1100,
+  "acceptedKeyReuse": [
+    {
+      "frameIndex": 3,
+      "keyName": "01-hoist",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-native.png",
+        "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/native/03.png",
+        "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 4,
+      "keyName": "02-apex",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-native.png",
+        "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/native/04.png",
+        "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 7,
+      "keyName": "03-impact",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-native.png",
+        "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/back_l-Axe-full/native/07.png",
+        "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    }
+  ],
+  "generationAccounting": {
+    "jobs": [
+      {
+        "tool": "animate_image",
+        "jobId": "7c0b1ca2-c9af-420b-9fb5-c0e606650b00",
+        "segment": "entry",
+        "cost": 1.0,
+        "seed": 310301
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "6f8e537c-60db-4504-a5d5-400b4cf0eb29",
+        "segment": "descent",
+        "cost": 1.0,
+        "seed": 310302
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "3061a847-428c-4dad-a57e-bed16eb34720",
+        "segment": "recovery",
+        "cost": 1.0,
+        "seed": 310303
+      }
+    ],
+    "generationsCharged": 3.0
+  }
+}

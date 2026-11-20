@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "scope": "back_r/Axe F04 (apex) and F07 (impact)",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Axe",
+  "weapon": "militia-axe",
+  "groundY": {
+    "native128": 126,
+    "composite256": 190
+  },
+  "frames": {
+    "F04": {
+      "sourceIndex": 4,
+      "phase": "validated-apex",
+      "durationMs": 110,
+      "tacticalChoreography": "Highest windup / apex; right arm raised overhead, elbow cocked out to the right, forearm folded back across head crown; heavy axe head hoisted in free negative space, cutting blade edge facing up-forward; left arm stabilized low as dynamic counterbalance.",
+      "anatomicalRightArm": {
+        "native128": {
+          "shoulder": [
+            83,
+            38
+          ],
+          "elbow": [
+            99,
+            22
+          ],
+          "forearmPath": "Connects (99, 22) up-left to (83, 13)",
+          "wrist": [
+            83,
+            13
+          ],
+          "palmGripCenter": [
+            75,
+            8
+          ],
+          "gloveEnvelope": "x=72..77, y=3..14"
+        },
+        "composite256": {
+          "shoulder": [
+            147,
+            102
+          ],
+          "elbow": [
+            163,
+            86
+          ],
+          "forearmPath": "Connects (163, 86) up-left to (147, 77)",
+          "wrist": [
+            147,
+            77
+          ],
+          "palmGripCenter": [
+            139,
+            72
+          ],
+          "gloveEnvelope": "x=136..141, y=67..78"
+        }
+      },
+      "counterbalanceLeftArm": {
+        "native128": {
+          "shoulder": [
+            38,
+            48
+          ],
+          "elbow": [
+            28,
+            62
+          ],
+          "wrist": [
+            23,
+            76
+          ],
+          "fist": [
+            23,
+            83
+          ]
+        },
+        "composite256": {
+          "shoulder": [
+            102,
+            112
+          ],
+          "elbow": [
+            92,
+            126
+          ],
+          "wrist": [
+            87,
+            140
+          ],
+          "fist": [
+            87,
+            147
+          ]
+        },
+        "status": "Inactive counterbalance fist hanging low near hip; zero weapon attachment."
+      },
+      "itemTransform": {
+        "bodyGrip": [
+          139,
+          72
+        ],
+        "itemGrip": [
+          36,
+          55
+        ],
+        "angleDeg": 330,
+        "unwrappedAngleDeg": -30,
+        "scale": 1,
+        "flipX": false,
+        "headBbox256": [
+          123,
+          24,
+          150,
+          68
+        ],
+        "bodyCollisionPixels": 0,
+        "explanation": "At 330 deg (-30 deg), the curved axe blade cuts up-forward into the direction of attack; axe head occupies negative space above crown without torso overlap."
+      },
+      "handFrontGlove": {
+        "genuineGloveRows": [
+          [
+            67,
+            138,
+            143
+          ],
+          [
+            68,
+            137,
+            142
+          ],
+          [
+            69,
+            136,
+            141
+          ],
+          [
+            70,
+            136,
+            141
+          ],
+          [
+            71,
+            136,
+            140
+          ],
+          [
+            72,
+            136,
+            140
+          ],
+          [
+            73,
+            136,
+            140
+          ],
+          [
+            74,
+            136,
+            141
+          ],
+          [
+            75,
+            136,
+            141
+          ],
+          [
+            76,
+            137,
+            141
+          ],
+          [
+            77,
+            137,
+            142
+          ],
+          [
+            78,
+            139,
+            142
+          ]
+        ],
+        "localRetouches": [
+          {
+            "x": 138,
+            "y": 70,
+            "rgba": [
+              45,
+              26,
+              31,
+              255
+            ],
+            "type": "warm highlight"
+          },
+          {
+            "x": 138,
+            "y": 71,
+            "rgba": [
+              45,
+              26,
+              31,
+              255
+            ],
+            "type": "warm highlight"
+          },
+          {
+            "x": 137,
+            "y": 72,
+            "rgba": [
+              45,
+              26,
+              31,
+              255
+            ],
+            "type": "warm highlight"
+          },
+          {
+            "x": 139,
+            "y": 70,
+            "rgba": [
+              27,
+              15,
+              22,
+              255
+            ],
+            "type": "finger curl crease"
+          },
+          {
+            "x": 139,
+            "y": 73,
+            "rgba": [
+              27,
+              15,
+              22,
+              255
+            ],
+            "type": "finger curl crease"
+          },
+          {
+            "x": 137,
+            "y": 71,
+            "rgba": [
+              37,
+              19,
+              26,
+              255
+            ],
+            "type": "midtone transition"
+          }
+        ],
+        "bodyRgbaAlteration": 0
+      }
+    },
+    "F07": {
+      "sourceIndex": 7,
+      "phase": "validated-impact",
+      "durationMs": 110,
+      "tacticalChoreography": "Downward cleave impact; body compressed and hinged forward, right shoulder dropped, right elbow leading low forearm; right fist firmly clenched at hip level; axe head strikes forward-down with cutting blade edge biting exactly into groundY=190 (native 126) at x=177; left arm counterweights behind.",
+      "anatomicalRightArm": {
+        "native128": {
+          "shoulder": [
+            83,
+            51
+          ],
+          "elbow": [
+            96,
+            64
+          ],
+          "forearmPath": "Connects (96, 64) down-left to (92, 77)",
+          "wrist": [
+            92,
+            77
+          ],
+          "palmGripCenter": [
+            93,
+            82
+          ],
+          "gloveEnvelope": "x=88..98, y=78..85"
+        },
+        "composite256": {
+          "shoulder": [
+            147,
+            115
+          ],
+          "elbow": [
+            160,
+            128
+          ],
+          "forearmPath": "Connects (160, 128) down-left to (156, 141)",
+          "wrist": [
+            156,
+            141
+          ],
+          "palmGripCenter": [
+            157,
+            146
+          ],
+          "gloveEnvelope": "x=152..162, y=142..149"
+        }
+      },
+      "counterbalanceLeftArm": {
+        "native128": {
+          "shoulder": [
+            38,
+            52
+          ],
+          "elbow": [
+            27,
+            65
+          ],
+          "wrist": [
+            23,
+            78
+          ],
+          "fist": [
+            22,
+            84
+          ]
+        },
+        "composite256": {
+          "shoulder": [
+            102,
+            116
+          ],
+          "elbow": [
+            91,
+            129
+          ],
+          "wrist": [
+            87,
+            142
+          ],
+          "fist": [
+            86,
+            148
+          ]
+        },
+        "status": "Inactive left fist low alongside hip; distinct silhouette separation from torso."
+      },
+      "itemTransform": {
+        "bodyGrip": [
+          157,
+          146
+        ],
+        "itemGrip": [
+          36,
+          55
+        ],
+        "angleDeg": 120,
+        "unwrappedAngleDeg": 120,
+        "scale": 1,
+        "flipX": false,
+        "bladeGroundContactPoint256": [
+          177,
+          190
+        ],
+        "nativeBladeGroundContactPoint128": [
+          113,
+          126
+        ],
+        "explanation": "At 120 deg, the heavy axe head strikes forward-down, planting its curved edge right onto the ground plane at y=190 (native y=126)."
+      },
+      "handFrontGlove": {
+        "genuineGloveRows": [
+          [
+            142,
+            155,
+            159
+          ],
+          [
+            143,
+            154,
+            160
+          ],
+          [
+            144,
+            153,
+            161
+          ],
+          [
+            145,
+            153,
+            161
+          ],
+          [
+            146,
+            153,
+            161
+          ],
+          [
+            147,
+            154,
+            161
+          ],
+          [
+            148,
+            155,
+            160
+          ],
+          [
+            149,
+            156,
+            159
+          ]
+        ],
+        "localRetouches": [
+          {
+            "x": 156,
+            "y": 144,
+            "rgba": [
+              92,
+              50,
+              48,
+              255
+            ],
+            "type": "thumb wrap highlight"
+          },
+          {
+            "x": 157,
+            "y": 144,
+            "rgba": [
+              92,
+              50,
+              48,
+              255
+            ],
+            "type": "thumb wrap highlight"
+          },
+          {
+            "x": 155,
+            "y": 143,
+            "rgba": [
+              78,
+              42,
+              43,
+              255
+            ],
+            "type": "mid-bright knuckle"
+          },
+          {
+            "x": 158,
+            "y": 145,
+            "rgba": [
+              78,
+              42,
+              43,
+              255
+            ],
+            "type": "mid-bright knuckle"
+          },
+          {
+            "x": 156,
+            "y": 146,
+            "rgba": [
+              27,
+              15,
+              22,
+              255
+            ],
+            "type": "joint crease"
+          },
+          {
+            "x": 159,
+            "y": 146,
+            "rgba": [
+              27,
+              15,
+              22,
+              255
+            ],
+            "type": "joint crease"
+          }
+        ],
+        "bodyRgbaAlteration": 0
+      }
+    }
+  }
+}

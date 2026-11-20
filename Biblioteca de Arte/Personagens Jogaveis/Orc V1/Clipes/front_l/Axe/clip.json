@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "front_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "ppu": 100,
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    65,
+    35,
+    80,
+    155,
+    35,
+    115,
+    110,
+    130,
+    50,
+    90,
+    100
+  ],
+  "totalDurationMs": 1005,
+  "master": "Ataque.aseprite",
+  "masterSha256": "5b19cac24dcceb2218a05bd6009a0debb847719b205d4c0a8989aa8169ade3eb",
+  "bodyMaster": "Corpo.aseprite",
+  "bodyMasterSha256": "d1d1535c5ad8fe5058c6d290f7de783f81ff9ec5e5bb4a978ad9935e0ce90d49",
+  "handMaster": "Dedos.aseprite",
+  "handMasterSha256": "3615c686ed21475f5f51a91871da57647c9ec7f4e81fe45251a3830c47c15896",
+  "strip": "Folha.png",
+  "stripSha256": "9c3c009c047aa7bd1ff2b9b2c87b1b5f7c74ab22c687deb831d0f5bd6077a5d8",
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "scale": 1,
+    "source": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+    "master": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+    "sprite": "assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png",
+    "sourceSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+    "masterSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+    "spriteSha256": "f573fb9a9264a5d46fc20cdfbebf679cb47cf8944d74a435e25e1d9da795c3a0"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "Quadros/00.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "durationMs": 40,
+      "phase": "rest",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/00.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "png": "Quadros/01.png",
+      "sha256": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/01.png",
+          "sha256": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "png": "Quadros/02.png",
+      "sha256": "f690ebed61853ad101e3868871d1b32448e8d51b9172b743590a20695edcfa39",
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        154,
+        131
+      ],
+      "rotationDeg": 60,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/02.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/02.png",
+          "sha256": "4d39821a38cd2d248cfb887265ff931b0b70c667a26a7de6e4bc6872babfa1e2"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/02.png",
+          "sha256": "2063f5804f88ed8dcd678fa599ab1b8c85e9959f83d076542710a4713a9e0fa9"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/02.png",
+          "sha256": "cff09f14645301888c78b1aad71d6c8b4d97cbb13dedca3000754673fac60121"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "png": "Quadros/03.png",
+      "sha256": "727db0c2230a20f4fcb5a52c2ef4795ff600f7ba0c3b2c39d1911183678cf068",
+      "durationMs": 80,
+      "phase": "raise",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        118
+      ],
+      "rotationDeg": 35,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/03.png",
+          "sha256": "9e25281c626ce764af9f81a143070075de14d9464729c48a4f6760c3d08f7f9c"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/03.png",
+          "sha256": "c873d43f1a07232117df837de9876622aa779c3e95475a35e272108cb9bb1a48"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/03.png",
+          "sha256": "af7d72de553ff99e2cf413eae5aa8be2a3921dd4ef4a6912b0d2ec69a3a8dee7"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "png": "Quadros/04.png",
+      "sha256": "d1967c88f5b10e8d3acf84f88f6ec9d5b054a70e158868d21b31370ae220cd18",
+      "durationMs": 155,
+      "phase": "cocked-shoulder",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        100
+      ],
+      "rotationDeg": 10,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/04.png",
+          "sha256": "a3f507b32a979e8dcccd60c06677fb27f69359c73e468213824d16eced16b4f6"
+        },
+        "body": {
+          "png": "Camadas/body/04.png",
+          "sha256": "41c1da157633087d7155354170ae3eb401cb6b5d96af9eacafcb3bc9024fd3bb"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/04.png",
+          "sha256": "c37d1ebbad82ad2461209c17ead66a985d428a6c41015a45b73b120f608f4ef2"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/04.png",
+          "sha256": "0ae22d2e67cd9ec3625b98254ea296569225f47c755d56e0c3c38e4580a010ab"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "png": "Quadros/05.png",
+      "sha256": "49b2977296e4ddcd99e68c65b26b215ad249da377c8e9c55456e03d83bd14df8",
+      "durationMs": 35,
+      "phase": "release",
+      "weaponVisible": true,
+      "rightGrip": [
+        109,
+        119
+      ],
+      "rotationDeg": 325,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/05.png",
+          "sha256": "9295f35ff370906d0c41ad9bae50dd2ab0e8e9d83d10ddfc0bd9e7a126f7b4ca"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/05.png",
+          "sha256": "18850092cda3c8f78342a25b004ba0c67cee255af17dd301c3ac9c02b442daa3"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/05.png",
+          "sha256": "cbbcb1736556b7409a7986814a8cbe9b338bca1bd693250fcf49ceaebdedb6b6"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "png": "Quadros/06.png",
+      "sha256": "0ad7dea7b192a4b0df2208330b3ab22688844f1ee9ac68dc6b8a4d1425318a5a",
+      "durationMs": 115,
+      "phase": "impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        107,
+        143
+      ],
+      "rotationDeg": 275,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/06.png",
+          "sha256": "d6635ef9e006a0738ef106d06b63c9664a3f1c062a1de437d287341ae69806d5"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/06.png",
+          "sha256": "88176d9316eff5b6dd9ca1e514ebea4bbf8fe1319598733716ddaaedf0609e86"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/06.png",
+          "sha256": "2da91c494616a66e6a7ef029b94065b427f0c4a8da0ba4e1d7587b2691783a31"
+        }
+      }
+    },
+    {
+      "index": 7,
+      "png": "Quadros/07.png",
+      "sha256": "9f1f1eae88f4a3cfbb12159da50bb3195857b88febbf713ad256892542e3149d",
+      "durationMs": 110,
+      "phase": "follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        117,
+        148
+      ],
+      "rotationDeg": 270,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/07.png",
+          "sha256": "df37a4d497e968b85016b59abaf9909c47af792cd9dfe892091e1b731c12c616"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/07.png",
+          "sha256": "bf4821a3e768d73d9745bb8317dd49f45548f23581607d12079423201dce4845"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/07.png",
+          "sha256": "76bb6082cd38b90d7941009bcd276d22c037bbb1e6ef84cf96ca1b119823e18e"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "png": "Quadros/08.png",
+      "sha256": "926a8967cfaef83fd9999a14b51bbc9fefde84ebd96ca88e087c40bd5978e0a5",
+      "durationMs": 130,
+      "phase": "recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        126,
+        148
+      ],
+      "rotationDeg": 280,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/08.png",
+          "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/08.png",
+          "sha256": "894f3763fad3409353f4fb9a1a8ca1259b7ca56b005d6823b29a72ddb600e08d"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/08.png",
+          "sha256": "ae436bcf0f842fa6562ae007583ce634e72240c0d647dc285d997db036b0de96"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "png": "Quadros/09.png",
+      "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae",
+      "durationMs": 50,
+      "phase": "action-complete",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/09.png",
+          "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 10,
+      "png": "Quadros/10.png",
+      "sha256": "b43b2e3558d0914f31ff988f28fff8490778c6e212699f3a3c11b7d38fb3a839",
+      "durationMs": 90,
+      "phase": "after-attack-settle",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/10.png",
+          "sha256": "b43b2e3558d0914f31ff988f28fff8490778c6e212699f3a3c11b7d38fb3a839"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 11,
+      "png": "Quadros/11.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "durationMs": 100,
+      "phase": "return-unarmed",
+      "weaponVisible": false,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Own current posed glove; traced finger and thumb contours wrapping handle",
+      "layers": {
+        "weaponBack": {
+          "png": "Camadas/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "Camadas/body/11.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "Camadas/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "Camadas/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ],
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "hideAfterAction": true,
+  "contactEvent": {
+    "frame": 6,
+    "timeMs": 410,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

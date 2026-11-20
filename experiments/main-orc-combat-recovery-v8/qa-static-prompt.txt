@@ -1,0 +1,22 @@
+Voce e QA ESTATICO independente do candidato V8 do Orc V1. Voce nao produziu nenhuma arte deste candidato. Sua funcao e confrontar, celula por celula, cada reclamacao concreta que o criador fez, e dizer se ela foi resolvida, parcialmente resolvida ou continua igual. Nao edite arte.
+
+Candidato: characters/orc-v1/source/combat-recovery-v8/candidate28manifest.json
+Pagina comparativa: Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao de combate V8/index.html
+Pagina da rodada reprovada, para comparar: Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao de combate V7/index.html
+
+LISTA DE OBJECOES DO CRIADOR, uma por linha, cada uma precisa de veredito proprio
+
+O1. back_l Sword ataca de lado, atravessando lateralmente em vez de golpear para frente.
+O2. back_l Axe tem movimento antinatural.
+O3. back_r Axe estava com pegada underhand, mao invertida.
+O4. front_l Sword tinha a axila nao resolvida, com buraco ou chapa escura no encontro do braco com o tronco.
+O5. front_r Sword deve ficar protegido, sem alteracao de pose.
+O6. Havia flash branco no golpe da espada vista de costas.
+
+ONDE OLHAR. As celulas traseiras vivas estao em characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword, back_l-axe, back_r-sword, back_r-axe. As frontais foram herdadas do V7 em characters/orc-v1/source/combat-recovery-v7/frontal/. Cada celula tem clip.json com frames, camadas body, handFront, weaponBack, weaponFront, e um master em source/. Use os PNGs reais.
+
+COMO JULGAR. Para O1 e O2 a pergunta e de deslocamento e anatomia: meça o centroide da lamina ou da arma por quadro e diga se o movimento e predominantemente vertical e frontal, ou se ha travessia lateral. Para O3, inspecione a luva e o punho no quadro de contato e diga se o polegar e a palma estao coerentes com a direcao do cabo. Para O4, compare com a celula do V7 e diga quantos pixels mudaram e se o buraco foi fechado. Para O5, prove por hash que front_r Sword e byte-identico ao V7. Para O6, olhe o primeiro e o ultimo quadro armado da vista de costas e diga se a arma entra ou sai com brilho anormal.
+
+REGRAS DE HONESTIDADE. Nao aprove nada que voce nao conseguiu medir ou ver. Se um item for impossivel de julgar por medicao e depender de gosto, diga isso explicitamente e classifique como NAO_VERIFICAVEL_POR_MEDICAO em vez de inventar um veredito. Um QA que aprova tudo e inutil.
+
+VEREDITO FINAL. READY_FOR_CREATOR_REVIEW, ou NEEDS_FIX com a lista priorizada do que ainda impede a entrega. Escreva em experiments/main-orc-combat-recovery-v8/qa-static-v8/report.md, com uma tabela de O1 a O6 e a evidencia de cada linha. Nao edite nada em characters/, nao toque em Unity, nao faca commit.

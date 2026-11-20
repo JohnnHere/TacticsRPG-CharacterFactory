@@ -1,0 +1,46 @@
+{
+  "character": "orc-v1",
+  "direction": "back_l",
+  "category": "Sword",
+  "weapon": "Espada do Recruta",
+  "totalFrames": 12,
+  "totalDurationMs": 730,
+  "checks": [
+    {
+      "name": "timing_preservation",
+      "status": "PASS",
+      "details": "12 frames totaling exactly 730ms: [40, 60, 60, 70, 70, 40, 40, 90, 70, 70, 60, 60]ms"
+    },
+    {
+      "name": "body_zero_rgba_delta",
+      "status": "PASS",
+      "details": "All 12 frames body256 are 100% byte-identical to repair1 body-specialist; all 12 frames native body have 0 pixel difference"
+    },
+    {
+      "name": "structural_keys_preservation",
+      "status": "PASS",
+      "details": "Structural keys F03 (01-hoist), F04 (02-apex), F07 (03-impact) byte-identical in body256 and 0 pixel diff in native128"
+    },
+    {
+      "name": "attack_only_v1_policy",
+      "status": "PASS",
+      "details": "Visible interval is strictly [2, 8]. Bookends F00, F01, F09, F10, F11 have 100% transparent weaponBack, weaponFront, handFront, and composite byte-matches body"
+    },
+    {
+      "name": "diagonal_sword_arc_continuity",
+      "status": "PASS",
+      "details": "Smooth, physically grounded diagonal slash trajectory: F02 (10\u00b0) -> F03 (350\u00b0) -> F04 (320\u00b0) -> F05 (285\u00b0) -> F06 (265\u00b0) -> F07 (245\u00b0) -> F08 (240\u00b0)"
+    },
+    {
+      "name": "ground_contact_clearance",
+      "status": "PASS",
+      "details": "Lowest weapon pixel reaches y=175 in F07 and y=180 in F08, staying cleanly above ground floor groundY=190 without subterranean clipping"
+    },
+    {
+      "name": "four_layer_aseprite_masters",
+      "status": "PASS",
+      "details": "4 masters saved and verified: composite.aseprite (4 layers, 12f), body.aseprite (1 layer, 12f), hand.aseprite (1 layer, 12f), native.aseprite (1 layer, 12f)"
+    }
+  ],
+  "verdict": "READY_FOR_REAR_SWORD_L_BACK_FULL"
+}

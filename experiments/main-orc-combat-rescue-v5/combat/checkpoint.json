@@ -1,0 +1,187 @@
+{
+  "milestone": "REPRESENTATIVE_QA5_READY",
+  "status": "REPRESENTATIVE_QA5_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "updatedAt": "2026-10-29T13:06:18.877022+00:00",
+  "scopeAfterRootEscalation": {
+    "assignedScope": "REAR_BODY_CHOREOGRAPHY_ONLY (QA5-02 and QA5-03); starting with representative back_r/Axe whole-body choreography",
+    "gripSpecialistEscalation": "All 8 weapon grips transferred by Root to GPT-6.1 Sol/Codex (47326bab) in isolated grip-specialist directories after qa-grok/representative-front-grip.json",
+    "untouchedScopes": [
+      "characters/orc-v1/source/combat-rescue-v5/grip-specialist",
+      "experiments/main-orc-combat-rescue-v5/grip-specialist",
+      "Unarmed (4 views)",
+      "Walk",
+      "Defeat",
+      "Idle",
+      "Hit",
+      "Rejected V5 freeze 00281c86 sources/exports"
+    ]
+  },
+  "representativeDeliverable": {
+    "direction": "back_r",
+    "category": "Axe",
+    "clipJson": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/clip.json",
+    "clipJsonSha256": "ae5ecf1c313e8bebfde96bf8dd687ced4f10699cf075b1e2508c1dd723cf269e",
+    "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/body.aseprite",
+    "bodyMasterSha256": "dc832b44ae2cf5f01dd8fcef03ee46ada38324c52d89468b44fddf92c91f3187",
+    "bodyMaster256": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/bodyMaster256.aseprite",
+    "bodyMaster256Sha256": "dc832b44ae2cf5f01dd8fcef03ee46ada38324c52d89468b44fddf92c91f3187",
+    "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/native.aseprite",
+    "nativeMasterSha256": "7777de30970e4768214de2f1c8762db81cee13ca370206affe4824fe02de631d",
+    "nativeMaster128": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/nativeMaster128.aseprite",
+    "nativeMaster128Sha256": "7777de30970e4768214de2f1c8762db81cee13ca370206affe4824fe02de631d",
+    "master256": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/master256.aseprite",
+    "master256Sha256": "d6331b237f1c98e47440cfa09e681e221741ef761a96f29100644ec9201258c3",
+    "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native-strip.png",
+    "nativeStripSha256": "ecac22f300a647ce9af698f8179a5c7e9afd46e58eada98e27861de669c4c682",
+    "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/composite-strip.png",
+    "compositeStripSha256": "ab27aefabed6df3338b16313e2a6bca89a5ba0266dd559f1a7e31220857ea06e",
+    "sequencePng": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/diagnostics/back_r_axe_qa5_body_sequence.png",
+    "sequencePngSha256": "e35697db576e69b98facd7001b02274fea5051e7e0edb20cd1f49341d398dc3c",
+    "f07RecoveryComparisonPng": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/diagnostics/back_r_axe_f07_vs_f00.png",
+    "f07RecoveryComparisonPngSha256": "fa04fdd1037818876604d7456d8c8c5fd84ffbf484da1fe451ad10e0bb142e36",
+    "finalClipMetricsJson": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/diagnostics/back_r_axe_final_clip_metrics.json"
+  },
+  "pixelLabGeneration": {
+    "jobId": "f0235167-519c-4994-86a2-1260b0e3a23e",
+    "method": "animate_with_skeleton_v3",
+    "direction": "north-east",
+    "seed": 513,
+    "paidGenerationUnits": 3,
+    "balanceAfterJob": 1382.7,
+    "rawDirectory": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/raw/back_r_axe_qa5_v1",
+    "jobReceipt": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/receipts/job_back_r_axe_qa5_v1.json",
+    "balanceReceipt": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/receipts/balance_after_back_r_axe_qa5.json"
+  },
+  "qa5BodyVerificationCompiledFromFinalClipPngs": {
+    "zeroF00ColumnPaste": true,
+    "zeroBodyPixelsErasedByProvisionalGrip": true,
+    "nativeEqualsBodyCrop64_64": true,
+    "brightHaloPixelsOver190": 0,
+    "layersOffWeaponContamination": 0,
+    "anatomicalDominantHand": "right (x > 64 in back_r)",
+    "leftOffHandColumnDiffsVsF00_F01_to_F07": [
+      1564,
+      1702,
+      1391,
+      1101,
+      1020,
+      1012,
+      1039
+    ],
+    "lowerBodyHipLegDiffsVsF00_F01_to_F07": [
+      3090,
+      3069,
+      2933,
+      3067,
+      3139,
+      2914,
+      2840
+    ],
+    "totalBodyDiffsVsF00_F01_to_F07": [
+      6563,
+      6831,
+      6140,
+      6154,
+      5777,
+      5308,
+      5208
+    ],
+    "torsoCentroidProgression128": [
+      [
+        62.35,
+        62.21
+      ],
+      [
+        58.96,
+        62.5
+      ],
+      [
+        57.48,
+        63.14
+      ],
+      [
+        61.0,
+        62.08
+      ],
+      [
+        62.99,
+        61.58
+      ],
+      [
+        61.63,
+        61.8
+      ],
+      [
+        61.27,
+        61.78
+      ],
+      [
+        62.0,
+        62.25
+      ]
+    ],
+    "f07GuardRecoveryCheck": {
+      "f07Bbox128": [
+        24,
+        7,
+        103,
+        126
+      ],
+      "f00Bbox128": [
+        25,
+        7,
+        104,
+        126
+      ],
+      "f07TorsoCentroid128": [
+        62.0,
+        62.25
+      ],
+      "f00TorsoCentroid128": [
+        62.35,
+        62.21
+      ],
+      "f07RightArm256": {
+        "shoulder": [
+          144,
+          94
+        ],
+        "elbow": [
+          155,
+          115
+        ],
+        "wrist": [
+          159,
+          129
+        ],
+        "palm": [
+          159,
+          138
+        ]
+      },
+      "f00RightArm256": {
+        "shoulder": [
+          144,
+          94
+        ],
+        "elbow": [
+          154,
+          114
+        ],
+        "wrist": [
+          158,
+          128
+        ],
+        "palm": [
+          159,
+          138
+        ]
+      },
+      "diffF06ToF07": 4552,
+      "diffF07ToF00": 5208
+    }
+  }
+}

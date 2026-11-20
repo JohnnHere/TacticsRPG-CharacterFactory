@@ -1,0 +1,74 @@
+{
+  "contract": "integrated-candidate-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T18:45:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "candidate28manifest.json",
+    "manifestPath": "characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json",
+    "manifestSha256": "58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794",
+    "cellCount": 28,
+    "activeCandidatesCount": 13,
+    "unchangedAliasesCount": 15,
+    "totalFrames": 226,
+    "hashesChecked": 964,
+    "description": "Auditoria de integração e composição das 28 células do pacote Orc V1 combat rescue v5"
+  },
+  "verdict": "READY_FOR_CREATOR_REVIEW",
+  "verdictSummary": "O pacote integrado de 28 células é técnica e estruturalmente coerente como um todo coeso. As 13 células ativas (8 ciclos de ataque Sword/Axe nas 4 vistas, 4 ciclos Unarmed e 1 Walk traseiro localizado) alinham-se perfeitamente com os 15 pseudônimos protegidos (Idle, Hit, Defeat e Walk frontal/traseiro-direito). A política attack-only-v1 é estritamente cumprida (armas 100% ausentes em repouso, início e recuperação final do golpe), a coreografia entre as 4 direções é anatômica e não espelhada (Sword corte diagonal 730ms; Axe overhead pesado 1005-1100ms), e todas as 42 reexportações de mestres Aseprite e 21 verificações de browser foram aprovadas. Todas as travas de integração são rigorosamente mantidas: eligibleForIntegration=false, runtimeImplemented=false, creatorApproved=false, status PENDING_CREATOR.",
+  "findings": {
+    "manifestIntegrity": {
+      "sha256": "58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794",
+      "expectedSha256": "58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794",
+      "match": true,
+      "totalCells": 28,
+      "clipFilesVerifiedOnDisk": "28/28 match declared clipSha256"
+    },
+    "compositionAndStructure": {
+      "activeCandidates": [
+        "front_r/Unarmed", "front_r/Sword", "front_r/Axe",
+        "front_l/Unarmed", "front_l/Sword", "front_l/Axe",
+        "back_r/Unarmed", "back_r/Sword", "back_r/Axe",
+        "back_l/Walk", "back_l/Unarmed", "back_l/Sword", "back_l/Axe"
+      ],
+      "unchangedAliases": [
+        "front_r/Idle", "front_r/Walk", "front_r/Hit", "front_r/Defeat",
+        "front_l/Idle", "front_l/Walk", "front_l/Hit", "front_l/Defeat",
+        "back_r/Idle", "back_r/Walk", "back_r/Hit", "back_r/Defeat",
+        "back_l/Idle", "back_l/Hit", "back_l/Defeat"
+      ],
+      "inRevision": [],
+      "inProduction": []
+    },
+    "attackOnlyPolicy": {
+      "compliant": true,
+      "details": "Nos 8 ciclos armados, as camadas de armas e mãos frontais iniciam invisíveis/vazias (F00-F01) e retornam a vazio no término da recuperação (F09-F11 no machado, F11-F12 na espada). Todas as 15 células de alias e os 4 ciclos de desarmado possuem 0 pixels de equipamento."
+    },
+    "crossViewConsistency": {
+      "swordFamily": "Corte diagonal consistente nas 4 vistas, 730ms em todas as vistas (13f frontais, 12f traseiras).",
+      "axeFamily": "Golpe pesado descendente overhead com impacto e recuo no solo, 1005ms (12f) nas frontais e 1100ms (12f) nas traseiras.",
+      "directionalIndependence": "Todas as vistas possuem hashes de clipe únicos; 0 rotação 2D global ou espelhamento horizontal.",
+      "anatomicalDominance": "Mão direita condutora respeitada nas 4 direções, com correta projeção escapular e profundidade tridimensional nas vistas traseiras."
+    },
+    "technicalVerification": {
+      "technicalValidationJson": "TECHNICAL_PASS (226 frames, 964 hashes)",
+      "savedSourceReexports": "PASS_SAVED_SOURCE_EXPORTS (42 masters verificados via Aseprite CLI batch)",
+      "browserChecks": "BROWSER CHECK PASSED (21 verificações aprovadas em player Chromium headless)",
+      "protectedInputs": "PASS (3.506 arquivos protegidos preservados sem divergência)",
+      "rejectedSnapshotPreserved": true
+    },
+    "gatingEnforcement": {
+      "eligibleForIntegration": false,
+      "runtimeImplemented": false,
+      "creatorApproved": false,
+      "creatorApproval": "PENDING_CREATOR",
+      "technicalStatus": "TECHNICAL_PASS",
+      "artisticStatus": "VISUAL_REVIEW_REQUIRED"
+    }
+  },
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "pixellab_note": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado",
+    "cost_usd": "não informado"
+  }
+}

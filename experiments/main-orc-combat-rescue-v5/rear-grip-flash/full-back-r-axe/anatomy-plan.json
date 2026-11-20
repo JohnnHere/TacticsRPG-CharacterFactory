@@ -1,0 +1,176 @@
+{
+  "target": "back_r/Axe",
+  "character": "orc-v1",
+  "frameCount": 12,
+  "totalDurationMs": 1100,
+  "policy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "phase": "guard",
+      "durationMs": 70,
+      "weaponVisible": false,
+      "rightArmChain": "Shoulder (148, 86) -> Elbow (156, 102) -> Wrist (152, 114) -> Palm (150, 116)",
+      "weaponTrajectory": "Hidden (neutral combat guard outside attack)",
+      "gloveRows": [],
+      "retouchPixels": []
+    },
+    {
+      "frame": 1,
+      "phase": "load-begin",
+      "durationMs": 80,
+      "weaponVisible": false,
+      "rightArmChain": "Shoulder (149, 84) -> Elbow (158, 96) -> Wrist (155, 102) -> Palm (154, 104)",
+      "weaponTrajectory": "Hidden (initiating backswing windup)",
+      "gloveRows": [],
+      "retouchPixels": []
+    },
+    {
+      "frame": 2,
+      "phase": "elbow-hoist",
+      "durationMs": 90,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (150, 80) -> Elbow (162, 74) -> Forearm (160, 72) -> Wrist (158, 71) -> Palm (156, 70)",
+      "weaponTrajectory": "Angle 305\u00b0 (-55\u00b0): Haft raised high behind right shoulder, head pointing upward-backward",
+      "grip": [
+        158,
+        71
+      ],
+      "angleDeg": 305,
+      "gloveEnvelope": "3 rows at y=69..71, 100% genuine opaque glove pixels",
+      "retouch": "2 micro-retouches at [156,70] and [155,71] wrapping palm contour over haft"
+    },
+    {
+      "frame": 3,
+      "phase": "validated-hoist",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (148, 78) -> Elbow (154, 73) -> Forearm (150, 72) -> Wrist (147, 72) -> Palm (145, 71)",
+      "weaponTrajectory": "Angle 318\u00b0 (-42\u00b0): Mid-windup hoist, smooth 13\u00b0 transition toward apex",
+      "grip": [
+        147,
+        72
+      ],
+      "angleDeg": 318,
+      "gloveEnvelope": "10 rows at y=68..77, genuine glove cluster",
+      "retouch": "5 retouches sealing handle depth behind leather glove"
+    },
+    {
+      "frame": 4,
+      "phase": "validated-apex",
+      "durationMs": 110,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (146, 78) -> Elbow (144, 74) -> Forearm (141, 73) -> Wrist (139, 72) -> Palm (138, 71)",
+      "weaponTrajectory": "Angle 330\u00b0 (-30\u00b0): Maximum overhead elevation, weapon poised above occiput",
+      "grip": [
+        139,
+        72
+      ],
+      "angleDeg": 330,
+      "gloveEnvelope": "12 rows at y=67..78, validated by QA 863ae631",
+      "retouch": "6 retouches exact match to accepted key",
+      "preservation": "EXACT BYTE PRESERVED from QA-accepted key"
+    },
+    {
+      "frame": 5,
+      "phase": "drop-initiation",
+      "durationMs": 50,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (147, 82) -> Elbow (146, 80) -> Forearm (146, 80) -> Wrist (147, 81) -> Palm (146, 81)",
+      "weaponTrajectory": "Angle 15\u00b0: Downward swing begins, blade snaps forward past vertical apex",
+      "grip": [
+        147,
+        81
+      ],
+      "angleDeg": 15,
+      "gloveEnvelope": "12 rows at y=76..87, genuine glove cluster",
+      "retouch": "5 retouches maintaining thumb and knuckle wrap"
+    },
+    {
+      "frame": 6,
+      "phase": "forward-down-cleave",
+      "durationMs": 60,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (152, 90) -> Elbow (164, 110) -> Forearm (168, 120) -> Wrist (172, 130) -> Palm (172, 130)",
+      "weaponTrajectory": "Angle 75\u00b0: Rapid downward cleave arc, heavy kinetic descent",
+      "grip": [
+        172,
+        130
+      ],
+      "angleDeg": 75,
+      "gloveEnvelope": "10 rows at y=127..136, genuine glove cluster",
+      "retouch": "5 retouches securing fingers over descending haft"
+    },
+    {
+      "frame": 7,
+      "phase": "validated-impact",
+      "durationMs": 110,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (150, 96) -> Elbow (154, 118) -> Forearm (155, 132) -> Wrist (157, 146) -> Palm (156, 145)",
+      "weaponTrajectory": "Angle 120\u00b0: Maximum ground bite, blade edge touches groundY=190 (native 126) at x=177",
+      "grip": [
+        157,
+        146
+      ],
+      "angleDeg": 120,
+      "gloveEnvelope": "8 rows at y=142..149, validated by QA 863ae631",
+      "retouch": "6 retouches exact match to accepted key",
+      "preservation": "EXACT BYTE PRESERVED from QA-accepted key"
+    },
+    {
+      "frame": 8,
+      "phase": "recover-low",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "rightArmChain": "Shoulder (148, 98) -> Elbow (152, 122) -> Forearm (156, 138) -> Wrist (160, 150) -> Palm (161, 154)",
+      "weaponTrajectory": "Angle 105\u00b0: Impact followthrough, axe head resting cleanly on groundY=190 without floor penetration",
+      "grip": [
+        160,
+        150
+      ],
+      "angleDeg": 105,
+      "gloveEnvelope": "10 rows at y=146..156, genuine glove cluster",
+      "retouch": "5 retouches maintaining grip wrap during rebound"
+    },
+    {
+      "frame": 9,
+      "phase": "recover-pelvis",
+      "durationMs": 100,
+      "weaponVisible": false,
+      "rightArmChain": "Shoulder (148, 94) -> Elbow (154, 112) -> Forearm (154, 120) -> Wrist (156, 126) -> Palm (155, 128)",
+      "weaponTrajectory": "Hidden (recovering stance toward combat guard)",
+      "gloveRows": [],
+      "retouchPixels": []
+    },
+    {
+      "frame": 10,
+      "phase": "recover-guard",
+      "durationMs": 100,
+      "weaponVisible": false,
+      "rightArmChain": "Shoulder (148, 90) -> Elbow (156, 108) -> Forearm (154, 116) -> Wrist (153, 120) -> Palm (152, 122)",
+      "weaponTrajectory": "Hidden (returning to guard posture)",
+      "gloveRows": [],
+      "retouchPixels": []
+    },
+    {
+      "frame": 11,
+      "phase": "guard-return",
+      "durationMs": 130,
+      "weaponVisible": false,
+      "rightArmChain": "Shoulder (148, 86) -> Elbow (156, 102) -> Forearm (153, 110) -> Wrist (152, 114) -> Palm (150, 116)",
+      "weaponTrajectory": "Hidden (seamless loop back to F00 guard)",
+      "gloveRows": [],
+      "retouchPixels": []
+    }
+  ]
+}

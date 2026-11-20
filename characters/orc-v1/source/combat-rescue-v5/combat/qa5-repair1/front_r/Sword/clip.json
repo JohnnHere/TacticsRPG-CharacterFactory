@@ -1,0 +1,818 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-qa5-repair1",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "front_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 13,
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    65,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "master": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/source/composite.aseprite",
+  "masterSha256": "cdbe49b4397e63d0f2711630c08c5c39d3ff0ec26a1cd9fd92f8c7604854af19",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/source/body.aseprite",
+  "bodyMasterSha256": "65009a62960b2e5ec26d144c88453d0d74052188a5c725e60831ae67e3250246",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/source/hand.aseprite",
+  "handMasterSha256": "92dee11e33e4057ba81437b92df5f5d76e650b33d9638a963f900d99d7e6b056",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/source/native.aseprite",
+  "nativeMasterSha256": "31e756a6f73b9044d6231fcedb90e460c2818d19176c3ee244511dfbfae1ea6f",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native-strip.png",
+  "stripSha256": "43aba45bf5b4a0bc4b1a453b76a7b14ce0366b6033691cd1bd1409d738ebe78c",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native-strip.png",
+  "nativeStripSha256": "43aba45bf5b4a0bc4b1a453b76a7b14ce0366b6033691cd1bd1409d738ebe78c",
+  "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/composite-strip.png",
+  "compositeStripSha256": "3474e90339cde8a67b2e54b5d48d5ba387b458150a26ddb477d4782eea835b39",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    2,
+    10
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "recruit-sword",
+    "name": "Espada do Recruta",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "spriteSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+    "masterSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "source": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "sourceSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "scale": 1
+  },
+  "contactEvent": {
+    "frame": 6,
+    "timeMs": 290,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Sword/clip.json",
+    "parentMaster": "characters/orc-v1/source/rear-reconstruction-v4/front_r/Sword/source/composite.aseprite",
+    "parentMasterSha256": "0435616a3b895c7309a2d29809876f3d400cdf8c39809145382472d5a780923a",
+    "authoringScript": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/scripts/author_front_r_sword_qa5.lua",
+    "bodyCleanupScript": null,
+    "pixelLabJobId": null,
+    "paidGenerationUnits": 0,
+    "bodyArtChanged": false,
+    "bodyArtScope": "Frontal body choreography 100% preserved (exact RGBA pixel match to parent native/body frames)",
+    "handArtChanged": true,
+    "handArtScope": "Anatomical grip centered on real distal leather fist with forearm wrist-cuff bridge and 4 articulated fingers + thumb lock enclosing wooden handle shaft",
+    "choreographyChanged": false,
+    "timingChanged": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/00.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "durationMs": 30,
+      "phase": "rest",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          102
+        ],
+        "elbow": [
+          92,
+          118
+        ],
+        "wrist": [
+          94,
+          133
+        ],
+        "palm": [
+          96,
+          138
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/00.png",
+          "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/00.png",
+      "nativeSha256": "99ed7d17beb301719ac721e8818a17222ebee0fa3b249a934d3a532cf6c39b7e"
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/01.png",
+      "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          103
+        ],
+        "elbow": [
+          95,
+          115
+        ],
+        "wrist": [
+          98,
+          122
+        ],
+        "palm": [
+          101,
+          125
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/01.png",
+          "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/01.png",
+      "nativeSha256": "f9eeab87421a7cbb79b23c9ab2dc08501019a44bfde0d1eb02ccf8c697de350e"
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/02.png",
+      "sha256": "066719728ef92ae2c92ce9e5605cadc76fe8fded6306bc28e1d37bb80c9ae77b",
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        100,
+        130
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          103
+        ],
+        "elbow": [
+          93,
+          117
+        ],
+        "wrist": [
+          96,
+          126
+        ],
+        "palm": [
+          100,
+          130
+        ]
+      },
+      "rotationDeg": 332,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/02.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/02.png",
+          "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/02.png",
+          "sha256": "1528111ad50b62b8e4ddcda2f6b58ab0b8f14d51d25cbd00e9a9683ebab36c8c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/02.png",
+          "sha256": "88906ed7d18ef3fe4641618d42fe58634a46f4d09d60d6a8fce9dd0e93d3869d"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/02.png",
+      "nativeSha256": "f9eeab87421a7cbb79b23c9ab2dc08501019a44bfde0d1eb02ccf8c697de350e"
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/03.png",
+      "sha256": "133ed39147fcb7dd948c6b84dee825fc157f3fa18c7522d76bb338b0cc62b912",
+      "durationMs": 50,
+      "phase": "anticipation",
+      "weaponVisible": true,
+      "rightGrip": [
+        81,
+        119
+      ],
+      "anatomy": {
+        "shoulder": [
+          105,
+          100
+        ],
+        "elbow": [
+          87,
+          108
+        ],
+        "wrist": [
+          83,
+          116
+        ],
+        "palm": [
+          81,
+          119
+        ]
+      },
+      "rotationDeg": 336,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/03.png",
+          "sha256": "19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/03.png",
+          "sha256": "4b8a9ed25f43cb75d6f876dbafd2070afb7b49d86982c7d1333d2e5bbf1a4d8d"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/03.png",
+          "sha256": "26368da0663e187a12883c13bb66e154948f0808280b6889fc18bb61bc4f7112"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/03.png",
+      "nativeSha256": "48a59ac3285ce6e5e0da5fd46bede9df00eec87d5437e648f40ac6d60fbf2d96"
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/04.png",
+      "sha256": "7928d3625e5e1526dd0e535395aee775476f1f8024150ce2f6745e0a92498c12",
+      "durationMs": 45,
+      "phase": "coil-behind",
+      "weaponVisible": true,
+      "rightGrip": [
+        76,
+        111
+      ],
+      "anatomy": {
+        "shoulder": [
+          105,
+          97
+        ],
+        "elbow": [
+          85,
+          103
+        ],
+        "wrist": [
+          79,
+          109
+        ],
+        "palm": [
+          76,
+          111
+        ]
+      },
+      "rotationDeg": 330,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/04.png",
+          "sha256": "c74418eabd8e7dc005685a6e3f6b278b6bd6b4689325be3599c97d9e1e90fb64"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/04.png",
+          "sha256": "286aa1dc0d33fbeffb794bf90626722a3ec42c291ec0ff0d9e3d578fde8a1102"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/04.png",
+          "sha256": "68973da0609810b560fe06d2f2d7d484e7e6788f80303057be5b1ce482f43a78"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/04.png",
+      "nativeSha256": "0f9abd9d59f6e11523f069081a9151eb7c5f12b74d49bed64389b9af9a528aa7"
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/05.png",
+      "sha256": "99f7ab22daa46fdefed8fe32cadc6c57b90e5865aae93f496d8fac33575bc673",
+      "durationMs": 65,
+      "phase": "apex-hold",
+      "weaponVisible": true,
+      "rightGrip": [
+        80,
+        111
+      ],
+      "anatomy": {
+        "shoulder": [
+          107,
+          98
+        ],
+        "elbow": [
+          89,
+          104
+        ],
+        "wrist": [
+          84,
+          109
+        ],
+        "palm": [
+          80,
+          111
+        ]
+      },
+      "rotationDeg": 346,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/05.png",
+          "sha256": "624c136ba8ff36dfa3f0e1b4d9d1189d316531e4f1e01329a567c13e98646ba6"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/05.png",
+          "sha256": "5786aa229c748c2b90632644a3e4eba1826185a332f5a0faca2e7d509466b815"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/05.png",
+          "sha256": "12a240e43c0c3b71defb514f436fafe186bc1c6baba8a0e4090a87285ff4d841"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/05.png",
+      "nativeSha256": "f0cb3bdc0f07937d2eb7f2754c83794d70aafb8640211aef64e133fa5fbca0f9"
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/06.png",
+      "sha256": "5a4e1942a5011e24015c0699fbff762805b9f3adef4ce28868ab141634b86530",
+      "durationMs": 35,
+      "phase": "slash-release",
+      "weaponVisible": true,
+      "rightGrip": [
+        142,
+        115
+      ],
+      "anatomy": {
+        "shoulder": [
+          112,
+          102
+        ],
+        "elbow": [
+          126,
+          109
+        ],
+        "wrist": [
+          136,
+          111
+        ],
+        "palm": [
+          142,
+          115
+        ]
+      },
+      "rotationDeg": 78,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/06.png",
+          "sha256": "ea116321cc165ace2ee5ae77a5b979c4433fd44b25f39aa8d3cba6867e74f3a2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/06.png",
+          "sha256": "2db235854438202895cd5215c1121c8a950cc38c518f8cc92fa4c49a155091c5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/06.png",
+          "sha256": "37a161d6259afeb8f3f25b9ae214206b2be834f9b67c24292e05181024199482"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/06.png",
+      "nativeSha256": "946652ea7507ed251268ecb6c92813d635556aa899d642093c2b232fdad3ee03"
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/07.png",
+      "sha256": "d44355ab9298d118bef2602ee48bcd7d6b960a3bc15fcf4cfb5c116932f314a8",
+      "durationMs": 35,
+      "phase": "contact",
+      "weaponVisible": true,
+      "rightGrip": [
+        152,
+        129
+      ],
+      "anatomy": {
+        "shoulder": [
+          114,
+          103
+        ],
+        "elbow": [
+          132,
+          117
+        ],
+        "wrist": [
+          145,
+          124
+        ],
+        "palm": [
+          152,
+          129
+        ]
+      },
+      "rotationDeg": 108,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/07.png",
+          "sha256": "a5cfc7855fb1fa8b92e45b701a6d90f7d0cfa4f8cad79d09764171e8333ba96d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/07.png",
+          "sha256": "f240e5bc1285bd9ca40cbd3b81fcb74b3730722d9f0c85e8e178de724c9497c9"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/07.png",
+          "sha256": "b3f190360ca201727324dd802f34ab4450e9043f0d4db89c2a74a51e2d8abed6"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/07.png",
+      "nativeSha256": "eb94de60be6253fbb85674caed03e4b67e8fa42b7683a1fdb959fcce5907ece3"
+    },
+    {
+      "index": 8,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/08.png",
+      "sha256": "9f3e20d6de99fe018f60cba7d423fd8e8ac8efa925242a7f8560f5a1a08f13bc",
+      "durationMs": 100,
+      "phase": "follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        148,
+        143
+      ],
+      "anatomy": {
+        "shoulder": [
+          110,
+          104
+        ],
+        "elbow": [
+          126,
+          129
+        ],
+        "wrist": [
+          141,
+          139
+        ],
+        "palm": [
+          148,
+          143
+        ]
+      },
+      "rotationDeg": 128,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/08.png",
+          "sha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/08.png",
+          "sha256": "16926431eeba35ee4f7ddd6c391f3a59e507be56f0f8ec3b2053d6bef8e45ee6"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/08.png",
+          "sha256": "f4b3d3799e7040dfde6736f5f4d4bc05974855898a65fcb3ab10b264d8377c01"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/08.png",
+      "nativeSha256": "6057e612d77ef304703462f83e1a38a3b01b3f12da0ac31afc355f439f6e00a7"
+    },
+    {
+      "index": 9,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/09.png",
+      "sha256": "2d4d2949a205e96473c34d758237b9b365e759526d6d788fa9de14ded8737a1f",
+      "durationMs": 55,
+      "phase": "recoil",
+      "weaponVisible": true,
+      "rightGrip": [
+        122,
+        149
+      ],
+      "anatomy": {
+        "shoulder": [
+          106,
+          105
+        ],
+        "elbow": [
+          109,
+          129
+        ],
+        "wrist": [
+          118,
+          144
+        ],
+        "palm": [
+          122,
+          149
+        ]
+      },
+      "rotationDeg": 115,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/09.png",
+          "sha256": "40c68a7b3d4a56cb493ef561ec147eb74f005072c4614cc0d08d59564766a90e"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/09.png",
+          "sha256": "11ce2c02e0d02277f6c2cd3094df6af4365a6e2252c0ffe293c178ea1f86f368"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/09.png",
+          "sha256": "4c3ef067c23e930703c2f6ac33b792535c2b1adce54d033a356c87d1c0beab3b"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/09.png",
+      "nativeSha256": "6522477db07cf601d42483381e9c272e9dfd49fb5f99c1d265f04d605aa29c1e"
+    },
+    {
+      "index": 10,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/10.png",
+      "sha256": "3f9481fb35905f64115dd1d38b95067a19f4bb085a23cec87718618ec92f264b",
+      "durationMs": 80,
+      "phase": "settle-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        109,
+        141
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          104
+        ],
+        "elbow": [
+          97,
+          122
+        ],
+        "wrist": [
+          104,
+          136
+        ],
+        "palm": [
+          109,
+          141
+        ]
+      },
+      "rotationDeg": 95,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/10.png",
+          "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/10.png",
+          "sha256": "360ad98d8afeaa4f53eba2a812cca191c2cc39d790684f216e578441603a2cb7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/10.png",
+          "sha256": "4aa8816579109624656c30bb18b4148ce107e358e857c77ee8e234d0f82877c9"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/10.png",
+      "nativeSha256": "e7e1285283875374fa086c7413cf219da6e12fbf451e0ae4e57491f0c3322049"
+    },
+    {
+      "index": 11,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/11.png",
+      "sha256": "73328fc309ebd71151341aaaaea74c82b363a63b84f4a3b28aec7646bf37b729",
+      "durationMs": 45,
+      "phase": "release-grip",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          103
+        ],
+        "elbow": [
+          95,
+          120
+        ],
+        "wrist": [
+          99,
+          136
+        ],
+        "palm": [
+          102,
+          140
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/11.png",
+          "sha256": "c4f05184e3f5ebdab97e419f0b93a730b8609ea746dff3ba392ad58ef7c16925"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/11.png",
+      "nativeSha256": "e7e1285283875374fa086c7413cf219da6e12fbf451e0ae4e57491f0c3322049"
+    },
+    {
+      "index": 12,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/12.png",
+      "sha256": "1fed52c15d336a53654aceaf8b880961eb98cc7e8edf927298d2b3f8bc8a44ab",
+      "durationMs": 90,
+      "phase": "return-to-guard",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomy": {
+        "shoulder": [
+          104,
+          102
+        ],
+        "elbow": [
+          92,
+          118
+        ],
+        "wrist": [
+          94,
+          133
+        ],
+        "palm": [
+          96,
+          138
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Real body forearm/wrist gauntlet cuff bridge + 4 articulated fingers and thumb lock enclosing handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/12.png",
+          "sha256": "23e937f4c34f87b87d83116f148b7a53995d544d7015c8215d5eed73135e7db4"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/native/12.png",
+      "nativeSha256": "99ed7d17beb301719ac721e8818a17222ebee0fa3b249a934d3a532cf6c39b7e"
+    }
+  ]
+}

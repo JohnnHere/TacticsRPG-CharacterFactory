@@ -1,0 +1,22 @@
+Voce vai equalizar o perfil de aceleracao de duas celulas de espada do Orc V1 com o perfil das frontais. Trabalhe no Aseprite. Nao gere por IA, nao use PixelLab, nao faca commit, nao toque no Unity.
+
+CELULAS DE ORIGEM, que ja tem as quatorze poses corretas e nao devem perder nenhuma:
+characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_r-sword
+characters/orc-v1/source/combat-recovery-v8/rear-inbetween/back_l-sword
+ENTREGAVEL: characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword e back_l-sword, celulas completas no mesmo contrato, com fonte Aseprite salva e reexportada.
+
+O PROBLEMA, MEDIDO. O deslocamento do centroide da lamina por transicao, em pixels, hoje e assim.
+
+front_r, que e a referencia boa: 16.5, 23.7, 12.2, 38.2, 37.9, 37.8, 36.2, 23.0, 22.0
+back_r: 34.6, 16.1, 3.2, 35.6, 38.1, 57.9, 8.6, 16.1, 8.9
+back_l: 24.3, 19.4, 8.1, 29.1, 27.8, 53.9, 16.2, 8.8, 10.5
+
+Leia a sequencia da front_r como um plato: a lamina percorre de 37 a 38 px por quadro durante toda a descida e depois desacelera para 23 e 22. Nas traseiras existe um pico de 57.9 e 53.9 na transicao para o contato e um colapso logo depois, com 8.6 e 8.8. Isso le como chicotada: acelera no fim e para de repente. Na back_r existe tambem um quase-congelamento de 3.2 px em 4 para 5.
+
+O QUE FAZER. Redistribuir a posicao da lamina e do braco ao longo das poses que ja existem, para que o perfil fique dentro de mais ou menos vinte por cento do perfil da front_r nas transicoes de 5 para 9. O alvo, em px: 5 para 6 entre 30 e 45; 6 para 7 entre 30 e 45; 7 para 8 entre 30 e 45; 8 para 9 entre 28 e 43. Elimine o quase-congelamento de 3.2 px em 4 para 5.
+
+Isso significa mover a pose de contato para mais perto da anterior e empurrar parte do deslocamento para o quadro seguinte, mantendo o arco total. Nao invente poses novas: ajuste a posicao da arma e do braco nas poses existentes, com autoria real no Aseprite, mantendo a luva conectada ao cabo e o contorno escuro do membro fechado.
+
+RESTRICOES DURAS. Grade 30,65,35,50,45,35,30,35,35,100,55,80,45,90, soma 730 ms, fases rest, body-preparation, establish-grip, anticipation, coil-behind, apex-hold, apex-descent, slash-release, contact, follow-through, recoil, settle-grip, release-grip, return-to-guard. contactEvent frame 8, 325 ms, fase contact. Arma oculta em F00, F01, F12 e F13. Nao altere nada disso. Nao apague pixel claro de armadura: a serie de luminancia maior ou igual a 160 na camada body nao pode cair.
+
+PROVA. Escreva experiments/main-orc-combat-recovery-v8/qa-rear-arc/report.md com a tabela de transicoes antes e depois das duas celulas, o desvio percentual em relacao a front_r, e um strip 4x dos quadros F05 a F10 em experiments/main-orc-combat-recovery-v8/qa-rear-arc/. Registre a procedencia.

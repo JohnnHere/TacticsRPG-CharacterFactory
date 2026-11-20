@@ -1,0 +1,30 @@
+[
+  {
+    "id": "lesson-13",
+    "title": "Interpolação por cross-fade externo não produz locomoção e viola a regra de autoria Aseprite",
+    "symptom": "Draft de caminhada traseira (back_r Walk, Draft-01) resultou em pixels borrados/fantasma sem leitura de passadas reais; o personagem parece deslizar em pose estática trêmula com bob de 1 px, sem alternância nítida de apoio, passagem e elevação de joelho/pé.",
+    "verifiedCause": "O método tentou sintetizar quadros intermediários via interpolação linear (PIL Image.blend + limiar de alfa) entre duas poses estáticas/quase-estáticas geradas por inpaint e a base estática, além de gerar pixels fora do Aseprite (violação direta de AGENTS.md). Poses de entrada quase-estáticas combinadas com fusão de opacidade não produzem cinética de membros. O ground-snap global desloca a figura inteira e mascara a raiz de movimento sem substituir a ausência de poses articulares de passada.",
+    "failedApproach": "1) Inpainting de duas poses com descrição de passada que gerou variações de sombreamento/postura mas sem descolamento suficiente da perna de balanço (ambos os pés permaneceram em contato próximo com o solo). 2) Interpolação matemática externa (Python/PIL) para preencher os quadros. 3) Snap global de chão aplicado cegamente sobre a bounding box de quadros sem cinemática articular.",
+    "successfulCorrection": "Substituir o método por construção de animação no Aseprite Lua a partir de poses com cinemática real (apoio em um membro e balanço no membro oposto). Todo o processamento de pixels, registro de solo, temporização e montagem deve ocorrer dentro do Aseprite (via runner isolado --batch --noinapp). Downloads de saídas brutas em Python são restritos a I/O, hashes e metadados.",
+    "reuseOpportunity": "As duas imagens geradas (af1e7ba8-655e-45fd-9798-2ba4b8cda7e9 e ed109b13-7b60-4200-8a43-ed8a9fb8f561) permanecem arquivadas como evidência em experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/, utilizáveis para inspeção de textura de botas e tassets.",
+    "preventionRule": "1) Proibido gerar pixels de produção por interpolação de raster/cross-fade no Python. 2) O snap de solo não substitui pose de passada: cada quadro de caminhada precisa ter um pé de apoio explicitamente registrado no solo (groundY = 126) enquanto o membro em balanço articula livremente acima do solo. 3) O esqueleto V3 com 18 juntas COCO manuais permanece rota legal sem REST caso geração temporal apresente desvios.",
+    "validationEvidence": "Prancha 4x4 grid-walk-back_r-candidate.png e GIF walk_back_r_candidate.gif arquivados em experiments/main-orc-rear-recovery-v2/rejected/draft-01-crossfade/.",
+    "cost": "12 gerações PixelLab Pro Flash consumidas no Draft-01 rejeitado (2 chamadas inpaint de 6 gerações cada: jobs af1e7ba8-655e-45fd-9798-2ba4b8cda7e9 e ed109b13-7b60-4200-8a43-ed8a9fb8f561). Registrado separadamente do trabalho subsequente.",
+    "applicability": "Locomoção traseira e lateral de bípedes pesados (orc-v1 e variantes).",
+    "status": "FAILED_METHOD_ARCHIVED"
+  },
+  {
+    "id": "lesson-14",
+    "title": "Geração temporal contínua com ancoragem de loop produz cinemática real com alta eficiência de crédito",
+    "symptom": "Inpainting de poses isoladas sem modelo de movimento gera poses estáticas desconectadas e exige múltiplos disparos caros.",
+    "verifiedCause": "A ferramenta animate_image calcula a cinemática de locomoção como uma trajetória temporal de quadros onde centro de massa, curvatura de joelho, elevação de pé e torção de torso são coordenados holisticamente. Ao fixar first_frame_base64 e last_frame_base64 na base aprovada (back_r_base.png ou back_l_base.png), a animação fecha um ciclo sem deriva de proporção ou quebra de perspectiva.",
+    "failedApproach": "Tentativas de sintetizar locomoção por inpainting isolado de quadros soltos cobrando 6 gerações por frame sem garantia de descolamento de passada (12 gerações para 2 frames quase estáticos no Draft-01).",
+    "successfulCorrection": "Uso de animate_image (frame_count=8, ancoragem na base traseira aprovada, prompt explícito de alternância de pernas com apoio e elevação). Cobrou exatamente 2 gerações para 8 quadros. Frame 02-03 demonstra pé esquerdo elevado a y=122 com joelho flexionado e pé direito cravado a y=126; Frame 06-07 realiza a transição para a perna direita.",
+    "reuseOpportunity": "Metodologia diretamente reutilizável para back_l / Walk e aplicável para futuros estudos de locomoção com armas ou outras raças.",
+    "preventionRule": "1) Preferir ferramentas de geração temporal contínua ancorada para ciclos de locomoção. 2) O Aseprite Lua deve receber os quadros brutos e registrar o pé de apoio em groundY=126 mantendo a elevação natural do pé em balanço. 3) O 9º quadro retornado pelo serviço (index 8) é o retorno ao início idêntico a frame_00; sua exclusão do loop ativo de 8 quadros é intencional para evitar a duplicação artificial (double-hold) da pose inicial no looping.",
+    "validationEvidence": "Job id 1bdc9771-10f8-4a2a-ab7e-ce066a79175e (back_r Walk), 64cd4cb7-dba7-4234-9f96-a9da268388fb (back_l Walk), 2ace783c-ff36-499b-b473-52adad36459e (back_r Unarmed), recibos de 2 gerações cada.",
+    "cost": "2 gerações PixelLab por animação de 8 quadros. Total acumulado em Method-02/Wave: 6 gerações (2 back_r Walk + 2 back_l Walk + 2 back_r Unarmed). Saldo restante: 1469.70 gerações.",
+    "applicability": "Locomoção bípede e ataques corporais de 4 e 8 direções em 128x128.",
+    "status": "CANDIDATE_AWAITING_ROOT_INSPECTION"
+  }
+]

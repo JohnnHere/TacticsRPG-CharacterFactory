@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-10-26T01:16:38.141Z",
+  "commands": [
+    "node src/cli.mjs doctor",
+    "node src/cli.mjs editor-check",
+    "node --test --test-concurrency=1"
+  ],
+  "doctor": {
+    "ok": true,
+    "json": {
+      "node": "v24.20.0",
+      "root": "C:\\Users\\João Orlando\\Documents\\Projetos Unity\\TacticsRPG-CharacterFactory",
+      "referenceErrors": [],
+      "cloudCalls": "none",
+      "generation": "Aseprite e o mestre. PixelLab pela extensao oficial e opcional e executa geracao em nuvem; este comando nao gera nem chama o servico.",
+      "editor": {
+        "status": "AVAILABLE",
+        "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+        "version": "Aseprite 1.3.18.6-x64",
+        "mode": "batch",
+        "windowsHide": true,
+        "steamClient": "--noinapp",
+        "cloudCalls": "none"
+      },
+      "editorPolicy": "Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade."
+    }
+  },
+  "editorCheck": {
+    "ok": true,
+    "json": {
+      "status": "AVAILABLE",
+      "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+      "version": "Aseprite 1.3.18.6-x64",
+      "mode": "batch",
+      "windowsHide": true,
+      "steamClient": "--noinapp",
+      "cloudCalls": "none"
+    }
+  },
+  "tests": {
+    "ok": true,
+    "tests": 15,
+    "pass": 15,
+    "fail": 0,
+    "durationMs": 26931,
+    "tail": "✔ basic unarmed never uses a Job cast or bow gesture (0.7658ms)\n✔ equipped basic action follows actual weapon; unknown or omitted equipment fails (0.3198ms)\n✔ ability requires its explicit visual profile and cannot reuse basic attack implicitly (0.1595ms)\n✔ supplement export requires explicit current approval and copies every direction without inventing overlays (109.29ms)\n✔ export rejects changed native/editor bytes and false unarmed overlay or reuse (50.9112ms)\n✔ V4 timing and deliberate closing pose are approval-bound; extra duplicates remain rejected (106.0429ms)\nImportado sem reescala: concepts/synthetic-fixture.png\nRevisao humana registrada para estes arquivos e esta ficha.\n✔ editor discovery rejects explicit invalid path; malformed manifests cannot escape workspace (1.9239ms)\n✔ real Aseprite bridge: frames, layers, tags, tilemap, source preservation, immutable builds, templates and gated apply (4252.5973ms)\n✔ confinamento rejeita traversal, IDs perigosos e junction/symlink externo (3.8312ms)\n✔ source-over preserva pixel grid, respeita ordem/alfa e rejeita canvas diferente (1.833ms)\n✔ medicao considera alfa, fundo transparente e linha do chao (1.7239ms)\n✔ PNG corrompido e limites de dimensao sao rejeitados antes de uso (3.2716ms)\n✔ catalogos e referencias congeladas preservam baseline 28/63 (450.0858ms)\n✔ fluxo CLI protege gates, registra roupas, exporta baseline e invalida revisao apos mudanca (6198.3177ms)\n✔ entry preview builds without the historical deliveries directory (1913.9174ms)\nℹ tests 15\nℹ suites 0\nℹ pass 15\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 26931.7078\n"
+  },
+  "note": "Baseline verification of the audited state. Technical PASS is not artistic approval."
+}

@@ -1,0 +1,26 @@
+Painel de QA independente (mesma sessão, escopo novo e estreito): revisar o ciclo frontal `front_r/Sword` de 13 quadros/730 ms, que é o único dos quatro ciclos frontais que você ainda não julgou — você já aprovou `front_l/Sword`, `front_r/Axe` e `front_l/Axe` em `qa-result.json`.
+
+Histórico honesto: um revisor anterior (Sol/Codex) chegou a `INCONCLUSIVE` apenas para a percepção temporal contínua desse clipe, sem apontar defeito estático bloqueante. Nenhum parecer visual independente com veredito positivo existe para ele. Esta revisão fecha essa lacuna; não repita a suíte inteira de auditoria de entrada.
+
+Fonte e evidência:
+- `characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json` (SHA-256 esperado `16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1`, confirme no disco)
+- `experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/report.md`
+- `experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/anatomy.json`
+- `experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/author.lua`
+- `experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/index.html` (player real)
+- Camadas por quadro: `weaponBack`, `body`, `weaponFront`, `handFront`; compostos 256, nativo 128, tiras.
+- Parecer anterior do outro revisor: `experiments/main-orc-combat-rescue-v5/qa-sol/full-front-r-sword-result.json` e `full-front-r-sword-report.md` — leia o que ele afirmou e o que deixou como não verificado, sem tratá-lo como aprovação.
+
+Critérios que você deve verificar com inspeção real:
+1. Corpo frontal original preservado: coreografia e timing idênticos ao pai; nenhum pixel de corpo alterado.
+2. Em cada quadro armado: a luva real envolve o cabo, unida ao pulso e antebraço; sem carimbo, sem mão inativa pegando a arma, sem dedo inventado, sem guarda/pomo escondidos.
+3. F02, F06 e F08 foram reaproveitados exatamente do estudo de chaves validado; confirme que continuam coerentes no meio do ciclo e que os outros quadros não introduzem regressão (torção de antebraço, item atravessando o corpo, arma sumindo/piscando).
+4. Intervalo visível `[2, 10]`, bookends desarmados e compósitos iguais ao corpo.
+5. Legibilidade do item em escala nativa e tática 64, perspectiva e continuidade do arco de corte.
+6. Mestres 256/128 salvos e reexportados; recorte nativo não deve ser usado para alegar corte de item se a fonte canônica 256 estiver íntegra.
+
+Grave NOVO `front-r-sword-full-result.json` e `front-r-sword-full-report.md` na pasta `qa-antigravity-flash`, preservando todos os pareceres anteriores. Inclua o hash real do `clip.json`, evidências por quadro e limitações explícitas (incluindo o que só poderia ser dito com reprodução contínua).
+
+Verdito: `READY_FOR_MATRIX_REVIEW`, `REVISIONS_REQUIRED` com achados por quadro, ou `INCONCLUSIVE`.
+
+Restrições: não editar arte/fontes/matriz/Unity/ponteiros; não criar subagentes; zero PixelLab de produção; custo LLM não informado; criador permanece o aprovador final. Pare após o laudo persistente.

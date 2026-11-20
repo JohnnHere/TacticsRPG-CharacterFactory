@@ -1,0 +1,41 @@
+{
+  "session": "main-orc-combat-rescue-v5 localized ART polish",
+  "date": "2026-10-29",
+  "scope": ["four Walk directions (reararm/frontcloth shading)", "front_r/front_l Defeat (prone terminal + handsmear check)"],
+  "rule": "Write ONLY to characters/orc-v1/source/combat-rescue-v5/localized and experiments/main-orc-combat-rescue-v5/localized. No Unity, no commits, no shared docs/globalmatrix changes. No Sword/Axe/Unarmed/grip. Idle/Hit/rearDefeat fully protected.",
+  "toolingConfirmed": {
+    "aseprite": "AVAILABLE - F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe 1.3.18.6-x64 (batch --noinapp, ASEPRITE_USER_FOLDER=tmp/aseprite-batch-profile, hidden)",
+    "python": "AVAILABLE - tmp/pixel-venv/Scripts/python.exe (Pillow, read/validate/preview only)"
+  },
+  "milestones": [
+    { "milestone": "tool availability (Aseprite batch + Pillow)", "result": "AVAILABLE" },
+    { "milestone": "baseline pixel investigation of 4 Walk + 2 Defeat clips", "result": "CONFIRMED_DEFECT_back_lWalk" },
+    { "milestone": "Defeat handsmear/terminal inspection", "result": "OBSERVATION_RECORDED_NO_EDIT" },
+    { "milestone": "back_r Walk and front Walk KEEP decisions", "result": "KEPT_NO_DEFECT" },
+    { "milestone": "Aseprite batch fix applied to forked walk-back_l-fixed.aseprite", "result": "APPLIED_2741px_alphaPreserved" },
+    { "milestone": "verified flicker removed numerically + masters/clip.json built", "result": "VERIFIED" },
+    { "milestone": "metadata compatibility with parent manifest", "result": "COMPATIBLE" },
+    { "milestone": "deliverables written + JSON validated", "result": "DONE" }
+  ],
+  "status": "INTERNAL_PRODUCTION_COMPLETE_PENDING_QA",
+  "artisticApproval": "PENDING_CREATOR",
+  "note": "Did NOT run Root's validate.mjs (target matrix does not exist in this scope; must not alter Root's files). Independent QA will examine motion and Defeat. Master contract fixed: clip.master=256 composite (sha 1d6069e9…45f18, 256x256, 8x160ms, bodyOffset 64,64), clip.nativeMaster=128 (sha 3e4fcf16…35352). All hashes verified real against files on disk.",
+  "changedClip": {
+    "direction": "back_l",
+    "action": "Walk",
+    "clipJson": "characters/orc-v1/source/combat-rescue-v5/localized/back_l/Walk/clip.json",
+    "master": "characters/orc-v1/source/combat-rescue-v5/localized/walk-back_l-fixed-256.aseprite",
+    "masterSha256": "1d6069e94a9897f02c65c9afe76a9069792d2b94760182d88a56602a90d45f18",
+    "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/localized/walk-back_l-fixed.aseprite",
+    "nativeMasterSha256": "3e4fcf16001b205e841f18208fb7b89bfbbc253c0149ba71eb96634fa7e35352",
+    "stripSha256": "bc71022f86f121aeea4233ea2210039612611af5cbca354ec1c5329b84343232"
+  },
+  "disposition": {
+    "back_lWalk": "CORRECTION_APPLIED - pending QA motion verification",
+    "back_rWalk": "KEPT - no defect demonstrated",
+    "front_rWalk": "KEPT - no defect demonstrated",
+    "front_lWalk": "KEPT - no defect demonstrated",
+    "front_rDefeat": "KEPT - inspection recorded, smear not excluded by alpha alone",
+    "front_lDefeat": "KEPT - inspection recorded, smear not excluded by alpha alone"
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-recovery-v7-rear-r",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Sword",
+  "state": "Attack",
+  "frameCount": 12,
+  "durationsMs": [
+    90,
+    80,
+    80,
+    110,
+    50,
+    40,
+    40,
+    80,
+    100,
+    90,
+    90,
+    100
+  ],
+  "totalDurationMs": 950,
+  "visibleInterval": [
+    1,
+    9
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "master": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/source/composite.aseprite",
+  "masterSha256": "6167d9908c42124325d8e121872b2c300a31593fca1468eee6c15a7453479fc2",
+  "nativeMaster": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/source/native.aseprite",
+  "nativeMasterSha256": "fbd01f842486be7622c82def7acbaf7f5c03479372c881ce347f735b0cd54b9b",
+  "strip": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native-strip.png",
+  "stripSha256": "9235f059f30dcef3aae71a5649f72220c677a87b6c3b7d20a78323c734e18d69",
+  "nativeStrip": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native-strip.png",
+  "nativeStripSha256": "9235f059f30dcef3aae71a5649f72220c677a87b6c3b7d20a78323c734e18d69",
+  "compositeStrip": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/composite-strip.png",
+  "compositeStripSha256": "fab27814f4be4bb829c616921e7ab1bed5d553b3364fcac0e30b1b6ed81ff50d",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "oneShot": true,
+  "loop": false,
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "provenance": {
+    "method": "Inherited V6 pose pixels; surgical glove and semantic silhouette refinement inside Aseprite Lua",
+    "authorScript": "experiments/main-orc-combat-recovery-v7/rear-r/author.lua",
+    "authorScriptSha256": "ad5dfe64db5ea7b317621d7386c4ccc0caaafd0803aca60ec616fcc76348cf2d",
+    "plan": "experiments/main-orc-combat-recovery-v7/rear-r/plan.json",
+    "newPixelLabCalls": 0,
+    "timingChanged": false,
+    "anglesChanged": false,
+    "mastersSavedReopened": true,
+    "rgbaAndDurationVerified": true
+  },
+  "frames": [
+    {
+      "durationMs": 90,
+      "index": 0,
+      "phase": "guard",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "weaponVisible": false,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/00.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "durationMs": 80,
+      "index": 1,
+      "phase": "anticipation-load",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        163,
+        131
+      ],
+      "rotationDeg": 20,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/01.png",
+      "sha256": "7ae2d6dba8041f39066db07104c374f2e30319e8cc5a92929d79106ce086983f",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/01.png",
+      "nativeSha256": "5ec811e38277fd082656c9e739fa0f34787bdfcf23a20456d346837f5810870f",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/01.png",
+          "sha256": "a50f5f2f064557f70bf0fd1e30018f7e56ebacd7deb9e3958336eb28500e0057"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/01.png",
+          "sha256": "acc71423458ffa27871479c57d236b534a3a542f7d0a561c14e8ef359e340f66"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/01.png",
+          "sha256": "0877b077728cfc1c16afb59ba015c5f14d2c27d8424cb3ec991b4eb7b847fa35"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/01.png",
+          "sha256": "e60e3e790fba05c52e57d353ae54395ab704271e775e0df8ec57cbc626971771"
+        }
+      }
+    },
+    {
+      "durationMs": 80,
+      "index": 2,
+      "phase": "anticipation-lift",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        168,
+        98
+      ],
+      "rotationDeg": 5,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/02.png",
+      "sha256": "b918a15ee401d24c225d9e2e2beb8a59153cdfd0926011482a21914640a14500",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/02.png",
+      "nativeSha256": "3151d517fd45d65babea29d7c2c6efb9a288564060e17e211174aca335f6d42e",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/02.png",
+          "sha256": "7b536be432cad20bea5c1a3f776bd062fa69c1835e785da9e2e8bb2749c0f494"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/02.png",
+          "sha256": "31c8016ab8676f377c1d03d536a5bef9d95b846f58eb38e53cd2de6f0a2e12b1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/02.png",
+          "sha256": "2b81b2b06c3c9b1cbc59ec691344edf78cef708e7ae074096cf34bed6b34af91"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/02.png",
+          "sha256": "b1866d2972c98ab07b0c654eda5c7ffcd92c9250d694b01e29ac5d7d966ef672"
+        }
+      }
+    },
+    {
+      "durationMs": 110,
+      "index": 3,
+      "phase": "chamber",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        162,
+        89
+      ],
+      "rotationDeg": -10,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/03.png",
+      "sha256": "fab4697e9544dca23a38844851f54ef4b54e006e6444c998b1ad6294bb24181c",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/03.png",
+      "nativeSha256": "b3ffb31e4a47b7a2e83cd577a9b384a68c221c46f8e904d00d74f131d3de4c9b",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/03.png",
+          "sha256": "662240e4a6a872f1eaa234d8160bcaf7e5e13a67c4d66de109e2099f6fa21feb"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/03.png",
+          "sha256": "15fe83525dcfebc7f85568e721755bdf9e7e0189c09c9c95e81fa5b9b11fc807"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/03.png",
+          "sha256": "500510bc3384c4bdea4dd53311511495be20374c987306da0b0c64586a897f47"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/03.png",
+          "sha256": "5d43c8f1ba89b80f2875556f74829c33539b3cd9feac3ecd205cd268338787e3"
+        }
+      }
+    },
+    {
+      "durationMs": 50,
+      "index": 4,
+      "phase": "loaded-apex",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        166,
+        95
+      ],
+      "rotationDeg": 25,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/04.png",
+      "sha256": "c024c51b063414ac753d6082e7230fb99e99133ab80493986206e94a56731b5d",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/04.png",
+      "nativeSha256": "b65cda414de36164e31314df3477bea2971cf1fb2353ec49916ca85270e554a9",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/04.png",
+          "sha256": "0a7c3a0e83394f4e29af846c99d5e1074f0dbe20cec1ae9cccd3c9f2c0ab2935"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/04.png",
+          "sha256": "20eefe51e1bfed8a0c8db7d5665f1000f05217ef6f835686e6250d5bbb9ec88c"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/04.png",
+          "sha256": "a6829f0e6307580643b246277252a20a06c15bc2593eae5ce26b34cb85614b88"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/04.png",
+          "sha256": "b33b85a11ddcdc53f1f067df8f32724596835669aa807ae748b27b2e1092e829"
+        }
+      }
+    },
+    {
+      "durationMs": 40,
+      "index": 5,
+      "phase": "acceleration",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        176,
+        111
+      ],
+      "rotationDeg": 65,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/05.png",
+      "sha256": "222e09bb9433ef789fb96fff3c8fef225063ff19d18f3e2708ea55e16c615f02",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/05.png",
+      "nativeSha256": "11bfe224619559c827e9a8e71e6d7060c4447330bfac608afc65a146523915cb",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/05.png",
+          "sha256": "b68fd100cce27a8d408689dde2f421e02ec22ed6866cfbd56e0bb1c0887a64ec"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/05.png",
+          "sha256": "4e014e332b52226cba08e554fa0a0fa6f41d3ae9b5df050ca994f19fac31f329"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/05.png",
+          "sha256": "6783e1c8ed42b5a68f47dac40d5baa49d39d555a6a1199854548c57839b0de63"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/05.png",
+          "sha256": "b693ac81c0512ed226f9eb444c42ea909eadeb57a4bf21a523e61ec56ba27560"
+        }
+      }
+    },
+    {
+      "durationMs": 40,
+      "index": 6,
+      "phase": "descent",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        174,
+        138
+      ],
+      "rotationDeg": 95,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/06.png",
+      "sha256": "29ad578c049202599793f15410924f3f5571e0a3ea00c19a6751c1c8a30c2466",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/06.png",
+      "nativeSha256": "2349b3c81cb0e77ac0d0717715a816d6827ca1f6605d03c14558b559ae123613",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/06.png",
+          "sha256": "ad2494cd77ce4724b8263d2d5af22c431b44ac3b12eccb4926b5fcae41214a4f"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/06.png",
+          "sha256": "8a9f62846cab3307153bec20d9179e23c864aa483e4a607ff3bdcee87b486390"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/06.png",
+          "sha256": "c696bbe23cb272952c8c9a3b91faddfdb9d33f91e5caccf5d10cf8740874089d"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/06.png",
+          "sha256": "3637438be7a1c62f03bd6190730c3909b5e665ee59bb7521273f021d76392fda"
+        }
+      }
+    },
+    {
+      "durationMs": 80,
+      "index": 7,
+      "phase": "impact",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        163,
+        154
+      ],
+      "rotationDeg": 115,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/07.png",
+      "sha256": "2df7f2413fe26fc26994a11fb85cbf3fdcbfccf77c57b3f3d99d65eecd9fc68a",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/07.png",
+      "nativeSha256": "f598e6b517c003e8b92b13eb7d49b261d608fb290cae3a4c193c6686486995b1",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/07.png",
+          "sha256": "7e302e4159b8939808fa89a692e4f003cbc4b9278f014a1844ee4617b6f41d03"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/07.png",
+          "sha256": "5e28973ea98db182aa1011d14abeae48134d42d468f20f5280cb6a653b9da046"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/07.png",
+          "sha256": "04e21ea2a6174505cf660952edb61730f4c923706fe72c4870b4a45279d1681b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/07.png",
+          "sha256": "12ca7ba8c5c03eca8766ff10eed64485b8f1a33ac3f066ece5fd65adb7930296"
+        }
+      }
+    },
+    {
+      "durationMs": 100,
+      "index": 8,
+      "phase": "follow-through",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        158,
+        161
+      ],
+      "rotationDeg": 115,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/08.png",
+      "sha256": "dabb68c26c4d7b6a06fb7e6c159ee4b3814e1c48cbf63e781739929e808d4076",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/08.png",
+      "nativeSha256": "cfe9b20e84b96e91e262adc5fb2d3c4fe77ec7150b3a6dbdacb41482116205b3",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/08.png",
+          "sha256": "85a1f64a08444416780f866046bf40787af8d4f1c7fefadaab8115dddaba2a63"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/08.png",
+          "sha256": "68f68c0c32bd683b415e0e554dba4139829871c29080a5fb8134b1eb4cc90d51"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/08.png",
+          "sha256": "e42cb3a032f5a17b3d14b5cdf51e1bb1b1a34ee3dbdb8079cf807f7de44e57a4"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/08.png",
+          "sha256": "dd803e464dc7f8fbbf44170f446de2392cd8cdcba208534d69f10ffba411a028"
+        }
+      }
+    },
+    {
+      "durationMs": 90,
+      "index": 9,
+      "phase": "recovery-release",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": [
+        159,
+        155
+      ],
+      "rotationDeg": 95,
+      "weaponVisible": true,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/09.png",
+      "sha256": "ecc794e7c1f84f7c8138448db052904a42b46c7f760935baf330a7eb01d25eaf",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/09.png",
+      "nativeSha256": "05dd90c6b61c793403d226802059de3a44f7765cfb7d07bf6cd53040fb7b60e7",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/09.png",
+          "sha256": "94237d0b7b4ed83c52f06476679c07dffdb9387bf14c2008f615cff12ac4c66d"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/09.png",
+          "sha256": "72fdedde33aaa6b21e2b47e9c7b2a908d3d6778ff140ce1d41c8ec4916194047"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/09.png",
+          "sha256": "e32e5dbc613210260e87ee36d71892397ad4054089857e84711862d07be57d9b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/09.png",
+          "sha256": "8080f855fbac75692983cb8268620ba6ee87c92ccc5ab4517577729ee879f02a"
+        }
+      }
+    },
+    {
+      "durationMs": 90,
+      "index": 10,
+      "phase": "recovery-settle",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "weaponVisible": false,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/10.png",
+      "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/10.png",
+      "nativeSha256": "99f39efc2270d815ce2bd2066f84404289881c4aca0ae9b72463f7c780a10cfb",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/10.png",
+          "sha256": "586533c3422f0429a9e7f7dc446a67de71f805f843bcac917940a8e4d57e72fb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "durationMs": 100,
+      "index": 11,
+      "phase": "guard-return",
+      "provenance": "V6 inherited pose with V7 local grip/contour edits; see author-result.json",
+      "rightGrip": null,
+      "rotationDeg": null,
+      "weaponVisible": false,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/frames/11.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/native/11.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/body/11.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-r/back_r-sword/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ],
+  "checkpoint": "V7_BACK_R_REFINED",
+  "eligibleForIntegration": false,
+  "sourceParentClip": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/clip.json",
+  "sourceParentClipSha256": "625df2d398294f56a8073bbead4580bfe5719e8f90641c7f2b2c3c69422341cc",
+  "weaponDepthPolicy": "weaponBack -> body -> weaponFront -> handFront; existing anatomical glove rows with locally reauthored closed fingers"
+}

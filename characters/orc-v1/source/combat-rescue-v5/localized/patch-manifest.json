@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "orc-v1.combat-rescue-v5.localized.patch",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "session": "main-orc-combat-rescue-v5",
+  "date": "2026-10-29",
+  "scope": [
+    "four Walk directions (reararm/frontcloth shading)",
+    "front_r/front_l Defeat (prone terminal + handsmear check)"
+  ],
+  "rule": "Write ONLY to characters/orc-v1/source/combat-rescue-v5/localized and experiments/main-orc-combat-rescue-v5/localized. No Sword/Axe/Unarmed/grip. Idle/Hit/rearDefeat fully protected. No Unity, no commits, no shared docs/globalmatrix changes.",
+  "parentManifest": "characters/orc-v1/source/rear-reconstruction-v4/candidate28manifest.json",
+  "parentManifestSha256": "f250f7a11ceb0e851c9a3c34f8c20e75c48da5a04e0a2229933945298aaf4017",
+  "tooling": {
+    "aseprite": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe 1.3.18.6-x64",
+    "asepriteMode": "--batch --noinapp, ASEPRITE_USER_FOLDER=tmp/aseprite-batch-profile, hidden window",
+    "python": "tmp/pixel-venv/Scripts/python.exe (Pillow, read/validate/preview only, never draws production raster)"
+  },
+  "changedClips": [
+    {
+      "direction": "back_l",
+      "action": "Walk",
+      "cellId": "back_l/Walk",
+      "status": "LOCALIZED_CORRECTION",
+      "reviewStatus": "VISUAL_REVIEW_REQUIRED",
+      "artisticApproval": "PENDING_CREATOR",
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/localized/back_l/Walk/clip.json",
+      "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/localized/walk-back_l-fixed.aseprite",
+      "nativeMasterSha256": "3e4fcf16001b205e841f18208fb7b89bfbbc253c0149ba71eb96634fa7e35352",
+      "strip": "characters/orc-v1/source/combat-rescue-v5/localized/back_l/Walk/native-strip.png",
+      "stripSha256": "bc71022f86f121aeea4233ea2210039612611af5cbca354ec1c5329b84343232",
+      "frameCount": 8,
+      "durationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "totalDurationMs": 1280,
+      "canvas": [
+        256,
+        256
+      ],
+      "bodyOffset": [
+        64,
+        64
+      ],
+      "groundY": 190,
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "nativeGroundY": 126,
+      "defect": "reararm material-shade inconsistency between half-cycle frames at identical arm coordinates (per creator-reported reararm flicker; hypothesis, not proven ground truth)",
+      "confirmedCause": "Same-geometry opaque pixels at identical arm coordinates differ between F0/F4, F1/F5, F2/F6, F3/F7 (e.g. F04 composite (137,84) bright outlier (184,186,185) vs F00 dark (6,6,8)). Arm bounding boxes near-identical across all 8 frames. Honest limit: establishes material inconsistency at repeated pose coordinates; does not by itself prove perceived flicker in continuous motion, nor that F0-F3 is the correct reference vs F4-F7 (reference choice is a production decision).",
+      "fix": "Aseprite putPixel on forked native master walk-back_l-fixed.aseprite; copied reference half (F0-F3) arm material color to target half (F4-F7) at overlapping-opaque identical coordinates only. Alpha preserved. 2741 pixels total (right arm 1364, left arm 1377). No alpha writes, no transparent-pixel writes, no geometry/silhouette/gait/timing change.",
+      "pixelVerification": {
+        "totalFixes": 2741,
+        "alphaChangedCount": 0,
+        "colorOnlyChangedCount": 2741,
+        "framesF0toF3PixelIdenticalToOriginal": true,
+        "framesF4toF7DifferByFixCount": {
+          "F04": 667,
+          "F05": 690,
+          "F06": 713,
+          "F07": 671
+        }
+      },
+      "provenance": "Localized Aseprite batch correction; source fork of characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_l.aseprite; original exports preserved untouched.",
+      "notes": "Correction applied and numerically verified (2741 pixels, alpha preserved, post-fix half-cycle same-geometry diffs = 0). Perceived flicker in continuous 1x motion and whether F0-F3 is the correct reference remain for independent QA; not declared fixed by me. Back_r Walk and front_r/front_l Walk inspected and KEPT (highlights move with arm/cloth = genuine motion, no stuck bright outlier, no flicker defect demonstrated).",
+      "master": "characters/orc-v1/source/combat-rescue-v5/localized/walk-back_l-fixed-256.aseprite",
+      "masterSha256": "1d6069e94a9897f02c65c9afe76a9069792d2b94760182d88a56602a90d45f18"
+    }
+  ],
+  "keptClips": [
+    {
+      "direction": "back_r",
+      "action": "Walk",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/back_r/Walk/clip.json",
+      "reason": "No defect demonstrated. Right-arm highlight (156,158,158) moves with arm swing across frames = genuine motion; half-cycle diffs are shadow/transition shading, no stuck bright outlier."
+    },
+    {
+      "direction": "front_r",
+      "action": "Walk",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/complete-v1/front_r/Walk/clip.json",
+      "reason": "No defect demonstrated. Cloth bright highlights (231,230,227) change coordinates between half-cycle frames as legs move = genuine cloth motion, not flicker. Gait/timing/cloth silhouette intact."
+    },
+    {
+      "direction": "front_l",
+      "action": "Walk",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/complete-v1/front_l/Walk/clip.json",
+      "reason": "No defect demonstrated. Same as front_r: cloth highlights move with legs = genuine motion."
+    },
+    {
+      "direction": "front_r",
+      "action": "Defeat",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_r/Defeat/clip.json",
+      "reason": "Inspection recorded; no edit made. F02/F03/F04 partial-alpha=0, bright=0 (no partial-alpha/bright smear source found in raster). Honest limit per Root: binary alpha/no-bright-pixels does NOT exclude a smeared/deformed hand; static terminal F04 reads prone per independent QA report but continuous-motion Defeat verification is QA's role. No global rotation/flattening/compression, no hand repaint. Kept unchanged pending QA."
+    },
+    {
+      "direction": "front_l",
+      "action": "Defeat",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/clip.json",
+      "reason": "Same as front_r: inspection recorded, no edit made. F02/F03/F04 partial-alpha=0, bright=0. Honest limit per Root: binary alpha/no-bright-pixels does NOT exclude a smeared/deformed hand; continuous-motion Defeat verification is QA's role. No global rotation/flattening/compression, no hand repaint. Kept unchanged pending QA."
+    },
+    {
+      "direction": "back_r",
+      "action": "Defeat",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/complete-v1/back_r/Defeat/clip.json",
+      "reason": "Protected rear Defeat, preserved intact (not in localized edit scope)."
+    },
+    {
+      "direction": "back_l",
+      "action": "Defeat",
+      "status": "KEEP",
+      "clipJson": "characters/orc-v1/source/complete-v1/back_l/Defeat/clip.json",
+      "reason": "Protected rear Defeat, preserved intact (not in localized edit scope)."
+    }
+  ],
+  "protectedUnchanged": [
+    "Idle all directions",
+    "Hit all directions",
+    "front_r/front_l Sword and Axe choreography",
+    "Sword/Axe/Unarmed/grip (owned by main combat producer)"
+  ],
+  "disposition": {
+    "back_lWalk": "CORRECTION_APPLIED - reararm material-shade normalization applied and numerically verified; perceived flicker in continuous 1x motion pending QA",
+    "back_rWalk": "KEPT - no defect demonstrated",
+    "front_rWalk": "KEPT - no defect demonstrated",
+    "front_lWalk": "KEPT - no defect demonstrated",
+    "front_rDefeat": "KEPT - inspection recorded, smear not excluded by alpha alone; QA to verify motion/Defeat",
+    "front_lDefeat": "KEPT - inspection recorded, smear not excluded by alpha alone; QA to verify motion/Defeat"
+  }
+}

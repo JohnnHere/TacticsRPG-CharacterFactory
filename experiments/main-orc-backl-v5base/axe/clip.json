@@ -1,0 +1,784 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-backl-v5base",
+  "character": "orc-v1",
+  "direction": "back_l",
+  "category": "Axe",
+  "state": "Attack",
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "loop": false,
+  "oneShot": true,
+  "frameCount": 12,
+  "durationsMs": [
+    40,
+    65,
+    35,
+    80,
+    155,
+    35,
+    115,
+    110,
+    130,
+    50,
+    90,
+    100
+  ],
+  "totalDurationMs": 1005,
+  "visibleInterval": [
+    2,
+    8
+  ],
+  "contactEvent": {
+    "frame": 6,
+    "timeMs": 410,
+    "phase": "heavy-impact",
+    "appliesDamage": false
+  },
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "propagationAllowed": false,
+  "paidGenerations": 0,
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+  "beforeClip": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/clip.json",
+  "frames": [
+    {
+      "index": 0,
+      "sourceIndex": 0,
+      "phase": "rest",
+      "durationMs": 40,
+      "weaponVisible": false,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "rest",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/00.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/00.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "grip": [
+        0,
+        0
+      ],
+      "angleDeg": 0,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/00.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/00.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/00.png",
+      "sourceBodySha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+    },
+    {
+      "index": 1,
+      "sourceIndex": 0,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "weaponVisible": false,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "body-preparation",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/00.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/00.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "grip": [
+        0,
+        0
+      ],
+      "angleDeg": 0,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/01.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/01.png",
+          "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/01.png",
+      "sourceBodySha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+    },
+    {
+      "index": 2,
+      "sourceIndex": 1,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "establish-grip",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/01.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/01.png",
+          "sha256": "d6097ad8d1885e5dbf9d25f2479fd5d832855bcee76b46ba366069ef7e9d0aff"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/01.png",
+          "sha256": "a52fc43bbd125c37daafb07de37ecda28a5348e0e82005e705713fca686d1b4b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/01.png",
+          "sha256": "04242fa5c94eb48e533b42836cd60328a95e7785107ec7f2e3921503abff49a9"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/01.png",
+          "sha256": "a0499271fea3477e4cdae54bce5c35aeb66e0be84d584d697866cbf90f64fa25"
+        }
+      },
+      "grip": [
+        92,
+        78
+      ],
+      "angleDeg": 35,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/02.png",
+      "sha256": "73d3be32044501d9522e753fa978327ecb23424d55b31f634a6303c65076f7c3",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/02.png",
+          "sha256": "d6097ad8d1885e5dbf9d25f2479fd5d832855bcee76b46ba366069ef7e9d0aff"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/02.png",
+          "sha256": "a52fc43bbd125c37daafb07de37ecda28a5348e0e82005e705713fca686d1b4b"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/02.png",
+          "sha256": "04242fa5c94eb48e533b42836cd60328a95e7785107ec7f2e3921503abff49a9"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/02.png",
+          "sha256": "a0499271fea3477e4cdae54bce5c35aeb66e0be84d584d697866cbf90f64fa25"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/02.png",
+      "sourceBodySha256": "a52fc43bbd125c37daafb07de37ecda28a5348e0e82005e705713fca686d1b4b"
+    },
+    {
+      "index": 3,
+      "sourceIndex": 1,
+      "phase": "anticipation",
+      "durationMs": 80,
+      "weaponVisible": true,
+      "dx": 1,
+      "dy": 0,
+      "operation": "adaptação local: translação inteira X=1 px; mão sem alteração interna",
+      "decisionStatus": "NEEDS_DECISION",
+      "reason": "anticipation; distingue antecipação/hold sem inventar anatomia",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/01.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/01.png",
+          "sha256": "d6097ad8d1885e5dbf9d25f2479fd5d832855bcee76b46ba366069ef7e9d0aff"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/01.png",
+          "sha256": "a52fc43bbd125c37daafb07de37ecda28a5348e0e82005e705713fca686d1b4b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/01.png",
+          "sha256": "04242fa5c94eb48e533b42836cd60328a95e7785107ec7f2e3921503abff49a9"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/01.png",
+          "sha256": "a0499271fea3477e4cdae54bce5c35aeb66e0be84d584d697866cbf90f64fa25"
+        }
+      },
+      "grip": [
+        93,
+        78
+      ],
+      "angleDeg": 35,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/03.png",
+      "sha256": "205aef5105485382067adbcfa6a135415dd2aad4710d10f33ad04ed75cfde33e",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/03.png",
+          "sha256": "f77aacac084a37eb98bec7c6fea9631cf9f8cbecf89006b362d14545b2d837cf"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/03.png",
+          "sha256": "ec92c76dba97469766c79b64fa7e2cb76ce86389e7da4e918653a80b30c75582"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/03.png",
+          "sha256": "e6501b32e2914f4365bb5e08a20b50677e44e7f3509ea43ef5edec18e1a47928"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/03.png",
+          "sha256": "f9a79173444a170cb162a9754d28cca7f9021c8865fb777fd8ddf4f636f45711"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/03.png",
+      "sourceBodySha256": "a52fc43bbd125c37daafb07de37ecda28a5348e0e82005e705713fca686d1b4b"
+    },
+    {
+      "index": 4,
+      "sourceIndex": 2,
+      "phase": "overhead-coil",
+      "durationMs": 155,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "overhead-coil",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/02.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/02.png",
+          "sha256": "c2c15027aa7f7de3322c7646f6a9426ab33ac83cb763073de1350dbb83782521"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/02.png",
+          "sha256": "4a6889f37818443720a7fdfbda63f5967cbbecc0c8108c8b8f10b188be8beeb4"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/02.png",
+          "sha256": "d84833d31f0f9d0235f7931c19454f4c385857f728fd94841ec0ae842f97eeb4"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/02.png",
+          "sha256": "a4cff20f1cf55bd523f9798e69f9c7ec042e590a02287f0c106c757ad82670fb"
+        }
+      },
+      "grip": [
+        98,
+        73
+      ],
+      "angleDeg": 15,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/04.png",
+      "sha256": "a60290473d328c697ca228ff51b6c5a753e12974300c9373a38a756d583438c7",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/04.png",
+          "sha256": "c2c15027aa7f7de3322c7646f6a9426ab33ac83cb763073de1350dbb83782521"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/04.png",
+          "sha256": "4a6889f37818443720a7fdfbda63f5967cbbecc0c8108c8b8f10b188be8beeb4"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/04.png",
+          "sha256": "d84833d31f0f9d0235f7931c19454f4c385857f728fd94841ec0ae842f97eeb4"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/04.png",
+          "sha256": "a4cff20f1cf55bd523f9798e69f9c7ec042e590a02287f0c106c757ad82670fb"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/04.png",
+      "sourceBodySha256": "4a6889f37818443720a7fdfbda63f5967cbbecc0c8108c8b8f10b188be8beeb4"
+    },
+    {
+      "index": 5,
+      "sourceIndex": 3,
+      "phase": "cleave-drive",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "cleave-drive",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/03.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/03.png",
+          "sha256": "ee460297590d96e707b27890d6e1ddacf0777cfef1c274557c28865fdb7923ac"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/03.png",
+          "sha256": "ec8c9d03115e48a81689616492a4b0a23b4229bb6d052be610ff092b68746aed"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/03.png",
+          "sha256": "3297c2a9ee2061f9b6463e32156d5e343cc6d4d7a8b86b0d64018ff0b5d29dff"
+        }
+      },
+      "grip": [
+        72,
+        88
+      ],
+      "angleDeg": 335,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/05.png",
+      "sha256": "49df7cf42abd7994dba8a1b137caf76d3d2157fca8870ec7cd5ba2933e52f8ea",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/05.png",
+          "sha256": "ee460297590d96e707b27890d6e1ddacf0777cfef1c274557c28865fdb7923ac"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/05.png",
+          "sha256": "ec8c9d03115e48a81689616492a4b0a23b4229bb6d052be610ff092b68746aed"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/05.png",
+          "sha256": "3297c2a9ee2061f9b6463e32156d5e343cc6d4d7a8b86b0d64018ff0b5d29dff"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/05.png",
+      "sourceBodySha256": "ee460297590d96e707b27890d6e1ddacf0777cfef1c274557c28865fdb7923ac"
+    },
+    {
+      "index": 6,
+      "sourceIndex": 4,
+      "phase": "heavy-impact",
+      "durationMs": 115,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "heavy-impact",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/04.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/04.png",
+          "sha256": "a5e8ac7c2d08ac613e90543303d6cffcf26b72e5c42e76823e6a1cecf7f6b8cb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/04.png",
+          "sha256": "f1b27942bb97e39dc45088b6ec398cb2e335c3cad0b8e84947cdc95f88ff46c7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/04.png",
+          "sha256": "80782c4e587d429dfdb39d07eda2fcf316548728b595603843caaa5e6ab8de58"
+        }
+      },
+      "grip": [
+        72,
+        129
+      ],
+      "angleDeg": 285,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/06.png",
+      "sha256": "19c52b6689f2859b46fe122fdea59df6edce17b3831d91426bef69895be94958",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/06.png",
+          "sha256": "a5e8ac7c2d08ac613e90543303d6cffcf26b72e5c42e76823e6a1cecf7f6b8cb"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/06.png",
+          "sha256": "f1b27942bb97e39dc45088b6ec398cb2e335c3cad0b8e84947cdc95f88ff46c7"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/06.png",
+          "sha256": "80782c4e587d429dfdb39d07eda2fcf316548728b595603843caaa5e6ab8de58"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/06.png",
+      "sourceBodySha256": "a5e8ac7c2d08ac613e90543303d6cffcf26b72e5c42e76823e6a1cecf7f6b8cb"
+    },
+    {
+      "index": 7,
+      "sourceIndex": 5,
+      "phase": "follow-through",
+      "durationMs": 110,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "follow-through",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/05.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/05.png",
+          "sha256": "d82875b3def54bc3f772274b7dc8c2d99910c3ea064615a7671e92df48115d52"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/05.png",
+          "sha256": "29455a41c1f5aca0bc66646b431bd935a5782fec7040569be49a05e29d081b4a"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/05.png",
+          "sha256": "75b4bd1f8a5b3dba1e05078d72a08e6a98f8fd6121b20e20be5c99b7ab2dedd1"
+        }
+      },
+      "grip": [
+        82,
+        137
+      ],
+      "angleDeg": 250,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/07.png",
+      "sha256": "79beb279881ed548d36f4e9f774fd733dc4aaaf7a8ac8d1b7d329f9912687c68",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/07.png",
+          "sha256": "d82875b3def54bc3f772274b7dc8c2d99910c3ea064615a7671e92df48115d52"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/07.png",
+          "sha256": "29455a41c1f5aca0bc66646b431bd935a5782fec7040569be49a05e29d081b4a"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/07.png",
+          "sha256": "75b4bd1f8a5b3dba1e05078d72a08e6a98f8fd6121b20e20be5c99b7ab2dedd1"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/07.png",
+      "sourceBodySha256": "d82875b3def54bc3f772274b7dc8c2d99910c3ea064615a7671e92df48115d52"
+    },
+    {
+      "index": 8,
+      "sourceIndex": 6,
+      "phase": "recoil",
+      "durationMs": 130,
+      "weaponVisible": true,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "recoil",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/06.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/06.png",
+          "sha256": "95ddaf851239ef667d27763214d4cd8f24768a7944f60ff52991f570296b085d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/06.png",
+          "sha256": "37a8cc0fca2676e4f3673e70d7e2571c621bc5c098eba6a5527c73f7149ed5c7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/06.png",
+          "sha256": "291192aad0da7d43853d0e6e731e310b78ac4b87774d476d514005e758d9f85d"
+        }
+      },
+      "grip": [
+        91,
+        136
+      ],
+      "angleDeg": 230,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/08.png",
+      "sha256": "6b3d45f9f529fd721be1cce233e15129db915f2201bcc30c368d8fd6d368f734",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/08.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/08.png",
+          "sha256": "95ddaf851239ef667d27763214d4cd8f24768a7944f60ff52991f570296b085d"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/08.png",
+          "sha256": "37a8cc0fca2676e4f3673e70d7e2571c621bc5c098eba6a5527c73f7149ed5c7"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/08.png",
+          "sha256": "291192aad0da7d43853d0e6e731e310b78ac4b87774d476d514005e758d9f85d"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/08.png",
+      "sourceBodySha256": "95ddaf851239ef667d27763214d4cd8f24768a7944f60ff52991f570296b085d"
+    },
+    {
+      "index": 9,
+      "sourceIndex": 7,
+      "phase": "settle-grip",
+      "durationMs": 50,
+      "weaponVisible": false,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "settle-grip",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "grip": [
+        0,
+        0
+      ],
+      "angleDeg": 0,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/09.png",
+      "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/09.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/09.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/09.png",
+      "sourceBodySha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+    },
+    {
+      "index": 10,
+      "sourceIndex": 7,
+      "phase": "release-grip",
+      "durationMs": 90,
+      "weaponVisible": false,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "release-grip",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "grip": [
+        0,
+        0
+      ],
+      "angleDeg": 0,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/10.png",
+      "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/10.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/10.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/10.png",
+      "sourceBodySha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+    },
+    {
+      "index": 11,
+      "sourceIndex": 7,
+      "phase": "return-to-guard",
+      "durationMs": 100,
+      "weaponVisible": false,
+      "dx": 0,
+      "dy": 0,
+      "operation": "reuso direto",
+      "decisionStatus": "VISUAL_REVIEW_REQUIRED",
+      "reason": "return-to-guard",
+      "sourceBody": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+      "sourceLayers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/body/07.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_l/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "grip": [
+        0,
+        0
+      ],
+      "angleDeg": 0,
+      "handBox": null,
+      "png": "experiments/main-orc-backl-v5base/axe/frames/11.png",
+      "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace",
+      "layers": {
+        "weaponBack": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/body/11.png",
+          "sha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+        },
+        "weaponFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "experiments/main-orc-backl-v5base/axe/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "experiments/main-orc-backl-v5base/axe/native/11.png",
+      "sourceBodySha256": "30b891a58a1be1b0100c2af99798e2d92dc6fd06da3c956eda604b8a5ddc7ace"
+    }
+  ],
+  "master": "experiments/main-orc-backl-v5base/axe/source/composite.aseprite",
+  "masterSha256": "007df0a26ab08f1f9698afe340d7773022c5e89f06d33240c9b1c985d3b72875",
+  "bodyMaster": "experiments/main-orc-backl-v5base/axe/source/body.aseprite",
+  "bodyMasterSha256": "c9f5941b1c7b47387b7914705214918f5e2f449de75a7c21c46419a8f951d5d6",
+  "nativeMaster": "experiments/main-orc-backl-v5base/axe/source/native.aseprite",
+  "nativeMasterSha256": "875461fd6c53fad8d453282077c456d931cf5f47ca40b250e863811504e8c81d",
+  "compositeStrip": "experiments/main-orc-backl-v5base/axe/composite-strip.png",
+  "compositeStripSha256": "1bb1d4f59d616d4341469e797aea3b5ee185155dd12a2a74a4e2b1918f1d5691",
+  "nativeStrip": "experiments/main-orc-backl-v5base/axe/native-strip.png",
+  "nativeStripSha256": "985bd2c7eba9eeb2fc77e1ccc5f5234e68545a27c5f3e917796aa157ff071e88"
+}

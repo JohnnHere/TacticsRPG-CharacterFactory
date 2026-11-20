@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orc V1 back_l/Sword Full 12-Frame Combat Cycle - Review Studio</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 24px;
+    }
+    h1, h2, h3 { color: #58a6ff; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      background: #238636;
+      color: #ffffff;
+      margin-right: 8px;
+    }
+    .badge-info { background: #1f6feb; }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .player-container {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .canvas-box {
+      background: #090d13;
+      border: 2px solid #388bfd;
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+      image-rendering: pixelated;
+    }
+    .controls {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    button {
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #30363d; }
+    button.active { background: #1f6feb; color: #fff; border-color: #388bfd; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid #30363d;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th { background: #21262d; color: #f0f6fc; }
+    tr:hover { background: #1f242c; }
+    .mono { font-family: ui-monospace, monospace; font-size: 12px; }
+    .img-evidence {
+      max-width: 100%;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Orc V1 (Verde Warcraft) &mdash; back_l/Sword Combat Cycle</h1>
+  <p>
+    <span class="badge">REAR_SWORD_L_BACK_FULL_READY</span>
+    <span class="badge badge-info">12 FRAMES / 730ms</span>
+    <span class="badge badge-info">VISIBLE [2, 8]</span>
+    <span class="badge">BODY RGBA DELTA: 0</span>
+    <span class="badge">F03/F04/F07 STRUCTURAL KEYS PRESERVED</span>
+  </p>
+
+  <div class="card">
+    <h2>1. Interactive 12-Frame Combat Player</h2>
+    <div class="player-container">
+      <div>
+        <div id="playerBox" class="canvas-box" style="width: 256px; height: 256px;">
+          <img id="playerImg" src="../../../../characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/04.png" style="width: 100%; height: 100%; image-rendering: pixelated;" />
+        </div>
+        <div class="controls">
+          <button id="btnPlay" onclick="togglePlay()">Pause</button>
+          <button onclick="prevFrame()">&larr; Prev</button>
+          <button onclick="nextFrame()">Next &rarr;</button>
+          <span id="frameIndicator" style="font-weight: bold; min-width: 100px;">Frame: F04 (70ms)</span>
+        </div>
+        <div class="controls">
+          <span>Speed:</span>
+          <button class="spd-btn active" onclick="setSpeed(1.0, this)">1x</button>
+          <button class="spd-btn" onclick="setSpeed(0.75, this)">0.75x</button>
+          <button class="spd-btn" onclick="setSpeed(0.5, this)">0.5x</button>
+          <button class="spd-btn" onclick="setSpeed(0.25, this)">0.25x</button>
+        </div>
+        <div class="controls">
+          <span>Zoom:</span>
+          <button class="zm-btn active" onclick="setZoom(1, this)">1x (256px)</button>
+          <button class="zm-btn" onclick="setZoom(2, this)">2x (512px)</button>
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 320px;">
+        <h3>Active Frame Details</h3>
+        <p><strong>Phase:</strong> <span id="curPhase">02-apex</span></p>
+        <p><strong>Duration:</strong> <span id="curDuration">70 ms</span></p>
+        <p><strong>Weapon Status:</strong> <span id="curWeapon">Visible (Angle: 320°, Grip: [176, 122])</span></p>
+        <p><strong>Anatomical Chain:</strong> <span id="curChain">Shoulder (143,105) &rarr; Elbow (161,113) &rarr; Wrist (176,122) &rarr; Palm (175,121)</span></p>
+        <p><strong>Glove Wrap:</strong> <span id="curGlove">9 rows genuine opaque glove pixels + 5 retouches sealing depth</span></p>
+        <p><strong>Motion Description:</strong> <span id="curMotion">Maximum forward thrust! Blade slashing diagonally top-left across north-west</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Visual Evidence & Trajectory Verification</h2>
+    <h3>Trajectory Contact Sheet</h3>
+    <img class="img-evidence" src="evidence/trajectory-overview.png" alt="Trajectory Overview" />
+    
+    <h3 style="margin-top: 24px;">4X Zoom &mdash; Right Hand Genuine Glove Envelope (F02..F08)</h3>
+    <img class="img-evidence" src="evidence/active-keyframes-zoom.png" alt="Glove Envelope Zoom" />
+
+    <h3 style="margin-top: 24px;">Tactical Scale Readability (128x128 & 64x64)</h3>
+    <img class="img-evidence" src="evidence/before-after-tactical.png" alt="Tactical Scale" />
+  </div>
+
+  <div class="card">
+    <h2>3. 12-Frame Technical Data & SHA-256 Hashes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Frame</th>
+          <th>Phase</th>
+          <th>Duration</th>
+          <th>Weapon</th>
+          <th>Angle</th>
+          <th>Grip (x, y)</th>
+          <th>Composite 256 Hash</th>
+          <th>Native Composite 128 Hash</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>F00</strong></td>
+          <td>guard</td>
+          <td>40ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19</td>
+          <td class="mono">2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d</td>
+        </tr>
+        <tr>
+          <td><strong>F01</strong></td>
+          <td>chamber-init</td>
+          <td>60ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">1128f96725f28d24ec05a15b6352ff140aae1638570f7fc1e7911a2542ecd774</td>
+          <td class="mono">85206f11259fc60b0ebc239b95c17dd3273ff699130f93d2a848380c9c9f80c9</td>
+        </tr>
+        <tr>
+          <td><strong>F02</strong></td>
+          <td>hoist-lift</td>
+          <td>60ms</td>
+          <td>Visible</td>
+          <td>10°</td>
+          <td>(163, 108)</td>
+          <td class="mono">aeb138d87dc3472a6f3893af6e87532b40bff9725ade589df82b507378a29b4b</td>
+          <td class="mono">c3e2fb709f7e9710f0024368a282a503d30dd8bfbfee2453555abe5ea4753ee1</td>
+        </tr>
+        <tr>
+          <td><strong>F03</strong></td>
+          <td>01-hoist</td>
+          <td>70ms</td>
+          <td>Visible</td>
+          <td>350°</td>
+          <td>(159, 92)</td>
+          <td class="mono">910fb18a95f56516aeda8a7882a4a6fcb68aad6d0fd592d46788c606bc3ac1f0</td>
+          <td class="mono">9d0e6c2ff689d07776cdcd16d6f08be6d74dae26559f6f592eec16ee423260b1</td>
+        </tr>
+        <tr>
+          <td><strong>F04</strong></td>
+          <td>02-apex</td>
+          <td>70ms</td>
+          <td>Visible</td>
+          <td>320°</td>
+          <td>(176, 122)</td>
+          <td class="mono">2a5e2bf2ebb6f54154b31d0608c60bbc302221317d41202ab985ab720592adad</td>
+          <td class="mono">637d6ea3e64c8940303f8a56307857f838f22104bd6e67247d42ad8f394e9569</td>
+        </tr>
+        <tr>
+          <td><strong>F05</strong></td>
+          <td>slash-cleave</td>
+          <td>40ms</td>
+          <td>Visible</td>
+          <td>285°</td>
+          <td>(165, 117)</td>
+          <td class="mono">7dabc8f80f3d6463a11c592ad95010a1fd02b81b57f9b6931f42277852c64367</td>
+          <td class="mono">b7a23a8e9d6a23c321a19fe9df7790ecb7e49b4974448688c9518db2a3606ca0</td>
+        </tr>
+        <tr>
+          <td><strong>F06</strong></td>
+          <td>slash-descent</td>
+          <td>40ms</td>
+          <td>Visible</td>
+          <td>265°</td>
+          <td>(150, 119)</td>
+          <td class="mono">534d385dcec31cb09e346ad1cbc81dbfdc8f0fd4df723a3d409164172cb415ba</td>
+          <td class="mono">6481ec67487f89480097d3049afc02ddbd55d575774b527ecf1f3c206622897b</td>
+        </tr>
+        <tr>
+          <td><strong>F07</strong></td>
+          <td>03-impact</td>
+          <td>90ms</td>
+          <td>Visible</td>
+          <td>245°</td>
+          <td>(150, 148)</td>
+          <td class="mono">73e788ed9a025fb07a880fe3dabe5f670675535d324cefbbbdfb11e740d54c67</td>
+          <td class="mono">5af762365f94937c4eca6cbb1ae849f8a085d698c5945594b41de53abf144743</td>
+        </tr>
+        <tr>
+          <td><strong>F08</strong></td>
+          <td>recover-low</td>
+          <td>70ms</td>
+          <td>Visible</td>
+          <td>240°</td>
+          <td>(152, 148)</td>
+          <td class="mono">f0fc91c79ca9a12126401b203b4f882ae80848d667647c34cb632bfef5147181</td>
+          <td class="mono">3f4d16934bd6157342143f7863f13237b3757b15975f0e9315ffa2a670876cfa</td>
+        </tr>
+        <tr>
+          <td><strong>F09</strong></td>
+          <td>recover-pelvis</td>
+          <td>70ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">b9603f984d288225d5c09546b958216a68ec919eecffece8b4a0417edf9d188f</td>
+          <td class="mono">fdf3ffc6641a2d860a01094ae5a5d9a5d754b8df464d9fd4d8a404d78de1f0b8</td>
+        </tr>
+        <tr>
+          <td><strong>F10</strong></td>
+          <td>recover-guard</td>
+          <td>60ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">f22235acb6ff34b9db9056505d214e2023180d5f6950c8927bf626572e0cf154</td>
+          <td class="mono">f03c94911abd83a46631ea7abcaba0c80adf014ac9e00e25ced0f4ce327c8401</td>
+        </tr>
+        <tr>
+          <td><strong>F11</strong></td>
+          <td>guard-return</td>
+          <td>60ms</td>
+          <td>Hidden</td>
+          <td>-</td>
+          <td>-</td>
+          <td class="mono">0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19</td>
+          <td class="mono">2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const frames = [{"index": 0, "durationMs": 40, "phase": "guard", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/00.png", "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/00.png", "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/00.png", "nativeCompositeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d", "weaponVisible": false, "rightGrip": null, "rotationDeg": null, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/00.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/00.png", "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/00.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/00.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}}}, {"index": 1, "durationMs": 60, "phase": "chamber-init", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/01.png", "sha256": "1128f96725f28d24ec05a15b6352ff140aae1638570f7fc1e7911a2542ecd774", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/01.png", "nativeSha256": "85206f11259fc60b0ebc239b95c17dd3273ff699130f93d2a848380c9c9f80c9", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/01.png", "nativeCompositeSha256": "85206f11259fc60b0ebc239b95c17dd3273ff699130f93d2a848380c9c9f80c9", "weaponVisible": false, "rightGrip": null, "rotationDeg": null, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/01.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/01.png", "sha256": "1128f96725f28d24ec05a15b6352ff140aae1638570f7fc1e7911a2542ecd774"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/01.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/01.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}}}, {"index": 2, "durationMs": 60, "phase": "hoist-lift", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/02.png", "sha256": "aeb138d87dc3472a6f3893af6e87532b40bff9725ade589df82b507378a29b4b", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/02.png", "nativeSha256": "ee7d922d08eb2c4276365fdee83e76b3541017d8c5d67964e95cf0e6f59dd2e4", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/02.png", "nativeCompositeSha256": "c3e2fb709f7e9710f0024368a282a503d30dd8bfbfee2453555abe5ea4753ee1", "weaponVisible": true, "rightGrip": [163, 108], "rotationDeg": 10, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/02.png", "sha256": "d572d87d5835b46404e3d7ab88db3775ee7efae1b40ce2c6c7f04fefec8a153b"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/02.png", "sha256": "a04ef085b136bd86c058a3fec59928af5f72c21e832862cf8437c58b4081f7c8"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/02.png", "sha256": "de9a93083aaed113e26f5b6d5a5598440987547260460d170f2190708f083be7"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/02.png", "sha256": "833389f1ab74aead2527a294a5fe0f9b8077add13724174006c3eaadd62f8424"}}}, {"index": 3, "durationMs": 70, "phase": "01-hoist", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/03.png", "sha256": "910fb18a95f56516aeda8a7882a4a6fcb68aad6d0fd592d46788c606bc3ac1f0", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/03.png", "nativeSha256": "4d0063ba3ec21af78fb490ff4f80c48ec71f5663316c9afd6fa60c4689884096", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/03.png", "nativeCompositeSha256": "9d0e6c2ff689d07776cdcd16d6f08be6d74dae26559f6f592eec16ee423260b1", "weaponVisible": true, "rightGrip": [159, 92], "rotationDeg": 350, "scale": 1.0, "isAcceptedKey": true, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/03.png", "sha256": "aaac0c86de82add96a718aea0e17edfebf5c5962c8e57f36ef8fc00685646588"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/03.png", "sha256": "5c2f2e1989381a769c4bfd5f2e54d137c8a637b22391f71b8c24707c684bde2c"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/03.png", "sha256": "924174539468a2904765b21533312c483c9d0c84fab43748cbe7c6a673f875fb"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/03.png", "sha256": "8b1f56f93a339eeaa134ffb6e546e32806666bf6a3f2c65f015be11445c586a6"}}}, {"index": 4, "durationMs": 70, "phase": "02-apex", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/04.png", "sha256": "2a5e2bf2ebb6f54154b31d0608c60bbc302221317d41202ab985ab720592adad", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/04.png", "nativeSha256": "206a297a862278cc21649f8613199cc304d58ec1b771c97c652b09c57fb40f30", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/04.png", "nativeCompositeSha256": "637d6ea3e64c8940303f8a56307857f838f22104bd6e67247d42ad8f394e9569", "weaponVisible": true, "rightGrip": [176, 122], "rotationDeg": 320, "scale": 1.0, "isAcceptedKey": true, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/04.png", "sha256": "3552fe71cdcfd20ba1749c5572f56ec26ac00a7f35c984aae4c6eea665d8a21b"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/04.png", "sha256": "a9a5a860c7b6c7f52445a2d57c26bbaf01eb88cf40a2a52d9bd8a479f3189220"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/04.png", "sha256": "822a4d60d9a3061eba1d0cdda9fb1a91d6ac678de0fb306eb0fa58cad4b8f005"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/04.png", "sha256": "3329b3d0c5d8a3e82836166c67eb970dc230fe29b82e0bdac7eb061209bdc006"}}}, {"index": 5, "durationMs": 40, "phase": "slash-cleave", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/05.png", "sha256": "7dabc8f80f3d6463a11c592ad95010a1fd02b81b57f9b6931f42277852c64367", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/05.png", "nativeSha256": "2767cec46bc09e52438e240670c9f985e91c231ea8fec11beedd1254dc2efef9", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/05.png", "nativeCompositeSha256": "b7a23a8e9d6a23c321a19fe9df7790ecb7e49b4974448688c9518db2a3606ca0", "weaponVisible": true, "rightGrip": [165, 117], "rotationDeg": 285, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/05.png", "sha256": "d9ee92ae9dd0f3f6b4cc7a86e727209793be80440bd601db0f063b9ba61db5c9"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/05.png", "sha256": "8058ea61a4f3f8693d6fcb87b097d8b01ea599174f22c848699654f25f7224de"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/05.png", "sha256": "1deb5129ff02ff6ded8ee066f14f84382e97097581f240f9691f207a549302dd"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/05.png", "sha256": "edc26d133a60c01156a5e11760b11ddc9c6cccff5430aa668fa6f3970f74a884"}}}, {"index": 6, "durationMs": 40, "phase": "slash-descent", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/06.png", "sha256": "534d385dcec31cb09e346ad1cbc81dbfdc8f0fd4df723a3d409164172cb415ba", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/06.png", "nativeSha256": "5e1d4161b074016845f16680032d49a46179f8e5d28d2e1c4129186f0efd85fd", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/06.png", "nativeCompositeSha256": "6481ec67487f89480097d3049afc02ddbd55d575774b527ecf1f3c206622897b", "weaponVisible": true, "rightGrip": [150, 119], "rotationDeg": 265, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/06.png", "sha256": "ed689f23a466df5892863d06fc16fc8c8e1b0f782c9fdd4d255c608eef201672"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/06.png", "sha256": "a283284c1c423e052ce9e1901d055e2fc3776423d5e78cf2881574b279b83ed0"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/06.png", "sha256": "ae3f6e2e6fb918bf7437b4075c20689551c1ae93815a849daadd8a1cf607afdd"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/06.png", "sha256": "3894fc947104fe1d1c38394d9ed7b3ac9d240088ce3c644bc7a36b9ad8e0892d"}}}, {"index": 7, "durationMs": 90, "phase": "03-impact", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/07.png", "sha256": "73e788ed9a025fb07a880fe3dabe5f670675535d324cefbbbdfb11e740d54c67", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/07.png", "nativeSha256": "bc3f5c1102377ffeba631dfef93d843bf1c12d431f4b016286c1c2a7bad147f1", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/07.png", "nativeCompositeSha256": "5af762365f94937c4eca6cbb1ae849f8a085d698c5945594b41de53abf144743", "weaponVisible": true, "rightGrip": [150, 148], "rotationDeg": 245, "scale": 1.0, "isAcceptedKey": true, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/07.png", "sha256": "a0a7c49753ee8295b5d55ae8336b59b21bee1bd8eb0aa7463f76992bd5db3073"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/07.png", "sha256": "3736cb7fab2e4254f6ffa0676f40e99b936a47b10c1e42aa346e46194aa985b2"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/07.png", "sha256": "b2a5433ae9acb4defdc92d0a5f7fc5efe1457a17f8fa3c21be18b08fa198096d"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/07.png", "sha256": "188a0b76e40f98def48b4b03e078c06e54fc2e0e92e7f49af8981f702d4e3aad"}}}, {"index": 8, "durationMs": 70, "phase": "recover-low", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/08.png", "sha256": "f0fc91c79ca9a12126401b203b4f882ae80848d667647c34cb632bfef5147181", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/08.png", "nativeSha256": "a9a56cf5729c5679f376309e4e446d7ad570fce895d4319b6dc221df6059b1bb", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/08.png", "nativeCompositeSha256": "3f4d16934bd6157342143f7863f13237b3757b15975f0e9315ffa2a670876cfa", "weaponVisible": true, "rightGrip": [152, 148], "rotationDeg": 240, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/08.png", "sha256": "ca716ad99af5b84dc1255ed4428958feacec0edeb6e0dca9fb82e4e79aaa396d"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/08.png", "sha256": "1a61d96fb1e0d65ea001a0bcf8b10145f698e6793f41a7c29e1fdbac48d745fb"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/08.png", "sha256": "85d336dec284d2e0423c6b7722f933aafb55b0bcfb3fef010292a9d65af48956"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/08.png", "sha256": "77046c4b850129de5e655aca90c5f160822ef0307f11f6da0f3ec56fbafb1bba"}}}, {"index": 9, "durationMs": 70, "phase": "recover-pelvis", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/09.png", "sha256": "b9603f984d288225d5c09546b958216a68ec919eecffece8b4a0417edf9d188f", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/09.png", "nativeSha256": "fdf3ffc6641a2d860a01094ae5a5d9a5d754b8df464d9fd4d8a404d78de1f0b8", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/09.png", "nativeCompositeSha256": "fdf3ffc6641a2d860a01094ae5a5d9a5d754b8df464d9fd4d8a404d78de1f0b8", "weaponVisible": false, "rightGrip": null, "rotationDeg": null, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/09.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/09.png", "sha256": "b9603f984d288225d5c09546b958216a68ec919eecffece8b4a0417edf9d188f"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/09.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/09.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}}}, {"index": 10, "durationMs": 60, "phase": "recover-guard", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/10.png", "sha256": "f22235acb6ff34b9db9056505d214e2023180d5f6950c8927bf626572e0cf154", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/10.png", "nativeSha256": "f03c94911abd83a46631ea7abcaba0c80adf014ac9e00e25ced0f4ce327c8401", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/10.png", "nativeCompositeSha256": "f03c94911abd83a46631ea7abcaba0c80adf014ac9e00e25ced0f4ce327c8401", "weaponVisible": false, "rightGrip": null, "rotationDeg": null, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/10.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/10.png", "sha256": "f22235acb6ff34b9db9056505d214e2023180d5f6950c8927bf626572e0cf154"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/10.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/10.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}}}, {"index": 11, "durationMs": 60, "phase": "guard-return", "png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/frames/11.png", "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19", "nativePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native/11.png", "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d", "nativeCompositePng": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/native-composite/11.png", "nativeCompositeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d", "weaponVisible": false, "rightGrip": null, "rotationDeg": null, "scale": 1.0, "isAcceptedKey": false, "layers": {"weaponBack": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponBack/11.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "body": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/body/11.png", "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"}, "weaponFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/weaponFront/11.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}, "handFront": {"png": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/layers/handFront/11.png", "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"}}}];
+    const anatomy = [{"frame": 0, "phase": "guard", "durationMs": 40, "weaponVisible": false, "rightArmChain": "Shoulder (142, 100) -> Elbow (162, 122) -> Wrist (158, 128) -> Palm (156, 130)", "weaponTrajectory": "Hidden (neutral combat guard outside attack)", "gloveEnvelope": "No overlay outside attack", "retouch": []}, {"frame": 1, "phase": "chamber-init", "durationMs": 60, "weaponVisible": false, "rightArmChain": "Shoulder (142, 100) -> Elbow (164, 120) -> Wrist (162, 122) -> Palm (160, 124)", "weaponTrajectory": "Hidden (initiating diagonal slash windup)", "gloveEnvelope": "No overlay outside attack", "retouch": []}, {"frame": 2, "phase": "hoist-lift", "durationMs": 60, "weaponVisible": true, "rightArmChain": "Shoulder (142, 98) -> Elbow (170, 114) -> Forearm (168, 110) -> Wrist (163, 108) -> Palm (162, 107)", "weaponTrajectory": "Angle 10\u00b0: Blade rising upright as right arm hoists towards shoulder", "grip": [163, 108], "angleDeg": 10, "gloveEnvelope": "8 rows at y=105..112 (74 genuine opaque glove pixels)", "retouch": "3 micro-retouches at [162,107], [163,107], [162,109] wrapping leather depth over hilt"}, {"frame": 3, "phase": "01-hoist", "durationMs": 70, "weaponVisible": true, "rightArmChain": "Shoulder (142, 96) -> Elbow (171, 110) -> Forearm (165, 100) -> Wrist (159, 92) -> Palm (158, 91)", "weaponTrajectory": "Angle 350\u00b0 (-10\u00b0): High chamber near ear/neck, blade poised upright-backward ready to cut", "grip": [159, 92], "angleDeg": 350, "gloveEnvelope": "9 rows at y=88..96 (89 genuine opaque glove pixels, structural key F03)", "retouch": "4 micro-retouches at [158,91], [159,91], [158,93], [159,93] securing leather wrap"}, {"frame": 4, "phase": "02-apex", "durationMs": 70, "weaponVisible": true, "rightArmChain": "Shoulder (143, 105) -> Elbow (161, 113) -> Forearm (172, 118) -> Wrist (176, 122) -> Palm (175, 121)", "weaponTrajectory": "Angle 320\u00b0 (-40\u00b0): Maximum forward thrust! Blade slashing diagonally top-left across north-west", "grip": [176, 122], "angleDeg": 320, "gloveEnvelope": "9 rows at y=118..126 (100 genuine opaque glove pixels, structural key F04)", "retouch": "5 micro-retouches at [175,121], [176,121], [175,123], [176,123], [174,122] locking hilt depth"}, {"frame": 5, "phase": "slash-cleave", "durationMs": 40, "weaponVisible": true, "rightArmChain": "Shoulder (144, 105) -> Elbow (170, 112) -> Forearm (168, 115) -> Wrist (165, 117) -> Palm (164, 116)", "weaponTrajectory": "Angle 285\u00b0 (-75\u00b0): Diagonal descent, blade sweeping across chest/skirt", "grip": [165, 117], "angleDeg": 285, "gloveEnvelope": "9 rows at y=113..121 (52 genuine opaque glove pixels)", "retouch": "4 micro-retouches at [164,116], [165,116], [164,118], [165,118]"}, {"frame": 6, "phase": "slash-descent", "durationMs": 40, "weaponVisible": true, "rightArmChain": "Shoulder (144, 106) -> Elbow (164, 111) -> Forearm (158, 115) -> Wrist (150, 119) -> Palm (149, 118)", "weaponTrajectory": "Angle 265\u00b0 (-95\u00b0): Deep diagonal slash crossing torso midline", "grip": [150, 119], "angleDeg": 265, "gloveEnvelope": "7 rows at y=116..122 (58 genuine opaque glove pixels)", "retouch": "4 micro-retouches at [149,118], [150,118], [149,120], [150,120]"}, {"frame": 7, "phase": "03-impact", "durationMs": 90, "weaponVisible": true, "rightArmChain": "Shoulder (142, 112) -> Elbow (167, 130) -> Forearm (158, 140) -> Wrist (150, 148) -> Palm (149, 147)", "weaponTrajectory": "Angle 245\u00b0 (-115\u00b0): Impact followthrough, blade extended low down-left", "grip": [150, 148], "angleDeg": 245, "gloveEnvelope": "8 rows at y=144..151 (93 genuine opaque glove pixels, structural key F07)", "retouch": "5 micro-retouches at [149,147], [150,147], [149,149], [150,149], [148,148]"}, {"frame": 8, "phase": "recover-low", "durationMs": 70, "weaponVisible": true, "rightArmChain": "Shoulder (143, 110) -> Elbow (168, 133) -> Forearm (160, 142) -> Wrist (152, 148) -> Palm (151, 147)", "weaponTrajectory": "Angle 240\u00b0 (-120\u00b0): Low deceleration and rebound, blade resting cleanly above floor (lowest y=180)", "grip": [152, 148], "angleDeg": 240, "gloveEnvelope": "8 rows at y=145..152 (63 genuine opaque glove pixels)", "retouch": "4 micro-retouches at [151,147], [152,147], [151,149], [152,149]"}, {"frame": 9, "phase": "recover-pelvis", "durationMs": 70, "weaponVisible": false, "rightArmChain": "Shoulder (143, 106) -> Elbow (166, 126) -> Wrist (158, 132) -> Palm (156, 134)", "weaponTrajectory": "Hidden (recovering stance towards combat guard)", "gloveEnvelope": "No overlay outside attack", "retouch": []}, {"frame": 10, "phase": "recover-guard", "durationMs": 60, "weaponVisible": false, "rightArmChain": "Shoulder (143, 102) -> Elbow (164, 124) -> Wrist (158, 130) -> Palm (156, 132)", "weaponTrajectory": "Hidden (returning to guard posture)", "gloveEnvelope": "No overlay outside attack", "retouch": []}, {"frame": 11, "phase": "guard-return", "durationMs": 60, "weaponVisible": false, "rightArmChain": "Shoulder (142, 100) -> Elbow (162, 122) -> Wrist (158, 128) -> Palm (156, 130)", "weaponTrajectory": "Hidden (seamless loop back to F00 guard)", "gloveEnvelope": "No overlay outside attack", "retouch": []}];
+    let currentIdx = 4;
+    let isPlaying = true;
+    let speed = 1.0;
+    let timer = null;
+
+    const playerImg = document.getElementById('playerImg');
+    const playerBox = document.getElementById('playerBox');
+    const frameIndicator = document.getElementById('frameIndicator');
+    const btnPlay = document.getElementById('btnPlay');
+
+    const curPhase = document.getElementById('curPhase');
+    const curDuration = document.getElementById('curDuration');
+    const curWeapon = document.getElementById('curWeapon');
+    const curChain = document.getElementById('curChain');
+    const curGlove = document.getElementById('curGlove');
+    const curMotion = document.getElementById('curMotion');
+
+    function updateDisplay() {
+      const f = frames[currentIdx];
+      const a = anatomy[currentIdx];
+      playerImg.src = '../../../../' + f.png;
+      frameIndicator.innerText = `Frame: F${String(currentIdx).padStart(2, '0')} (${f.durationMs}ms)`;
+      
+      curPhase.innerText = f.phase;
+      curDuration.innerText = f.durationMs + ' ms';
+      curWeapon.innerText = f.weaponVisible ? `Visible (Angle: ${f.rotationDeg}°, Grip: [${f.rightGrip}])` : 'Hidden (Attack-only policy outside interval)';
+      curChain.innerText = a.rightArmChain;
+      curGlove.innerText = a.gloveEnvelope || 'No overlay outside attack';
+      curMotion.innerText = a.weaponTrajectory;
+    }
+
+    function tick() {
+      if (!isPlaying) return;
+      currentIdx = (currentIdx + 1) % frames.length;
+      updateDisplay();
+      const delay = frames[currentIdx].durationMs / speed;
+      timer = setTimeout(tick, delay);
+    }
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      btnPlay.innerText = isPlaying ? 'Pause' : 'Play';
+      if (isPlaying) {
+        tick();
+      } else {
+        clearTimeout(timer);
+      }
+    }
+
+    function nextFrame() {
+      isPlaying = false;
+      btnPlay.innerText = 'Play';
+      clearTimeout(timer);
+      currentIdx = (currentIdx + 1) % frames.length;
+      updateDisplay();
+    }
+
+    function prevFrame() {
+      isPlaying = false;
+      btnPlay.innerText = 'Play';
+      clearTimeout(timer);
+      currentIdx = (currentIdx - 1 + frames.length) % frames.length;
+      updateDisplay();
+    }
+
+    function setSpeed(val, btn) {
+      speed = val;
+      document.querySelectorAll('.spd-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function setZoom(val, btn) {
+      playerBox.style.width = (256 * val) + 'px';
+      playerBox.style.height = (256 * val) + 'px';
+      document.querySelectorAll('.zm-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    updateDisplay();
+    tick();
+  </script>
+
+</body>
+</html>

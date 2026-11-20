@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-03",
+  "revision": 1,
+  "reviewer": {
+    "role": "Independent QA agent (deterministic recomputation plus direct visual inspection)",
+    "method": "Raw PNG pixels (pngjs) and SHA-256 hashes recomputed from sources; pilot scripts not reused for evidence; visual review of representative 2x sheet, 10x grip zoom and F06 full frames in both variants.",
+    "independenceNote": "No paid PixelLab calls; no Unity writes; review limited to experiments/main-orc-hybrid-weapon-04b2 and its consumed source."
+  },
+  "freezeId": "3736c9dc79e5372a155dfa6a480bd085ef93b0b5e518432c5213f8b09cc49964",
+  "freezeDefinition": "SHA-256 over ordered (relativePath, fileSha256) pairs of: full/a/composite.aseprite, full/b/composite.aseprite, variants/sword-{a,b}/sword.png, variants/sword-{a,b}/sword.aseprite, verification.json, report.md, blade-repaint-stats.json, grip-pivot-fit.json, grip-profile-back-r.json, edge-diagnostics.json, weapon-diff.json, pixel-diff.json, representative-review-2x.png, grip-10x-both.png, review/index.html.",
+  "verdict": "PASS",
+  "unconditionalForExactFreeze": true,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": true,
+  "runtimeImplemented": false,
+  "promotedToProduction": false,
+  "blockingFindingsCount": 0,
+  "requiredCorrections": [],
+  "checksSummary": {
+    "independentRecomputationChecks": 30,
+    "passed": 30,
+    "failed": 0,
+    "resultsFile": "qa/qa-independent-results.json",
+    "pilotVerificationFile": "verification.json"
+  },
+  "scope": {
+    "experimentId": "main-orc-hybrid-weapon-04b2",
+    "pilot": "B2",
+    "characterId": "orc-v1",
+    "direction": "back_r",
+    "action": "Sword",
+    "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/clip.json",
+    "frames": 14,
+    "armedFrames": "F02..F11",
+    "unarmedFrames": ["F00", "F01", "F12", "F13"],
+    "weaponVariants": ["sword-a (Recruta)", "sword-b (aço facetado)"],
+    "outOfScope": ["Axe Attack", "back_l", "front_r", "front_l", "Unity integration", "runtime behavior", "damage numbers"]
+  },
+  "keyEvidence": {
+    "compositeMasterAEqualsSource": "b1109f1a2d189b52108a0e2998aa82381109bb0f68327eecda4862aa2ae522db",
+    "compositeStripAEqualsSource": "49050df099c4ce08c28793a8fa822074f3ab9f52e13099992e37a936ebb7a207",
+    "swordAPngIdenticalAcrossExperiments": "7400e804ba599d42be31b81a91789d3519e8684d5a045f41d2c8b9b57683a30a",
+    "swordBPngIdenticalAcrossExperiments": "04a160cc57011f71edbbf96573d1e26075a3f33bee989045817938a5ef61ba4a",
+    "bladePixelsRepainted": 4735,
+    "hiltPixelsPreserved": 2315,
+    "compositionRegressionPx": 0,
+    "silentWeaponInUnarmedFramesPx": 0,
+    "weaponSilhouetteDeltaABPx": 0,
+    "nonWeaponCompositeDiffABPx": 0,
+    "timing": { "totalMs": 730, "contactF08StartMs": 325, "preservedInBothVariants": true },
+    "gripPivots": { "declaredValidated": 10, "adjusted": 0, "maxDeviationPx": 0.58 }
+  },
+  "visualInspection": {
+    "inspected": [
+      "representative-review-2x.png (F02/F05/F08/F11)",
+      "grip-10x-both.png (F08)",
+      "full/a/composite/F06.png",
+      "full/b/composite/F06.png"
+    ],
+    "satisfactory": [
+      "F06 dual-depth split (hilt in front of body 51px, leather grip behind) correct in both variants",
+      "1px dark outline continuous, no black-rim thickening, no matte halo around pale blade B",
+      "Blade B silhouette overlays blade A pixel-for-pixel",
+      "Grip anchor visually coincides with fist fit in both variants",
+      "Zero weapon pixels in unarmed frames (attack-only-v1 respected)"
+    ],
+    "deferredToCreator": [
+      "Material contrast of the pale faceted steel blade against the darker rear body (aesthetic decision)",
+      "Disposition on inherited V8 rear-body characteristics documented in report.md section 7 (body luma F02..F11, F02->F03 pose jump, F07..F09 forearm foreshortening) - none introduced or worsened by this composition"
+    ]
+  },
+  "nonBlockingObservations": [
+    {
+      "id": "QA-OBS-01",
+      "severity": "INFO",
+      "frames": ["F05", "F07", "F11"],
+      "observation": "declaredValidWeaponPixels drops 20-39 px below total weapon pixel count and color SAD rises on high-rotation frames. Attributed to rotation-render rounding seams (1-2 px), identical in variants A and B (consequence of silhouetteDeltaAB = 0) and inherited from the recovery. Not a composition defect; no action required."
+    }
+  ],
+  "invalidationRule": "Verdict valid only for the exact freezeId above; any modification under experiments/main-orc-hybrid-weapon-04b2 requires a new independent QA review."
+}

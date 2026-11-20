@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "qaReviewer": "Antigravity Temporal QA (Gemini 3.8 Flash High)",
+  "reviewDate": "2026-10-30T13:35:00-03:00",
+  "browser": "Chromium Headless Shell 156.0.8078.4 (Win64) via Playwright",
+  "reviewPage": "Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao de combate V7/index.html",
+  "manifest": "characters/orc-v1/source/combat-recovery-v7/candidate28manifest.json",
+  "manifestSha256": "fde1fe23f2d637589b6abef6b9b946b6c4370cc8ae5f3927525fb038397b2579",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorReviewVerdict": "REJECTED_BY_CREATOR",
+  "verdict": "ARTISTIC_ISSUES_FOUND",
+  "runtimeImplemented": false,
+  "eligibleForIntegration": false,
+  "summary": "O Criador revisou a página de testes V7 e REJEITOU o candidato com três apontamentos mandatórios: persistência do flash no ataque de espada frontal, piora em problemas de frame (cadência/flutter) e falta de uniformidade nas vistas traseiras. O QA temporal confirmou a percepção em movimento no Chromium real a 1x e 0,5x, localizando matematicamente os três eventos de estrobo de luminância no ataque frontal (F01->F02 pico de pegada de 35ms com +112px claros; F05->F06->F07 teletransporte sem rastro de lâmina a 35ms; F10->F11->F12 entalhe escuro de 45ms seguido de salto de +94px de armadura no retorno à guarda), a disparidade estrutural entre back_r (12 quadros/950ms) e back_l (15 quadros/860ms), e o tremor decorrente do excesso de quadros ultra-rápidos.",
+  "loopsWatched": {
+    "front_r_Sword": { "loops1x": 4, "elapsed1xMs": 2932, "loops05x": 3, "elapsed05xMs": 4387, "totalFrames": 13, "durationMs": 730 },
+    "front_l_Sword": { "loops1x": 4, "elapsed1xMs": 2951, "loops05x": 3, "elapsed05xMs": 4391, "totalFrames": 13, "durationMs": 730 },
+    "back_r_Sword": { "loops1x": 4, "elapsed1xMs": 3825, "loops05x": 3, "elapsed05xMs": 5716, "totalFrames": 12, "durationMs": 950 },
+    "back_l_Sword": { "loops1x": 4, "elapsed1xMs": 3511, "loops05x": 3, "elapsed05xMs": 5164, "totalFrames": 15, "durationMs": 860 },
+    "front_r_Axe": { "loops1x": 4, "elapsed1xMs": 4038, "loops05x": 3, "elapsed05xMs": 6042, "totalFrames": 12, "durationMs": 1005 },
+    "front_l_Axe": { "loops1x": 4, "elapsed1xMs": 4048, "loops05x": 3, "elapsed05xMs": 6050, "totalFrames": 12, "durationMs": 1005 },
+    "back_r_Axe": { "loops1x": 4, "elapsed1xMs": 5288, "loops05x": 3, "elapsed05xMs": 7940, "totalFrames": 12, "durationMs": 1320 },
+    "back_l_Axe": { "loops1x": 4, "elapsed1xMs": 4942, "loops05x": 3, "elapsed05xMs": 7396, "totalFrames": 15, "durationMs": 1230 }
+  },
+  "findings": [
+    {
+      "id": "QA-V7-01",
+      "severity": "CRITICAL",
+      "scope": "front_r/Sword, front_l/Sword",
+      "category": "FRONTAL_SWORD_FLASH_ENTRY_SPIKE",
+      "frames": "F01 -> F02 -> F03",
+      "description": "Flash de entrada da arma: em F01 (65ms, desarmado), a armadura frontal do corpo possui 144px claros (front_r) / 173px (front_l). Em F02 (duração de apenas 35ms), a espada surge subitamente com 117px de metal claro enquanto o corpo AINDA mantém a pose frontal aberta (144px/163px), gerando um pico extremo de luminância de +111px / +112px (+45.716 de luminância total acumulada) atingindo 255px/275px claros. Logo em seguida, em F03 (50ms), o torso gira e perde 83px/113px de luz corporal, derrubando o total para 158-168px. Em movimento contínuo a 1x, esse quadro isolado de 35ms de hiperluminância lê como um clarão/flash imediato na pegada da arma.",
+      "metrics": {
+        "F01_bright140": 144,
+        "F02_bright140": 255,
+        "F03_bright140": 168,
+        "F01_to_F02_deltaBright": 111,
+        "F02_to_F03_deltaBright": -87,
+        "F02_durationMs": 35
+      },
+      "evidenceImage": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/front_r_sword_flash_entry_F01_F02_F03.png",
+      "diffMap": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/diff_front_r_F01_to_F02_entry_spike.png"
+    },
+    {
+      "id": "QA-V7-02",
+      "severity": "CRITICAL",
+      "scope": "front_r/Sword, front_l/Sword",
+      "category": "FRONTAL_SWORD_FLASH_STRIKE_TELEPORT",
+      "frames": "F05 -> F06 -> F07",
+      "description": "Flash de estrobo no golpe (descida da espada): em F05 (apex-hold, 65ms), a lâmina repousa enrolada atrás da cabeça (bbox x:85..110, y:30..101). No quadro seguinte F06 (duração de apenas 35ms!), a lâmina teletransporta mais de 60 pixels através do canvas para x:146..186, y:64..125, introduzindo 110px de metal claro em coordenadas virgens sem nenhum frame de transição, smear ou rastro. No quadro F07 (novamente 35ms!), a lâmina teletransporta outros 30px até o solo em x:146..216, y:117..142. A velocidade angular e espacial (deslocamento de 60-100px a cada 35ms) em contraste extremo de aço reflexivo rgb(176,178,180) contra pele escura lê a 1x não como um corte fluído, mas como um flash de luz branca piscando no ar.",
+      "metrics": {
+        "F05_wepBbox": [85, 110, 30, 101],
+        "F06_wepBbox": [146, 186, 64, 125],
+        "F07_wepBbox": [146, 216, 117, 142],
+        "F06_durationMs": 35,
+        "F07_durationMs": 35,
+        "teleportDisplacementPx": 61
+      },
+      "evidenceImage": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/front_r_sword_flash_strike_F05_F06_F07.png",
+      "diffMap": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/diff_front_r_F05_to_F06_strike_teleport.png"
+    },
+    {
+      "id": "QA-V7-03",
+      "severity": "HIGH",
+      "scope": "front_r/Sword, front_l/Sword",
+      "category": "FRONTAL_SWORD_FLASH_DESPAWN_AND_GUARD_SNAP",
+      "frames": "F10 -> F11 -> F12",
+      "description": "Flash de encerramento e retorno à guarda: em F10 (80ms), a espada ainda está em cena (181px/192px claros totais). Em F11 (duração de 45ms), a arma é subitamente desligada pelo contrato visibleInterval (0px de arma), colapsando a luminância para 68px/79px (um entalhe escuro abrupto). Em seguida, em F12 (90ms), o corpo estala de volta para a pose de guarda estática, reativando instantaneamente os reflexos de metal do peitoral e ombro com um salto de +93px / +94px (+23.620 de luminância total). Esse 'piscar de olhos' escuro de 45ms seguido do reascendimento da couraça produz um segundo flash perceptivo no fim do golpe.",
+      "metrics": {
+        "F10_bright140": 181,
+        "F11_bright140": 68,
+        "F12_bright140": 161,
+        "F10_to_F11_deltaBright": -113,
+        "F11_to_F12_deltaBright": 93,
+        "F11_durationMs": 45
+      },
+      "evidenceImage": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/front_r_sword_flash_recovery_F10_F11_F12.png",
+      "diffMap": "experiments/main-orc-combat-recovery-v7/qa-temporal/flash-forensics/diff_front_r_F11_to_F12_guard_snap.png"
+    },
+    {
+      "id": "QA-V7-04",
+      "severity": "MEDIUM",
+      "scope": "front_r/Sword, front_l/Sword",
+      "category": "CHEST_PLATE_ULTRA_BRIGHT_DISCONTINUITY",
+      "frames": "F00..F02 vs F03..F11 vs F12",
+      "description": "Pixel de contraste ultra-alto L>214 comutando de ligado para desligado no centro do peito: em front_r no ponto (132, 104) e em front_l no ponto (123, 104), os quadros de guarda F00, F01, F02 e F12 carregam uma specularidade rgb(215,214,213) / rgb(221,220,219) com L >= 214.1. Nos quadros de golpe F03..F11 esse pixel colapsa para sombra rgb(20,20,26) / rgb(2,2,3) com L=2..20 (queda de mais de 194 pontos de luminância num único ponto). A alternância instantânea desse ponto focal contribui diretamente para a leitura de piscar.",
+      "metrics": {
+        "front_r_coord": [132, 104],
+        "front_r_guard_rgb": [215, 214, 213],
+        "front_r_strike_rgb": [20, 20, 26],
+        "deltaLuminance": 193.7
+      }
+    },
+    {
+      "id": "QA-V7-05",
+      "severity": "CRITICAL",
+      "scope": "back_r/Sword, back_l/Sword, back_r/Axe, back_l/Axe",
+      "category": "REAR_DIRECTIONAL_NON_UNIFORMITY",
+      "frames": "All frames across back_r vs back_l",
+      "description": "Quebra de uniformidade direcional traseira: back_r e back_l foram produzidos por pipelines concorrentes divergentes. back_r possui 12 quadros (950ms Sword, 1320ms Axe), durações de 80-110ms por quadro, e foi mantido da base retocada. back_l foi reconstruído manualmente no Aseprite com 15 quadros (860ms Sword, 1230ms Axe) e durações curtas de 35-45ms. Na visualização simultânea em 4 direções, as câmeras traseiras perdem totalmente a sincronia técnica: o impacto de back_r ocorre no quadro 7 (~490ms), enquanto em back_l o contato ocorre no quadro 9 (~425ms). As silhuetas, a velocidade e a anatomia da pegada não pertencem à mesma linguagem de movimento.",
+      "metrics": {
+        "back_r_frames": 12,
+        "back_l_frames": 15,
+        "back_r_sword_durationMs": 950,
+        "back_l_sword_durationMs": 860,
+        "back_r_impact_timeMs": 490,
+        "back_l_impact_timeMs": 425
+      },
+      "evidenceImage": "experiments/main-orc-combat-recovery-v7/qa-temporal/screenshots/sync_4dir_Sword_1x.png"
+    },
+    {
+      "id": "QA-V7-06",
+      "severity": "HIGH",
+      "scope": "back_l/Sword, back_l/Axe",
+      "category": "FRAME_CADENCE_JITTER_AND_FLUTTER",
+      "frames": "F00..F14 in back_l",
+      "description": "Agravamento de problemas de frame por excesso de poses sub-50ms: a reconstrução manual de 15 quadros de back_l introduziu seis quadros com tempos de 35ms, 40ms e 45ms. Em reprodução a 1x, essa fragmentação temporal de poses estáticas desenhadas à mão sem interpolação fluida produz um tremor/flutter visual contínuo, fazendo o personagem parecer vibrar em vez de desferir um golpe pesado de Orc.",
+      "metrics": {
+        "framesUnder50ms": 6,
+        "frameDurations": [40, 55, 35, 45, 55, 45, 70, 40, 40, 55, 90, 65, 80, 60, 85]
+      }
+    }
+  ]
+}

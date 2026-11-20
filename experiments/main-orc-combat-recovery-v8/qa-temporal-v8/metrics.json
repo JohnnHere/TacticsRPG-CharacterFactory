@@ -1,0 +1,1288 @@
+{
+  "timestamp": "2026-10-30T17:22:44.510Z",
+  "candidate": "characters/orc-v1/source/combat-recovery-v8/candidate28manifest.json",
+  "manifestSha256": "0bd01b9b4b6c2a05204fe8326dd8e46d7c92982adc48675068fd3e825e379140",
+  "evaluator": "QA_TEMPORAL_INDEPENDENT",
+  "iteration": "REVERIFICATION_AFTER_REBUILD",
+  "verdict": "TEMPORAL_PASS_WITH_RESERVATIONS",
+  "verdictStrictInterpretation": "TEMPORAL_FAIL",
+  "summary": {
+    "swordFrameCount": 13,
+    "swordDurationMs": 730,
+    "swordUniformGrid": true,
+    "axeFrameCount": 12,
+    "axeDurationMs": 1005,
+    "axeUniformGrid": true,
+    "bookendsUnarmedAll8": true,
+    "visualContactSwordMs": 325,
+    "visualContactSwordPhase": "contact",
+    "visualContactSwordFrame": 7,
+    "visualImpactAxeMs": 410,
+    "visualImpactAxePhase": "heavy-impact",
+    "visualImpactAxeFrame": 6,
+    "contactEventMetadataUnified": true,
+    "kineticPeakPhaseUnifiedAcrossAll4": true,
+    "backRSwordFreezeFramesEliminated": true,
+    "frontLArmpitRepairedPixels": 73,
+    "frontalFlashFixed": false
+  },
+  "threeModificationsAudited": {
+    "mod1_backRSwordRebuild": {
+      "cell": "back_r/Sword",
+      "sourcePath": "characters/orc-v1/source/combat-recovery-v8/rear-fix/back_r-sword/clip.json",
+      "status": "VERIFIED_CORRECTED",
+      "details": {
+        "freezeFramesEliminated": true,
+        "f04_f05_diff": "F04 (15fe83525d) vs F05 (c3239ed590) - now distinct pose with 3.18 px step",
+        "f09_f10_diff": "F09 (72fdedde33) vs F10 (3683ec168e) - now distinct pose with 8.86 px step",
+        "newMaxStep": {
+          "from": 5,
+          "to": 6,
+          "phase": "apex-hold -> slash-release",
+          "distPx": 73.23
+        },
+        "oldMaxStep": {
+          "from": 6,
+          "to": 7,
+          "phase": "slash-release -> contact",
+          "distPx": 68.53
+        },
+        "kineticPeakAlignedWithOtherDirections": true
+      }
+    },
+    "mod2_frontLArmpitRepair": {
+      "cell": "front_l/Sword",
+      "sourcePath": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/clip.json",
+      "status": "VERIFIED_CORRECTED",
+      "details": {
+        "bodyPixelsChangedTotal": 73,
+        "pixelsChangedPerFrame": {
+          "F03": 25,
+          "F04": 15,
+          "F05": 33,
+          "otherFrames": 0
+        },
+        "weaponFrontPixelsChanged": 0,
+        "teleportStepF05toF06Unchanged": 75.99,
+        "staticShadingRepaired": true,
+        "frontalFlashResolved": false
+      }
+    },
+    "mod3_contactEventRepair": {
+      "status": "VERIFIED_CORRECTED",
+      "details": {
+        "swordClips": {
+          "all4DirectionsDeclared": {
+            "frame": 7,
+            "timeMs": 325,
+            "phase": "contact"
+          },
+          "consistent": true
+        },
+        "axeClips": {
+          "all4DirectionsDeclared": {
+            "frame": 6,
+            "timeMs": 410,
+            "phase": "heavy-impact"
+          },
+          "consistent": true
+        },
+        "framePngsUnchanged": true
+      }
+    }
+  },
+  "cells": [
+    {
+      "cellId": "front_r/Sword",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v7/frontal/full-front-r-sword/clip.json",
+      "totalFrames": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "contactEventMetadata": {
+        "frame": 7,
+        "timeMs": 325,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false,
+        "phase": "contact"
+      },
+      "armedInterval": [
+        2,
+        10
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        60,
+        56,
+        58,
+        57,
+        57,
+        58,
+        55,
+        62,
+        58,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 5,
+        "toIndex": 6,
+        "fromPhase": "apex-hold",
+        "toPhase": "slash-release",
+        "dist": 75.99012995187132,
+        "curCx": 97.52866242038216,
+        "curCy": 63.82324840764331,
+        "nxtCx": 167.9408,
+        "nxtCy": 92.4
+      },
+      "medianStep": 23.6626075174706,
+      "stepRatio": 3.21,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 16.450735168108196,
+          "curCx": 86.4267515923567,
+          "curCy": 110.95700636942675,
+          "nxtCx": 80.92012779552715,
+          "nxtCy": 95.45527156549521
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "coil-behind",
+          "dist": 23.6626075174706,
+          "curCx": 80.92012779552715,
+          "curCy": 95.45527156549521,
+          "nxtCx": 93.13078149920256,
+          "nxtCy": 75.1866028708134
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "coil-behind",
+          "toPhase": "apex-hold",
+          "dist": 12.184710963027527,
+          "curCx": 93.13078149920256,
+          "curCy": 75.1866028708134,
+          "nxtCx": 97.52866242038216,
+          "nxtCy": 63.82324840764331
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "apex-hold",
+          "toPhase": "slash-release",
+          "dist": 75.99012995187132,
+          "curCx": 97.52866242038216,
+          "curCy": 63.82324840764331,
+          "nxtCx": 167.9408,
+          "nxtCy": 92.4
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "slash-release",
+          "toPhase": "contact",
+          "dist": 37.78122984912534,
+          "curCx": 167.9408,
+          "curCy": 92.4,
+          "nxtCx": 182.8133971291866,
+          "nxtCy": 127.13078149920256
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "contact",
+          "toPhase": "follow-through",
+          "dist": 36.187864342468615,
+          "curCx": 182.8133971291866,
+          "curCy": 127.13078149920256,
+          "nxtCx": 179.0919175911252,
+          "nxtCy": 163.12678288431061
+        },
+        {
+          "fromIndex": 8,
+          "toIndex": 9,
+          "fromPhase": "follow-through",
+          "toPhase": "recoil",
+          "dist": 23.04994872317068,
+          "curCx": 179.0919175911252,
+          "curCy": 163.12678288431061,
+          "nxtCx": 156.52396166134184,
+          "nxtCy": 158.43769968051117
+        },
+        {
+          "fromIndex": 9,
+          "toIndex": 10,
+          "fromPhase": "recoil",
+          "toPhase": "settle-grip",
+          "dist": 22.012550776652713,
+          "curCx": 156.52396166134184,
+          "curCy": 158.43769968051117,
+          "nxtCx": 134.9792663476874,
+          "nxtCy": 153.92344497607655
+        }
+      ]
+    },
+    {
+      "cellId": "front_l/Sword",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/clip.json",
+      "totalFrames": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "contactEventMetadata": {
+        "frame": 7,
+        "timeMs": 325,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false,
+        "phase": "contact"
+      },
+      "armedInterval": [
+        2,
+        10
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        60,
+        56,
+        58,
+        57,
+        57,
+        58,
+        55,
+        62,
+        58,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 5,
+        "toIndex": 6,
+        "fromPhase": "apex-hold",
+        "toPhase": "slash-release",
+        "dist": 75.99012995187131,
+        "curCx": 157.47133757961782,
+        "curCy": 63.82324840764331,
+        "nxtCx": 87.0592,
+        "nxtCy": 92.4
+      },
+      "medianStep": 23.6626075174706,
+      "stepRatio": 3.21,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 16.450735168108192,
+          "curCx": 168.57324840764332,
+          "curCy": 110.95700636942675,
+          "nxtCx": 174.07987220447285,
+          "nxtCy": 95.45527156549521
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "coil-behind",
+          "dist": 23.6626075174706,
+          "curCx": 174.07987220447285,
+          "curCy": 95.45527156549521,
+          "nxtCx": 161.86921850079744,
+          "nxtCy": 75.1866028708134
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "coil-behind",
+          "toPhase": "apex-hold",
+          "dist": 12.184710963027532,
+          "curCx": 161.86921850079744,
+          "curCy": 75.1866028708134,
+          "nxtCx": 157.47133757961782,
+          "nxtCy": 63.82324840764331
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "apex-hold",
+          "toPhase": "slash-release",
+          "dist": 75.99012995187131,
+          "curCx": 157.47133757961782,
+          "curCy": 63.82324840764331,
+          "nxtCx": 87.0592,
+          "nxtCy": 92.4
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "slash-release",
+          "toPhase": "contact",
+          "dist": 37.78122984912534,
+          "curCx": 87.0592,
+          "curCy": 92.4,
+          "nxtCx": 72.1866028708134,
+          "nxtCy": 127.13078149920256
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "contact",
+          "toPhase": "follow-through",
+          "dist": 36.187864342468615,
+          "curCx": 72.1866028708134,
+          "curCy": 127.13078149920256,
+          "nxtCx": 75.9080824088748,
+          "nxtCy": 163.12678288431061
+        },
+        {
+          "fromIndex": 8,
+          "toIndex": 9,
+          "fromPhase": "follow-through",
+          "toPhase": "recoil",
+          "dist": 23.049948723170665,
+          "curCx": 75.9080824088748,
+          "curCy": 163.12678288431061,
+          "nxtCx": 98.47603833865814,
+          "nxtCy": 158.43769968051117
+        },
+        {
+          "fromIndex": 9,
+          "toIndex": 10,
+          "fromPhase": "recoil",
+          "toPhase": "settle-grip",
+          "dist": 22.012550776652727,
+          "curCx": 98.47603833865814,
+          "curCy": 158.43769968051117,
+          "nxtCx": 120.0207336523126,
+          "nxtCy": 153.92344497607655
+        }
+      ]
+    },
+    {
+      "cellId": "back_r/Sword",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v8/rear-fix/back_r-sword/clip.json",
+      "totalFrames": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "contactEventMetadata": {
+        "frame": 7,
+        "timeMs": 325,
+        "phase": "contact",
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "armedInterval": [
+        2,
+        10
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 0
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 0
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        59,
+        57,
+        58,
+        58,
+        59,
+        52,
+        52,
+        57,
+        59,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 5,
+        "toIndex": 6,
+        "fromPhase": "apex-hold",
+        "toPhase": "slash-release",
+        "dist": 73.2334098403968,
+        "curCx": 153.33333333333334,
+        "curCy": 61.07347670250896,
+        "nxtCx": 207.2355072463768,
+        "nxtCy": 110.64855072463769
+      },
+      "medianStep": 16.112748422996077,
+      "stepRatio": 4.55,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 34.564057415546415,
+          "curCx": 172.46678635547576,
+          "curCy": 103.53500897666068,
+          "nxtCx": 170.04847396768403,
+          "nxtCy": 69.0556552962298
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "coil-behind",
+          "dist": 16.06261579359222,
+          "curCx": 170.04847396768403,
+          "curCy": 69.0556552962298,
+          "nxtCx": 156.46140035906643,
+          "nxtCy": 60.488330341113105
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "coil-behind",
+          "toPhase": "apex-hold",
+          "dist": 3.1823261274943935,
+          "curCx": 156.46140035906643,
+          "curCy": 60.488330341113105,
+          "nxtCx": 153.33333333333334,
+          "nxtCy": 61.07347670250896
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "apex-hold",
+          "toPhase": "slash-release",
+          "dist": 73.2334098403968,
+          "curCx": 153.33333333333334,
+          "curCy": 61.07347670250896,
+          "nxtCx": 207.2355072463768,
+          "nxtCy": 110.64855072463769
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "slash-release",
+          "toPhase": "contact",
+          "dist": 57.92062975479628,
+          "curCx": 207.2355072463768,
+          "curCy": 110.64855072463769,
+          "nxtCx": 189.5169946332737,
+          "nxtCy": 165.79248658318426
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "contact",
+          "toPhase": "follow-through",
+          "dist": 8.602325267042627,
+          "curCx": 189.5169946332737,
+          "curCy": 165.79248658318426,
+          "nxtCx": 184.5169946332737,
+          "nxtCy": 172.79248658318426
+        },
+        {
+          "fromIndex": 8,
+          "toIndex": 9,
+          "fromPhase": "follow-through",
+          "toPhase": "recoil",
+          "dist": 16.112748422996077,
+          "curCx": 184.5169946332737,
+          "curCy": 172.79248658318426,
+          "nxtCx": 187.94434470377018,
+          "nxtCy": 157.04847396768403
+        },
+        {
+          "fromIndex": 9,
+          "toIndex": 10,
+          "fromPhase": "recoil",
+          "toPhase": "settle-grip",
+          "dist": 8.863662382189482,
+          "curCx": 187.94434470377018,
+          "curCy": 157.04847396768403,
+          "nxtCx": 192.73104693140795,
+          "nxtCy": 149.5884476534296
+        }
+      ]
+    },
+    {
+      "cellId": "back_l/Sword",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/clip.json",
+      "totalFrames": 13,
+      "totalDurationMs": 730,
+      "durationsMs": [
+        30,
+        65,
+        35,
+        50,
+        45,
+        65,
+        35,
+        35,
+        100,
+        55,
+        80,
+        45,
+        90
+      ],
+      "contactEventMetadata": {
+        "frame": 7,
+        "timeMs": 325,
+        "phase": "contact",
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "armedInterval": [
+        2,
+        10
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 7
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 7
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        59,
+        57,
+        57,
+        58,
+        60,
+        52,
+        55,
+        62,
+        58,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 5,
+        "toIndex": 6,
+        "fromPhase": "apex-hold",
+        "toPhase": "slash-release",
+        "dist": 56.824883383929716,
+        "curCx": 159.13078149920256,
+        "curCy": 58.186602870813395,
+        "nxtCx": 196.10828025477707,
+        "nxtCy": 101.3343949044586
+      },
+      "medianStep": 19.353692948454277,
+      "stepRatio": 2.94,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 24.286057684832464,
+          "curCx": 182.18341307814993,
+          "curCy": 98.10047846889952,
+          "nxtCx": 181.52866242038218,
+          "nxtCy": 73.8232484076433
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "coil-behind",
+          "dist": 19.353692948454277,
+          "curCx": 181.52866242038218,
+          "curCy": 73.8232484076433,
+          "nxtCx": 165.0047694753577,
+          "nxtCy": 63.747217806041334
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "coil-behind",
+          "toPhase": "apex-hold",
+          "dist": 8.088521076309023,
+          "curCx": 165.0047694753577,
+          "curCy": 63.747217806041334,
+          "nxtCx": 159.13078149920256,
+          "nxtCy": 58.186602870813395
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "apex-hold",
+          "toPhase": "slash-release",
+          "dist": 56.824883383929716,
+          "curCx": 159.13078149920256,
+          "curCy": 58.186602870813395,
+          "nxtCx": 196.10828025477707,
+          "nxtCy": 101.3343949044586
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "slash-release",
+          "toPhase": "contact",
+          "dist": 53.93314360922427,
+          "curCx": 196.10828025477707,
+          "curCy": 101.3343949044586,
+          "nxtCx": 196.15764331210192,
+          "nxtCy": 155.2675159235669
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "contact",
+          "toPhase": "follow-through",
+          "dist": 16.232849906856767,
+          "curCx": 196.15764331210192,
+          "curCy": 155.2675159235669,
+          "nxtCx": 184.0919175911252,
+          "nxtCy": 166.12678288431061
+        },
+        {
+          "fromIndex": 8,
+          "toIndex": 9,
+          "fromPhase": "follow-through",
+          "toPhase": "recoil",
+          "dist": 8.829419727269304,
+          "curCx": 184.0919175911252,
+          "curCy": 166.12678288431061,
+          "nxtCx": 182.52396166134184,
+          "nxtCy": 157.43769968051117
+        },
+        {
+          "fromIndex": 9,
+          "toIndex": 10,
+          "fromPhase": "recoil",
+          "toPhase": "settle-grip",
+          "dist": 10.524108244746145,
+          "curCx": 182.52396166134184,
+          "curCy": 157.43769968051117,
+          "nxtCx": 182.9792663476874,
+          "nxtCy": 146.92344497607655
+        }
+      ]
+    },
+    {
+      "cellId": "front_r/Axe",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v7/frontal/front_r-Axe-full/clip.json",
+      "totalFrames": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "contactEventMetadata": {
+        "frame": 6,
+        "timeMs": 410,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false,
+        "phase": "heavy-impact"
+      },
+      "armedInterval": [
+        2,
+        8
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        14,
+        17,
+        16,
+        14,
+        14,
+        17,
+        15,
+        0,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "fromPhase": "overhead-coil",
+        "toPhase": "cleave-drive",
+        "dist": 89.88842328238177,
+        "curCx": 104.90831918505943,
+        "curCy": 74.86757215619694,
+        "nxtCx": 175.9781144781145,
+        "nxtCy": 129.90404040404042
+      },
+      "medianStep": 28.643256257170957,
+      "stepRatio": 3.14,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 15.318640953195649,
+          "curCx": 88.14957983193277,
+          "curCy": 108.47731092436975,
+          "nxtCx": 83.48914858096828,
+          "nxtCy": 93.8848080133556
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "overhead-coil",
+          "dist": 28.643256257170957,
+          "curCx": 83.48914858096828,
+          "curCy": 93.8848080133556,
+          "nxtCx": 104.90831918505943,
+          "nxtCy": 74.86757215619694
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "overhead-coil",
+          "toPhase": "cleave-drive",
+          "dist": 89.88842328238177,
+          "curCx": 104.90831918505943,
+          "curCy": 74.86757215619694,
+          "nxtCx": 175.9781144781145,
+          "nxtCy": 129.90404040404042
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "cleave-drive",
+          "toPhase": "heavy-impact",
+          "dist": 37.03050533314272,
+          "curCx": 175.9781144781145,
+          "curCy": 129.90404040404042,
+          "nxtCx": 165.85042016806722,
+          "nxtCy": 165.52268907563024
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "heavy-impact",
+          "toPhase": "weight-settle",
+          "dist": 5.514829295604622,
+          "curCx": 165.85042016806722,
+          "curCy": 165.52268907563024,
+          "nxtCx": 160.8785834738617,
+          "nxtCy": 167.9089376053963
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "weight-settle",
+          "toPhase": "wrench-recovery",
+          "dist": 8.854887921242932,
+          "curCx": 160.8785834738617,
+          "curCy": 167.9089376053963,
+          "nxtCx": 156.4915824915825,
+          "nxtCy": 160.2171717171717
+        }
+      ]
+    },
+    {
+      "cellId": "front_l/Axe",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Axe-full/clip.json",
+      "totalFrames": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "contactEventMetadata": {
+        "frame": 6,
+        "timeMs": 410,
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false,
+        "phase": "heavy-impact"
+      },
+      "armedInterval": [
+        2,
+        8
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 38
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        14,
+        17,
+        16,
+        14,
+        14,
+        17,
+        15,
+        0,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "fromPhase": "overhead-coil",
+        "toPhase": "cleave-drive",
+        "dist": 89.88842328238177,
+        "curCx": 150.0916808149406,
+        "curCy": 74.86757215619694,
+        "nxtCx": 79.02188552188552,
+        "nxtCy": 129.90404040404042
+      },
+      "medianStep": 28.643256257170947,
+      "stepRatio": 3.14,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 15.318640953195654,
+          "curCx": 166.85042016806722,
+          "curCy": 108.47731092436975,
+          "nxtCx": 171.51085141903172,
+          "nxtCy": 93.8848080133556
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "overhead-coil",
+          "dist": 28.643256257170947,
+          "curCx": 171.51085141903172,
+          "curCy": 93.8848080133556,
+          "nxtCx": 150.0916808149406,
+          "nxtCy": 74.86757215619694
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "overhead-coil",
+          "toPhase": "cleave-drive",
+          "dist": 89.88842328238177,
+          "curCx": 150.0916808149406,
+          "curCy": 74.86757215619694,
+          "nxtCx": 79.02188552188552,
+          "nxtCy": 129.90404040404042
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "cleave-drive",
+          "toPhase": "heavy-impact",
+          "dist": 37.03050533314271,
+          "curCx": 79.02188552188552,
+          "curCy": 129.90404040404042,
+          "nxtCx": 89.14957983193277,
+          "nxtCy": 165.52268907563024
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "heavy-impact",
+          "toPhase": "weight-settle",
+          "dist": 5.514829295604622,
+          "curCx": 89.14957983193277,
+          "curCy": 165.52268907563024,
+          "nxtCx": 94.12141652613828,
+          "nxtCy": 167.9089376053963
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "weight-settle",
+          "toPhase": "wrench-recovery",
+          "dist": 8.854887921242945,
+          "curCx": 94.12141652613828,
+          "curCy": 167.9089376053963,
+          "nxtCx": 98.50841750841751,
+          "nxtCy": 160.2171717171717
+        }
+      ]
+    },
+    {
+      "cellId": "back_r/Axe",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/clip.json",
+      "totalFrames": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "contactEventMetadata": {
+        "frame": 6,
+        "timeMs": 410,
+        "phase": "heavy-impact",
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "armedInterval": [
+        2,
+        8
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 0
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 0
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        13,
+        12,
+        14,
+        11,
+        13,
+        12,
+        11,
+        0,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "fromPhase": "overhead-coil",
+        "toPhase": "cleave-drive",
+        "dist": 80.18613848126577,
+        "curCx": 165.57358490566037,
+        "curCy": 55.41698113207547,
+        "nxtCx": 201.36692015209127,
+        "nxtCy": 127.17110266159696
+      },
+      "medianStep": 42.4857377670957,
+      "stepRatio": 1.89,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 47.900127347097445,
+          "curCx": 184.89285714285714,
+          "curCy": 108.36466165413533,
+          "nxtCx": 169.27476635514017,
+          "nxtCy": 63.08224299065421
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "overhead-coil",
+          "dist": 8.51204931156742,
+          "curCx": 169.27476635514017,
+          "curCy": 63.08224299065421,
+          "nxtCx": 165.57358490566037,
+          "nxtCy": 55.41698113207547
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "overhead-coil",
+          "toPhase": "cleave-drive",
+          "dist": 80.18613848126577,
+          "curCx": 165.57358490566037,
+          "curCy": 55.41698113207547,
+          "nxtCx": 201.36692015209127,
+          "nxtCy": 127.17110266159696
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "cleave-drive",
+          "toPhase": "heavy-impact",
+          "dist": 42.4857377670957,
+          "curCx": 201.36692015209127,
+          "curCy": 127.17110266159696,
+          "nxtCx": 190.59245283018868,
+          "nxtCy": 168.26792452830188
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "heavy-impact",
+          "toPhase": "weight-settle",
+          "dist": 3.3356674350533946,
+          "curCx": 190.59245283018868,
+          "curCy": 168.26792452830188,
+          "nxtCx": 187.9177570093458,
+          "nxtCy": 166.27476635514017
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "weight-settle",
+          "toPhase": "wrench-recovery",
+          "dist": 12.348970601073555,
+          "curCx": 187.9177570093458,
+          "curCy": 166.27476635514017,
+          "nxtCx": 190.36692015209127,
+          "nxtCy": 154.17110266159696
+        }
+      ]
+    },
+    {
+      "cellId": "back_l/Axe",
+      "clipRel": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/clip.json",
+      "totalFrames": 12,
+      "totalDurationMs": 1005,
+      "durationsMs": [
+        40,
+        65,
+        35,
+        80,
+        155,
+        35,
+        115,
+        110,
+        130,
+        50,
+        90,
+        100
+      ],
+      "contactEventMetadata": {
+        "frame": 6,
+        "timeMs": 410,
+        "phase": "heavy-impact",
+        "status": "CANDIDATE_VISUAL_ONLY",
+        "appliesDamage": false
+      },
+      "armedInterval": [
+        2,
+        8
+      ],
+      "bookendsUnarmed": true,
+      "firstFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 3
+      },
+      "lastFrame": {
+        "weaponVisible": false,
+        "weaponArea": 0,
+        "bodyBright": 3
+      },
+      "bladeBrightCurve": [
+        0,
+        0,
+        15,
+        16,
+        15,
+        14,
+        15,
+        14,
+        15,
+        0,
+        0,
+        0
+      ],
+      "maxStep": {
+        "fromIndex": 4,
+        "toIndex": 5,
+        "fromPhase": "overhead-coil",
+        "toPhase": "cleave-drive",
+        "dist": 73.72880473647774,
+        "curCx": 161.7078651685393,
+        "curCy": 49.7752808988764,
+        "nxtCx": 203.4448669201521,
+        "nxtCy": 110.5532319391635
+      },
+      "medianStep": 44.68375114319593,
+      "stepRatio": 1.65,
+      "allSteps": [
+        {
+          "fromIndex": 2,
+          "toIndex": 3,
+          "fromPhase": "establish-grip",
+          "toPhase": "anticipation",
+          "dist": 16.750400281078697,
+          "curCx": 191.02830188679246,
+          "curCy": 98.00754716981132,
+          "nxtCx": 193.26792452830188,
+          "nxtCy": 81.40754716981132
+        },
+        {
+          "fromIndex": 3,
+          "toIndex": 4,
+          "fromPhase": "anticipation",
+          "toPhase": "overhead-coil",
+          "dist": 44.68375114319593,
+          "curCx": 193.26792452830188,
+          "curCy": 81.40754716981132,
+          "nxtCx": 161.7078651685393,
+          "nxtCy": 49.7752808988764
+        },
+        {
+          "fromIndex": 4,
+          "toIndex": 5,
+          "fromPhase": "overhead-coil",
+          "toPhase": "cleave-drive",
+          "dist": 73.72880473647774,
+          "curCx": 161.7078651685393,
+          "curCy": 49.7752808988764,
+          "nxtCx": 203.4448669201521,
+          "nxtCy": 110.5532319391635
+        },
+        {
+          "fromIndex": 5,
+          "toIndex": 6,
+          "fromPhase": "cleave-drive",
+          "toPhase": "heavy-impact",
+          "dist": 53.39716447234544,
+          "curCx": 203.4448669201521,
+          "curCy": 110.5532319391635,
+          "nxtCx": 185.63533834586465,
+          "nxtCy": 160.89285714285714
+        },
+        {
+          "fromIndex": 6,
+          "toIndex": 7,
+          "fromPhase": "heavy-impact",
+          "toPhase": "weight-settle",
+          "dist": 10.762300182536862,
+          "curCx": 185.63533834586465,
+          "curCy": 160.89285714285714,
+          "nxtCx": 175.78490566037735,
+          "nxtCy": 165.22830188679245
+        },
+        {
+          "fromIndex": 7,
+          "toIndex": 8,
+          "fromPhase": "weight-settle",
+          "toPhase": "wrench-recovery",
+          "dist": 18.09002801444889,
+          "curCx": 175.78490566037735,
+          "curCy": 165.22830188679245,
+          "nxtCx": 186.99245283018868,
+          "nxtCy": 151.02830188679246
+        }
+      ]
+    }
+  ]
+}

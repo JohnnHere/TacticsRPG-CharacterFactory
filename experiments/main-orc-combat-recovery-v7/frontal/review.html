@@ -1,0 +1,56 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<title>V7 ECON — axila front_l/Sword</title>
+<style>
+body{background:#14161a;color:#dfe3e8;font:14px/1.5 system-ui,sans-serif;margin:24px auto;max-width:1180px;padding:0 16px}
+h1{font-size:20px;margin:0 0 4px}h2{font-size:15px;margin:28px 0 8px;color:#9fd0ff}
+p.note{color:#8b93a1;max-width:70ch}
+img{image-rendering:pixelated;background:#1a1c20;border:1px solid #2c3039;display:block;max-width:100%}
+table{border-collapse:collapse;font-size:12px;font-family:ui-monospace,monospace}
+th,td{border-bottom:1px solid #262a31;padding:3px 8px;text-align:left;vertical-align:top}
+th{color:#9fd0ff;font-weight:600}
+td.t{color:#ff9f6b}code{color:#b9e28a}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;border:1px solid #3a4150;color:#ffd479}
+</style></head><body>
+<h1>V7 ECON — axila de <code>front_l/Sword</code></h1>
+<p class="badge">TECHNICALLY_COMPLETE · VISUAL_REVIEW_REQUIRED · PENDING_CREATOR</p>
+<p class="note">Limitação declarada: o DEV não recebeu percepção visual. Tudo aqui vem de medição de
+pixels (Pillow) e autoria Lua no Aseprite. Nada foi &ldquo;visto&rdquo;. A coluna da esquerda é o candidato V6
+escalonado; a da direita é o V7. Ampliação 8x com vizinho mais próximo, recorte x140..174 / y106..136.</p>
+
+<h2>F03 — camada body, 8x</h2>
+<img src="before-after-F03-8x.png" alt="F03 antes/depois">
+<h2>F04 — camada body, 8x</h2>
+<img src="before-after-F04-8x.png" alt="F04 antes/depois">
+<h2>Composto completo, recorte 4x</h2>
+<img src="composite-before-after-F03-4x.png" alt="composto F03">
+<img src="composite-before-after-F04-4x.png" alt="composto F04" style="margin-top:8px">
+<h2>Os 13 quadros do V7 (body, 4x)</h2>
+<img src="axilla-13-frames-v7-4x.png" alt="13 quadros">
+<h2>Os 19 pixels alterados</h2>
+<table><thead><tr><th>Q</th><th>x</th><th>y</th><th>antes</th><th>L</th><th>depois</th><th>L</th><th>motivo</th></tr></thead><tbody>
+<tr><td>F03</td><td>148</td><td>116</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(6,6,8)</td><td>6.1</td><td class=t>native x148/y116; V6 had repainted ink plate</td></tr>
+<tr><td>F03</td><td>147</td><td>117</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(2,2,3)</td><td>2.1</td><td class=t>native x147/y117</td></tr>
+<tr><td>F03</td><td>147</td><td>118</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(2,2,3)</td><td>2.1</td><td class=t>native x147/y118</td></tr>
+<tr><td>F03</td><td>147</td><td>119</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(20,20,26)</td><td>20.4</td><td class=t>native x147/y119</td></tr>
+<tr><td>F03</td><td>147</td><td>120</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(27,28,34)</td><td>28.2</td><td class=t>native x148/y120 (native x147 run would reach 4 identical)</td></tr>
+<tr><td>F03</td><td>147</td><td>121</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(20,20,26)</td><td>20.4</td><td class=t>native x147/y121</td></tr>
+<tr><td>F03</td><td>147</td><td>122</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(0,0,1)</td><td>0.1</td><td class=t>native x148/y122; deepest point of the crease</td></tr>
+<tr><td>F03</td><td>149</td><td>122</td><td>rgb(95,96,99)</td><td>96.0</td><td>transparent</td><td>-</td><td class=t>orphan 95,96,99 with zero opaque 8-neighbours after V6 erasure</td></tr>
+<tr><td>F03</td><td>148</td><td>123</td><td>rgb(43,45,49)</td><td>44.9</td><td>transparent</td><td>-</td><td class=t>restores monotone left boundary of the opening (was 2b2d31)</td></tr>
+<tr><td>F04</td><td>149</td><td>115</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(0,0,1)</td><td>0.1</td><td class=t>native x149/y115</td></tr>
+<tr><td>F04</td><td>148</td><td>116</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(6,6,8)</td><td>6.1</td><td class=t>native x148/y116</td></tr>
+<tr><td>F04</td><td>147</td><td>117</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(2,2,3)</td><td>2.1</td><td class=t>native x147/y117</td></tr>
+<tr><td>F04</td><td>147</td><td>118</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(2,2,3)</td><td>2.1</td><td class=t>native x147/y118</td></tr>
+<tr><td>F04</td><td>147</td><td>119</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(20,20,26)</td><td>20.4</td><td class=t>native x147/y119</td></tr>
+<tr><td>F04</td><td>147</td><td>120</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(27,28,34)</td><td>28.2</td><td class=t>native x148/y120 (native x147 run would reach 4 identical)</td></tr>
+<tr><td>F04</td><td>147</td><td>121</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(20,20,26)</td><td>20.4</td><td class=t>native x147/y121</td></tr>
+<tr><td>F04</td><td>147</td><td>122</td><td>rgb(12,15,18)</td><td>14.6</td><td>rgb(2,2,3)</td><td>2.1</td><td class=t>native x148/y122</td></tr>
+<tr><td>F04</td><td>152</td><td>115</td><td>rgb(77,79,82)</td><td>78.8</td><td>transparent</td><td>-</td><td class=t>isolated 77,79,82 island, only the top edge touches the body</td></tr>
+<tr><td>F04</td><td>148</td><td>123</td><td>rgb(20,20,26)</td><td>20.4</td><td>transparent</td><td>-</td><td class=t>restores monotone left boundary (was 20,20,26)</td></tr>
+</tbody></table>
+<h2>Provas anexas</h2>
+<p class="note">84 arquivos idênticos byte a byte fora do patch; 19 pixels alterados e nenhum outro;
+39/39 exportações de <code>weaponBack</code>/<code>weaponFront</code>/<code>handFront</code> idênticas ao V6 depois de
+reabrir o mestre; fronteira esquerda da abertura monótona; zero pixels soltos.
+Ver <code>verification-v7.json</code> e <code>../../characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/clip.json</code>.</p>
+</body></html>

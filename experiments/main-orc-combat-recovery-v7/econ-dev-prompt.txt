@@ -1,0 +1,44 @@
+DEV ECONÔMICO — frente de diagnóstico numérico e retoque localizado do Orc V1. Esta é a frente mais barata da rodada V7 e foi escolhida deliberadamente para modelo econômico, conforme a política de orquestração e a recomendação do criador ("pequenos defeitos de contorno e axila podem ficar com um DEV econômico").
+
+LIMITAÇÃO IMPORTANTE: não presuma percepção visual. Se você não recebe imagens, trabalhe por forense numérica (Pillow, leitura de pixels/coordenadas) e autoria Lua dentro do Aseprite, e declare a limitação no relatório. Nunca afirme que "viu" algo.
+
+ESTADO: o candidato V6 (manifesto `characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json`, SHA `5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca`) foi REJEITADO artisticamente pelo criador. Não edite nada fora das suas pastas novas.
+
+SUAS TRÊS TAREFAS
+
+## T1 — Forense do "flash branco" nos ataques traseiros de espada (CRÍTICO)
+O criador relata "um flash branco conspícuo no lado esquerdo durante a reprodução do Sword Attack traseiro". Localize com precisão:
+- Para `back_l/Sword` e `back_r/Sword` em `characters/orc-v1/source/artistic-reconstruction-v6/rear/{back_l-sword,back_r-sword}/`: varra TODOS os quadros e TODAS as camadas (`weaponBack`, `body`, `weaponFront`, `handFront`) mais os compostos.
+- Procure clusters de pixels muito claros (ex.: luminância alta e baixa saturação) que apareçam em um quadro e desapareçam no vizinho — o padrão de "flash" é justamente surgir/desaparecer, não um highlight estável.
+- Reporte: índice do quadro, camada, bounding box, contagem de pixels, cor RGBA dominante, e comparação com os quadros anterior e posterior (presente/ausente). Diga se o flash está no mestre salvo, no PNG exportado, ou só no composto (isolar camada importa).
+- Se houver mais de um candidato a flash, liste todos com métrica, e diga qual é o mais provável como "flash branco no lado esquerdo" (indique lado: metade esquerda do canvas).
+- NÃO corrija nada nesta tarefa: o objetivo é identificar a fonte real para o produtor da vista traseira. Produza `experiments/main-orc-combat-recovery-v7/forensics/white-flash.json` e `.md`.
+
+## T2 — Axila de `front_l/Sword` (o criador diz que continua não resolvida)
+Houve uma tentativa anterior neste mesmo projeto: especialista reconstruiu a abertura torsobraço em F03–F04 (`characters/orc-v1/source/artistic-reconstruction-v6/frontal-escalated/front_l-Sword-full/`), 30 px em F03 e 28 px em F04 na camada `body`, e um QA relatou que em movimento ficou limpo. O criador, revendo, ainda aponta defeito sob a axila.
+- Meça o estado ATUAL: compare a janela da axila em todos os 13 quadros contra a baseline V5 e contra o vizinho, e descreva numericamente o que existe hoje (silhueta, saliências escuras, degraus, furos de transparência, emenda de material).
+- Não assuma que a tentativa anterior falhou nem que funcionou: verifique. Pode ser que o defeito remanescente esteja em OUTROS quadros (ex.: F05–F07) e não em F03–F04.
+- Corrija o que estiver realmente incoerente, na camada `body`, com reconstrução anatômica da abertura (contorno coerente, sem chapa de cor, sem apagar contorno legítimo de armadura, sem escurecer o personagem). Preserve pose, timing e armas.
+- Escreva em `characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/` e `experiments/main-orc-combat-recovery-v7/frontal/`.
+
+## T3 — Contornos claros confirmados nos frontais (polimento localizado)
+Nos quatro clipes frontais do V6 (copie para suas pastas novas), procure:
+- halos claros contíguos à silhueta externa (não highlight interno de metal),
+- contorno duplo/degrau de 1 px,
+- pixels claros isolados sem vizinho claro.
+Distinga metal legítimo de artefato. Corrija apenas o confirmado; preserve highlights; verifique quadros vizinhos para não criar flicker. Não redesenhe coreografia frontal.
+
+CONTRATOS
+- Aseprite 1.3.18.6 `--batch --noinapp`, perfil exclusivo `tmp/aseprite-v7-econ-profile`; Lua `Frame.duration` em SEGUNDOS.
+- Composto 256×256 (body offset [64,64], groundY 190), nativo 128×128 (groundY 126), honre `cel.position`; `nativePng` = recorte do CORPO.
+- Quatro camadas na ordem `weaponBack → body → weaponFront → handFront`; arma só no intervalo do ataque.
+- Python `tmp\pixel-venv\Scripts\python.exe`; Pillow apenas leitura/medição/diagnóstico, nunca autoria raster de produção.
+- Zero PixelLab esperado. Se algo exigir, meça saldo antes/depois e guarde recibo; sem compras.
+- Escreva apenas em `characters/orc-v1/source/combat-recovery-v7/` e `experiments/main-orc-combat-recovery-v7/`.
+- Preserve as fontes V6/V5 intocadas (worktree sujo: não mexa em trabalho alheio). Sem Unity, sem commits.
+
+ENTREGA (checkpoint `V7_ECON_FORENSICS_AND_FRONTAL_READY`)
+- `forensics/white-flash.json|md` completo (T1).
+- Clipe(s) frontal(is) corrigido(s) com `clip.json` válido (hashes reais), mestres salvos/reabertos/reexportados conferidos, patch-manifest das células alteradas, before/after por quadro corrigido, preview HTML.
+- `report.md` com: medições antes/depois, causa raiz que você conseguiu provar (e o que NÃO conseguiu provar), o que preservou, e a declaração da sua limitação visual.
+- PARE no checkpoint. QA e integração são do orquestrador.

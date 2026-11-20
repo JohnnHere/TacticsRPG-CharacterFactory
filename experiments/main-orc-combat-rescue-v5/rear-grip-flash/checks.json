@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-10-29T16:45:00Z",
+  "target": "back_r/Axe F04 (apex) and F07 (impact)",
+  "checks": {
+    "bodyRgbaDeltaF04": 0,
+    "bodyRgbaDeltaF07": 0,
+    "groundYNative128": 126,
+    "groundYComposite256": 190,
+    "f04DurationMs": 110,
+    "f07DurationMs": 110,
+    "f04Phase": "validated-apex",
+    "f07Phase": "validated-impact",
+    "layerOrderExact": [
+      "weaponBack",
+      "body",
+      "weaponFront",
+      "handFront"
+    ],
+    "asepriteMastersSaved": true,
+    "reopenedMastersByteVerified": true,
+    "independentBodiesUntouched": true,
+    "noSubagentsLaunched": true,
+    "noUnityWrites": true,
+    "noGitCommits": true,
+    "zeroNewPixelLabCalls": true
+  },
+  "verdict": "TECHNICALLY_COMPLETE",
+  "checkpoint": "REAR_AXE_GRIP_KEYS_READY"
+}

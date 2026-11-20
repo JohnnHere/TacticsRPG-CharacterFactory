@@ -1,0 +1,7 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const expected='C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory';if(path.resolve('.').replaceAll('\\','/')!==expected)throw Error('Wrong cwd');
+const E='experiments/main-orc-combat-rescue-v5/grip-specialist';const profile=path.resolve('tmp/aseprite-grip-specialist-profile');fs.mkdirSync(profile,{recursive:true});
+const args=['--batch','--noinapp',...process.argv.slice(2)];
+const r=spawnSync('F:/SteamLibrary/steamapps/common/Aseprite/Aseprite.exe',args,{cwd:process.cwd(),env:{...process.env,ASEPRITE_USER_FOLDER:profile},windowsHide:true,encoding:'utf8',timeout:90000,maxBuffer:4*1024*1024});
+fs.writeFileSync(`${E}/batch-result.json`,JSON.stringify({hidden:true,isolatedProfile:profile,timeoutMs:90000,args,exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message},null,2)+'\n');
+if(r.stdout)process.stdout.write(r.stdout);if(r.stderr)process.stderr.write(r.stderr);if(r.error||r.status!==0||/Error:|attempt to|assertion failed/i.test((r.stderr??'')+(r.stdout??'')))throw Error(r.error?.message||'Batch failed');

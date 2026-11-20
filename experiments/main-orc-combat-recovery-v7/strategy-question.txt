@@ -1,0 +1,26 @@
+# Decisão de estratégia — pergunta objetiva aos dois QAs
+
+O criador rejeitou o V7 com três observações: problemas de frame pioraram, flash na espada **frontal** continua, ataque de costas **menos uniforme**. Pediu explicitamente uma recomendação sobre qual caminho é menos arriscado.
+
+Os dois QAs já produziram evidência. O QA temporal mediu:
+- flash frontal em três focos: entrada da arma em F02 (35 ms, +111 px claros e queda de −87 em F03), estrobo F05→F06→F07 (lâmina salta 61 px em 35 ms sem smear), e entalhe escuro em F11 (−113) com reascendimento em F12 (+93); mais um pixel especular que oscila 214→20 em (132,104);
+- desuniformidade traseira: `back_r` 12f/950 ms com impacto em 490 ms contra `back_l` 15f/860 ms com impacto em 425 ms, cadências diferentes e intervalos armados diferentes (F01–F09 contra F02–F12);
+- piora de frame: o `back_l` manual tem 15 quadros com seis poses de 35–45 ms, gerando stutter sem interpolação.
+
+## A pergunta
+Compare duas estratégias e recomende UMA, com justificativa e riscos:
+
+**A) Reconstruir `back_l` sobre a grade do frontal protegido.**
+Adotar a estrutura de fases e o tempo do frontal (`front_r/Sword` 13f/730 ms; `front_r/Axe` 12f/1005 ms) como grade única para as quatro direções, e reautorar `back_l` dentro dela. Ganho esperado: uniformidade estrutural real (mesma contagem, mesmo impacto no mesmo instante). Custo/risco: refazer arte que já foi refeita várias vezes; o `back_l` manual atual tem problemas próprios (stutter), então parte do trabalho já seria descartada de qualquer forma.
+
+**B) Voltar ao `back_l` do V6 e corrigir só o plano do arco e o flash.**
+Reaproveitar o corpo do V6 (que o criador já viu e que tem cadência mais estável), corrigindo apenas: plano do arco (hoje lateral → vertical/diagonal), entrada/saída da arma, e bookends. Custo/risco: o criador já reprovou esse corpo por "atacar de lado" duas vezes; corrigir só o plano pode não bastar, e a grade continuaria 12f contra 15f se você não igualar a contagem.
+
+## O que preciso na resposta
+1. Escolha A ou B (ou uma variante que você justifique, ex. A com reuso do corpo do V6 como base).
+2. Por que ela tem maior chance de resolver a objeção central (mesma técnica reconhecível nas quatro direções) e o flash.
+3. O que **não** resolve — seja explícito sobre o risco residual.
+4. Ordem de execução concreta: o que fazer primeiro, o que validar antes de propagar, e o que não gastar.
+5. Se a sua escolha exigir mudar contagem de quadros de células que o criador considera protegidas (`front_r/Sword`), diga isso claramente e proponha a alternativa que não as toca.
+
+Não edite arte. Grave a recomendação no seu diretório de QA (`strategy-recommendation.md`), com a matriz de risco.

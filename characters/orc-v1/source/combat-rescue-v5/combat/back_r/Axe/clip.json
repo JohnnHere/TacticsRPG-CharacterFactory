@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 8,
+  "durationsMs": [
+    90,
+    80,
+    90,
+    80,
+    100,
+    80,
+    100,
+    110
+  ],
+  "totalDurationMs": 730,
+  "master": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/source/composite.aseprite",
+  "masterSha256": "808f287057a780b028e0262b5cc5ad7905440319db04c6611ff7c59d2c4cc5fa",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/source/body.aseprite",
+  "bodyMasterSha256": "b6e9b458f7b7da17ffe6295e27f1f28938efce299097e020013541ce9c5f306c",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/source/hand.aseprite",
+  "handMasterSha256": "99efec7aa0c7bcfc0919115a4a9e635e5449be69045d09401ee429892e129ee0",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/source/native.aseprite",
+  "nativeMasterSha256": "d70e8a47c7c7d11b62239764607fd568f59181af938973f0a0837e10742e6766",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native-strip.png",
+  "stripSha256": "6be74892fa27a4373eb05e8b7b06365cc6ee4f64b1811b2043dbe897c2107818",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native-strip.png",
+  "nativeStripSha256": "6be74892fa27a4373eb05e8b7b06365cc6ee4f64b1811b2043dbe897c2107818",
+  "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/composite-strip.png",
+  "compositeStripSha256": "564b50538ccf1c942a995881d9ac6d590cfcde39e33af32e62128975a3ae5096",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      55
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.aseprite",
+    "spriteSha256": "11e1b3723e3af44f0311e19600ff28c11bdbd071788add40a074cc2b7093bbeb",
+    "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "source": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.aseprite",
+    "sourceSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+    "scale": 1
+  },
+  "contactEvent": {
+    "frame": 4,
+    "timeMs": 340,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/clip.json",
+    "parentMaster": "characters/orc-v1/source/rear-reconstruction-v4/back_r/Axe/source/composite.aseprite",
+    "parentMasterSha256": "9ba3f2c6fbb345cb58b0a4dedebf0d5b8ad6e2cc07d883d74e85f5b4b94eaa6a",
+    "authoringScript": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_weapons_8clips.lua",
+    "bodyCleanupScript": "experiments/main-orc-combat-rescue-v5/combat/scripts/clean_rear_weapon_bodies.lua",
+    "pixelLabJobId": "d6d12081-e933-4a9c-98eb-358654566039",
+    "paidGenerationUnits": 3,
+    "bodyArtChanged": true,
+    "bodyArtScope": "New PixelLab animate_with_skeleton_v3 whole-body empty-handed rear axe choreography (d6d12081-e933-4a9c-98eb-358654566039), cleaned and off-hand anchored in Aseprite",
+    "handArtChanged": true,
+    "handArtScope": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft (95-128 px per visible frame)",
+    "choreographyChanged": true,
+    "timingChanged": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "durationMs": 90,
+      "phase": "guard-start",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/00.png",
+      "nativeSha256": "49a003b4d7ca4815c6407dacabab0433945489fe66a2529f58dde41de9423fbb"
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/01.png",
+      "sha256": "c2eae02880acdd0bb8685db8e744ef6e189645b1c814ee3ac08761de241af635",
+      "durationMs": 80,
+      "phase": "overhead-hoist",
+      "weaponVisible": true,
+      "rightGrip": [
+        160,
+        73
+      ],
+      "rotationDeg": 325,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/01.png",
+          "sha256": "ec1e841b5be8379d4acd8328f54ee6ee3d57d2283d550c66d251c15c333af948"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/01.png",
+          "sha256": "3d549aeff0f0db2833259a18ca4e137acbfcc1ca8122c49fd9a5991423a124eb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/01.png",
+          "sha256": "589c0de0dd905efe098c1147eca5b8afa0050f2b7dace24a5def8dd61f4f4784"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/01.png",
+          "sha256": "184ee75e6371a670933d3bfba3b8c8c1c32ec6bd863f652813b2f09af08e5450"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/01.png",
+      "nativeSha256": "67c494b1edba17448b57a251282f05feae6e20da4a962328009d93bb4ca27c09"
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/02.png",
+      "sha256": "211167ba459105ac314fa92b58137e40126c79460bce50b40bdd867d779c526f",
+      "durationMs": 90,
+      "phase": "overhead-apex",
+      "weaponVisible": true,
+      "rightGrip": [
+        157,
+        73
+      ],
+      "rotationDeg": 345,
+      "scale": 1,
+      "weaponBehindBody": true,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/02.png",
+          "sha256": "44a87066905b5497b2c3c330e85236bdb1dfe7a7e3d2acc7cf048be35b84c5e1"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/02.png",
+          "sha256": "6cd0dd96e285274a05bfb829481053b75ae2b6adab0aa4e669e11ec2839b8678"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/02.png",
+          "sha256": "5be2fc5751cf6cf58e6a55c22980024087313d0f2915a3c225bd8c2d6cf9f0e1"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/02.png",
+          "sha256": "9d3433e35a3b715ce869e5c091744c8657d0736aa710dfa9aadff41718ed0ed2"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/02.png",
+      "nativeSha256": "dc4b9c5073d7f83464e6da805e87799ff75f1e787171ff79f030e7b6f90aa43d"
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/03.png",
+      "sha256": "26d4a9c743495fd430cca18ab098f1f27697b8a85bc070ed0a47e6c1fed2be55",
+      "durationMs": 80,
+      "phase": "cleave-drop",
+      "weaponVisible": true,
+      "rightGrip": [
+        180,
+        90
+      ],
+      "rotationDeg": 25,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/03.png",
+          "sha256": "692442b672075e2c869a67bbf899ae64f7bc7023f44d9480cba0ae3a6d123a16"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/03.png",
+          "sha256": "bca95e3f7f5980402e8b9e4f7a524907a824bf1b21e0887a80503ee075d67c99"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/03.png",
+          "sha256": "decfb7ae9dda4f204137b7748419390c7f715f96f7268aa97822d784f18f761e"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/03.png",
+      "nativeSha256": "7a108ff64204dccda607b17d065addef9bca93221b35acc89f2919ded1a3761c"
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/04.png",
+      "sha256": "a97b5ca16bba18a1437e3a1c1d6b1316f30e2ffe0ab93d850c88d802f9a06b17",
+      "durationMs": 100,
+      "phase": "heavy-impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        184,
+        119
+      ],
+      "rotationDeg": 75,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/04.png",
+          "sha256": "e615678eaedcee42de8fe7353711e6813c578c2732d2f2dcdd5dbf75b7a040b0"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/04.png",
+          "sha256": "f7ea6adeb392e3e46ff3ed21eee9651f6699daec2eb76006fed0f430ebddbaa5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/04.png",
+          "sha256": "a29131b91c982d3bcb22ce6f791cc61cce74614b8de605ce6a9e62d4704d4c2c"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/04.png",
+      "nativeSha256": "ce9a0dcfe3492b1443b1be3c3231e458dae677b78be80f131cad99aae51f8971"
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/05.png",
+      "sha256": "9567cf1f9f6eab451e474e729dfa0f1bdbb3e7e568e6e838d48a03ed445297c1",
+      "durationMs": 80,
+      "phase": "weight-sink",
+      "weaponVisible": true,
+      "rightGrip": [
+        173,
+        136
+      ],
+      "rotationDeg": 110,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/05.png",
+          "sha256": "d6d1fc97bed93cc7a99962a0646095157e4ee7aa667665e68bbe1f3c7c3c0c08"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/05.png",
+          "sha256": "145209996a4f8a131975c683e222fee099ecdd1a61f07271baf94575dbf01507"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/05.png",
+          "sha256": "2acadfc63c4d55f93cc03c50475e69c9d026e43dbef9d85c18b263781bdd4265"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/05.png",
+      "nativeSha256": "7ab942c2988a5d5d4d574ee72758d697f094a7c2224bf4fa69dc2bb18be9736d"
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/06.png",
+      "sha256": "b366632821aaa94267902f146e08a7b05f1428a40efe02cc80c15f56721a7525",
+      "durationMs": 100,
+      "phase": "wrench-back",
+      "weaponVisible": true,
+      "rightGrip": [
+        164,
+        133
+      ],
+      "rotationDeg": 130,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/06.png",
+          "sha256": "b37e0040996ae5f4966f226cc2488fd95f2cffe6956ac20352eda4a905dcad2e"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/06.png",
+          "sha256": "6a14655ca9d83c63e379e88a0af427d487075db5912c8641a1b27f542cfa2529"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/06.png",
+          "sha256": "c50d959ee031c1a3af8b65544ccd10968a536e83d788780eeb07a6455256dc35"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/06.png",
+      "nativeSha256": "c30277b24568b4cc7535febc38d1c91f47152665413e07a3c0fea46521a7bff1"
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/07.png",
+      "sha256": "524ff82eb67950ad0ef13d656a01d2a85344a5c33373b613fa0cd363711a6769",
+      "durationMs": 110,
+      "phase": "guard-recovery",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Articulated 4-finger armored gauntlet + thumb lock + leather wrist cuff wrapping handle shaft in Aseprite Lua",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/body/07.png",
+          "sha256": "524ff82eb67950ad0ef13d656a01d2a85344a5c33373b613fa0cd363711a6769"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/native/07.png",
+      "nativeSha256": "c5be9c0febd03205f0a79e64b30681bbe86cc8765df21b1e42a23e0089087d26"
+    }
+  ]
+}

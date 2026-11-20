@@ -1,0 +1,2 @@
+local root=app.fs.currentPath;local function f(p)return app.fs.joinPath(root,p)end;local function a(p)return app.pixelColor.rgbaA(p)>0 end
+for _,v in ipairs({{"04",88,127,38,70}}) do local p="experiments/main-orc-rear-recovery-v2/axe-r-cleaned-native/"..v[1]..".png";local im=Image{fromFile=f(p)};print(p);for y=v[4],v[5] do local row=string.format("%03d ",y);for x=v[2],v[3] do row=row..(a(im:getPixel(x,y)) and "#" or ".")end;print(row)end end

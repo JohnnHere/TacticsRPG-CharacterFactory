@@ -1,0 +1,95 @@
+{
+  "contract": "glm-body-fixes-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T17:55:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "body-specialist/glm-fixes",
+    "producer": "15ef8466-7a3d-431c-baee-4abbf7da3698 (GLM 5.3)",
+    "clips": [
+      "back_r/Sword",
+      "back_l/Axe"
+    ],
+    "repairedDefects": [
+      "DEFECT-REAR-01-RESIDUAL-A",
+      "DEFECT-REAR-01-RESIDUAL-B",
+      "DEFECT-REAR-02-PERSISTENT"
+    ]
+  },
+  "verdicts": {
+    "back_r/Sword": "READY_FOR_REAR_GRIPS",
+    "back_l/Axe": "READY_FOR_REAR_GRIPS"
+  },
+  "overallVerdict": "READY_FOR_REAR_GRIPS",
+  "sourceVerification": {
+    "back_r_Sword": {
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+      "clipJsonSha256": "aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88",
+      "master256Sha256": "3da678e9b7980074f08a8e0c5a89e22d9b1f771719cc5c9775cc4ecf81438303",
+      "master128Sha256": "acccc22600ce9d3b787dbb77ce02f9078b8382b099b2a7ee97e319437a24e27b",
+      "repairedFrame": 6,
+      "frameCount": 12,
+      "totalDurationMs": 730
+    },
+    "back_l_Axe": {
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json",
+      "clipJsonSha256": "d87cd8331b46e48e962ac118c01b0fd10d7ad86dcd101f7bc8f3e6093f539ef2",
+      "master256Sha256": "8358307076f7b54bc050448bfe0e0fefbe602d2eb10ec703ba5d552a093809e5",
+      "master128Sha256": "9df41216491bcf32df7cab92f31e045ba32caedc8cdbbefa3c044497f2cccdc9",
+      "repairedFrame": 2,
+      "frameCount": 12,
+      "totalDurationMs": 1100
+    }
+  },
+  "defectEvaluations": {
+    "DEFECT-REAR-01-RESIDUAL-A": {
+      "target": "back_r/Sword F06 (5 floating pixels)",
+      "status": "RESOLVED",
+      "findings": "All 5 floating pixels at (112,64), (110,69), (109,70), (108,71), (107,72) in native 128 (offset [64,64] in 256: [176,128], [174,133], [173,134], [172,135], [171,136]) have been converted to alpha 0. No holes opened in the air or the body silhouette."
+    },
+    "DEFECT-REAR-01-RESIDUAL-B": {
+      "target": "back_r/Sword F06 (leather infill over chainmail skirt)",
+      "status": "RESOLVED",
+      "findings": "Exactly 30 pixels in region y88..94 / x45..55 in native 128 have been restored to steel chainmail (#413f4c / #1f1c24 checker) using donor pixels from F05/F07 of the same view. Legitimate tasset leather at x40..44 is preserved. No diagonal seam line or global recolor artifact."
+    },
+    "DEFECT-REAR-02-PERSISTENT": {
+      "target": "back_l/Axe F02 (horizontal beam, vertical peg, fake leather block, truncated arm)",
+      "status": "RESOLVED",
+      "findings": "Transversal wooden beam (x73..90, y19..20) and vertical peg (x70..72, y16..18) are completely removed. The crude rectangular brown block (x82..92, y15..20) is replaced with a sculpted closed leather fist with defined knuckles and highlights. The right arm connects continuously from shoulder to elbow to wrist to fist. Transition between F01 (hand at hip), F02 (hand at shoulder height), and F03 (hoist above head) is kinetically and anatomically seamless. Zero inpaint blur or outline melting."
+    }
+  },
+  "preservationChecks": {
+    "back_r_Sword": {
+      "other11FramesByteIdentical": true,
+      "acceptedKeysByteIdentical": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      }
+    },
+    "back_l_Axe": {
+      "other11FramesByteIdentical": true,
+      "acceptedKeysByteIdentical": {
+        "F03": true,
+        "F04": true,
+        "F07": true
+      }
+    }
+  },
+  "accounting": {
+    "pixellab_production_calls_in_qa": 0,
+    "llm_inference_cost": "not_informed",
+    "producerPixelLabUsage": {
+      "tool": "inpaint_image_pro_flash",
+      "jobId": "540302e4-2690-4282-8de5-c609f15b1142",
+      "charged": 6.0,
+      "balanceBefore": 1342.70,
+      "balanceAfter": 1336.70
+    }
+  },
+  "limitations": [
+    "EVALUATION_IS_STATIC_STILLS_AND_STRIPS: Multimodal inspection conducted frame by frame and across composite strips; continuous 1x real-time observation in live game engine was not directly observed.",
+    "LIMITED_SCOPE: Validates only the two repaired body cycles (back_r/Sword and back_l/Axe). Does not approve back_r/Sword rear grip, back_l/Axe rear grip, 28-cell matrix, or Unity integration.",
+    "CREATOR_APPROVAL_PENDING: Status remains PENDING_CREATOR."
+  ]
+}

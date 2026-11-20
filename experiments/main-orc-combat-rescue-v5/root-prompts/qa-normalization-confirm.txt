@@ -1,0 +1,16 @@
+Confirmação curta de hash, ainda no seu papel de QA independente. Não é uma nova revisão artística e não pede para você refazer a auditoria dos dois ciclos que acabou de aprovar.
+
+Situação: os dois ciclos que você aprovou (`back_r/Sword` e `back_l/Axe`) emitiam as camadas por quadro com a chave `path`, enquanto os outros seis clipes do projeto e o validador da fábrica usam `png`. O Root normalizou apenas o NOME dessa chave nesses dois `clip.json`, sem tocar em nenhum PNG, mestre, duração ou visibilidade, e sem reescrever os clipes.
+
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json`: hash aprovado por você `eb379d1d…`, agora `a63aa1ac4648eba9605fb26720a7b51d9a863539d6d76cc8e79fc3115ff8b739`.
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json`: hash aprovado por você `9f7d01e7…`, agora `b61b87deed2c547d8d01112b0f30e956f02fee12eff04dab6ba25b833eb7cbf6`.
+
+Verificação que o Root já registrou: `experiments/main-orc-combat-rescue-v5/layer-key-normalization.json`. Os bytes exatos que você aprovou estão preservados em `experiments/main-orc-combat-rescue-v5/rear-grip-flash/pre-normalization/`.
+
+O que o Root precisa de você, com checagem real e não aceitação do atestado:
+1. Confirme, nos arquivos atuais, que cada entrada de camada tem `png` e não `path`, e que cada `png` aponta para um arquivo existente cujo SHA-256 bate com o hash declarado.
+2. Confirme que `frames[i].sha256`, `frames[i].nativeSha256`, `durationMs` e `weaponVisible` são iguais aos do arquivo preservado em `pre-normalization/` — ou seja, nenhum pixel, tempo ou visibilidade mudou.
+3. Confirme que os mestres e tiras continuam batendo com os hashes declarados no `clip.json`.
+4. Se algo divergir, diga exatamente o quê e não aprove.
+
+Grave `layer-key-normalization-qa.json` e `layer-key-normalization-qa.md` na sua pasta `qa-antigravity-flash`, preservando os pareceres anteriores, com o veredito `NORMALIZATION_CONFIRMED` ou `REVISIONS_REQUIRED`. Anexe também, no mesmo JSON, os `clipSha256` que você confirma para os dois clipes, para que o portão de integração do Root possa casar evidência e arquivo. Não edite arte nem fontes; não crie subagentes; zero PixelLab; custo LLM não informado.

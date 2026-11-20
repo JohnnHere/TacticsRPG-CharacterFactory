@@ -1,0 +1,1176 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-recovery-v7-back-l-full-manual",
+  "checkpoint": "V7_BACK_L_FULL_MANUAL_READY",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Axe",
+  "state": "Attack",
+  "frameCount": 15,
+  "durationsMs": [
+    45,
+    65,
+    40,
+    80,
+    45,
+    95,
+    155,
+    45,
+    45,
+    115,
+    120,
+    140,
+    50,
+    90,
+    100
+  ],
+  "totalDurationMs": 1230,
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "oneShot": true,
+  "loop": false,
+  "runtimeImplemented": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "visibilityPolicy": "attack-only-v1",
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+  "sourceParentClip": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/clip.json",
+  "sourceParentClipSha256": "ae905d2ce12f13a696bdc450c3b955ccc6cc53a4eeb6155761e2d3a9e4afef50",
+  "provenance": {
+    "authoring": "Programmatic manual pose construction inside Aseprite Lua; per-pose humerus/sleeve drawing and joint-measured same-view forearm/glove articulation; no generative calls or external raster edits",
+    "authorScript": "experiments/main-orc-combat-recovery-v7/rear-alt/full-cycle/author.lua",
+    "authorScriptSha256": "36521d4d61f2979de71398a0a52784951724bd5eda08f4e6504dab8914a0891e",
+    "plan": "experiments/main-orc-combat-recovery-v7/rear-alt/full-cycle/plan.json",
+    "planSha256": "11a95e5fcedd98f2fad169ddaaa66b70ecd3b7763137773eea74f3d930ac5f40",
+    "donorJointMeasurementUncertaintyPx": 1,
+    "newPixelLabCalls": 0,
+    "bodySources": "V6 attack-body frames 01..10 only; V6 Idle bookends 00/11 explicitly excluded",
+    "mastersSavedReopened": true,
+    "rgbaAndTimingVerified": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "durationMs": 45,
+      "phase": "rest",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/00.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/00.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/00.png",
+          "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png",
+      "sourceBodySha256": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4",
+      "manualJointsNative": {
+        "shoulder": [
+          88,
+          41
+        ],
+        "elbow": [
+          104,
+          57
+        ],
+        "wrist": [
+          98,
+          75
+        ],
+        "palm": [
+          94,
+          80
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 1.0137937550497034,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b",
+      "nativeSha256": "088b159e8fc20b7e6f3de137bbaeee44fde62f6c98014441ed7e86fdb01112be",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 0,
+          "phase": "rest",
+          "durationMs": 40
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 0,
+          "phase": "rest",
+          "durationMs": 40
+        }
+      }
+    },
+    {
+      "index": 1,
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/01.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/01.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/01.png",
+          "sha256": "6981949808bbd8a7f106c0b9b6b7d334d0b8e1fd0bfce413b867c50da5e84197"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png",
+      "sourceBodySha256": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4",
+      "manualJointsNative": {
+        "shoulder": [
+          88,
+          41
+        ],
+        "elbow": [
+          110,
+          49
+        ],
+        "wrist": [
+          101,
+          66
+        ],
+        "palm": [
+          97,
+          70
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 0.9983646759294876,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "6981949808bbd8a7f106c0b9b6b7d334d0b8e1fd0bfce413b867c50da5e84197",
+      "nativeSha256": "0d0f0bd5cbd04e49497efda774fabfdb64b97350536db94081c5269dd0f14c7d",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 1,
+          "phase": "body-preparation",
+          "durationMs": 65
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 1,
+          "phase": "body-preparation",
+          "durationMs": 65
+        }
+      }
+    },
+    {
+      "index": 2,
+      "durationMs": 40,
+      "phase": "establish-grip",
+      "weaponVisible": true,
+      "rightGrip": [
+        174,
+        122
+      ],
+      "rotationDeg": 10,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/02.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/02.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/02.png",
+          "sha256": "a9ce21e7b6644c075c67d22c251dcde1d054170556f21d5699ebe4428a983691"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/02.png",
+          "sha256": "8df685bbdb66361a634963f4b1dc328cf000832b5e7578734c78114be883374b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/02.png",
+          "sha256": "fa3b7ee6eff1dcf2a235d20c4e70c52ab285ec067967c117116db79e1c1c8b36"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/02.png",
+          "sha256": "763f1810e649fc069a73ac725ac3dd5920a2404adbe91716de49d60f91d590bd"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/02.png",
+      "sourceBodySha256": "0f4221ccb36c7d532ebcf9581ca9ac8a902d1cf13f4e1c3d2c3499c580c7d140",
+      "manualJointsNative": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          110,
+          37
+        ],
+        "wrist": [
+          111,
+          53
+        ],
+        "palm": [
+          110,
+          58
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 0.8488746876271654,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "92f5773459067a232e918cd29fa3d2a8bdcf52eb52898b15919890e56cc8afcc",
+      "nativeSha256": "1deea272dba1d18aac18ecc420f4ed54b35018aea4d17a9c89171bc48b1a0996",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 2,
+          "phase": "establish-grip",
+          "durationMs": 35
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 2,
+          "phase": "establish-grip",
+          "durationMs": 35
+        }
+      }
+    },
+    {
+      "index": 3,
+      "durationMs": 80,
+      "phase": "anticipation",
+      "weaponVisible": true,
+      "rightGrip": [
+        183,
+        109
+      ],
+      "rotationDeg": -5,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/03.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/03.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/03.png",
+          "sha256": "c10b4d02cdc5de14c5189991aa27f8c9a78661195239fce4be9e3330cec88881"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/03.png",
+          "sha256": "6dea1e8a43e51bf75ee4e9db6fb7bd5a03e4c3f21ed83039d8e219a091e88ac2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/03.png",
+          "sha256": "45a50abb2e91a948f4c85b295eabc9bceb5b7b419da057e2e75f70a1d558b9dd"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/03.png",
+          "sha256": "9a0bf81d7612ec94b19c0725c7fc38a5a95b4db20bfb1e1b568cfa83c85cf579"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/02.png",
+      "sourceBodySha256": "0f4221ccb36c7d532ebcf9581ca9ac8a902d1cf13f4e1c3d2c3499c580c7d140",
+      "manualJointsNative": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          104,
+          34
+        ],
+        "wrist": [
+          113,
+          42
+        ],
+        "palm": [
+          119,
+          45
+        ]
+      },
+      "donor": "raised",
+      "donorAxialProjection": 0.8817755325975202,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "cb21dfd02722e6a7bbcfa8cb8e695f2821d4acf1e3b6925ef5f3a19e6c701f48",
+      "nativeSha256": "996da1ae128aa37ea4f3581d11a08495837de8d425cabc7176fd68f0dd5b72c3",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 3,
+          "phase": "anticipation",
+          "durationMs": 80
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 3,
+          "phase": "anticipation",
+          "durationMs": 80
+        }
+      }
+    },
+    {
+      "index": 4,
+      "durationMs": 45,
+      "phase": "hoist-transition",
+      "weaponVisible": true,
+      "rightGrip": [
+        180,
+        95
+      ],
+      "rotationDeg": -10,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/04.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/04.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/04.png",
+          "sha256": "946fd4e035e57881bd87062170aa2205ef474d9b7aea838b566aba6f563fa4b4"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/04.png",
+          "sha256": "8f8d84c30eba60a34a6a53799899bb0636430158267d2a6d526170f4370b3f2c"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/04.png",
+          "sha256": "96063c1e869310cfa32e1bb0eb6e6203000e66f455b182095d8466f7e439e8e5"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/04.png",
+          "sha256": "5335b41d399ba0b7d0d21937d7de5194cbc2f17d932770ec2535e15a1d27440a"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/03.png",
+      "sourceBodySha256": "2179284087db44861df81daa31c7a5efff7448e90ad1087d822ef0243a28b036",
+      "manualJointsNative": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          108,
+          48
+        ],
+        "wrist": [
+          114,
+          38
+        ],
+        "palm": [
+          116,
+          31
+        ]
+      },
+      "donor": "raised",
+      "donorAxialProjection": 0.8906505638948936,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "aa54f1bb0c874be85364c2f7537226137a8f3bd79423485bb3c58b5b508c7a6c",
+      "nativeSha256": "c7a0754d2ad51fbae7c2cccbe05d81a80d01a43c3f4fcdee0c5158ee37dadd90",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        }
+      }
+    },
+    {
+      "index": 5,
+      "durationMs": 95,
+      "phase": "hoist",
+      "weaponVisible": true,
+      "rightGrip": [
+        167,
+        88
+      ],
+      "rotationDeg": -15,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/05.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/05.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/05.png",
+          "sha256": "1bf90d3d4e49efc66192353fb7eec9a5989d45926aa1bfcbc8bc609b0a7dc692"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/05.png",
+          "sha256": "74bc7dde64ecc6f1da3ca84c24d176cf0132421c93a8cf32c1e27c1117a483fd"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/05.png",
+          "sha256": "cee9639f21736ee3ac7fe7e4881a76bcff6848b59213fcc24f5c55fbeb4f0824"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/05.png",
+          "sha256": "59b1b60844dc9900cd8a724e3694c61e5f4312b6c66dfd38b818f04b92a24a2a"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/03.png",
+      "sourceBodySha256": "2179284087db44861df81daa31c7a5efff7448e90ad1087d822ef0243a28b036",
+      "manualJointsNative": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          111,
+          43
+        ],
+        "wrist": [
+          107,
+          31
+        ],
+        "palm": [
+          103,
+          24
+        ]
+      },
+      "donor": "raised",
+      "donorAxialProjection": 0.9772697579354847,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "c21f422888a920530d3cf8411399482c7552ee70a5bf915613058eae27e61091",
+      "nativeSha256": "80e8644451db0f2ee047dc065b78faae598979054a8c9fc9dc73e8c510cfd541",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        }
+      }
+    },
+    {
+      "index": 6,
+      "durationMs": 155,
+      "phase": "overhead-coil",
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        79
+      ],
+      "rotationDeg": -20,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/06.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/06.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/06.png",
+          "sha256": "745549e241b78ea796fcb562088ea2c77f054c7ac114d30ebe0189deff0d3165"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/06.png",
+          "sha256": "e59d2eae7af3fff5b8fd25e620f4f3092579e1895104ccee88202bfc41c183e5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/06.png",
+          "sha256": "2ff48c9314ff7cb8ad4adbb946931bb0206e33b5a13a3bd5c762aaff607cf99b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/06.png",
+          "sha256": "e6df774e0764122de5defb49e471917732186939e47d177fda9890c53438fad1"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/04.png",
+      "sourceBodySha256": "6eb853137ce7ac0ff094bfddd4a42aab8d6e705185acecaaecceb6a3f7bc58c2",
+      "manualJointsNative": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          110,
+          31
+        ],
+        "wrist": [
+          101,
+          20
+        ],
+        "palm": [
+          95,
+          15
+        ]
+      },
+      "donor": "raised",
+      "donorAxialProjection": 1.0396628667046324,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "3edee910e74b4833b1ce21c153d20c9cae8bc18b006e3de0f6116fe61bfa366c",
+      "nativeSha256": "4ca05d267353ac41397c3d3af57e39d21f6903a8ad7353d85c617ec4e9a46f69",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 4,
+          "phase": "overhead-coil",
+          "durationMs": 155
+        }
+      }
+    },
+    {
+      "index": 7,
+      "durationMs": 45,
+      "phase": "cleave-drive",
+      "weaponVisible": true,
+      "rightGrip": [
+        180,
+        96
+      ],
+      "rotationDeg": 20,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/07.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/07.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/07.png",
+          "sha256": "08f6c9a42bc5ccb57ac3d528d66b28a90e7059d2977acb8149e30bd1b8481d67"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/07.png",
+          "sha256": "6516888ede881edbe5892302daff6f0a38e88a53fb15405cc7bc4f9d60cfbd0f"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/07.png",
+          "sha256": "fee2f2f6db66da515deea99b0015cb8e171983db1022ac26773f9e22c1870e01"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/07.png",
+          "sha256": "df5d6bbea602d3e14bddbccb92095a4016f24905026a9448189255bdc75ce6d0"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/05.png",
+      "sourceBodySha256": "770544c585d5a000accc986a47c6eb0756226ca93038fe31edeeb1ef4d0410d2",
+      "manualJointsNative": {
+        "shoulder": [
+          88,
+          42
+        ],
+        "elbow": [
+          109,
+          50
+        ],
+        "wrist": [
+          114,
+          39
+        ],
+        "palm": [
+          116,
+          32
+        ]
+      },
+      "donor": "raised",
+      "donorAxialProjection": 0.9155338591177342,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "f4ac1f81ed1fc7793cc989a72f2198847cb8c1c34360418c71c3e0e6d77e2426",
+      "nativeSha256": "af04ef25e942c6b35825c866e0099b1b5c32962da69c7c9ff759f59cdf290d6d",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 5,
+          "phase": "cleave-drive",
+          "durationMs": 35
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 5,
+          "phase": "cleave-drive",
+          "durationMs": 35
+        }
+      }
+    },
+    {
+      "index": 8,
+      "durationMs": 45,
+      "phase": "downstroke",
+      "weaponVisible": true,
+      "rightGrip": [
+        183,
+        121
+      ],
+      "rotationDeg": 65,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/08.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/08.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/08.png",
+          "sha256": "e3c1709d836a4f107c797036e288ebc37b0e08286d6607f2a0e7bdc705f140eb"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/08.png",
+          "sha256": "f71fa6d08bae0bc48c26b2cc3d7a72228530213396514e3f00d7986deca1a323"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/08.png",
+          "sha256": "e8363fc023991da7ae9508c8c8e1aa9e62479a4a4ff5b5b4afc8b89a9b0cdc5e"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/08.png",
+          "sha256": "860086b57f3e92d2ebb551bb5666525850f949ee9a6905f5dd757f20931f2015"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/06.png",
+      "sourceBodySha256": "3a6266d18797cedbb54057ff4680ac891f22063e2144fd1e03384d5ecbee67d6",
+      "manualJointsNative": {
+        "shoulder": [
+          84,
+          46
+        ],
+        "elbow": [
+          107,
+          45
+        ],
+        "wrist": [
+          117,
+          53
+        ],
+        "palm": [
+          119,
+          57
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 0.6859943405700353,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "55616d447d095e594503cfe1bf46e0a757df39c8e84566de7872ed9a8da1a52e",
+      "nativeSha256": "c31f76a0d842518ab467e897529e89716916c9504f7c4f1daf113e06e9d150e4",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 5,
+          "phase": "cleave-drive",
+          "durationMs": 35
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 5,
+          "phase": "cleave-drive",
+          "durationMs": 35
+        }
+      }
+    },
+    {
+      "index": 9,
+      "durationMs": 115,
+      "phase": "heavy-impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        165,
+        140
+      ],
+      "rotationDeg": 110,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/09.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/09.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/09.png",
+          "sha256": "6379b178b8d058e33d2836d897e00086eec3e4d4805eb24f924da9ea89d444aa"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/09.png",
+          "sha256": "921affbd3ec941ae393cfcbf04a874bd6f2f490d3f04f9daee517768df381588"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/09.png",
+          "sha256": "3d50273d2683c40fe18afa8a12d90fe666719411d5746ec427037522d8ca679f"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/09.png",
+          "sha256": "2eaa11ab3a84057dd60d5ab9daacc3e23b6c641c6b168869ba9411e0903413ee"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/07.png",
+      "sourceBodySha256": "3e55f3c455193b24a69866d88c8bd58dcc196aac34b21a5e2a99b1fde261ae4a",
+      "manualJointsNative": {
+        "shoulder": [
+          82,
+          49
+        ],
+        "elbow": [
+          105,
+          52
+        ],
+        "wrist": [
+          103,
+          71
+        ],
+        "palm": [
+          101,
+          76
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 0.9835244081556433,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "e399ceec25375a9555f88b108fb57b70d6ea318af6e65784c405e26edf729168",
+      "nativeSha256": "700062a1de62568a66ae45423778d424841f95b6aa6ff923a7569fa24d707521",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 6,
+          "phase": "heavy-impact",
+          "durationMs": 115
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 6,
+          "phase": "heavy-impact",
+          "durationMs": 115
+        }
+      }
+    },
+    {
+      "index": 10,
+      "durationMs": 120,
+      "phase": "weight-settle",
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        141
+      ],
+      "rotationDeg": 120,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/10.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/10.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/10.png",
+          "sha256": "39fd6a59bbbc34fdfe4b0680f6429c41980bd8d2f4010e3d657b55ba6456a231"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/10.png",
+          "sha256": "5c82780333b7e877fd19a3699b63ddfe3129bacd7d230b8e6b0ff03358a02b21"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/10.png",
+          "sha256": "65988e835710806763ba3a9fc384c31a0614a0fc86cd612c223ec6c0ddfe71eb"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/10.png",
+          "sha256": "f81fbc41c4dddfc77a29671160cdb69de44a2dbccb6e746b796431905eff3042"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/08.png",
+      "sourceBodySha256": "8919ec8303842887070a92b82e82f288c5f5c428a7db0c4db30e94f34ed60ec0",
+      "manualJointsNative": {
+        "shoulder": [
+          81,
+          50
+        ],
+        "elbow": [
+          104,
+          54
+        ],
+        "wrist": [
+          98,
+          72
+        ],
+        "palm": [
+          95,
+          77
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 0.9983646759294876,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "4501087d60b4512fbd9c3feae2bb027e416fea2a4cdfdbe19c5318325e180776",
+      "nativeSha256": "e188942ca65b1d69042df5caa976a23cabab105b3c2cd08c2e012c69257ad052",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 7,
+          "phase": "weight-settle",
+          "durationMs": 110
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 7,
+          "phase": "weight-settle",
+          "durationMs": 110
+        }
+      }
+    },
+    {
+      "index": 11,
+      "durationMs": 140,
+      "phase": "wrench-recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        163,
+        134
+      ],
+      "rotationDeg": 100,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/11.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/11.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/11.png",
+          "sha256": "a5b210fcd8be7c4b60f143a9299f82526e1522c7639388d393bc4efcd41a9bda"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/11.png",
+          "sha256": "11edbe8fa3950c91a0a053c5fdbd7b44ae92118dcafef5d91d49ab6516908dd0"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/11.png",
+          "sha256": "dcda98807eae3f1a90db4e242e32cb255441ce332eb8461d5e8c6a0bd14fd235"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/11.png",
+          "sha256": "e37e3438ff43073bbdd253437f7642c9fa5539392b94b7d1784096e1b3b8ff9e"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/09.png",
+      "sourceBodySha256": "05b7a2d6efa579d54e05c86161f1a52bc9a4c96c6213f629d6622c25cce0de83",
+      "manualJointsNative": {
+        "shoulder": [
+          83,
+          47
+        ],
+        "elbow": [
+          106,
+          46
+        ],
+        "wrist": [
+          102,
+          65
+        ],
+        "palm": [
+          99,
+          70
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 1.0105651043180541,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "cb4ba8780615b9e815142f159601ed594653cbbd931df7eb885f7bbc0d4692a6",
+      "nativeSha256": "ea22fcbfd3484080e624f1f41d359a469b40d866b5b538b76347ef3ad54fe8c4",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 8,
+          "phase": "wrench-recovery",
+          "durationMs": 130
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 8,
+          "phase": "wrench-recovery",
+          "durationMs": 130
+        }
+      }
+    },
+    {
+      "index": 12,
+      "durationMs": 50,
+      "phase": "release-grip",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/12.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/12.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/12.png",
+          "sha256": "db4e4161ec7c42d1c4ce248bc1baf220d8227f87f0a236ffb8968cd057dcb6f9"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/10.png",
+      "sourceBodySha256": "012fc15593bb4f8df1d5b0ff4772db2b9ad018c8ec70d87c6c50ed66dcadd910",
+      "manualJointsNative": {
+        "shoulder": [
+          87,
+          43
+        ],
+        "elbow": [
+          107,
+          55
+        ],
+        "wrist": [
+          99,
+          73
+        ],
+        "palm": [
+          95,
+          77
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 1.0129875571050582,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "db4e4161ec7c42d1c4ce248bc1baf220d8227f87f0a236ffb8968cd057dcb6f9",
+      "nativeSha256": "3f621b8d6531061a4fc809cb72a39a5897e8272d599b5be5d4c781947e0545ec",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 9,
+          "phase": "release-grip",
+          "durationMs": 50
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 9,
+          "phase": "release-grip",
+          "durationMs": 50
+        }
+      }
+    },
+    {
+      "index": 13,
+      "durationMs": 90,
+      "phase": "shoulder-reset",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/13.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/13.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/13.png",
+          "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/13.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png",
+      "sourceBodySha256": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4",
+      "manualJointsNative": {
+        "shoulder": [
+          88,
+          41
+        ],
+        "elbow": [
+          104,
+          57
+        ],
+        "wrist": [
+          98,
+          75
+        ],
+        "palm": [
+          94,
+          80
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 1.0137937550497034,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b",
+      "nativeSha256": "088b159e8fc20b7e6f3de137bbaeee44fde62f6c98014441ed7e86fdb01112be",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 10,
+          "phase": "shoulder-reset",
+          "durationMs": 90
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 10,
+          "phase": "shoulder-reset",
+          "durationMs": 90
+        }
+      }
+    },
+    {
+      "index": 14,
+      "durationMs": 100,
+      "phase": "return-to-guard",
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/frames/14.png",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native/14.png",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponBack/14.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/body/14.png",
+          "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/weaponFront/14.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/layers/handFront/14.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sourceBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/01.png",
+      "sourceBodySha256": "507bff8f45aad5131f10e983ab2d289cbb23285039007001a284336f17b9a3f4",
+      "manualJointsNative": {
+        "shoulder": [
+          88,
+          41
+        ],
+        "elbow": [
+          104,
+          57
+        ],
+        "wrist": [
+          98,
+          75
+        ],
+        "palm": [
+          94,
+          80
+        ]
+      },
+      "donor": "axe-low",
+      "donorAxialProjection": 1.0137937550497034,
+      "preservedManualKey": null,
+      "provenance": "V6 attack torso/legs; old active arm fully removed; manual proximal arm and articulated same-view donor; surgical detached debris cleanup",
+      "sha256": "f41c65d97d485c7a1f28f849f2898c9b77e0fb162213001f38c6729af257e79b",
+      "nativeSha256": "088b159e8fc20b7e6f3de137bbaeee44fde62f6c98014441ed7e86fdb01112be",
+      "frontalPhaseReference": {
+        "front_l": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Axe-full/clip.json",
+          "clipSha256": "4a60d0b01b9b3ce01416ee60dbb03024d86963ed612cc5881fd3559e154854c4",
+          "frame": 11,
+          "phase": "return-to-guard",
+          "durationMs": 100
+        },
+        "front_r": {
+          "clip": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_r-Axe-full/clip.json",
+          "clipSha256": "dcad2111605e68d4d3b99be2731b8e4e59d99c165a6ba03e89588a88d610decb",
+          "frame": 11,
+          "phase": "return-to-guard",
+          "durationMs": 100
+        }
+      }
+    }
+  ],
+  "master": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/source/composite.aseprite",
+  "masterSha256": "a4cb661ca0130432fc4eecf9308e366be0c84b646ebb38db8f9e7eee67cf2ee3",
+  "nativeMaster": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/source/native.aseprite",
+  "nativeMasterSha256": "d7db9f28677a3301c8876f8432d7e6e0f4dc4a4f5ca0c0a4f876870862f08066",
+  "strip": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native-strip.png",
+  "stripSha256": "9581fac17ac66bf49fe132b0f145964cd55ef7d32ae257f0937aa6c3052e4c9c",
+  "nativeStrip": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/native-strip.png",
+  "nativeStripSha256": "9581fac17ac66bf49fe132b0f145964cd55ef7d32ae257f0937aa6c3052e4c9c",
+  "compositeStrip": "characters/orc-v1/source/combat-recovery-v7/rear-alt/back_l-axe/composite-strip.png",
+  "compositeStripSha256": "7f786465930db599c1048c78122044bafbefcdce1ddb7e6fcd39ab472e317e21",
+  "bookendPolicy": {
+    "sourceAttackFrame": 1,
+    "idleBodies00And11Excluded": true,
+    "lastToFirstBodyMismatchPixels": 0,
+    "shoulderAtEntryAndExitUnchanged": true,
+    "diagnostic": "experiments/main-orc-combat-recovery-v7/rear-alt/full-cycle/bookend-flash-audit.json"
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "contract": "rear-axe-full-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T17:40:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "rear-grip-flash/full-back-r-axe",
+    "clip": "back_r/Axe",
+    "frameCount": 12,
+    "totalDurationMs": 1100,
+    "visibleInterval": [2, 8],
+    "author": "7db0e7b6-ab88-49e9-9362-a19121c8ebf5 (DEV ESPECIALISTA PEGADA)",
+    "description": "Full 12-frame rear axe grip cycle propagation on top of accepted body clip full-back-r-axe"
+  },
+  "verdict": "READY_FOR_MATRIX_REVIEW",
+  "sourceVerification": {
+    "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe/clip.json",
+    "clipJsonSha256": "66f4b0e1e6ec60dafc493620e9beb68e5fbb42791ccd53be671a52f9e73f8c9e",
+    "compositeStripSha256": "836a6f2db1038d47ce4af57c98760a4801b6f11e5bf870e6396686cdd806086a",
+    "nativeStripSha256": "c18602344a993ad4cbb50a0c8853ac80d06943f3ca7d17ef2b34b8f5e9207abe",
+    "nativeCompositeStripSha256": "d1058d5be7b4513a695b1bc5abf1ed6ca57b90515a656f335e9e531495ba7fca"
+  },
+  "contracts": {
+    "contract1_bodyZeroRgbaDelta": {
+      "status": "PASS",
+      "details": "All 12 frames in 256x256 are 100% byte-identical to body-specialist; all 12 frames in native 128x128 have exactly 0 RGBA pixel delta."
+    },
+    "contract2_f04_f07_byteIdentity": {
+      "status": "PASS",
+      "details": "F04 and F07 composite-256, composite-native-128, native body-128, and all four individual layers (weaponBack, body, weaponFront, handFront) are 100% byte-identical to the keys approved in rear-axe-grip-keys-result.json."
+    },
+    "contract3_visibleIntervalAndBookends": {
+      "status": "PASS",
+      "details": "visibleInterval is strictly [2, 8]. Bookends F00, F01, F09, F10, F11 have completely transparent weaponBack, weaponFront, and handFront layers (0 opaque pixels), and composite PNGs are 100% byte-identical to the unarmed body."
+    },
+    "contract4_trajectoryAndGroundContact": {
+      "status": "PASS",
+      "details": "Trajectory angles strictly follow [null, null, 305, 318, 330, 15, 75, 120, 105, null, null, null] degrees. F07 axe blade touches groundY=190 (native 126) at x=177, matching planted feet at y=190. F08 rests at y=188 without penetrating underground."
+    },
+    "contract5_mastersVerification": {
+      "status": "PASS",
+      "details": "Four canonical Aseprite masters verified on disk with exact matching SHA-256 hashes and 12-frame durations: composite.aseprite (3ca86a16ad1bb0e2...), body256.aseprite (e4aa361c8f905944...), native128.aseprite (f789d6b90d520ba1...), hand256.aseprite (a38a90db2ac6d66b...)."
+    },
+    "contract6_native128CropDiagnosis": {
+      "status": "PASS",
+      "details": "The upper clipping of the axe head in F04 composite-native-128 is an artifact of the central [-64, -64] crop window for 128x128 preview. The canonical 256x256 composite canvas (standard for combat animations) retains the complete axe with zero clipping."
+    }
+  },
+  "frameByFrameAudit": [
+    {
+      "frame": 0,
+      "durationMs": 70,
+      "phase": "guard",
+      "weaponVisible": false,
+      "grip": null,
+      "angleDeg": null,
+      "compositeSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "status": "PASS_CLEAN_GUARD"
+    },
+    {
+      "frame": 1,
+      "durationMs": 80,
+      "phase": "load-begin",
+      "weaponVisible": false,
+      "grip": null,
+      "angleDeg": null,
+      "compositeSha256": "f18a4c458721af83e2db637c5ef08ebae42f1b2f16b27eedc2be12fdf693cc94",
+      "status": "PASS_CLEAN_WINDUP_START"
+    },
+    {
+      "frame": 2,
+      "durationMs": 90,
+      "phase": "elbow-hoist",
+      "weaponVisible": true,
+      "grip": [158, 71],
+      "angleDeg": 305,
+      "gloveWrap": "3 rows genuine glove pixels (y=69..71) + 2 micro-retouches",
+      "compositeSha256": "8750320163c9c5ba440803bfce1dca5967c31c7dd7c834f2d0180e294c14867b",
+      "status": "PASS_HOIST_PREPARATION"
+    },
+    {
+      "frame": 3,
+      "durationMs": 100,
+      "phase": "validated-hoist",
+      "weaponVisible": true,
+      "grip": [147, 72],
+      "angleDeg": 318,
+      "gloveWrap": "10 rows genuine glove pixels (y=68..77) + 5 retouches",
+      "compositeSha256": "4b6a0efe08c9e0b6f932cb7776d50080c633b21ab656c0efd2d89ae57ace6dbb",
+      "status": "PASS_ASCENDING_HOIST"
+    },
+    {
+      "frame": 4,
+      "durationMs": 110,
+      "phase": "validated-apex",
+      "weaponVisible": true,
+      "grip": [139, 72],
+      "angleDeg": 330,
+      "gloveWrap": "12 rows genuine glove pixels (y=67..78) + 6 retouches",
+      "compositeSha256": "27cab6a671d6edd68113eee1e0b9f70872e2e563466df66ad5bed7367c065a95",
+      "status": "PASS_EXACT_ACCEPTED_KEY"
+    },
+    {
+      "frame": 5,
+      "durationMs": 50,
+      "phase": "drop-initiation",
+      "weaponVisible": true,
+      "grip": [147, 81],
+      "angleDeg": 15,
+      "gloveWrap": "12 rows genuine glove pixels (y=76..87) + 5 retouches",
+      "compositeSha256": "69bff313ab55c3665cfa49c7dbc270126ee4498f5d01484e82c072053548f921",
+      "status": "PASS_FAST_DESCENT_TRIGGER"
+    },
+    {
+      "frame": 6,
+      "durationMs": 60,
+      "phase": "forward-down-cleave",
+      "weaponVisible": true,
+      "grip": [172, 130],
+      "angleDeg": 75,
+      "gloveWrap": "10 rows genuine glove pixels (y=127..136) + 5 retouches",
+      "compositeSha256": "2d9f6e9b0e8d09f3dec448ce1525b83810b002b54baea764e46c5dbef5267d42",
+      "status": "PASS_CLEAVE_DRIVE"
+    },
+    {
+      "frame": 7,
+      "durationMs": 110,
+      "phase": "validated-impact",
+      "weaponVisible": true,
+      "grip": [157, 146],
+      "angleDeg": 120,
+      "gloveWrap": "8 rows genuine glove pixels (y=142..149) + 6 retouches",
+      "compositeSha256": "b9b17570db0d8759edf863ca7e48b14f289bc9ae0460bdf6e2235e4ee3d34b9f",
+      "status": "PASS_EXACT_ACCEPTED_KEY"
+    },
+    {
+      "frame": 8,
+      "durationMs": 100,
+      "phase": "recover-low",
+      "weaponVisible": true,
+      "grip": [160, 150],
+      "angleDeg": 105,
+      "gloveWrap": "10 rows genuine glove pixels (y=146..156) + 5 retouches",
+      "compositeSha256": "1bd82560358fbaee36dd2beba0f773da4a80a00efd0ce2aaa5c7ac24b1fbfa3e",
+      "status": "PASS_FOLLOWTHROUGH_GROUND_REST"
+    },
+    {
+      "frame": 9,
+      "durationMs": 100,
+      "phase": "recover-pelvis",
+      "weaponVisible": false,
+      "grip": null,
+      "angleDeg": null,
+      "compositeSha256": "fbbe93e33fd174f015d48aaa662fb93b7f9ce3d02d0a816c57dd1dba85ea5039",
+      "status": "PASS_CLEAN_RECOVERY"
+    },
+    {
+      "frame": 10,
+      "durationMs": 100,
+      "phase": "recover-guard",
+      "weaponVisible": false,
+      "grip": null,
+      "angleDeg": null,
+      "compositeSha256": "cb92432ed305d238775d5e027746c86b5c446b7b1457fa8a50cc0569bb8245db",
+      "status": "PASS_CLEAN_RECOVERY"
+    },
+    {
+      "frame": 11,
+      "durationMs": 130,
+      "phase": "guard-return",
+      "weaponVisible": false,
+      "grip": null,
+      "angleDeg": null,
+      "compositeSha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "status": "PASS_LOOP_RETURN"
+    }
+  ],
+  "artisticObservations": {
+    "gripQuality": "In all 7 visible frames (F02..F08), the right glove genuine cluster encloses the handle haft naturally. Palm-wrist-forearm chain is continuous with zero floating stamps. Inactive left hand remains low near hip with zero weapon attachment.",
+    "arcContinuity": "The trajectory progresses logically: back-hoist preparation (305°) -> lift (318°) -> overhead apex (330°) -> rapid forward snap (15°, 50ms) -> mid cleave drive (75°, 60ms) -> ground impact (120°, 110ms) -> low settle (105°, 100ms). Weapon mass and silhouette remain stable without teleportation or loss of volume.",
+    "neutralRecovery": "Frames F09..F11 show seamless uncoiling of the body with zero leftover equipment artifacts or stray pixels.",
+    "tacticalScaleReadability": "Silhouette and weapon impact read clearly at both 128px native and 64px tactical scale."
+  },
+  "limitations": [
+    "EVALUATION_IS_STATIC_STILLS_AND_STRIPS: Multimodal inspection conducted frame by frame and across composite strips; continuous 1x real-time observation in live game engine was not directly observed.",
+    "LIMITED_SCOPE: Validates only the full cycle of back_r/Axe. Does not approve the other 3 rear body cycles (currently in repair), other 3 rear grips, 28-cell matrix, or Unity integration.",
+    "CREATOR_APPROVAL_PENDING: Status remains PENDING_CREATOR."
+  ],
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "llm_inference_cost": "not_informed"
+  }
+}

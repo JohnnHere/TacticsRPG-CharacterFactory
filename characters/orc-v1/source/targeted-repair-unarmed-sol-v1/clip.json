@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "character": "orc-v1",
+  "action": "Unarmed",
+  "direction": "back_l",
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "frameCount": 5,
+  "durationsMs": [
+    80,
+    110,
+    60,
+    90,
+    110
+  ],
+  "totalDurationMs": 450,
+  "loop": false,
+  "oneShot": true,
+  "weaponVisible": false,
+  "master": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/source/unarmed-back_l-f03-retraction-composite.aseprite",
+  "masterSha256": "1cd3c901cc682fd574f5e51788d9a3f9d950f45d8baf87a884bd7988bf297393",
+  "nativeMaster": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/source/unarmed-back_l-f03-retraction-native.aseprite",
+  "nativeMasterSha256": "77cfe1e7194082108cc6e22943590fdb20a39508b96c46f56d89f1c5635ca324",
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/composite/00.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+      "nativePng": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/native/00.png",
+      "nativeSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+      "durationMs": 80,
+      "phase": "guard-prep",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/composite/01.png",
+      "sha256": "8d7a2cadf248857346ae6adc1a9f8494ec8432a56778451d471de980151c749b",
+      "nativePng": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/native/01.png",
+      "nativeSha256": "88ea94cff0d73473ead27dd1046245f21aae70608e54917901ba7ab84cec557b",
+      "durationMs": 110,
+      "phase": "shoulder-coil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/composite/02.png",
+      "sha256": "f5871748c9fb099f22d26f925d295073179de1097245d911f8decae1f1681e4f",
+      "nativePng": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/native/02.png",
+      "nativeSha256": "4c32819e1ab2c997193eca3aeb8b3b44ebb05066ea2ca49f3c8199ef081cd1fa",
+      "durationMs": 60,
+      "phase": "heavy-gauntlet-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/composite/03.png",
+      "sha256": "76a75eb4eb9793c32d8179ac3477b7bddeccd146c298f7287401564532477ac1",
+      "nativePng": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/native/03.png",
+      "nativeSha256": "31793796a3cddde47fba5f5f1803ecec9135b384b67e471e75653463c13669bc",
+      "durationMs": 90,
+      "phase": "candidate-visible-fist-retraction",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/composite/04.png",
+      "sha256": "6477fd002f3c8fe9b65e1b0f75ce526aaebeaa48a799ff3ba5c57a20e25299af",
+      "nativePng": "characters/orc-v1/source/targeted-repair-unarmed-sol-v1/native/04.png",
+      "nativeSha256": "a30aa5ec2606717c9e81ee21a80fc90a37df5ffc16a25e31abb01c6500180045",
+      "durationMs": 110,
+      "phase": "recovery-settle",
+      "weaponVisible": false
+    }
+  ],
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "integrationStatus": "ISOLATED_REPRESENTATIVE_POSE_CHECKPOINT",
+  "parentClip": "characters/orc-v1/source/rear-recovery-v2/back_l/Unarmed/clip.json",
+  "provenance": {
+    "authoring": "programmatic local Aseprite Lua, same-view same-individual same-clip F02 gauntlet donor + local elbow clusters",
+    "script": "experiments/main-orc-targeted-repair-v1/artist-unarmed-sol/author_f03.lua",
+    "scriptSha256": "e4f508a75bd952d046190ea047374231074e0ea0296c9dffc22940d4f5035b3c",
+    "wrapper": "experiments/main-orc-targeted-repair-v1/artist-unarmed-sol/aseprite.mjs",
+    "wrapperSha256": "9f479fa21387234b88857107bc09bd0a59b35fc47602b5dbe62cffdb5e47017e",
+    "nativeDonorTranslation": [
+      24,
+      25
+    ],
+    "sourceInventory": "experiments/main-orc-targeted-repair-v1/artist-unarmed-sol/before-inventory.json",
+    "freshSourceProof": "experiments/main-orc-targeted-repair-v1/artist-unarmed-sol/verification.json",
+    "paidGenerationCalls": 0,
+    "canonicalMutation": false,
+    "claim": "Candidate retraction interpretation, not a proven repair of deleted pixels"
+  }
+}

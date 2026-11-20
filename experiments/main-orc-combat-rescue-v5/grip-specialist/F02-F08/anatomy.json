@@ -1,0 +1,18 @@
+{
+  "method": "Each unarmed source body opened at4x/8x, with independent24x palm grid. Coordinates are visible landmarks, not recovered skeletons or inherited sockets.",
+  "coordinateSpace": "Composite256, native128 subtracts64 from each axis",
+  "F02": {
+    "sourceFrameIndex":2,
+    "landmarks":{"shoulder":[109,107],"elbow":[98,117],"forearm":[97,122],"distalCuff":[99,127],"wrist":[100,129],"palm":[103,130],"knuckles":[105,132],"thumbRegion":[103,125],"inactiveHand":[160,145]},
+    "observation":"Active anatomical right arm is on image-left: pauldron, lowered elbow, steel bracer, then brown closed glove at x99..106/y124..134. The fist on image-right is inactive.",
+    "transform":{"itemGrip":[48,66],"bodyGrip":[103,130],"angleDeg":320,"scale":1,"flipX":false},
+    "reason":"Independent low grip, blade lifted up-left into open space outside the active forearm. Pommel exits down-right from the glove, away from the inactive hand."
+  },
+  "F08": {
+    "sourceFrameIndex":8,
+    "landmarks":{"shoulder":[118,107],"elbow":[131,128],"forearm":[146,142],"distalCuff":[154,143],"wrist":[156,145],"palm":[159,148],"knuckles":[162,148],"thumbRegion":[158,146],"inactiveArmLeatherAbove":[155,136]},
+    "observation":"Active arm crosses down over the abdomen; broad steel forearm ends at the low brown glove x156..164/y146..151. Upper vertical leather at x154..158/y132..138 belongs to the overlapping inactive arm, not the active palm.",
+    "transform":{"itemGrip":[48,66],"bodyGrip":[159,148],"angleDeg":128,"scale":1,"flipX":false},
+    "reason":"Follow-through hilt follows the low glove; blade exits down-right, guard beyond the fingers and disk pommel at the upper cuff edge. Full256 equipment canvas is preserved; do not shrink weapon to fit body128."
+  }
+}

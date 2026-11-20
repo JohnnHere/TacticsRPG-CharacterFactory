@@ -1,0 +1,129 @@
+{
+  "createdAtUtc": "2026-10-27T05:07:39.161Z",
+  "status": "PASS",
+  "scope": "Post-QA local repair integration; technical evidence is not artistic approval",
+  "creatorApproval": "PENDING_CREATOR",
+  "results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.mjs",
+        "chunk_id": "2bb491",
+        "wall_time_seconds": 0.7965515,
+        "exit_code": 0,
+        "original_token_count": 7553,
+        "output": "Warning: truncated output (original token count: 7553)\nTotal output lines: 395\n\n=== Candidate 28 Manifest & Clip Contract Validation ===\nMode: FINAL (Full 12/16 Production Delivery Verification)\nManifest Path: characters/orc-v1/source/rear-recovery-v2/candidate28manifest.json\n\n--- 1. Manifest Header & Contract Structure ---\n  [PASS] schemaVersion is 1 (actual=1)\n  [PASS] manifestId matches expected (actual=orc-v1.rear-recovery-v2.candidate28)\n  [PASS] characterId is orc-v1 (actual=orc-v1)\n  [PASS] totalClips declared as 28 (actual=28)\n  [PASS] manifest.cells array contains exactly 28 entries (actual=28)\n  [PASS] activeCandidatesCount header matches cells (12 === 12)\n  [PASS] inRevisionCount header matches cells (0 === 0)\n  [PASS] unchangedAliasesCount header matches cells (16 === 16)\n  [PASS] inProductionCount header matches cells (0 === 0)\n  [PASS] Sum of status counts equals 28 (actual=28)\n\n--- 2. 4x7 Direction x Action Grid Completeness ---\n  [PASS] All 28 (4 directions x 7 actions) unique grid cells present without omission or duplicate\n\n--- 3. Scoped Target Partition (12 Affected / 16 Baseline Aliases) ---\n  [PASS] Exactly 12 cells marked as affected (actual=12)\n  [PASS] Exactly 16 cells marked as unchanged baseline aliases (actual=16)\n  [PASS] Affected cell front_r/Unarmed is an authorized affected target\n  [PASS] Affected cell front_r/Defeat is an authorized affected target\n  [PASS] Affected cell front_l/Unarmed is an authorized affected target\n  [PASS] Affected cell front_l/Defeat is an authorized affected target\n  [PASS] Affected cell back_r/Walk is an authorized affected target\n  [PASS] Affected cell back_r/Unarmed is an authorized affected target\n  [PASS] Affected cell back_r/Sword is an authorized affected target\n  [PASS] Affected cell back_r/Axe is an authorized affected target\n  [PASS] Affected cell back_l/Walk is an authorized affect…6653 tokens truncated…] back_l/Axe: durationsMs is a non-empty array (count=8)\n  [PASS] back_l/Axe: frames array count (8) matches durations count (8)\n  [PASS] back_l/Axe: frameCount (8) matches frames.length (8)\n  [PASS] back_l/Axe: artisticApproval is strictly PENDING_CREATOR (actual=PENDING_CREATOR)\n  [PASS] back_l/Axe: Composite 256 master path declared in clip.json\n  [PASS] back_l/Axe: Composite 256 master exists (characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite)\n  [PASS] back_l/Axe: Composite 256 master SHA-256 matches declared digest\n  [PASS] back_l/Axe: Native 128 master path declared in clip.json\n  [PASS] back_l/Axe: Native 128 master exists (characters/orc-v1/source/aseprite/rear-recovery-v2/native/axe-body-representative-v1-back_l.aseprite)\n  [PASS] back_l/Axe: Native 128 master SHA-256 matches declared digest\n    [ARMED] Validating armed combat profile for back_l/Axe\n  [PASS] back_l/Axe: Armed clip has weaponVisible=true\n  [PASS] back_l/Axe: visibleInterval is defined [start, end] (actual=[1,6])\n  [PASS] back_l/Axe: Per-frame weaponVisible matches visibleInterval [1, 6]\n  [PASS] back_l/Axe: clip.weapon descriptor present\n  [PASS] back_l/Axe: Weapon source PNG exists (assets/weapons/militia-axe/sprites/rescue-v3/militia-axe.png)\n  [PASS] back_l/Axe: Weapon source PNG SHA-256 matches digest\n  [PASS] back_l/Axe: layerOrder has exactly 4 layers: [weaponBack, body, weaponFront, handFront]\n  [PASS] back_l/Axe: All frame composite PNGs, native PNGs, and separated 4-layer PNGs exist and match digests\n\n--- 7. Emitting Validation Report Artifact ---\n  Report written successfully to: experiments/main-orc-rear-recovery-v2/manifest-validation-report.json\n\n=== Validation Summary: 338 passed, 0 failed ===\nValidation PASSED with 0 errors.\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node experiments/main-orc-rear-recovery-v2/verify_new_representatives.mjs --check",
+        "chunk_id": "51f0a5",
+        "wall_time_seconds": 1.4467751,
+        "exit_code": 0,
+        "original_token_count": 173,
+        "output": "{\n  \"mode\": \"READ_ONLY_CHECK\",\n  \"status\": \"PASS\",\n  \"failedChecks\": [],\n  \"clips\": [\n    {\n      \"direction\": \"back_r\",\n      \"action\": \"Sword\",\n      \"gifs\": {\n        \"1x\": 730,\n        \"075x\": 980,\n        \"05x\": 1460\n      }\n    },\n    {\n      \"direction\": \"back_l\",\n      \"action\": \"Sword\",\n      \"gifs\": {\n        \"1x\": 730,\n        \"075x\": 980,\n        \"05x\": 1460\n      }\n    },\n    {\n      \"direction\": \"back_r\",\n      \"action\": \"Axe\",\n      \"gifs\": {\n        \"1x\": 730,\n        \"075x\": 980,\n        \"05x\": 1460\n      }\n    },\n    {\n      \"direction\": \"back_l\",\n      \"action\": \"Axe\",\n      \"gifs\": {\n        \"1x\": 730,\n        \"075x\": 980,\n        \"05x\": 1460\n      }\n    }\n  ]\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node experiments/main-orc-rear-recovery-v2/root-check-qa-regressions.mjs",
+        "chunk_id": "c351aa",
+        "wall_time_seconds": 2.1741352,
+        "exit_code": 0,
+        "original_token_count": 39,
+        "output": "{\n  \"referenceFreeze\": \"6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843\",\n  \"checkedFiles\": 1911,\n  \"status\": \"PASS\",\n  \"changed\": []\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "& 'C:/Users/João Orlando/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' test/test_rear_recovery_review.py",
+        "chunk_id": "7c3592",
+        "wall_time_seconds": 1.3964158,
+        "exit_code": 0,
+        "original_token_count": 364,
+        "output": "=== AUTOMATED REVIEW VALIDATION (manifest-driven) ===\r\nLoaded index.html: 123562 bytes\r\nTotal cells validated: 28 (Expected 28)\r\nActive candidates (12): ['back_l/Axe', 'back_l/Sword', 'back_l/Unarmed', 'back_l/Walk', 'back_r/Axe', 'back_r/Sword', 'back_r/Unarmed', 'back_r/Walk', 'front_l/Defeat', 'front_l/Unarmed', 'front_r/Defeat', 'front_r/Unarmed']\r\nUnchanged aliases (16): expected from manifest = 16\r\nIn revision (0): []\r\nIn production (0): expected from manifest = 0\r\nAffected cells (manifest): 12; non-ready/active rendered: 12\r\nVerifying manifest-derived summary cards and package status...\r\n  OK: derived pills (active=12, alias=16, revision=0, production=0)\r\n  OK: package status VISUAL_REVIEW_REQUIRED matches manifest\r\n  OK: before/after coverage for all 12 affected cells\r\n  OK: all review strips preserve exact composite pixels and equal canvas scale\r\nChecking 31 static <img> tags in HTML...\r\nChecking 107 static <a href> links in HTML...\r\nPASSED: Zero 404s! All static images, strips, masters, and links resolve.\r\nVerifying user controls in HTML...\r\n  OK: Speeds 1x, 0.75x, 0.5x present\r\n  OK: Practical scale (128px) present\r\n  OK: Defeat terminal hold present\r\n  OK: Separate Sword and Axe options present\r\n  OK: PENDING_CREATOR + VISUAL_REVIEW_REQUIRED + technical facts (catalogo derived)\r\n  OK: Pending cell alert mechanism present\r\n\r\nALL AUTOMATED REVIEW VALIDATIONS PASSED SUCCESSFULLY (28/28 cells, 0 404s, manifest-derived)!\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node test/test_review_js_runtime.mjs",
+        "chunk_id": "af61d2",
+        "wall_time_seconds": 0.7732619,
+        "exit_code": 0,
+        "original_token_count": 347,
+        "output": "=== TESTING ASYNC RENDER LOGIC FROM INDEX.HTML ===\n  OK: element #main-canvas successfully rendered into\n  OK: element #main-info successfully rendered into\n  OK: element #main-grip successfully rendered into\n  OK: element #pending-alert successfully rendered into\n  OK: element #frame-gallery successfully rendered into\nInitial alert HTML: <strong>✨ CANDIDATO ATIVO v2 [back_r/Walk · ACTIVE_CANDIDATE]:</strong> Method-02 temporal 8-frame cycle (160ms/frame, 1280ms total) with alternating support/swing phase and ground registration <em>(Aprovação artística do criador: PENDING_CREATOR)</em>\nAfter selecting Sword (ACTIVE_CANDIDATE on back_r):\n  Alert text: <strong>✨ CANDIDATO ATIVO v2 [back_r/Sword · ACTIVE_CANDIDATE]:</strong> Corrected 8-pose representative cycle; Root passed for internal expansion after actual composites, grip closeups, and normal-speed playback. Creator approval and integrated Argon QA remain pending. <em>(Aprovação artística do criador: PENDING_CREATOR)</em>\n  Alert class: pending-alert active\nAfter selecting Walk (ACTIVE_CANDIDATE on back_r):\nAfter selecting Defeat:\n  Main info text: <strong>[back_r] Walk</strong> · Quadro 1/8 · 160 ms · stride-step-00 · <span class=\"badge badge-active\">ACTIVE_CANDIDATE</span>\nStep-next executed successfully!\nStep-prev executed successfully!\n\nASYNC RENDER AND EVENT HANDLER TESTS PASSED COMPLETELY!\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node test/browser-check-rear-recovery-review.mjs",
+        "chunk_id": "3bf483",
+        "wall_time_seconds": 8.8200135,
+        "exit_code": 0,
+        "original_token_count": 406,
+        "output": "  OK: viewer ready in real Chromium (all preloaded frame images resolved)\n  OK: all 28 cells selectable, main canvas paints real pixels (painted 28/28)\n  OK: main-info badge shows manifest status literal for all 28 cells (28/28)\n  OK: all 36 <img> elements decoded (naturalWidth > 0)\n  OK: zero failed / 4xx+ requests while browsing\n  OK: speed 1× advances playback (frame 7/8 after 1000ms)\n  OK: speed 0.5× slows playback ≈half (frame 4/8 after 1000ms)\n  OK: practical game scale applied (canvas 128px) — style.width=128px\n  OK: step-next advances one frame (→ 2)\n  OK: step-prev returns one frame (→ 1)\n  OK: Defeat reaches terminal hold at last frame (5/5)\n  OK: Defeat holds terminal frame without auto-restart\n  OK: back_r/Sword alert reflects its actual manifest status\n  OK: back_r/Idle (unchanged alias) shows no pending alert\n  OK: back_r/Walk shows CANDIDATO ATIVO with PENDING_CREATOR\n  OK: before/after article covers all 12 affected cells (found 12) — Evidências Visuais Antes (Baseline v1) vs Depois (Recuperação Traseira v2) — 12 células afetadas\n  OK: every before/after card shows baseline + candidate strips, both decoded\n  OK: catalogo packageStatus/artisticStatus follows actual unresolved cells\n  OK: catalogo counts derived from manifest (active/alias/revision/production) — active=12/12 alias=16/16 revision=0/0 production=0/0\n  OK: catalogo knownBadCells matches revision + production cells\n\nBROWSER CHECK PASSED (20/20 checks) in 7.6s\nScreenshots: C:\\Users\\João Orlando\\Documents\\Projetos Unity\\TacticsRPG-CharacterFactory\\experiments\\main-orc-rear-recovery-v2\\browser-checks\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node --test experiments/main-orc-rear-recovery-v2/validate_candidate_manifest.test.mjs test/main-orc-complete.test.mjs test/action-contract.test.mjs test/factory.test.mjs test/preview-entry.test.mjs",
+        "chunk_id": "22919a",
+        "wall_time_seconds": 9.750259400000001,
+        "exit_code": 0,
+        "original_token_count": 700,
+        "output": "▶ Candidate 28 Manifest Validator Contract Suite\n  ✔ validator exists and is executable via node (1.2182ms)\n  ✔ canonical manifest: dynamic validation with --allow-incomplete matches manifest header and exits 0 (284.6827ms)\n  ✔ canonical manifest: default FINAL mode dynamically verifies completion (exits 0 if inRevisionCount === 0, else 1) (264.2414ms)\n  ✔ negative fixture: corrupted frame SHA-256 triggers hard integrity error even with --allow-incomplete (318.3407ms)\n  ✔ negative fixture: missing frame PNG triggers hard integrity error even with --allow-incomplete (237.138ms)\n  ✔ negative fixture: corrupted 4-layer SHA-256 in armed clip triggers hard integrity error even with --allow-incomplete (178.346ms)\n  ✔ negative fixture: missing composite master triggers hard failure even with --allow-incomplete (204.167ms)\n  ✔ negative fixture: corrupted masterSha256 triggers hard failure even with --allow-incomplete (171.4918ms)\n  ✔ negative fixture: missing nativeMaster property triggers hard failure even with --allow-incomplete (178.9451ms)\n  ✔ simulated 12/0 complete delivery fixture: passes default FINAL mode with exit 0 and complete=true (162.2ms)\n  ✔ armed candidate (back_r/Sword) is verified for 4 layers, visibleInterval, and valid reviewStatus taxonomy (1.6324ms)\n  ✔ all rear weapon representative schemas (Sword R/L, Axe R/L) are verified for 4-layer composition and visibleInterval (3.0114ms)\n  ✔ non-armed candidates (Unarmed/Walk/Defeat) enforce attack-only-v1 policy (0.7968ms)\n✔ Candidate 28 Manifest Validator Contract Suite (2011.8224ms)\n✔ basic unarmed never uses a Job cast or bow gesture (1.4387ms)\n✔ equipped basic action follows actual weapon; unknown or omitted equipment fails (0.7395ms)\n✔ ability requires its explicit visual profile and cannot reuse basic attack implicitly (0.335ms)\n✔ confinamento rejeita traversal, IDs perigosos e junction/symlink externo (11.0793ms)\n✔ source-over preserva pixel grid, respeita ordem/alfa e rejeita canvas diferente (7.0043ms)\n✔ medicao considera alfa, fundo transparente e linha do chao (3.928ms)\n✔ PNG corrompido e limites de dimensao sao rejeitados antes de uso (5.8768ms)\n✔ catalogos e referencias congeladas preservam baseline 28/63 (1009.986ms)\n✔ fluxo CLI protege gates, registra roupas, exporta baseline e invalida revisao apos mudanca (7995.2091ms)\n✔ Main Orc complete animation library (4 directions x 7 actions) and Unity-ready staging package (433.1586ms)\n✔ Artistic Quality Gates v1, 10 production lessons, and measured artistic recovery gates (414.9565ms)\n✔ entry preview builds without the historical deliveries directory (2615.5515ms)\nℹ tests 26\nℹ suites 0\nℹ pass 26\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 9284.1141\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node experiments/main-orc-rear-recovery-v2/verify_front_f02_and_protected_frames.mjs",
+        "chunk_id": "b10053",
+        "wall_time_seconds": 0.6519904,
+        "exit_code": 0,
+        "original_token_count": 1411,
+        "output": "Warning: truncated output (original token count: 1411)\nTotal output lines: 135\n\n{\n  \"status\": \"PASS\",\n  \"mode\": \"READ_ONLY_CHECK\",\n  \"checks\": {\n    \"views\": 2,\n    \"frames\": 10,\n    \"baselineFramesPreserved\": 8,\n    \"localizedF02FramesChanged\": 2,\n    \"originalDurationMs\": 450,\n    \"native128ExactCenterCrop\": true\n  },\n  \"results\": [\n    {\n      \"direction\": \"front_r\",\n      \"clipJson\": \"characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/clip.json\",\n      \"frameCount\": 5,\n      \"durationsMs\": [\n        80,\n        110,\n        50,\n        90,\n        120\n      ],\n      \"totalDurationMs\": 450,\n      \"frames\": [\n        {\n          \"index\": 0,\n          \"durationMs\": 80,\n          \"composite\": \"characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/00.png\",\n          \"sha256\": \"81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22\",\n          \"native\": \"characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/native/00.png\",\n          \"nativeSha256\": \"2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c\",\n          \"baselinePreserved\": true\n        },\n        {\n          \"index\": 1,\n          \"durationMs\": 110,\n          \"composite\": \"characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/01.png\",\n          \"sha256\": \"19de29c7ef91d3a98831f666cf2bd76ecc3604ef385af4b6a3d94f772984c3e6\",\n          \"native\": \"characters/orc-v1/source/rear-recovery-v2/front_r/Unarmed/native/01.png\",\n          \"nativeSha256\": \"bf735d58c77942fb1…711 tokens truncated…      \"composite\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/02.png\",\n          \"sha256\": \"b11843a297e6cf3703d31b29efa5cc39f7070c2eac4c81b58e4dd311804d7132\",\n          \"native\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native/02.png\",\n          \"nativeSha256\": \"53edcaa4a36206224a5479baafa6a18bbab56c67d324160e78973f07e420f2de\",\n          \"baselinePreserved\": false\n        },\n        {\n          \"index\": 3,\n          \"durationMs\": 90,\n          \"composite\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/03.png\",\n          \"sha256\": \"c997233bb4d81865730e12fc3d0c55365abd44818ce79d78d0c62dec216b1da2\",\n          \"native\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native/03.png\",\n          \"nativeSha256\": \"ee7a57e4d7b78dc2a214c95b91c74c69873ba17b4d0a254b7019ca557537cc3d\",\n          \"baselinePreserved\": true\n        },\n        {\n          \"index\": 4,\n          \"durationMs\": 120,\n          \"composite\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/04.png\",\n          \"sha256\": \"0eaf38785ba8d9ea88a4265bda9b659a22f9da9dc1c1a517d6ddc55016693a95\",\n          \"native\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/native/04.png\",\n          \"nativeSha256\": \"5fdaec1af028989412fc4caa366567c83a823f0a00306d8e1707ee44187d11db\",\n          \"baselinePreserved\": true\n        }\n      ]\n    }\n  ],\n  \"failures\": []\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node experiments/main-orc-rear-recovery-v2/verify_four_early_clip_source_metadata.mjs",
+        "chunk_id": "a1d46a",
+        "wall_time_seconds": 0.8576237,
+        "exit_code": 0,
+        "original_token_count": 2245,
+        "output": "Warning: truncated output (original token count: 2245)\nTotal output lines: 221\n\n{\n  \"status\": \"PASS\",\n  \"mode\": \"READ_ONLY_CHECK\",\n  \"checks\": {\n    \"clips\": 4,\n    \"nativeFrames\": 20,\n    \"masterPathsAndHashes\": true,\n    \"nativeFilesSelfContained\": true,\n    \"nativeBytesEqualAsepriteExports\": true,\n    \"nativePixelsEqualCompositeCrops\": true,\n    \"rootDefeatPreservation\": true,\n    \"matrix12Active16Aliases\": true\n  },\n  \"statusCounts\": {\n    \"UNCHANGED_ALIAS\": 16,\n    \"ACTIVE_CANDIDATE\": 12\n  },\n  \"results\": [\n    {\n      \"cell\": \"back_r/Unarmed\",\n      \"clipPath\": \"characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/clip.json\",\n      \"masterSha256\": \"e9f18f84706f1ac542d98c4892e3ddcbd1c51b2b659c5d21b736045bef9f12bd\",\n      \"nativeMasterSha256\": \"82c8a587164e1c02795447a02ef0b575b9efdaca412b70f3dbe916fe5ff2d68d\",\n      \"frameCount\": 5,\n      \"totalDurationMs\": 450,\n      \"frames\": [\n        {\n          \"index\": 0,\n          \"durationMs\": 80,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/00.png\",\n          \"nativeSha256\": \"92e9874b0893400eabafd538e9d732d91e0eb0122648b6a8f7e85ffbdc9fa352\",\n          \"equalsAsepriteExport\": true,\n          \"equalsCompositeCenterCrop\": true\n        },\n        {\n          \"index\": 1,\n          \"durationMs\": 110,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/back_r/Unarmed/native/01.png\",\n          \"nativeSha256\": \"b31bf6e50d22619a110aeabbf0ff11b5c82c93afa2491fd4…1545 tokens truncated…ex\": 1,\n          \"durationMs\": 95,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native/01.png\",\n          \"nativeSha256\": \"49e070a4f3c72387446cef650172af0c7f1bc942939fd54b20c0a9eb16c1e0c4\",\n          \"equalsAsepriteExport\": true,\n          \"equalsCompositeCenterCrop\": true\n        },\n        {\n          \"index\": 2,\n          \"durationMs\": 115,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native/02.png\",\n          \"nativeSha256\": \"6da871915b9a47083770f2ece2800b1f966c43044ee8132c7ef2fa9dd9d0a5cb\",\n          \"equalsAsepriteExport\": true,\n          \"equalsCompositeCenterCrop\": true\n        },\n        {\n          \"index\": 3,\n          \"durationMs\": 130,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native/03.png\",\n          \"nativeSha256\": \"f1f7bf2ef6ae5452c86e4569c6155282697b31b4ce70a2404a71db3fed8c145c\",\n          \"equalsAsepriteExport\": true,\n          \"equalsCompositeCenterCrop\": true\n        },\n        {\n          \"index\": 4,\n          \"durationMs\": 290,\n          \"nativePng\": \"characters/orc-v1/source/rear-recovery-v2/front_l/Defeat/native/04.png\",\n          \"nativeSha256\": \"c5cefe64ab4905997b6e4b278bbf00c29ebf73f40c3052130391d498a053233d\",\n          \"equalsAsepriteExport\": true,\n          \"equalsCompositeCenterCrop\": true\n        }\n      ]\n    }\n  ],\n  \"failures\": []\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node src/cli.mjs doctor",
+        "chunk_id": "e653da",
+        "wall_time_seconds": 1.1267052,
+        "exit_code": 0,
+        "original_token_count": 184,
+        "output": "{\n  \"node\": \"v24.20.0\",\n  \"root\": \"C:\\\\Users\\\\João Orlando\\\\Documents\\\\Projetos Unity\\\\TacticsRPG-CharacterFactory\",\n  \"referenceErrors\": [],\n  \"cloudCalls\": \"none\",\n  \"generation\": \"Aseprite e o mestre. PixelLab pela extensao oficial e opcional e executa geracao em nuvem; este comando nao gera nem chama o servico.\",\n  \"editor\": {\n    \"status\": \"AVAILABLE\",\n    \"executable\": \"F:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Aseprite\\\\Aseprite.exe\",\n    \"version\": \"Aseprite 1.3.18.6-x64\",\n    \"mode\": \"batch\",\n    \"windowsHide\": true,\n    \"steamClient\": \"--noinapp\",\n    \"cloudCalls\": \"none\"\n  },\n  \"editorPolicy\": \"Aseprite e a ferramenta mestre de autoria. Comandos de metadados continuam locais; editor-check verifica disponibilidade.\"\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "cmd": "node src/cli.mjs editor-check",
+        "chunk_id": "aef2b3",
+        "wall_time_seconds": 0.8950713,
+        "exit_code": 0,
+        "original_token_count": 61,
+        "output": "{\n  \"status\": \"AVAILABLE\",\n  \"executable\": \"F:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Aseprite\\\\Aseprite.exe\",\n  \"version\": \"Aseprite 1.3.18.6-x64\",\n  \"mode\": \"batch\",\n  \"windowsHide\": true,\n  \"steamClient\": \"--noinapp\",\n  \"cloudCalls\": \"none\"\n}\n"
+      }
+    }
+  ]
+}

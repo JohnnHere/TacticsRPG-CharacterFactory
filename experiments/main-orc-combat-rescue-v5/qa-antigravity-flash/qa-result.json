@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T15:17:00Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "model": "Gemini 3.8 Flash (High) via Antigravity",
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false,
+    "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-antigravity-flash/"
+  },
+  "overallVerdict": "READY_FOR_NEXT_STAGE",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "runtimeImplemented": false,
+  "integrationAllowed": false,
+  "automaticPropagationAllowed": false,
+  "scope": {
+    "description": "Independent QA evaluation of 6 new delivered packages: 3 frontal grip cycles and 9 rear body keys (Orc V1)",
+    "deliveries": {
+      "bodySpecialist": {
+        "agentId": "d145b472-8f98-4d77-ab3b-00199c10ab9f",
+        "description": "9 rear body keys across 3 clips (back_r/Sword, back_l/Sword, back_l/Axe), 3 keys each, strictly unarmed body"
+      },
+      "gripSpecialist": {
+        "agentId": "438383d1-01dc-4b15-bf23-59161355cbb8",
+        "description": "3 complete frontal grip cycles (front_l/Sword, front_r/Axe, front_l/Axe), equipped with genuine tracked gloves"
+      }
+    }
+  },
+  "temporalPerception": {
+    "continuous1xVisuallyObserved": false,
+    "discreteFrameByFrameViewed": true,
+    "native128Observed": true,
+    "tactical64Observed": true,
+    "diagnostic8xZoomObserved": true,
+    "notes": "Direct visual inspection executed via multimodal image decoding on all native strips, composite strips, individual frames, and 8x diagnostic zoom tiles. Real-time continuous 1x motion in engine/browser was not observed in live playback; frame-by-frame and tactical static steps confirmed no blocking visual defects."
+  },
+  "packageVerdicts": {
+    "body-specialist/back_r-Sword-keys": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Three unarmed body structural keys (01-hoist, 02-apex, 03-impact)",
+      "direction": "back_r",
+      "category": "Sword",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/clip.json",
+        "sha256": "95b9804fc02261daf6ada633dc9758278d09e2b0fd0a3e38c868a6f37c48b81d"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/representative.json",
+        "sha256": "7c72785fc8f4605dfdf6f2ee51392da3ef564344a37f79763b9441e3f4ed522c"
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "haloCount": 0,
+        "layersOffClean": true,
+        "weaponsDrawnOnTorso": false
+      },
+      "anatomicalEvaluation": {
+        "dominantHand": "RIGHT (screen right in back_r view)",
+        "activeArmKinetics": "Authentic draw and diagonal lateral slash arc; shoulder, elbow, and wrist articulated cleanly across keys",
+        "inactiveArmAuthenticity": "Left arm acts as dynamic stabilizer, flexing naturally between poses without frozen copy-paste",
+        "impactHandSeparation": "Key 03 right glove (leather/brown) is distinctly defined against hip and tasset plate; no BODY-01 fusion defect",
+        "rearConstruction": "Clean occipital skull, neck collar, spine plate line, rear belts, no facial leaks"
+      },
+      "safeSuggestions": "In the intermediate authoring stage, ensure smooth downward diagonal trajectory interpolation of the right hand between apex (02) and follow-through (03) without abrupt angular snaps."
+    },
+    "body-specialist/back_l-Sword-keys": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Three unarmed body structural keys (01-hoist, 02-apex, 03-impact)",
+      "direction": "back_l",
+      "category": "Sword",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/clip.json",
+        "sha256": "39b2f8b36927d856c5515bf4ec032854954ebd4bfe79ea332ed165fb5fa0a41b"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/representative.json",
+        "sha256": "c43b1f38af22905a05505dcaaa726f063f40949d31f037cf02123e4e4de5af22"
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "haloCount": 0,
+        "layersOffClean": true,
+        "weaponsDrawnOnTorso": false
+      },
+      "anatomicalEvaluation": {
+        "dominantHand": "RIGHT (screen right in back_l view; character turned northwest with back turned to camera)",
+        "activeArmKinetics": "Right arm raises near collar/ear in hoist (01), extends downward into slash in apex (02), finishes at right hip in impact (03)",
+        "inactiveArmAuthenticity": "Left arm extends downward-forward as counterbalance, authentic spiked pauldron and gauntlet",
+        "rearConstruction": "Vertebral column ridge, neck protection, tassets, clean occipital skull"
+      },
+      "safeSuggestions": "Maintain forearm angle alignment when authoring intermediates to preserve clean blade arc across the northwest quadrant."
+    },
+    "body-specialist/back_l-Axe-keys": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Three unarmed body structural keys (01-hoist, 02-apex, 03-impact)",
+      "direction": "back_l",
+      "category": "Axe",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/clip.json",
+        "sha256": "82362afc408be95ba51ad49da6d113cdd012ef7ce677463a972bc1f1a97c4c45"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/representative.json",
+        "sha256": "da23e428b6d4eadd6d13bffc5c7c43604679a9efda512685457631d9879fe485"
+      },
+      "technicalChecks": {
+        "groundYNative128": 126,
+        "groundYBody256": 190,
+        "haloCount": 0,
+        "layersOffClean": true,
+        "negativeSpaceRefined": true,
+        "weaponsDrawnOnTorso": false
+      },
+      "anatomicalEvaluation": {
+        "dominantHand": "RIGHT (screen right in back_l view)",
+        "negativeSpaceCavity": "The triangular cavity in Key 02 between skull, neck, and arched right arm is 100% transparent (0 residual grey pixels; surgical Aseprite fix verified)",
+        "heavyImpactDelivery": "Key 03 demonstrates authentic heavy axe physics: head drops forward, upper torso compresses downward, knees bend deeper, and hips absorb impact",
+        "rearConstruction": "Solid dorsal armor, vertebral ridge, occipital skull, authentic gauntlets"
+      },
+      "safeSuggestions": "When creating in-between frames for the downward smash, use rapid temporal spacing (fewer frames at the top, solid landing frame) to preserve the sensation of crushing downward momentum."
+    },
+    "grip-specialist/front_l-Sword-full": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Complete equipped cycle 13f / 730ms",
+      "direction": "front_l",
+      "category": "Sword",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_l-Sword-full/clip.json",
+        "sha256": "56eb4daeb43b35cbb0a50a3b1cc145eba802c5b408b96bf76fa90c3219eb4681"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_l-Sword-full/representative.json",
+        "sha256": "baa4c3c4cc37fa150662e5116aa824395de17b6a73423aa5f91677ced9c85041"
+      },
+      "master": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/master.aseprite",
+        "sha256": "3efc83c1a17fa45e7f34ea3af985255b2820c924fcfcf76be15095d9dec1e085"
+      },
+      "technicalChecks": {
+        "frameCount": 13,
+        "totalDurationMs": 730,
+        "allBodyRgbaDelta": 0,
+        "hiddenFramesClean": [0, 1, 11, 12],
+        "visibleInterval": [2, 10],
+        "allGroundYExact": 190
+      },
+      "gripAndVisualEvaluation": {
+        "gloveOcclusion": "Hilt passes cleanly under authentic leather glove; fingers wrap naturally around the grip across all visible frames",
+        "palmWristContinuity": "handFront layer connects smoothly to wrist and forearm without floating stamp artifacts",
+        "weaponVisibility": "Sword appears only during active attack interval [2..10]; strictly hidden during prep and recovery",
+        "tacticalReadability": "Silhouette remains sharp and readable at 64px scale without pixel mushing"
+      },
+      "safeSuggestions": "Ready for candidate matrix patch assembly. Final confirmation of 1x fluid motion deferred to creator evaluation in interactive player / Unity."
+    },
+    "grip-specialist/front_r-Axe-full": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Complete equipped cycle 12f / 1005ms",
+      "direction": "front_r",
+      "category": "Axe",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_r-Axe-full/clip.json",
+        "sha256": "dca0ef7e000be50cf8cf39ca69c3b55324ea1a4857a18e1b15278bbae6e3d0f5"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_r-Axe-full/representative.json",
+        "sha256": "4542bbb8ae77ca526d3f5a4d913c4d73cfc30446b21341540955dccb50a35925"
+      },
+      "master": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_r-Axe-full/master.aseprite",
+        "sha256": "83f73413521dc5357161423d5d88b55604f316fcc29ba834ea0b5bbd63dd039e"
+      },
+      "technicalChecks": {
+        "frameCount": 12,
+        "totalDurationMs": 1005,
+        "allBodyRgbaDelta": 0,
+        "hiddenFramesClean": [0, 1, 9, 10, 11],
+        "visibleInterval": [2, 8],
+        "allGroundYExact": 190
+      },
+      "gripAndVisualEvaluation": {
+        "gloveOcclusion": "Haft passes under glove; authentic leather fingers encircle the wood haft; axe head securely seated above fist in apex (F04)",
+        "palmWristContinuity": "Continuous connection from forearm to wrist and glove in impact frame F06 and recovery frames",
+        "weaponVisibility": "Axe strictly hidden during rest (F00), preparation (F01), and recovery (F09-F11)",
+        "tacticalReadability": "Axe blade profile and silhouette clear at 64px"
+      },
+      "safeSuggestions": "Ready for candidate matrix patch assembly. Continuous 1x timing deferred to creator review."
+    },
+    "grip-specialist/front_l-Axe-full": {
+      "verdict": "READY_FOR_NEXT_STAGE",
+      "frameInspectionVerdict": "NO_BLOCKING_STATIC_DEFECT_OBSERVED",
+      "scope": "Complete equipped cycle 12f / 1005ms",
+      "direction": "front_l",
+      "category": "Axe",
+      "clip": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_l-Axe-full/clip.json",
+        "sha256": "fa3c620d69d7df05bf0afab1fffa35fe37d861feacfc4124cbafa7e9763d7c5c"
+      },
+      "representative": {
+        "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/front_l-Axe-full/representative.json",
+        "sha256": "09c2b3189f0e5adeee682a0a7fcc2ab848c31a7b8c4a40a1ec5db40dfa7befcd"
+      },
+      "master": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Axe-full/master.aseprite",
+        "sha256": "4df2d168a97a7a643be47f2b57d85f260a1a9951324a3f9dbe7ab4107ce08938"
+      },
+      "technicalChecks": {
+        "frameCount": 12,
+        "totalDurationMs": 1005,
+        "allBodyRgbaDelta": 0,
+        "hiddenFramesClean": [0, 1, 9, 10, 11],
+        "visibleInterval": [2, 8],
+        "allGroundYExact": 190
+      },
+      "gripAndVisualEvaluation": {
+        "gloveOcclusion": "Axe haft passes under glove naturally; fingers grip haft securely in hoist, apex, downward swing, and ground impact",
+        "palmWristContinuity": "handFront aligns precisely with the underlying body arm; no floating stamp artifacts",
+        "weaponVisibility": "Axe visible only during active interval [2..8]; hidden in frames 0, 1, 9, 10, 11",
+        "tacticalReadability": "Distinct visual separation of axe blade, body armor, and limbs at game scale"
+      },
+      "safeSuggestions": "Ready for candidate matrix patch assembly. Continuous 1x timing deferred to creator review."
+    }
+  },
+  "generationAccounting": {
+    "productionPixelLabCalls": 0,
+    "costLlm": "Custo LLM não informado",
+    "notes": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado."
+  }
+}

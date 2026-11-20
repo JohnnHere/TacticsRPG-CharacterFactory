@@ -1,0 +1,40 @@
+# V7 back_l — mudança de método obrigatória
+
+9 gerações consumidas (1282,70 → 1273,70) e **zero** ciclo. Três sequências falharam pelo mesmo motivo: punho fundido no ombro na pose elevada, ou cadeia antebraço–palma invisível na descida.
+
+A task proíbe gastar crédito repetindo estratégia que já falhou. Portanto:
+
+## REGRA 1 — Hipótese escrita antes de gastar
+Escreva `experiments/main-orc-combat-recovery-v7/rear/arm-fusion-hypothesis.md` explicando tecnicamente por que a cadeia desaparece. Cubra, com o que você observou nos raws:
+- resolução nativa do gerador (128 px) versus espessura do antebraço;
+- braço sobreposto à silhueta do torso;
+- esqueleto pedindo rotação que colapsa o membro;
+- ausência de espaço negativo instruído;
+- qualquer outra causa que os raws sustentem.
+
+Sem esse arquivo, não gere nada.
+
+## REGRA 2 — Orçamento rígido
+No máximo **1 job (3 gerações) por tentativa**, no máximo **2 tentativas** antes de reportar. Meça o saldo antes de submeter e registre recibo. Se a ferramenta permitir, gere em resolução maior (256) para o braço ter pixels suficientes, e faça o downscale/limpeza no Aseprite preservando pixel-art.
+
+## REGRA 3 — A pose precisa ser inequívoca
+Gere **somente a pose de ápice da espada** (arma preparada acima da cabeça). Exija no esqueleto e na descrição corporal (sem nomear arma):
+- punho **acima** da linha da cabeça;
+- antebraço projetado **fora** da silhueta do tronco, com espaço negativo visível entre braço e cabeça/pescoço;
+- cotovelo com ângulo legível;
+- mão fechada.
+
+Se a saída esconder o punho ou fundir o braço no ombro, a tentativa **falha**. Não aprove "quase".
+
+## REGRA 4 — Se a geração falhar de novo
+Não repita o mesmo gerador. Use uma destas alternativas, justificando a escolha:
+- edição condicionada por pose (inpaint/edit sobre uma pose existente com braço visível);
+- reconstruir **somente o membro** no Aseprite a partir de doador da **mesma vista** com anatomia compatível, justificando o doador por medida (junta, comprimento, ângulo), não por semelhança de canvas.
+
+## REGRA 5 — Só então o ciclo
+Depois de a pose de ápice passar na sua própria inspeção layers-off, gere as demais fases e monte o ciclo. Nunca monte ciclo com poses que não passaram na prova.
+
+## Saída esperada
+Pare e reporte quando:
+- (a) tiver a pose de ápice com cadeia visível — mostre a medição (coordenadas de ombro, cotovelo, punho, palma e o espaço negativo); ou
+- (b) tiver esgotado 2 tentativas registradas — reporte o bloqueio com a hipótese, os recibos e a alternativa que recomenda, sem inventar ciclo.

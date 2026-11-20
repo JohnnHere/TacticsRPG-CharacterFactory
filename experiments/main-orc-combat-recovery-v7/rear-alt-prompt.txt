@@ -1,0 +1,35 @@
+DEV — segunda estratégia para a pose de ápice do `back_l` Sword (V7). Escopo: autorar MANUALMENTE no Aseprite a pose-chave de ápice, sem geração. Você já entregou `V7_BACK_R_REFINED` com trabalho local cirúrgico e zero gerações — por isso esta frente é sua.
+
+## Contexto do bloqueio
+A geração por skeleton falhou 4 vezes neste alvo (V6 e V7): punho fundido no ombro, ou cadeia antebraço–palma invisível na descida. Foram 21 gerações sem nenhum ciclo. A outra sessão faz uma última tentativa de geração; esta frente testa o caminho oposto — **autorar a pose correta e só depois pensar em interpolação**.
+
+## O que produzir (uma pose, não ciclo)
+`back_l` Sword, pose de **ápice / preparação elevada**, desarmada de arma assada (arma é camada separada depois). Critérios de sucesso, que você mesmo deve medir:
+1. Ponta da lâmina (quando composta) inequivocamente **acima do crânio**.
+2. **Punho acima da linha do ombro**, podendo ficar ao lado/atrás da cabeça, com o antebraço visível em **espaço negativo**.
+3. Cotovelo com ângulo legível e distinto do tronco.
+4. Mão fechada distinguível — luva com contorno próprio, não massa fundida ao ombro.
+5. Nenhum membro amputado, duplicado ou com comprimento incoerente.
+
+## Como autorar (custo zero de geração)
+- Base: o corpo `back_l` da vista, de `characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/` (V6 rejeitado — rejeitado pela técnica, não necessariamente pelos pixels do tronco/pernas) e seus `layers/body`.
+- Doador de membro: **mesma vista**. Prefira o braço que já está elevado nas chaves do machado (`characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/`, nas fases de hoist) ou o braço de `back_l` Sword F03/F04 se visível. Escolha por **medida** (comprimento de úmero/antebraço, ângulo de cotovelo, largura da luva), não por semelhança de canvas.
+- Reconstrução no Aseprite via Lua: reposicionar/redesenhar a cadeia ombro→cotovelo→punho→palma com contorno coerente, ajustando o volume do ombro se o braço mudar de plano. Preserve tronco, pernas, tassets, identidade e paleta.
+- Se o doador não servir, você pode redesenhar o membro à mão em Lua, mas registre isso como autoria programática e mostre a medição das juntas.
+- ZERO gerações PixelLab. Se você concluir que sem geração é impossível, diga isso com a medição que sustenta a conclusão — não gaste crédito.
+
+## Depois da pose
+1. Componha o item independente (`combat/weapons/Sword/weapon.json`) com luva genuína por pose, cabo atrás da luva, guarda e pomo legíveis — mesma disciplina do F06 que você fez antes.
+2. Produza também a pose de **impacto** (lâmina baixa à frente, cadeia antebraço–palma legível), reaproveitando o mesmo método, para provar que a técnica fecha nas duas pontas. Se só o ápice for possível, entregue só o ápice e diga o que falta.
+
+## Contratos
+- Escreva SOMENTE em `characters/orc-v1/source/combat-recovery-v7/rear-alt/` e `experiments/main-orc-combat-recovery-v7/rear-alt/` + perfil `tmp/aseprite-v7-alt-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS; composto 256 (offset [64,64], ground 190), nativo 128 (ground 126); `nativePng` = recorte do corpo.
+- Camadas `weaponBack → body → weaponFront → handFront`; `representative.json` por pose com hashes reais e as medições das juntas.
+- Não toque em `combat-recovery-v7/rear/` (outra sessão), nem em `rear-r/` (sua entrega anterior), nem nas fontes V6/V5.
+- Preserve o worktree alheio. Sem Unity, sem commits.
+
+## Entrega (checkpoint `V7_BACK_L_APEX_MANUAL_READY`)
+- Pose(s) com mestres salvos/reabertos/conferidos, representantes com hashes, ampliação da zona braço–cabeça com as coordenadas medidas, e comparação visual contra o ápice do V6 rejeitado.
+- `report.md` com: doador escolhido e por quê (medido), o que desenhou, o que preservou, o que ainda falta para o ciclo completo, e a declaração de limitação se aplicável.
+- PARE aqui. O orquestrador compara esta via com a da geração e decide o pipeline do ciclo.

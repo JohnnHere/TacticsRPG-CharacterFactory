@@ -1,0 +1,38 @@
+QA INDEPENDENTE — versão NOVA, reconstrução artística V6. Atenção: você julgou antes o candidato V5 e o declarou `READY_FOR_CREATOR_REVIEW`; o criador REJEITOU artisticamente aquele resultado. Portanto seu parecer anterior NÃO é evidência para esta versão e não pode ser reaproveitado. Julgue a arte nova contra as objeções do criador, com seus próprios olhos.
+
+OBJETO (verifique o hash em disco):
+- Manifesto: `characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json`, SHA-256 `2c2dd3b9fa8e28e9243f1554ffc23ec81593921a13465c957653b1dd7b1fa756`.
+- Pai comparativo (rejeitado): `characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json`.
+- 13 células ativas, 15 aliases, 226 quadros.
+- Página de revisão real: `Biblioteca de Arte/Estudos Comparativos/Orc principal - Reconstrucao artistica/index.html` (abra; player 1×/0,5×/passo/escala tática, before/after contra V5).
+
+O QUE MUDOU NESTA VERSÃO (contexto para orientar, não para acreditar):
+- Retaguarda: Sword/Axe `back_l` e `back_r` RECONSTRUÍDOS do zero a partir da base corporal V1 desarmada (PixelLab skeleton_v3 com esqueletos explícitos por pose + acabamento Aseprite). `back_l`: Sword 12f/950 ms, Axe 12f/1320 ms; `back_r` idem por família. Bookends desarmados, intervalo F01–F09.
+- Frontal: correções LOCALIZADAS na camada body (445 edições de 1 px): ilha flutuante `rgba(0,0,1,255)` sob a axila do braço atacante removida (front_r/Sword e front_r/Axe F01–F02 em x25,y67 nativo; front_l/Axe F01–F02 em x102,y67) e 439 pontos claros neutros isolados preenchidos pela mediana dos vizinhos escuros. Causa raiz declarada: o body dos frontais é byte-idêntico à baseline parental, logo o artefato era herdado e sobreviveu a correções prévias que preservavam exatamente esses pixels. Grip foi verificado e não precisou de edição.
+- Ferramentas: `experiments/main-orc-artistic-reconstruction-v6/{rear,frontal}/` com reports, forenses, planos, previews e recibos.
+
+MATRIZ OBRIGATÓRIA (Defeito relatado → Clipe/frame → Evidência → PASS/FAIL/NÃO VERIFICADO):
+1. Sword `back_l` — anatomia coerente, proporções de tronco/pernas estáveis, grip convincente, trajetória de espada natural, sem descontinuidade súbita de posição da arma, antecipação/impacto/recuperação legíveis, sem contorno claro indevido.
+2. Axe `back_l` — uma mão, peso perceptível, sem rigidez mecânica de braço, tronco/ombro participando, proporções estáveis, grip convincente, sem salto entre quadros.
+3. Sword e Axe `back_r` — pernas/apoio estáveis (objeção específica do criador para Sword traseiro), mecânica de braço/torso natural, movimento de arma consistente, coreografia compatível com a `back_l` correspondente.
+4. `front_l/Sword` — o artefato sob a axila foi realmente eliminado? Procure resíduo, emenda, buraco, ou artefato de preenchimento (cor chapada, textura repetida, contorno faltando). Confira quadros vizinhos, não só o frame apontado.
+5. Contornos claros — restam halos/pontos claros indevidos nos clipes corrigidos? Os highlights metálicos legítimos foram preservados (não houve escurecimento global)?
+6. Grip em todas as direções — luva fechada no cabo, sem carimbo, sem mão inativa, guarda/pomo legíveis.
+7. Política attack-only — arma oculta nos bookends e na recuperação; nada em Idle/Walk/Unarmed/Hit/Defeat (aliases devem estar byte-idênticos ao V5; a validação cobre, amostre).
+8. Identidade Orc V1 preservada; itens independentes; proporções one-handed; sem espelhamento entre vistas traseiras.
+9. Preservação: coreografia frontal bem-sucedida intacta (as edições frontais são de 1 px na camada body; nenhuma pose foi movida). Confirme.
+
+PERCEPÇÃO TEMPORAL (obrigatória e é o ponto mais importante):
+- Assista cada um dos 8 ataques em 1× na página real; use 0,5× e passo para investigar.
+- Julgue se o movimento é fisicamente convincente, não se os arquivos estão íntegros.
+- Se seu ambiente não reproduzir animação, declare isso explicitamente e marque os critérios temporais como NÃO VERIFICADO — não invente fluidez.
+
+EVIDÊNCIA TÉCNICA JÁ EXISTENTE (não repita em massa, apenas confira coerência):
+- `experiments/main-orc-artistic-reconstruction-v6/technical-validation.json`: 28 células, 226 quadros, 956 hashes, TECHNICAL_PASS.
+- `experiments/main-orc-artistic-reconstruction-v6/source-reexports/2c2dd3b9.../result.json`: 34 mestres, 352 quadros reabertos no Aseprite.
+- `experiments/main-orc-artistic-reconstruction-v6/browser-checks/`: 21/21 Chromium.
+- Preservação: 5907/5907 arquivos anteriores intactos.
+
+REGISTRO: grave `experiments/main-orc-artistic-reconstruction-v6/qa-sol/result.json` e `report.md` (crie a pasta). Inclua hash do manifesto, a matriz, achados com célula/frame/coordenadas, limitações e veredito: `READY_FOR_CREATOR_REVIEW`, `ARTISTIC_ISSUES_FOUND` (com severidade e achados acionáveis) ou `INCONCLUSIVE`.
+
+Restrições: não edite arte, fontes, manifesto, docs ou Unity; não crie subagentes; zero PixelLab; custo LLM não informado. Você pode apontar defeitos e liberar o pacote para o criador — nunca aprovar em nome dele. Se um defeito grave sobreviver, diga qual e onde, para o orquestrador encaminhar ao especialista certo.

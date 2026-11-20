@@ -1,0 +1,244 @@
+{
+  "contract": "rear-sword-l-back-full-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T18:00:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "rear-grip-flash/full-back-l-sword",
+    "clip": "back_l/Sword",
+    "frameCount": 12,
+    "totalDurationMs": 730,
+    "visibleInterval": [2, 8],
+    "author": "7db0e7b6-ab88-49e9-9362-a19121c8ebf5 (DEV ESPECIALISTA PEGADA)",
+    "description": "Full 12-frame rear sword left grip cycle propagation on top of approved body clip back_l-Sword-full (repair1)"
+  },
+  "verdict": "READY_FOR_MATRIX_REVIEW",
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "pixellab_note": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado",
+    "cost_usd": "não informado"
+  },
+  "sourceVerification": {
+    "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-sword/clip.json",
+    "clipJsonSha256": "9a7b2b3ba87027d3ac7e0e1a86582a9769549f6154800b87a572ab460a9497ef",
+    "compositeStripSha256": "5ad2beb39975f4fa4a3a2fdd627bf6b0c5299b6e97033e6a7d8b097b797e2202",
+    "nativeStripSha256": "3aaf3d82b5dffc0b057b3af4b04a8cb3ce36e957925ebd2e34b361b56a8f7873",
+    "nativeCompositeStripSha256": "23bb8f5851d900ea4279ebd7539126c03737438b7f16447792a64a452d9a3000"
+  },
+  "contracts": {
+    "contract1_bodyPreservation": {
+      "status": "PASS",
+      "details": "All 12 frames body256 are 100% byte-identical to repair1 body-specialist (back_l-Sword-full/body256/). All 12 frames in native 128x128 have exactly 0 RGBA pixel delta."
+    },
+    "contract2_structuralKeysPreservation": {
+      "status": "PASS",
+      "details": "Structural keys F03 (01-hoist), F04 (02-apex), F07 (03-impact) are byte-identical in body256 and have 0 pixel delta in native 128 against approved repair1 sources."
+    },
+    "contract3_attackOnlyV1Policy": {
+      "status": "PASS",
+      "details": "visibleInterval is strictly [2, 8]. Bookends F00, F01, F09, F10, F11 have completely transparent weaponBack, weaponFront, and handFront layers (0 non-transparent pixels). Composites are 100% byte-identical to the unarmed body."
+    },
+    "contract4_fourLayerMasters": {
+      "status": "PASS",
+      "details": "All four canonical Aseprite masters verified on disk with exact declared SHA-256 hashes: composite.aseprite (d052b991...), body.aseprite (f2deef7c...), hand.aseprite (c16ea537...), native.aseprite (d9280bbf...). Timing array [40, 60, 60, 70, 70, 40, 40, 90, 70, 70, 60, 60] ms = 730 ms verified in headers."
+    },
+    "contract5_swordKinematicsAndArc": {
+      "status": "PASS",
+      "details": "Trajectory angles [10°, 350°, 320°, 285°, 265°, 245°, 240°] form a coherent, physically grounded diagonal slash across the rear torso. Uses authentic recruit-sword asset (weapon.json SHA 7c090d89...), distinct from axe chop."
+    },
+    "contract6_groundClearance": {
+      "status": "PASS",
+      "details": "Lowest weapon pixel reaches y=174 in F07 and y=179 in F08, maintaining 16px and 11px clearance above ground floor groundY=190. Zero subterranean penetration or foot/leg collision."
+    }
+  },
+  "frameByFrameAudit": [
+    {
+      "frame": 0,
+      "phase": "guard",
+      "durationMs": 40,
+      "weaponVisible": false,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed rear-left guard; arms down, occipital skull and vertebral channel clean; equipment empty."
+    },
+    {
+      "frame": 1,
+      "phase": "chamber-init",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Right shoulder initiates windup shift; equipment completely transparent."
+    },
+    {
+      "frame": 2,
+      "phase": "hoist-lift",
+      "durationMs": 60,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 79,
+      "wfPixels": 627,
+      "hfPixels": 74,
+      "alphaOverMatch": true,
+      "grip": [163, 108],
+      "angleDeg": 10,
+      "status": "PASS",
+      "visualObservation": "Glove wraps hilt securely at [163, 108]; blade rises upright at 10°; guard and pommel cleanly positioned."
+    },
+    {
+      "frame": 3,
+      "phase": "01-hoist",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 78,
+      "wfPixels": 627,
+      "hfPixels": 89,
+      "alphaOverMatch": true,
+      "grip": [159, 92],
+      "angleDeg": 350,
+      "status": "PASS",
+      "visualObservation": "Structural key F03 preserved. High chamber near neck/pauldron, angle 350°; blade raised upright-backward ready to cut."
+    },
+    {
+      "frame": 4,
+      "phase": "02-apex",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 80,
+      "wfPixels": 628,
+      "hfPixels": 100,
+      "alphaOverMatch": true,
+      "grip": [176, 122],
+      "angleDeg": 320,
+      "status": "PASS",
+      "visualObservation": "Structural key F04 preserved. Arm extends into forward diagonal thrust; blade cuts at 320° across north-west perspective."
+    },
+    {
+      "frame": 5,
+      "phase": "slash-cleave",
+      "durationMs": 40,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 77,
+      "wfPixels": 627,
+      "hfPixels": 52,
+      "alphaOverMatch": true,
+      "grip": [165, 117],
+      "angleDeg": 285,
+      "status": "PASS",
+      "visualObservation": "Mid-slash diagonal cleave at 285°; blade sweeps cleanly across torso/dorsal line without armor clipping."
+    },
+    {
+      "frame": 6,
+      "phase": "slash-descent",
+      "durationMs": 40,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 78,
+      "wfPixels": 629,
+      "hfPixels": 58,
+      "alphaOverMatch": true,
+      "grip": [150, 119],
+      "angleDeg": 265,
+      "status": "PASS",
+      "visualObservation": "Deep diagonal descent at 265°; right fist [150, 119] guides sword horizontally-diagonally across back."
+    },
+    {
+      "frame": 7,
+      "phase": "03-impact",
+      "durationMs": 90,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 77,
+      "wfPixels": 625,
+      "hfPixels": 93,
+      "alphaOverMatch": true,
+      "grip": [150, 148],
+      "angleDeg": 245,
+      "status": "PASS",
+      "visualObservation": "Structural key F07 preserved. Follow-through impact at 245°; blade low to the left (lowest Y=174); pommel and crossguard clear."
+    },
+    {
+      "frame": 8,
+      "phase": "recover-low",
+      "durationMs": 70,
+      "weaponVisible": true,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 78,
+      "wfPixels": 631,
+      "hfPixels": 64,
+      "alphaOverMatch": true,
+      "grip": [152, 148],
+      "angleDeg": 240,
+      "status": "PASS",
+      "visualObservation": "Low rebound deceleration at 240°; blade lowest Y=179 stays 11px above groundY=190; clean transition into recovery."
+    },
+    {
+      "frame": 9,
+      "phase": "recover-pelvis",
+      "durationMs": 70,
+      "weaponVisible": false,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed recovery stance; hands return towards neutral pelvis posture; equipment completely transparent."
+    },
+    {
+      "frame": 10,
+      "phase": "recover-guard",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed return towards guard posture; parent body preserved."
+    },
+    {
+      "frame": 11,
+      "phase": "guard-return",
+      "durationMs": 60,
+      "weaponVisible": false,
+      "bodyByteMatch": true,
+      "bodyDiffPixels": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Final unarmed guard pose; seamless one-shot terminal state; zero equipment pixels."
+    }
+  ],
+  "limitations": [
+    "Inspection conducted through discrete still frames, 4x zooms, layer separations, and tactical 64px scale renders.",
+    "Functional Chromium playback verified 730ms / 1460ms wall-clock timings, one-shot stop at F11, and 1x/0.5x stepping.",
+    "Perceptual experience of continuous fluid motion in live game engine runtime remains the prerogative of the creator.",
+    "Scope is strictly limited to back_l/Sword; does not automatically approve other rear clips, the 28-cell matrix, or Unity integration."
+  ]
+}

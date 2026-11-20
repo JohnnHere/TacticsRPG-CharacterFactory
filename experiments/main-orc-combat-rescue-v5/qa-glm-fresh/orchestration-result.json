@@ -1,0 +1,24 @@
+{
+  "recordedBy": "root-orchestrator",
+  "provider": "cline-glm-api",
+  "model": "glm-5.3",
+  "requestedByCreator": "Retry GLM 5.3 for next QA because Copilot tokens are running low.",
+  "retainedSession": "76797f0a-7d99-41fc-8e1c-638dce10a345",
+  "freshSession": "8772a08a-d05a-4d5c-b935-7dfa52b7e197",
+  "scope": "front_r/Sword F06 operational and visual-review retry",
+  "representativeSha256": "e9daacf07836ade4d66cd58a1cc97ffa25733001f535a50f9053ecbf2742ac1e",
+  "textualRuntimeCheck": "PASS: local JSON read, actual SHA256 computation, checkpoint write and final response.",
+  "visualRetryObservation": "Fresh session wrote VISUAL_REVIEW_STARTED, verified composite PNG hash, invoked read_files for that single PNG, then returned idle without a visual verdict or final report.",
+  "agentStateAfterImage": {
+    "status": "idle",
+    "activeTurn": null,
+    "pendingPermissions": [],
+    "explicitProviderError": null
+  },
+  "orchestrationOutcome": "INCONCLUSIVE_NO_VISUAL_QA_HANDOFF",
+  "reviewerVerdict": null,
+  "visualCapabilityEstablished": false,
+  "rootCause": "NOT_ESTABLISHED: no explicit quota, credential or image-support error was exposed.",
+  "artisticApproval": "NONE",
+  "nextAction": "Use a non-Copilot independent fallback; preserve both GLM sessions and their partial technical work."
+}

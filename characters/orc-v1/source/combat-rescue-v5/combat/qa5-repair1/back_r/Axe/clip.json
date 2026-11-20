@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-qa5-repair1",
+  "id": "basic.axe-chop",
+  "character": "orc-v1",
+  "category": "Axe",
+  "state": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 8,
+  "durationsMs": [
+    85,
+    85,
+    80,
+    90,
+    95,
+    110,
+    95,
+    90
+  ],
+  "totalDurationMs": 730,
+  "master": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/composite.aseprite",
+  "masterSha256": "d6331b237f1c98e47440cfa09e681e221741ef761a96f29100644ec9201258c3",
+  "master256": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/master256.aseprite",
+  "master256Sha256": "d6331b237f1c98e47440cfa09e681e221741ef761a96f29100644ec9201258c3",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/body.aseprite",
+  "bodyMasterSha256": "dc832b44ae2cf5f01dd8fcef03ee46ada38324c52d89468b44fddf92c91f3187",
+  "bodyMaster256": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/bodyMaster256.aseprite",
+  "bodyMaster256Sha256": "dc832b44ae2cf5f01dd8fcef03ee46ada38324c52d89468b44fddf92c91f3187",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/hand.aseprite",
+  "handMasterSha256": "1cc73fe3670d3f68d065a5e4dc993beb549c9740a75b3b5240a6104bdba3fc3b",
+  "handMaster256": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/handMaster256.aseprite",
+  "handMaster256Sha256": "1cc73fe3670d3f68d065a5e4dc993beb549c9740a75b3b5240a6104bdba3fc3b",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/source/native.aseprite",
+  "nativeMasterSha256": "7777de30970e4768214de2f1c8762db81cee13ca370206affe4824fe02de631d",
+  "nativeMaster128": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/nativeMaster128.aseprite",
+  "nativeMaster128Sha256": "7777de30970e4768214de2f1c8762db81cee13ca370206affe4824fe02de631d",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native-strip.png",
+  "stripSha256": "ecac22f300a647ce9af698f8179a5c7e9afd46e58eada98e27861de669c4c682",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native-strip.png",
+  "nativeStripSha256": "ecac22f300a647ce9af698f8179a5c7e9afd46e58eada98e27861de669c4c682",
+  "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/composite-strip.png",
+  "compositeStripSha256": "ab27aefabed6df3338b16313e2a6bca89a5ba0266dd559f1a7e31220857ea06e",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "militia-axe",
+    "name": "Machado de Milícia",
+    "grip": [
+      36,
+      48
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.aseprite",
+    "spriteSha256": "11e1b3723e3af44f0311e19600ff28c11bdbd071788add40a074cc2b7093bbeb",
+    "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "source": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/militia-axe.aseprite",
+    "sourceSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json",
+    "scale": 1
+  },
+  "contactEvent": {
+    "frame": 4,
+    "timeMs": 340,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/clip.json",
+    "parentMaster": "characters/orc-v1/source/combat-rescue-v5/combat/back_r/Axe/source/composite.aseprite",
+    "parentMasterSha256": "808f287057a780b028e0262b5cc5ad7905440319db04c6611ff7c59d2c4cc5fa",
+    "authoringScript": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/scripts/author_back_r_axe_qa5.lua",
+    "generationScript": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/scripts/run_back_r_axe_qa5.py",
+    "pixelLabJobId": "f0235167-519c-4994-86a2-1260b0e3a23e",
+    "pixelLabMethod": "animate_with_skeleton_v3",
+    "pixelLabSeed": 513,
+    "paidGenerationUnits": 3,
+    "zeroF00ColumnPaste": true,
+    "bodyArtChanged": true,
+    "bodyArtScope": "Full whole-body empty-handed rear axe strike (PixelLab animate_with_skeleton_v3 job f0235167-519c-4994-86a2-1260b0e3a23e): pelvis/hips/legs/torso/shoulders and left off-hand counterweight move across all frames F01-F07 with zero F00 column pasting, anatomical right-hand dominance, and natural recovery to guard in F07",
+    "handArtChanged": true,
+    "handArtScope": "Diagnostic provisional grip only; grip specialization transferred to dedicated specialist (GPT-6.1 Sol/Codex 47326bab)",
+    "choreographyChanged": true,
+    "timingChanged": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/00.png",
+      "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+      "durationMs": 85,
+      "phase": "guard-start",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          144,
+          94
+        ],
+        "elbow": [
+          154,
+          114
+        ],
+        "wrist": [
+          158,
+          128
+        ],
+        "palm": [
+          159,
+          138
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/00.png",
+          "sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/00.png",
+      "nativeSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c"
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/01.png",
+      "sha256": "4e2471890a3a0bbb8b0103a1538b9333210ce51847bf560b0aede226806983bc",
+      "durationMs": 85,
+      "phase": "overhead-hoist",
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        76
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          146,
+          92
+        ],
+        "elbow": [
+          164,
+          95
+        ],
+        "wrist": [
+          163,
+          83
+        ],
+        "palm": [
+          158,
+          76
+        ]
+      },
+      "rotationDeg": 305,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/01.png",
+          "sha256": "b0aab466804e314bd5c0372175f82f9801f9247c9db7180709dd833684ad7e7b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/01.png",
+          "sha256": "655e2ad72fd4be4f2dc3336726c56dc2cd7e273745b33d1093a2412419e76d48"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/01.png",
+          "sha256": "506c116b07cdce6b771a445d9936fb798d40c65a5c41515594b58af21e1bcd30"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/01.png",
+      "nativeSha256": "2bf1f97cecd254c85971e6e96f1bed97036a27d60a978ba419b0d667a3b978a7"
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/02.png",
+      "sha256": "324eebde56c6ef75f1efa6200ef748aa7631279764c8b463813834cb82855111",
+      "durationMs": 80,
+      "phase": "overhead-apex",
+      "weaponVisible": true,
+      "rightGrip": [
+        156,
+        72
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          145,
+          91
+        ],
+        "elbow": [
+          160,
+          92
+        ],
+        "wrist": [
+          162,
+          79
+        ],
+        "palm": [
+          156,
+          72
+        ]
+      },
+      "rotationDeg": 325,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/02.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/02.png",
+          "sha256": "b949258ed7053db0f5a70af9b78c01ef8ebea7406a2b56c06252b8bad1f4c940"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/02.png",
+          "sha256": "dc37a9ebab101d7959b33b5648a48f2b0920ba414b71c7433c470806352022d8"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/02.png",
+          "sha256": "9923bfb2c2eec1d458a21d5b97ed1d1aeaaaeb1408a902ab6572052545f0467e"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/02.png",
+      "nativeSha256": "4d6c7e09a807b450ab21c48b403acd6c0973e09bdc26a44f48d5cd67085c0ca4"
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/03.png",
+      "sha256": "bc3e2ffbd9020a947f2cc3b92a3d7a371315c85dd0937d87689a86038f6b3e2c",
+      "durationMs": 90,
+      "phase": "cleave-drop",
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        77
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          146,
+          93
+        ],
+        "elbow": [
+          164,
+          92
+        ],
+        "wrist": [
+          170,
+          84
+        ],
+        "palm": [
+          172,
+          77
+        ]
+      },
+      "rotationDeg": 12,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/03.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/03.png",
+          "sha256": "2bccfac6d8f933928aee07422a05e98f71ff40f0eab616d04ea16f66681da288"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/03.png",
+          "sha256": "69c2fda3449ec79e920b6c00b2f9b4b3865d6cf5409e5ff9688f399508b5ab8c"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/03.png",
+          "sha256": "65765c3b103442b9db5785901fbb730006c8cbc517175f2dfb1f34c91b030ba0"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/03.png",
+      "nativeSha256": "31d3be1fb28146137a9a33172c7e7d10b2478df0569e89bb93c732cd9454117d"
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/04.png",
+      "sha256": "022992e849da54948e19312a37d7a77a2352da0052f5a0d3716b26bdc16d8fe7",
+      "durationMs": 95,
+      "phase": "heavy-impact",
+      "weaponVisible": true,
+      "rightGrip": [
+        177,
+        121
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          147,
+          94
+        ],
+        "elbow": [
+          168,
+          107
+        ],
+        "wrist": [
+          177,
+          114
+        ],
+        "palm": [
+          177,
+          121
+        ]
+      },
+      "rotationDeg": 98,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/04.png",
+          "sha256": "c8ba7d4917038ef6580fa2b4618dade46918e412e9165c3e06438b038c5b55c5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/04.png",
+          "sha256": "292da957244bcb3ebe4af24539513844df2bd2426359352da0b0f6abddcd4910"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/04.png",
+          "sha256": "8d148220199a932dfb1dd2adcc23fda1e96475c311461ea91539ce652c5ef3ff"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/04.png",
+      "nativeSha256": "eb2606ef02ca5bca7fa40ce1efcb3cb3fc9ae118305a6f9360371f5671082b92"
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/05.png",
+      "sha256": "17508e2063818d7a6e13e753493ba71ac69b3ed9a252b1c34fdc2d909827af3f",
+      "durationMs": 110,
+      "phase": "weight-sink",
+      "weaponVisible": true,
+      "rightGrip": [
+        173,
+        136
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          147,
+          96
+        ],
+        "elbow": [
+          164,
+          114
+        ],
+        "wrist": [
+          170,
+          127
+        ],
+        "palm": [
+          173,
+          136
+        ]
+      },
+      "rotationDeg": 122,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/05.png",
+          "sha256": "8cdfd0f614a198c5d542b839d6f051349a09bd296801c0ac8f21487ab85d8371"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/05.png",
+          "sha256": "efc23f723b27c8d10a453546f64a991281f7f469e650aba5e2f719a800351714"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/05.png",
+          "sha256": "e8125f67baf267c4c92c299d977fbaf82a95d10b6d6fa3f70e1330a3e6b76b55"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/05.png",
+      "nativeSha256": "2f92ae60a46f50b9907bcb10e4ed0af08e2fb4f0f7fbd614ce676720b5e42292"
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/06.png",
+      "sha256": "8b625298e3558c27c3d8b5eab8f292c6f24b5cdaf8ebb4cf7cddbf676f1ccb89",
+      "durationMs": 95,
+      "phase": "wrench-back",
+      "weaponVisible": true,
+      "rightGrip": [
+        165,
+        137
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          145,
+          95
+        ],
+        "elbow": [
+          159,
+          115
+        ],
+        "wrist": [
+          164,
+          129
+        ],
+        "palm": [
+          165,
+          137
+        ]
+      },
+      "rotationDeg": 132,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/06.png",
+          "sha256": "8ab29651d561515665793e36aa4a1bc1f7cf0a7c873ced8a6c11641d117e8a0b"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/06.png",
+          "sha256": "93a37137eb5affbf0e90b264aa31a68e040fa79f77633a32c54f6c9e75d61d71"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/06.png",
+          "sha256": "68d8daf8ccbf917f2030d9ebb9d0e0e84ab21cedda37be09ef31db8aed5a1366"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/06.png",
+      "nativeSha256": "7129a9e39f2ed6578680c5f2ab34338309faf81eb6cfbfe55d69d4974e373ae1"
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/07.png",
+      "sha256": "8e0852a0a4ffe0e0c8ee211e064d5941b604d87fa61b6e3bcdd88161de7e3d12",
+      "durationMs": 90,
+      "phase": "guard-recovery",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "anatomicalRightChain256": {
+        "shoulder": [
+          144,
+          94
+        ],
+        "elbow": [
+          155,
+          115
+        ],
+        "wrist": [
+          159,
+          129
+        ],
+        "palm": [
+          159,
+          138
+        ]
+      },
+      "rotationDeg": 0,
+      "scale": 1,
+      "weaponBehindBody": false,
+      "handSource": "Diagnostic provisional grip only (grip specialization transferred to grip-specialist 47326bab); body/native layers are 100% pure untampered PixelLab whole-body frames",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/body/07.png",
+          "sha256": "8e0852a0a4ffe0e0c8ee211e064d5941b604d87fa61b6e3bcdd88161de7e3d12"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/back_r/Axe/native/07.png",
+      "nativeSha256": "e271e6685227b2eda89e4c3e4a815272e648f987cf2dac879ef814fb42cc0545"
+    }
+  ]
+}

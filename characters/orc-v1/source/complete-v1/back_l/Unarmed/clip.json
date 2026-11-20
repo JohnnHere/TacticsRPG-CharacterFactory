@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "basic.unarmed",
+  "character": "orc-v1",
+  "state": "Unarmed",
+  "legacySlotState": "Attack",
+  "direction": "back_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    80,
+    110,
+    50,
+    90,
+    120
+  ],
+  "totalDurationMs": 450,
+  "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/unarmed-attack.aseprite",
+  "masterSha256": "341ae7c4d4d0a5208dccbabb601383825e2f42fab4cde5d483117ac869fed19c",
+  "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/attack-back_l.aseprite",
+  "nativeMasterSha256": "c5791f30dceae236cb269924f67a587032edad4a45e6adb39e97cd269249d838",
+  "strip": "characters/orc-v1/source/complete-v1/back_l/Unarmed/native-strip.png",
+  "stripSha256": "55e1b314beffaefca8f8d2a9b71ae6f69921efc87318e8f912ee088aab6f58fc",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": {
+    "frame": 2,
+    "timeMs": 190,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Unarmed/00.png",
+      "sha256": "052a27fbc6f6e73697362e927f4e1dd85d11f90158556b6925413241b00adfe5",
+      "nativePng": "characters/orc-v1/sprites/Animations/Attack/attack_back_l_00.png",
+      "nativeSha256": "680d784b27b37fe3f382e0fd3e504282db930678299ec39ae3677cab9b091387",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_00.png",
+      "supplementSha256": "680d784b27b37fe3f382e0fd3e504282db930678299ec39ae3677cab9b091387",
+      "durationMs": 80,
+      "phase": "guard-prep",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Unarmed/01.png",
+      "sha256": "8d7a2cadf248857346ae6adc1a9f8494ec8432a56778451d471de980151c749b",
+      "nativePng": "characters/orc-v1/sprites/Animations/Attack/attack_back_l_01.png",
+      "nativeSha256": "88ea94cff0d73473ead27dd1046245f21aae70608e54917901ba7ab84cec557b",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_01.png",
+      "supplementSha256": "88ea94cff0d73473ead27dd1046245f21aae70608e54917901ba7ab84cec557b",
+      "durationMs": 110,
+      "phase": "shoulder-coil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Unarmed/02.png",
+      "sha256": "e6a6bd8d04e7e9416333fa8d7ee0305d02fa54155086bc8ab0d38cdbfb56f9b0",
+      "nativePng": "characters/orc-v1/sprites/Animations/Attack/attack_back_l_02.png",
+      "nativeSha256": "c74a834b07dec3a87d077aab6cfebf56716fa66b4b5bd7b428bc28e2cfa1c40c",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_02.png",
+      "supplementSha256": "c74a834b07dec3a87d077aab6cfebf56716fa66b4b5bd7b428bc28e2cfa1c40c",
+      "durationMs": 50,
+      "phase": "heavy-gauntlet-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Unarmed/03.png",
+      "sha256": "9e9dbf61ded888e4ba99a4bc56e9b83b8504f3c84e880ef11aaa9bfcc6df9c1f",
+      "nativePng": "characters/orc-v1/sprites/Animations/Attack/attack_back_l_03.png",
+      "nativeSha256": "ba7b4b8ff97805152f81b47b69f01573c1dcc5fcee3048ed4b6cf27f504d0021",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_03.png",
+      "supplementSha256": "ba7b4b8ff97805152f81b47b69f01573c1dcc5fcee3048ed4b6cf27f504d0021",
+      "durationMs": 90,
+      "phase": "follow-through",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Unarmed/04.png",
+      "sha256": "6477fd002f3c8fe9b65e1b0f75ce526aaebeaa48a799ff3ba5c57a20e25299af",
+      "nativePng": "characters/orc-v1/sprites/Animations/Attack/attack_back_l_04.png",
+      "nativeSha256": "a30aa5ec2606717c9e81ee21a80fc90a37df5ffc16a25e31abb01c6500180045",
+      "supplementPng": "characters/orc-v1/source/actions/basic-unarmed/v1/back_l/attack_back_l_04.png",
+      "supplementSha256": "a30aa5ec2606717c9e81ee21a80fc90a37df5ffc16a25e31abb01c6500180045",
+      "durationMs": 120,
+      "phase": "recovery-settle",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

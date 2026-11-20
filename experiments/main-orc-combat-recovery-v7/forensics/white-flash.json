@@ -1,0 +1,6614 @@
+{
+  "schemaVersion": 1,
+  "task": "T1 - white-flash forensics, rear Sword attacks",
+  "revision": "main-orc-combat-recovery-v7",
+  "inputFreeze": {
+    "manifest": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+    "manifestSha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+    "status": "V6 artistically REJECTED by the creator; this analysis is read-only and fixes nothing."
+  },
+  "perceptionCaveat": "No images were available to this worker. Every statement is a numeric measurement; no claim of seeing the flash is made.",
+  "thresholds": {
+    "light": {
+      "alphaMin": 128,
+      "luminanceMin": 150.0,
+      "saturationMax": 0.3
+    },
+    "isolationNeighbourhoodPx": 2,
+    "clusterMinPx": 4,
+    "candidateMinPx": 8
+  },
+  "surfaceCheck": {
+    "masterEqualsExportedLayers": true,
+    "detail": "experiments/main-orc-combat-recovery-v7/forensics/master-vs-export.json - fresh Aseprite export of the saved master compared pixel-by-pixel with layers/*.png and frames/*.png",
+    "alphaOverRecompose": "0 differing pixels (see recompose check in report.md)",
+    "conclusion": "The light structure is in the saved master, in the exported layer PNGs and in the composite alike: it is authored content, not an export or compositing artefact."
+  },
+  "clips": [
+    {
+      "label": "back_l/Sword",
+      "clip": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword",
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "frameCount": 12,
+      "durationsMs": [
+        90,
+        80,
+        80,
+        110,
+        50,
+        40,
+        40,
+        80,
+        100,
+        90,
+        90,
+        100
+      ],
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "paletteMaxLuminance": 177.72,
+      "bodyMeanLuminancePerFrame": [
+        36.51,
+        35.38,
+        36.52,
+        36.89,
+        36.9,
+        36.4,
+        36.99,
+        37.26,
+        37.42,
+        36.83,
+        35.9,
+        36.51
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 61,
+            "right": 11,
+            "total": 72
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 12,
+              "bbox": [
+                98,
+                122,
+                102,
+                131
+              ],
+              "side": "left",
+              "centroid": [
+                101.0,
+                126.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.5,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 12,
+              "bbox": [
+                103,
+                117,
+                108,
+                121
+              ],
+              "side": "left",
+              "centroid": [
+                105.4,
+                118.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.917,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  11
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                97,
+                133,
+                99,
+                137
+              ],
+              "side": "left",
+              "centroid": [
+                98.2,
+                135.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.8,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                118,
+                92,
+                121,
+                95
+              ],
+              "side": "left",
+              "centroid": [
+                119.5,
+                93.5
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.75,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [
+            {
+              "pixels": 9,
+              "bbox": [
+                103,
+                117,
+                108,
+                119
+              ],
+              "side": "left",
+              "centroid": [
+                105.3,
+                118.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.889,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  8
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLightTotal": 9
+        },
+        {
+          "frame": 1,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 13,
+            "right": 1,
+            "total": 14
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 5,
+              "bbox": [
+                103,
+                125,
+                103,
+                129
+              ],
+              "side": "left",
+              "centroid": [
+                103.0,
+                127.0
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.8,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 37,
+              "bbox": [
+                166,
+                73,
+                178,
+                98
+              ],
+              "side": "right",
+              "centroid": [
+                172.0,
+                84.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.811,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  30
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                160,
+                104,
+                164,
+                111
+              ],
+              "side": "right",
+              "centroid": [
+                161.7,
+                107.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                170,
+                102,
+                173,
+                110
+              ],
+              "side": "right",
+              "centroid": [
+                171.3,
+                106.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.556,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                175,
+                85,
+                178,
+                92
+              ],
+              "side": "right",
+              "centroid": [
+                176.7,
+                88.2
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                161,
+                110,
+                163,
+                116
+              ],
+              "side": "right",
+              "centroid": [
+                162.3,
+                113.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                164,
+                112,
+                166,
+                117
+              ],
+              "side": "right",
+              "centroid": [
+                165.0,
+                114.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                163,
+                99,
+                164,
+                102
+              ],
+              "side": "right",
+              "centroid": [
+                163.6,
+                100.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 15,
+            "right": 0,
+            "total": 15
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 4,
+              "bbox": [
+                104,
+                127,
+                104,
+                130
+              ],
+              "side": "left",
+              "centroid": [
+                104.0,
+                128.5
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.75,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 23,
+              "bbox": [
+                165,
+                49,
+                169,
+                71
+              ],
+              "side": "right",
+              "centroid": [
+                167.3,
+                60.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.739,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  17
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 19,
+              "bbox": [
+                171,
+                40,
+                174,
+                51
+              ],
+              "side": "right",
+              "centroid": [
+                172.5,
+                45.4
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.684,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  13
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                172,
+                69,
+                174,
+                78
+              ],
+              "side": "right",
+              "centroid": [
+                173.2,
+                73.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                163,
+                73,
+                165,
+                80
+              ],
+              "side": "right",
+              "centroid": [
+                163.8,
+                76.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                175,
+                51,
+                176,
+                59
+              ],
+              "side": "right",
+              "centroid": [
+                175.4,
+                55.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                165,
+                78,
+                166,
+                85
+              ],
+              "side": "right",
+              "centroid": [
+                165.6,
+                81.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                168,
+                80,
+                169,
+                85
+              ],
+              "side": "right",
+              "centroid": [
+                168.5,
+                82.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 3,
+          "durationMs": 110,
+          "bodyLightPixels": {
+            "left": 15,
+            "right": 0,
+            "total": 15
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 6,
+              "bbox": [
+                104,
+                125,
+                105,
+                130
+              ],
+              "side": "left",
+              "centroid": [
+                104.8,
+                127.5
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  2
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 42,
+              "bbox": [
+                147,
+                32,
+                150,
+                64
+              ],
+              "side": "right",
+              "centroid": [
+                148.4,
+                46.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.69,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  29
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  13
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                158,
+                60,
+                160,
+                69
+              ],
+              "side": "right",
+              "centroid": [
+                158.7,
+                64.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                150,
+                66,
+                151,
+                74
+              ],
+              "side": "right",
+              "centroid": [
+                150.8,
+                70.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                154,
+                42,
+                155,
+                50
+              ],
+              "side": "right",
+              "centroid": [
+                154.4,
+                46.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                154,
+                71,
+                155,
+                78
+              ],
+              "side": "right",
+              "centroid": [
+                154.4,
+                74.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                157,
+                72,
+                158,
+                77
+              ],
+              "side": "right",
+              "centroid": [
+                157.5,
+                74.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 4,
+          "durationMs": 50,
+          "bodyLightPixels": {
+            "left": 15,
+            "right": 0,
+            "total": 15
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 87,
+            "total": 87
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 6,
+              "bbox": [
+                102,
+                125,
+                103,
+                129
+              ],
+              "side": "left",
+              "centroid": [
+                102.8,
+                126.7
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.5,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 23,
+              "bbox": [
+                174,
+                54,
+                185,
+                72
+              ],
+              "side": "right",
+              "centroid": [
+                179.7,
+                63.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.696,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  16
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 20,
+              "bbox": [
+                187,
+                46,
+                193,
+                56
+              ],
+              "side": "right",
+              "centroid": [
+                189.7,
+                51.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.65,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  13
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                179,
+                74,
+                183,
+                81
+              ],
+              "side": "right",
+              "centroid": [
+                180.8,
+                77.8
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                187,
+                58,
+                191,
+                65
+              ],
+              "side": "right",
+              "centroid": [
+                188.8,
+                61.8
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                169,
+                80,
+                173,
+                86
+              ],
+              "side": "right",
+              "centroid": [
+                171.0,
+                82.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                169,
+                76,
+                171,
+                81
+              ],
+              "side": "right",
+              "centroid": [
+                170.0,
+                78.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                172,
+                83,
+                174,
+                87
+              ],
+              "side": "right",
+              "centroid": [
+                173.0,
+                85.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 5,
+          "durationMs": 40,
+          "bodyLightPixels": {
+            "left": 17,
+            "right": 0,
+            "total": 17
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 84,
+            "total": 84
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 6,
+              "bbox": [
+                97,
+                127,
+                98,
+                131
+              ],
+              "side": "left",
+              "centroid": [
+                97.8,
+                128.7
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  2
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 36,
+              "bbox": [
+                202,
+                91,
+                229,
+                98
+              ],
+              "side": "right",
+              "centroid": [
+                217.1,
+                93.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.75,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  27
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 11,
+              "bbox": [
+                195,
+                106,
+                204,
+                109
+              ],
+              "side": "right",
+              "centroid": [
+                199.5,
+                107.4
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.545,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                188,
+                100,
+                196,
+                102
+              ],
+              "side": "right",
+              "centroid": [
+                192.0,
+                100.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  10
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                186,
+                104,
+                192,
+                106
+              ],
+              "side": "right",
+              "centroid": [
+                188.8,
+                104.9
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                213,
+                99,
+                220,
+                101
+              ],
+              "side": "right",
+              "centroid": [
+                216.5,
+                100.1
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                187,
+                107,
+                191,
+                109
+              ],
+              "side": "right",
+              "centroid": [
+                189.0,
+                108.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [
+            {
+              "pixels": 5,
+              "bbox": [
+                98,
+                127,
+                98,
+                131
+              ],
+              "side": "left",
+              "centroid": [
+                98.0,
+                129.0
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.8,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLightTotal": 5
+        },
+        {
+          "frame": 6,
+          "durationMs": 40,
+          "bodyLightPixels": {
+            "left": 14,
+            "right": 0,
+            "total": 14
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 6,
+              "bbox": [
+                94,
+                129,
+                95,
+                133
+              ],
+              "side": "left",
+              "centroid": [
+                94.8,
+                130.7
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  2
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 37,
+              "bbox": [
+                200,
+                144,
+                225,
+                156
+              ],
+              "side": "right",
+              "centroid": [
+                213.9,
+                150.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.811,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  30
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                187,
+                138,
+                194,
+                142
+              ],
+              "side": "right",
+              "centroid": [
+                190.9,
+                139.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                188,
+                148,
+                196,
+                151
+              ],
+              "side": "right",
+              "centroid": [
+                192.0,
+                149.3
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.556,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                206,
+                153,
+                213,
+                156
+              ],
+              "side": "right",
+              "centroid": [
+                209.8,
+                154.7
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                181,
+                142,
+                186,
+                144
+              ],
+              "side": "right",
+              "centroid": [
+                183.7,
+                143.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                182,
+                139,
+                188,
+                141
+              ],
+              "side": "right",
+              "centroid": [
+                185.0,
+                140.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                196,
+                141,
+                199,
+                142
+              ],
+              "side": "right",
+              "centroid": [
+                197.4,
+                141.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 7,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 21,
+            "right": 0,
+            "total": 21
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 7,
+              "bbox": [
+                92,
+                128,
+                94,
+                133
+              ],
+              "side": "left",
+              "centroid": [
+                93.6,
+                130.3
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.571,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 19,
+              "bbox": [
+                185,
+                167,
+                200,
+                177
+              ],
+              "side": "right",
+              "centroid": [
+                192.3,
+                172.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.947,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  18
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            },
+            {
+              "pixels": 18,
+              "bbox": [
+                197,
+                179,
+                206,
+                185
+              ],
+              "side": "right",
+              "centroid": [
+                201.5,
+                181.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  12
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 11,
+              "bbox": [
+                172,
+                168,
+                180,
+                173
+              ],
+              "side": "right",
+              "centroid": [
+                176.3,
+                170.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.545,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            },
+            {
+              "pixels": 11,
+              "bbox": [
+                174,
+                158,
+                180,
+                164
+              ],
+              "side": "right",
+              "centroid": [
+                177.5,
+                160.9
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  11
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                188,
+                178,
+                195,
+                182
+              ],
+              "side": "right",
+              "centroid": [
+                191.6,
+                180.1
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                169,
+                158,
+                175,
+                162
+              ],
+              "side": "right",
+              "centroid": [
+                172.0,
+                160.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                167,
+                161,
+                171,
+                163
+              ],
+              "side": "right",
+              "centroid": [
+                169.0,
+                162.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                182,
+                164,
+                184,
+                165
+              ],
+              "side": "right",
+              "centroid": [
+                183.0,
+                164.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "bodyLightPixels": {
+            "left": 19,
+            "right": 0,
+            "total": 19
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 87,
+            "total": 87
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 7,
+              "bbox": [
+                93,
+                127,
+                96,
+                132
+              ],
+              "side": "left",
+              "centroid": [
+                95.1,
+                129.1
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.571,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 23,
+              "bbox": [
+                174,
+                164,
+                192,
+                175
+              ],
+              "side": "right",
+              "centroid": [
+                182.7,
+                169.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.696,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  16
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 20,
+              "bbox": [
+                190,
+                177,
+                200,
+                183
+              ],
+              "side": "right",
+              "centroid": [
+                194.9,
+                179.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.65,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  13
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                165,
+                169,
+                172,
+                173
+              ],
+              "side": "right",
+              "centroid": [
+                168.2,
+                170.8
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                181,
+                177,
+                188,
+                181
+              ],
+              "side": "right",
+              "centroid": [
+                184.2,
+                178.8
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                160,
+                159,
+                166,
+                163
+              ],
+              "side": "right",
+              "centroid": [
+                163.4,
+                161.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                159,
+                162,
+                163,
+                164
+              ],
+              "side": "right",
+              "centroid": [
+                160.8,
+                163.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                165,
+                159,
+                170,
+                161
+              ],
+              "side": "right",
+              "centroid": [
+                167.5,
+                160.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 9,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 24,
+            "right": 0,
+            "total": 24
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 8,
+              "bbox": [
+                97,
+                126,
+                98,
+                133
+              ],
+              "side": "left",
+              "centroid": [
+                97.6,
+                129.5
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.75,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  2
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [
+            {
+              "pixels": 37,
+              "bbox": [
+                181,
+                159,
+                206,
+                171
+              ],
+              "side": "right",
+              "centroid": [
+                194.9,
+                165.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.811,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  30
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                168,
+                153,
+                175,
+                157
+              ],
+              "side": "right",
+              "centroid": [
+                171.9,
+                154.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                169,
+                163,
+                177,
+                166
+              ],
+              "side": "right",
+              "centroid": [
+                173.0,
+                164.3
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.556,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                187,
+                168,
+                194,
+                171
+              ],
+              "side": "right",
+              "centroid": [
+                190.8,
+                169.7
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                162,
+                157,
+                167,
+                159
+              ],
+              "side": "right",
+              "centroid": [
+                164.7,
+                158.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                163,
+                154,
+                169,
+                156
+              ],
+              "side": "right",
+              "centroid": [
+                166.0,
+                155.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                177,
+                156,
+                180,
+                157
+              ],
+              "side": "right",
+              "centroid": [
+                178.4,
+                156.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 10,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 21,
+            "right": 0,
+            "total": 21
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 7,
+              "bbox": [
+                97,
+                124,
+                100,
+                129
+              ],
+              "side": "left",
+              "centroid": [
+                99.1,
+                126.1
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.571,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 11,
+          "durationMs": 100,
+          "bodyLightPixels": {
+            "left": 61,
+            "right": 11,
+            "total": 72
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 12,
+              "bbox": [
+                98,
+                122,
+                102,
+                131
+              ],
+              "side": "left",
+              "centroid": [
+                101.0,
+                126.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.5,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 12,
+              "bbox": [
+                103,
+                117,
+                108,
+                121
+              ],
+              "side": "left",
+              "centroid": [
+                105.4,
+                118.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.917,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  11
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                97,
+                133,
+                99,
+                137
+              ],
+              "side": "left",
+              "centroid": [
+                98.2,
+                135.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.8,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  4
+                ],
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                118,
+                92,
+                121,
+                95
+              ],
+              "side": "left",
+              "centroid": [
+                119.5,
+                93.5
+              ],
+              "dominantRgba": [
+                171,
+                173,
+                173,
+                255
+              ],
+              "dominantShare": 0.75,
+              "colours": [
+                [
+                  [
+                    171,
+                    173,
+                    173,
+                    255
+                  ],
+                  3
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  1
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        }
+      ],
+      "nativeLightPerFrame": [
+        {
+          "frame": 0,
+          "lightLeft": 61,
+          "lightTotal": 72
+        },
+        {
+          "frame": 1,
+          "lightLeft": 13,
+          "lightTotal": 14
+        },
+        {
+          "frame": 2,
+          "lightLeft": 15,
+          "lightTotal": 15
+        },
+        {
+          "frame": 3,
+          "lightLeft": 15,
+          "lightTotal": 15
+        },
+        {
+          "frame": 4,
+          "lightLeft": 15,
+          "lightTotal": 15
+        },
+        {
+          "frame": 5,
+          "lightLeft": 17,
+          "lightTotal": 17
+        },
+        {
+          "frame": 6,
+          "lightLeft": 14,
+          "lightTotal": 14
+        },
+        {
+          "frame": 7,
+          "lightLeft": 21,
+          "lightTotal": 21
+        },
+        {
+          "frame": 8,
+          "lightLeft": 19,
+          "lightTotal": 19
+        },
+        {
+          "frame": 9,
+          "lightLeft": 24,
+          "lightTotal": 24
+        },
+        {
+          "frame": 10,
+          "lightLeft": 21,
+          "lightTotal": 21
+        },
+        {
+          "frame": 11,
+          "lightLeft": 61,
+          "lightTotal": 72
+        }
+      ],
+      "leftLightBoundaries": [
+        {
+          "fromFrame": 0,
+          "toFrame": 1,
+          "leftLightDelta": -48,
+          "ratio": 0.213
+        },
+        {
+          "fromFrame": 1,
+          "toFrame": 2,
+          "leftLightDelta": 2,
+          "ratio": 1.154
+        },
+        {
+          "fromFrame": 2,
+          "toFrame": 3,
+          "leftLightDelta": 0,
+          "ratio": 1.0
+        },
+        {
+          "fromFrame": 3,
+          "toFrame": 4,
+          "leftLightDelta": 0,
+          "ratio": 1.0
+        },
+        {
+          "fromFrame": 4,
+          "toFrame": 5,
+          "leftLightDelta": 2,
+          "ratio": 1.133
+        },
+        {
+          "fromFrame": 5,
+          "toFrame": 6,
+          "leftLightDelta": -3,
+          "ratio": 0.824
+        },
+        {
+          "fromFrame": 6,
+          "toFrame": 7,
+          "leftLightDelta": 7,
+          "ratio": 1.5
+        },
+        {
+          "fromFrame": 7,
+          "toFrame": 8,
+          "leftLightDelta": -2,
+          "ratio": 0.905
+        },
+        {
+          "fromFrame": 8,
+          "toFrame": 9,
+          "leftLightDelta": 5,
+          "ratio": 1.263
+        },
+        {
+          "fromFrame": 9,
+          "toFrame": 10,
+          "leftLightDelta": -3,
+          "ratio": 0.875
+        },
+        {
+          "fromFrame": 10,
+          "toFrame": 11,
+          "leftLightDelta": 40,
+          "ratio": 2.905
+        }
+      ],
+      "bookendHashes": {
+        "bodyF00Sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19",
+        "bodyF11Sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+      },
+      "bookendVsIdle": [
+        {
+          "clipBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/00.png",
+          "idleBody": "characters/orc-v1/source/complete-v1/back_l/Idle/00.png",
+          "byteIdentical": true
+        },
+        {
+          "clipBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/11.png",
+          "idleBody": "characters/orc-v1/source/complete-v1/back_l/Idle/00.png",
+          "byteIdentical": true
+        }
+      ]
+    },
+    {
+      "label": "back_r/Sword",
+      "clip": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword",
+      "canvas": [
+        256,
+        256
+      ],
+      "nativeCanvas": [
+        128,
+        128
+      ],
+      "frameCount": 12,
+      "durationsMs": [
+        90,
+        80,
+        80,
+        110,
+        50,
+        40,
+        40,
+        80,
+        100,
+        90,
+        90,
+        100
+      ],
+      "visibleInterval": [
+        1,
+        9
+      ],
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ],
+      "paletteMaxLuminance": 177.72,
+      "bodyMeanLuminancePerFrame": [
+        38.27,
+        37.38,
+        36.43,
+        36.7,
+        36.78,
+        36.35,
+        36.88,
+        37.55,
+        38.22,
+        37.55,
+        36.86,
+        38.27
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 21,
+            "right": 46,
+            "total": 67
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 11,
+              "bbox": [
+                151,
+                117,
+                155,
+                122
+              ],
+              "side": "right",
+              "centroid": [
+                153.1,
+                119.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  11
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                123,
+                153,
+                126,
+                155
+              ],
+              "side": "left",
+              "centroid": [
+                124.7,
+                154.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                140,
+                145,
+                143,
+                145
+              ],
+              "side": "right",
+              "centroid": [
+                141.5,
+                145.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                147,
+                104,
+                150,
+                105
+              ],
+              "side": "right",
+              "centroid": [
+                148.5,
+                104.5
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [
+            {
+              "pixels": 11,
+              "bbox": [
+                151,
+                117,
+                155,
+                122
+              ],
+              "side": "right",
+              "centroid": [
+                153.1,
+                119.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  11
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                123,
+                153,
+                126,
+                155
+              ],
+              "side": "left",
+              "centroid": [
+                124.7,
+                154.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                147,
+                104,
+                150,
+                105
+              ],
+              "side": "right",
+              "centroid": [
+                148.5,
+                104.5
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLightTotal": 21
+        },
+        {
+          "frame": 1,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 5,
+            "right": 2,
+            "total": 7
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 37,
+              "bbox": [
+                170,
+                76,
+                182,
+                101
+              ],
+              "side": "right",
+              "centroid": [
+                176.0,
+                87.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.811,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  30
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                164,
+                107,
+                168,
+                114
+              ],
+              "side": "right",
+              "centroid": [
+                165.7,
+                110.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                174,
+                105,
+                177,
+                113
+              ],
+              "side": "right",
+              "centroid": [
+                175.3,
+                109.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.556,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                179,
+                88,
+                182,
+                95
+              ],
+              "side": "right",
+              "centroid": [
+                180.7,
+                91.2
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                165,
+                113,
+                167,
+                119
+              ],
+              "side": "right",
+              "centroid": [
+                166.3,
+                116.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                168,
+                115,
+                170,
+                120
+              ],
+              "side": "right",
+              "centroid": [
+                169.0,
+                117.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 5,
+              "bbox": [
+                167,
+                102,
+                168,
+                105
+              ],
+              "side": "right",
+              "centroid": [
+                167.6,
+                103.6
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  5
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 4,
+            "right": 0,
+            "total": 4
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 42,
+              "bbox": [
+                165,
+                40,
+                172,
+                72
+              ],
+              "side": "right",
+              "centroid": [
+                168.8,
+                54.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.69,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  29
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  13
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                174,
+                69,
+                175,
+                78
+              ],
+              "side": "right",
+              "centroid": [
+                174.1,
+                73.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                164,
+                74,
+                166,
+                82
+              ],
+              "side": "right",
+              "centroid": [
+                165.0,
+                78.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                174,
+                51,
+                175,
+                59
+              ],
+              "side": "right",
+              "centroid": [
+                174.9,
+                55.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                167,
+                79,
+                168,
+                86
+              ],
+              "side": "right",
+              "centroid": [
+                167.2,
+                82.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                170,
+                81,
+                170,
+                86
+              ],
+              "side": "right",
+              "centroid": [
+                170.0,
+                83.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 3,
+          "durationMs": 110,
+          "bodyLightPixels": {
+            "left": 6,
+            "right": 0,
+            "total": 6
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 89,
+            "total": 89
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 42,
+              "bbox": [
+                149,
+                32,
+                152,
+                64
+              ],
+              "side": "right",
+              "centroid": [
+                150.4,
+                46.1
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.69,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  29
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  13
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                160,
+                60,
+                162,
+                69
+              ],
+              "side": "right",
+              "centroid": [
+                160.7,
+                64.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                152,
+                66,
+                153,
+                74
+              ],
+              "side": "right",
+              "centroid": [
+                152.8,
+                70.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                156,
+                42,
+                157,
+                50
+              ],
+              "side": "right",
+              "centroid": [
+                156.4,
+                46.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                156,
+                71,
+                157,
+                78
+              ],
+              "side": "right",
+              "centroid": [
+                156.4,
+                74.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                159,
+                72,
+                160,
+                77
+              ],
+              "side": "right",
+              "centroid": [
+                159.5,
+                74.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 4,
+          "durationMs": 50,
+          "bodyLightPixels": {
+            "left": 3,
+            "right": 3,
+            "total": 6
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 82,
+            "total": 82
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 39,
+              "bbox": [
+                173,
+                42,
+                190,
+                69
+              ],
+              "side": "right",
+              "centroid": [
+                181.6,
+                54.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.692,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  27
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  12
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                178,
+                70,
+                182,
+                79
+              ],
+              "side": "right",
+              "centroid": [
+                180.0,
+                74.5
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                185,
+                54,
+                188,
+                61
+              ],
+              "side": "right",
+              "centroid": [
+                186.9,
+                57.3
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                168,
+                72,
+                172,
+                78
+              ],
+              "side": "right",
+              "centroid": [
+                169.9,
+                75.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                169,
+                77,
+                172,
+                83
+              ],
+              "side": "right",
+              "centroid": [
+                170.7,
+                80.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                172,
+                80,
+                174,
+                85
+              ],
+              "side": "right",
+              "centroid": [
+                173.0,
+                82.5
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 5,
+          "durationMs": 40,
+          "bodyLightPixels": {
+            "left": 1,
+            "right": 2,
+            "total": 3
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 39,
+              "bbox": [
+                202,
+                86,
+                228,
+                95
+              ],
+              "side": "right",
+              "centroid": [
+                216.0,
+                89.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.769,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  30
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                188,
+                97,
+                196,
+                100
+              ],
+              "side": "right",
+              "centroid": [
+                191.9,
+                98.3
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  10
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                196,
+                102,
+                204,
+                106
+              ],
+              "side": "right",
+              "centroid": [
+                200.0,
+                104.2
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.667,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  3
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                212,
+                94,
+                220,
+                97
+              ],
+              "side": "right",
+              "centroid": [
+                216.0,
+                95.7
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                186,
+                101,
+                192,
+                104
+              ],
+              "side": "right",
+              "centroid": [
+                189.0,
+                102.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                187,
+                105,
+                192,
+                107
+              ],
+              "side": "right",
+              "centroid": [
+                189.3,
+                106.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 6,
+          "durationMs": 40,
+          "bodyLightPixels": {
+            "left": 2,
+            "right": 0,
+            "total": 2
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 42,
+              "bbox": [
+                200,
+                135,
+                232,
+                142
+              ],
+              "side": "right",
+              "centroid": [
+                217.9,
+                138.8
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.69,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  29
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  13
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                194,
+                144,
+                203,
+                145
+              ],
+              "side": "right",
+              "centroid": [
+                198.5,
+                144.1
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                190,
+                134,
+                198,
+                136
+              ],
+              "side": "right",
+              "centroid": [
+                194.0,
+                135.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                213,
+                144,
+                221,
+                145
+              ],
+              "side": "right",
+              "centroid": [
+                217.0,
+                144.9
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                186,
+                137,
+                193,
+                138
+              ],
+              "side": "right",
+              "centroid": [
+                189.5,
+                137.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                186,
+                140,
+                191,
+                140
+              ],
+              "side": "right",
+              "centroid": [
+                188.5,
+                140.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 7,
+          "durationMs": 80,
+          "bodyLightPixels": {
+            "left": 1,
+            "right": 6,
+            "total": 7
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 82,
+            "total": 82
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 39,
+              "bbox": [
+                189,
+                161,
+                216,
+                178
+              ],
+              "side": "right",
+              "centroid": [
+                203.7,
+                169.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.692,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  27
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  12
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                179,
+                166,
+                188,
+                170
+              ],
+              "side": "right",
+              "centroid": [
+                183.5,
+                168.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                197,
+                173,
+                204,
+                176
+              ],
+              "side": "right",
+              "centroid": [
+                200.7,
+                174.9
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                175,
+                157,
+                181,
+                160
+              ],
+              "side": "right",
+              "centroid": [
+                178.0,
+                158.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                180,
+                156,
+                186,
+                160
+              ],
+              "side": "right",
+              "centroid": [
+                183.0,
+                157.9
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                173,
+                160,
+                178,
+                162
+              ],
+              "side": "right",
+              "centroid": [
+                175.5,
+                161.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "bodyLightPixels": {
+            "left": 2,
+            "right": 5,
+            "total": 7
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 82,
+            "total": 82
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 39,
+              "bbox": [
+                184,
+                168,
+                211,
+                185
+              ],
+              "side": "right",
+              "centroid": [
+                198.7,
+                176.6
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.692,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  27
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  12
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                174,
+                173,
+                183,
+                177
+              ],
+              "side": "right",
+              "centroid": [
+                178.5,
+                175.0
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                192,
+                180,
+                199,
+                183
+              ],
+              "side": "right",
+              "centroid": [
+                195.7,
+                181.9
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                170,
+                164,
+                176,
+                167
+              ],
+              "side": "right",
+              "centroid": [
+                173.0,
+                165.7
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 7,
+              "bbox": [
+                175,
+                163,
+                181,
+                167
+              ],
+              "side": "right",
+              "centroid": [
+                178.0,
+                164.9
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  7
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                168,
+                167,
+                173,
+                169
+              ],
+              "side": "right",
+              "centroid": [
+                170.5,
+                168.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 9,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 2,
+            "right": 3,
+            "total": 5
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 88,
+            "total": 88
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [
+            {
+              "pixels": 42,
+              "bbox": [
+                185,
+                152,
+                217,
+                159
+              ],
+              "side": "right",
+              "centroid": [
+                202.9,
+                155.8
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 0.69,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  29
+                ],
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  13
+                ]
+              ]
+            },
+            {
+              "pixels": 10,
+              "bbox": [
+                179,
+                161,
+                188,
+                162
+              ],
+              "side": "right",
+              "centroid": [
+                183.5,
+                161.1
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 0.6,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  6
+                ],
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                175,
+                151,
+                183,
+                153
+              ],
+              "side": "right",
+              "centroid": [
+                179.0,
+                152.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 9,
+              "bbox": [
+                198,
+                161,
+                206,
+                162
+              ],
+              "side": "right",
+              "centroid": [
+                202.0,
+                161.9
+              ],
+              "dominantRgba": [
+                153,
+                154,
+                155,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    153,
+                    154,
+                    155,
+                    255
+                  ],
+                  9
+                ]
+              ]
+            },
+            {
+              "pixels": 8,
+              "bbox": [
+                171,
+                154,
+                178,
+                155
+              ],
+              "side": "right",
+              "centroid": [
+                174.5,
+                154.2
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  8
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                171,
+                157,
+                176,
+                157
+              ],
+              "side": "right",
+              "centroid": [
+                173.5,
+                157.0
+              ],
+              "dominantRgba": [
+                176,
+                178,
+                180,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    176,
+                    178,
+                    180,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 10,
+          "durationMs": 90,
+          "bodyLightPixels": {
+            "left": 3,
+            "right": 2,
+            "total": 5
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [],
+          "temporallyIsolatedBodyLightTotal": 0
+        },
+        {
+          "frame": 11,
+          "durationMs": 100,
+          "bodyLightPixels": {
+            "left": 21,
+            "right": 46,
+            "total": 67
+          },
+          "weaponLightPixels": {
+            "left": 0,
+            "right": 0,
+            "total": 0
+          },
+          "bodyLightClusters": [
+            {
+              "pixels": 11,
+              "bbox": [
+                151,
+                117,
+                155,
+                122
+              ],
+              "side": "right",
+              "centroid": [
+                153.1,
+                119.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  11
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                123,
+                153,
+                126,
+                155
+              ],
+              "side": "left",
+              "centroid": [
+                124.7,
+                154.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                140,
+                145,
+                143,
+                145
+              ],
+              "side": "right",
+              "centroid": [
+                141.5,
+                145.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                147,
+                104,
+                150,
+                105
+              ],
+              "side": "right",
+              "centroid": [
+                148.5,
+                104.5
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            }
+          ],
+          "weaponLightClusters": [],
+          "temporallyIsolatedBodyLight": [
+            {
+              "pixels": 11,
+              "bbox": [
+                151,
+                117,
+                155,
+                122
+              ],
+              "side": "right",
+              "centroid": [
+                153.1,
+                119.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  11
+                ]
+              ]
+            },
+            {
+              "pixels": 6,
+              "bbox": [
+                123,
+                153,
+                126,
+                155
+              ],
+              "side": "left",
+              "centroid": [
+                124.7,
+                154.0
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  6
+                ]
+              ]
+            },
+            {
+              "pixels": 4,
+              "bbox": [
+                147,
+                104,
+                150,
+                105
+              ],
+              "side": "right",
+              "centroid": [
+                148.5,
+                104.5
+              ],
+              "dominantRgba": [
+                156,
+                158,
+                158,
+                255
+              ],
+              "dominantShare": 1.0,
+              "colours": [
+                [
+                  [
+                    156,
+                    158,
+                    158,
+                    255
+                  ],
+                  4
+                ]
+              ]
+            }
+          ],
+          "temporallyIsolatedBodyLightTotal": 21
+        }
+      ],
+      "nativeLightPerFrame": [
+        {
+          "frame": 0,
+          "lightLeft": 21,
+          "lightTotal": 67
+        },
+        {
+          "frame": 1,
+          "lightLeft": 5,
+          "lightTotal": 7
+        },
+        {
+          "frame": 2,
+          "lightLeft": 4,
+          "lightTotal": 4
+        },
+        {
+          "frame": 3,
+          "lightLeft": 6,
+          "lightTotal": 6
+        },
+        {
+          "frame": 4,
+          "lightLeft": 3,
+          "lightTotal": 6
+        },
+        {
+          "frame": 5,
+          "lightLeft": 1,
+          "lightTotal": 3
+        },
+        {
+          "frame": 6,
+          "lightLeft": 2,
+          "lightTotal": 2
+        },
+        {
+          "frame": 7,
+          "lightLeft": 1,
+          "lightTotal": 7
+        },
+        {
+          "frame": 8,
+          "lightLeft": 2,
+          "lightTotal": 7
+        },
+        {
+          "frame": 9,
+          "lightLeft": 2,
+          "lightTotal": 5
+        },
+        {
+          "frame": 10,
+          "lightLeft": 3,
+          "lightTotal": 5
+        },
+        {
+          "frame": 11,
+          "lightLeft": 21,
+          "lightTotal": 67
+        }
+      ],
+      "leftLightBoundaries": [
+        {
+          "fromFrame": 0,
+          "toFrame": 1,
+          "leftLightDelta": -16,
+          "ratio": 0.238
+        },
+        {
+          "fromFrame": 1,
+          "toFrame": 2,
+          "leftLightDelta": -1,
+          "ratio": 0.8
+        },
+        {
+          "fromFrame": 2,
+          "toFrame": 3,
+          "leftLightDelta": 2,
+          "ratio": 1.5
+        },
+        {
+          "fromFrame": 3,
+          "toFrame": 4,
+          "leftLightDelta": -3,
+          "ratio": 0.5
+        },
+        {
+          "fromFrame": 4,
+          "toFrame": 5,
+          "leftLightDelta": -2,
+          "ratio": 0.333
+        },
+        {
+          "fromFrame": 5,
+          "toFrame": 6,
+          "leftLightDelta": 1,
+          "ratio": 2.0
+        },
+        {
+          "fromFrame": 6,
+          "toFrame": 7,
+          "leftLightDelta": -1,
+          "ratio": 0.5
+        },
+        {
+          "fromFrame": 7,
+          "toFrame": 8,
+          "leftLightDelta": 1,
+          "ratio": 2.0
+        },
+        {
+          "fromFrame": 8,
+          "toFrame": 9,
+          "leftLightDelta": 0,
+          "ratio": 1.0
+        },
+        {
+          "fromFrame": 9,
+          "toFrame": 10,
+          "leftLightDelta": 1,
+          "ratio": 1.5
+        },
+        {
+          "fromFrame": 10,
+          "toFrame": 11,
+          "leftLightDelta": 18,
+          "ratio": 7.0
+        }
+      ],
+      "bookendHashes": {
+        "bodyF00Sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2",
+        "bodyF11Sha256": "245ce5ce71cebb37d30b738a941b212270a3386939e0c646642d31c62e2836d2"
+      },
+      "bookendVsIdle": [
+        {
+          "clipBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/00.png",
+          "idleBody": "characters/orc-v1/source/complete-v1/back_r/Idle/00.png",
+          "byteIdentical": true
+        },
+        {
+          "clipBody": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_r-sword/layers/body/11.png",
+          "idleBody": "characters/orc-v1/source/complete-v1/back_r/Idle/00.png",
+          "byteIdentical": true
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "clip": "back_l/Sword",
+      "frame": 0,
+      "durationMs": 90,
+      "layer": "body",
+      "pixels": 61,
+      "bbox": "aggregate: left-half body light",
+      "side": "left",
+      "dominantRgba": null,
+      "dominantShare": null,
+      "presentInPrev": null,
+      "presentInNext": 13,
+      "metric": "left-half body LIGHT total collapses at the F00->F01 cut and recovers at F10->F11",
+      "detail": {
+        "F00_left": 61,
+        "F01_left": 13,
+        "F10_left": 21,
+        "F11_left": 61,
+        "clustersF00": [
+          {
+            "pixels": 12,
+            "bbox": [
+              98,
+              122,
+              102,
+              131
+            ],
+            "side": "left",
+            "centroid": [
+              101.0,
+              126.0
+            ],
+            "dominantRgba": [
+              153,
+              154,
+              155,
+              255
+            ],
+            "dominantShare": 0.5,
+            "colours": [
+              [
+                [
+                  153,
+                  154,
+                  155,
+                  255
+                ],
+                6
+              ],
+              [
+                [
+                  171,
+                  173,
+                  173,
+                  255
+                ],
+                6
+              ]
+            ]
+          },
+          {
+            "pixels": 12,
+            "bbox": [
+              103,
+              117,
+              108,
+              121
+            ],
+            "side": "left",
+            "centroid": [
+              105.4,
+              118.6
+            ],
+            "dominantRgba": [
+              153,
+              154,
+              155,
+              255
+            ],
+            "dominantShare": 0.917,
+            "colours": [
+              [
+                [
+                  153,
+                  154,
+                  155,
+                  255
+                ],
+                11
+              ],
+              [
+                [
+                  171,
+                  173,
+                  173,
+                  255
+                ],
+                1
+              ]
+            ]
+          },
+          {
+            "pixels": 5,
+            "bbox": [
+              97,
+              133,
+              99,
+              137
+            ],
+            "side": "left",
+            "centroid": [
+              98.2,
+              135.0
+            ],
+            "dominantRgba": [
+              153,
+              154,
+              155,
+              255
+            ],
+            "dominantShare": 0.8,
+            "colours": [
+              [
+                [
+                  153,
+                  154,
+                  155,
+                  255
+                ],
+                4
+              ],
+              [
+                [
+                  171,
+                  173,
+                  173,
+                  255
+                ],
+                1
+              ]
+            ]
+          },
+          {
+            "pixels": 4,
+            "bbox": [
+              118,
+              92,
+              121,
+              95
+            ],
+            "side": "left",
+            "centroid": [
+              119.5,
+              93.5
+            ],
+            "dominantRgba": [
+              171,
+              173,
+              173,
+              255
+            ],
+            "dominantShare": 0.75,
+            "colours": [
+              [
+                [
+                  171,
+                  173,
+                  173,
+                  255
+                ],
+                3
+              ],
+              [
+                [
+                  153,
+                  154,
+                  155,
+                  255
+                ],
+                1
+              ]
+            ]
+          }
+        ],
+        "clustersF01": [
+          {
+            "pixels": 5,
+            "bbox": [
+              103,
+              125,
+              103,
+              129
+            ],
+            "side": "left",
+            "centroid": [
+              103.0,
+              127.0
+            ],
+            "dominantRgba": [
+              171,
+              173,
+              173,
+              255
+            ],
+            "dominantShare": 0.8,
+            "colours": [
+              [
+                [
+                  171,
+                  173,
+                  173,
+                  255
+                ],
+                4
+              ],
+              [
+                [
+                  153,
+                  154,
+                  155,
+                  255
+                ],
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clip": "back_r/Sword",
+      "frame": 0,
+      "durationMs": 90,
+      "layer": "body",
+      "pixels": 11,
+      "bbox": [
+        151,
+        117,
+        155,
+        122
+      ],
+      "side": "right",
+      "dominantRgba": [
+        156,
+        158,
+        158,
+        255
+      ],
+      "dominantShare": 1.0,
+      "colours": [
+        [
+          [
+            156,
+            158,
+            158,
+            255
+          ],
+          11
+        ]
+      ],
+      "presentInPrev": false,
+      "presentInNext": false,
+      "metric": "temporally isolated light cluster (>=8 px, no light within +-2 px in either neighbour)"
+    },
+    {
+      "clip": "back_r/Sword",
+      "frame": 11,
+      "durationMs": 100,
+      "layer": "body",
+      "pixels": 11,
+      "bbox": [
+        151,
+        117,
+        155,
+        122
+      ],
+      "side": "right",
+      "dominantRgba": [
+        156,
+        158,
+        158,
+        255
+      ],
+      "dominantShare": 1.0,
+      "colours": [
+        [
+          [
+            156,
+            158,
+            158,
+            255
+          ],
+          11
+        ]
+      ],
+      "presentInPrev": false,
+      "presentInNext": false,
+      "metric": "temporally isolated light cluster (>=8 px, no light within +-2 px in either neighbour)"
+    },
+    {
+      "clip": "back_l/Sword",
+      "frame": 0,
+      "durationMs": 90,
+      "layer": "body",
+      "pixels": 9,
+      "bbox": [
+        103,
+        117,
+        108,
+        119
+      ],
+      "side": "left",
+      "dominantRgba": [
+        153,
+        154,
+        155,
+        255
+      ],
+      "dominantShare": 0.889,
+      "colours": [
+        [
+          [
+            153,
+            154,
+            155,
+            255
+          ],
+          8
+        ],
+        [
+          [
+            171,
+            173,
+            173,
+            255
+          ],
+          1
+        ]
+      ],
+      "presentInPrev": false,
+      "presentInNext": false,
+      "metric": "temporally isolated light cluster (>=8 px, no light within +-2 px in either neighbour)"
+    }
+  ]
+}

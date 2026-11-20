@@ -1,0 +1,34 @@
+Painel de QA independente (mesma sessão, escopo novo e estreito): avaliar o CICLO COMPLETO `back_r/Axe` de 12 quadros, entregue em `REAR_AXE_FULL_READY` pelo especialista de pegada `7db0e7b6-ab88-49e9-9362-a19121c8ebf5`.
+
+Contexto: você aprovou antes os dois representantes F04/F07 (`rear-axe-grip-keys-result.json`). Esta revisão é SOMENTE a propagação para os 12 quadros. Não aprove 4 grips, 3 corpos restantes, matriz de 28 células ou integração Unity. Os três outros corpos traseiros estão em reparo por outro produtor e não fazem parte deste escopo.
+
+Fonte e evidência (leia e inspecione de verdade):
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-axe/clip.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/anatomy-plan.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/checks.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/input-snapshot.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/author.lua`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/batch-result.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-axe/index.html` (player real 1x/0,5x, passo, escala tática)
+- Exports por quadro: `layers/body`, `layers/weaponBack`, `layers/weaponFront`, `layers/handFront`, compostos 256, nativo 128, tiras.
+
+Contratos declarados pelo DEV que você deve VERIFICAR, não aceitar como atestado:
+1. `bodyRgbaDelta == 0` nos 12 quadros contra `body-specialist/full-back-r-axe/body256.aseprite`, inclusive nativo 128.
+2. F04 e F07 byte-idênticos aos representantes que você já aprovou.
+3. Intervalo `visibleInterval: [2, 8]`; F00, F01, F09, F10, F11 com `weaponBack`, `weaponFront`, `handFront` totalmente transparentes e composto igual ao corpo.
+4. Trajetória 305, 318, 330, 15, 75, 120, 105 graus e lâmina tocando `groundY = 190` (nativo 126) em F07, sem penetrar no chão em F08.
+5. Mestres `composite.aseprite`, `body256.aseprite`, `hand256.aseprite`, `native128.aseprite` salvos, reabertos e reexportados com pixels e duração coincidentes.
+6. Recorte nativo 128 com arma pode cortar a cabeça erguida em F04; isso é diagnóstico, não defeito da fonte 256. Verifique se a fonte canônica 256 mantém o machado íntegro.
+
+Julgamento artístico que só você pode dar (inspeção real de pixels):
+- Em CADA quadro visível F02..F08: a luva direita genuína envolve o cabo, unida ao pulso e antebraço, sem carimbo flutuante, sem mão inativa pegando a arma, sem guarda ou pomo escondido para simular contato.
+- Continuidade do arco pesado: F02 preparação, F03 subida, F04 ápice, F05 início da descida, F06 descida, F07 impacto com entrega de tronco/quadril/joelhos, F08 follow-through assentado. Apontar qualquer teleporte do item, colisão com o corpo, rastro pintado no corpo, salto de massa ou perda de massa do machado.
+- Retorno neutro F09..F11 desarmado sem sobra de pixels de equipamento.
+- Contorno/materiais do item e legibilidade em escala nativa e tática 64.
+- Diferencie o que você viu em repouso/quadro a quadro do que exigiria reprodução contínua. Não declare percepção 1x se não a observou; se o player real permitir, registre o que foi percebido.
+
+Grave NOVO `rear-axe-full-result.json` e `rear-axe-full-report.md` na sua pasta `qa-antigravity-flash`, preservando todos os pareceres anteriores. Inclua hash SHA-256 real do `clip.json` que inspecionou, evidências por quadro (arquivos exatos), achados acionáveis com coordenadas quando aplicável e limitações.
+
+Verdito único: `READY_FOR_MATRIX_REVIEW` se o ciclo completo sustenta a arte, `REVISIONS_REQUIRED` com achados por quadro, ou `INCONCLUSIVE` se a percepção necessária não foi possível.
+
+Restrições: não editar arte, fontes, matriz, Unity ou ponteiros; não criar subagentes nem QA dentro do DEV; zero chamadas PixelLab de produção; custo LLM não informado; aprovação do criador continua pendente. Pare após o laudo persistente com handoff completo.

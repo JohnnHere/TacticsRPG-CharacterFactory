@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T13:42:58.905Z",
+  "reviewer": {
+    "role": "INDEPENDENT_QA",
+    "sessionLabel": "qa-sol",
+    "producer": false,
+    "orchestrator": false,
+    "subagentsUsed": false,
+    "copilotUsed": false
+  },
+  "inputFreeze": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/input-freeze.json",
+    "sha256": "1124ffb3e415cadd801a3370509b654c8114bfe6f0a60034618f70ff7921896a",
+    "recordedUtc": "2026-10-29T13:40:13.4547113Z"
+  },
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "runtimeImplemented": false,
+  "integrationAllowed": false,
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-sol/",
+  "otherQaArtifactsRead": false,
+  "scope": "Only front_r/Sword static grip representatives F02 and F08",
+  "readyCheckpoint": "GRIP_F02_F08_READY",
+  "verdict": "READY_FOR_FULL_CLIP_EXPLORATION",
+  "verdictMeaning": "Both static grips are visually viable for Root to decide the next exploration; not full-clip acceptance or automatic propagation",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "fullClipApproved": false,
+  "propagationAllowed": false,
+  "expansionAutomaticallyAuthorized": false,
+  "F06Reevaluated": false,
+  "frames": [
+    {
+      "frame": "F02",
+      "sourceFrameIndex": 2,
+      "verdict": "STATIC_GRIP_ACCEPTABLE",
+      "representative": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/representative.json",
+        "sha256": "76b5b63dd0ff7d9a1011400b29f570eb7a53cd205e7027e764ed512f6fc14ebf"
+      },
+      "master": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/source/composite.aseprite",
+        "sha256": "c131abe09e0bdba1e1143b0d686ef142bae313f752184c1858a3a5de8886cbed"
+      },
+      "composite": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/composite-256.png",
+        "sha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d"
+      },
+      "grip": [
+        103,
+        130
+      ],
+      "contactAndClosure": "Lower image-left active glove covers central hilt; guard above-left and pommel below-right join through palm without transparent gap",
+      "wristAndForearm": "Bracer-to-wrist-to-glove traceable; opposite hand inactive",
+      "occlusion": "Hand covers hilt where palm closes; blade/guard/pommel remain independent and visible outside grip",
+      "observation": "No static blocking defect observed",
+      "independentTechnicalChecks": {
+        "frame": "F02",
+        "bodyArgbDelta": 0,
+        "savedMasterFrameDurationMs": 35,
+        "declaredDurationMs": 35,
+        "durationMatches": true
+      }
+    },
+    {
+      "frame": "F08",
+      "sourceFrameIndex": 8,
+      "verdict": "STATIC_GRIP_ACCEPTABLE",
+      "representative": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/representative.json",
+        "sha256": "e07c0be8a607230a0617aec5481ec5e9bc2fcdafacdaf14ec59686ee3c28184c"
+      },
+      "master": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/source/composite.aseprite",
+        "sha256": "b4950ba70f261c045b7b408e40c01b739376490d82cf0391a130d6a97cc2d4cc"
+      },
+      "composite": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/composite-256.png",
+        "sha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18"
+      },
+      "grip": [
+        159,
+        148
+      ],
+      "contactAndClosure": "Low image-right active glove at end of crossing forearm covers central diagonal hilt; guard/blade down-right and pommel upper-left remain connected through glove",
+      "wristAndForearm": "Crossing forearm terminates in low glove; upper vertical leather is the other arm, not the active palm",
+      "occlusion": "Hand covers hilt where palm closes; blade/guard/pommel remain independent and visible outside grip",
+      "observation": "Pommel projects onto bracer region, but hilt line through palm remains coherent; overlapping arms require temporal review",
+      "independentTechnicalChecks": {
+        "frame": "F08",
+        "bodyArgbDelta": 0,
+        "savedMasterFrameDurationMs": 100,
+        "declaredDurationMs": 100,
+        "durationMatches": true
+      }
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+      "sha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+      "declaredSha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/02.png",
+      "sha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredSha256": "81a00e050f2861e41255fb346c013440618b734760feaaae36a5b1a31ebfea22",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/layers/body/08.png",
+      "sha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+      "declaredSha256": "c68f87c382224bb09120410db09a57f49c2e8831e1957578ec644b4e4b8f7d4d",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+      "sha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+      "declaredSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+      "sha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+      "declaredSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+      "sha256": "7c090d89d004b8a4c16fd9e42b46017be295df336de113000512e8518faebe9a",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/body-128.png",
+      "sha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredSha256": "2258446e6bbbf9018edde13295fb0ebe3105a8996bc0b10080a14d47698c8a1c",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/composite-256.png",
+      "sha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+      "declaredSha256": "008b414cdd6f8a8eb64add1a5d8a0e4282ae56a4759edceef8fc69a2a8232b3d",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/layers/body.png",
+      "sha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredSha256": "0a8810840aff546824122a42775af164cfbede11a22f965f9d999a4c33cdefcb",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/layers/handFront.png",
+      "sha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+      "declaredSha256": "7983c6f154f29c2565629dedef160412fb15c7f3e95e612eee3840fb94b64a78",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/layers/weaponBack.png",
+      "sha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+      "declaredSha256": "8e7a7c09c852a316d578e2c8d3a06a4e307d3826d796285a8e5d39005c53011d",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/layers/weaponFront.png",
+      "sha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+      "declaredSha256": "6e4c002b37226078c62beda563cc74c8138ae7e1433d8a80c13534a92a3d647d",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/representative.json",
+      "sha256": "76b5b63dd0ff7d9a1011400b29f570eb7a53cd205e7027e764ed512f6fc14ebf",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/source/body-128.aseprite",
+      "sha256": "81ba867e52aa6cceda3441086b19b0e5457131e4956914f3dfe165cd83838118",
+      "declaredSha256": "81ba867e52aa6cceda3441086b19b0e5457131e4956914f3dfe165cd83838118",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/source/body-256.aseprite",
+      "sha256": "01e16c60a7cf0f9bba01bf0896c5e136a366101044da28b6026b96c0ac24dfc7",
+      "declaredSha256": "01e16c60a7cf0f9bba01bf0896c5e136a366101044da28b6026b96c0ac24dfc7",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F02/source/composite.aseprite",
+      "sha256": "c131abe09e0bdba1e1143b0d686ef142bae313f752184c1858a3a5de8886cbed",
+      "declaredSha256": "c131abe09e0bdba1e1143b0d686ef142bae313f752184c1858a3a5de8886cbed",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/body-128.png",
+      "sha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+      "declaredSha256": "c06d99b837acf114076e3dd44be519bb16d67df2aac8949400c2efe45e872ed6",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/composite-256.png",
+      "sha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+      "declaredSha256": "2f47d317578f830a1ca37146be8fb70959f9b681799e2b40f63a2ea551574b18",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/layers/body.png",
+      "sha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+      "declaredSha256": "f42d21c1b28d7c23934103a2f6e56d5f0a81596442e59c6df0bb693a7c17dd56",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/layers/handFront.png",
+      "sha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+      "declaredSha256": "b4a5a512ceb2360c58c9ed235fff36023585aa781c205efd0a3260e01f4987ef",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/layers/weaponBack.png",
+      "sha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+      "declaredSha256": "2e9aeaf63fe1d51f7c7c05c87c8639cec7517b796b800d0829e9ab251b99f396",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/layers/weaponFront.png",
+      "sha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+      "declaredSha256": "af0a5b09f5467319b742686bbd287336cf171dda30f40d3afac6c767cc85e138",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/representative.json",
+      "sha256": "e07c0be8a607230a0617aec5481ec5e9bc2fcdafacdaf14ec59686ee3c28184c",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/source/body-128.aseprite",
+      "sha256": "c9fc407cdb89965a7a6ceab43ed3d6f399201bcc5b385688329ab630a2afeec6",
+      "declaredSha256": "c9fc407cdb89965a7a6ceab43ed3d6f399201bcc5b385688329ab630a2afeec6",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/source/body-256.aseprite",
+      "sha256": "11b1a5381bb08226bb3f5cfb3f0e57abb173d55b2407301e7515dbc3582d04b2",
+      "declaredSha256": "11b1a5381bb08226bb3f5cfb3f0e57abb173d55b2407301e7515dbc3582d04b2",
+      "declaredMatches": true
+    },
+    {
+      "path": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F08/source/composite.aseprite",
+      "sha256": "b4950ba70f261c045b7b408e40c01b739376490d82cf0391a130d6a97cc2d4cc",
+      "declaredSha256": "b4950ba70f261c045b7b408e40c01b739376490d82cf0391a130d6a97cc2d4cc",
+      "declaredMatches": true
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/F02-F08/anatomy.json",
+      "sha256": "85bd0e56094c81e2e8d459cf7f75378b94e0ffd9252c2fea5eb3dad8d2cd7b7a",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/F02-F08/checkpoint.json",
+      "sha256": "c8b8ce1853c2e9470338bbcdd649ef9fe9c325218a98b4ed21939ecf31e72e8b",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/F02-F08/checks.json",
+      "sha256": "2cbdbefa6b50d2cdf898dc51a652e0c0d68169a2e059dd02265a91ab6b5b4073",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/grip-specialist/F02-F08/report.md",
+      "sha256": "58c108d026d2ce9d9abfa2f0062da77d962a2c4410cca422b03e39c9b5e238a9",
+      "declaredSha256": null,
+      "declaredMatches": null
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/F02-layers-body-grip-exact-unmarked-16x.png",
+      "sha256": "67d392bd44f5365fe34a970b48ba2a6335d5dafe7e14d81898181bf1aa4b3cda",
+      "role": "unmarked nearest-neighbor diagnostic derived from exact final export; not production art"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/F02-composite-256-grip-exact-unmarked-16x.png",
+      "sha256": "8c6221e19c9213da7570077796c54385935a1fc5a28c08c541bc04e57a3d7c7d",
+      "role": "unmarked nearest-neighbor diagnostic derived from exact final export; not production art"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/F08-layers-body-grip-exact-unmarked-16x.png",
+      "sha256": "bd2c6f1eca928c03dea14307741a8e7630f5a14ec0f34f062e107751d1aa3cde",
+      "role": "unmarked nearest-neighbor diagnostic derived from exact final export; not production art"
+    },
+    {
+      "path": "experiments/main-orc-combat-rescue-v5/qa-sol/F08-composite-256-grip-exact-unmarked-16x.png",
+      "sha256": "4976e6c7812634698363797b9e3843e5297e5e1ecbbc205acf048546f3f7be01",
+      "role": "unmarked nearest-neighbor diagnostic derived from exact final export; not production art"
+    }
+  ],
+  "visualInspection": {
+    "actualImagesViewed": true,
+    "full256CompositesViewed": true,
+    "layersOffNativeBodiesViewed": true,
+    "unmarkedExactGripCropsViewed": true,
+    "fullCyclePlayed": false,
+    "readingBlocked": false
+  },
+  "limitations": [
+    "Static F02/F08 do not prove 13-frame motion, continuous wrist rotation, item trajectory, weight or 1x timing",
+    "Historical isolated F06 acceptance does not constitute a full cycle and was not re-reviewed",
+    "F08 judged on intact256 equipment composite; body128 crop cannot contain the whole item",
+    "Independent technical checks cover exact source-body pixel equality and saved frame durations only; producer cel decoding/reexport and F06 freeze were not repeated",
+    "Producer report references historical QA; no other QA artifact read or relied on"
+  ],
+  "nextAction": "Stop at these two static representatives; Root decides whether to explore complete clip and arrange full-motion QA at native scale/normal speed",
+  "report": "experiments/main-orc-combat-rescue-v5/qa-sol/grip-F02-F08-report.md"
+}

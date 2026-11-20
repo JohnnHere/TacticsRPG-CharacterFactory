@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "direction": "back_r",
+  "canvas": [
+    256,
+    256
+  ],
+  "ppu": 100,
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "bodyMaster": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-body.aseprite",
+  "handMaster": "characters/orc-v1/source/aseprite/complete-v1/composite/back_r/sword-hand-front.aseprite",
+  "frames": [
+    {
+      "index": 0,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/00.png",
+        "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/00.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 30,
+      "phase": "rest",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 1,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/01.png",
+        "sha256": "d2780500bcbb2f36ad8c1d0f89c8bfdba4c0101908cbd7a163435211aa9f5827"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/01.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 65,
+      "phase": "body-preparation",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 2,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/02.png",
+        "sha256": "d2780500bcbb2f36ad8c1d0f89c8bfdba4c0101908cbd7a163435211aa9f5827"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/02.png",
+        "sha256": "cff09f14645301888c78b1aad71d6c8b4d97cbb13dedca3000754673fac60121"
+      },
+      "durationMs": 35,
+      "phase": "establish-grip",
+      "grip": [
+        154,
+        131
+      ],
+      "angle": 45,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 3,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/03.png",
+        "sha256": "ab8df3ca84064d227fb56bcc6cd4826c5486e2701cfa921baadc146fd624a172"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/03.png",
+        "sha256": "af7d72de553ff99e2cf413eae5aa8be2a3921dd4ef4a6912b0d2ec69a3a8dee7"
+      },
+      "durationMs": 50,
+      "phase": "entry-elbow-lift",
+      "grip": [
+        167,
+        118
+      ],
+      "angle": 30,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 4,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/04.png",
+        "sha256": "c0c68569c76d80d04994edd6b4711839e2f39270c084dbc2f160d3cb990a37eb"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/04.png",
+        "sha256": "0ae22d2e67cd9ec3625b98254ea296569225f47c755d56e0c3c38e4580a010ab"
+      },
+      "durationMs": 45,
+      "phase": "entry-shoulder-coil",
+      "grip": [
+        157,
+        100
+      ],
+      "angle": 20,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 5,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/05.png",
+        "sha256": "249fa63206b11514f19526cfca15f1038896fd50baae17750ea551fcdda80e0d"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/05.png",
+        "sha256": "ab64f480891d7c8252c0cc7111d7b860330b584fda2733e4999dc90592cb8412"
+      },
+      "durationMs": 65,
+      "phase": "high-guard",
+      "grip": [
+        157,
+        89
+      ],
+      "angle": 15,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 6,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/06.png",
+        "sha256": "7077f82638ef2df1f6a12b3d666c9299f1f7e367e944ac94cd5c27c515b19f73"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/06.png",
+        "sha256": "3cd0d925e94065a450647eabfef61d07f5285a2d897675eb1496dd235ff5ad55"
+      },
+      "durationMs": 35,
+      "phase": "drive",
+      "grip": [
+        98,
+        112
+      ],
+      "angle": 340,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 7,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/07.png",
+        "sha256": "d3434c4f17e8129c139cd93a6c02f919be17da89c728e61766a4d3cfd4b54742"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/07.png",
+        "sha256": "0eb84041d99243a615ec9389cacc402ba9856d79da7f80570a4fa547284f2f99"
+      },
+      "durationMs": 35,
+      "phase": "crossing",
+      "grip": [
+        97,
+        134
+      ],
+      "angle": 305,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 8,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/08.png",
+        "sha256": "516817f11909d4dba8ff2f4268f2c17d85054c53785b7cbb5955b69db0c22fc9"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/08.png",
+        "sha256": "cf721927fbaf862055a086ef214c3e11b85a78d21cd8c3ae3f6ba2956922f3e0"
+      },
+      "durationMs": 100,
+      "phase": "strike-follow-through",
+      "grip": [
+        96,
+        142
+      ],
+      "angle": 260,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 9,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/09.png",
+        "sha256": "a1ab8c6d98c40b0530e6d2b8e3a70782e0b629ea6941fc949e6446c3703d7cf0"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/09.png",
+        "sha256": "ae436bcf0f842fa6562ae007583ce634e72240c0d647dc285d997db036b0de96"
+      },
+      "durationMs": 55,
+      "phase": "recovery-bridge",
+      "grip": [
+        126,
+        148
+      ],
+      "angle": 258,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": true
+    },
+    {
+      "index": 10,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/10.png",
+        "sha256": "79ba9f637f763342cadc1d2dde667a104de79523729e51d402244ac7c55d92aa"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/10.png",
+        "sha256": "756a986a59affcfe04df06aabb0c5490ab05625db070d61e089b1b556f76ac00"
+      },
+      "durationMs": 80,
+      "phase": "recovery",
+      "grip": [
+        145,
+        147
+      ],
+      "angle": 255,
+      "scale": 1,
+      "weaponVisible": true,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 11,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/11.png",
+        "sha256": "79ba9f637f763342cadc1d2dde667a104de79523729e51d402244ac7c55d92aa"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/11.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 45,
+      "phase": "action-complete",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    },
+    {
+      "index": 12,
+      "body": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/body/12.png",
+        "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb"
+      },
+      "handFront": {
+        "png": "characters/orc-v1/source/complete-v1/back_r/Sword/Attack/layers/handFront/12.png",
+        "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+      },
+      "durationMs": 90,
+      "phase": "return-unarmed",
+      "scale": 1,
+      "weaponVisible": false,
+      "weaponBehindBody": false
+    }
+  ],
+  "itemContract": {
+    "grip": "Integer local point on actual handle",
+    "scale": 1,
+    "canvas": "Per-item native dimensions; no automatic body regeneration",
+    "category": "Sword",
+    "direction": "back_r",
+    "occlusion": "weaponBack -> body -> weaponFront -> handFront",
+    "compatibility": "One-handed items of this category only; check shaft width, blade/head/guard clearance and camera"
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR"
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "reaction.hit",
+  "character": "orc-v1",
+  "state": "Hit",
+  "legacySlotState": "Hit",
+  "direction": "front_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    45,
+    95,
+    115,
+    95,
+    100
+  ],
+  "totalDurationMs": 450,
+  "master": "characters/orc-v1/source/aseprite/complete-v1/composite/front_r/hit-unarmed.aseprite",
+  "masterSha256": "2ded6b489265f3884362218720200a892068c3fe51b57f4649072b07a2eca2be",
+  "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/hit-front_r.aseprite",
+  "nativeMasterSha256": "01c2efe5261c580bf5d913a8a23019866a3f4ed1dd7e3c02ab3e92950c991b07",
+  "strip": "characters/orc-v1/source/complete-v1/front_r/Hit/native-strip.png",
+  "stripSha256": "899231ecdc5270994aeb98510c07be1683d613f8d4a9242e1acbcd7a1d4fd682",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": null,
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/complete-v1/front_r/Hit/00.png",
+      "sha256": "e6c4ae2a7183f902a56ad19c5745c4dd474dbb2c4f5ead6e2ac5623241e5e1b1",
+      "nativePng": "characters/orc-v1/sprites/Animations/Hit/hit_front_r_00.png",
+      "nativeSha256": "2198d8e221e5edb0d66b703bd02ee35455c5b949d1ada078ec43eb53ef729c4f",
+      "durationMs": 45,
+      "phase": "impact-onset",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/complete-v1/front_r/Hit/01.png",
+      "sha256": "4fd045c01f1b26b8e99e8feae5208ef063ea3144327105693281484686ec24db",
+      "nativePng": "characters/orc-v1/sprites/Animations/Hit/hit_front_r_01.png",
+      "nativeSha256": "971057b29c196193f9ad471887b8315f29673e54ba7d1704a4b72a3db84f5fa0",
+      "durationMs": 95,
+      "phase": "peak-recoil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/complete-v1/front_r/Hit/02.png",
+      "sha256": "302bb968e9917a5f509e4d0d551ea4989782f13f807217814b49f2b34b4e4de4",
+      "nativePng": "characters/orc-v1/sprites/Animations/Hit/hit_front_r_02.png",
+      "nativeSha256": "ef4ed6a39a700d6e9dcedf7d83ff5366e8bbbe88ef6f2dc503ae8ee1d3803fca",
+      "durationMs": 115,
+      "phase": "stagger-brace",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/complete-v1/front_r/Hit/03.png",
+      "sha256": "78ae6c767a5f7ad7ac48c2ef621a1160ececb9d75d4674e3473bff0c0a817ede",
+      "nativePng": "characters/orc-v1/sprites/Animations/Hit/hit_front_r_03.png",
+      "nativeSha256": "88c05c0dce106449ba08c1ae689bf7bb711b80a108837bce6b6454f26c7c9953",
+      "durationMs": 95,
+      "phase": "recovery-rise",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/complete-v1/front_r/Hit/04.png",
+      "sha256": "5950898f0f39f4b925c9ac71f839b5cf9eb4e505d3ac710afac685623ac9f5f4",
+      "nativePng": "characters/orc-v1/sprites/Animations/Hit/hit_front_r_04.png",
+      "nativeSha256": "451eed085b422cfb734f108049ec57687b861e5aee1bba37c8d94ab03564b780",
+      "durationMs": 100,
+      "phase": "recovery-settle",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

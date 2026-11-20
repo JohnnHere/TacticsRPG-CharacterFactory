@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-26T23:15:06.453Z",
+  "direction": "back_l",
+  "action": "Axe",
+  "generatedBody": {
+    "jobId": "5296ac98-b253-4133-8468-155f7e90c68e",
+    "assetId": "42cb4114-2fe0-5310-a3e7-79b640105256",
+    "chargedGenerations": 3,
+    "rawFrames": [
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/00.png",
+        "sha256": "fa4c520c651ef83b605b2c9a96940c632683c1168bea2b0298cb796f83efb112"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/01.png",
+        "sha256": "c3080ad545e5ec7ce49eca0e372bc442bcf7428b454f294ea6c6eb3bb51fd5d1"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/02.png",
+        "sha256": "e0ea8de5f7de91468f8bb8932e9625c3ab117c3a0cdf357fd3f9c48536a8b679"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/03.png",
+        "sha256": "7bdf09bd6765cf4712c1fffb824bd3883157e16f24442ff7ce1eaebe66ba2ed9"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/04.png",
+        "sha256": "528d84e420cbed4c6ab85bf39457cf4c38d3f3d3a61c57d56d48d928fae336f1"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/05.png",
+        "sha256": "69cda5245bea44b358ed38ab99ec6ddb2f29fa21fe055984ee92b7dd3b6a0763"
+      },
+      {
+        "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l_axe/06.png",
+        "sha256": "31a7c91bd9ed2478b2064a284c7e3943ec40fc0edc2688586bed28df74124a60"
+      }
+    ]
+  },
+  "base": {
+    "path": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-native128.png",
+    "sha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "identity": "own approved NW/back_l empty-hand base; no rendered-image mirroring"
+  },
+  "generatedWeaponContamination": [
+    {
+      "frames": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceMask": {
+        "xMin": 96,
+        "xMax": 127,
+        "yMin": 20,
+        "yMax": 58
+      },
+      "operation": "Restore same-view NW base pixels to erase extra generated axe at stationary viewer-right shoulder",
+      "changedPixels": [
+        278,
+        270,
+        39
+      ]
+    },
+    {
+      "frames": [
+        "01",
+        "02"
+      ],
+      "sourceMask": {
+        "xMin": 35,
+        "xMax": 85,
+        "yMin": 0,
+        "yMax": 23
+      },
+      "operation": "Restore head/shaft region from NW base, preserving green skull; remove residual detached brown shaft-colored pixels inside Aseprite",
+      "restoredRegionPixelDifferences": [
+        167,
+        168
+      ],
+      "brownPixelsRemoved": [
+        3,
+        3
+      ]
+    }
+  ],
+  "adaptedArmReuse": {
+    "classification": "REUSE_ADAPTED",
+    "source": "characters/orc-v1/source/rear-recovery-v2/back_l/Sword/Attack-representative-v1/layers/body/02.png plus layers/handFront/02.png",
+    "sourceSha256": {
+      "body": "9c31674e07df2abe2f0893d3c62483cd1bb50e3e0192eec43aac4c5b793a355f",
+      "handFront": "dae33dfeff77c5a731ebe0ddb8c2e2fe75836fd7f0b6990e8a60d262e572b206"
+    },
+    "frames": [
+      "01",
+      "02"
+    ],
+    "translationNativePixels": [
+      0,
+      8
+    ],
+    "donorPolygon": [
+      [
+        28,
+        28
+      ],
+      [
+        29,
+        23
+      ],
+      [
+        33,
+        19
+      ],
+      [
+        34,
+        14
+      ],
+      [
+        31,
+        9
+      ],
+      [
+        31,
+        4
+      ],
+      [
+        34,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        5
+      ],
+      [
+        47,
+        10
+      ],
+      [
+        45,
+        15
+      ],
+      [
+        43,
+        19
+      ],
+      [
+        43,
+        24
+      ],
+      [
+        41,
+        29
+      ],
+      [
+        39,
+        34
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        30,
+        33
+      ]
+    ],
+    "targetReplacementPolygon": [
+      [
+        10,
+        0
+      ],
+      [
+        43,
+        0
+      ],
+      [
+        48,
+        7
+      ],
+      [
+        47,
+        14
+      ],
+      [
+        44,
+        21
+      ],
+      [
+        42,
+        28
+      ],
+      [
+        39,
+        34
+      ],
+      [
+        33,
+        37
+      ],
+      [
+        27,
+        34
+      ],
+      [
+        23,
+        29
+      ],
+      [
+        19,
+        23
+      ],
+      [
+        15,
+        18
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "omittedBrownTopEdgePixels": true,
+    "method": "Aseprite Lua mask, same-view own-character arm and handFront pixels only; AxeL torso, legs, armor, perspective, and lighting retained."
+  },
+  "confirmedDetachedResidue": {
+    "frame": "02",
+    "connectedComponent8": {
+      "pixelCount": 26,
+      "bbox": [
+        18,
+        22,
+        26,
+        34
+      ],
+      "coordinates": [
+        [
+          18,
+          22
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          18,
+          24
+        ],
+        [
+          19,
+          24
+        ],
+        [
+          19,
+          25
+        ],
+        [
+          20,
+          25
+        ],
+        [
+          19,
+          26
+        ],
+        [
+          20,
+          26
+        ],
+        [
+          20,
+          27
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          20,
+          28
+        ],
+        [
+          21,
+          28
+        ],
+        [
+          22,
+          28
+        ],
+        [
+          21,
+          29
+        ],
+        [
+          22,
+          29
+        ],
+        [
+          21,
+          30
+        ],
+        [
+          22,
+          30
+        ],
+        [
+          23,
+          30
+        ],
+        [
+          22,
+          31
+        ],
+        [
+          23,
+          31
+        ],
+        [
+          24,
+          31
+        ],
+        [
+          24,
+          32
+        ],
+        [
+          25,
+          32
+        ],
+        [
+          25,
+          33
+        ],
+        [
+          26,
+          33
+        ],
+        [
+          26,
+          34
+        ]
+      ]
+    },
+    "isolatedPixel": [
+      28,
+      35
+    ],
+    "approvedBaseOpaqueAtThoseCoordinates": 0,
+    "removedPixelCount": 27,
+    "operation": "Aseprite exact-coordinate transparency mask; no general component-size filtering"
+  },
+  "cleanupScript": "experiments/main-orc-rear-recovery-v2/clean_generated_axe_and_build_body.lua",
+  "armRepairScript": "experiments/main-orc-rear-recovery-v2/repair_back_l_axe_clipped_arm.lua",
+  "cleanedBodyFrames": [
+    {
+      "frame": 0,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/00.png",
+      "sha256": "0fb8c85ac00fddb016657c54a6180993ebc0c2db800e65cf57beb4f9e4aede19"
+    },
+    {
+      "frame": 1,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/01.png",
+      "sha256": "7625eba6cb17761f3f5d364e3738d595993b1af2c73cdeb6fc2ae32a9a0203b7"
+    },
+    {
+      "frame": 2,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/02.png",
+      "sha256": "42d15baeebc07f374f7d6f9fa72e51fcf9b04513afc5e4ba47fea85a47259f6b"
+    },
+    {
+      "frame": 3,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/03.png",
+      "sha256": "cb4619250101a97f91bca32e2fa303e63a8b5d87f363b9f7203b2e98efcf0338"
+    },
+    {
+      "frame": 4,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/04.png",
+      "sha256": "8d26362cf6eb9cddc6aa18447d7dc553e1de4aa2dc980caa6a98fb416d350cae"
+    },
+    {
+      "frame": 5,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/05.png",
+      "sha256": "4d85d5cd6ebc41ee873c20d0c4e5f6d69a0d4a18c4c8f6c6272adc5eda3da1da"
+    },
+    {
+      "frame": 6,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/06.png",
+      "sha256": "822ed2d9e4ef0c5d4132eea78029773fc0cef03cc9fbc4b32403b5fa790faec5"
+    },
+    {
+      "frame": 7,
+      "path": "characters/orc-v1/source/rear-recovery-v2/back_l/Axe/Attack-representative-v1/07.png",
+      "sha256": "a932ce365a2de581e8fad781ee411256e641e0c4d46e091c6459195501b4c079"
+    }
+  ],
+  "rawPreserved": true,
+  "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+  "bodyMaster": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-body-representative-v1.aseprite",
+  "nativeMaster": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/axe-body-representative-v1-back_l.aseprite",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "visualStatus": "PASS_FOR_INTERNAL_INTEGRATION",
+  "creatorApproval": "PENDING_CREATOR"
+}

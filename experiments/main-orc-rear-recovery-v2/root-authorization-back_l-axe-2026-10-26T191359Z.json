@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "priorAuthorizationTimestampUtc": "2026-10-26T19:13:59Z",
+  "source": "Explicit Root instruction in user message dated 2026-10-26, before request; only one back_l Axe job authorized",
+  "priorActualExperimentGenerations": 75,
+  "maxAdditionalJobs": 1,
+  "maxAdditionalGenerations": 3,
+  "hardCeiling": 78,
+  "target": {
+    "direction": "back_l",
+    "action": "Axe",
+    "base": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-native128.png",
+    "baseSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+    "method": "animate_with_skeleton_v3",
+    "frames": 7,
+    "estimatedCostGenerations": 3,
+    "estimateBasis": "PixelLab skeleton-v3 cost schedule: 4-14 frames = 3 generations",
+    "motion": "one-handed head-heavy chop: cocked shoulder, committed torso rotation, diagonal northwest chopping arc, loaded impact, low heavy follow-through, natural recovery; distinct from Sword",
+    "constraints": [
+      "use own approved NW/back_l empty-hand base; do not mirror rendered art",
+      "skeleton coordinates adapted to the own dominant hand",
+      "inspect/remove generated weapon contamination only in Aseprite, preserving fist/forearm",
+      "no retries, no other jobs, no more generation after this job"
+    ]
+  },
+  "status": "COMPLETED_RAW_INSPECTION_FOUND_CLIPPED_FIST",
+  "balanceBefore": {
+    "checkedAtUtc": "2026-10-26T19:13:59Z",
+    "generationsRemaining": 1412.7,
+    "generationsUsed": 587.3
+  },
+  "jobId": "5296ac98-b253-4133-8468-155f7e90c68e",
+  "assetId": "42cb4114-2fe0-5310-a3e7-79b640105256",
+  "receipt": "job 5296ac98-b253-4133-8468-155f7e90c68e; asset 42cb4114-2fe0-5310-a3e7-79b640105256; 7 frames; charged 3 generations",
+  "outputHashes": [
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\00.png",
+      "sha256": "fa4c520c651ef83b605b2c9a96940c632683c1168bea2b0298cb796f83efb112"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\01.png",
+      "sha256": "c3080ad545e5ec7ce49eca0e372bc442bcf7428b454f294ea6c6eb3bb51fd5d1"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\02.png",
+      "sha256": "e0ea8de5f7de91468f8bb8932e9625c3ab117c3a0cdf357fd3f9c48536a8b679"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\03.png",
+      "sha256": "7bdf09bd6765cf4712c1fffb824bd3883157e16f24442ff7ce1eaebe66ba2ed9"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\04.png",
+      "sha256": "528d84e420cbed4c6ab85bf39457cf4c38d3f3d3a61c57d56d48d928fae336f1"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\05.png",
+      "sha256": "69cda5245bea44b358ed38ab99ec6ddb2f29fa21fe055984ee92b7dd3b6a0763"
+    },
+    {
+      "path": "experiments\\main-orc-rear-recovery-v2\\raw\\pixellab-skeleton-v3\\back_l_axe\\06.png",
+      "sha256": "31a7c91bd9ed2478b2064a284c7e3943ec40fc0edc2688586bed28df74124a60"
+    }
+  ],
+  "actualAdditionalJobs": 1,
+  "actualAdditionalGenerations": 3,
+  "experimentConsumedGenerations": 78,
+  "remainingGenerationAuthorization": 0,
+  "submittedAtUtc": "2026-10-26T19:14:12Z",
+  "completedAtUtc": "2026-10-26T19:19:09Z"
+}

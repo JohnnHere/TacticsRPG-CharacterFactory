@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "EXECUTED_BEFORE_ROOT_APPROVAL_DEVIATION_RECORDED",
+  "problemEvidence": [
+    "Diagnosis/root-representative-f05.png: cached raised-fist pose exists, but the current weapon anchor is on the upper arm/pauldron and the blade is hidden.",
+    "Diagnosis/root-representative-f03.png and root-representative-f08.png: cached poses do not give a consistently visible closed hand at the current strike/follow-through contacts.",
+    "The old 13-frame empty-hand body cycle is internally coherent, but its arm poses do not support the requested visible one-handed sword arc with a verified fist contact."
+  ],
+  "scope": {
+    "character": "orc-v1 / Verde Warcraft",
+    "direction": "back_r only",
+    "action": "one-handed Sword Attack body cycle, generated empty-handed",
+    "nativeCanvas": [
+      128,
+      128
+    ],
+    "framesReturned": 7,
+    "startingReference": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack/native/00.png",
+    "referenceIsBodyOnly": true,
+    "noWeaponPixelsInGeneration": true,
+    "otherDirectionsOrActions": false
+  },
+  "method": {
+    "tool": "mcp__pixellab__animate_with_skeleton_v3",
+    "model": "PixelLab skeleton-v3",
+    "view": "low top-down",
+    "direction": "north-east",
+    "skeleton": "COCO-18, 7 ordered poses; static head/torso/hips/feet, right wrist travels from reach to cock, release and follow-through; shoulder-elbow-wrist remain connected in every pose; left arm braces the torso.",
+    "keyposeSequence": [
+      "reach-and-close-fist",
+      "cock-high-with-wrist-over-shoulder",
+      "load-back-across-dorsal-line",
+      "release-from-fist-with-arm-extension",
+      "horizontal-slash-follow-through",
+      "lowered-recovery",
+      "return-to-empty-hand-guard"
+    ],
+    "rendering": "Import returned frames into Aseprite, compare to the existing Orc V1 rear base, clean clusters locally, and save only the empty-hand body master in Aseprite. Weapon remains an independent asset."
+  },
+  "estimatedCostGenerations": 3,
+  "costBasis": "Cached animate_with_skeleton_v3 schema prices 4–14 requested skeleton frames at 3 generations. One seven-frame request only; no retries or expansion calls without another review.",
+  "acceptanceGate": [
+    "Aseprite-authored native128 body frames show a connected forearm and clearly closed fist at reach, cock, impact and follow-through.",
+    "Loop/playback at native 1x retains Orc V1 identity and body proportions without frame pops.",
+    "Root inspects the full empty-hand cycle before any weapon layer is attached or any rear weapon direction is expanded."
+  ],
+  "rollback": "Keep the current 4-layer Sword candidate ARTISTIC_REVISION_REQUIRED and retain all complete-v1 source hashes; generated frames are not promoted or exported to Unity.",
+  "balanceAtProposal": {
+    "generationsRemaining": 1421.7,
+    "checkedBy": "mcp__pixellab__get_balance",
+    "generationCallsMade": 0
+  },
+  "rootDecision": "Root now permits local use/import/refinement of the already generated 7-frame test only. No further PixelLab generations until explicit Root go after actual-cycle visual checkpoint.",
+  "actualJobId": "31e61c4b-39ea-4932-9024-07dc9639f4f7",
+  "actualChargedGenerations": 3,
+  "actualBalanceAfterCall": 1418.7
+}

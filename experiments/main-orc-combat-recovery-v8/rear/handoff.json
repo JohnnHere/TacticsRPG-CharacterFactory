@@ -1,0 +1,58 @@
+{
+  "checkpoint": "V8_REAR_ALIGNED",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "eligibleForIntegration": false,
+  "newPixelLabCalls": 0,
+  "clips": [
+    {
+      "direction": "back_l",
+      "action": "Sword",
+      "clip": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-sword/clip.json",
+      "clipSha256": "13e82354be048859830e2a94656907232cc98b12e2ef78b7a2e939509f59294c"
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe",
+      "clip": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/clip.json",
+      "clipSha256": "7b8c8565e3129bdaab076a3bf564ce47dd6f1fd2944421a9ddbd6d3e280b6ad7"
+    },
+    {
+      "direction": "back_r",
+      "action": "Sword",
+      "clip": "characters/orc-v1/source/combat-recovery-v8/rear/back_r-sword/clip.json",
+      "clipSha256": "3e98b0b26e3a40e1f213f30bf33ab9d448e29955c4ecf0e901faeb43bb357234"
+    },
+    {
+      "direction": "back_r",
+      "action": "Axe",
+      "clip": "characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/clip.json",
+      "clipSha256": "64c297c7e58a0d716662eede26537d29598c6e38803b985edbf753451ea4f133"
+    }
+  ],
+  "canonicalGrids": {
+    "Sword": {
+      "frames": 13,
+      "durationMs": 730,
+      "impactFrame": 7,
+      "impactStartMs": 325
+    },
+    "Axe": {
+      "frames": 12,
+      "durationMs": 1005,
+      "impactFrame": 6,
+      "impactStartMs": 410
+    }
+  },
+  "impactAuthority": "Frontal phase by frame index + cumulative durations; protected legacy contactEvent divergences documented, not edited",
+  "report": "experiments/main-orc-combat-recovery-v8/rear/report.md",
+  "reportSha256": "be7068b07c0e6c7c5e5f1139e3aeb714d5cede04527b21c8badfbb9e5ddc31ad",
+  "phaseTable": "experiments/main-orc-combat-recovery-v8/rear/phase-comparison.md",
+  "phaseCsv": "experiments/main-orc-combat-recovery-v8/rear/phase-comparison.csv",
+  "preview": "experiments/main-orc-combat-recovery-v8/rear/preview.html",
+  "previewSha256": "78006132ad7a725724dc37864c75e8b113553a3d34616fba2486bcf3f3c70d67",
+  "browserCheck": "experiments/main-orc-combat-recovery-v8/rear/browser-check.json",
+  "protectedFilesUnchanged": 863
+}

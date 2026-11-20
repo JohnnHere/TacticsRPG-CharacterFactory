@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Skeleton-first 01 — Orc V1, Sword back_l</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:32px; background:#14151a; color:#e7e8ec; font:15px/1.6 "Segoe UI",system-ui,sans-serif; }
+  h1 { font-size:23px; margin:0 0 4px; }
+  h2 { font-size:17px; margin:38px 0 10px; padding-bottom:6px; border-bottom:1px solid #2a2c34; }
+  p.lead { color:#a2a5b0; margin:0 0 12px; max-width:82ch; }
+  figure { margin:18px 0 26px; }
+  figcaption { color:#a2a5b0; font-size:13px; margin-top:8px; max-width:96ch; }
+  img { image-rendering:pixelated; border:1px solid #2a2c34; border-radius:4px; background:#1b1d23; max-width:100%; }
+  code { background:#1f2128; padding:1px 5px; border-radius:3px; font-size:13px; }
+  table { border-collapse:collapse; margin:12px 0; font-size:14px; }
+  th,td { border:1px solid #2a2c34; padding:5px 10px; text-align:left; }
+  th { background:#1f2128; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start; }
+  .verdict { border-left:3px solid #b8862f; padding:10px 14px; background:#1c1a15; margin:16px 0; }
+  .bad { color:#e08a7a; }
+  .good { color:#8fc99a; }
+  a.button { display:inline-block; margin:6px 8px 0 0; padding:9px 16px; background:#2b64d4; color:#fff; text-decoration:none; border-radius:5px; }
+  a.secondary { background:#2a2c34; }
+</style>
+</head>
+<body>
+
+<h1>Skeleton-first — experimento 01</h1>
+<p class="lead">Orc principal atual, ataque de Espada, direção <code>back_l</code> apenas.
+Cinco poses estruturais planejadas antes de qualquer desenho, convertidas uma única vez em arte
+real para testar a hipótese. Nada aqui toca produção, outras direções, o machado ou o Unity.</p>
+
+<a class="button" href="viewer/index.html">Abrir o visualizador do esqueleto</a>
+<a class="button secondary" href="pixellab-sheet.png">Ver as 14 em folha</a>
+
+<h2>1. As cinco poses planejadas</h2>
+<p class="lead">Esqueleto COCO-18 sobreposto ao corpo real da vista <code>back_l</code>. Vermelho é o
+lado direito do personagem, azul o esquerdo, e a linha clara é a lâmina desenhada a partir da
+empunhadura com o comprimento medido da arma.</p>
+<figure>
+  <img src="poses-sheet.png" alt="Cinco poses com esqueleto sobreposto">
+  <figcaption>Prontidão → elevação → golpe → seguimento → recuperação. O punho direito sobe de
+  <code>y 0,477</code> até <code>0,281</code> e desce até <code>0,539</code>. Os tornozelos não saem
+  de <code>0,70–0,72</code>, sempre acima do chão em <code>0,7422</code>.</figcaption>
+</figure>
+
+<h2>2. O movimento planejado, quadro a quadro</h2>
+<div class="grid">
+  <figure>
+    <img src="v8-reference-animation.gif" alt="Clipe atual V8">
+    <figcaption><strong>Referência atual (V8)</strong> — como o ataque está hoje no candidato.</figcaption>
+  </figure>
+  <figure>
+    <img src="generated-animation.gif" alt="Resultado gerado a partir das poses">
+    <figcaption><strong>Gerado a partir do esqueleto</strong> — uma única chamada ao PixelLab,
+    3 generations, mesmas durações por quadro.</figcaption>
+  </figure>
+</div>
+
+<h2>3. O que o experimento provou</h2>
+<div class="verdict">
+  <p><span class="good">Funcionou:</span> o corpo. A progressão de postura foi respeitada — a arma
+  sobe, o tronco acompanha, o quadril participa, os pés ficam no chão. A identidade do orc
+  (armadura escura com vivo vermelho, cabeça verde, proporção) sobreviveu à conversão, o que era o
+  ponto mais incerto de uma abordagem guiada por esqueleto.</p>
+  <p><span class="bad">Falhou:</span> a arma. Ela não é uma junta do esqueleto, então o modelo
+  precisa redesenhá-la do zero em cada quadro — e não consegue. Medição de pixels de metal claro
+  por quadro:</p>
+  <table>
+    <tr><th>Quadro</th><th>F00</th><th>F01</th><th>F02</th><th>F03</th><th>F04</th><th>F05</th><th>F06</th><th>F07</th><th>F08</th><th>F09</th><th>F10</th><th>F11</th><th>F12</th><th>F13</th></tr>
+    <tr><td>Metal claro</td><td>68</td><td>71</td><td>50</td><td>15</td><td>1</td><td>3</td><td>3</td><td>5</td><td>6</td><td>5</td><td>5</td><td>5</td><td>3</td><td>44</td></tr>
+  </table>
+  <p>A lâmina existe como aço até F02, colapsa em F03–F04 e passa o resto do golpe como uma massa
+  cinzenta sem aresta, voltando só no último quadro. É exatamente o defeito que o criador vinha
+  reclamando, e agora sabemos a causa mecânica: <strong>arma não sobrevive a animação guiada por
+  esqueleto</strong>.</p>
+</div>
+
+<h2>4. Recomendação para a próxima etapa</h2>
+<p class="lead">Separar corpo e arma. O esqueleto serve para o corpo, e isso está provado. A arma
+deve continuar sendo o asset independente que a fábrica já tem, posicionada por transformação
+rígida a partir do punho, como manda a política de armas da fábrica. Animá-la dentro da geração
+generativa é o caminho que este experimento descarta.</p>
+
+<p class="lead">Custo total: <strong>3 generations</strong>. Nenhuma outra chamada paga foi feita.</p>
+
+</body>
+</html>

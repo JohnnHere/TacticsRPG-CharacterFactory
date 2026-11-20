@@ -1,0 +1,45 @@
+# V8 — cirurgia anti-flash nos ataques frontais de espada
+
+## Contexto
+O criador vê **flash branco na espada frontal** e o V7 foi rejeitado por isso. Uma verificação anterior concluiu "nenhum artefato" e estava errada: media só rim-light na borda do corpo. O QA temporal, em navegador real, mediu o fenômeno e achou três focos.
+
+## Assinatura medida (não re-diagnostique)
+Luminância clara (≥160) por quadro em `front_r/Sword`, 13 quadros / 730 ms:
+`F00 161, F01 144, F02 255, F03 168, F04 163, F05 164, F06 144, F07 139, F08 151, F09 162, F10 181, F11 68, F12 161`
+
+**Foco 1 — entrada da arma (F01→F02→F03).** Em F02 a espada aparece com ~117 px de aço especular e o total salta +111 px em 35 ms; em F03 cai −87 px porque o torso gira. Um pico de 35 ms que acende e apaga = flash fotográfico no saque. Região `x65..112, y85..141` em `front_r`; `x143..191` em `front_l`.
+
+**Foco 2 — estrobo no golpe (F05→F06→F07).** A lâmina salta 61 px entre F05 e F06 e mais 30 px entre F06 e F07, cada um em 35 ms, sem arco intermediário. Metal claro aparecendo em área antes escura lê como clarão.
+
+**Foco 3 — apagão e reascendimento (F10→F11→F12).** Em F11 a arma já saiu e o quadro fica 68 px claros (−113), então F12 estala de volta a 161 (+93). Piscar no encerramento.
+
+**Foco 4 — pixel especular do peitoral.** Em `(132,104)` de `front_r` e `(123,104)` de `front_l` o pixel oscila `rgb(215,214,213)` (L=214) na guarda → `rgb(20,20,26)` (L=20) no golpe → 214 na recuperação.
+
+## Restrição mais importante
+`front_r/Sword` é **PROTEGIDO** pelo criador: coreografia e poses satisfatórias. Portanto:
+- **Não** mude contagem de quadros (13) nem durações.
+- **Não** mova, redesenhe ou re-pose o corpo.
+- Corrija apenas o que causa a leitura de flash: especularidade da lâmina, continuidade do arco, e coerência de luminância na entrada/saída.
+
+## O que fazer, por foco
+1. **F02**: reduza a especularidade de entrada da lâmina (o QA sugere faixa ~L125 em vez de ~L177) e/ou faça a luminância subir em rampa até F04, eliminando o pico de 35 ms. Trabalhe na camada `weaponFront`, não no corpo.
+2. **F05→F07**: crie continuidade visual do arco dentro dos quadros existentes — por exemplo, um rastro/smear sutil de 1–2 px translúcido acompanhando a lâmina em F06, ou alongamento parcial da lâmina traçando a trajetória. Não insira quadro novo (mudaria a contagem protegida).
+3. **F11**: alinhe a luminância de F11 com F10 e F12, para que o encerramento não pisque. Se o escurecimento vier de pose do corpo, ajuste somente a leitura de luz (sem mover pixels de anatomia) e documente a escolha.
+4. **Foco 4**: corrija o pixel especular oscilante para uma rampa coerente de luz do peitoral.
+5. Aplique o mesmo a `front_l/Sword` (mesma estrutura). Verifique se `front_r/Axe` e `front_l/Axe` têm o mesmo padrão na entrada/saída da arma; corrija só se confirmado por medição.
+
+## Como verificar (obrigatório antes de entregar)
+- Repita a medição de luminância clara por quadro e mostre a **curva antes e depois** dos dois clipes de espada. O objetivo: eliminar o pico em F02 e a queda em F11; a curva deve ser suave entre bookend e intervalo armado.
+- Confirme que nenhum pixel fora das regiões declaradas mudou, que as poses são idênticas, que contagem e durações seguem 13f/730 ms, e que as camadas de arma continuam independentes.
+- Reabra e reexporte os mestres salvos e confira pixels e timing.
+
+## Contratos
+- Escreva em `characters/orc-v1/source/combat-recovery-v8/frontal/` e `experiments/main-orc-combat-recovery-v8/frontal/`, perfil `tmp/aseprite-v8-frontal-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS; composto 256 (offset [64,64], ground 190); nativo 128 (ground 126).
+- Python `tmp\pixel-venv\Scripts\python.exe`; Pillow só leitura/medição.
+- **ZERO PixelLab.** Não toque em `combat-recovery-v8/rear/` (outra sessão) nem nas fontes V5/V6/V7. Sem Unity, sem commits.
+
+## Entrega (checkpoint `V8_FRONTAL_FLASH_FIXED`)
+- Dois clipes frontais de espada corrigidos, `clip.json` válido, mestres reexportados, tiras novas.
+- `report.md` com: curva de luminância antes/depois por quadro, o que mudou em cada foco, o que foi preservado, e a declaração de limitação se você não tiver percepção visual (a percepção final é do QA temporal).
+- PARE no checkpoint.

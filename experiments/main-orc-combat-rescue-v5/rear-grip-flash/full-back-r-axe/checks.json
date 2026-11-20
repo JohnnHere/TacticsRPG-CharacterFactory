@@ -1,0 +1,50 @@
+{
+  "character": "orc-v1",
+  "direction": "back_r",
+  "category": "Axe",
+  "totalFrames": 12,
+  "totalDurationMs": 1100,
+  "checks": [
+    {
+      "name": "timing_preservation",
+      "status": "PASS",
+      "details": "12 frames totaling exactly 1100ms: [70, 80, 90, 100, 110, 50, 60, 110, 100, 100, 100, 130]ms"
+    },
+    {
+      "name": "body_zero_rgba_delta",
+      "status": "PASS",
+      "details": "All 12 frames body256 are 100% byte-identical to body-specialist; all 12 frames native body have 0 pixel difference"
+    },
+    {
+      "name": "f04_accepted_key_preservation",
+      "status": "PASS",
+      "details": "F04 composite-256, composite-native-128, body-128, and all 4 layers are 100% byte-identical to QA-accepted key"
+    },
+    {
+      "name": "f07_accepted_key_preservation",
+      "status": "PASS",
+      "details": "F07 composite-256, composite-native-128, body-128, and all 4 layers are 100% byte-identical to QA-accepted key"
+    },
+    {
+      "name": "attack_only_v1_policy",
+      "status": "PASS",
+      "details": "Visible interval is strictly [2, 8]. Bookends F00, F01, F09, F10, F11 have 100% transparent weaponBack, weaponFront, handFront, and composite byte-matches body"
+    },
+    {
+      "name": "overhead_arc_continuity",
+      "status": "PASS",
+      "details": "Smooth, physically grounded overhead trajectory: F02 (305\u00b0) -> F03 (318\u00b0) -> F04 (330\u00b0) -> F05 (15\u00b0) -> F06 (75\u00b0) -> F07 (120\u00b0) -> F08 (105\u00b0)"
+    },
+    {
+      "name": "ground_contact_groundY_190",
+      "status": "PASS",
+      "details": "F07 blade edge hits groundY=190 (native 126) at x=177; F08 head rests cleanly on groundY=190 with no subterranean penetration"
+    },
+    {
+      "name": "four_layer_aseprite_masters",
+      "status": "PASS",
+      "details": "4 masters saved and verified: composite.aseprite (4 layers, 12f), body256.aseprite (1 layer, 12f), hand256.aseprite (1 layer, 12f), native128.aseprite (1 layer, 12f)"
+    }
+  ],
+  "verdict": "READY_FOR_REAR_AXE_FULL"
+}

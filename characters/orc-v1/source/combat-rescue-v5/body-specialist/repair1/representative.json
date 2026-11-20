@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Axe",
+  "scope": "03-impact local dominant glove repair only; hoist/apex unchanged aliases",
+  "status": "BODY_IMPACT_REPAIR_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "propagationAllowed": false,
+  "qaOwner": "Root: same independent Sol/Codex session 7eaec423; no Copilot",
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "nativeGroundY": 126,
+  "groundY": 190,
+  "keys": [
+    {
+      "key": "01-hoist",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.aseprite",
+        "sha256": "224a4fb2b05d388613eb6928d3f05e5e4cadb1098000bb966959cdf7f6ec4f97"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.aseprite",
+        "sha256": "0ff2da67d869c099f49f37903da130aecebf9fccc4ca9d715975b6254cac11f4"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+        "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.png",
+        "sha256": "f087da033136cf4fae6276ee3901fcbc44bc82c75b3eddd182f4236af5e50c99"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          35
+        ],
+        "rightElbow": [
+          104,
+          25
+        ],
+        "rightWrist": [
+          89,
+          14
+        ],
+        "rightPalm": [
+          83,
+          10
+        ],
+        "leftShoulder": [
+          43,
+          36
+        ],
+        "leftElbow": [
+          32,
+          57
+        ],
+        "leftWrist": [
+          32,
+          72
+        ],
+        "pelvis": [
+          66,
+          80
+        ],
+        "rightKnee": [
+          85,
+          101
+        ],
+        "leftKnee": [
+          47,
+          101
+        ],
+        "rightSupport": [
+          94,
+          126
+        ],
+        "leftSupport": [
+          43,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Right elbow is flexed above the shoulder, the forearm folds back over the occipital skull and the empty fist clears the crown. Left arm remains low as a counterweight. Pelvis is loaded between planted boots.",
+      "role": "UNCHANGED_ALIAS",
+      "previousIndependentVerdict": "ACCEPTABLE_STRUCTURAL_KEY"
+    },
+    {
+      "key": "02-apex",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.aseprite",
+        "sha256": "b9a8baa117943a809008be5575c6097f3266dcbe2c530ca619acaaca10c4e2c9"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.aseprite",
+        "sha256": "625f1cd281ed500d331d922c9e93c5f686f1dd56763ddd0f1eab982c72e79bc6"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+        "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.png",
+        "sha256": "ba579ee42f0d6e0b5ea87c89626f547691236fdf5a5e028edb46cdc60d24c87d"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          38
+        ],
+        "rightElbow": [
+          99,
+          22
+        ],
+        "rightWrist": [
+          83,
+          13
+        ],
+        "rightPalm": [
+          77,
+          8
+        ],
+        "leftShoulder": [
+          42,
+          40
+        ],
+        "leftElbow": [
+          26,
+          60
+        ],
+        "leftWrist": [
+          24,
+          73
+        ],
+        "pelvis": [
+          66,
+          82
+        ],
+        "rightKnee": [
+          83,
+          103
+        ],
+        "leftKnee": [
+          45,
+          102
+        ],
+        "rightSupport": [
+          92,
+          126
+        ],
+        "leftSupport": [
+          39,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Right humerus rises beside the head; elbow-to-wrist returns inward over the crown rather than extending sideways. Closed fist is fully enclosed by its contour. Left elbow and fist open away from the hoist pose; knees remain flexed.",
+      "role": "UNCHANGED_ALIAS",
+      "previousIndependentVerdict": "ACCEPTABLE_STRUCTURAL_KEY"
+    },
+    {
+      "key": "03-impact",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.aseprite",
+        "sha256": "4db32e40a433019ba6e9fa3f0b63ab561f475af1b49ef0814ff353f5bd7cc35f"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-composite.aseprite",
+        "sha256": "16c239dc7c580a2727cba98af5536eccac278aeee51a9af930d339fe4e9458c4"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-native.png",
+        "sha256": "dcff5167804f57cfcaff22deb0b6cc294c17346e4f41ef925e8b5d24eed60a8a"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/repair1/03-impact-composite.png",
+        "sha256": "6a035a842c2a2453665fe6dc8b20d9792966754b92c0d3f4582e3dcda24475c4"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          51
+        ],
+        "rightElbow": [
+          96,
+          64
+        ],
+        "rightWrist": [
+          92,
+          77
+        ],
+        "rightPalm": [
+          93,
+          82
+        ],
+        "leftShoulder": [
+          41,
+          51
+        ],
+        "leftElbow": [
+          26,
+          69
+        ],
+        "leftWrist": [
+          25,
+          81
+        ],
+        "pelvis": [
+          65,
+          86
+        ],
+        "rightKnee": [
+          86,
+          104
+        ],
+        "leftKnee": [
+          44,
+          105
+        ],
+        "rightSupport": [
+          95,
+          126
+        ],
+        "leftSupport": [
+          35,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Local narrow steel cuff transitions into a closed wine-brown glove. Thumb on inside, rounded knuckle block and finger separations give the endpoint a distinct volume beside the hip. Shoulder/elbow and whole-body delivery unchanged; independent readability verdict pending.",
+      "role": "LOCAL_REPAIR_CANDIDATE"
+    }
+  ],
+  "weaponOverlays": false,
+  "gripStatus": "Not judged or implemented here; closed empty fists for grip specialist",
+  "authoring": {
+    "tool": "Aseprite Lua in hidden batch --noinapp",
+    "profile": "tmp/aseprite-body-specialist-profile",
+    "script": {
+      "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/repair-impact.lua",
+      "sha256": "c92f1a9d9357cda462578993f396864fb5993b6f6d95be3895f5d12670e8c3ae"
+    },
+    "method": "Local authored cuff, narrow wrist, rounded closed glove, thumb and knuckle shading. No transform, donor or weapon overlay.",
+    "externalRasterArtEdits": false
+  },
+  "sourceInput": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/canonical-input.png",
+    "sha256": "df115d981fd914fae0102b91ecd1a312d255b58e62cb418ac827898ae257866d"
+  },
+  "sourceInputOrigin": "Decoded byte-for-byte first_frame_base64 from the previous Argon request; this is the unchanged V1 base, not the rejected generated poses.",
+  "sourceRequest": {
+    "path": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/requests/req_back_r_axe_qa5_v1.json",
+    "sha256": "544fcce1ebb14444affeee6b342e8af036af617af98d96e8596b65132224497f"
+  },
+  "generationAccounting": {
+    "jobs": [
+      {
+        "id": "e1b57e4c-e707-4e12-ace7-0745bd9bbb44",
+        "tool": "animate_with_skeleton_v3",
+        "charged": 2,
+        "outputs": 3,
+        "used": "impact; hoist/apex refined because top edge clipped"
+      },
+      {
+        "id": "74f03969-32ca-4150-9778-628df917f790",
+        "tool": "edit_image",
+        "charged": 10,
+        "outputs": 2,
+        "used": "hoist and apex"
+      }
+    ],
+    "totalCharged": 12,
+    "balanceBefore": 1382.7,
+    "balanceAfterMeasured": 1370.7,
+    "receipts": [
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-edit-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\balance-final.json"
+    ],
+    "validationRejectedBeforeQueue": "First skeleton request action exceeded 100 chars; validation error, no job ID or charge reported."
+  },
+  "limits": [
+    "Only the local BODY-01 candidate is resubmitted; no independent approval claimed.",
+    "Three static keys do not prove a full animation, weapon trajectory, torque or final grip.",
+    "Upper keys remain exact original aliases; original freeze and original status records unmodified."
+  ],
+  "revision": "body-impact-repair1",
+  "parentRepresentative": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/representative.json",
+    "sha256": "a775b7663c3d34ca13c2e39d2672ac88b7400eec11029f7d214b7e2b21896bca"
+  },
+  "qaRequest": {
+    "path": "experiments/main-orc-combat-rescue-v5/qa-sol/keys-axe-result.json",
+    "sha256": "0a14a9a8b5a0a7aa01760952a75ac394476ddb09bcf1f047cd96830a6a9c2f56"
+  },
+  "newGenerationCount": 0,
+  "newGenerationJobs": [],
+  "verification": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/repair1/technical-verification.json",
+    "sha256": "1530cacb7022944da76d0d8cd31ad0ddd9b7298a64122f6da0a58f672210f799"
+  }
+}

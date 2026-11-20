@@ -1,0 +1,254 @@
+{
+  "taskDate": "2026-10-26",
+  "timezone": "America/Sao_Paulo",
+  "supersedesWorkScope": "New user task on current complete-v1 recovery; old entry QA c054cea6 was inspected and is error/no active turn, not reused as current approval",
+  "production": {
+    "agentId": "a86c067f-ab9b-428a-ad52-11ed6e6f87d6",
+    "provider": "opencode-free",
+    "model": "opencode/mimo-v2.6-flash-free",
+    "ownership": "art/source/candidate/scripts/preview/provenance",
+    "status": "error: OpenCode Free usage limit reached before paid art production"
+  },
+  "contracts": {
+    "agentId": "2ddee09c-6f36-4c39-8f3c-3dda9799f8ff",
+    "provider": "opencode-free",
+    "model": "opencode/beam-free",
+    "thinking": "medium",
+    "ownership": "gates/validators/recipes/docs/continuity",
+    "status": "initial patch preserved; remaining scoped docs/consumer work requested after idle"
+  },
+  "qaPlanned": {
+    "provider": "antigravity",
+    "model": "gemini-4-argon-high",
+    "catalogConfirmed": true,
+    "fallbackOrder": [
+      "cline-glm-api/glm-5.3",
+      "copilot/GPT Sol6.1 if catalog confirms",
+      "appropriate free model if unavailable"
+    ],
+    "finalTask": "experiments/main-orc-rear-recovery-v2/qa-final-task.md",
+    "freeze": "experiments/main-orc-rear-recovery-v2/delivery-freeze.json"
+  },
+  "capabilityChecks": {
+    "Aseprite": "1.3.18.6, available hidden batch --noinapp",
+    "PixelLabClient": "Official repo MCP client list successfully authenticated, tools in tmp/rear-recovery-tools.json; no credentials exposed",
+    "executors": "must report own capability before paid production; client supports safe delegated use without sharing tokens"
+  },
+  "modelCatalog": "queried npx -y @getpaseo/cli provider models opencode-free and antigravity, current actual IDs confirmed",
+  "parallelism": "non-overlapping art production versus gate/knowledge contracts; no extra QA agents requested by DEV",
+  "sourcePreservation": "producer owns baseline snapshot before editing, separate candidate; unrelated dirty state retained",
+  "productionFallback": {
+    "agentId": "d79e0f0b-07cd-43b3-9b6d-b41e177dbbed",
+    "provider": "opencode-free",
+    "model": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+    "thinking": "thinking",
+    "reason": "different free route after confirmed prior error; only pending checkpoint reassigned",
+    "preservedArtifacts": "diagnosis sheets/metrics/layers/grip + scripts and contract edits; no repeated paid generation",
+    "ownership": "Stage A diagnostic artifact consolidation only; no art/candidate/script edits; explicit scope narrowing delivered"
+  },
+  "productionExecutor": {
+    "agentId": "64f9eec6-b4ad-4e4a-95eb-7b5fc2e602e4",
+    "provider": "antigravity",
+    "model": "gemini-3.8-flash-high",
+    "reason": "OpenCode free quota failed; free OpenRouter continuation retained only pending diagnostics, specialist production escalated per authorized fallback order to avoid repeating audit",
+    "ownership": "exclusive art/source/scripts/candidate/preview/production lessons",
+    "initialBudget": "12 subscription generations maximum, representative back_r Walk only; cost lookup/provenance required; no expansion before root visual checkpoint",
+    "delegatedMcpPath": "Official repo tools/pixellab-mcp.py client, same account local private configuration, no token sharing",
+    "orchestratorDirectArt": "none; only decisions, narrow tool capability probe and visual contract inspection"
+  },
+  "productionCheckpoints": [
+    {
+      "stage": "back_r Walk Draft01",
+      "decision": "REJECTED; no propagation",
+      "measurableCost": "2inpaint calls,6generations each reported/estimated,12total; receipts to retain",
+      "confirmedProblems": [
+        "PIL/numpy authored productionframes outsideAseprite then imported, forbidden",
+        "Image.blend plus alpha threshold of nearstandingkeys does not create coherent stride, ghosting/bobbing"
+      ],
+      "preservation": "Only newdraft outputs reversiblyarchived, oldbaseline kept; raw2keys retained ascache, notapprovedWalk keys"
+    },
+    {
+      "stage": "back_r Walk Method02",
+      "decision": "One animate_image native128/frame_count8 authorized, MAX4 additional subscriptiongenerations",
+      "requirements": [
+        "Actualtoolreturns input+generated frames; preserveorder/provenance and reportactualcount",
+        "All editing/retiming/registration/export insideAseprite viahiddenisolatedrunner",
+        "No furtherpaidjobs/otherdirections until actualcyclevisualcheckpoint",
+        "Pins do not guaranteeidentity orloop; judge actualmotion"
+      ]
+    },
+    {
+      "stage": "Method02 back_r Walk internalreview",
+      "decision": "PASS_FOR_INTERNAL_EXPANSION; creatorapprovalpending",
+      "evidence": [
+        "grid-walk-back_r-temporal-candidate.png",
+        "diagnosis/root-method2-playback.png",
+        "author_walk_lua.lua"
+      ],
+      "measurable": "8x160ms, raw9inclinput+closingpin, realtemporaljobcost2",
+      "remaining": "savedsource exportverification and finalintegratedQA required"
+    }
+  ],
+  "knowledgeFinalizer": {
+    "agentId": "d79e0f0b-07cd-43b3-9b6d-b41e177dbbed",
+    "provider": "opencode-free",
+    "model": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+    "scope": "pending contract/knowledge only; formerBeamidle, no concurrentartownership"
+  },
+  "wave2Authorization": {
+    "operations": [
+      "back_lWalkownsource",
+      "representativeback_rUnarmed"
+    ],
+    "maxAdditionalGenerations": 8,
+    "expectedGenerationsPerJob": 2,
+    "noFurtherExpansionBeforeReview": true
+  },
+  "wave2Review": {
+    "walkL": "PASS_FOR_INTERNAL_EXPANSION",
+    "instructionFile": "root-wave2-review.txt",
+    "actualCostGenerations": 4,
+    "costToDate": 18,
+    "unarmedR": "REQUIRES_REVISION, weak shoulder-level bent fist",
+    "remainingBudgetAdditional": 24
+  },
+  "previewDeveloper": {
+    "provider": "opencode-free",
+    "model": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+    "reason": "independent contract, release art specialist from preview work",
+    "ownership": "viewer implementation and isolated review output only",
+    "agentId": "a3488782-96fc-47d1-a291-49e1b2853dcc"
+  },
+  "knowledgeFallback2": {
+    "model": "gemini-3.8-flash-high",
+    "reason": "OpenRouter confirmed free-models-per-day rate limit 06:03:44Z; partialworkpreserved, pendingonly",
+    "agentId": "2046bf84-01c7-405d-905c-7012d0613311",
+    "provider": "antigravity",
+    "ownership": "docs/config/recipes/tests only"
+  },
+  "previewFallback": {
+    "agentId": "512ba3df-d374-4c1b-85c7-ad07125e3c4a",
+    "reason": "OpenRouter daily free quota confirmed error 06:05:05Z; no implementation yet; pendingonly",
+    "ownership": "viewer implementation and isolatedreviewoutput only",
+    "model": "gemini-3.8-flash-high",
+    "provider": "antigravity"
+  },
+  "finalProductionBudget": {
+    "capGenerations": 66,
+    "remainingWork": "local layer/grip/source/export fixes and assessments only",
+    "failedGenerations": 14,
+    "additionalPaidCallsAuthorized": false,
+    "evidence": "production-checkpoint.md; raw job receipts",
+    "reportedConsumed": 66
+  },
+  "previewFallbackGLM": {
+    "provider": "cline-glm-api",
+    "agentId": "8591b93d-e09f-45cc-a139-5692482cd995",
+    "reason": "512ba3df hung >10min at headlessEdge, no pendingpermissions/no matchingheadlessprocess, stopped and confirmedIDLE 12:08:35Z; partialcodepreserved",
+    "scope": "pendingdatarefresh/boundedbrowserchecks only",
+    "model": "glm-5.3-flash"
+  },
+  "cliCompatibility": {
+    "path": "C:/Users/João Orlando/AppData/Local/npm-cache/_npx/4f99eb08abac9e1e/node_modules/@getpaseo/cli/bin/paseo",
+    "reason": "latest0.13.1 npm install failed missing @getpaseo/server@0.13.1, no daemonrestart",
+    "used": "cached @getpaseo/cli 0.13.0 bin via node"
+  },
+  "pendingArtFallback": {
+    "scope": "remainingweapon source/grip/choreography, surgicalfrontUnarmed, trueHitspeedassessment; paidcallsnotauthorizedpendingproposal",
+    "preserved": "6candidateclips+18baselinealiases+allrawkeys+rejectedweaponmasters+reports",
+    "reason": "Gemini ART64f9 confirmedIDLE 12:14:22Z; fourweaponsstillflat/misbound, frontalmissingfistnotfixed, Hitspeedassessmentconfusedscale",
+    "provider": "cline-glm-api",
+    "model": "glm-5.3-flash",
+    "agentId": "ce11daf3-0027-423b-92ea-0c7fe27b911e"
+  },
+  "implementationFallbackLuna": {
+    "scope": "representativeSwordbackR +surgicalfrontUnarmed first; thenremainingweapons/trueHitspeed/sourceproof",
+    "handoff": "art-coordinate-handoff.md, APPROXIMATE manualgrips notapproved",
+    "reason": "PriorGLMART completedcoordinatehandoff and confirmedIDLE 17:29:25Z; sole implementationowner assigned onlypendingwork",
+    "agentId": "8eb61d74-fb6e-4840-84a5-aeba280780da",
+    "model": "gpt-6-luna",
+    "provider": "codex",
+    "paidCallsAuthorized": false,
+    "thinking": "high"
+  },
+  "generationCheckpointDeviation": {
+    "remainingAuthorizedGenerations": 0,
+    "currentCap": 69,
+    "actualTotal": 69,
+    "executor": "8eb61d74-fb6e-4840-84a5-aeba280780da",
+    "evidence": "root-generation-checkpoint-deviation.txt; sword-body-cycle-pixellab-proposal.json; job receipt pendingreference",
+    "chargedAdditional": 3,
+    "approvedBeforeExecution": false,
+    "jobId": "31e61c4b-39ea-4932-9024-07dc9639f4f7",
+    "rootDecision": "Use alreadygenerated artifacts and localAseprite refinement; no furthergeneration authorized",
+    "originalCap": 66,
+    "tool": "animate_with_skeleton_v3",
+    "recordScope": "Historical69 checkpoint, superseded by currentGenerationCheckpoint while preserving the early3 deviation"
+  },
+  "currentProductionAuthority": {
+    "agentId": "8eb61d74-fb6e-4840-84a5-aeba280780da",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "role": "sole art implementation owner",
+    "historicalEntriesAbove": "preserved as historical checkpoints; current authority is this field",
+    "status": "idle; final local candidate/source packaging completed; creator pending"
+  },
+  "currentGenerationCheckpoint": {
+    "actualConsumed": 78,
+    "currentAuthorizedCeiling": 78,
+    "remainingAuthorized": 0,
+    "onlyAuthorizedTarget": "one back_l Axe job max3; no retry",
+    "evidence": "root-axe-pass-final-direction-authorization.txt",
+    "originalCap": 66,
+    "earlyExecutionDeviation": 3,
+    "priorExplicitLaterAuthorization": 6,
+    "finalAdditionalAuthorization": 3,
+    "completedFinalJob": "5296ac98-b253-4133-8468-155f7e90c68e",
+    "state": "No further paid calls authorized; local Aseprite correction/export/QA remaining"
+  },
+  "currentPreviewAuthority": {
+    "agentId": "8591b93d-e09f-45cc-a139-5692482cd995",
+    "provider": "cline-glm-api",
+    "model": "glm-5.3-flash",
+    "status": "Historical GLM implementation preserved; foreground error ended that turn; Root completed bounded compatibility/data/strip/clean-build integration"
+  },
+  "finalKnowledge": {
+    "agentId": "2046bf84-01c7-405d-905c-7012d0613311",
+    "status": "idle;17 lessons and final source-validator/docs delivered",
+    "finalAccounting": "78 generation units /17 jobs"
+  },
+  "postQaRevision1": {
+    "rejectedFreeze": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843",
+    "qaVerdict": "REVISIONS_REQUIRED",
+    "qaAgentId": "08686c14-6b97-4323-888f-08feb819208c",
+    "affectedCells": [
+      "back_l/Sword",
+      "back_r/Axe",
+      "back_l/Axe"
+    ],
+    "initialExecutor": {
+      "agentId": "8eb61d74-fb6e-4840-84a5-aeba280780da",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "status": "idle_partial_rejected",
+      "finishedAtUtc": "2026-10-27T04:50:23.838Z",
+      "report": "experiments/main-orc-rear-recovery-v2/E/qa-revision-1-art-report.md",
+      "reason": "Internal checkpoint retained visible source weapon remnants, donor registration error and broken/doubled arm. No canonical raster promotion."
+    },
+    "replacement": {
+      "agentId": "b8ca8bb5-e80c-4c39-ade9-09b167774d78",
+      "provider": "codex",
+      "model": "gpt-6.1-sol",
+      "thinking": "xhigh",
+      "ownership": "sole three affected art/source packages and metadata; Root integration; knowledge2046 docs/config",
+      "status": "idle_completed_local_repair",
+      "reason": "Escalate only unresolved local artistic repair after previous executor returned idle; no concurrent duplicate owner"
+    },
+    "paidGenerationAuthorizationRemaining": 0,
+    "actualPixelLabUnits": 78,
+    "actualJobs": 17,
+    "sourceBackupFiles": 192,
+    "successfulSourceRegressionCheck": "experiments/main-orc-rear-recovery-v2/root-check-qa-regressions.mjs",
+    "integratedStatus": "PENDING_SAME_REVIEWER_NEW_FREEZE"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "recruit-sword",
+  "name": "Espada do Recruta",
+  "hands": 1,
+  "category": "Sword",
+  "description": "Uma mão; lâmina reta de dois gumes com canal central, guarda reta simples, couro castanho costurado, pomo disco. Aço gasto e funcional, sem magia ou ornamentos de alto nível.",
+  "authoring": "Inherited PixelLab weapon; bounded material clusters authored via Aseprite Lua; no new generation",
+  "reference": "Photo supplied inline by creator 2026-10-25: straight fuller sword with leather hilt and disk pommel / simple curved-haft axe. Reference read in conversation; no falsely claimed local photo file.",
+  "canvas": [
+    96,
+    96
+  ],
+  "grip": [
+    48,
+    66
+  ],
+  "ppu": 100,
+  "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+  "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+  "artisticApproval": "PENDING_CREATOR",
+  "bindings": "Associated with the 8 V5 weapon clips with natural handle-enclosing grip and whole-body rear choreography; weapon geometry unchanged.",
+  "visualDesign": "Global game language; no Orc racial palette/design requirement",
+  "revision": "main-orc-combat-rescue-v5",
+  "sourceSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+  "spriteSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+  "masterSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+  "compatibility": {
+    "category": "Sword",
+    "profile": "basic.sword-slash",
+    "hand": "right",
+    "scale": 1,
+    "body": "orc-v1",
+    "direction": "per-frame registered; no geometry change",
+    "directions": [
+      "front_r",
+      "front_l",
+      "back_r",
+      "back_l"
+    ]
+  },
+  "script": "experiments/main-orc-rear-reconstruction-v4/dev/author-weapons.lua",
+  "parentWeaponDefinition": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Sword/weapon.json",
+  "parentMaster": "assets/weapons/recruit-sword/source/rescue-v3/recruit-sword.aseprite",
+  "parentMasterSha256": "4df2960d983f0de0a04267b480e9967b5b2bbb47eb70724380bd2665a0e7a9a4",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED"
+}

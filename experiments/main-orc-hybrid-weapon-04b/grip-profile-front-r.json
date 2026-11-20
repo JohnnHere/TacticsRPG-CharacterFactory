@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "family": "Sword/basic.sword-slash",
+  "direction": "front_r",
+  "animationSource": "C:/Users/Jo\u00e3o Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory/characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_r-sword/clip.json",
+  "sourceSha256": "2ae94ce07002a1acb5361866e142ef9209a7f076b04f5d47b4c6d43b955858ca",
+  "hand": "anatomical right hand; original body glove + original handFront per frame",
+  "canvas": [
+    256,
+    256
+  ],
+  "assetCanvas": [
+    96,
+    96
+  ],
+  "assetGrip": [
+    48,
+    66
+  ],
+  "pivotSource": "grip-pivot-fit.json (front_r declares rotationDeg but grip=null)",
+  "pivot": {
+    "2": {
+      "bladePixels": 474,
+      "colourChanged": 474,
+      "frame": 2,
+      "grip": [
+        103,
+        130
+      ],
+      "rot": 320,
+      "skipped": 0
+    },
+    "3": {
+      "bladePixels": 473,
+      "colourChanged": 473,
+      "frame": 3,
+      "grip": [
+        90,
+        119
+      ],
+      "rot": 340,
+      "skipped": 0
+    },
+    "4": {
+      "bladePixels": 473,
+      "colourChanged": 473,
+      "frame": 4,
+      "grip": [
+        98,
+        100
+      ],
+      "rot": 350,
+      "skipped": 0
+    },
+    "5": {
+      "bladePixels": 472,
+      "colourChanged": 472,
+      "frame": 5,
+      "grip": [
+        98,
+        89
+      ],
+      "rot": 0,
+      "skipped": 0
+    },
+    "6": {
+      "bladePixels": 473,
+      "colourChanged": 473,
+      "frame": 6,
+      "grip": [
+        127,
+        101
+      ],
+      "rot": 16,
+      "skipped": 0
+    },
+    "7": {
+      "bladePixels": 470,
+      "colourChanged": 470,
+      "frame": 7,
+      "grip": [
+        155,
+        114
+      ],
+      "rot": 32,
+      "skipped": 0
+    },
+    "8": {
+      "bladePixels": 473,
+      "colourChanged": 473,
+      "frame": 8,
+      "grip": [
+        158,
+        132
+      ],
+      "rot": 80,
+      "skipped": 0
+    },
+    "9": {
+      "bladePixels": 474,
+      "colourChanged": 474,
+      "frame": 9,
+      "grip": [
+        159,
+        148
+      ],
+      "rot": 128,
+      "skipped": 0
+    },
+    "10": {
+      "bladePixels": 472,
+      "colourChanged": 472,
+      "frame": 10,
+      "grip": [
+        134,
+        147
+      ],
+      "rot": 118,
+      "skipped": 0
+    },
+    "11": {
+      "bladePixels": 473,
+      "colourChanged": 473,
+      "frame": 11,
+      "grip": [
+        110,
+        150
+      ],
+      "rot": 100,
+      "skipped": 0
+    }
+  },
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "occlusion": {
+    "weaponBack": "original per-frame mask, cleared only where the blade is repainted",
+    "weaponFront": "original guard/pommel preserved; blade rewritten from sword-b",
+    "handFront": "original traced glove, unchanged, overlays the front weapon"
+  },
+  "bladeRule": "original weapon pixels whose inverse asset coordinate is v <= 54 are repainted with sword-b, with u clamped to the opaque extent of that row so B follows the original blade silhouette instead of leaving a rim of the old blade",
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "contactEvent": {
+    "frame": 8,
+    "timeMs": 325,
+    "phase": "contact",
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    35,
+    30,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "reuseFrom": "experiments/main-orc-hybrid-weapon-04 (same sword-a and sword-b assets, byte-identical)"
+}

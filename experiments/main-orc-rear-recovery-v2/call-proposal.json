@@ -1,0 +1,41 @@
+{
+  "revision": "main-orc-rear-recovery-v2",
+  "character": "orc-v1",
+  "baseline": "complete-v1 b178422e1f7fc19f068c",
+  "generatedAt": "2026-10-26T02:15:00-03:00",
+  "purpose": "Primeiro representante de rearWalk (uma direção, keyposes + ciclo completo) antes de qualquer expansão.",
+  "scope": "Somente back_r / Walk (representativo). back_l só após aprovação visual do back_r.",
+  "tool": "Aseprite --noinapp (autoria local estruturada de poses) + PixelLab MCP inpaint_image_pro_flash/edit_image_pro_flash via tools/pixellab-mcp.py para correção anatômica específica de membros inferiores.",
+  "method": "Autoria de keyposes traseiras genuínas a partir da base traseira aprovada (back_r_base.png), com pernas vistas por trás (poplíteo, calcanhares, passadas afastando da câmera), articuladas no Aseprite e com suporte de inpainting nativo 128x128 quando necessário.",
+  "model": "Pro Flash (revisão pro-flash-presets-48-128-2026-09-29)",
+  "nativeSize": "128x128",
+  "cachedRearBaseRef": "experiments/main-orc-complete-v1/pixellab-recovery/back_r_base.png + base traseira complete-v1",
+  "operationCount": {
+    "targetClip": "back_r / Walk",
+    "keyposes": 4,
+    "maxPaidCalls": 2,
+    "paidGenerationCap": 12
+  },
+  "expectedCost": {
+    "asepriteLocal": "ZERO (processamento batch local)",
+    "pixellabVerifiedCostPerCall": 6,
+    "totalBudgetAuthorized": 12,
+    "balanceAvailable": "1487.70 generations (Tier 1: Pixel Apprentice)"
+  },
+  "schemaFieldsVerified": {
+    "inpaint_image_pro_flash": [
+      "description", "image_base64", "mask_image_base64", "crop_to_mask", "no_background", "background_removal_task", "output_method", "seed", "project_id"
+    ],
+    "edit_image_pro_flash": [
+      "description", "image_base64", "image_url", "source_image_id", "method", "reference_image", "no_background", "use_color_palette_correction", "seed", "project_id"
+    ]
+  },
+  "acceptanceBeforeProceed": [
+    "Root visual inspeciona keyposes representativas + ciclo 1x de back_r Walk.",
+    "Preservação integral dos clipes e masters protegidos em production-protection.json."
+  ],
+  "blockingNotes": [
+    "Produção artística subsequente será atribuída separadamente pelo orquestrador.",
+    "Este agente não inicia produção, não edita fontes e não gera novos agentes."
+  ]
+}

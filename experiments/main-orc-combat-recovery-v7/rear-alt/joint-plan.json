@@ -1,0 +1,242 @@
+{
+  "coordinates": "native128; add [64,64] for composite256",
+  "measurementMethod": "Visually identified joint centers on magnified saved body PNGs; +/-1 native px tracing uncertainty; no automatic centroid-as-palm assumption",
+  "donors": [
+    {
+      "source": "back_l-axe/03",
+      "joints": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          99,
+          35
+        ],
+        "wrist": [
+          93,
+          23
+        ],
+        "palm": [
+          88,
+          17
+        ],
+        "humerusPx": 10.77,
+        "forearmPx": 13.416,
+        "elbowInteriorDeg": 85.236
+      },
+      "gloveBounds": [
+        82,
+        11,
+        98,
+        24
+      ],
+      "decision": "SELECT forearm+closed glove; both bounded and visible; upper arm foreshortened and must be reauthored"
+    },
+    {
+      "source": "back_l-axe/02",
+      "joints": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          101,
+          44
+        ],
+        "wrist": [
+          101,
+          31
+        ],
+        "palm": [
+          98,
+          27
+        ],
+        "humerusPx": 13.0,
+        "forearmPx": 13.0,
+        "elbowInteriorDeg": 67.38
+      },
+      "gloveBounds": [
+        94,
+        21,
+        106,
+        32
+      ],
+      "decision": "NOT_SELECTED wrist lower; broader bracer and less independent hand"
+    },
+    {
+      "source": "back_l-sword/03",
+      "joints": {
+        "shoulder": [
+          89,
+          39
+        ],
+        "elbow": [
+          103,
+          39
+        ],
+        "wrist": [
+          101,
+          28
+        ],
+        "palm": [
+          96,
+          25
+        ],
+        "humerusPx": 14.0,
+        "forearmPx": 11.18,
+        "elbowInteriorDeg": 79.695
+      },
+      "gloveBounds": [
+        93,
+        20,
+        105,
+        29
+      ],
+      "decision": "NOT_SELECTED shortened forearm, cuff blends shoulder"
+    },
+    {
+      "source": "back_l-sword/04",
+      "joints": {
+        "shoulder": [
+          89,
+          40
+        ],
+        "elbow": [
+          104,
+          43
+        ],
+        "wrist": [
+          104,
+          33
+        ],
+        "palm": [
+          101,
+          31
+        ],
+        "humerusPx": 15.297,
+        "forearmPx": 10.0,
+        "elbowInteriorDeg": 78.69
+      },
+      "gloveBounds": [
+        97,
+        26,
+        109,
+        36
+      ],
+      "decision": "NOT_SELECTED low wrist/hand and arm overlap"
+    }
+  ],
+  "contralateralReference": {
+    "shoulder": [
+      47,
+      40
+    ],
+    "elbow": [
+      39,
+      62
+    ],
+    "wrist": [
+      35,
+      76
+    ],
+    "palm": [
+      35,
+      81
+    ],
+    "humerusPx": 23.409,
+    "forearmPx": 14.56,
+    "elbowInteriorDeg": 175.962
+  },
+  "apex": {
+    "base": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/03.png",
+    "donor": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-axe/layers/body/03.png",
+    "translation": [
+      12,
+      2
+    ],
+    "joints": {
+      "shoulder": [
+        88,
+        39
+      ],
+      "elbow": [
+        111,
+        37
+      ],
+      "wrist": [
+        105,
+        25
+      ],
+      "palm": [
+        100,
+        19
+      ],
+      "humerusPx": 23.087,
+      "forearmPx": 13.416,
+      "elbowInteriorDeg": 68.405
+    },
+    "grip": [
+      100,
+      19
+    ],
+    "weaponAngleDeg": -10,
+    "durationMs": 110
+  },
+  "impact": {
+    "base": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png",
+    "donor": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png",
+    "sourceJoints": {
+      "shoulder": [
+        83,
+        48
+      ],
+      "elbow": [
+        89,
+        64
+      ],
+      "wrist": [
+        95,
+        83
+      ],
+      "palm": [
+        94,
+        89
+      ],
+      "humerusPx": 17.088,
+      "forearmPx": 19.925,
+      "elbowInteriorDeg": 176.97
+    },
+    "translation": [
+      15,
+      -8
+    ],
+    "joints": {
+      "shoulder": [
+        83,
+        48
+      ],
+      "elbow": [
+        104,
+        56
+      ],
+      "wrist": [
+        110,
+        75
+      ],
+      "palm": [
+        109,
+        81
+      ],
+      "humerusPx": 22.472,
+      "forearmPx": 19.925,
+      "elbowInteriorDeg": 128.38
+    },
+    "grip": [
+      109,
+      81
+    ],
+    "weaponAngleDeg": 115,
+    "durationMs": 80
+  }
+}

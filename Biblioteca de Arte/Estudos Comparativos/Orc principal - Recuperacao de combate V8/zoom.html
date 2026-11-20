@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Orc V1 — Recuperacao de combate V8 — Inspecao ampliada</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; padding: 32px; background: #14151a; color: #e7e8ec;
+         font: 15px/1.6 "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 40px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #2a2c34; }
+  p.lead { color: #a2a5b0; margin: 0 0 8px; max-width: 78ch; }
+  figure { margin: 18px 0 26px; }
+  figcaption { color: #a2a5b0; font-size: 13px; margin-top: 8px; max-width: 96ch; }
+  img { max-width: 100%; image-rendering: pixelated; border: 1px solid #2a2c34; border-radius: 4px; background: #1b1d23; }
+  code { background: #1f2128; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  .verdict { border-left: 3px solid #b8862f; padding: 10px 14px; background: #1c1a15; margin: 16px 0; }
+  table { border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #2a2c34; padding: 5px 10px; text-align: left; }
+  th { background: #1f2128; }
+</style>
+</head>
+<body>
+<h1>Inspeção ampliada — candidato V8</h1>
+<p class="lead">Recortes com ampliação inteira (nearest-neighbour), sem nenhuma alteração de pixel.
+Servem para julgar regiões pequenas demais no tamanho nativo de 128×128.</p>
+
+<h2>0. O retoque final — a descida da espada frontal</h2>
+<p class="lead">Era isto o "flash": a lâmina passava do ápice vertical direto para a diagonal do outro
+lado, num único quadro, com 36 px de vão vazio entre as duas posições. Agora existe um quadro de
+descida autorado entre eles.</p>
+
+<figure>
+  <img src="zoom/descent-before.png" alt="Descida antes do retoque">
+  <figcaption><strong>Antes</strong> — F04, F05 (ápice), F06, F07. Repare que do terceiro para o quarto quadro a
+  espada já está do outro lado, sem nenhum estado intermediário. Salto de <strong>75,99 px</strong>,
+  vão vazio de <strong>36 px</strong> entre a coluna máxima da arma e a mínima do quadro seguinte.</figcaption>
+</figure>
+
+<figure>
+  <img src="zoom/descent-after.png" alt="Descida depois do retoque">
+  <figcaption><strong>Depois</strong> — F04, F05 (ápice), <strong>F06 novo</strong>, F07, F08. O quadro novo traz a
+  lâmina a cerca de 45° sobre a cabeça, com o braço e a luva acompanhando. O salto caiu para
+  <strong>38,16 px</strong> e o vão vazio para <strong>7 px</strong>. O clipe continua com 730 ms e o
+  contato continua em 325 ms, porque o quadro novo foi pago dividindo o <code>apex-hold</code>.</figcaption>
+</figure>
+
+<figure>
+  <img src="zoom/descent-back_r.png" alt="Descida da espada back_r equalizada">
+  <figcaption><code>back_r/Sword</code> F05 → F09 depois da equalização. A espicada de 57,9 px na entrada do
+  contato virou 36,2 px, e o platô da descida agora bate com o frontal: 42,3 · 38,1 · 36,2 · 37,7
+  contra 38,2 · 37,9 · 37,8 · 36,2.</figcaption>
+</figure>
+
+<h2>1. Pegada do machado — back_r/Axe</h2>
+<figure>
+  <img src="zoom/hand-back_r-axe.png" alt="Pegada do machado back_r nos quadros 04 a 07">
+  <figcaption>Quadros F04 → F07. Medição: a mão está a <strong>23–26 px do cabo</strong> e a
+  <strong>38–39 px da cabeça do machado</strong>, ou seja, a mão ocupa a extremidade do cabo e a cabeça
+  fica distal. É a geometria correta de empunhadura.</figcaption>
+</figure>
+
+<figure>
+  <img src="zoom/back_r-axe-contact.png" alt="Contato do machado back_r">
+  <figcaption>F05 e F06 em contexto, para conferir o contato do machado com o corpo.</figcaption>
+</figure>
+
+<h2>2. Axila — front_l/Sword</h2>
+<figure>
+  <img src="zoom/armpit-before.png" alt="Axila antes do reparo">
+  <figcaption>Antes: a junção deltoide–tronco colapsa numa massa quase preta, sem leitura de volume.</figcaption>
+</figure>
+<figure>
+  <img src="zoom/armpit-after.png" alt="Axila depois do reparo">
+  <figcaption>Depois: <strong>73 pixels reiluminados</strong> em F03 (25), F04 (15) e F05 (33), usando apenas
+  tons já presentes nos mestres — <code>rgb(27,28,34)</code> e <code>rgb(43,45,49)</code>.
+  Nenhum canal RGB diminuiu em nenhum pixel; contorno externo, alfa, tecido vermelho e highlights intactos.
+  F00–F02 e F06–F12 permanecem 100% idênticos ao V7.</figcaption>
+</figure>
+
+<h2>3. Descida das vistas de costas</h2>
+<figure>
+  <img src="zoom/back_l-sword-descend.png" alt="Descida da espada back_l">
+  <figcaption><code>back_l/Sword</code> F04 → F07: descida predominantemente vertical, sem travessia lateral
+  (Δy 93 px contra Δx 34 px).</figcaption>
+</figure>
+<figure>
+  <img src="zoom/back_l-axe-descend.png" alt="Descida do machado back_l">
+  <figcaption><code>back_l/Axe</code> F03 → F06: mesma leitura de verticalidade, com peso próprio de machado.</figcaption>
+</figure>
+
+<h2>4. O que continua em aberto</h2>
+<div class="verdict">
+  <p><strong>O machado ainda tem um vão de 22–24 px</strong> entre <code>coil</code> e <code>cleave</code>
+  (F04→F05), nas quatro direções. Não foi tratado nesta rodada porque a queixa era a espada, e a
+  solução é a mesma: autorar um quadro de descida e pagá-lo dividindo o quadro anterior. Fica como
+  o próximo candidato natural.</p>
+  <p>Nas traseiras, o primeiro passo (F02→F03) ainda difere do frontal em torno de 100% em
+  <code>back_r</code> (34,6 px contra 16,5 px) e o último passo é mais curto (8,9 px contra 22,0 px).
+  É entrada e acomodação, não a descida — a descida está equalizada.</p>
+</div>
+
+<table>
+  <tr><th>Família</th><th>Quadros</th><th>Total</th><th>Impacto</th><th>Maior passo</th></tr>
+  <tr><td>Sword (4 direções)</td><td>14</td><td>730 ms</td><td>F08 · 325 ms · 44,52%</td><td>F05→F06, 36,9–42,3 px</td></tr>
+  <tr><td>Axe (4 direções)</td><td>12</td><td>1005 ms</td><td>F06 · 410 ms · 40,80%</td><td>F04→F05, 73,7–89,9 px</td></tr>
+</table>
+
+<p class="lead">Nenhum pixel foi alterado por esta página. Ela é só recorte e ampliação.</p>
+</body>
+</html>

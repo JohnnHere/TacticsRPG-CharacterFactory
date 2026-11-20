@@ -1,0 +1,26 @@
+Correção cirúrgica única, escalonada por reincidência. Você NÃO é QA nem orquestrador.
+
+DEFEITO (objeção do criador, confirmada por QA independente no candidato V6):
+`front_l/Sword`, quadros F03 e F04 — sob a axila do braço atacante há uma **saliência escura irregular** (cunha/gancho preto) projetada do contorno do torso para o espaço entre torso e braço. Lê como resíduo de silhueta, não como dobra de material articulada com o braço.
+
+EVIDÊNCIA MEDIDA (QA Sol/Codex, `experiments/main-orc-artistic-reconstruction-v6/qa-sol/report.md` e `result.json`):
+- Região composta afetada: `x=140..154, y=108..127`; nativa equivalente `x=76..90, y=44..63`.
+- Essa região é **RGBA idêntica ao V5** nos dois quadros; o QA também mediu **zero alterações de alfa nos 13 quadros** de front_l/Sword. Ou seja: a tentativa anterior deste passe corrigiu ilhas flutuantes em F01–F02 e pontos claros, mas **não tocou o defeito real**, que é uma saliência escura opaca em F03–F04.
+- Espectadores anteriores falharam aqui repetidamente, por isso a especialidade foi escalonada para você.
+
+FONTES (não editar as originais; trabalhe em cópia nova):
+- Atual V6: `characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Sword-full/` (clip.json, `source/composite.aseprite`, `source/body.aseprite`, `source/native.aseprite`, layers, frames).
+- Baseline V5 para comparação: `characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/`.
+- Evidências do QA: `experiments/main-orc-artistic-reconstruction-v6/qa-sol/` (inclui `front_l-Sword-F3-axilla.png`, `front_l-Sword-F4-axilla.png`, vizinhos F1/F2/F5, `inspection-checks.json`).
+
+O QUE FAZER:
+1. Determine a causa real da saliência: resíduo de braço/ombro de pose doadora, contorno extrapolado, pixel de material escuro sem vizinho coerente, ou geometria de axila herdada da baseline. Compare F03/F04 com F02 e F05 para entender a intenção anatômica.
+2. Corrija na camada `body` de F03/F04 (e transições se o defeito vazar) reconstruindo a abertura anatômica entre torso e braço: a silhueta deve ler como axila/peito articulados, sem cunha escura pendurada. Não cubra com retângulo de cor chapada, não apague contorno legítimo de armadura, não escureça o personagem.
+3. Preserve absolutamente: coreografia e timing dos 13 quadros (nenhum pixel de pose deslocado), camadas de arma, bookends desarmados, e os outros três clipes frontais.
+4. Trabalhe em diretório NOVO: `characters/orc-v1/source/artistic-reconstruction-v6/frontal-escalated/front_l-Sword-full/` + `experiments/main-orc-artistic-reconstruction-v6/frontal-escalated/`. Perfil Aseprite exclusivo `tmp/aseprite-v6-axilla-profile`.
+5. Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS; composto 256 (offset 64,64, ground 190), nativo 128 (ground 126), `cel.position` real; 4 camadas weaponBack/body/weaponFront/handFront; `nativePng` = recorte do corpo. Python `tmp\pixel-venv\Scripts\python.exe` apenas para leitura/medição (Pillow não autoria raster). PixelLab: zero esperado.
+6. Verifique objetivamente que a região `x=140..154, y=108..127` mudou de forma coerente em F03/F04 e que os vizinhos não regrediram; produza ampliações antes/depois dessa janela em 8× ou mais, além de folha dos 13 quadros.
+
+ENTREGA (pare aqui):
+- Clipe `front_l/Sword` corrigido com clip.json válido (hashes reais, paths, durações), mestres salvos/reabertos/reexportados conferidos, patch-manifest de 1 célula, before/after da janela da axila e da folha completa.
+- `report.md` com causa raiz confirmada, pixels alterados por quadro, o que foi preservado e limitações. Não declare aprovação; o QA e o criador julgam.

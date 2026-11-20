@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "1.0.0",
+  "experimentId": "main-orc-hybrid-weapon-04b2",
+  "pilot": "B2",
+  "direction": "back_r",
+  "action": "Sword",
+  "family": "one-handed-sword",
+  "sourceClip": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/clip.json",
+  "sourceClipSha256": "25f40ef43d276cb93900c4625c92d5c19303700dfb9b8eb6c819ee0fe9723fe4",
+  "sourceMaster": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/source/composite.aseprite",
+  "sourceMasterSha256": "b1109f1a2d189b52108a0e2998aa82381109bb0f68327eecda4862aa2ae522db",
+  "canvasSize": [
+    256,
+    256
+  ],
+  "weaponCanvasSize": [
+    96,
+    96
+  ],
+  "weaponGripAnchor": [
+    48,
+    66
+  ],
+  "bladeRows": [
+    7,
+    54
+  ],
+  "bladeGuardSeamRow": 55,
+  "sharedHiltRows": [
+    55,
+    79
+  ],
+  "frameCount": 14,
+  "totalDurationMs": 730,
+  "visibleInterval": [
+    2,
+    11
+  ],
+  "contactFrame": 8,
+  "contactTimeMs": 325,
+  "representativeFrames": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "representativeRoles": {
+    "F02": "establish-grip (preparation)",
+    "F05": "apex-hold (weapon elevation)",
+    "F08": "contact (impact)",
+    "F11": "settle-grip (recovery)"
+  },
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "rearDepthConvention": {
+    "summary": "In back_r, weaponBack holds the hilt/pommel behind the torso/arm (and in F06 the leather grip), while weaponFront holds 100% of the blade and crossguard in front of the body, and handFront overlays the gripping gauntlet fingers over the handle.",
+    "bladeInWeaponBackPixels": 0,
+    "bladeInWeaponFrontRatio": 1
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "durationMs": 30,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ]
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "durationMs": 65,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ]
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        163,
+        131
+      ],
+      "declaredRightGrip": [
+        163,
+        131
+      ],
+      "rotationDeg": 20,
+      "scale": 1,
+      "weaponBackPixels": 149,
+      "weaponFrontPixels": 557,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "durationMs": 50,
+      "weaponVisible": true,
+      "rightGrip": [
+        168,
+        98
+      ],
+      "declaredRightGrip": [
+        168,
+        98
+      ],
+      "rotationDeg": 5,
+      "scale": 1,
+      "weaponBackPixels": 150,
+      "weaponFrontPixels": 557,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "durationMs": 45,
+      "weaponVisible": true,
+      "rightGrip": [
+        162,
+        89
+      ],
+      "declaredRightGrip": [
+        162,
+        89
+      ],
+      "rotationDeg": -10,
+      "scale": 1,
+      "weaponBackPixels": 148,
+      "weaponFrontPixels": 557,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        155,
+        86
+      ],
+      "declaredRightGrip": [
+        154.88633236983418,
+        86.10873166958693
+      ],
+      "rotationDeg": -14,
+      "scale": 1,
+      "weaponBackPixels": 147,
+      "weaponFrontPixels": 558,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "durationMs": 30,
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        105
+      ],
+      "declaredRightGrip": [
+        172,
+        105
+      ],
+      "rotationDeg": 25,
+      "scale": 1,
+      "weaponBackPixels": 77,
+      "weaponFrontPixels": 628,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        179,
+        115
+      ],
+      "declaredRightGrip": [
+        178.60073510670102,
+        114.57960478079794
+      ],
+      "rotationDeg": 83,
+      "scale": 1,
+      "weaponBackPixels": 148,
+      "weaponFrontPixels": 552,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "rightGrip": [
+        172,
+        134
+      ],
+      "declaredRightGrip": [
+        172,
+        134
+      ],
+      "rotationDeg": 115,
+      "scale": 1,
+      "weaponBackPixels": 146,
+      "weaponFrontPixels": 559,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "rightGrip": [
+        158,
+        169
+      ],
+      "declaredRightGrip": [
+        158,
+        169
+      ],
+      "rotationDeg": 115,
+      "scale": 1,
+      "weaponBackPixels": 146,
+      "weaponFrontPixels": 559,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "durationMs": 55,
+      "weaponVisible": true,
+      "rightGrip": [
+        159,
+        155
+      ],
+      "declaredRightGrip": [
+        159,
+        155
+      ],
+      "rotationDeg": 95,
+      "scale": 1,
+      "weaponBackPixels": 150,
+      "weaponFrontPixels": 557,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "durationMs": 80,
+      "weaponVisible": true,
+      "rightGrip": [
+        164,
+        155
+      ],
+      "declaredRightGrip": [
+        164.27860342318323,
+        155.09497366108894
+      ],
+      "rotationDeg": 80,
+      "scale": 1,
+      "weaponBackPixels": 151,
+      "weaponFrontPixels": 554,
+      "layerOrder": [
+        "weaponBack",
+        "body",
+        "weaponFront",
+        "handFront"
+      ]
+    },
+    {
+      "index": 12,
+      "file": "12.png",
+      "durationMs": 45,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ]
+    },
+    {
+      "index": 13,
+      "file": "13.png",
+      "durationMs": 90,
+      "weaponVisible": false,
+      "rightGrip": null,
+      "rotationDeg": null,
+      "scale": 1,
+      "layerOrder": [
+        "body"
+      ]
+    }
+  ]
+}

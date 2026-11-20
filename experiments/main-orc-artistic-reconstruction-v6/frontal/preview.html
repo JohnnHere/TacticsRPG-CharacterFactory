@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Orc V1 — V6 correções frontais localizadas (checkpoint V6_FRONTAL_LOCAL_FIXES_READY)</title>
+<style>
+body{font:13px/1.4 system-ui,sans-serif;margin:12px;background:#fafafa;color:#111}
+header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+main{display:flex;gap:14px;flex-wrap:wrap}
+article{background:#fff;border:1px solid #ddd;padding:6px}
+canvas{image-rendering:pixelated;background:repeating-conic-gradient(#e8e8e8 0% 25%, #f8f8f8 0% 50%) 0 / 16px 16px}
+h2{font-size:13px;margin:2px 0}
+small{color:#555}
+#status{font-weight:600}
+.legend{margin:6px 0;color:#444}
+</style>
+</head>
+<body>
+<h1>Orc V1 — correções frontais V6 (pontos claros isolados + ilha (0,0,1) sob a axila)</h1>
+<p class="legend">Antes = V5 rejeitada (mesma célula). Depois = cópia V6 corrigida. Modo corpo usa <code>layers/body</code> (sem equipamento); modo composto usa o render completo. Armas só no intervalo do ataque.</p>
+<header>
+<label>Célula <select id="cell">
+<option value="front_l/Sword">front_l / Sword</option>
+<option value="front_r/Sword">front_r / Sword</option>
+<option value="front_r/Axe">front_r / Axe</option>
+<option value="front_l/Axe">front_l / Axe</option>
+</select></label>
+<button id="play">Pausar</button>
+<button id="step">Passo +1</button>
+<button id="restart">Reiniciar</button>
+<select id="speed"><option value="1">1×</option><option value="0.5">0,5×</option></select>
+<select id="zoom"><option value="1">Nativo 1×</option><option value="0.5">Tático 0,5×</option><option value="2">Zoom 2×</option><option value="4">Zoom 4×</option></select>
+<input id="frame" type="range" min="0" max="12" value="0">
+<span id="status"></span>
+</header>
+<main id="views"></main>
+<p><small>Aseprite é o mestre; correções de 1 px por pixel planejado (ver <a href="report.md">report.md</a>, <a href="patch-manifest.json">patch-manifest.json</a>, <a href="before-after-index.json">before-after</a>). DEV trabalhou sem percepção de imagem (forense textual Pillow); QA visual independente vem depois. Sem aprovação do criador; sem integração.</small></p>
+<script>
+const CELL_SLUG={'front_l/Sword':'front_l-Sword-full','front_r/Sword':'full-front-r-sword','front_r/Axe':'front_r-Axe-full','front_l/Axe':'front_l-Axe-full'};
+const V6='../../../characters/orc-v1/source/artistic-reconstruction-v6/frontal/';
+const V5='../../../characters/orc-v1/source/combat-rescue-v5/grip-specialist/';
+let current=[],playing=true,time=0,last=0,manual=0;
+async function load(){
+ const key=cell.value,slug=CELL_SLUG[key];
+ current=[];
+ for(const v of [['ANTES (V5)',V5+slug+'/clip.json'],['DEPOIS (V6)',V6+slug+'/clip.json']]){
+  const c=await fetch(v[1]).then(r=>r.json());
+  for(const mode of ['body','composite']){
+   const a=document.createElement('article');
+   a.innerHTML='<h2>'+v[0]+' · '+(mode==='body'?'corpo (sem arma)':'composto')+'</h2><small>'+c.totalDurationMs+' ms · '+c.frameCount+' quadros</small>';
+   const cv=document.createElement('canvas');cv.width=cv.height=256;a.append(cv);views.append(a);
+   const imgs=await Promise.all(c.frames.map(f=>new Promise((res,rej)=>{const im=new Image();im.onload=()=>res(im);im.onerror=rej;im.src='../../../'+(mode==='body'?f.layers.body.png:f.png)})));
+   current.push({c,cv,imgs,mode,ver:v[0]});
+  }
+ }
+ frame.max=current[0].c.frameCount-1;time=0;manual=0;draw();
+}
+function index(c){if(!playing)return manual;let t=time%c.totalDurationMs,i=0;while(i<c.frames.length-1&&t>=c.frames[i].durationMs){t-=c.frames[i].durationMs;i++}return i}
+function draw(){
+ for(const v of current){
+  const i=index(v.c),ctx=v.cv.getContext('2d');
+  ctx.clearRect(0,0,256,256);ctx.drawImage(v.imgs[i],0,0);
+  const z=Number(zoom.value);v.cv.style.width=v.cv.style.height=(256*z)+'px';v.cv.dataset.frame=i;
+ }
+ if(current.length){const c=current[0].c,i=index(c);frame.value=i;
+  const e=(c.frames[i].v6FrontalFixEdits!==undefined)?c.frames[i].v6FrontalFixEdits:'';
+  status.textContent=key.value+' · F'+String(i).padStart(2,'0')+' · '+c.frames[i].phase+' · '+c.frames[i].durationMs+' ms'+(e!==''?' · edições V6: '+e:'');}
+}
+play.onclick=()=>{if(playing){manual=current.length?index(current[0].c):0}else if(current.length){time=current[0].c.frames.slice(0,manual).reduce((s,f)=>s+f.durationMs,0)}playing=!playing;play.textContent=playing?'Pausar':'Continuar';draw()};
+step.onclick=()=>{manual=current.length?index(current[0].c):0;playing=false;manual=(manual+1)%current[0].c.frameCount;play.textContent='Continuar';draw()};
+frame.oninput=()=>{playing=false;manual=Number(frame.value);play.textContent='Continuar';draw()};
+restart.onclick=()=>{time=0;manual=0;draw()};
+zoom.onchange=draw;speed.onchange=()=>{};cell.onchange=load;
+function tick(n){if(last&&playing)time+=(n-last)*Number(speed.value);last=n;draw();requestAnimationFrame(tick)}
+load().then(()=>requestAnimationFrame(tick));
+</script>
+</body>
+</html>

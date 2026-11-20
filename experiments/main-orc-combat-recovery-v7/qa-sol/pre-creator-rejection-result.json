@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "review": "Independent fresh V7 pixel/pose review",
+  "manifest": "characters/orc-v1/source/combat-recovery-v7/candidate28manifest.json",
+  "manifestSha256": "fde1fe23f2d637589b6abef6b9b946b6c4370cc8ae5f3927525fb038397b2579",
+  "verdict": "ARTISTIC_ISSUES_FOUND",
+  "severity": "HIGH",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "centralCriterion": {
+    "Sword": "FAIL",
+    "Axe": "FAIL",
+    "reason": "A mesma sequência nominal de fases existe, mas a mecânica corporal back_l ainda não traduz convincentemente o cruzamento/compromisso dos frontais. Ver QA-V7-01."
+  },
+  "matrix": [
+    {
+      "objection": "back_l/Sword ataca de lado",
+      "cell": "back_l/Sword",
+      "frames": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "status": "FAIL",
+      "evidence": "Elevação corrigida em F06; porém abertura F03 com úmero fino/horizontal e descida/contato F08–F10 permanecem exteriores ao torso, sem o cruzamento corporal reconhecível dos frontais. Ver QA-V7-01/02."
+    },
+    {
+      "objection": "back_l/Axe antinatural",
+      "cell": "back_l/Axe",
+      "frames": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "status": "FAIL",
+      "evidence": "Hoist e massa da cabeça existem; úmero estreito em F03 e recuperação da espessura/curvatura em F06–F09 fazem o braço ler como segmentos articulados. Contato desce no lado externo, sem transferência equivalente ao frontal."
+    },
+    {
+      "objection": "Flash branco no Sword traseiro",
+      "cell": "back_r/Sword; back_l/Sword (Axe como controle)",
+      "frames": [
+        0,
+        1,
+        10,
+        11,
+        13,
+        14
+      ],
+      "status": "PASS",
+      "evidence": "PASS para a descontinuidade específica dos bookends: luma e contagens reproduzidas em preservation-luma.json. Flicker contínuo NÃO VERIFICADO."
+    },
+    {
+      "objection": "Pegada underhand",
+      "cell": "back_r/Axe",
+      "frames": [
+        3,
+        4,
+        7
+      ],
+      "status": "PASS",
+      "evidence": "Inspeção estática composta e body-only: mão fecha ao redor do cabo; punho chega abaixo da palma no hoist, acima/esquerda no contato. Não confirmada a leitura underhand anterior; rotação temporal NÃO VERIFICADA."
+    },
+    {
+      "objection": "Axila ainda não resolvida",
+      "cell": "front_l/Sword",
+      "frames": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "evidence": "9 e 10 pixels de diferença RGBA contra o pai; abertura escura legível, sem a ilha solta ou chapa uniforme denunciadas. Região composta x147..152/y115..123. PASS estático localizado."
+    },
+    {
+      "objection": "Contornos claros frontais",
+      "cell": "front_l/Sword; front_l/Axe; front_r/Sword; front_r/Axe",
+      "frames": "todos",
+      "status": "PASS",
+      "evidence": "Não identificado halo claro destacado nas imagens atuais. Highlights acompanham metal/luva; anterioridade no V5 é controle de regressão, não prova artística. Flicker NÃO VERIFICADO."
+    },
+    {
+      "objection": "Preservar front_r/Sword",
+      "cell": "front_r/Sword",
+      "frames": "00..12",
+      "status": "PASS",
+      "evidence": "13/13 compostos RGBA idênticos ao pai; duração preservada."
+    }
+  ],
+  "findings": [
+    {
+      "id": "QA-V7-01",
+      "severity": "HIGH",
+      "cells": [
+        "back_l/Sword",
+        "back_l/Axe"
+      ],
+      "frames": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "coordinates": {
+        "space": "native 128; somar 64,64 no composto",
+        "Sword": {
+          "openingShoulder": [
+            88,
+            40
+          ],
+          "openingElbow": [
+            106,
+            39
+          ],
+          "apexPalm": [
+            100,
+            19
+          ],
+          "contactPalm": [
+            109,
+            81
+          ]
+        },
+        "Axe": {
+          "openingShoulder": [
+            89,
+            39
+          ],
+          "openingElbow": [
+            104,
+            34
+          ],
+          "apexPalm": [
+            95,
+            15
+          ],
+          "contactPalm": [
+            101,
+            76
+          ]
+        }
+      },
+      "description": "Correspondência de técnica insuficiente: frontais passam a mão/antebraço pelo plano do peito e terminam cruzados; back_l levanta e abaixa o conjunto fora do lado direito da silhueta, sem rotação/oclusão de torso que explique o mesmo corte em perspectiva. A elevação correta isoladamente não resolve o critério central.",
+      "validation": "Comparar Sword-keys.png e Axe-keys.png por fase; observação estática independente, sem inferir avaliação temporal."
+    },
+    {
+      "id": "QA-V7-02",
+      "severity": "MEDIUM",
+      "cells": [
+        "back_l/Sword",
+        "back_l/Axe"
+      ],
+      "frames": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "coordinates": {
+        "space": "native 128",
+        "roi": [
+          86,
+          30,
+          116,
+          58
+        ]
+      },
+      "description": "O úmero na abertura F03 sai da ombreira como faixa estreita quase horizontal; no ápice/contato vira membro espesso e curvo. A cadeia está conectada mas o volume e a união manga/ombreira não mantêm leitura anatômica convincente. Mais evidente no body-only; não é membro ausente.",
+      "validation": "Sword-body.png e Axe-body.png, última linha; comparar espessura proximal F03 com F06/F09."
+    }
+  ],
+  "numerical": {
+    "manifestHash": "PASS",
+    "clipHashes": "28/28 PASS",
+    "aliases": "15/15 PASS; 100 frames",
+    "nonAttackPreservation": "20/20 cells byte-identical frames and identical timings vs V6",
+    "protectedFrontals": "front_r Sword 13/13, front_r Axe 12/12, front_l Axe 12/12 RGBA unchanged",
+    "frontLeftSwordDiffPixels": {
+      "F03": 9,
+      "F04": 10,
+      "others": 0
+    },
+    "backLeftSwordApex": {
+      "frame": 6,
+      "weaponTopCompositeY": 25,
+      "greenSkullTopCompositeY": 74,
+      "clearancePx": 49,
+      "claimed48": "não reproduzido exatamente; diferença 1 px por marco do crânio",
+      "wristAboveShoulderPx": 14
+    },
+    "weaponPixelsBelowGroundY190": 0,
+    "bookendWeaponLayerPixels": 0,
+    "semanticBookends": "PASS visual nos extremos das oito tiras; ausência técnica não usada sozinha",
+    "luma": "PASS específico dos bookends; detalhes em preservation-luma.json"
+  },
+  "playback": {
+    "browserAvailable": false,
+    "attempt": "cua createBrowserTab iab indisponível; listBrowsers retornou []",
+    "normal1x": "NÃO VERIFICADO",
+    "halfSpeed": "NÃO VERIFICADO",
+    "tacticalContinuous": "NÃO VERIFICADO"
+  },
+  "limitations": [
+    "Revisão visual por PNGs/tiras e chaves ampliadas; sem percepção contínua no navegador.",
+    "Mestres não reabertos por este QA; o recibo Aseprite existente é evidência herdada, não nova execução.",
+    "Sem reaproveitar parecer V6, sem subagentes, sem geração, sem alteração de arte/manifesto/docs/Unity.",
+    "Custo LLM não informado."
+  ],
+  "evidence": [
+    "measurements.json",
+    "comparisons.json",
+    "preservation-luma.json",
+    "Sword-all.png",
+    "Axe-all.png",
+    "Sword-keys.png",
+    "Axe-keys.png",
+    "Sword-body.png",
+    "Axe-body.png"
+  ]
+}

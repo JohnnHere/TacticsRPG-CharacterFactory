@@ -1,0 +1,35 @@
+Painel de QA independente (mesma sessão, escopo novo e final de pegadas): revisar os DOIS últimos ciclos traseiros equipados, entregues em `REAR_TWO_REMAINING_FULL_READY` pelo especialista de pegada `7db0e7b6-ab88-49e9-9362-a19121c8ebf5`, sobre corpos que você mesmo liberou como `READY_FOR_REAR_GRIPS`.
+
+Escopo: exatamente estes dois clipes.
+1. `back_r/Sword` — 12 quadros, 730 ms, corpo pai `body-specialist/glm-fixes/back_r-Sword-full` (clip pai `aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88`). Item da família Sword. Golpe de corte diagonal.
+2. `back_l/Axe` — 12 quadros, 1100 ms, corpo pai `body-specialist/glm-fixes/back_l-Axe-full` (clip pai `d87cd8331b46e48e962ac118c01b0fd10d7ad86dcd101f7bc8f3e6093f539ef2`). Item da família Axe. Golpe overhead pesado.
+
+Fontes e evidência:
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json`
+- `characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/patch-manifest-two-remaining.json`
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-r-sword/` (report, anatomy-plan, checks, input-snapshot, author.lua, batch-result, index.html)
+- `experiments/main-orc-combat-rescue-v5/rear-grip-flash/full-back-l-axe/` (idem)
+- Camadas e compostos por quadro nos diretórios `characters/.../rear-grip-flash/full-back-r-sword/` e `.../full-back-l-axe/`.
+
+Contratos declarados que você deve verificar em disco:
+1. Corpo byte-idêntico ao pai aprovado, delta RGBA zero nos 12 quadros, inclusive nativo 128.
+2. Chaves F03/F04/F07 preservadas byte-a-byte; em `back_r/Sword` o F06 reparado (resíduos removidos, malha restaurada) permanece reparado e sem novo rastro; em `back_l/Axe` o F02 reautorado permanece com mão vazia fechada, sem haste nem bloco de couro, e a luva agora recebe o cabo sem deformar braço ou antebraço.
+3. `visibleInterval [2, 8]`; F00, F01, F09, F10, F11 totalmente transparentes e compósitos iguais ao corpo.
+4. Mestres 256/128 salvos, reabertos e reexportados; durações e timing reais.
+5. `back_l/Axe` declara impacto tocando `groundY = 190` sem penetração; `back_r/Sword` declara folga de 8 px. Julgue se a relação com o chão é convincente para cada tipo de golpe.
+
+Julgamento artístico com inspeção real:
+- Em cada quadro armado: luva direita genuína envolvendo o cabo, unida ao pulso e antebraço; sem carimbo, sem mão inativa na arma, sem guarda/pomo escondidos.
+- `back_r/Sword` deve ler como corte diagonal de espada, não machado relabelado; `back_l/Axe` deve ler como descida overhead pesada com entrega de tronco/quadril/joelhos, não corte lateral.
+- Verifique se a pegada no F02 do `back_l/Axe` realmente entra na mão reautorada sem alongar o braço nem criar luva dupla.
+- Verifique se o F06 do `back_r/Sword` continua limpo quando a arma passa por perto.
+- Continuidade F02→F08: sem teleporte do item, colisão com corpo, rastro pintado no corpo, perda de massa da lâmina, piscadas.
+- Retorno neutro F09..F11 sem resíduo. Legibilidade em escala nativa e tática 64.
+- Diferencie inspeção estática/quadro a quadro de percepção contínua em 1x; não declare o que não observou.
+
+Grave NOVO `rear-two-remaining-result.json` e `rear-two-remaining-report.md` na pasta `qa-antigravity-flash`, preservando todos os pareceres anteriores. Inclua os SHA-256 reais dos dois `clip.json`, evidências por quadro e limitações.
+
+Verdito por clipe: `READY_FOR_MATRIX_REVIEW`, `REVISIONS_REQUIRED` com achados exatos, ou `INCONCLUSIVE`.
+
+Restrições: não editar arte/fontes/matriz/Unity/ponteiros; não criar subagentes; zero PixelLab de produção nesta revisão; custo LLM não informado; criador permanece aprovador final. Pare após o laudo persistente.

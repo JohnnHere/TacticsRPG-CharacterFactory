@@ -1,0 +1,23 @@
+DEV LOCALIZADO FRONTAL — correções V6 nos ataques frontais do Orc V1. Escopo pequeno e cirúrgico; você não é QA nem orquestrador.
+
+ALVO 1 — axila persistente de `front_l/Sword`:
+O criador reporta artefato visível SOB a axila do braço atacante que sobreviveu a várias correções. Fonte atual: `characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/` (clip.json, layers weaponBack/body/weaponFront/handFront, mestres .aseprite). Investigue a CAUSA REAL na fonte, não no preview: anatomia do ombro, geometria da axila, pixels residuais de braço antigo, máscara incompleta, transparência errada, composição antebraço/tronco, registros de frame. Corrija na fonte os frames afetados E transições adjacentes; não cubra com pixels aleatórios; preserve a coreografia frontal bem-sucedida (não reconstrua o clipe inteiro).
+
+ALVO 2 — contornos claros indevidos nos frontais:
+Inspecione body-only e compostos de `full-front-r-sword`, `front_l-Sword-full`, `front_r-Axe-full`, `front_l-Axe-full`. Distinga highlight metálico legítimo de halo claro, contorno duplo, pixel residual de doador e máscara mal registrada. Corrija somente os confirmados, sem escurecimento global nem recolor ampla, verificando frames adjacentes para não criar flicker.
+
+ALVO 3 — inspeção de grip frontal:
+Confirme que a luva envolve o cabo (palma/pulso/antebraço conectados) nos 4 clipes; corrija somente desvios confirmados e localizados.
+
+MÉTODO E LIMITAÇÕES:
+- Se seu runtime não exibir imagens para você (limitação conhecida de GLM/Cline neste projeto), trabalhe por forense textual com Pillow (dump de coordenadas/cores/alfa por região) + autoria Lua no Aseprite — um antecessor seu resolveu reparos cirúrgicos assim com sucesso. NÃO declare percepção visual que não teve; registre a limitação no relatório. O QA independente verificará visualmente depois.
+- Escreva SOMENTE em `characters/orc-v1/source/artistic-reconstruction-v6/frontal/` e `experiments/main-orc-artistic-reconstruction-v6/frontal/` + perfil `tmp/aseprite-v6-frontal-profile`. Fontes anteriores permanecem intocadas (worktree suja de trabalho não relacionado — preserve).
+- Aseprite 1.3.18.6 batch --noinapp (`F:\SteamLibrary\steamapps\common\Aseprite\Aseprite.exe`); Lua `Frame.duration` em SEGUNDOS; Python `tmp\pixel-venv\Scripts\python.exe`, Pillow somente leitura/diagnóstico, nunca autoria raster de produção.
+- Contratos: composto 256×256 body offset [64,64] ground 190; nativo 128 ground 126; 4 camadas weaponBack/body/weaponFront/handFront; arma só no intervalo do ataque; zero pixel de arma na camada body; `nativePng` = recorte do corpo; mestres salvos/reabertos/reexportados com pixels+timing conferidos.
+- PixelLab NÃO é esperado para estas correções localizadas. Se algum bloqueio real exigir, meça saldo antes/depois com `tools/pixellab-mcp.py` e guarde recibos; sem compras. Prompt de corpo nunca nomeia arma.
+
+ENTREGA (checkpoint `V6_FRONTAL_LOCAL_FIXES_READY`):
+- Clipes corrigidos (somente os que precisaram) com clip.json válido, hashes, mestres reais, patch-manifest das células alteradas.
+- Before/after por frame corrigido (PNG diagnóstico lado a lado) e preview HTML 1×/0,5×/passo/tático.
+- `report.md` com causa raiz confirmada por defeito, frames alterados, pixels modificados, o que foi inspecionado e mantido, limitação visual declarada, zero/saldo PixelLab. Não declare aprovação do criador.
+- PARE no checkpoint; o orquestrador integra e envia ao QA independente.

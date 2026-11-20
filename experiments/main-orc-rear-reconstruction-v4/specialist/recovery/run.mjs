@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const root='C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory';
+if(path.resolve('.').replaceAll('\\','/')!==root)throw Error('Unexpected cwd');
+const base='experiments/main-orc-rear-reconstruction-v4/specialist';
+const profile=path.resolve(base,'recovery/batch-profile');fs.mkdirSync(profile,{recursive:true});
+const args=['--batch','--noinapp','--script-param',`params=${base}/recovery/params-frozen.lua`,'--script',`${base}/recovery/entry.lua`];
+const r=spawnSync('F:/SteamLibrary/steamapps/common/Aseprite/Aseprite.exe',args,{cwd:process.cwd(),env:{...process.env,ASEPRITE_USER_FOLDER:profile},windowsHide:true,encoding:'utf8',timeout:90000,maxBuffer:4*1024*1024});
+fs.writeFileSync(`${base}/recovery/batch-result.json`,JSON.stringify({hidden:true,isolatedProfile:profile,timeoutMs:90000,args,exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message},null,2)+'\n');
+if(r.stdout)process.stdout.write(r.stdout);if(r.stderr)process.stderr.write(r.stderr);
+if(r.error||r.status!==0||/Error:|attempt to|assertion failed/i.test((r.stderr??'')+(r.stdout??'')))throw Error(r.error?.message||'Aseprite failure');

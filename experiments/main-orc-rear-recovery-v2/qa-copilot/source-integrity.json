@@ -1,0 +1,814 @@
+{
+  "identity": "GPT Sol6.1 via GitHub Copilot",
+  "freezeId": "6fa4653eabe660992acc422aa32159b48e4971122df0e995b99a19261df4a843",
+  "status": "PASS",
+  "aseprite": {
+    "executable": "F:\\SteamLibrary\\steamapps\\common\\Aseprite\\Aseprite.exe",
+    "version": "Aseprite 1.3.18.6-x64",
+    "mode": "hidden --batch --noinapp; isolated profile"
+  },
+  "attribution": "Argon exports reused with fresh source-hash, decoded-RGBA and timing checks; four body-layer exports newly executed by Copilot. No artistic conclusions reused.",
+  "previousReportedStatus": "PASS",
+  "reusedExports": [
+    {
+      "cell": "front_r/Unarmed",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_r/unarmed-attack.aseprite",
+      "sha256": "608babd785bec6c7441244387496c99983447131590e99903dad7b5664770643",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_r/Unarmed",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-front_r.aseprite",
+      "sha256": "076528f90e0ab9bb1e4a78144a9b44f58ab9f875a844849eeceed6696c64c068",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_r/Defeat",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_r/defeat.aseprite",
+      "sha256": "8bba1ee8c909f2b343aee49b24e47aed3137c7a3785f0d617ff42c3e0491532d",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_r/Defeat",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/defeat-front_r.aseprite",
+      "sha256": "e5cc9b1e7c290678480674c9ae1c7269c692376d057cf193abc12f849970de6e",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_l/Unarmed",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_l/unarmed-attack.aseprite",
+      "sha256": "e86f5f8c076612c862c2d6eb4df31daf0cf043934264e67f45ac770df5d79128",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_l/Unarmed",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-front_l.aseprite",
+      "sha256": "ab453f6e20f9f892ff58ee866301dc4a9f15efc038e8274dc4162590160cbf9d",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_l/Defeat",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_l/defeat.aseprite",
+      "sha256": "58c50e24ae8164e888300380f2db5e05b4687c643e4b18400d19ed2a506b6a36",
+      "exactFrames": 5
+    },
+    {
+      "cell": "front_l/Defeat",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/defeat-front_l.aseprite",
+      "sha256": "d9295819945a963f11ee148a935824dfb9e00d0b9fc13be277c352357e21fa57",
+      "exactFrames": 5
+    },
+    {
+      "cell": "back_r/Walk",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/walk-unarmed.aseprite",
+      "sha256": "60c02f8804460163dbd793631fa16f593c0cd90ffae9a6d3da524c8a2ae25747",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Walk",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_r.aseprite",
+      "sha256": "95ab8db604ec258d2e5a6e6c0ec6ec3dc6ea2c0da1a7cc64241ebbbd85bb5fe8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Unarmed",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/unarmed-attack.aseprite",
+      "sha256": "e9f18f84706f1ac542d98c4892e3ddcbd1c51b2b659c5d21b736045bef9f12bd",
+      "exactFrames": 5
+    },
+    {
+      "cell": "back_r/Unarmed",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-back_r.aseprite",
+      "sha256": "82c8a587164e1c02795447a02ef0b575b9efdaca412b70f3dbe916fe5ff2d68d",
+      "exactFrames": 5
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/sword-body-representative-v2-back_r.aseprite",
+      "sha256": "ce5cd061ca8d5f2939087fba96be9006f3af58968c31d01dd5f17d164088d084",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-body-representative-v2.aseprite",
+      "sha256": "41dd247230dfee7c8ea8a4467275fef9841d0be672266cd58412991558a74c88",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "layer_weaponBack",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "layer_body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "layer_weaponFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Sword",
+      "kind": "layer_handFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/axe-body-representative-v1-back_r.aseprite",
+      "sha256": "17269eea6cd28455f101968f657ffa34cb8526afb91523b8087b038a8ac00b03",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-body-representative-v1.aseprite",
+      "sha256": "f798bb360477caebc2f43bb4205b5ca35a87b8917db0468f77a93f93db581509",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "layer_weaponBack",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "layer_body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "layer_weaponFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_r/Axe",
+      "kind": "layer_handFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Walk",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/walk-unarmed.aseprite",
+      "sha256": "82c1cb35a846831b059f58627e7a6256103639771438c71c250fb402496cd2e7",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Walk",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/walk-back_l.aseprite",
+      "sha256": "30cec9f68037d410e974782ba204e72910aa7cfda4c7af61594186a01705039f",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Unarmed",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/unarmed-attack.aseprite",
+      "sha256": "61619e500f5421ec179d79763621786de407fa06197e5b85076e8a2796b50c97",
+      "exactFrames": 5
+    },
+    {
+      "cell": "back_l/Unarmed",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/unarmed-back_l.aseprite",
+      "sha256": "cef0b6eece981ec2c0319f696a709a41d6b8beead429e7e74a832ec88716cf7d",
+      "exactFrames": 5
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/sword-body-representative-v1-back_l.aseprite",
+      "sha256": "9983d6db3b3cb25dfc7ce2cfe13781e4aef55c8eb233b9b4975765d464c7aa84",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-body-representative-v1.aseprite",
+      "sha256": "6db76a6cd6b6a1434384f063aa392fda00a0bfd23cede6e3b6bc259c5a1f9324",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "layer_weaponBack",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "layer_body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "layer_weaponFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Sword",
+      "kind": "layer_handFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "comp",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "nat",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/native/axe-body-representative-v1-back_l.aseprite",
+      "sha256": "bb2692cc39bea04ea711588b7a7864b5f3038d61d755186268881cb1098459fc",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-body-representative-v1.aseprite",
+      "sha256": "857914c985e9270a8441bac02eb712e7819fef6824ead37020962faa418e3e15",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "layer_weaponBack",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "layer_body",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "layer_weaponFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8
+    },
+    {
+      "cell": "back_l/Axe",
+      "kind": "layer_handFront",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8
+    }
+  ],
+  "freshExports": [
+    {
+      "cell": "back_r/Sword",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/sword-attack-representative-v2.aseprite",
+      "sha256": "a0cd61e4a09a35bbb8357661e39c6279d6b454c25c42b3eef19ce6a60b4e72e8",
+      "exactFrames": 8,
+      "directory": "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\reexports\\back_r_Sword"
+    },
+    {
+      "cell": "back_r/Axe",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_r/axe-attack-representative-v1.aseprite",
+      "sha256": "849ecbf07b8ae71a58a79a392ce03079b3ef3b4932abd016b0d965b470535891",
+      "exactFrames": 8,
+      "directory": "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\reexports\\back_r_Axe"
+    },
+    {
+      "cell": "back_l/Sword",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/sword-attack-representative-v1.aseprite",
+      "sha256": "599b8110d13ed21fce4af358ffd3cbdde265ca12bf1c38c5c23f843f6401d578",
+      "exactFrames": 8,
+      "directory": "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\reexports\\back_l_Sword"
+    },
+    {
+      "cell": "back_l/Axe",
+      "master": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/back_l/axe-attack-representative-v1.aseprite",
+      "sha256": "86572c2574a65b988e36d4035d97f6798c9a05d2306f4455d747994a29909c51",
+      "exactFrames": 8,
+      "directory": "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\reexports\\back_l_Axe"
+    }
+  ],
+  "sheets": [
+    {
+      "cell": "front_r/Unarmed",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Unarmed-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Unarmed-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ]
+    },
+    {
+      "cell": "front_r/Hit",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Hit-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Hit-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ]
+    },
+    {
+      "cell": "front_r/Defeat",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Defeat-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_r_Defeat-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ]
+    },
+    {
+      "cell": "front_l/Unarmed",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Unarmed-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Unarmed-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        80,
+        110,
+        50,
+        90,
+        120
+      ]
+    },
+    {
+      "cell": "front_l/Hit",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Hit-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Hit-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ]
+    },
+    {
+      "cell": "front_l/Defeat",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Defeat-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\front_l_Defeat-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ]
+    },
+    {
+      "cell": "back_r/Walk",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Walk-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Walk-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ]
+    },
+    {
+      "cell": "back_r/Unarmed",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Unarmed-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Unarmed-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        80,
+        110,
+        60,
+        90,
+        110
+      ]
+    },
+    {
+      "cell": "back_r/Sword",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Sword-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Sword-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ]
+    },
+    {
+      "cell": "back_r/Axe",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Axe-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Axe-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ]
+    },
+    {
+      "cell": "back_r/Hit",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Hit-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_r_Hit-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ]
+    },
+    {
+      "cell": "back_l/Walk",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Walk-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Walk-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ]
+    },
+    {
+      "cell": "back_l/Unarmed",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Unarmed-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Unarmed-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        80,
+        110,
+        60,
+        90,
+        110
+      ]
+    },
+    {
+      "cell": "back_l/Sword",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Sword-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Sword-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ]
+    },
+    {
+      "cell": "back_l/Axe",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Axe-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Axe-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationsMs": [
+        90,
+        80,
+        90,
+        80,
+        100,
+        80,
+        100,
+        110
+      ]
+    },
+    {
+      "cell": "back_l/Hit",
+      "paths": [
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Hit-composite.png",
+        "experiments\\main-orc-rear-recovery-v2\\qa-copilot\\images\\back_l_Hit-body-detail.png"
+      ],
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "rear-anatomy-construction",
+      "complete": true
+    },
+    {
+      "id": "rear-motion-needs-rear-construction",
+      "complete": true
+    },
+    {
+      "id": "weapon-anchor-vs-natural-choreography",
+      "complete": true
+    },
+    {
+      "id": "incompatible-attack-reuse",
+      "complete": true
+    },
+    {
+      "id": "numeric-hit-thresholds-diagnostic-warning",
+      "complete": true
+    },
+    {
+      "id": "defeat-consistent-terminal-outcome",
+      "complete": true
+    },
+    {
+      "id": "technical-completion-not-artistic-approval",
+      "complete": true
+    },
+    {
+      "id": "validated-poses-reused-not-regenerated",
+      "complete": true
+    },
+    {
+      "id": "failed-artistic-foundations-downstream-rework",
+      "complete": true
+    },
+    {
+      "id": "complete-review-interface-mandatory",
+      "complete": true
+    },
+    {
+      "id": "successful-methods-documented-equally",
+      "complete": true
+    },
+    {
+      "id": "speed-and-scale-evaluation",
+      "complete": true
+    },
+    {
+      "id": "external-crossfade-raster-interpolation-failure",
+      "complete": true
+    },
+    {
+      "id": "continuous-temporal-anchored-generation",
+      "complete": true
+    },
+    {
+      "id": "weapon-contamination-and-layers-off-inspection",
+      "complete": true
+    },
+    {
+      "id": "donor-cluster-verification-before-reuse",
+      "complete": true
+    },
+    {
+      "id": "surgical-same-view-donor-repair",
+      "complete": true
+    }
+  ],
+  "accounting": {
+    "jobs": 17,
+    "generations": 78,
+    "summary": {
+      "sessionCapGenerations": 66,
+      "totalConsumedGenerations": 78,
+      "failedGenerations": 14,
+      "activeCandidateGenerations": 28,
+      "weaponExploratoryGenerations": 24,
+      "verifiedAccountBalanceRemainingAt69GenerationCheckpoint": 1418.7,
+      "representativeSwordBodyGenerations": 3,
+      "priorRepresentativeGenerationDeviation": 3,
+      "newlyAuthorizedRepresentativeJobs": 3,
+      "newlyAuthorizedRepresentativeGenerations": 9,
+      "actualJobCount": 17
+    }
+  },
+  "failures": []
+}

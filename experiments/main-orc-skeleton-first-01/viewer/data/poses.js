@@ -1,0 +1,809 @@
+// Espelho gerado automaticamente de poses-fixed.json
+// sha256=2deb1d3fffc98c3feed4538e477aee822a581fac54a25eca92bf669ed1de6dfb
+// geradoEm=2026-10-30T19:05:54.551Z · não editar à mão; gere com: node viewer/tools/make-data-mirrors.mjs
+window.__SV_DATA_POSES = {
+  "schema": "main-orc-skeleton-first-01/poses",
+  "character": "orc-v1",
+  "direction": "back_l",
+  "action": "Sword Attack (basic.sword-slash)",
+  "reference": {
+    "image": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_l-sword/02.png",
+    "width": 256,
+    "height": 256,
+    "groundY": 190,
+    "groundYFraction": 0.7422,
+    "bodyOffset": [
+      64,
+      64
+    ],
+    "note": "Frações x/y relativas a esta imagem 256x256, y para baixo. Pose ready reproduz a postura dela."
+  },
+  "convention": {
+    "sides": "LEFT/RIGHT são lados do personagem. Em back_l o flanco ESQUERDO é o próximo da câmera (esquerda da imagem, depth alto); o DIREITO é o afastado (direita da imagem, depth baixo). Não espelhe.",
+    "arm": "RIGHT ARM é o punho fechado sobre o cabo; coincide exatamente com grip.point. LEFT ARM é a mão livre (guarda junto ao quadril esquerdo).",
+    "blade": "bladeDirection aponta do punho para a ponta; haftDirection aponta do punho para o pomo (espada reta: eixos opostos). bladeLengthPx é o comprimento projetado na tela (encurtar = apontar para dentro da profundidade).",
+    "weapon": "Espada do Recruta, uma mão, binding hand right; canvas próprio 96x96 com grip [48,66]; no palco 256 o cabo está sempre no RIGHT ARM."
+  },
+  "poses": [
+    {
+      "id": "ready",
+      "label": "Prontidão",
+      "frameIndex": 0,
+      "phase": "rest",
+      "note": "Postura medida de 02.png (establish-grip armado; referência do PixelLab).",
+      "joints": [
+        {
+          "label": "RIGHT LEG",
+          "x": 0.5742,
+          "y": 0.7188,
+          "z_index": 9,
+          "depth": 86
+        },
+        {
+          "label": "RIGHT KNEE",
+          "x": 0.5781,
+          "y": 0.6484,
+          "z_index": 9,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT HIP",
+          "x": 0.5703,
+          "y": 0.5859,
+          "z_index": 11,
+          "depth": 108
+        },
+        {
+          "label": "RIGHT SHOULDER",
+          "x": 0.5859,
+          "y": 0.3984,
+          "z_index": 13,
+          "depth": 88
+        },
+        {
+          "label": "RIGHT ELBOW",
+          "x": 0.6758,
+          "y": 0.3945,
+          "z_index": 14,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT ARM",
+          "x": 0.6797,
+          "y": 0.4766,
+          "z_index": 15,
+          "depth": 92
+        },
+        {
+          "label": "NECK",
+          "x": 0.4844,
+          "y": 0.3906,
+          "z_index": 20,
+          "depth": 128
+        },
+        {
+          "label": "NOSE",
+          "x": 0.4609,
+          "y": 0.3281,
+          "z_index": 20,
+          "depth": 78
+        },
+        {
+          "label": "RIGHT EYE",
+          "x": 0.4766,
+          "y": 0.3359,
+          "z_index": 19,
+          "depth": 76
+        },
+        {
+          "label": "LEFT EYE",
+          "x": 0.4453,
+          "y": 0.3203,
+          "z_index": 19,
+          "depth": 80
+        },
+        {
+          "label": "RIGHT EAR",
+          "x": 0.5313,
+          "y": 0.3438,
+          "z_index": 18,
+          "depth": 84
+        },
+        {
+          "label": "LEFT EAR",
+          "x": 0.4414,
+          "y": 0.3516,
+          "z_index": 22,
+          "depth": 172
+        },
+        {
+          "label": "LEFT HIP",
+          "x": 0.4375,
+          "y": 0.5859,
+          "z_index": 22,
+          "depth": 146
+        },
+        {
+          "label": "LEFT KNEE",
+          "x": 0.4219,
+          "y": 0.6484,
+          "z_index": 30,
+          "depth": 172
+        },
+        {
+          "label": "LEFT LEG",
+          "x": 0.4297,
+          "y": 0.7188,
+          "z_index": 31,
+          "depth": 176
+        },
+        {
+          "label": "LEFT SHOULDER",
+          "x": 0.4141,
+          "y": 0.4102,
+          "z_index": 34,
+          "depth": 168
+        },
+        {
+          "label": "LEFT ELBOW",
+          "x": 0.3711,
+          "y": 0.4805,
+          "z_index": 35,
+          "depth": 178
+        },
+        {
+          "label": "LEFT ARM",
+          "x": 0.3633,
+          "y": 0.5625,
+          "z_index": 36,
+          "depth": 184
+        }
+      ],
+      "grip": {
+        "hand": "RIGHT ARM",
+        "point": {
+          "x": 0.6797,
+          "y": 0.4766
+        },
+        "haftDirection": {
+          "x": -0.336,
+          "y": 0.941
+        },
+        "bladeDirection": {
+          "x": 0.34,
+          "y": -0.94
+        },
+        "bladeLengthPx": 60,
+        "tipPx": {
+          "x": 194.16,
+          "y": 65.54
+        },
+        "bladeLength": 0.2305
+      }
+    },
+    {
+      "id": "raise",
+      "label": "Elevação / antecipação",
+      "frameIndex": 5,
+      "phase": "apex-hold",
+      "note": "Ápice: punho acima da cabeça, lâmina vertical (técnica frontal).",
+      "joints": [
+        {
+          "label": "RIGHT LEG",
+          "x": 0.5742,
+          "y": 0.7188,
+          "z_index": 9,
+          "depth": 86
+        },
+        {
+          "label": "RIGHT KNEE",
+          "x": 0.5859,
+          "y": 0.6484,
+          "z_index": 9,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT HIP",
+          "x": 0.5781,
+          "y": 0.5859,
+          "z_index": 11,
+          "depth": 108
+        },
+        {
+          "label": "RIGHT SHOULDER",
+          "x": 0.5977,
+          "y": 0.4023,
+          "z_index": 13,
+          "depth": 88
+        },
+        {
+          "label": "RIGHT ELBOW",
+          "x": 0.6406,
+          "y": 0.3242,
+          "z_index": 14,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT ARM",
+          "x": 0.5703,
+          "y": 0.2813,
+          "z_index": 15,
+          "depth": 92
+        },
+        {
+          "label": "NECK",
+          "x": 0.4805,
+          "y": 0.3867,
+          "z_index": 20,
+          "depth": 128
+        },
+        {
+          "label": "NOSE",
+          "x": 0.457,
+          "y": 0.3203,
+          "z_index": 20,
+          "depth": 78
+        },
+        {
+          "label": "RIGHT EYE",
+          "x": 0.4727,
+          "y": 0.3281,
+          "z_index": 19,
+          "depth": 76
+        },
+        {
+          "label": "LEFT EYE",
+          "x": 0.4414,
+          "y": 0.3125,
+          "z_index": 19,
+          "depth": 80
+        },
+        {
+          "label": "RIGHT EAR",
+          "x": 0.5273,
+          "y": 0.3359,
+          "z_index": 18,
+          "depth": 84
+        },
+        {
+          "label": "LEFT EAR",
+          "x": 0.4375,
+          "y": 0.3438,
+          "z_index": 22,
+          "depth": 172
+        },
+        {
+          "label": "LEFT HIP",
+          "x": 0.4531,
+          "y": 0.5898,
+          "z_index": 22,
+          "depth": 146
+        },
+        {
+          "label": "LEFT KNEE",
+          "x": 0.4258,
+          "y": 0.6484,
+          "z_index": 30,
+          "depth": 172
+        },
+        {
+          "label": "LEFT LEG",
+          "x": 0.4297,
+          "y": 0.7188,
+          "z_index": 31,
+          "depth": 176
+        },
+        {
+          "label": "LEFT SHOULDER",
+          "x": 0.4063,
+          "y": 0.4102,
+          "z_index": 34,
+          "depth": 168
+        },
+        {
+          "label": "LEFT ELBOW",
+          "x": 0.3789,
+          "y": 0.4922,
+          "z_index": 35,
+          "depth": 178
+        },
+        {
+          "label": "LEFT ARM",
+          "x": 0.375,
+          "y": 0.5742,
+          "z_index": 36,
+          "depth": 184
+        }
+      ],
+      "grip": {
+        "hand": "RIGHT ARM",
+        "point": {
+          "x": 0.5703,
+          "y": 0.2813
+        },
+        "haftDirection": {
+          "x": 0,
+          "y": 1
+        },
+        "bladeDirection": {
+          "x": 0,
+          "y": -1
+        },
+        "bladeLengthPx": 60,
+        "tipPx": {
+          "x": 146,
+          "y": 12
+        },
+        "bladeLength": 0.2305
+      }
+    },
+    {
+      "id": "strike",
+      "label": "Golpe principal",
+      "frameIndex": 8,
+      "phase": "contact",
+      "note": "Contato 325 ms: descida diagonal para a linha do oponente (baixo-esquerda).",
+      "joints": [
+        {
+          "label": "RIGHT LEG",
+          "x": 0.5859,
+          "y": 0.7031,
+          "z_index": 9,
+          "depth": 86
+        },
+        {
+          "label": "RIGHT KNEE",
+          "x": 0.5938,
+          "y": 0.6328,
+          "z_index": 9,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT HIP",
+          "x": 0.5508,
+          "y": 0.5898,
+          "z_index": 11,
+          "depth": 108
+        },
+        {
+          "label": "RIGHT SHOULDER",
+          "x": 0.5508,
+          "y": 0.3945,
+          "z_index": 13,
+          "depth": 88
+        },
+        {
+          "label": "RIGHT ELBOW",
+          "x": 0.625,
+          "y": 0.4414,
+          "z_index": 14,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT ARM",
+          "x": 0.5781,
+          "y": 0.5078,
+          "z_index": 15,
+          "depth": 92
+        },
+        {
+          "label": "NECK",
+          "x": 0.4766,
+          "y": 0.3945,
+          "z_index": 20,
+          "depth": 128
+        },
+        {
+          "label": "NOSE",
+          "x": 0.4492,
+          "y": 0.3359,
+          "z_index": 20,
+          "depth": 78
+        },
+        {
+          "label": "RIGHT EYE",
+          "x": 0.4648,
+          "y": 0.3438,
+          "z_index": 19,
+          "depth": 76
+        },
+        {
+          "label": "LEFT EYE",
+          "x": 0.4336,
+          "y": 0.3281,
+          "z_index": 19,
+          "depth": 80
+        },
+        {
+          "label": "RIGHT EAR",
+          "x": 0.5234,
+          "y": 0.3516,
+          "z_index": 18,
+          "depth": 84
+        },
+        {
+          "label": "LEFT EAR",
+          "x": 0.4336,
+          "y": 0.3594,
+          "z_index": 22,
+          "depth": 172
+        },
+        {
+          "label": "LEFT HIP",
+          "x": 0.457,
+          "y": 0.5938,
+          "z_index": 22,
+          "depth": 146
+        },
+        {
+          "label": "LEFT KNEE",
+          "x": 0.418,
+          "y": 0.6484,
+          "z_index": 30,
+          "depth": 172
+        },
+        {
+          "label": "LEFT LEG",
+          "x": 0.4219,
+          "y": 0.7188,
+          "z_index": 31,
+          "depth": 176
+        },
+        {
+          "label": "LEFT SHOULDER",
+          "x": 0.4297,
+          "y": 0.4219,
+          "z_index": 34,
+          "depth": 168
+        },
+        {
+          "label": "LEFT ELBOW",
+          "x": 0.3867,
+          "y": 0.4961,
+          "z_index": 35,
+          "depth": 178
+        },
+        {
+          "label": "LEFT ARM",
+          "x": 0.3789,
+          "y": 0.5781,
+          "z_index": 36,
+          "depth": 184
+        }
+      ],
+      "grip": {
+        "hand": "RIGHT ARM",
+        "point": {
+          "x": 0.5781,
+          "y": 0.5078
+        },
+        "haftDirection": {
+          "x": 0.6604,
+          "y": -0.751
+        },
+        "bladeDirection": {
+          "x": -0.66,
+          "y": 0.75
+        },
+        "bladeLengthPx": 52.5,
+        "tipPx": {
+          "x": 113.329,
+          "y": 169.4275
+        },
+        "bladeLength": 0.2305
+      }
+    },
+    {
+      "id": "follow",
+      "label": "Seguimento",
+      "frameIndex": 9,
+      "phase": "follow-through",
+      "note": "Corte passa do contato; peso no pé esquerdo, calcanhar direito elevado.",
+      "joints": [
+        {
+          "label": "RIGHT LEG",
+          "x": 0.5898,
+          "y": 0.6992,
+          "z_index": 9,
+          "depth": 86
+        },
+        {
+          "label": "RIGHT KNEE",
+          "x": 0.5977,
+          "y": 0.6289,
+          "z_index": 9,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT HIP",
+          "x": 0.5469,
+          "y": 0.5938,
+          "z_index": 11,
+          "depth": 108
+        },
+        {
+          "label": "RIGHT SHOULDER",
+          "x": 0.543,
+          "y": 0.3984,
+          "z_index": 13,
+          "depth": 88
+        },
+        {
+          "label": "RIGHT ELBOW",
+          "x": 0.6094,
+          "y": 0.4609,
+          "z_index": 14,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT ARM",
+          "x": 0.5781,
+          "y": 0.5391,
+          "z_index": 15,
+          "depth": 92
+        },
+        {
+          "label": "NECK",
+          "x": 0.4727,
+          "y": 0.3984,
+          "z_index": 20,
+          "depth": 128
+        },
+        {
+          "label": "NOSE",
+          "x": 0.4453,
+          "y": 0.3438,
+          "z_index": 20,
+          "depth": 78
+        },
+        {
+          "label": "RIGHT EYE",
+          "x": 0.4609,
+          "y": 0.3516,
+          "z_index": 19,
+          "depth": 76
+        },
+        {
+          "label": "LEFT EYE",
+          "x": 0.4297,
+          "y": 0.3359,
+          "z_index": 19,
+          "depth": 80
+        },
+        {
+          "label": "RIGHT EAR",
+          "x": 0.5195,
+          "y": 0.3594,
+          "z_index": 18,
+          "depth": 84
+        },
+        {
+          "label": "LEFT EAR",
+          "x": 0.4297,
+          "y": 0.3672,
+          "z_index": 22,
+          "depth": 172
+        },
+        {
+          "label": "LEFT HIP",
+          "x": 0.4609,
+          "y": 0.5938,
+          "z_index": 22,
+          "depth": 146
+        },
+        {
+          "label": "LEFT KNEE",
+          "x": 0.4219,
+          "y": 0.6484,
+          "z_index": 30,
+          "depth": 172
+        },
+        {
+          "label": "LEFT LEG",
+          "x": 0.418,
+          "y": 0.7188,
+          "z_index": 31,
+          "depth": 176
+        },
+        {
+          "label": "LEFT SHOULDER",
+          "x": 0.4336,
+          "y": 0.4219,
+          "z_index": 34,
+          "depth": 168
+        },
+        {
+          "label": "LEFT ELBOW",
+          "x": 0.3906,
+          "y": 0.4961,
+          "z_index": 35,
+          "depth": 178
+        },
+        {
+          "label": "LEFT ARM",
+          "x": 0.3828,
+          "y": 0.5781,
+          "z_index": 36,
+          "depth": 184
+        }
+      ],
+      "grip": {
+        "hand": "RIGHT ARM",
+        "point": {
+          "x": 0.5781,
+          "y": 0.5391
+        },
+        "haftDirection": {
+          "x": 0.3015,
+          "y": -0.9535
+        },
+        "bladeDirection": {
+          "x": -0.75,
+          "y": 0.66
+        },
+        "bladeLengthPx": 47,
+        "tipPx": {
+          "x": 133.8295,
+          "y": 182.8145
+        },
+        "bladeLength": 0.2305
+      }
+    },
+    {
+      "id": "recover",
+      "label": "Recuperação",
+      "frameIndex": 13,
+      "phase": "return-to-guard",
+      "note": "Retorno à guarda medida (quadro 13 do clipe vigente).",
+      "joints": [
+        {
+          "label": "RIGHT LEG",
+          "x": 0.5742,
+          "y": 0.7188,
+          "z_index": 9,
+          "depth": 86
+        },
+        {
+          "label": "RIGHT KNEE",
+          "x": 0.5781,
+          "y": 0.6484,
+          "z_index": 9,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT HIP",
+          "x": 0.5703,
+          "y": 0.5859,
+          "z_index": 11,
+          "depth": 108
+        },
+        {
+          "label": "RIGHT SHOULDER",
+          "x": 0.5859,
+          "y": 0.4063,
+          "z_index": 13,
+          "depth": 88
+        },
+        {
+          "label": "RIGHT ELBOW",
+          "x": 0.6484,
+          "y": 0.4727,
+          "z_index": 14,
+          "depth": 82
+        },
+        {
+          "label": "RIGHT ARM",
+          "x": 0.625,
+          "y": 0.5508,
+          "z_index": 15,
+          "depth": 92
+        },
+        {
+          "label": "NECK",
+          "x": 0.4844,
+          "y": 0.3906,
+          "z_index": 20,
+          "depth": 128
+        },
+        {
+          "label": "NOSE",
+          "x": 0.4609,
+          "y": 0.3281,
+          "z_index": 20,
+          "depth": 78
+        },
+        {
+          "label": "RIGHT EYE",
+          "x": 0.4766,
+          "y": 0.3359,
+          "z_index": 19,
+          "depth": 76
+        },
+        {
+          "label": "LEFT EYE",
+          "x": 0.4453,
+          "y": 0.3203,
+          "z_index": 19,
+          "depth": 80
+        },
+        {
+          "label": "RIGHT EAR",
+          "x": 0.5313,
+          "y": 0.3438,
+          "z_index": 18,
+          "depth": 84
+        },
+        {
+          "label": "LEFT EAR",
+          "x": 0.4414,
+          "y": 0.3516,
+          "z_index": 22,
+          "depth": 172
+        },
+        {
+          "label": "LEFT HIP",
+          "x": 0.4375,
+          "y": 0.5859,
+          "z_index": 22,
+          "depth": 146
+        },
+        {
+          "label": "LEFT KNEE",
+          "x": 0.4219,
+          "y": 0.6484,
+          "z_index": 30,
+          "depth": 172
+        },
+        {
+          "label": "LEFT LEG",
+          "x": 0.4297,
+          "y": 0.7188,
+          "z_index": 31,
+          "depth": 176
+        },
+        {
+          "label": "LEFT SHOULDER",
+          "x": 0.4141,
+          "y": 0.4102,
+          "z_index": 34,
+          "depth": 168
+        },
+        {
+          "label": "LEFT ELBOW",
+          "x": 0.3711,
+          "y": 0.4805,
+          "z_index": 35,
+          "depth": 178
+        },
+        {
+          "label": "LEFT ARM",
+          "x": 0.3633,
+          "y": 0.5625,
+          "z_index": 36,
+          "depth": 184
+        }
+      ],
+      "grip": {
+        "hand": "RIGHT ARM",
+        "point": {
+          "x": 0.625,
+          "y": 0.5508
+        },
+        "haftDirection": {
+          "x": -0.3393,
+          "y": -0.9407
+        },
+        "bladeDirection": {
+          "x": 0.34,
+          "y": -0.94
+        },
+        "bladeLengthPx": 48,
+        "tipPx": {
+          "x": 176.2864,
+          "y": 186.1536
+        },
+        "bladeLength": 0.2305
+      }
+    }
+  ]
+};

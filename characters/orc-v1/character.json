@@ -44,13 +44,16 @@
   "profile": {
     "width": 128,
     "height": 128,
-    "groundY": null,
+    "groundY": 126,
     "ppu": 100,
     "counts": {
       "Idle": 5,
-      "Walk": 16
+      "Walk": 16,
+      "Attack": 5,
+      "Hit": 5,
+      "Defeat": 5
     },
-    "note": "Candidatos de uma vista para revisão; tempos e quadros estão nos mestres e clips, sem contrato de runtime."
+    "note": "Biblioteca completa de candidatos do Orc V1 em 4 direções (128x128 nativo sem armas e 256x256 composto para combate de uma mão); tempos e quadros registrados nos mestres e clips."
   },
   "references": [],
   "derivedFrom": {
@@ -128,6 +131,20 @@
       ],
       "validation": "reports/orc-pixellab-refinement-v3-check.json; reports/orc-pixellab-refinement-v3-review-check.json",
       "artisticApproval": "PENDING_CREATOR"
+    },
+    {
+      "component": "Main Orc Complete Animation Library (main-orc-complete-v1)",
+      "category": "REUSE_ADAPTED",
+      "evidence": "Reuses canonical front_r Idle (idle-balanced-v1), Walk (16f), and entry-v1 Sword/Axe attacks directly; authors front_l, back_r, back_l directional foundations and Unarmed/Hit/Defeat/Sword/Axe animations in Aseprite.",
+      "adaptation": "Aseprite Lua authoring (tools/aseprite/author-main-orc-complete.lua) preserving right-hand dominance, asymmetrical 3-spike right pauldron, top-left lighting, and attack-only-v1 weapon visibility.",
+      "artRisk": "Directional projections and basic combat reactions require explicit creator review.",
+      "technicalRisk": "Dynamic weapon overlay and 256x256 composite clips require future Unity runtime extension.",
+      "dependencies": [
+        "Aseprite 1.3+",
+        "characters/orc-v1/source/onehanded-entry-v1/manifest.json"
+      ],
+      "validation": "reports/orc-v1-animation-coverage-v1.json; experiments/main-orc-complete-v1/build.json",
+      "artisticApproval": "PENDING_CREATOR"
     }
   ],
   "artExploration": {
@@ -161,5 +178,6 @@
     "required": true,
     "contract": "config/idle-art-standard-v1.json"
   },
-  "equipmentPreview": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json"
+  "equipmentPreview": "characters/orc-v1/source/onehanded-rescue-v3/manifest.json",
+  "completeAnimationCandidate": "characters/orc-v1/source/equipment-complete-candidate.json"
 }

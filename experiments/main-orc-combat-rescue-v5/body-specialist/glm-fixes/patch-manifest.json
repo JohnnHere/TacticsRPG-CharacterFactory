@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "status": "GLM_BODY_FIXES_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "cellsCount": 2,
+  "producer": "GLM 5.3 body-specialist (dev de corre\u00e7\u00e3o; sem autoaprova\u00e7\u00e3o)",
+  "repairedDefects": [
+    "REAR-01-RESIDUAL-A",
+    "REAR-01-RESIDUAL-B",
+    "REAR-02-PERSISTENT"
+  ],
+  "cells": [
+    {
+      "direction": "back_r",
+      "action": "Sword Attack",
+      "category": "Sword",
+      "state": "Attack",
+      "cycleName": "back_r-Sword-full",
+      "repairedDefect": "REAR-01-RESIDUAL-A + REAR-01-RESIDUAL-B",
+      "repairedFrame": 6,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+      "clipSha256": "aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88",
+      "experimentClipJson": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+      "experimentClipSha256": "c7c66e3ae87b8619f8bbd019893869fe0464017c1e78a52de978e28a2536584a",
+      "masterAseprite": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/body256.aseprite",
+      "masterSha256": "3da678e9b7980074f08a8e0c5a89e22d9b1f771719cc5c9775cc4ecf81438303",
+      "nativeMasterAseprite": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/native128.aseprite",
+      "nativeMasterSha256": "acccc22600ce9d3b787dbb77ce02f9078b8382b099b2a7ee97e319437a24e27b",
+      "frameCount": 12,
+      "totalDurationMs": 730,
+      "acceptedKeyPreservation": [
+        {
+          "index": 3,
+          "name": "01-hoist",
+          "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2",
+          "byteExact": true,
+          "pixelExact": true
+        },
+        {
+          "index": 4,
+          "name": "02-apex",
+          "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d",
+          "byteExact": true,
+          "pixelExact": true
+        },
+        {
+          "index": 7,
+          "name": "03-impact",
+          "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107",
+          "byteExact": true,
+          "pixelExact": true
+        }
+      ]
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe Attack",
+      "category": "Axe",
+      "state": "Attack",
+      "cycleName": "back_l-Axe-full",
+      "repairedDefect": "REAR-02-PERSISTENT",
+      "repairedFrame": 2,
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json",
+      "clipSha256": "d87cd8331b46e48e962ac118c01b0fd10d7ad86dcd101f7bc8f3e6093f539ef2",
+      "experimentClipJson": "experiments/main-orc-combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json",
+      "experimentClipSha256": "330a68095b6af5b05f3e0680fa3b9c5fd2b5f6604c9de48cf5077f648a665631",
+      "masterAseprite": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/body256.aseprite",
+      "masterSha256": "8358307076f7b54bc050448bfe0e0fefbe602d2eb10ec703ba5d552a093809e5",
+      "nativeMasterAseprite": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/native128.aseprite",
+      "nativeMasterSha256": "9df41216491bcf32df7cab92f31e045ba32caedc8cdbbefa3c044497f2cccdc9",
+      "frameCount": 12,
+      "totalDurationMs": 1100,
+      "acceptedKeyPreservation": [
+        {
+          "index": 3,
+          "name": "01-hoist",
+          "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce",
+          "byteExact": true,
+          "pixelExact": true
+        },
+        {
+          "index": 4,
+          "name": "02-apex",
+          "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56",
+          "byteExact": true,
+          "pixelExact": true
+        },
+        {
+          "index": 7,
+          "name": "03-impact",
+          "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0",
+          "byteExact": true,
+          "pixelExact": true
+        }
+      ]
+    }
+  ],
+  "generationAccounting": {
+    "balanceBefore": 1342.7,
+    "chargedTotal": 6.0,
+    "balanceAfter": 1336.7,
+    "jobs": [
+      {
+        "tool": "inpaint_image_pro_flash",
+        "jobId": "540302e4-2690-4282-8de5-c609f15b1142",
+        "cycle": "back_l-Axe-full",
+        "frame": 2,
+        "seed": 20261029,
+        "charged": 6.0
+      }
+    ],
+    "costLlm": "Custo LLM n\u00e3o informado"
+  }
+}

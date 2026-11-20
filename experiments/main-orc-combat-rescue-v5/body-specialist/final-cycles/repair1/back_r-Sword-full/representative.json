@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "status": "BODY_BACK_R_SWORD_REPAIR1_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Sword",
+  "scope": "Repaired body-only sword slash cycle, empty-handed layers-off, REAR-01 blade trail removed and reconstructed",
+  "repairedDefect": "REAR-01",
+  "repairedFrame": 6,
+  "clip": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/clip.json",
+    "sha256": "029be0a80d5b140960ce7f8806b8261cb7965a9b8d41e960124b6cc42bdd1646"
+  },
+  "master": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/body256.aseprite",
+    "sha256": "52508b29fdf3ecd1a7fce1961e0b18036480bffb5504d9b65c11fd1185affc75"
+  },
+  "nativeMaster": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native128.aseprite",
+    "sha256": "41ffe49decc1e15e745fda6bad73f1eb7efcc0662c62ccbb7ca927936626a058"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 730,
+  "acceptedKeyReuse": [
+    {
+      "frameIndex": 3,
+      "keyName": "01-hoist",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/01-native.png",
+        "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/03.png",
+        "sha256": "a573c039202f52315eb681da5fe375199b34fa101a1f9404b8c9263920589ff2"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 4,
+      "keyName": "02-apex",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/02-native.png",
+        "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/04.png",
+        "sha256": "9607fb5c7f36b1dcd7649eba505d5eca925f2abb670d636f8a235c42c6cbb40d"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 7,
+      "keyName": "03-impact",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_r-Sword-keys/03-native.png",
+        "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107"
+      },
+      "export": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/final-cycles/repair1/back_r-Sword-full/native/07.png",
+        "sha256": "ac51e08bdd1cc40de255f5233d08f79916c8112b2b9c68b00eee8c509f204107"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    }
+  ],
+  "generationAccounting": {
+    "jobs": [
+      {
+        "tool": "animate_image",
+        "jobId": "2e5f7343-77af-474d-adec-1ab75b938005",
+        "segment": "entry",
+        "cost": 1.0,
+        "seed": 310101
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "815bb8a5-b497-4298-ac23-4f514df811fe",
+        "segment": "descent",
+        "cost": 1.0,
+        "seed": 310102
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "2bc3999a-36ad-4499-9451-6c074ea379c6",
+        "segment": "recovery",
+        "cost": 1.0,
+        "seed": 310103
+      }
+    ],
+    "repairGenerationsCharged": 0.0,
+    "note": "Surgical pixel retouch authored strictly in Aseprite batch via Lua; 0 API calls, 0 credits spent"
+  }
+}

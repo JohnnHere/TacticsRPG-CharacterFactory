@@ -1,0 +1,140 @@
+{
+  "contract": "rear-axe-grip-keys-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T17:15:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "rear-grip-flash",
+    "clip": "back_r/Axe",
+    "frames": [
+      "F04",
+      "F07"
+    ],
+    "author": "7db0e7b6 (DEV ESPECIALISTA PEGADA)",
+    "description": "Two representative rear axe grip keyframes (F04 apex and F07 impact) authored via Aseprite Lua on top of accepted body clip full-back-r-axe"
+  },
+  "verdict": "READY_FOR_FULL_REAR_AXE_GRIP",
+  "evaluation": {
+    "F04": {
+      "phase": "validated-apex",
+      "durationMs": 110,
+      "sourceIndex": 4,
+      "bodyPreservation": {
+        "bodyRgbaDelta": 0,
+        "nativePixelIdentical": true
+      },
+      "anatomicalRightArm": {
+        "shoulder": [147, 102],
+        "elbow": [163, 86],
+        "wrist": [147, 77],
+        "palmGripCenter": [139, 72]
+      },
+      "counterbalanceLeftArm": {
+        "shoulder": [102, 112],
+        "elbow": [92, 126],
+        "wrist": [87, 140],
+        "fist": [87, 147],
+        "status": "Inactive low counterbalance fist, completely clear of weapon"
+      },
+      "weaponAttachment": {
+        "angleDeg": 330,
+        "bodyGrip": [139, 72],
+        "itemGrip": [36, 55],
+        "headBbox256": [123, 24, 150, 68],
+        "headAboveCrown": true,
+        "bodyCollisionPixels": 0,
+        "perspective": "Blade edge curves forward-up into the direction of attack; axe head floats naturally in free space overhead"
+      },
+      "layerOcclusion": {
+        "weaponBackSha256": "52cfbd29328e2528bc89210e491ab7c37aa70bc323be9bbdfa94282484b2d658",
+        "bodySha256": "4ae7385519e3c7a1383f777e1e4ec2b0b8d54e9c49ecc71c6155725e2cdf0c86",
+        "weaponFrontSha256": "c9316e655a4e42220a07ce7eed8cbe20453df1100daec685668b0ddb008bfd60",
+        "handFrontSha256": "2d7dd00c30a0103337c6a8c0b80f71e166a3346752c532c157f8757a34dc8bc7",
+        "gloveWrapAuthentic": true,
+        "localRetouches": 6
+      },
+      "hashes": {
+        "composite256": "27cab6a671d6edd68113eee1e0b9f70872e2e563466df66ad5bed7367c065a95",
+        "compositeNative128": "e10e4e7beda70ef734af9787f90be4cfb6321a93f551a33652fd9e7cbbc5fae3",
+        "nativeBody128": "4c2cf239eec6b5008f9171661513caf147e208489018abbf4c124302c7873df6",
+        "masterCompositeAseprite": "14108798da267653bd9b68d3613800ccace43921650c5b6fea848ecf4070753a"
+      }
+    },
+    "F07": {
+      "phase": "validated-impact",
+      "durationMs": 110,
+      "sourceIndex": 7,
+      "bodyPreservation": {
+        "bodyRgbaDelta": 0,
+        "nativePixelIdentical": true
+      },
+      "anatomicalRightArm": {
+        "shoulder": [147, 115],
+        "elbow": [160, 128],
+        "wrist": [156, 141],
+        "palmGripCenter": [157, 146]
+      },
+      "counterbalanceLeftArm": {
+        "shoulder": [102, 116],
+        "elbow": [91, 129],
+        "wrist": [87, 142],
+        "fist": [86, 148],
+        "status": "Low counterbalance fist behind hip, clean silhouette separation"
+      },
+      "weaponAttachment": {
+        "angleDeg": 120,
+        "bodyGrip": [157, 146],
+        "itemGrip": [36, 55],
+        "bladeGroundContactPoint256": [177, 190],
+        "bladeGroundContactPoint128": [113, 126],
+        "groundAlignmentExact": true,
+        "perspective": "Blade strikes forward-down into ground plane y=190 matching foot planting"
+      },
+      "layerOcclusion": {
+        "weaponBackSha256": "b120e23052d443e74dd04bae29ba9dd637f9d0806c4551815f431336d19330e5",
+        "bodySha256": "3bbb8feae4cb6be0b6bb814852eb784e5c1fbf9e3870fd360d94373945e31d99",
+        "weaponFrontSha256": "b75fd8dc6c56c6209c6d2805776e8f885b709911148d1d856093c49b6887ab46",
+        "handFrontSha256": "75d89889b1857e05fba4a1f88b3fc056284e1289a396bedfb5c4658965e231a1",
+        "gloveWrapAuthentic": true,
+        "localRetouches": 6
+      },
+      "hashes": {
+        "composite256": "b9b17570db0d8759edf863ca7e48b14f289bc9ae0460bdf6e2235e4ee3d34b9f",
+        "compositeNative128": "7b68137872bb4e08a648ba34aa155cf061d93eb301c89df52f197c98e7e176cb",
+        "nativeBody128": "608119efa4811fe6e9de48001199ea84a5405f171e30ee46911b584a7bd54693",
+        "masterCompositeAseprite": "d2a17c49054bbcb52516b7db6076d9527a674dbc7ee328b6e1352bd7c243fa49"
+      }
+    }
+  },
+  "technicalChecks": {
+    "authoringTool": "Aseprite v1.3.18.6 batch mode with isolated profile tmp/aseprite-rear-grip-flash-profile",
+    "scriptVerified": "experiments/main-orc-combat-rescue-v5/rear-grip-flash/author.lua",
+    "pillowRotationUsed": false,
+    "rasterCrossfadeUsed": false,
+    "combinedMastersSaved": {
+      "compositeAseprite": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/source/composite.aseprite",
+      "compositeSha256": "f00de3eb8abff4df5464518c46e826b3387c95724a0c4b49b7b4cc34a68d08be"
+    }
+  },
+  "discrepanciesAndNotes": [
+    {
+      "type": "DOCUMENTATION_TYPO_IN_DEV_REPORT",
+      "severity": "LOW",
+      "detail": "Table 5 of rear-grip-flash/report.md contains copy-paste/typo discrepancies for F04 composite, F04 native composite, and F07 composite hashes. Disk files and JSON manifests (checkpoint.json and representative.json) are verified to match real SHA-256 hashes perfectly."
+    },
+    {
+      "type": "NATIVE_128_CANVAS_CLIPPING_EXPLANATION",
+      "severity": "INFO",
+      "detail": "In F04 native composite 128x128, the axe head extends into y < 64 of the 256 canvas and is naturally cropped when taking the standard (-64,-64) body box. In the 256x256 composite canvas (canonical production format for combat clips), the axe head is 100% complete and fully articulated."
+    }
+  ],
+  "limitations": [
+    "EVALUATION_IS_STATIC_STILLS_ONLY: The two validated keyframes do NOT prove smooth continuous angular velocity, intermediate arc trajectory, or temporal swing dynamics across the 12-frame sequence.",
+    "NO_LIVE_1X_ENGINE_OBSERVATION: Frame-by-frame multimodal inspection conducted; live browser/engine 1x playback in continuous real-time was not directly observed.",
+    "LIMITED_SCOPE: Validates only back_r/Axe F04 and F07 keys; does not approve full 12 frames, the remaining 3 rear grips, or final game integration."
+  ],
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "llm_inference_cost": "not_informed"
+  }
+}

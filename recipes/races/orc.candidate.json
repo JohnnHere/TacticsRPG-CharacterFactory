@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "races",
+  "key": "orc",
+  "status": "candidate",
+  "createdAt": "2026-10-26T11:56:49.982Z",
+  "sourceCharacter": "orc-v1",
+  "sourceConceptDigest": "726215dcc12d91d7612b34d80d3110f90a012965da302c8777f0f27ef675e2d3",
+  "guidance": "Defina anatomia racial e variacao permitida. Nao transformar um rosto/Job/faccao em regra racial.",
+  "bodyProfile": "Robusto (variações individuais candidatas)",
+  "rules": [
+    "Construção anatômica traseira obrigatória (directionalViewGate): back_r e back_l exigem crânio occipital sem feições faciais, nuca/trapézio, placa dorsal com canal vertebral, escapulares articuladas, cinto traseiro sem pico esternal, tassets traseiros bipartidos e calcanhares angulados para longe da câmera.",
+    "Proibição estrita de repintura frontal: vistas traseiras nunca devem ser derivadas pintando por cima ou apagando olhos/presas de sprites frontais.",
+    "Desacoplamento estrito de equipamentos (weapon-anchor-vs-natural-choreography): corpo base, Idle e locomoção (Walk) são desarmados (attack-only-v1). Armas são assets modulares independentes exibidos apenas durante o intervalo ativo de ataque.",
+    "Perfil contextual de reação a dano (heavyOrc): reação de impacto focada em recuo corporal crível no tronco e ombros com recuperação clara ao repouso; snapping de cabeça é diagnóstico opcional para raças pesadas/blindadas; base presa em groundY=126.",
+    "Colapso volumétrico terminal (defeat-consistent-terminal-outcome): o colapso físico retém massas tridimensionais de cabeça, ombreira e peito no solo; para o orc-v1 em canvas 128, aspecto terminal w/h >= 1.3 e altura terminal >= 58 px são balizas diagnósticas contextuais; rotação 2D global com vScale=0.52 é proibida; retenção de volume no solo sobrepõe qualquer fórmula rígida de ajoelhamento.",
+    "Inspeção visual semântica obrigatória de corpo inteiro com camadas de armas desligadas (weapon-contamination-and-layers-off-inspection): igualdade de camadas (body == master == crop nativo) e álgebra alfa-over provam apenas integridade estrutural/raster, NÃO ausência semântica de armas geradas pintadas diretamente no corpo/armadura; inspecionar visualmente o corpo inteiro com camadas de arma desligadas para expurgar artefatos gerados pela IA (lâminas secundárias, hastes, restos de machado) e verificar continuidade articular estrita da cadeia ombro-cotovelo-punho antes da composição final.",
+    "Verificação de agrupamento do doador (donor-cluster-verification-before-reuse): confirmar presença física de punho levantado visível dentro do canvas próprio antes do reuso; fundos transparentes ou recortes de antebraço não constituem punho.",
+    "Reparo cirúrgico no Aseprite (surgical-same-view-donor-repair): reparar membros cortados utilizando doador da mesma vista e mesmo indivíduo, com remoção exata de resíduos e restos de cabo marrom via máscara de coordenadas no Aseprite.",
+    "Governança de qualidade: status estritamente 'candidate'; nenhuma auto-aprovação ou ativação automática permitida; ativação depende de aprovação artística explícita do criador."
+  ],
+  "images": [
+    {
+      "path": "characters/orc-v1/concepts/concept-selected.png",
+      "sha256": "e1ed49bd2463d820736c503a7a815224ea0340e296a9a2abf1112df58fc452ef"
+    }
+  ],
+  "note": "Receita candidata local com restrições canônicas de qualidade artística. Status estritamente candidate; nenhuma aprovação concedida."
+}

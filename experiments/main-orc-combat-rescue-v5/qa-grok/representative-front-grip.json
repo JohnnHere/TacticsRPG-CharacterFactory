@@ -1,0 +1,26 @@
+{
+  "reviewer": "Grok 4.7 / GitHub Copilot",
+  "scope": "front_r/Sword grip only",
+  "clip": "characters/orc-v1/source/combat-rescue-v5/combat/qa5-repair1/front_r/Sword/clip.json",
+  "clipSha256": "27b7574ec8dd188a4cdb6813765b9704ef3cbb889a5640aaba0f4764fe4947e0",
+  "clipWrittenAt": "2026-10-29T09:51:18",
+  "verdict": "DO_NOT_PROPAGATE",
+  "representativeAcceptableForPropagation": false,
+  "globalVerdictUnchanged": "REVISIONS_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "bodyAndTimingVsPreservedFront": "PASS",
+  "qa5_01": "FAIL",
+  "findings": [
+    {
+      "id": "QA5-01R",
+      "severity": "HIGH",
+      "frames": [2, 4, 6, 7, 8, 10],
+      "summary": "handFront remains a small stamp on the hilt. It does not join the posed forearm, and the handle is not inside the palm. F06 sword floats across the chest while the fist stays down."
+    }
+  ],
+  "evidence": [
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/repair1_front_r_sword_grips.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/repair1_f06_wide.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/repair1_front_r_sword_metrics.json"
+  ]
+}

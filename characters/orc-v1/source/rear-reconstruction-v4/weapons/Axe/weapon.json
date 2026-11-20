@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "militia-axe",
+  "name": "Machado de Milícia",
+  "hands": 1,
+  "category": "Axe",
+  "description": "Uma mão; cabeça simples de ferro de um gume, fio curvo e barba curta, olhal/rebite visível; cabo de madeira curvo com veios e desgaste. Sem crânios, gemas ou adereços mágicos.",
+  "authoring": "Inherited PixelLab weapon; bounded material clusters authored via Aseprite Lua; no new generation",
+  "reference": "Photo supplied inline by creator 2026-10-25: straight fuller sword with leather hilt and disk pommel / simple curved-haft axe. Reference read in conversation; no falsely claimed local photo file.",
+  "canvas": [
+    96,
+    96
+  ],
+  "grip": [
+    36,
+    55
+  ],
+  "ppu": 100,
+  "sprite": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.png",
+  "master": "characters/orc-v1/source/rear-reconstruction-v4/weapons/Axe/militia-axe.aseprite",
+  "artisticApproval": "PENDING_CREATOR",
+  "bindings": "Associated with the 4 material-only clip forks in this isolated candidate; choreography/grip unchanged",
+  "visualDesign": "Global game language; no Orc racial palette/design requirement",
+  "revision": "main-orc-rear-reconstruction-v4",
+  "sourceSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+  "spriteSha256": "e28a9477ad29af127ddeabad754ee0e231be12b96437bfe8aec49d444f80581c",
+  "masterSha256": "1db443cc247bcba0e343142945bf49d45efeee614dd1c21390536b1416416912",
+  "compatibility": {
+    "category": "Axe",
+    "profile": "basic.axe-chop",
+    "hand": "right",
+    "scale": 1,
+    "body": "orc-v1",
+    "direction": "per-frame registered; no geometry change",
+    "directions": [
+      "front_r",
+      "front_l",
+      "back_r",
+      "back_l"
+    ]
+  },
+  "script": "experiments/main-orc-rear-reconstruction-v4/dev/author-weapons.lua",
+  "parentWeaponDefinition": "assets/weapons/militia-axe/weapon.json",
+  "parentMaster": "assets/weapons/militia-axe/source/rescue-v3/militia-axe.aseprite",
+  "parentMasterSha256": "f68354b38c61bfc36eaf02bace7ef9cc2f9257cb91ede58d1abfd47dc6e2603f",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED"
+}

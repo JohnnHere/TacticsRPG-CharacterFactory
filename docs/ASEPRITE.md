@@ -74,6 +74,35 @@ Tipos: character, enemy, environment, prop, effect, ui, weapon. Fontes genericas
 
 Editor-fork --manifest ... --name novo-id cria outra copia de qualquer pacote; --job ID seleciona um clipe e --id PERSONAGEM filtra esse personagem num manifesto misto. Nao sobrescreve uma copia de trabalho existente.
 
+Na API Lua do Aseprite, `Frame.duration` usa **segundos**: para 160 ms,
+atribua `frame.duration = 0.160`, não `160`. Confira depois os tempos reais
+do arquivo salvo; o cabeçalho `.aseprite` armazena milissegundos e o valor
+incorreto pode saturar em 65.535 ms. Se um clipe declara mestre composto256
+e nativo128, salve os dois mestres separadamente, com registro `[64,64]`
+e hashes dos arquivos reais. Apontar `master` para o nativo não cumpre o
+contrato do composto, mesmo que os PNGs derivados tenham tamanho correto.
+
+## Comparação de candidatos isolados
+
+O [construtor do estúdio de revisão](../tools/build-rear-recovery-review.py) aceita
+`--baseline-manifest` para declarar a matriz de 28 clipes do **antes** e
+`--out-dir` para não sobrescrever a página anterior. Sem baseline explícita,
+mantém a comparação histórica com `complete-v1`. A matriz deve conter exatamente
+as quatro direções e sete ações, sem células duplicadas ou desconhecidas.
+
+O manifesto pode declarar `revision`, `integrationReport` e `weaponDefinitions`
+(`Sword`/`Axe` apontando para os respectivos `weapon.json` candidatos). Isso
+mantém títulos, fontes de armas independentes e antes/depois ligados à versão
+real, em vez de apresentar sempre as armas originais. A ausência de
+`technicalStatus` resulta em `NOT_VERIFIED`: construir uma página não valida os
+mestres nem concede aprovação artística.
+
+A [verificação Chromium](../test/browser-check-rear-recovery-review.mjs) aceita
+`--manifest`, `--review-dir` e `--shot-dir` para testar a nova página sem escrever
+capturas nos relatórios anteriores. Seus checks de relógio, seleção, escala,
+imagens e hold terminal são funcionais; não comprovam percepção contínua do
+movimento em 1×.
+
 ## Manifesto de exportacao
 
 ```json

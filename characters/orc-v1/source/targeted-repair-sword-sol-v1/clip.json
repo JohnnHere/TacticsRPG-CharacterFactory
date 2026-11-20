@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "revision": "isolated-sword-sol-F05-anatomical-hypothesis-REJECTED",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "back_r",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 8,
+  "durationsMs": [
+    90,
+    80,
+    90,
+    80,
+    100,
+    80,
+    100,
+    110
+  ],
+  "totalDurationMs": 730,
+  "master": "characters/orc-v1/source/targeted-repair-sword-sol-v1/source/sword-f05-grip-composite.aseprite",
+  "bodyMaster": "characters/orc-v1/source/targeted-repair-sword-sol-v1/source/sword-f05-grip-body.aseprite",
+  "nativeMaster": "characters/orc-v1/source/targeted-repair-sword-sol-v1/source/sword-f05-grip-native.aseprite",
+  "strip": null,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "visibleInterval": [
+    1,
+    6
+  ],
+  "weaponVisible": true,
+  "weaponOverlay": true,
+  "weapon": {
+    "id": "recruit-sword",
+    "name": "Espada do Recruta",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "source": "assets/weapons/recruit-sword/sprites/rescue-v3/recruit-sword.png",
+    "sourceSha256": "cb49466d19fed5e635cb4b1cfae6df4bf94a22b35fff58da400c5749803b9d0a"
+  },
+  "contactEvent": {
+    "frame": 4,
+    "timeMs": 340,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parent": {
+      "body": "PixelLab skeleton_v3 job 31e61c4b-39ea-4932-9024-07dc9639f4f7, locally imported and refined in Aseprite",
+      "weapon": "unchanged independent Espada do Recruta PNG; transformed in Aseprite Lua",
+      "approvalDeviation": "The 3-generation call executed before explicit Root approval; see cost-provenance-ledger.json. Local use/import/refinement only authorized afterward; no further call used."
+    },
+    "authoring": "single Aseprite F05 hand/wrist redraw and sword translation(0,+8); local hypothesis rejected after source-derived whole-body and grip inspection",
+    "script": "experiments/main-orc-targeted-repair-v1/artist-sword-sol/author_f05.lua",
+    "scriptSha256": "b3ddde8e97e7dd38a600d8d2434f20301185101c4ecb074ef77158a66e580a4d",
+    "verification": "experiments/main-orc-targeted-repair-v1/artist-sword-sol/verification.json",
+    "weaponSourceUnchanged": true,
+    "changedFrames": [
+      5
+    ],
+    "newGenerationCalls": 0,
+    "canonicalMutation": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/00.png",
+      "durationMs": 90,
+      "phase": "guard-start",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/00.png",
+          "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sha256": "fb29a2e58e38b72a1d6cfc0454053a04be9226e0b4ef00b273c4aeea4f93c2eb",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/00.png",
+      "nativeSha256": "45dd235cb239ec683639051767c5c23f859e71ca5926eeb68ce904c1ad1c402d"
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/01.png",
+      "durationMs": 80,
+      "phase": "reach-close-fist",
+      "weaponVisible": true,
+      "rightGrip": [
+        175,
+        106
+      ],
+      "rotationDeg": 325,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/01.png",
+          "sha256": "74d16312fb4684eab73e7d9eb1aadac7a1aca14aa9870977c1edde26014afe57"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/01.png",
+          "sha256": "57f322e21310b8551f4e931d9fca8661a76a209b3cdc14e7c93c432e2dec2266"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/01.png",
+          "sha256": "31d21b5fade8c89ec030369460ce8d897703eeca742a62717d1f0de2dad69dfb"
+        }
+      },
+      "sha256": "af07f56bc2a46717ab007956f8f90baf1369fd95b7111df0cb5049475dd9b6a8",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/01.png",
+      "nativeSha256": "20c38c665ffafb74c042e971c546d46d8daff8c75d9c9cfb491e321f62eee797"
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/02.png",
+      "durationMs": 90,
+      "phase": "cock-high",
+      "weaponVisible": true,
+      "rightGrip": [
+        166,
+        76
+      ],
+      "rotationDeg": 20,
+      "weaponBehindBody": true,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/02.png",
+          "sha256": "93ae850ff808b96959c47ef94b4a0de8e6f301b5bb1a66155819ef977080b480"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/02.png",
+          "sha256": "27516791e1af089400b4decd08301576cf60c8ad484b858f3b50dbe37dd50ff5"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/02.png",
+          "sha256": "d674cf8980deafbf9327f2a29653dc000bd6c38a70040a630f5420685737a31e"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/02.png",
+          "sha256": "3fb7f63916c9f1fa24bee97339fa934904ff9c7129f3d204f4623b86026d35ab"
+        }
+      },
+      "sha256": "99a5db49aa7b465d6fbd0bccaa36deb8efb48f24b44c623bb7e443b4335d4f71",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/02.png",
+      "nativeSha256": "8da4e6337a2c7c7490df0f774920ac6ad3daacf981419587e1ca84961e777f59"
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/03.png",
+      "durationMs": 80,
+      "phase": "load-back",
+      "weaponVisible": true,
+      "rightGrip": [
+        164,
+        84
+      ],
+      "rotationDeg": 345,
+      "weaponBehindBody": true,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/03.png",
+          "sha256": "47fb1355bee5a64a96b38a62e7e4e62c913f3fa83d6635366a04fb42a8a279e5"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/03.png",
+          "sha256": "6554b7ca1da148ff20bf82ab9d5b7b49d94a568303cc8c3eb6e61f369504b7d1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/03.png",
+          "sha256": "29fb8652df1656e6afb6deb512c1163fd3cc47baf1b6728097b1b9b538224c97"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/03.png",
+          "sha256": "15309ac6e5962f1ed7cb6e885188203f82c1f0c2c0c278f6fad23ff39740c5ac"
+        }
+      },
+      "sha256": "c61c4d683c092cab909a7104587dfd46f590f366e2a2c1fb26b4af4ec7c870db",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/03.png",
+      "nativeSha256": "07754b6ca6cc3fd79dd04f9ad3ca9a86551254b46de026261fd87dc4b6acfcba"
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/04.png",
+      "durationMs": 100,
+      "phase": "slash-release",
+      "weaponVisible": true,
+      "rightGrip": [
+        183,
+        92
+      ],
+      "rotationDeg": 60,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/04.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/04.png",
+          "sha256": "c73c0402647d307e1d4860cbe8c43e7f8691513e1e8ad4c71b4d0c780fe5814d"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/04.png",
+          "sha256": "7780985cf2a7635ab797237f87bf1b5339193a34a25ac9aeeb28375ad883ebc4"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/04.png",
+          "sha256": "f07a722c6aa8da755f2dc36cd672a98235abc5fa40638857386155550fbee64e"
+        }
+      },
+      "sha256": "1a1533e738e4f5eccb4bf439b5b06e24ababe1ab5e4933f70b970ab1159fb583",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/04.png",
+      "nativeSha256": "965285383c3863f9bb21f753dc57e2c21474f2493f393fb10fc157b205df268c"
+    },
+    {
+      "index": 5,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/05.png",
+      "durationMs": 80,
+      "phase": "impact-follow-through",
+      "weaponVisible": true,
+      "rightGrip": [
+        181,
+        129
+      ],
+      "rotationDeg": 100,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/05.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/05.png",
+          "sha256": "9ac553f9bc8462290cb2da3825609942cc3de90b73ab239298a03f82acf0e923"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/05.png",
+          "sha256": "261d501788523fd9e0a90287036c1778df377cd1a766c0356c53f992dcea6ce3"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/05.png",
+          "sha256": "c389b60a33749660f46525d4725fde33658a3ddc3076bcea1e81a4ebd4b04011"
+        }
+      },
+      "sha256": "98672da322b62adf387ff7d43a87fea59467a8ad584106047bce4d41af8da200",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/05.png",
+      "nativeSha256": "eef985afe34b8e75a1e1d31de21b40ecc812a96ba8b2986677e98dd44d73f892"
+    },
+    {
+      "index": 6,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/06.png",
+      "durationMs": 100,
+      "phase": "lowered-recovery",
+      "weaponVisible": true,
+      "rightGrip": [
+        170,
+        127
+      ],
+      "rotationDeg": 135,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/06.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/06.png",
+          "sha256": "9cbaaf581f5f7fe6bbf2c9c98e57d2d441c666915a4d1cb1d3463d40c2692fca"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/06.png",
+          "sha256": "764df8a2704e6f6c4211977a8a9b0636f3a8c12ff422b8608475e84ca1d01110"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/06.png",
+          "sha256": "909fe36229386c6917a970ca0a9585033dfc1d36382e043888f1931058b76847"
+        }
+      },
+      "sha256": "f1a689f108ba1771d2351c7e9b79c011713a06d871b1d7695ceed161de7fef11",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/06.png",
+      "nativeSha256": "6a84b0259395d5a94c9792ff823cea10569446b8f5186464fd2e328f319658e8"
+    },
+    {
+      "index": 7,
+      "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/composite/07.png",
+      "durationMs": 110,
+      "phase": "return-guard",
+      "weaponVisible": false,
+      "rightGrip": [
+        0,
+        0
+      ],
+      "rotationDeg": 0,
+      "weaponBehindBody": false,
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponBack/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/body/07.png",
+          "sha256": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/weaponFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/targeted-repair-sword-sol-v1/layers/handFront/07.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "sha256": "5e3cf4efecdd1700e4279d6817a2a709c87b802bde3f2ef5167506e48ce8e7c6",
+      "nativePng": "characters/orc-v1/source/targeted-repair-sword-sol-v1/native/07.png",
+      "nativeSha256": "9f9a086649cd4c07dae96b5feeec9b759af9c4e1f765f5825fe8d4f5e547c54f"
+    }
+  ],
+  "masterSha256": "a8f84ec1fa1c1d72c3902f63aff198efc16c7f2302607e029d16c4970e7f9735",
+  "bodyMasterSha256": "25a9b29ec928afcd3d3706df1ed8a000d99bacfa4ecc31798d0df66615f9e6ea",
+  "nativeMasterSha256": "e53eb614fcc9b341a55bf85a12685c380b01d65c713891681ee8d9d6f478ee32",
+  "proposalStatus": "REJECTED_LOCAL_HYPOTHESIS",
+  "eligibleForIntegration": false,
+  "integrationStatus": "DO_NOT_INTEGRATE",
+  "parentClip": "characters/orc-v1/source/rear-recovery-v2/back_r/Sword/Attack-representative-v2/clip.json"
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "priorAuthorizationTimestampUtc": "2026-10-26T18:25:58Z",
+  "source": "Explicit Root instruction in user message, before any new PixelLab request in this turn",
+  "priorActualConsumedGenerations": 69,
+  "newAuthorization": {
+    "maxAdditionalJobs": 2,
+    "maxAdditionalGenerations": 6,
+    "resultingHardCap": 75,
+    "allowedTargets": [
+      {
+        "direction": "back_l",
+        "action": "Sword",
+        "basis": "own approved NW/back_l base; preserve its own proportions and lighting; no mirrored render",
+        "method": "animate_with_skeleton_v3",
+        "frames": 7,
+        "maximumEstimatedCostGenerations": 3
+      },
+      {
+        "direction": "back_r",
+        "action": "Axe",
+        "basis": "own back_r base; distinct one-handed head-heavy chop with shoulder cock, body commitment, momentum and its own recovery; not retimed Sword",
+        "method": "animate_with_skeleton_v3",
+        "frames": 7,
+        "maximumEstimatedCostGenerations": 3
+      }
+    ],
+    "explicitlyExcluded": [
+      "retries",
+      "back_l Axe",
+      "other directions",
+      "other actions"
+    ],
+    "productionConstraints": [
+      "PixelLab body frames are imported/refined/exported only in Aseprite",
+      "keep sword and compact militia axe as unchanged independent assets",
+      "per-frame measured closed-fist grip and hand occlusion in four-layer 256 composites",
+      "native 128 body-only exports; preserve attack-only weapon visibility",
+      "require full actual back_r Axe cycle/source/proof Root checkpoint before back_l Axe authorization"
+    ],
+    "actualAdditionalJobs": 2,
+    "actualAdditionalGenerations": 6,
+    "finalExperimentConsumedGenerations": 75,
+    "remainingAdditionalAuthorization": 0
+  },
+  "balanceBeforeCalls": {
+    "generationsRemaining": 1418.7,
+    "generationsUsed": 581.3,
+    "readOnlyCheckedBy": "mcp__pixellab__get_balance",
+    "checkedAtUtc": "2026-10-26T18:25:58Z"
+  },
+  "priorDeviation": {
+    "jobId": "31e61c4b-39ea-4932-9024-07dc9639f4f7",
+    "chargedGenerations": 3,
+    "authorizedCapBeforeExecution": 66,
+    "actualAfterExecution": 69,
+    "status": "EXECUTED_BEFORE_EXPLICIT_ROOT_APPROVAL",
+    "ledger": "experiments/main-orc-rear-recovery-v2/cost-provenance-ledger.json"
+  },
+  "receipts": [
+    {
+      "recordedAtUtc": "2026-10-26T18:29:46Z",
+      "jobId": "8f0f4e44-0936-4502-8c5e-15b4d57e2449",
+      "assetId": "c4ef963d-b1c8-5c79-94a7-2e1b6f63b06f",
+      "target": "back_l Sword",
+      "tool": "mcp__pixellab__animate_with_skeleton_v3",
+      "model": "PixelLab skeleton-v3",
+      "estimatedCostGenerations": 3,
+      "receiptCostGenerations": 3,
+      "status": "COMPLETED",
+      "input": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-native128.png",
+      "inputSha256": "2677b023bf5fa7e6f372465b5c9c54278e5cd55174577f989c18a6b0205caa8d",
+      "skeletonRequest": "experiments/main-orc-rear-recovery-v2/inputs/back_l-sword-request.json",
+      "poseSequence": [
+        "reach with closed fist",
+        "cock sword hand high over shoulder",
+        "load across dorsal line",
+        "release forward toward northwest",
+        "slashing follow-through",
+        "lowered recovery",
+        "return to empty-hand guard"
+      ],
+      "receipt": "id: 8f0f4e44-0936-4502-8c5e-15b4d57e2449\njob_id: 8f0f4e44-0936-4502-8c5e-15b4d57e2449\ndescription: seven-frame native128 empty-hand body cycle\nframes: 7\nsize: 128x128px\ntransparent: True\ncost: 3 generations\nstatus: processing (~4 min)\nasset_id: c4ef963d-b1c8-5c79-94a7-2e1b6f63b06f\nasset_status: pending",
+      "completedAtUtc": "2026-10-26T18:42:07Z",
+      "outputs": [
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/00.png",
+          "sha256": "255192c5c2b7dc612e058384f14a4690931375cb78628ccd0ad4a156f7438b90"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/01.png",
+          "sha256": "3134f7a442443029b60b5e3a0dbbfc9a77c898905516940df9b322e3d9c5ecee"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/02.png",
+          "sha256": "80579b124f9425294a79280e9601f0088cdd34136fba94545b1bca7655cb09a9"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/03.png",
+          "sha256": "f02f25bfdba9de254aa363b40466f725a6c83133496f3a83a2c827307b673b28"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/04.png",
+          "sha256": "cbe3f4f19868b50dbbbefcb189d90a2ecc28c65b548288e5792d524c66657311"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/05.png",
+          "sha256": "a4907fc0d64221790b86f70c8186c64914aa17802d9858915e32f5847bb84e3f"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_l/06.png",
+          "sha256": "533188edabe606f0936b40dba6534d83adc3f73a2044486779e0869531fa7a2e"
+        }
+      ],
+      "outputFrameCount": 7,
+      "assetStatus": "SAVED"
+    },
+    {
+      "recordedAtUtc": "2026-10-26T18:29:46Z",
+      "jobId": "8b6ad151-8708-4431-a606-06b250388fc4",
+      "assetId": "210f709e-872e-5be2-aba5-2a3a56e379b8",
+      "target": "back_r Axe",
+      "tool": "mcp__pixellab__animate_with_skeleton_v3",
+      "model": "PixelLab skeleton-v3",
+      "estimatedCostGenerations": 3,
+      "receiptCostGenerations": 3,
+      "status": "COMPLETED",
+      "input": "experiments/main-orc-rear-recovery-v2/inputs/back_r-axe-native128.png",
+      "inputSha256": "251998d6cebce682a21d8fafde620200e820ef46301c6743348e331bb47e5d8c",
+      "skeletonRequest": "experiments/main-orc-rear-recovery-v2/inputs/back_r-axe-request.json",
+      "poseSequence": [
+        "brief load with fist forward",
+        "cocked shoulder, fist high",
+        "hold heavy chop above shoulder",
+        "commit torso and arm downward",
+        "impact with bent knees and weight drop",
+        "follow through low and heavy",
+        "recover to guard"
+      ],
+      "receipt": "id: 8b6ad151-8708-4431-a606-06b250388fc4\njob_id: 8b6ad151-8708-4431-a606-06b250388fc4\ndescription: seven-frame native128 empty-hand body cycle\nframes: 7\nsize: 128x128px\ntransparent: True\ncost: 3 generations\nstatus: processing (~4 min)\nasset_id: 210f709e-872e-5be2-aba5-2a3a56e379b8\nasset_status: pending",
+      "completedAtUtc": "2026-10-26T18:42:07Z",
+      "outputs": [
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/00.png",
+          "sha256": "5b54b20a216dfc22f279b1222efb42db6ba3e1ad94ea6740f31051ae959f959d"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/01.png",
+          "sha256": "b6bd8fdcc4afe2396b96188f0cee2b58b313b74b1d4cd122265007fbe963bbfc"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/02.png",
+          "sha256": "5611025fa2800b5917e367087e956a9bb7fe1a0dc63c9984d2d7a85fe24fbf3f"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/03.png",
+          "sha256": "65f86bce82c9597d6f2a07b46b88796b28ab22a0f2c219d94d9b419646a17c12"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/04.png",
+          "sha256": "97a769e014a6453f870971bd98de255a633a2a946449855b0bbca7d387428654"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/05.png",
+          "sha256": "9e71409208a57f792da30a53fa4fe7b7b81b6a5d48e40c149b4ae6a4ef28e440"
+        },
+        {
+          "path": "experiments/main-orc-rear-recovery-v2/raw/pixellab-skeleton-v3/back_r_axe/06.png",
+          "sha256": "145cf799f0cdafbfdf9b42e4523ac37568d5a10b8958768398bf4b4a6f366f1f"
+        }
+      ],
+      "outputFrameCount": 7,
+      "assetStatus": "SAVED"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "contract": "front-r-sword-full-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T17:52:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "grip-specialist/full-front-r-sword",
+    "clip": "front_r/Sword",
+    "frameCount": 13,
+    "totalDurationMs": 730,
+    "visibleInterval": [2, 10],
+    "description": "Full 13-frame front_r sword grip cycle evaluation"
+  },
+  "verdict": "READY_FOR_MATRIX_REVIEW",
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "pixellab_note": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado",
+    "cost_usd": "não informado"
+  },
+  "sourceVerification": {
+    "clipJson": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+    "clipJsonSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+    "compositeStripSha256": "46629b49ba9d5091731db944dfdb3006160b71e8a569dd467bff80b9ce9d0f56",
+    "nativeStripSha256": "43aba45bf5b4a0bc4b1a453b76a7b14ce0366b6033691cd1bd1409d738ebe78c"
+  },
+  "contracts": {
+    "contract1_bodyPreservation": {
+      "status": "PASS",
+      "details": "All 13 frames have exactly 0 RGBA pixel delta against parent body (combat/qa5-repair1/front_r/Sword/layers/body/). Coreography and durations match exactly [30, 65, 35, 50, 45, 65, 35, 35, 100, 55, 80, 45, 90] ms = 730 ms."
+    },
+    "contract2_gloveAndGripAnatomy": {
+      "status": "PASS",
+      "details": "All 9 armed frames (F02..F10) display genuine handFront glove pixels traced directly over the real underlying hand/wrist. Zero geometric stamps, zero invented extra fingers, zero synthetic sockets. Pommel and crossguard are visible and correctly occluded by the palm."
+    },
+    "contract3_reusedKeyframesIntegrity": {
+      "status": "PASS",
+      "details": "F02, F06, and F08 are 100% byte-identical across all four layers (weaponBack, body, weaponFront, handFront) and composite PNGs to the validated representative studies (characters/orc-v1/source/combat-rescue-v5/grip-specialist/{F02,F06,F08}). No regression or anatomical torsion introduced."
+    },
+    "contract4_visibleIntervalAndBookends": {
+      "status": "PASS",
+      "details": "visibleInterval is strictly [2, 10]. Bookends F00, F01, F11, F12 have exactly 0 non-transparent pixels in weaponBack, weaponFront, and handFront layers. Composites 00, 01, 11, 12 are 100% byte-identical to the unarmed body."
+    },
+    "contract5_itemLegibilityAndArc": {
+      "status": "PASS",
+      "details": "Diagonal sword slash arc follows monotonic unwrapped angle progression [320°, 340°, 350°, 360°, 392°, 440°, 488°, 478°, 460°]. Blade lowest point in F08 reaches Y=185, maintaining a 5px safety margin above groundY=190. Sword features (edge highlights, fuller, hilt) remain legible at native 128 and tactical 64 scale."
+    },
+    "contract6_mastersVerification": {
+      "status": "PASS",
+      "details": "All four canonical Aseprite masters verified on disk with exact declared SHA-256 hashes: composite.aseprite (3ee5755c...), body.aseprite (b85c18f3...), native.aseprite (8fab269d...), hand.aseprite (d2c6a911...). Native 128 crop is confirmed as a body-centering window; full sword geometry is completely unclipped in the canonical 256x256 composite canvas."
+    }
+  },
+  "frameByFrameAudit": [
+    {
+      "frame": 0,
+      "phase": "rest",
+      "durationMs": 30,
+      "weaponVisible": false,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed neutral resting pose; both arms hanging naturally; equipment layers completely empty."
+    },
+    {
+      "frame": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "weaponVisible": false,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed anticipation shift; right shoulder begins rise; equipment layers completely empty."
+    },
+    {
+      "frame": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 80,
+      "wfPixels": 628,
+      "hfPixels": 21,
+      "alphaOverMatch": true,
+      "grip": [103, 130],
+      "angleDeg": 320,
+      "status": "PASS",
+      "visualObservation": "Reused keyframe F02 (byte-identical). Low right glove holds hilt angled diagonally up-left (320°); crossguard above, pommel below; left hand relaxed at hip."
+    },
+    {
+      "frame": 3,
+      "phase": "anticipation",
+      "durationMs": 50,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 77,
+      "wfPixels": 626,
+      "hfPixels": 35,
+      "alphaOverMatch": true,
+      "grip": [90, 119],
+      "angleDeg": 340,
+      "status": "PASS",
+      "visualObservation": "Foreshortened brown glove raises sword in front of chest; hilt securely held at [90, 119]; steel cuff outlines wrist base; angle 340°."
+    },
+    {
+      "frame": 4,
+      "phase": "coil-behind",
+      "durationMs": 45,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 78,
+      "wfPixels": 627,
+      "hfPixels": 43,
+      "alphaOverMatch": true,
+      "grip": [98, 100],
+      "angleDeg": 350,
+      "status": "PASS",
+      "visualObservation": "Curled glove near right pauldron; dark aperture corresponds to inner glove shadow; blade points almost vertically (350°); forearm approaches from below-left."
+    },
+    {
+      "frame": 5,
+      "phase": "apex-hold",
+      "durationMs": 65,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 78,
+      "wfPixels": 628,
+      "hfPixels": 41,
+      "alphaOverMatch": true,
+      "grip": [98, 89],
+      "angleDeg": 0,
+      "status": "PASS",
+      "visualObservation": "High fist at apex [98, 89]; blade points straight vertical (360°/0°) into open space above; hilt firmly enclosed below crossguard."
+    },
+    {
+      "frame": 6,
+      "phase": "slash-release",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 79,
+      "wfPixels": 625,
+      "hfPixels": 33,
+      "alphaOverMatch": true,
+      "grip": [155, 114],
+      "angleDeg": 32,
+      "status": "PASS",
+      "visualObservation": "Reused keyframe F06 (byte-identical). Powerful diagonal slash crosses chest; active right arm extends into glove [155, 114]; left hip hand remains inactive."
+    },
+    {
+      "frame": 7,
+      "phase": "contact",
+      "durationMs": 35,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 78,
+      "wfPixels": 627,
+      "hfPixels": 26,
+      "alphaOverMatch": true,
+      "grip": [158, 132],
+      "angleDeg": 80,
+      "status": "PASS",
+      "visualObservation": "Contact impact frame; active forearm crosses chest; glove [158, 132] extends blade horizontally to the right (80°); pommel overlaps forearm cuff cleanly without gap."
+    },
+    {
+      "frame": 8,
+      "phase": "follow-through",
+      "durationMs": 100,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 79,
+      "wfPixels": 631,
+      "hfPixels": 23,
+      "alphaOverMatch": true,
+      "grip": [159, 148],
+      "angleDeg": 128,
+      "status": "PASS",
+      "visualObservation": "Reused keyframe F08 (byte-identical). Low active glove holds sword below crossing forearm; angle 128° (488°); blade lowest Y=185 maintains 5px margin above groundY=190."
+    },
+    {
+      "frame": 9,
+      "phase": "recoil",
+      "durationMs": 55,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 78,
+      "wfPixels": 626,
+      "hfPixels": 32,
+      "alphaOverMatch": true,
+      "grip": [134, 147],
+      "angleDeg": 118,
+      "status": "PASS",
+      "visualObservation": "Active glove retracts toward center [134, 147] below steel cuff; wrist reverses smoothly to 118° (478°); opposite left fist remains inactive."
+    },
+    {
+      "frame": 10,
+      "phase": "settle-grip",
+      "durationMs": 80,
+      "weaponVisible": true,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 79,
+      "wfPixels": 627,
+      "hfPixels": 30,
+      "alphaOverMatch": true,
+      "grip": [110, 150],
+      "angleDeg": 100,
+      "status": "PASS",
+      "visualObservation": "Dark glove settles low [110, 150] under hanging bracer, left of red tasset; blade held low at 100° (460°) well above ground."
+    },
+    {
+      "frame": 11,
+      "phase": "release-grip",
+      "durationMs": 45,
+      "weaponVisible": false,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Unarmed release frame; equipment and handFront completely empty; parent body preserved."
+    },
+    {
+      "frame": 12,
+      "phase": "return-to-guard",
+      "durationMs": 90,
+      "weaponVisible": false,
+      "bodyRgbaDelta": 0,
+      "wbPixels": 0,
+      "wfPixels": 0,
+      "hfPixels": 0,
+      "alphaOverMatch": true,
+      "status": "PASS",
+      "visualObservation": "Final unarmed guard pose; perfectly matches one-shot terminal state; zero equipment pixels."
+    }
+  ],
+  "limitations": [
+    "Inspection conducted through discrete still frames, strips, layer separations, and 8x diagnostic crops.",
+    "Functional Chromium playback verified 730ms / 1460ms wall-clock timings, one-shot stop at F12, and 1x/0.5x stepping.",
+    "Perceptual experience of continuous fluid motion in live game engine runtime remains the prerogative of the creator.",
+    "Scope is strictly limited to front_r/Sword; does not automatically approve the 28-cell matrix or Unity integration."
+  ]
+}

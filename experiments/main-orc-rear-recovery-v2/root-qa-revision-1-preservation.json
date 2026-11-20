@@ -1,0 +1,11 @@
+{
+  "status": "PASS_WITH_AUTHORIZED_CONFIG_CHANGE",
+  "checkedFiles": 793,
+  "byteIdentical": 792,
+  "authorizedChanges": [
+    "config/artistic-quality-gates-v1.json"
+  ],
+  "unexpectedChanges": [],
+  "configSha256": "f85ec1c88a5f2a387a8d392c37d3d10dbc398e8a0ababa88dc7e5e0b91bae73c",
+  "rawLegacyCheckerNote": "verify_baseline_protection.py prints ERROR for the authorized gate config change and exits0; it does not implement an allowlist. This report verifies every other hash without weakening that original checker."
+}

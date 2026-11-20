@@ -1,0 +1,120 @@
+{
+  "createdAtUtc": "2026-10-26T23:34:01.072Z",
+  "sourceChecks": [
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 3.0363493
+    },
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 1.8989395
+    },
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 2.2962981
+    }
+  ],
+  "previewChecks": [
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 2.3875034
+    },
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 1.2561968000000001
+    },
+    {
+      "exitCode": null,
+      "sessionId": 65467,
+      "wallTimeSeconds": 10.0140841
+    }
+  ],
+  "contractChecks": [
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 1.9138878
+    },
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 9.125676
+    },
+    {
+      "exitCode": null,
+      "sessionId": 75890,
+      "wallTimeSeconds": 10.0044453
+    }
+  ],
+  "factoryHealth": [
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 0.9306425
+    },
+    {
+      "exitCode": 0,
+      "sessionId": null,
+      "wallTimeSeconds": 0.8400414
+    }
+  ],
+  "browserCompletion": {
+    "chunk_id": "5b5369",
+    "wall_time_seconds": 0.0000152,
+    "exit_code": 0,
+    "original_token_count": 252,
+    "output": "  OK: Defeat reaches terminal hold at last frame (5/5)\n  OK: Defeat holds terminal frame without auto-restart\n  OK: back_r/Sword alert reflects its actual manifest status\n  OK: back_r/Idle (unchanged alias) shows no pending alert\n  OK: back_r/Walk shows CANDIDATO ATIVO with PENDING_CREATOR\n  OK: before/after article covers all 12 affected cells (found 12) — Evidências Visuais Antes (Baseline v1) vs Depois (Recuperação Traseira v2) — 12 células afetadas\n  OK: every before/after card shows baseline + candidate strips, both decoded\n  OK: catalogo packageStatus/artisticStatus follows actual unresolved cells\n  OK: catalogo counts derived from manifest (active/alias/revision/production) — active=12/12 alias=16/16 revision=0/0 production=0/0\n  OK: catalogo knownBadCells matches revision + production cells\n\nBROWSER CHECK PASSED (20/20 checks) in 11.9s\nScreenshots: C:\\Users\\João Orlando\\Documents\\Projetos Unity\\TacticsRPG-CharacterFactory\\experiments\\main-orc-rear-recovery-v2\\browser-checks\n"
+  },
+  "sharedTestsCompletion": {
+    "chunk_id": "a88d04",
+    "wall_time_seconds": 0.0000156,
+    "exit_code": 0,
+    "original_token_count": 236,
+    "output": "✔ confinamento rejeita traversal, IDs perigosos e junction/symlink externo (15.4076ms)\n✔ source-over preserva pixel grid, respeita ordem/alfa e rejeita canvas diferente (9.6611ms)\n✔ medicao considera alfa, fundo transparente e linha do chao (3.6052ms)\n✔ PNG corrompido e limites de dimensao sao rejeitados antes de uso (6.4971ms)\n✔ catalogos e referencias congeladas preservam baseline 28/63 (2776.9609ms)\n✔ fluxo CLI protege gates, registra roupas, exporta baseline e invalida revisao apos mudanca (20667.7871ms)\n✔ Main Orc complete animation library (4 directions x 7 actions) and Unity-ready staging package (1326.5321ms)\n✔ Artistic Quality Gates v1, 10 production lessons, and measured artistic recovery gates (564.3926ms)\n✔ entry preview builds without the historical deliveries directory (5754.5682ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 23840.4977\n"
+  },
+  "commands": {
+    "sourceChecks": [
+      "node verify_new_representatives.mjs --check",
+      "node verify_front_f02_and_protected_frames.mjs",
+      "node verify_four_early_clip_source_metadata.mjs"
+    ],
+    "previewChecks": [
+      "python test/test_rear_recovery_review.py",
+      "node test/test_review_js_runtime.mjs",
+      "node test/browser-check-rear-recovery-review.mjs"
+    ],
+    "contractChecks": [
+      "node validate_candidate_manifest.mjs (FINAL)",
+      "node --test validate_candidate_manifest.test.mjs",
+      "node --test test/{main-orc-complete,action-contract,factory,preview-entry}.test.mjs"
+    ],
+    "factoryHealth": [
+      "node src/cli.mjs doctor",
+      "node src/cli.mjs editor-check"
+    ]
+  },
+  "result": "PASS",
+  "note": "Experiment scripts resolve under experiments/main-orc-rear-recovery-v2; async browser/shared test sessions completed with exit0. Manifest harness14 tests, shared suites12 tests, real browser20 checks; these are technical checks, not creator artistic approval.",
+  "finalPreFreezeChecks": [
+    {
+      "exitCode": 0,
+      "wallTimeSeconds": 0.9700192,
+      "output": "=== AUTOMATED REVIEW VALIDATION (manifest-driven) ===\r\nLoaded index.html: 120724 bytes\r\nTotal cells validated: 28 (Expected 28)\r\nActive candidates (12): ['back_l/Axe', 'back_l/Sword', 'back_l/Unarmed', 'back_l/Walk', 'back_r/Axe', 'back_r/Sword', 'back_r/Unarmed', 'back_r/Walk', 'front_l/Defeat', 'front_l/Unarmed', 'front_r/Defeat', 'front_r/Unarmed']\r\nUnchanged aliases (16): expected from manifest = 16\r\nIn revision (0): []\r\nIn production (0): expected from manifest = 0\r\nAffected cells (manifest): 12; non-ready/active rendered: 12\r\nVerifying manifest-derived summary cards and package status...\r\n  OK: derived pills (active=12, alias=16, revision=0, production=0)\r\n  OK: package status VISUAL_REVIEW_REQUIRED matches manifest\r\n  OK: before/after coverage for all 12 affected cells\r\n  OK: all review strips preserve exact composite pixels and equal canvas scale\r\nChecking 31 static <img> tags in HTML...\r\nChecking 107 static <a href> links in HTML...\r\nPASSED: Zero 404s! All static images, strips, masters, and links resolve.\r\nVerifying user controls in HTML...\r\n  OK: Speeds 1x, 0.75x, 0.5x present\r\n  OK: Practical scale (128px) present\r\n  OK: Defeat terminal hold present\r\n  OK: Separate Sword and Axe options present\r\n  OK: PENDING_CREATOR + VISUAL_REVIEW_REQUIRED + technical facts (catalogo derived)\r\n  OK: Pending cell alert mechanism present\r\n\r\nALL AUTOMATED REVIEW VALIDATIONS PASSED SUCCESSFULLY (28/28 cells, 0 404s, manifest-derived)!\r\n"
+    },
+    {
+      "exitCode": 0,
+      "wallTimeSeconds": 7.771764,
+      "output": "  OK: viewer ready in real Chromium (all preloaded frame images resolved)\n  OK: all 28 cells selectable, main canvas paints real pixels (painted 28/28)\n  OK: main-info badge shows manifest status literal for all 28 cells (28/28)\n  OK: all 36 <img> elements decoded (naturalWidth > 0)\n  OK: zero failed / 4xx+ requests while browsing\n  OK: speed 1× advances playback (frame 7/8 after 1000ms)\n  OK: speed 0.5× slows playback ≈half (frame 4/8 after 1000ms)\n  OK: practical game scale applied (canvas 128px) — style.width=128px\n  OK: step-next advances one frame (→ 2)\n  OK: step-prev returns one frame (→ 1)\n  OK: Defeat reaches terminal hold at last frame (5/5)\n  OK: Defeat holds terminal frame without auto-restart\n  OK: back_r/Sword alert reflects its actual manifest status\n  OK: back_r/Idle (unchanged alias) shows no pending alert\n  OK: back_r/Walk shows CANDIDATO ATIVO with PENDING_CREATOR\n  OK: before/after article covers all 12 affected cells (found 12) — Evidências Visuais Antes (Baseline v1) vs Depois (Recuperação Traseira v2) — 12 células afetadas\n  OK: every before/after card shows baseline + candidate strips, both decoded\n  OK: catalogo packageStatus/artisticStatus follows actual unresolved cells\n  OK: catalogo counts derived from manifest (active/alias/revision/production) — active=12/12 alias=16/16 revision=0/0 production=0/0\n  OK: catalogo knownBadCells matches revision + production cells\n\nBROWSER CHECK PASSED (20/20 checks) in 7.1s\nScreenshots: C:\\Users\\João Orlando\\Documents\\Projetos Unity\\TacticsRPG-CharacterFactory\\experiments\\main-orc-rear-recovery-v2\\browser-checks\n"
+    },
+    {
+      "exitCode": 0,
+      "wallTimeSeconds": 1.4330848999999999,
+      "output": "✔ Main Orc complete animation library (4 directions x 7 actions) and Unity-ready staging package (620.2226ms)\n✔ Artistic Quality Gates v1, 10 production lessons, and measured artistic recovery gates (261.1532ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1067.3294\n"
+    }
+  ]
+}

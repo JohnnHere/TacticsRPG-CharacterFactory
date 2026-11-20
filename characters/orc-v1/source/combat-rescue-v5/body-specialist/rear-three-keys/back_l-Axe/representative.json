@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Axe",
+  "scope": "three structural body keys only, empty-handed layers-off",
+  "status": "READY_FOR_QA",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "propagationAllowed": false,
+  "qaOwner": "Independent QA (non-Copilot)",
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "nativeGroundY": 126,
+  "groundY": 190,
+  "keys": [
+    {
+      "key": "01-hoist",
+      "index": 0,
+      "nativeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-native.aseprite",
+        "sha256": "36eb0f8693e386790bae13f79fc772023995cba8a02bc4866c3f1f6977711e85"
+      },
+      "compositeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-body256.aseprite",
+        "sha256": "45d885c3288e21849f9cc39bddb79f670e78fac6ea530cec93380b8f6234baa7"
+      },
+      "nativeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-native.png",
+        "sha256": "d240b9ac537499625f7a86fcbfcf8cf2287b26947dc164092a76f313196c79ce"
+      },
+      "compositeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/01-body256.png",
+        "sha256": "0af85a346ffb580e0bff72412c3bd86fd6d04eba89deb443d5bde5950c1d2ad7"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          79,
+          38
+        ],
+        "rightElbow": [
+          101,
+          31
+        ],
+        "rightWrist": [
+          81,
+          15
+        ],
+        "rightPalm": [
+          81,
+          15
+        ],
+        "leftShoulder": [
+          42,
+          41
+        ],
+        "leftElbow": [
+          27,
+          55
+        ],
+        "leftWrist": [
+          25,
+          75
+        ],
+        "leftPalm": [
+          25,
+          76
+        ],
+        "pelvis": [
+          65,
+          80
+        ],
+        "rightKnee": [
+          87,
+          102
+        ],
+        "leftKnee": [
+          43,
+          102
+        ],
+        "rightSupport": [
+          91,
+          126
+        ],
+        "leftSupport": [
+          36,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Preparação do machado: braço direito erguido para trás, cotovelo flexionado acima da cabeça, punho fechado em manopla vinho-marrom segurando imaginariamente o topo do cabo. Braço esquerdo de guarda estendido para baixo."
+    },
+    {
+      "key": "02-apex",
+      "index": 1,
+      "nativeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-native.aseprite",
+        "sha256": "502ec788683e03073dd95bbf379a0bd291364a3bd7cbbb7d6f1c3581c2636579"
+      },
+      "compositeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-body256.aseprite",
+        "sha256": "d14ea665feced0bc72e63ba7dbe51284d22e1ad3eddbea708035be6404cae535"
+      },
+      "nativeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-native.png",
+        "sha256": "7adfd9f45be25ce862d261f4bf6e47881e52043969605acf9cd4f918c9e00d56"
+      },
+      "compositeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/02-body256.png",
+        "sha256": "e0cc3e0d8dfd5362b4d18b957adaea6a3d956eb4d85dd32eded93ec682a81ecc"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          78,
+          40
+        ],
+        "rightElbow": [
+          95,
+          19
+        ],
+        "rightWrist": [
+          65,
+          10
+        ],
+        "rightPalm": [
+          65,
+          10
+        ],
+        "leftShoulder": [
+          40,
+          43
+        ],
+        "leftElbow": [
+          25,
+          58
+        ],
+        "leftWrist": [
+          20,
+          78
+        ],
+        "leftPalm": [
+          20,
+          78
+        ],
+        "pelvis": [
+          66,
+          81
+        ],
+        "rightKnee": [
+          88,
+          102
+        ],
+        "leftKnee": [
+          42,
+          102
+        ],
+        "rightSupport": [
+          94,
+          126
+        ],
+        "leftSupport": [
+          33,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Ápice sobre a cabeça: antebraço direito arqueado acima da coroa com punho fechado [65, 10]. Espaço negativo triangular sob o braço e acima do pescoço cirurgicamente limpo de resíduos cinzentos (94 pixels removidos para alfa 0 transparente). Coluna arqueada, base plantada."
+    },
+    {
+      "key": "03-impact",
+      "index": 2,
+      "nativeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-native.aseprite",
+        "sha256": "0e8d086dfc301535d88c7d47ae122cf8f1ed9378ea564e137a11886a897f6ec6"
+      },
+      "compositeMaster": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-body256.aseprite",
+        "sha256": "8ea901b246e2b9339d22cb614e6634cf77f95ae763090734ad822e233aea4a2d"
+      },
+      "nativeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-native.png",
+        "sha256": "7a0c943c51f555f683ba78913150190e9b375a0091714644129b6fef7ea8c1a0"
+      },
+      "compositeExport": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Axe-keys/03-body256.png",
+        "sha256": "2ae6c7b6d5ad2325d6c10846ee9eb632452ce8a6248abe7d47f25f51cedf2975"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          78,
+          53
+        ],
+        "rightElbow": [
+          92,
+          68
+        ],
+        "rightWrist": [
+          89,
+          85
+        ],
+        "rightPalm": [
+          89,
+          87
+        ],
+        "leftShoulder": [
+          38,
+          50
+        ],
+        "leftElbow": [
+          23,
+          70
+        ],
+        "leftWrist": [
+          22,
+          86
+        ],
+        "leftPalm": [
+          22,
+          86
+        ],
+        "pelvis": [
+          66,
+          83
+        ],
+        "rightKnee": [
+          88,
+          103
+        ],
+        "leftKnee": [
+          38,
+          103
+        ],
+        "rightSupport": [
+          94,
+          126
+        ],
+        "leftSupport": [
+          29,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Impacto vertical do machado: tronco flexionado para a frente, braço direito projetado para baixo com cotovelo, antebraço e punho contínuos ao lado do quadril/coxa. Braço esquerdo firme na guarda. Joelhos dobrados sustentando o golpe."
+    }
+  ]
+}

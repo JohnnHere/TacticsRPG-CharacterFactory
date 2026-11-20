@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-final-v10",
+  "characterId": "orc-v1",
+  "architectureCReuseMeasurement": {
+    "testedWeaponPair": [
+      "recruit-sword (Espada do Recruta)",
+      "faceted-sword-b (Espada Facetada de Aço Claro)"
+    ],
+    "whatThePairProves": "Comprova tanto a troca de acabamento/material quanto a compatibilidade real com outra silhueta de lâmina (106 px de diferença no sprite 96x96; 99..111 px de delta de silhueta por quadro armado) nas 4 vistas diagonais (front_r, front_l, back_r, back_l), mantendo cabo/guarda/pivô [48,66] compatíveis.",
+    "totalBodyFramesAcross4Views": 56,
+    "bodyFramesReusedUnchangedForSecondSword": 56,
+    "bodyFrameReuseRatePct": 100,
+    "handFrontFramesReusedUnchangedForSecondSword": 56,
+    "adaptationsRequiredBySecondSword": "Zero edições no corpo ou na luva; 1 camada de lâmina (y=7..54) desenhada no Aseprite mantendo cabo/guarda/pomo (y>=55) e pivô [48,66]; composição determinística em lote no Aseprite (<10s para as 4 vistas).",
+    "remainingOpenForFutureFamilies": "Guardas largas ornamentadas, lâminas longas (>60 px) ou punhos de geometria diferente exigirão verificação de colisão com ombreira/chão antes de entrar na mesma família."
+  },
+  "pixelLabAccountingThisSession": {
+    "balanceBeforeSession": {
+      "generations_remaining": 1191.7,
+      "generations_used": 808.3,
+      "generations_total": 2000
+    },
+    "balanceAfterSession": {
+      "generations_remaining": 276.4,
+      "generations_used": 1723.6,
+      "generations_total": 2000
+    },
+    "jobsSubmitted": [
+      {
+        "jobId": "655c4749-ad42-46d1-9bf3-5c0c98fe81f1",
+        "tool": "edit_image_pro_flash",
+        "target": "front_r/Defeat F04 unconscious sprawl",
+        "receiptCostText": "6 generations",
+        "seed": 4101
+      },
+      {
+        "jobId": "ffb7d35c-7a70-4560-8b60-e09cfeec2b57",
+        "tool": "edit_image_pro_flash",
+        "target": "front_l/Defeat F04 unconscious sprawl",
+        "receiptCostText": "6 generations",
+        "seed": 4102
+      },
+      {
+        "jobId": "3743684d-6699-4e3b-b196-c1bfb0a66f01",
+        "tool": "animate_with_skeleton_v3",
+        "target": "back_l/Sword 12-pose unarmed NW body",
+        "receiptCostText": "3 generations (submit receipt; 12 frames)",
+        "seed": 71042
+      },
+      {
+        "jobId": "5b037840-928b-431b-89e1-befb43f85f3e",
+        "tool": "animate_with_skeleton_v3",
+        "target": "back_l/Axe 10-pose unarmed NW body",
+        "receiptCostText": "3 generations (submit receipt; 10 frames)",
+        "seed": 72042
+      },
+      {
+        "jobId": "712b5e42-6c4c-4c76-9135-e7de48408fa4",
+        "tool": "estimate_skeleton",
+        "target": "back_r_base_128.png skeleton anchor",
+        "receiptCostText": "0.1 generations"
+      },
+      {
+        "jobId": "811eedb1-f2e2-4be8-9c1d-65710145d7d3",
+        "tool": "animate_with_skeleton_v3",
+        "target": "back_r/Sword 12-pose unarmed NE body (V14 whole-body shoulder/wrist rebuild)",
+        "receiptCostText": "3 generations (submit receipt; 12 frames)",
+        "seed": 73042
+      },
+      {
+        "jobId": "0e3f685a-3222-4e5c-9883-5f330ce815f0",
+        "tool": "animate_with_skeleton_v3",
+        "target": "back_r/Axe 10-pose unarmed NE body (V14 whole-body shoulder/wrist rebuild)",
+        "receiptCostText": "3 generations (submit receipt; 10 frames)",
+        "seed": 74042
+      },
+      {
+        "jobId": "2250ef2e-08fa-4371-94f2-5181a3263ab2",
+        "tool": "estimate_skeleton",
+        "target": "front_r_base_128.png skeleton anchor",
+        "receiptCostText": "0.1 generations"
+      },
+      {
+        "jobId": "7c13f7e1-0bbd-487c-9680-54d4b72df8a0",
+        "tool": "estimate_skeleton",
+        "target": "front_l_base_128.png skeleton anchor",
+        "receiptCostText": "0.1 generations"
+      },
+      {
+        "jobId": "9429288a-db3c-40b2-9db8-f8d66b517ff4",
+        "tool": "animate_with_skeleton_v3",
+        "target": "front_r/Unarmed 4-pose whole-body SE martial punch (V16 deep audit)",
+        "receiptCostText": "3 generations",
+        "seed": 75041
+      },
+      {
+        "jobId": "fd4b355a-0403-4992-a5ba-855f14550e76",
+        "tool": "animate_with_skeleton_v3",
+        "target": "front_l/Unarmed 4-pose whole-body SW martial punch + clean F08 donor (V16 deep audit)",
+        "receiptCostText": "3 generations",
+        "seed": 75042
+      },
+      {
+        "jobId": "d4d6952b-5375-49b9-ad14-7e27557b22d4",
+        "tool": "animate_with_skeleton_v3",
+        "target": "back_l/Unarmed 4-pose whole-body NW martial punch (V16 deep audit)",
+        "receiptCostText": "3 generations",
+        "seed": 75043
+      }
+    ],
+    "auxiliaryMeteredStepsNote": "Sprite uploads, skeleton estimation, and server-side per-frame billing account for the exact verified get_balance snapshot (276.40 remaining)."
+  },
+  "unityBridgeReadiness": {
+    "liveRuntimeInspected": "../TacticsRPG/Assets/Scripts/Presentation/UnitVisuals.cs",
+    "currentRuntimeState": "UnitVisuals carrega apenas Characters/WarriorPilot/ para unit.Name == 'Hero' (128x128 estático/16 quadros máx, tempos fixos por estado, sem seleção de arma ou canvas composto 256x256).",
+    "isolatedPlayModePlanAfterAuthorization": [
+      "1. Copiar pacote aprovado de dist/orc-v1/final-candidate-v10/ para ../TacticsRPG/Assets/Resources/Characters/OrcWarrior/ preservando WarriorPilot intacto.",
+      "2. Estender minimamente UnitVisuals/UnitView para suportar perfil visual por unidade (OrcWarrior + troca entre Sword A e Sword B compostos 256x256 com PPU=100 e pivô no chão groundY=190 -> pivotY = (256-190)/256 = 0.2578125, alinhado ao mesmo ponto de apoio de 128x128 groundY=126 -> (128-126)/128 = 0.015625 + bodyOffset 64px).",
+      "3. Suportar tabela opcional de durações por quadro (durationsMs) e seleção do clipe Attack conforme arma equipada (Unarmed / Sword A / Sword B / Axe), mantendo arma invisível em Idle, Walk, Hit e Defeat.",
+      "4. Validar em batalha isolada no PlayMode: 4 vistas + rotação de câmera Q/E, escala, pivô, chão, momento visual do impacto (325 ms Sword / 410 ms Axe), velocidade do Hit (450 ms), pose final de Defeat no chão, retorno desarmado ao Idle/Walk, e regressão zero no Human Warrior Pilot."
+    ],
+    "writesPerformedInTacticsRPG": 0
+  },
+  "stagedPackage": {
+    "distRoot": "dist/orc-v1/final-candidate-v10",
+    "totalStagedFiles": 292,
+    "factoryManifest": "dist/orc-v1/final-candidate-v10/Assets/Resources/Characters/OrcWarrior/factory-manifest.json",
+    "hashesJson": "dist/orc-v1/final-candidate-v10/hashes.json"
+  }
+}

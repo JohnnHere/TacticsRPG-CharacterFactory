@@ -1,0 +1,96 @@
+{
+  "contract": "rear-two-remaining-qa-v1",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-29T18:25:00Z",
+  "reviewer": "Gemini 3.8 Flash (Antigravity QA)",
+  "scope": {
+    "package": "rear-grip-flash/two-remaining",
+    "clips": [
+      {
+        "clip": "back_r/Sword",
+        "frameCount": 12,
+        "totalDurationMs": 730,
+        "visibleInterval": [2, 8],
+        "category": "Sword",
+        "parentClip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_r-Sword-full/clip.json",
+        "parentClipSha256": "aba36d665239bf6464d53bce2a50132ff24b6e1cdb246c7ab6039345a9dede88"
+      },
+      {
+        "clip": "back_l/Axe",
+        "frameCount": 12,
+        "totalDurationMs": 1100,
+        "visibleInterval": [2, 8],
+        "category": "Axe",
+        "parentClip": "characters/orc-v1/source/combat-rescue-v5/body-specialist/glm-fixes/back_l-Axe-full/clip.json",
+        "parentClipSha256": "d87cd8331b46e48e962ac118c01b0fd10d7ad86dcd101f7bc8f3e6093f539ef2"
+      }
+    ],
+    "author": "7db0e7b6-ab88-49e9-9362-a19121c8ebf5 (DEV ESPECIALISTA PEGADA)",
+    "description": "Full 12-frame grip cycles for two remaining rear combat actions: back_r/Sword and back_l/Axe"
+  },
+  "verdicts": {
+    "back_r_Sword": "READY_FOR_MATRIX_REVIEW",
+    "back_l_Axe": "READY_FOR_MATRIX_REVIEW"
+  },
+  "accounting": {
+    "pixellab_production_calls": 0,
+    "pixellab_note": "0 chamadas PixelLab de produção nesta revisão; custo LLM não informado",
+    "cost_usd": "não informado"
+  },
+  "sourceVerification": {
+    "back_r_Sword": {
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-r-sword/clip.json",
+      "clipJsonSha256": "eb379d1d699ab51203ec633d645a29d9c63e377e36fe8b15b8fda44fc1a9aac6",
+      "masterSha256": "cf66aa1fd30280b4b143f891bdca298d8e6ad5faca4f89b4b6d5a8af0631abfb",
+      "bodyMasterSha256": "f0c0b9f650882256242b574501191c0196c78959acf4e49931b0e3245b990e90",
+      "nativeMasterSha256": "bea7a0cf7138e4b8dcfb85a47605ecfc82f79181ce170a180b8e83b9545ddd0a",
+      "handMasterSha256": "2018e1313ca767900e6e649d7b13f790331f97eb773ca97e8b804070ccf6e7cc",
+      "compositeStripSha256": "3274241434b277823fc4bbdc7c23f2337fca9a67826c6fbd3749ad9804f1a519",
+      "nativeCompositeStripSha256": "812036e67ad3cd3ec4bff4dcb899470e4e3a57cfbac1a81936a8fe0cbc565cf4",
+      "nativeStripSha256": "66ce949183e77fdaa6d59dd615303cec35a74ac00dc9f4ef9e91ed103546f646"
+    },
+    "back_l_Axe": {
+      "clipJson": "characters/orc-v1/source/combat-rescue-v5/rear-grip-flash/full-back-l-axe/clip.json",
+      "clipJsonSha256": "9f7d01e726f3f6dc63b24aeb23da97ac9cad29a7fd31572ccdf59a3ee384a0f3",
+      "masterSha256": "a2ed1edcdf6dc3fdba68ec5ccb9742fd5868d1734f5e725e5a805eedf9d54a4c",
+      "bodyMasterSha256": "bd39a6687551571ac0fe32143dda2c2e98143f9c30dc38ef1c6cb778884c9ddf",
+      "nativeMasterSha256": "c3d3d76606913bffb726efa8211a8eec9971a0da6ddcc8e81e50705ebd0251ab",
+      "handMasterSha256": "f86067488070e61b289bff9f8d246f18438b73b2839680df852517cacb953c08",
+      "compositeStripSha256": "506a8f01814fcbdf2ed96365a73c286300cd63e166ed90d264f8131be48a1807",
+      "nativeCompositeStripSha256": "905668ccc47f03e1a2b05a9733c005e1b0a9db6e44fd8e4e9e7187a2a8e79fc9",
+      "nativeStripSha256": "0a59c724f0c796963195dfd1f601c309f526895bae093110bebaf547176780ea"
+    }
+  },
+  "contracts": {
+    "contract1_bodyPreservation": {
+      "status": "PASS",
+      "details": "Both clips preserve 100% byte identity in body256 layers against approved GLM-repaired parent sources (glm-fixes/). Decoded RGBA difference across all 24 frames is exactly 0 in both 256x256 and native 128x128."
+    },
+    "contract2_keysAndRepairsIntegrity": {
+      "status": "PASS",
+      "details": "Structural keys F03/F04/F07 preserved byte-for-byte in both clips. In back_r/Sword, F06 retains the clean chainmail restoration with 0 floating pixels. In back_l/Axe, F02 cleanly receives the axe haft into the reauthored fist without deforming the arm or creating a double glove."
+    },
+    "contract3_attackOnlyV1Policy": {
+      "status": "PASS",
+      "details": "visibleInterval is strictly [2, 8] for both clips. Bookends F00, F01, F09, F10, F11 have 0 opaque pixels in equipment layers, and composite PNGs are 100% byte-identical to the unarmed body."
+    },
+    "contract4_fourLayerMasters": {
+      "status": "PASS",
+      "details": "All 8 Aseprite masters verified on disk with exact declared SHA-256 hashes and correct timings (730 ms for Sword, 1100 ms for Axe)."
+    },
+    "contract5_kinematicsAndWeaponIdentity": {
+      "status": "PASS",
+      "details": "back_r/Sword follows diagonal slash arc [355°, 10°, 45°, 80°, 105°, 125°, 120°] using recruit-sword. back_l/Axe follows heavy overhead chop [305°, 320°, 335°, 15°, 80°, 120°, 105°] using militia-axe."
+    },
+    "contract6_groundClearance": {
+      "status": "PASS",
+      "details": "back_r/Sword lowest Y reaches 181 in F07, maintaining 9px clearance above groundY=190. back_l/Axe touches groundY=190 exactly at F07 impact without subterranean penetration, rebounding to Y=188 at F08."
+    }
+  },
+  "limitations": [
+    "Inspection conducted through discrete still frames, 4x zooms, layer separations, and tactical 64px scale renders.",
+    "Functional Chromium playback verified 730ms (Sword) and 1100ms (Axe) wall-clock timings, one-shot stop at F11, and 1x/0.5x stepping.",
+    "Perceptual experience of continuous fluid motion in live game engine runtime remains the prerogative of the creator.",
+    "Scope is strictly limited to back_r/Sword and back_l/Axe; does not automatically approve the 28-cell matrix or Unity integration."
+  ]
+}

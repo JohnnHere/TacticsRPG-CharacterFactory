@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+const expected='C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory';
+if(path.resolve('.').replaceAll('\\','/')!==expected) throw Error('Unexpected cwd');
+const base='experiments/main-orc-rear-reconstruction-v4/dev';
+const profile=path.resolve(base,'batch-profile');fs.mkdirSync(profile,{recursive:true});
+const args=['--batch','--noinapp',...process.argv.slice(2)];
+const r=spawnSync('F:/SteamLibrary/steamapps/common/Aseprite/Aseprite.exe',args,{cwd:process.cwd(),env:{...process.env,ASEPRITE_USER_FOLDER:profile},windowsHide:true,encoding:'utf8',timeout:90000,maxBuffer:4*1024*1024});
+fs.writeFileSync(`${base}/last-batch.json`,JSON.stringify({args,hidden:true,isolatedProfile:profile,timeoutMs:90000,exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message},null,2));
+if(r.stdout)process.stdout.write(r.stdout);if(r.stderr)process.stderr.write(r.stderr);
+if(r.error||r.status!==0||/Error:/i.test(r.stderr||''))throw Error(r.error?.message||'Batch failed');

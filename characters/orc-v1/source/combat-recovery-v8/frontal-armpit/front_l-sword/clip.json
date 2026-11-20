@@ -1,0 +1,814 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-recovery-v8-armpit",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "front_l",
+  "frameCount": 13,
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    65,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "master": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/source/composite.aseprite",
+  "masterSha256": "a11c458373e28024d38270c66ff4fff24c1af5d929d4293692094b3efbbaf054",
+  "bodyMaster": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/source/body.aseprite",
+  "bodyMasterSha256": "06fd75acb5573fe18cf509157eff359a80cf5c728d47c3ea70b5527daf047799",
+  "nativeMaster": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/source/native.aseprite",
+  "nativeMasterSha256": "3076844a5772995e93504c3fd44091737c4d291efbcb18e50b2c41bb73e4d296",
+  "handMaster": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/source/hand.aseprite",
+  "handMasterSha256": "ef3b39734317c7e60fea6be473486efbb366f613061af8f8c4039d20c71815df",
+  "strip": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native-strip.png",
+  "stripSha256": "ac4cf585bfdb6dae0a5f75f2172be2e7b64150ba8ac6c4420b95240c5ffd2804",
+  "nativeStrip": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native-strip.png",
+  "nativeStripSha256": "ac4cf585bfdb6dae0a5f75f2172be2e7b64150ba8ac6c4420b95240c5ffd2804",
+  "compositeStrip": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/composite-strip.png",
+  "compositeStripSha256": "e2e7d8b35b47c2f3671ee7d9bd144d1d8c35f5a1a2be46022aef6d4dcb2ec62b",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "rest",
+      "durationMs": 30,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/00.png",
+      "sha256": "b06fda045b1460ba6c79b4e23bb164d03034a756c957ff25652e92a91575cf69",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/00.png",
+      "nativeSha256": "c528832a9d8412152253fe7550e56304f016da69b01c902d7aa9c1eb9d276636",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/00.png",
+          "sha256": "b06fda045b1460ba6c79b4e23bb164d03034a756c957ff25652e92a91575cf69"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "v6FrontalFixEdits": 21,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/01.png",
+      "sha256": "9f6d79135b792cb4baa353791ea6361ef6e32247adc473774be504747b49d197",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/01.png",
+      "nativeSha256": "2574b69866546d981c4b7b38dbffba50ade741b423e191f01df8b556f30e3c72",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/01.png",
+          "sha256": "9f6d79135b792cb4baa353791ea6361ef6e32247adc473774be504747b49d197"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "v6FrontalFixEdits": 21,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        152,
+        130
+      ],
+      "rotationDeg": 40,
+      "unwrappedAngleDeg": -320,
+      "handFrontPixels": 21,
+      "weaponBbox": [
+        143,
+        85,
+        191,
+        141
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/02.png",
+      "sha256": "55d3b05ea812a05f691ca3cb95172bcac15eecb638e581fd9681302b9edaf163",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/02.png",
+      "nativeSha256": "07d0882048441b36504f948e836daee83ee0a6b50e2eb48313fcbdfe047da3ad",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/02.png",
+          "sha256": "01ed1d264bc4bc8d3c482a54a42bff0c97ef85257de386c1ac6dfc792d23aa6c"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/02.png",
+          "sha256": "899957f6c22e2fe04d14e19a8f5c6dbc0dbedc25eaad424ce899e15626fe4b29"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/02.png",
+          "sha256": "571afa8fda7a04a2a532d5bdaa868cb057c2ba724d6ea6cc5ea8b527dd00ddaf"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/02.png",
+          "sha256": "a54fddf7739a04c1c267e08933d1b532fa8c07f974bc555949e88a0ab2db9992"
+        }
+      },
+      "v6FrontalFixEdits": 21,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 3,
+      "phase": "anticipation",
+      "durationMs": 50,
+      "bodyRgbaDelta": 27,
+      "weaponVisible": true,
+      "grip": [
+        165,
+        119
+      ],
+      "rotationDeg": 20,
+      "unwrappedAngleDeg": -340,
+      "handFrontPixels": 35,
+      "weaponBbox": [
+        158,
+        63,
+        187,
+        131
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/03.png",
+      "sha256": "41a288896065ce16b0bf192825529f9d428bf39256cad8727a45713e136edb6b",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/03.png",
+      "nativeSha256": "14b91be26ed28a656d9e6b5935ff23031c042519a07e86af7a5c4895d2894cf4",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/03.png",
+          "sha256": "c24bee333c741ee9324a053b62d66bca0df84cd1f75d104adde106bcb8175bf9"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/03.png",
+          "sha256": "cb2f5d2c09ec17b175385b464de5568fa9265e3be349a25367122a7ff8046976"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/03.png",
+          "sha256": "b3f495d8b10878aa4d3f18bd178ab4212fdf8168dca7a558bde852356d62483f"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/03.png",
+          "sha256": "a157a882cc66291c0bd5f93e492d627bcd6810c904316d17a66ce407813d6499"
+        }
+      },
+      "v6FrontalFixEdits": 6,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 30,
+      "armpitV8ChangedPixels": 25
+    },
+    {
+      "index": 4,
+      "phase": "coil-behind",
+      "durationMs": 45,
+      "bodyRgbaDelta": 24,
+      "weaponVisible": true,
+      "grip": [
+        157,
+        100
+      ],
+      "rotationDeg": 10,
+      "unwrappedAngleDeg": -350,
+      "handFrontPixels": 43,
+      "weaponBbox": [
+        147,
+        42,
+        172,
+        112
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/04.png",
+      "sha256": "674bf6b8a0ed4d350d00a5192d8949fa8a3463213c5a9e411b6931edbfe4e90f",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/04.png",
+      "nativeSha256": "9b7cb2e652c94b3239778f0f79afe00cece2c03f798957924d889ab1c945b3e5",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/04.png",
+          "sha256": "729d66711364736a7cdeedaafb6dfd6415c4f4cff8db4d76d9d5c4e9a816697b"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/04.png",
+          "sha256": "bd796ad963a522dad062f64cffd10784a77527d3b0e82c36e0208a6ef6d6f485"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/04.png",
+          "sha256": "6ebe4abf900a39679cdfe7a028e33b53031e1cd74c706c8db9afa24717cfd5b7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/04.png",
+          "sha256": "ef3307e2e6a8c40bb6c1062b43ccad58b9bbb9ce73a1452eca1d18644b609196"
+        }
+      },
+      "v6FrontalFixEdits": 4,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 28,
+      "armpitV8ChangedPixels": 15
+    },
+    {
+      "index": 5,
+      "phase": "apex-hold",
+      "durationMs": 65,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        157,
+        89
+      ],
+      "rotationDeg": 0,
+      "unwrappedAngleDeg": -360,
+      "handFrontPixels": 41,
+      "weaponBbox": [
+        145,
+        30,
+        170,
+        101
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/05.png",
+      "sha256": "461edf194c6fbd50ca8c4752dbb7ad652ef0dbc0972edb86e20f2fb2a9cd02f2",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/05.png",
+      "nativeSha256": "8723fb587b74ffe10ee6c92eccf5477da217502530749059da0b9d2eeece0643",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/05.png",
+          "sha256": "97344acdad49caa3898c4c011d0249637fcc7795d2eb53e1fa2707e8134409f9"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/05.png",
+          "sha256": "db2932db379c57dfa7a01aafcbeb0762694d3a9f08e0dae3fe9f53cca0f6d6de"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/05.png",
+          "sha256": "f35d889d8fbcec0b6c13454f64b9dee518790d3f08a2188823271c74e47d3f6b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/05.png",
+          "sha256": "57e7c449e6f7dabd58b689dbb176eabacd25557794387677abba0afaf6ccec20"
+        }
+      },
+      "v6FrontalFixEdits": 5,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 33
+    },
+    {
+      "index": 6,
+      "phase": "slash-release",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        100,
+        114
+      ],
+      "rotationDeg": 328,
+      "unwrappedAngleDeg": -392,
+      "handFrontPixels": 33,
+      "weaponBbox": [
+        69,
+        64,
+        109,
+        125
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/06.png",
+      "sha256": "53af015c1c9c742d44dbf0b999c4b6e69fa984f611c8e47402a13a8374f573a3",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/06.png",
+      "nativeSha256": "d35c71ea6a2ef523f83f6730827da33b00d14f8be4597a6d77d6a8ee37e09e61",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/06.png",
+          "sha256": "e067d89826ee6f45df238623a3ab7ff64ff72559d869e32d7717e791f947f445"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/06.png",
+          "sha256": "fad4e52519017b2ad8454417ac312bfdb4ae6a48051f0cdc03ff1fcaa64c19b8"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/06.png",
+          "sha256": "29e7c8dd6367b07be24b11a394e240d754d3e3962b6da08ae19b597552347654"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/06.png",
+          "sha256": "6507ea8a8cf05c9307275dc6516588d012c6ca022387b4a4d082939874d004bd"
+        }
+      },
+      "v6FrontalFixEdits": 2,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 7,
+      "phase": "contact",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        97,
+        132
+      ],
+      "rotationDeg": 280,
+      "unwrappedAngleDeg": -440,
+      "handFrontPixels": 26,
+      "weaponBbox": [
+        39,
+        117,
+        109,
+        142
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/07.png",
+      "sha256": "99c03e3a8381f61150ad5fa4068746c0249ea0b97230e655576c088b8ee3b6d3",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/07.png",
+      "nativeSha256": "3d530e713c7b8c3692cdba7c4bb7882e144eb020102b4330791df081eb2f436b",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/07.png",
+          "sha256": "1aeaf2563f0db0f6669f4b702b92e59c593daf2448849bb532eef3fc38ecbbd5"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/07.png",
+          "sha256": "d9c33154b79885d1376c3249408dd3ca5abbb16de32d477f9b4f54559d573f91"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/07.png",
+          "sha256": "bf385095b5716ff98287694be1e954d634f8e038d68329dd9634f2469b4f6ca4"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/07.png",
+          "sha256": "ae528d3c899819067978d785fb54e115c6bc938b96273a66e364e46372c7856c"
+        }
+      },
+      "v6FrontalFixEdits": 2,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 8,
+      "phase": "follow-through",
+      "durationMs": 100,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        96,
+        148
+      ],
+      "rotationDeg": 232,
+      "unwrappedAngleDeg": -488,
+      "handFrontPixels": 23,
+      "weaponBbox": [
+        49,
+        139,
+        106,
+        185
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/08.png",
+      "sha256": "25a13af8197df4288376068991cae5ec115f2bf400a83c50ab150604c9b0a1aa",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/08.png",
+      "nativeSha256": "b0c410bd9c33171785149a8786c274d8c5c53dc71e7145eb87b3408a38de2d92",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/08.png",
+          "sha256": "aafdb782359df736582c566230212e071e260b2618fd17c558a4f88ab7f91c52"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/08.png",
+          "sha256": "48ead87ee9ae6f26b12684b09161c615effbb9be5a11451562c04d41e7179b84"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/08.png",
+          "sha256": "559b0663c8efc2ab124a3b8279a3d87f38565ded9ccdc462a2459ca63937258b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/08.png",
+          "sha256": "64c8994ea7005ce8c659fa4d80f1b0f0f2dcfaa0adca3d79c9f22868ef04c1f1"
+        }
+      },
+      "v6FrontalFixEdits": 1,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 9,
+      "phase": "recoil",
+      "durationMs": 55,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        121,
+        147
+      ],
+      "rotationDeg": 242,
+      "unwrappedAngleDeg": -478,
+      "handFrontPixels": 32,
+      "weaponBbox": [
+        68,
+        139,
+        132,
+        175
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/09.png",
+      "sha256": "e24a7977c58c737df4e3171b50b6b49384b3b7da09f6fb0de0701fd09c9bdaa7",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/09.png",
+      "nativeSha256": "7e4f1c6665053e80659965df60eb0b799b2fe7b370e8cc36d358bfd0e8ea45df",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/09.png",
+          "sha256": "8bcdfa50380a69bfb49d55433852be057d67bd636002f8477b9ab1987ac30a32"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/09.png",
+          "sha256": "3ff520245428be8ff4c2f6a835e19d7b7dd75584c254bf74913783927397b83e"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/09.png",
+          "sha256": "5869b943ef45938842f83e7ada45c39ac848629016aad62d1f542dc2b4f7c027"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/09.png",
+          "sha256": "8f99cd91ca09a9bba0049954139d17bd67b5e7fd4736b8d50a206530d6317fde"
+        }
+      },
+      "v6FrontalFixEdits": 2,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 10,
+      "phase": "settle-grip",
+      "durationMs": 80,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        145,
+        150
+      ],
+      "rotationDeg": 260,
+      "unwrappedAngleDeg": -460,
+      "handFrontPixels": 30,
+      "weaponBbox": [
+        87,
+        139,
+        157,
+        164
+      ],
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/10.png",
+      "sha256": "ffd4a5f5f3064810ac4885dc557f3413901cebc00483c71f2c4d6f97886c8af0",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/10.png",
+      "nativeSha256": "252154b42bb8f2a9c14fd93a1c3821e7d71054d9243c081f263d9fb7da586816",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/10.png",
+          "sha256": "4388d55e303a46d0cb7b8ff4ea28c583b5cef28ce8c9986b0f41908710c549d6"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/10.png",
+          "sha256": "3291fb510ad691d9bb9f3b6dcc20e7f3dc86a33bdc0efb417527774e28047344"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/10.png",
+          "sha256": "f12d878cb56d8098973813af50c29cbe93373e7033026510333fc83d7c3b6c16"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/10.png",
+          "sha256": "dbaa04bb97e53cca59444015a21e2c5bb0b2a6474bfebd3cfb3c1608f3828461"
+        }
+      },
+      "v6FrontalFixEdits": 1,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 11,
+      "phase": "release-grip",
+      "durationMs": 45,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/11.png",
+      "sha256": "d742640df97f7ef39039035870c0612e50238961664799a92684d5acc9187b44",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/11.png",
+      "nativeSha256": "5ad0bf858be43c1c7aa1e7772db3b2013c175f8e838f05c50e42de62784275cd",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/11.png",
+          "sha256": "d742640df97f7ef39039035870c0612e50238961664799a92684d5acc9187b44"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "v6FrontalFixEdits": 1,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    },
+    {
+      "index": 12,
+      "phase": "return-to-guard",
+      "durationMs": 90,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/12.png",
+      "sha256": "b06fda045b1460ba6c79b4e23bb164d03034a756c957ff25652e92a91575cf69",
+      "nativePng": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/native/12.png",
+      "nativeSha256": "c528832a9d8412152253fe7550e56304f016da69b01c902d7aa9c1eb9d276636",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/body/12.png",
+          "sha256": "b06fda045b1460ba6c79b4e23bb164d03034a756c957ff25652e92a91575cf69"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-recovery-v8/frontal-armpit/front_l-sword/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      },
+      "v6FrontalFixEdits": 21,
+      "v6FrontalFixIslands": 0,
+      "axillaEscalationChangedPixels": 0,
+      "armpitV8ChangedPixels": 0
+    }
+  ],
+  "weapon": {
+    "id": "recruit-sword",
+    "name": "Espada do Recruta",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "spriteSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+    "masterSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "source": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "sourceSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "scale": 1
+  },
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    10
+  ],
+  "hideAfterAction": true,
+  "weaponDepthPolicy": "Grip leather v60..70 behind body; blade/guard/pommel front; per-frame original glove in handFront",
+  "contactEvent": {
+    "frame": 7,
+    "timeMs": 325,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false,
+    "phase": "contact"
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "checkpoint": "V8_ARMPIT_LOCAL_CANDIDATE",
+  "fullClipIndependentQA": "PENDING",
+  "sourceParentClip": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Sword-full/clip.json",
+  "sourceParentClipSha256": "e9adf589ad7943f779d6c597d4bfe5aecaf0ce42025edfbedbfb9a75a6eae28c",
+  "provenance": {
+    "authoring": "Autoria programatica Lua no Aseprite: reiluminacao localizada da superficie interna da juncao deltoide-tronco; sem alterar alpha, contorno externo, roupa vermelha ou highlights. Fontes herdadas preservadas por copia isolada.",
+    "editor": "Aseprite 1.3.18.6 --batch --noinapp; isolated ASEPRITE_USER_FOLDER=tmp/aseprite-batch-profile",
+    "script": "experiments/main-orc-combat-recovery-v8/qa-armpit-v8/author-armpit.lua",
+    "scriptSha256": "37feb6858276d97e0dc6193d28be67fdecd970e4ab91501037d35d43e08201bf",
+    "plan": "experiments/main-orc-combat-recovery-v8/qa-armpit-v8/edit-plan.json",
+    "planSha256": "667e8209444b4ae6f4eec002c15cc3d16e6cb5d2b0aea5465ef0431d39117850",
+    "verification": "experiments/main-orc-combat-recovery-v8/qa-armpit-v8/verification.json",
+    "bodyRgbaChanged": true,
+    "timingChanged": false,
+    "weaponsChanged": false,
+    "newPixelLabCalls": 0,
+    "runtimeImplemented": false
+  },
+  "reuseAssessment": {
+    "body": "Inherited V7; only 73 dark internal joint pixels in F03/F04/F05 re-lit. No silhouette/alpha edits.",
+    "item": "REUSE_DIRECT exact independent Sword (recruit-sword)",
+    "remainingBindings": "REUSE_ADAPTED per-pose observed genuine glove and wrist orientation",
+    "risk": "Perceptual observation at native/game scale and normal playback speed required by independent QA before creator review."
+  },
+  "runtimeImplemented": false,
+  "v6FrontalFix": {
+    "script": "experiments/main-orc-artistic-reconstruction-v6/frontal/fix-frontal.lua",
+    "reexportScript": "experiments/main-orc-artistic-reconstruction-v6/frontal/export-fix.lua",
+    "plan": "experiments/main-orc-artistic-reconstruction-v6/frontal/fixes-plan.json",
+    "verification": "experiments/main-orc-artistic-reconstruction-v6/frontal/verify-result.json",
+    "report": "experiments/main-orc-artistic-reconstruction-v6/frontal/report.md",
+    "rule": "Isolated neutral bright pixels (L>=170, neutral, zero bright 4-neighbours) refilled with median of opaque dark neighbours (fallback ink 12,15,18); fully disconnected rgba(0,0,1) islands made transparent. Single-pixel edits only; no other pixel touched (verified vs before snapshot).",
+    "editsApplied": 108,
+    "islandRemovals": 0,
+    "bodyTimingChanged": false,
+    "weaponLayersChanged": false,
+    "visualLimitation": "DEV worked without image perception (textual/Pillow forensics); independent visual QA still required.",
+    "historicalInheritedPass": true
+  },
+  "axillaEscalation": {
+    "plan": "experiments/main-orc-artistic-reconstruction-v6/frontal-escalated/edit-plan.json",
+    "verification": "experiments/main-orc-artistic-reconstruction-v6/frontal-escalated/verification.json",
+    "report": "experiments/main-orc-artistic-reconstruction-v6/frontal-escalated/report.md"
+  },
+  "bodyRgbaDeltaReference": "characters/orc-v1/source/artistic-reconstruction-v6/frontal/front_l-Sword-full/clip.json",
+  "v7AxillaRepair": {
+    "scope": "body layer, front_l/Sword, frames 3 and 4 only",
+    "edits": {
+      "3": 9,
+      "4": 10,
+      "total": 19
+    },
+    "defectsAddressed": [
+      "D1 flat ink plate: x=147 y117..122 held one single colour rgb(12,15,18) in both frames (plus (148,116) in both and (149,115) in F04); every untouched contour pixel in the same frames varies between 0,0,1 / 2,2,3 / 6,6,8 / 20,20,26 / 27,28,34",
+      "D2 retrograde step at y=123: left boundary width sequence was 147,147,...,147 (y117..y122), 148 (y123), 147 (y124) in both frames - the opening narrowed by 1 px then widened again",
+      "D3 detached pixel (149,122) rgb(95,96,99) with zero opaque 8-neighbours in F03",
+      "D4 comb tooth (152,115) rgb(77,79,82) in F04: a 1 px island between the 2 px pinhole (150..151) created by V6 and the main opening (153..162); only its top edge touched the body"
+    ],
+    "notChanged": [
+      "opening extent on the right side and below y=125",
+      "pose, silhouette above y=115, timing 730 ms / 13 frames",
+      "weaponBack / weaponFront / handFront pixels on all 13 frames",
+      "every pixel of frames 0,1,2,5,6,7,8,9,10,11,12"
+    ],
+    "rule": "Restore the native colour each repainted pixel held in the non-escalated V6 clip; where that would leave 3+ consecutive identical colours on the new medial edge, take the value the adjacent column (x+1) held on the same row. No colour is invented and no pixel is filled.",
+    "verificationResult": {
+      "byteIdenticalFilesOutsidePatch": 84,
+      "onlyDeclaredPixelsChanged": true,
+      "weaponAndHandLayersIdentical": true,
+      "monotoneLeftBoundary": true,
+      "danglingPixels": 0
+    },
+    "residualRisk": "The medial edge of the opening still runs at x=147 for nine consecutive rows (y117..y125). Vertical runs of that length also exist in the untouched frames (F05 x=146 y123..129), so this was treated as the V6 author's opening choice and not re-cut. Only the colour plate, the notch and the detached pixels were repaired.",
+    "visualReviewRequired": true,
+    "historicalInheritedPass": true
+  },
+  "inheritedProvenance": {
+    "authoring": "Inherited V6 escalated poses. Body-layer only: the V6 escalation painted a flat rgb(12,15,18) ink plate on the new medial edge of the axilla opening in F03/F04; V7 restores the native pre-escalation tone of each repainted pixel (or the adjacent column's native tone where a run of 3+ identical colours would remain) and removes a detached pixel, a 1 px comb-tooth island and a 1 px retrograde step. Saved, reopened and re-exported in Aseprite.",
+    "script": "experiments/main-orc-combat-recovery-v7/scripts/author-frontl-sword-v7.lua",
+    "scriptSha256": "b4e32cfe59301c68dbb858ad01136e06a8b0085ac85a3350de534f5d126289cb",
+    "plan": "experiments/main-orc-combat-recovery-v7/frontal/edit-plan-v7.json",
+    "planSha256": "935e9a25416d3d72bda4c49b99547fb658f1120f7e692dcab7ba5f5bcac1c8ef",
+    "verification": "experiments/main-orc-combat-recovery-v7/frontal/verification-v7.json",
+    "anatomy": "experiments/main-orc-combat-rescue-v5/grip-specialist/front-three/anatomy-plan.json",
+    "bodyRgbaChanged": true,
+    "timingChanged": false,
+    "weaponsChanged": false,
+    "newPixelLabCalls": 0,
+    "costUsd": 0,
+    "runtimeImplemented": false,
+    "editor": "Aseprite 1.3.18.6 --batch --noinapp, isolated profile tmp/aseprite-v7-econ-profile",
+    "visualLimitation": "DEV worked without image perception. All decisions come from Pillow pixel measurements and Aseprite Lua authoring; no artifact was 'seen'."
+  },
+  "armpitRepair": {
+    "frames": {
+      "3": 25,
+      "4": 15,
+      "5": 33
+    },
+    "visualReviewRequired": true,
+    "report": "experiments/main-orc-combat-recovery-v8/qa-armpit-v8/report.md",
+    "alphaChanged": false,
+    "contactMetadataCorrection": "Parent declared frame 7/325 ms; requested canonical impact is frame 6 start/290 ms. Only event metadata corrected; no frame timing, image or weapon translation."
+  }
+}

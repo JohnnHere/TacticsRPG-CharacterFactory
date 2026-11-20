@@ -1,0 +1,7 @@
+local spr = app.open("characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_r/defeat.aseprite")
+local img = Image(256, 256, ColorMode.RGB)
+img:clear()
+img:drawSprite(spr, 5)
+img:saveAs("experiments/main-orc-targeted-recovery-v3/test_defeat_render.png")
+spr:close()
+print("Saved test_defeat_render.png")

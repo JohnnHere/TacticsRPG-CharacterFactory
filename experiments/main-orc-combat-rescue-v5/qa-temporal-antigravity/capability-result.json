@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-10-29T14:15:00.000Z",
+  "reviewer": {
+    "role": "INDEPENDENT_TEMPORAL_QA",
+    "sessionLabel": "qa-temporal-antigravity",
+    "model": "Gemini 3.8 Flash (High)",
+    "platform": "Antigravity",
+    "producer": false,
+    "orchestrator": false,
+    "copilotUsed": false,
+    "subagentsUsed": false
+  },
+  "status": "TEMPORAL_REVIEW_UNAVAILABLE",
+  "verdict": "TEMPORAL_REVIEW_UNAVAILABLE",
+  "verdictReason": "As ferramentas disponíveis no ambiente Antigravity (read_file, run_command, Paseo browser MCP) operam exclusivamente através de dados discretos, texto e capturas de imagens estáticas. Não há suporte a streaming de vídeo em tempo real, WebRTC ou ingestão contínua de fluxo temporal a 1x na percepção do modelo. Teste empírico de read_file sobre GIF animado confirmou que o harness entrega apenas o primeiro quadro estático isolado. Capturar screenshots discretos de navegador ou registrar timestamps reproduziria a inspeção estática já realizada pelo QA Sol/Codex, violando a regra expressa de não afirmar percepção temporal contínua a partir de imagens estáticas. O status TEMPORAL_REVIEW_UNAVAILABLE é registrado com rigor factual e sem falsificação de percepção visual de vídeo.",
+  "frameInspectionVerdict": "NOT_REPEATED_PER_MANDATE",
+  "confirmedArtisticBlockingFindings": [],
+  "revisionRequested": false,
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "creatorApproved": false,
+  "fullCycleArtisticallyApproved": false,
+  "automaticPropagationAllowed": false,
+  "integrationAllowed": false,
+  "runtimeImplemented": false,
+  "otherQaArtifactsRead": true,
+  "writesRestrictedTo": "experiments/main-orc-combat-rescue-v5/qa-temporal-antigravity/",
+  "toolCapabilityAssessment": {
+    "read_file": {
+      "testedFile": "experiments/main-orc-rear-recovery-v2/back_l-axe-representative-1x.gif",
+      "testedFileSha256": "ef6c54700d45d737d2cf8e62f48e3f7ac1f6841c909d9d2f9dae54c8b40a9102",
+      "empiricalOutcome": "Harness interceptou arquivo binário GIF e entregou quadro estático único (part_0: image/gif). Não há reprodução animada ou entrega sequencial temporal.",
+      "continuousTemporalSupported": false
+    },
+    "browserTools": {
+      "provider": "Paseo MCP browser",
+      "availableTools": [
+        "browser_list_tabs",
+        "browser_new_tab",
+        "browser_snapshot",
+        "browser_click",
+        "browser_fill",
+        "browser_wait",
+        "browser_type",
+        "browser_keypress",
+        "browser_navigate",
+        "browser_back",
+        "browser_forward",
+        "browser_reload",
+        "browser_screenshot",
+        "browser_upload",
+        "browser_hover",
+        "browser_select",
+        "browser_drag",
+        "browser_logs",
+        "browser_evaluate",
+        "browser_scroll",
+        "browser_resize",
+        "browser_close_tab"
+      ],
+      "captureMechanism": "browser_screenshot produz capturas estáticas instantâneas em PNG; browser_snapshot entrega árvore DOM de acessibilidade. Sem suporte a feed contínuo de vídeo ou WebRTC.",
+      "continuousTemporalStreamingSupported": false
+    },
+    "run_command": {
+      "capability": "Execução CLI PowerShell/Node.js. Permite controle de navegadores headless (Edge/Chromium), medição de tempo e export de frames estáticos, mas a saída para o agente é estritamente texto stdout/stderr. Não transfere percepção temporal contínua.",
+      "continuousTemporalSupported": false
+    },
+    "multimodalModelPerception": {
+      "modelArchitecture": "Turnos discretos com tokens de texto e imagens estáticas (media items). Ausência de pipeline sensorial contínuo de fluxo óptico e taxa de quadros em tempo real.",
+      "continuousTemporalSupported": false
+    }
+  },
+  "targetsEvaluated": {
+    "back_r_axe": {
+      "scope": "Corpo desarmado 12f/1100ms",
+      "clipPath": "characters/orc-v1/source/combat-rescue-v5/body-specialist/full-back-r-axe/clip.json",
+      "clipSha256": "2ab5ae40d7a11c0b4b271ca41f090608c3d721366da90ee1c6d1ebce9c1321c3",
+      "playerPath": "experiments/main-orc-combat-rescue-v5/body-specialist/full-back-r-axe/review.html",
+      "playerSha256": "53997239832678874d2d973239bcbe317f62ee7a2136fe34551a4a5f45b7ce7c",
+      "frameCount": 12,
+      "durationMs": 1100,
+      "continuousTemporalPerceptionPossible": false
+    },
+    "front_r_sword": {
+      "scope": "Equipado 13f/730ms",
+      "clipPath": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/full-front-r-sword/clip.json",
+      "clipSha256": "16fe8b7b30cbaa029ac4f4bd2bda5f7c8ac127007ec40a49a1f41db2580c63a1",
+      "playerPath": "experiments/main-orc-combat-rescue-v5/grip-specialist/full-front-r-sword/index.html",
+      "playerSha256": "1e413514a7f80260ac1ef5838729a5b96cef95f4f5c8aaaaa1423ae5a85cc40a",
+      "frameCount": 13,
+      "durationMs": 730,
+      "continuousTemporalPerceptionPossible": false
+    }
+  },
+  "remainingGate": "Revisão perceptual visual contínua 1x em escala real de jogo (128px nativo e 64px tático) por olhar humano ou dispositivo com capacidade de observação contínua de vídeo em tempo real, sem aprovação presumida por testes estáticos ou relógio de navegador."
+}

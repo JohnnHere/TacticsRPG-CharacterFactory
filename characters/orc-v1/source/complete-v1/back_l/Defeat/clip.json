@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-complete-v1",
+  "id": "reaction.defeat",
+  "character": "orc-v1",
+  "state": "Defeat",
+  "legacySlotState": "Defeat",
+  "direction": "back_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": true,
+  "terminalFrame": 4,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    70,
+    95,
+    115,
+    130,
+    290
+  ],
+  "totalDurationMs": 700,
+  "master": "characters/orc-v1/source/aseprite/complete-v1/composite/back_l/defeat-unarmed.aseprite",
+  "masterSha256": "1f6b81e9da882bf0c8571164d31d33e1b2567258b30126e3713a50bff82cc83c",
+  "nativeMaster": "characters/orc-v1/source/aseprite/complete-v1/native/defeat-back_l.aseprite",
+  "nativeMasterSha256": "c0d41fd0218d270c75c88da5b111c280e819844c6680c1aa99f88692f35ffdee",
+  "strip": "characters/orc-v1/source/complete-v1/back_l/Defeat/native-strip.png",
+  "stripSha256": "82e2b3336ec50613007d1f8fc10d061a103762ff56eb84ddf58a393a5d20ce15",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": null,
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Defeat/00.png",
+      "sha256": "223b5fd078b59ae34cd74aebb41d77f8028405586bae831c6d2b5f78120fc812",
+      "nativePng": "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_00.png",
+      "nativeSha256": "bbb64171fa6b90b6e3eda5d8f0d1d18df10f2422081496416ab8fa6ea8571dbc",
+      "durationMs": 70,
+      "phase": "fatal-stagger",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Defeat/01.png",
+      "sha256": "a9cd84256fcaf94b0c51434e17d51a8e975182d379a398ca3a4bf8eecb76a21f",
+      "nativePng": "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_01.png",
+      "nativeSha256": "0c63a5ac2a7143817d43d3d4a2972df024a070728956392ff12329dd8250a566",
+      "durationMs": 95,
+      "phase": "knees-buckle",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Defeat/02.png",
+      "sha256": "2d39a912cf1e142d0af9f1f5abfe26420a3f7f97ae77931bdf69181fff9015c0",
+      "nativePng": "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_02.png",
+      "nativeSha256": "0c953e85679dad1eab02753c8d6e608d1b13ebc6954d414c84c0c2ea90ebf841",
+      "durationMs": 115,
+      "phase": "drop-to-knees",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Defeat/03.png",
+      "sha256": "2c106a872bfd16bd9b71e58cbaceb000729d6712af4436475f680d0190425b46",
+      "nativePng": "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_03.png",
+      "nativeSha256": "5543ab675b3e6e630e389e759e0a32048fa6638f9d81c54d756f094da19c5d9f",
+      "durationMs": 130,
+      "phase": "collapse-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/complete-v1/back_l/Defeat/04.png",
+      "sha256": "52c158c290ad4e50fa04dbee830c240b09094c1b333d2bb73f9a0ec02620362e",
+      "nativePng": "characters/orc-v1/sprites/Animations/Defeat/defeat_back_l_04.png",
+      "nativeSha256": "234a260e15906a67f84dbba70c30f7855c4954748b112cfa3858de9347514ad3",
+      "durationMs": 290,
+      "phase": "terminal-defeated",
+      "weaponVisible": false
+    }
+  ],
+  "reuseAssessment": "AUTHORED_ASEPRITE_COMPLETE_V1",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "qualityGatesContract": "config/artistic-quality-gates-v1.json",
+  "runtimeImplemented": false
+}

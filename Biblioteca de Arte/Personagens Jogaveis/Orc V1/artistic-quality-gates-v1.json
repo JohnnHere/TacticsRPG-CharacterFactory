@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "contractId": "factory.artistic-quality-gates.v1",
+  "authority": "Local production contract for the Character Factory; documentation in docs/ARTISTIC_QUALITY_GATES.md. Not a Unity implementation and not an artistic approval.",
+  "createdAt": "2026-10-25",
+  "scope": "Any character/animation package presented as ready: technical completeness plus visual/artistic review before delivery.",
+  "runtimeImplemented": false,
+  "artisticApprovalIsCreatorOnly": true,
+  "automationCannotApproveArt": true,
+  "visualReviewSurfaces": [
+    "Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html",
+    "Biblioteca de Arte/Estudos Comparativos/Orc principal - Biblioteca completa/index.html"
+  ],
+  "statusTaxonomy": {
+    "progression": [
+      "TECHNICALLY_COMPLETE",
+      "VISUAL_REVIEW_REQUIRED",
+      "CREATOR_APPROVED"
+    ],
+    "progressionMeaning": "The normal path. Each step requires the previous one: approval requires a visual review, a visual review requires technical completeness.",
+    "blockingRule": "ARTISTIC_REVISION_REQUIRED overrides every other label while the defect is open. A package can never be shown as VISUAL_REVIEW_REQUIRED, and never as CREATOR_APPROVED, while a known artistic defect is unresolved.",
+    "statuses": {
+      "TECHNICALLY_COMPLETE": {
+        "definition": "Dimensions, groundY, binary alpha, hashes, Aseprite masters and frame counts pass automated checks.",
+        "implies": "The package exists, is reproducible and is internally consistent.",
+        "neverImplies": [
+          "visual quality",
+          "anatomical correctness",
+          "perspective coherence between views",
+          "artistic approval"
+        ],
+        "canBeSetBy": "automated validation, audit tools, DEV"
+      },
+      "VISUAL_REVIEW_REQUIRED": {
+        "definition": "Technically complete and free of the automated artistic-defect gates below, awaiting human visual inspection in the interactive review studio.",
+        "implies": "Ready for the creator to inspect; defects would be news, not a rework of known problems.",
+        "canBeSetBy": "DEV after the gates in this contract pass, or by the orchestrator"
+      },
+      "ARTISTIC_REVISION_REQUIRED": {
+        "definition": "Creator or visual QA identified anatomy, perspective, silhouette, choreography or pixel-cleanup defects that require revision.",
+        "implies": "Do not present, promote or export as ready. Must name the action, direction and frame range.",
+        "canBeSetBy": "creator, independent visual QA, or DEV with measured evidence",
+        "creatorMayOverrule": true
+      },
+      "CREATOR_APPROVED": {
+        "definition": "Explicit artistic sign-off granted by the creator after visual inspection.",
+        "implies": "Only the creator can grant it, per package and per recorded evidence. Never inferred from passing tests.",
+        "canBeSetBy": "creator only",
+        "requires": [
+          "VISUAL_REVIEW_REQUIRED satisfied",
+          "explicit creator statement recorded with date and scope"
+        ]
+      }
+    },
+    "forbiddenLabels": [
+      "READY (without a status from this taxonomy)",
+      "DONE (for art that no human inspected)",
+      "APPROVED (when granted by tooling or by an agent)"
+    ]
+  },
+  "directionalViewGate": {
+    "id": "directional-view-gate-v1",
+    "appliesTo": [
+      "back_r",
+      "back_l"
+    ],
+    "principle": "A rear view is a construction, not a repaint of a front sprite.",
+    "forbiddenShortcut": "Deriving a back view by painting over the face (or by erasing facial features) on a front sprite. If the skull, nape and dorsal armor were not rebuilt, the view fails regardless of surface polish.",
+    "requiredRearMarkers": [
+      "occipital skull with no face, brow, nose, mouth, tusks or eye sockets",
+      "nape and trapezius visible between skull and collar",
+      "rear high collar/gorget, open to the back",
+      "dorsal backplate with a central spine channel",
+      "scapula plates instead of pectoral plates or chest scars",
+      "rear belt/sash closure, without the front sternum peak",
+      "no front abdominal point-plate",
+      "rear split tassets and rear chainmail fall",
+      "popliteal knee straps and calf greaves",
+      "no front kneecap poleyns",
+      "boot heels and toes angled away from the viewer"
+    ],
+    "distinctness": {
+      "backRFacing": "North-East",
+      "backLFacing": "North-West",
+      "mustDifferIn": [
+        "three-quarter perspective",
+        "shoulder occlusion (which pauldron is nearer)",
+        "top-left lighting"
+      ],
+      "pureMirrorIsInsufficient": true,
+      "reason": "A mirror flips the light source to the top-right and swaps the near shoulder, which the camera and the light do not do."
+    },
+    "measurableChecks": {
+      "noFrontFacePixels": "The head region of a rear view must contain zero pixels from the front face palette (eyes, tusks, mouth).",
+      "markerPresence": "Every requiredRearMarkers entry must be identifiable in at least the Idle frames of that view.",
+      "mirrorDependence": "Compare back_r against horizontally flipped back_l. Pixel agreement above 97% indicates a mirrored copy rather than a constructed view.",
+      "lightingSide": "The highlight centroid must sit above the body centroid and on a consistent horizontal side across all four views."
+    }
+  },
+  "choreographyGate": {
+    "id": "animation-choreography-gate-v1",
+    "principle": "An action must communicate its meaning in silhouette and timing, not only in shading.",
+    "hit": {
+      "id": "hit-impact-reaction-v1",
+      "mustReadAs": "clear heavy-armored impact reaction",
+      "requiredComponents": [
+        "head snap",
+        "shoulder hunch or guard brace",
+        "torso recoil",
+        "knee compression anchored on groundY"
+      ],
+      "forbidden": "A subtle 1-2px tremor presented as a damage reaction; breathing-like motion sold as impact.",
+      "phases": [
+        "impact-onset",
+        "peak-recoil",
+        "stagger-brace",
+        "recovery-rise",
+        "recovery-settle"
+      ],
+      "minFrames": 5,
+      "durationsMs": [
+        45,
+        95,
+        115,
+        95,
+        100
+      ],
+      "totalDurationMs": 450,
+      "loop": false,
+      "measurableChecks": {
+        "minHeadTopExcursionPx": 6,
+        "minCentroidDisplacementPx": 4,
+        "minHeightCompressionPx": 5,
+        "heightCompressionDefinition": "Max standing height across the clip/Idle rest minus minimum compressed height during impact recoil (max(h) - min(h)).",
+        "bottomPinnedToGroundY": true,
+        "minMotionEnergyVsIdle": 2.0,
+        "motionEnergyDefinition": "Time-normalized inter-frame changed-pixel rate (changedPixelPct / frameDurationMs) in the torso and head bands, divided by the same time-normalized rate measured on the Idle clip of the same direction."
+      }
+    },
+    "defeat": {
+      "id": "defeat-collapse-v1",
+      "mustReadAs": "believable multi-stage physical collapse",
+      "stages": [
+        "fatal-stagger",
+        "knees-buckle",
+        "drop-to-knees",
+        "collapse-impact",
+        "terminal-defeated"
+      ],
+      "minFrames": 5,
+      "durationsMs": [
+        70,
+        95,
+        115,
+        130,
+        290
+      ],
+      "totalDurationMs": 700,
+      "loop": false,
+      "terminalFrame": 4,
+      "forbidden": "Global 2D rotation of a standing sprite combined with vertical squashing (for example vScale = 0.52). A squashed standing pose is not a collapse.",
+      "requiredPreservation": [
+        "head volume",
+        "pauldron volume",
+        "chest volume",
+        "contact on the ground line (groundY) in every frame"
+      ],
+      "measurableChecks": {
+        "bottomPinnedToGroundY": true,
+        "terminalAspectRatioWidthOverHeightMin": 1.3,
+        "terminalWidthGrowthMinPct": 10,
+        "maxSingleStageHeightDropRatio": 0.35,
+        "maxSingleStageHeightDropRatioMeaning": "No single transition may remove more than 35% of the standing height; a collapse that erases the torso in one step is a flatten, not a collapse.",
+        "volumeRetention": "Terminal frame keeps readable head, pauldron and chest masses; a silhouette reduced to a horizontal strip fails."
+      }
+    },
+    "frontalAttackHead": {
+      "id": "frontal-attack-head-cleanup-v1",
+      "appliesTo": [
+        "Sword Attack",
+        "Axe Attack",
+        "Unarmed"
+      ],
+      "inkColor": {
+        "rgb": [
+          12,
+          15,
+          18
+        ],
+        "hex": "#0C0F12"
+      },
+      "requirements": [
+        "dark INK outline around the head crown",
+        "palette-accurate green skin border inside the outline",
+        "zero light-grey or white anti-aliasing halo pixels around the crown",
+        "stabilized head-top trajectory across the clip"
+      ],
+      "measurableChecks": {
+        "maxNeutralHaloPixelsInHeadCrown": 0,
+        "haloThreshold": "min(R,G,B) >= 90 with |R-G| <= 10 and |G-B| <= 16 on the 4-neighborhood boundary of green skull pixels in y = 68..83, x = 116..149 of the 256x256 composite",
+        "headBand": "y = 68..83, x = 116..149 (green skull dome above the brow/eye line in the 256 composite)",
+        "maxConsecutiveReversalPx": 5,
+        "maxConsecutiveReversalPxMeaning": "The head-top trajectory may rise and fall with the action, but an isolated reversal larger than 5px indicates jitter rather than intent."
+      }
+    }
+  },
+  "completeSetReviewContract": {
+    "id": "complete-set-review-v1",
+    "principle": "Review the set as a set. A single beautiful direction does not carry a library.",
+    "matrix": {
+      "directions": [
+        "front_r",
+        "front_l",
+        "back_r",
+        "back_l"
+      ],
+      "actions": [
+        "Idle",
+        "Walk",
+        "Unarmed",
+        "Sword Attack",
+        "Axe Attack",
+        "Hit",
+        "Defeat"
+      ],
+      "requiredCells": 28
+    },
+    "studioRequirements": [
+      "all 4 directions x 7 actions reachable in one click from a single page",
+      "step-by-frame, play, speed control and zoom without leaving the page",
+      "before/after comparison for every revised action",
+      "transitions Idle -> Attack -> Idle, Walk -> Idle, Hit -> Idle and Defeat -> terminal pose",
+      "no smoothing, no invented frames, no interpolation in the preview"
+    ],
+    "beforeAfterIntegrity": {
+      "rule": "A before/after comparison must come from the superseded build or the archived pre-revision frames.",
+      "check": "If the 'before' image is byte-identical to the current output, the capture happened after the rewrite and the comparison is invalid.",
+      "lesson": "Capture the before state before touching the pixels, then verify the hashes differ."
+    },
+    "reviewerDuties": [
+      "inspect anatomy, perspective, silhouette, cluster cleanliness and motion",
+      "state the action, direction and frame range of every defect",
+      "never report file counts or JSON schemas as artistic evidence"
+    ]
+  },
+  "productionLessons": [
+    {
+      "id": "lesson-1",
+      "title": "Technical completion is not artistic approval",
+      "rule": "Hashes, canvas, groundY, alpha, frame counts and passing tests prove presence and consistency. They never prove that the art reads.",
+      "antiPattern": "Declaring a set ready because validation returned 0 FAIL."
+    },
+    {
+      "id": "lesson-2",
+      "title": "Back views require true rear-facing construction",
+      "rule": "back_r and back_l must be built from the skull, nape, rearmost armor and rear belt outward. Painting over the face on a front sprite is forbidden.",
+      "antiPattern": "Erasing eyes and tusks from a front frame and calling the result a rear view."
+    },
+    {
+      "id": "lesson-3",
+      "title": "Directional coherence must hold across the entire animation set",
+      "rule": "Idle, Walk, Unarmed, Sword, Axe, Hit and Defeat must agree on anatomy, perspective, lighting and armor construction in all four directions.",
+      "antiPattern": "A correct back Idle followed by attacks whose rear plate disappears into a front chest plate."
+    },
+    {
+      "id": "lesson-4",
+      "title": "Hit must communicate clear impact recoil",
+      "rule": "Head snap, shoulder hunch, torso recoil and knee compression, measurably above idle breathing.",
+      "antiPattern": "A 1-2px tremor with the same motion energy as Idle, labelled a damage reaction."
+    },
+    {
+      "id": "lesson-5",
+      "title": "Defeat must be choreographed as a believable multi-stage collapse",
+      "rule": "fatal-stagger -> knees-buckle -> drop-to-knees -> collapse-impact -> terminal-defeated, keeping head, pauldron and chest volume on the ground line.",
+      "antiPattern": "Global 2D rotation plus vertical squash (vScale = 0.52) of a standing sprite, which flattens the character into a strip."
+    },
+    {
+      "id": "lesson-6",
+      "title": "Local outline and head-stability artifacts must be fixed surgically",
+      "rule": "Repair the halo, the stray pixel or the jitter in place, without breaking approved choreography, weapon sync, timing or identity.",
+      "antiPattern": "Rebuilding an acceptable clip to remove six pixels, then losing the approved rhythm."
+    },
+    {
+      "id": "lesson-7",
+      "title": "Preserve what already works when revising weak areas",
+      "rule": "Frontal Idle, Walk and the frontal Sword/Axe attacks that were already approved stay byte-identical unless the creator asks otherwise.",
+      "antiPattern": "Regenerating the whole library to fix the rear views, silently changing approved frontal art."
+    },
+    {
+      "id": "lesson-8",
+      "title": "Review surfaces must make full-set inspection effortless",
+      "rule": "One studio, all 4 directions x 7 actions, before/after per revised action, frame stepping, loop and transitions.",
+      "antiPattern": "A folder of PNGs with a README telling the creator which files to open in which order."
+    },
+    {
+      "id": "lesson-9",
+      "title": "Every package must pass a Technical Gate and a Visual/Artistic Review Gate",
+      "rule": "Both gates, in that order, before anything is presented as ready. Passing one is not passing the other.",
+      "antiPattern": "Shipping on the technical gate and letting the creator discover the anatomy problems."
+    },
+    {
+      "id": "lesson-10",
+      "title": "Independent QA must inspect visual criteria, not only file counts and schemas",
+      "rule": "QA reviews anatomy, perspective, silhouette, choreography and pixel cleanliness, and records what it could not judge.",
+      "antiPattern": "An 'APPROVED' verdict built from recomputed hashes while explicitly declining to judge the art."
+    }
+  ],
+  "currentAssessment": {
+    "characterId": "orc-v1",
+    "revision": "main-orc-complete-v1",
+    "build": "dist/editor/orc-v1-complete-v1/b178422e1f7fc19f068c",
+    "supersededBuild": "dist/editor/orc-v1-complete-v1/2595e12a39cc29670933",
+    "technicalStatus": "TECHNICALLY_COMPLETE",
+    "setStatus": "VISUAL_REVIEW_REQUIRED",
+    "creatorApproval": "PENDING_CREATOR",
+    "perActionStatus": {
+      "Idle": "VISUAL_REVIEW_REQUIRED",
+      "Walk": "VISUAL_REVIEW_REQUIRED",
+      "Unarmed": "VISUAL_REVIEW_REQUIRED",
+      "Sword Attack": "VISUAL_REVIEW_REQUIRED",
+      "Axe Attack": "VISUAL_REVIEW_REQUIRED",
+      "Hit": "VISUAL_REVIEW_REQUIRED",
+      "Defeat": "VISUAL_REVIEW_REQUIRED"
+    },
+    "measured": {
+      "measuredAt": "2026-10-25",
+      "measuredBy": "Automated pixel, silhouette, and before/after verification over build b178422e1f7fc19f068c",
+      "preservedFrontalPixelIdentical": [
+        "front_r Idle",
+        "front_r Walk"
+      ],
+      "preservedFrontalChoreographyWithHeadOutlineCleanup": [
+        "front_r Sword Attack",
+        "front_r Axe Attack",
+        "front_l Sword Attack",
+        "front_l Axe Attack"
+      ],
+      "defeatBefore": "standing height 112px to terminal height 21px, width 82 to 109: flattened strip",
+      "defeatAfter": "standing height 111-112px to terminal height 66px, width 87-90 to 119-120px, intermediate heights [112, 90, 86, 63, 66] (front) and [111, 91, 84, 67, 66] (back), terminal aspect ratio 1.80-1.82: progressive 5-stage volumetric collapse",
+      "hitHeadTopExcursionPx": 12,
+      "hitHeightCompressionPx": 12,
+      "hitCentroidDisplacementPx": 5.74,
+      "hitGateVerdict": "PASS_TECHNICAL_AWAITING_VISUAL_REVIEW",
+      "pureWhitePixelsInAttackHeadBand": {
+        "before": "halo pixels around green head crown in frontal attacks",
+        "after": 0
+      },
+      "beforeAfterSnapshotsDistinctFromCurrentOutput": true
+    },
+    "openItems": [
+      "Explicit creator visual review required across all 4 directions x 7 actions in the interactive review studios.",
+      "Creator sign-off required before any promotion to CREATOR_APPROVED or future Unity integration task."
+    ]
+  },
+  "gateOrdering": [
+    "TECHNICAL_GATE: validate, exportAseprite, hashes, coverage matrix",
+    "ARTISTIC_DEFECT_GATES: directionalViewGate, choreographyGate, completeSetReviewContract",
+    "VISUAL_REVIEW: creator inspects the studio",
+    "CREATOR_APPROVED: creator sign-off recorded"
+  ],
+  "doesNotGrant": [
+    "artistic approval",
+    "Unity integration",
+    "runtime weapon overlay support",
+    "permission to change canonical art outside the declared scope"
+  ]
+}

@@ -1,0 +1,39 @@
+DEV — refinamento `back_r` Sword/Axe do Orc V1 (V7). Escopo estrito e cirúrgico; você não é QA nem orquestrador. Outra sessão está reconstruindo `back_l` — NÃO toque nesses arquivos.
+
+## Contexto
+O candidato V6 (`characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json`, SHA `5d68b52d…`) foi rejeitado artisticamente pelo criador. Sobre os SEUS alvos, o criador escreveu:
+
+- `back_r / Sword` — HIGH: "o ataque melhorou, mas ainda requer refinamento": continuidade de corpo, consistência de pernas e tronco, trajetória da espada, pegada, contornos claros, compatibilidade de movimento com `back_l`.
+- `back_r / Axe` — HIGH: "o movimento melhorou comparado a `back_l`, mas **a pegada continua antinatural. O Orc parece segurar o machado por baixo, em vez de envolver convincentemente a mão no cabo**. Isso afeta negativamente todo o movimento do golpe."
+
+Ou seja: no machado o problema principal é a PEGADA UNDERHAND, não a coreografia. Não resolva apenas rotacionando o machado — corrija a relação mão/corpo.
+
+## Fontes
+- Rejeitado para auditoria (NÃO editar): `characters/orc-v1/source/artistic-reconstruction-v6/rear/{back_r-sword,back_r-axe}/`.
+- Identidade de técnica: frontais satisfatórios em `characters/orc-v1/source/artistic-reconstruction-v6/frontal/{full-front-r-sword,front_r-Axe-full,front_l-Axe-full,front_l-Sword-full}/clip.json` (leia fases e tempos; não copie coordenadas).
+- Item independente: `characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json` (e Sword do mesmo local).
+- Lições: `docs/RECIPES.md` (29–30/10) — inclui a regra de que socket/centroide não prova pegada.
+
+## O que fazer, em ordem
+1. **Auditoria**: classifique os quadros `back_r` (KEEP / TARGETED_PIXEL_FIX / TIMING_FIX / REAUTHOR_KEYFRAME / REMOVE_OR_REPLACE) e explique numericamente por que a pegada do machado lê como underhand: onde está a palma em relação ao eixo do cabo, se o cabo passa à frente da mão, se a luva cobre o cabo por cima ou por baixo, se o pomo/contragolpe fica do lado errado, se o punho está acima ou abaixo do eixo.
+2. **Corrigir a pegada do Axe** de verdade: palma envolvendo o cabo, dedos/luva fechando por cima e por baixo conforme a vista, punho alinhado ao antebraço, cotovelo coerente, oclusão correta nas quatro camadas. A mão direita é a dominante nesta vista. Se a pose corporal não permitir a pegada correta, corrija a pose do braço — mas preserve o resto do corpo e o timing.
+3. **Refinar o Sword `back_r`**: pernas/apoio estáveis, tronco contínuo, trajetória de espada legível e compatível com a identidade frontal, pegada correta, sem contorno claro.
+4. **Limpar contornos claros confirmados** nos dois clipes (halo contíguo à silhueta, degrau de 1 px, pixel claro isolado), preservando highlight metálico; verificar vizinhos para não criar flicker.
+5. **Check de flash:** nenhum cluster claro pode SURGIR e DESAPARECER entre quadros vizinhos. O criador reporta flash branco em Sword traseiro; se você encontrar candidato no `back_r/Sword`, corrija e documente a fonte (camada/quadro/coordenadas).
+
+## Contratos
+- Escreva SOMENTE em `characters/orc-v1/source/combat-recovery-v7/rear-r/` e `experiments/main-orc-combat-recovery-v7/rear-r/` + perfil `tmp/aseprite-v7-rearr-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS.
+- Composto 256×256 (offset [64,64], `groundY` 190); nativo 128×128 (`groundY` 126); `cel.position` real; `nativePng` = recorte do corpo.
+- Camadas `weaponBack → body → weaponFront → handFront`; arma só no intervalo do ataque; bookends transparentes.
+- Zero pixel de `weapon*` abaixo de `groundY` fora do impacto real.
+- Mestres 256/128 salvos/reabertos/reexportados conferidos; `clip.json` com hashes reais; incluir `native-strip` e `composite-strip` (o validador exige).
+- Python `tmp\pixel-venv\Scripts\python.exe`; Pillow só leitura/medição. PixelLab: esperado ZERO (é refinamento local); se algo exigir, medir saldo e guardar recibo, sem compras.
+- Preserve as fontes V6/V5 intocadas, a outra frente (`combat-recovery-v7/rear`, `.../frontal`) e o worktree alheio. Sem Unity, sem commits.
+
+## Entrega (checkpoint `V7_BACK_R_REFINED`)
+- Dois clipes `back_r` refinados com mestres reais e `clip.json` válido.
+- Para o machado: **evidência específica da pegada** — ampliação da mão+cabo em F03/F04/F07 (antes e depois), com a descrição de onde a luva cobre o cabo e qual o eixo do punho. Sem isso a entrega não é auditável.
+- Preview HTML (1×, 0,5×, passo, zoom, tático, body-only, composto) e before/after contra o V6 rejeitado.
+- `report.md`: auditoria, causa raiz da pegada underhand, o que mudou por quadro, o que preservou, limitações. Não declare aprovado.
+- PARE no checkpoint.

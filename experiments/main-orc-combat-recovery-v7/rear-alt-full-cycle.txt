@@ -1,0 +1,39 @@
+# V7 — pipeline decidido: manual no Aseprite
+
+## Resultado da comparação de estratégias
+- **Geração (skeleton/inpaint):** 23 gerações na rodada, zero ciclo. Quatro sequências com punho fundido, palm ambígua ou luva cortada, inclusive após resolução 256 e após inpaint condicionado.
+- **Manual no Aseprite:** a sua pose de ápice passou nos cinco critérios de primeira — ponta 48 px acima do crânio, punho 14 px acima da linha do ombro, espaço negativo mínimo de 4 px, cotovelo 68,41°, mão distinguível — com **zero** gerações.
+
+**Decisão do orquestrador:** o pipeline de `back_l` passa a ser 100% manual no Aseprite. Não haverá mais geração para estas duas células.
+
+## Sua tarefa agora — completar `back_l / Sword` como ciclo
+Você já tem ápice e impacto. Complete a sequência com as fases que faltam, autoradas no mesmo método (doador da mesma vista medido, reconstrução Lua, contorno coerente):
+
+1. **Bookend inicial desarmado** — compatible com Idle. **Atenção a um achado novo:** os bookends `body/00` e `body/11` do V6 são byte-idênticos ao corpo do Idle e carregam um highlight de ombro que os corpos de ataque não têm; isso cria um "flash branco" no lado esquerdo quando a reprodução volta ao início. Seus bookends devem ser coerentes com o corpo de ataque adjacente, sem esse salto de luminância. A frente econômica está corrigindo o mesmo problema nos clipes antigos; aqui você já nasce correto.
+2. **Antecipação** — arma entrando em preparação, tronco iniciando rotação.
+3. **Ápice** (já existe) — corrigir se a integração exigir.
+4. **Descida** — 1 ou 2 quadros intermediários com a lâmina atravessando o plano vertical, antebraço visível.
+5. **Impacto** (já existe) — cadeia antebraço–palma legível.
+6. **Follow-through e recuperação** — desaceleração, retorno ao bookend desarmado.
+
+Duração: preserve o ritmo da família (Sword ≈ 730–950 ms) e ajuste só com justificativa. Bookends desarmados; arma apenas no intervalo; nada de pixel de arma abaixo de `groundY`.
+
+## Critério central do criador
+A técnica deve ser reconhecida como a MESMA dos frontais. Compare fase a fase com `characters/orc-v1/source/artistic-reconstruction-v6/frontal/full-front-r-sword/clip.json` e `front_l-Sword-full/clip.json` (estude fases/tempos; não copie coordenadas). Registre a comparação de fases no relatório — é o critério que o criador vai usar.
+
+## Depois do Sword, o Axe
+Monte `back_l / Axe` no mesmo método manual, mas com movimento próprio de machado (massa na cabeça conduzindo, chop one-handed, descida comprometida, recuperação mais lenta). Não derive o Axe do corpo do Sword apenas trocando a arma.
+
+## Contratos
+- Escreva em `characters/orc-v1/source/combat-recovery-v7/rear-alt/` e `experiments/main-orc-combat-recovery-v7/rear-alt/` (mesmas pastas da sua pose manual) + perfil `tmp/aseprite-v7-alt-profile`.
+- Aseprite 1.3.18.6 `--batch --noinapp`; Lua `Frame.duration` em SEGUNDOS; composto 256 (offset [64,64], ground 190); nativo 128 (ground 126); `nativePng` = recorte do corpo.
+- Camadas `weaponBack → body → weaponFront → handFront`; `clip.json` com hashes reais, durações, `visibleInterval`, proveniência; incluir `native-strip` e `composite-strip`.
+- Mestres 256/128 salvos, reabertos e reexportados conferidos.
+- **ZERO gerações PixelLab.** Pillow só leitura/medição.
+- Não toque em `combat-recovery-v7/rear/` (Terra), `rear-r/` (sua entrega anterior) nem `frontal/` (frente econômica). Preserve fontes V6/V5 e o worktree alheio.
+
+## Entrega (checkpoint `V7_BACK_L_FULL_MANUAL_READY`)
+- Dois ciclos completos `back_l` com mestres, `clip.json`, tiras e preview (1×, 0,5×, passo, zoom, tático, body-only, composto).
+- Comparação de fases contra o frontal correspondente e before/after contra o V6 rejeitado.
+- `report.md` com doadores medidos, fases, o que preservou, e limitações. Sem declarar aprovado.
+- Se algum membro não puder ser autorado de forma convincente, diga qual fase e por quê, em vez de entregar pose ambígua.

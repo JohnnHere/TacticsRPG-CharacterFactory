@@ -1,0 +1,31 @@
+Painel de QA independente — revisão do CANDIDATO INTEGRADO. Escopo novo e final desta rodada de produção: as 28 células do manifesto `characters/orc-v1/source/combat-rescue-v5/candidate28manifest.json` (SHA-256 `58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794`).
+
+Você já julgou, individualmente, os oito clipes armados e as correções corporais. Esta revisão é sobre a COMPOSIÇÃO: se o conjunto integrado é coerente como pacote e se os testes que o Root rodou realmente sustentam o que o manifesto declara. Não refaça a auditoria artística de cada clipe; procure regressões, incoerências entre vistas e afirmações do manifesto que não sejam verdadeiras.
+
+O que existe agora:
+- 13 candidatos ativos: 8 Sword/Axe (4 vistas), 4 Unarmed e 1 `back_l/Walk` localizado. 15 aliases exatos (Idle, Hit, Defeat e os Walk não editados).
+- Total 226 quadros; validação técnica 964 hashes.
+- Todas as armas são itens independentes e só aparecem no intervalo do ataque.
+
+Evidência a inspecionar:
+- `experiments/main-orc-combat-rescue-v5/technical-validation.json` (28 células, 226 quadros, 964 hashes, manifest hash conferido)
+- `experiments/main-orc-combat-rescue-v5/source-reexports/58152a101e16cbc031349b3308649f9ccaa38b99782d4e23bcf2ee43fddc3794/result.json` (42 mestres, 448 quadros reabertos no Aseprite)
+- `experiments/main-orc-combat-rescue-v5/browser-checks-final/` (21/21 em Chromium real)
+- `experiments/main-orc-combat-rescue-v5/qa5-rejected-preservation.json` (freeze rejeitado continua íntegro: 210 quadros, 868 hashes)
+- `experiments/main-orc-combat-rescue-v5/input-preservation-result.json` (3506 arquivos protegidos)
+- `experiments/main-orc-combat-rescue-v5/final-manifest-summary.json`
+- Página de revisão: `Biblioteca de Arte/Estudos Comparativos/Orc principal - Resgate de combate/index.html`
+- Manifesto e `catalogo.json` na mesma pasta da página.
+
+Verificações que o Root pede, com evidência real:
+1. Abra a página real, percorra as 28 células e confirme que os 13 candidatos desenham pixels, que os rótulos de status/catálogo correspondem ao manifesto e que não há célula quebrada, imagem ausente ou alerta falso.
+2. Compare as quatro vistas entre si por família: `Sword` deve ler como corte e `Axe` como golpe pesado em todas as direções; a dominância deve ser o braço direito anatômico nas duas vistas traseiras; nenhuma vista deve parecer espelho ou relabel de outra.
+3. Verifique a política de armas: nenhuma célula não-armada (Idle, Walk, Hit, Defeat, Unarmed) pode exibir equipamento, e a recuperação das células armadas deve terminar desarmada.
+4. Confira se o manifesto não afirma aprovação do criador, integração Unity ou equivalência a produção; `eligibleForIntegration` deve ser `false` e o status artístico não pode se apresentar como aprovado.
+5. Aponte qualquer afirmação do manifesto que os artefatos não sustentem, incluindo `qaVerdict` por célula e as notas de `back_l/Walk` (o limite de percepção contínua está declarado).
+
+Grave NOVO `integrated-candidate-result.json` e `integrated-candidate-report.md` na pasta `qa-antigravity-flash`, preservando todos os pareceres anteriores. Inclua o hash do manifesto que inspecionou, o que foi verificado na página real, e as limitações.
+
+Verdito: `READY_FOR_CREATOR_REVIEW`, `REVISIONS_REQUIRED` com achados por célula, ou `INCONCLUSIVE`.
+
+Restrições: não editar arte/fontes/manifesto/matriz/Unity/ponteiros; não criar subagentes; zero PixelLab; custo LLM não informado. Você pode aprovar o pacote para o criador revisar, nunca aprovar em nome dele nem autorizar Unity. Pare após o laudo persistente.

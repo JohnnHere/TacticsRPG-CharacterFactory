@@ -1,0 +1,31 @@
+{
+  "revision": "main-orc-artistic-reconstruction-v6",
+  "reviewType": "CLOSURE_REVIEW",
+  "reviewDate": "2026-10-30",
+  "manifest": "characters/orc-v1/source/artistic-reconstruction-v6/candidate28manifest.json",
+  "manifestSha256": "5d68b52d3e2b2a0931d689afb5a9dd438c178835d05efb02a5fb2bcf0c64b7ca",
+  "previousReviewedManifestSha256": "2c2dd3b9fa8e28e9243f1554ffc23ec81593921a13465c957653b1dd7b1fa756",
+  "totalClips": 28,
+  "activeCandidatesCount": 13,
+  "totalFrames": 226,
+  "verdict": "INCONCLUSIVE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "readyForCreatorReview": false,
+  "previousV5VerdictReused": false,
+  "findings": [
+    {"id":"V6-QA-01","cell":"front_l/Sword","frames":[3,4],"status":"CLOSED","verification":"PASS_STATIC","evidence":"closure-5d68b52d/report.md"},
+    {"id":"V6-QA-02","cell":"back_l/Sword","frames":[7,8,9],"status":"CLOSED","verification":"PASS_STATIC","maxWeaponY":[187,185,173],"pixelsBelowGround":[0,0,0],"evidence":"closure-5d68b52d/closure-checks.json"}
+  ],
+  "openConfirmedArtisticFindings": [],
+  "temporalReview": {"status":"NOT_VERIFIED","normalSpeedWatched":false,"halfSpeedWatched":false,"tacticalScaleWatched":false,"reason":"cua.listBrowsers returned []; real player not viewed"},
+  "remainingRequiredWork": "Independent temporal review of eight attacks at current freeze, including corrected recovery transitions.",
+  "report":"closure-5d68b52d/report.md",
+  "scope":"Closure of two reported static findings and exported-sheet regression comparison; no global artistic approval.",
+  "artEdited":false,
+  "manifestEdited":false,
+  "unityEdited":false,
+  "pixelLabCalls":0,
+  "subagentsCreated":0,
+  "llmCost":"NOT_REPORTED"
+}

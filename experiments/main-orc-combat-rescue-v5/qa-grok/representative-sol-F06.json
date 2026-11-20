@@ -1,0 +1,54 @@
+{
+  "role": "independent-qa",
+  "reviewer": "Grok 4.7 / GitHub Copilot",
+  "scope": "front_r/Sword F06 keyframe only; not an attack, not the 28-clip matrix, not 8 grips",
+  "reviewedAt": "2026-10-29T13:22:00-03:00",
+  "representative": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/F06/representative.json",
+  "representativeSha256": "e9daacf07836ade4d66cd58a1cc97ffa25733001f535a50f9053ecbf2742ac1e",
+  "representativeShaMatchesCheckpoint": true,
+  "sourceFrameIndex": 6,
+  "durationMs": 35,
+  "bodyRgbaDeltaVsParentF06": 0,
+  "alphaOverMatchesComposite": true,
+  "nativeEqualsCompositeCrop": true,
+  "verdict": "READY_FOR_F02_F08_AND_FULL_CLIP_EXPLORATION",
+  "approvesEightGrips": false,
+  "approvesMatrix": false,
+  "globalVerdictUnchanged": "REVISIONS_REQUIRED",
+  "artisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "anatomy": {
+    "confirmed": "Sol",
+    "priorQaCorrected": "The low fist at (156,142) is the inactive arm, not the striking hand. The earlier repair verdict treated that fist as the posed grip because the rejected overlay never used the chest glove.",
+    "activeArm": "Crosses the chest from the viewer's left shoulder, the character's right shoulder, through steel at (128,110) and (139,112), into the brown glove.",
+    "palm155_114": [35, 19, 25],
+    "firstPass157_112": [38, 27, 27],
+    "argonPoint142_115": [20, 20, 26],
+    "inactiveHip156_142": [6, 6, 8],
+    "note": "157,112 is already leather on the glove. 142,115 is steel on the bracer. Landmarks are flattened-art points, not a recovered skeleton."
+  },
+  "grip": {
+    "contact": "Handle leather sits under the existing glove. 69 of 79 weaponBack pixels in the grip window are covered by the body. The 10 visible pixels are the grip edge at y=107-112, not a detached fragment.",
+    "wrist": "The crossing forearm joins the glove. handFront is 33 pixels, all on existing body glove pixels, including 9 interior retouches. It is not a floating stamp.",
+    "closure": "Stylized occlusion of the handle by the glove wedge. No counted fingers. At native 128 the hilt reads as held between guard and pommel.",
+    "perspective": "Blade leaves up-right into free space and does not cross the chest. Angle matches the hand at the end of the horizontal forearm.",
+    "guard": "Visible outside the hand.",
+    "pommel": "Light metal at x=149-152, y=118-119, on the blade axis, above the belt and separate from the inactive fist."
+  },
+  "nextFrameCaution": [
+    "Trace the striking arm on each new pose. Do not reuse (155,114) as a fixed socket.",
+    "Do not grip the hip fist.",
+    "Keep the pommel off the inactive arm."
+  ],
+  "limitations": [
+    "One still frame. No claim about F02, F08, or the other seven grips.",
+    "Judged on untinted body, layers, and native 128 composite, plus a 16x hilt crop. Not a motion loop.",
+    "The 43-file input inventory was not re-audited."
+  ],
+  "evidence": [
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/sol_f06_native128_4x.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/sol_f06_hilt_16x.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/sol_f06_body_arms.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/sol_f06_grip_untinted.png",
+    "experiments/main-orc-combat-rescue-v5/qa-grok/evidence/sol_f06_metrics.json"
+  ]
+}

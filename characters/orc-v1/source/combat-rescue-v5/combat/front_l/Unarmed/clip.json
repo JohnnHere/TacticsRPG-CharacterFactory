@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5",
+  "id": "basic.unarmed",
+  "character": "orc-v1",
+  "state": "Unarmed",
+  "legacySlotState": "Attack",
+  "direction": "front_l",
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "frameCount": 5,
+  "durationsMs": [
+    80,
+    110,
+    50,
+    90,
+    120
+  ],
+  "totalDurationMs": 450,
+  "master": "characters/orc-v1/source/combat-rescue-v5/combat/aseprite/front_l/unarmed.aseprite",
+  "masterSha256": "45f2e01767afdc63bb529e5284729bc1e2930eaf1bb11ca2692a06e88613ac23",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/combat/aseprite/front_l/unarmed-native.aseprite",
+  "nativeMasterSha256": "0cf602f8cb576e801359bd898566f184c39d1d7a20f428287249b82ab9521b40",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native-strip.png",
+  "stripSha256": "2841e124267c973349af7a0044e29d77c9ea8ada7cfb2e756c35283ca5cd9e1d",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native-strip.png",
+  "nativeStripSha256": "2841e124267c973349af7a0044e29d77c9ea8ada7cfb2e756c35283ca5cd9e1d",
+  "visibilityPolicy": "attack-only-v1",
+  "weaponVisible": false,
+  "weaponOverlay": false,
+  "contactEvent": {
+    "frame": 2,
+    "timeMs": 190,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "provenance": {
+    "parentClip": "characters/orc-v1/source/rear-recovery-v2/front_l/Unarmed/clip.json",
+    "parentMaster": "characters/orc-v1/source/aseprite/rear-recovery-v2/composite/front_l/unarmed-attack.aseprite",
+    "parentMasterSha256": "8f42f5f89314b3b74f05847b3c641755252117e2848bc5848f96ccadea0f5fb8",
+    "authoringScript": "experiments/main-orc-combat-rescue-v5/combat/scripts/author_unarmed_4views.lua",
+    "bodyCleanupScript": null,
+    "pixelLabJobId": null,
+    "paidGenerationUnits": 0,
+    "bodyArtChanged": true,
+    "bodyArtScope": "Preserved F00/F01/F02/F04 exact RGBA pixels; rebuilt F03 recoil from F02 torso/legs/guard-arm base with retracted (-4px/+2px) punching forearm and intact 72px gauntlet fist",
+    "handArtChanged": false,
+    "choreographyChanged": false,
+    "timingChanged": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/00.png",
+      "sha256": "c6492ca3a068cf405e38af268a8252cbe550bb031d3012453d20d1581484b08c",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native/00.png",
+      "nativeSha256": "828e257b144301094a5db98e22a6a635a8a76383b3fa2d6034baacb75f058739",
+      "durationMs": 80,
+      "phase": "guard-prep",
+      "weaponVisible": false
+    },
+    {
+      "index": 1,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/01.png",
+      "sha256": "9e25281c626ce764af9f81a143070075de14d9464729c48a4f6760c3d08f7f9c",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native/01.png",
+      "nativeSha256": "26ebb77438587bd0a77527a8f130bb11fec9ef5fc00d0fc8dbc0721410451d6b",
+      "durationMs": 110,
+      "phase": "shoulder-coil",
+      "weaponVisible": false
+    },
+    {
+      "index": 2,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/02.png",
+      "sha256": "33fb313daf25118783697be6e46006739cf16fc73474f635e512fce273f56738",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native/02.png",
+      "nativeSha256": "1bb93a0e8f22367f1872438287413185f7fc92469c513736c251e135ef87bd29",
+      "durationMs": 50,
+      "phase": "heavy-gauntlet-impact",
+      "weaponVisible": false
+    },
+    {
+      "index": 3,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/03.png",
+      "sha256": "6bf9dde4cca9e9dbdad21bb81256be5145b396f29296e52f765c46eadf9e66e0",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native/03.png",
+      "nativeSha256": "3ebc1c387982191c337c638c043ef41ca1be249f69d5075bf5aa66db320e0988",
+      "durationMs": 90,
+      "phase": "recoil-follow-through",
+      "weaponVisible": false
+    },
+    {
+      "index": 4,
+      "png": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/04.png",
+      "sha256": "deb5a6c55af024de11e11a59ddd75593c86bfb83347c32f6db5467c91eade2a7",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/combat/front_l/Unarmed/native/04.png",
+      "nativeSha256": "96136e393e7ffd10c3a81f498a03e4b2b14ba9b3c10e9cdfc0f8576c72e6acdc",
+      "durationMs": 120,
+      "phase": "return-to-guard",
+      "weaponVisible": false
+    }
+  ]
+}

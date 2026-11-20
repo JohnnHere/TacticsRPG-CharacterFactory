@@ -1,0 +1,19 @@
+{
+  "frame": "front_r/Sword F06",
+  "coordinates": "Composite256; native128 coordinates subtract64 from each axis",
+  "method": "Direct visual inspection of unarmed body PNG at8x and coordinate grid24x; not inherited socket tables",
+  "observations": {
+    "attackingShoulder": [118,102],
+    "attackingElbow": [128,110],
+    "forearmSteelMidline": [139,112],
+    "distalSteelCuff": [149,112],
+    "wristTransition": [151,114],
+    "palmGrip": [155,114],
+    "knuckleOuterEdge": [159,111],
+    "upperThumbRegion": [155,110],
+    "inactiveHandAtHip": [156,142]
+  },
+  "uncertainty": "Joint points describe visible landmarks in flattened art, not recovered skeletal data. The active brown glove is x152..159,y109..119; lower leather extending down is the overlapping inactive-arm silhouette.",
+  "rejectedPriorPoint": {"point":[142,115],"reason":"Steel forearm/braçadeira before the distal cuff/palm; a glove centered here covers the arm rather than holding the item"},
+  "itemTransformProposal": {"itemGrip":[48,66],"bodyGrip":[155,114],"angleDeg":32,"scale":1,"flipX":false,"reason":"Hilt seated through existing glove; blade exits diagonally up/right into free space beyond the active hand, with independent guard and pommel outside the traced finger region"}
+}

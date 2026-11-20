@@ -1,0 +1,9 @@
+# Root integration observation — Hit, 2026-10-26
+
+Inspected actual native PNGs declared by the four complete-v1 Hit clip.json files using root-owned headless Chromium. A bounded real requestAnimationFrame player showed all four directions at 1, .75 and .5 playback speed, each at native128 and approximate64 display. Source durations45/95/115/95/100ms, total450ms; speed-adjusted cycles450/600/900ms. No source pixels or timings modified.
+
+Evidence: diagnosis/root-hit-playback.json records actual elapsed sample times and displayed frame indices; root-hit-playback-0.png through7.png are browser screenshots. Root viewed samples0/2/4/6 plus current player. This is actual playback, not a zoom-only or centroid assessment. 64px is an approximate comparison scale, not verified Unity camera output. The player repeats Hit for comparison; gameplay is a single hit response.
+
+Observation: pronounced torso/shoulder recoil and head displacement, readable even in the approximate64 display; planted stance and connected limbs remain visible, then guarded recovery. At1x the impact is quick, but the roughly450ms response remains legible. At.5x the same amplitude looks more theatrical because the full recoil is exposed longer. No confirmed disconnected anatomy or unreadable impact justifies automatic redraw here. Recommend retaining current pixels and450ms metadata for creator review, with practical gameplay tuning deferred until actual unit scale, hit-stop, combat cadence and event timing can be assessed in Unity. Do not turn numeric excursion into a universal amplitude requirement.
+
+Status: internal retain recommendation, not independent QA or creator approval. ART owner may add its own observations; independent QA must inspect the final integrated view. No claim that runtime timing has been validated.

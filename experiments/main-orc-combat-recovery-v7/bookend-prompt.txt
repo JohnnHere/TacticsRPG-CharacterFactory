@@ -1,0 +1,34 @@
+# V7 — correção do flash branco nos bookends (task pequena e determinística)
+
+A causa já está diagnosticada e documentada. Não re-diagnostique: **aplique**.
+
+## Causa confirmada
+Nos clipes `back_l-sword` e `back_r-sword` do V6 (`characters/orc-v1/source/artistic-reconstruction-v6/rear/`), as camadas de corpo dos bookends `body/00.png` e `body/11.png` são **byte-idênticas ao corpo do Idle** (`characters/orc-v1/source/complete-v1/{back_l,back_r}/Idle/`), que carrega um **highlight de ombro em metal claro** que os corpos de ataque não têm.
+
+Consequência: ao reproduzir em loop, a volta ao início faz o highlight reaparecer de uma vez — é o "flash branco no lado esquerdo" relatado pelo criador. Contagem de pixels claros no lado iluminado: `back_l` 61 → 13 em F00→F01 e 21 → 61 em F10→F11; `back_r` 46 → 2 e 2 → 46. Todas as outras transições variam 0–7 px.
+
+## O que fazer
+1. Copie os dois clipes para `characters/orc-v1/source/combat-recovery-v7/bookends/{back_l-sword,back_r-sword}/` e trabalhe só nas cópias. Fontes V5/V6 intocadas.
+2. Corrija a descontinuidade nos bookends `body/00` e `body/11` das duas células. Duas opções válidas — escolha e justifique com medição:
+   - **(a) normalizar o bookend**: remover/atenuar o highlight de metal claro do bookend para ficar coerente com F01/F10;
+   - **(b) harmonizar o ataque**: se o highlight for legítimo na identidade, ajustar F01/F10 para iniciarem com a mesma leitura, sem salto.
+   Prefira (a) se o highlight só existir no bookend; prefira (b) se ele existir também em quadros de ataque vizinhos.
+3. Não escureça o personagem inteiro, não use máscara escura para esconder, não altere silhueta, pose, timing (730/950 ms conforme o clipe) nem camadas de arma.
+4. Verifique objetivamente, com a mesma métrica do diagnóstico (pixels claros na faixa de luminância que você medir a partir da paleta real):
+   - a transição F00→F01 e F10→F11 deve cair para a faixa dos demais quadros (0–7 px de variação);
+   - nenhum pixel alterado fora dos bookends;
+   - nenhuma mudança de alfa indevida.
+5. Reexporte os mestres salvos e reabra para conferir; atualize `clip.json` (hashes reais, durações inalteradas) e gere `native-strip`/`composite-strip` se o contrato do clipe exigir.
+
+## Contratos
+- Aseprite 1.3.18.6 `--batch --noinapp`, perfil exclusivo `tmp/aseprite-v7-bookend-profile`; Lua `Frame.duration` em SEGUNDOS.
+- Composto 256 (offset [64,64], ground 190); nativo 128 (ground 126); `nativePng` = recorte do corpo.
+- Python `tmp\pixel-venv\Scripts\python.exe`; Pillow só leitura/medição.
+- **Zero PixelLab.**
+- Escreva apenas em `characters/orc-v1/source/combat-recovery-v7/bookends/` e `experiments/main-orc-combat-recovery-v7/bookends/`.
+- Preserve o worktree alheio; sem Unity, sem commits.
+
+## Entrega (checkpoint `V7_BOOKEND_FLASH_FIXED`)
+- Dois clipes com bookends corrigidos, `clip.json` válido, mestres reexportados.
+- `report.md` curto com: opção escolhida e por quê, contagem antes/depois por transição, pixels alterados por quadro, o que preservou, limitação declarada se você não tiver percepção visual.
+- PARE no checkpoint.

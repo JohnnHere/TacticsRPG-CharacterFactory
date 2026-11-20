@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "patchId": "orc-v1.combat-recovery-v8.weapon-patch",
+  "characterId": "orc-v1",
+  "characterName": "Verde Warcraft",
+  "revision": "main-orc-combat-recovery-v8",
+  "parentManifest": "characters/orc-v1/source/combat-recovery-v7/candidate28manifest.json",
+  "parentManifestSha256": "fde1fe23f2d637589b6abef6b9b946b6c4370cc8ae5f3927525fb038397b2579",
+  "scope": "V8: the four rear cells are rebased on the frontal timing grid so all four directions share one cadence and one impact instant; frontals carried forward unchanged from V7.",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "creatorRejectedCandidate": "combat-recovery-v7 fde1fe23f2d637589b6abef6b9b946b6c4370cc8ae5f3927525fb038397b2579",
+  "weapons": {
+    "Sword": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "Axe": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Axe/weapon.json"
+  },
+  "cells": [
+    {
+      "direction": "front_r",
+      "action": "Sword",
+      "cellId": "front_r/Sword",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_r-sword/clip.json",
+      "clipSha256": "2ae94ce07002a1acb5361866e142ef9209a7f076b04f5d47b4c6d43b955858ca",
+      "frameCount": 14,
+      "totalDurationMs": 730,
+      "visibleInterval": [
+        2,
+        11
+      ],
+      "provenance": "combat-recovery-v8/frontal-inbetween/front_r-sword",
+      "notes": "Apex descent frame authored so the blade no longer teleports: the 76 px jump is now two steps of about 38 px, timing unchanged at 730 ms and contact still on frame 8."
+    },
+    {
+      "direction": "front_l",
+      "action": "Sword",
+      "cellId": "front_l/Sword",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/frontal-inbetween/front_l-sword/clip.json",
+      "clipSha256": "a0697d1a376f7b76728b292f47b909a03e887cc31400b547c7cbc2a12d83069a",
+      "frameCount": 14,
+      "totalDurationMs": 730,
+      "visibleInterval": [
+        2,
+        11
+      ],
+      "provenance": "combat-recovery-v8/frontal-inbetween/front_l-sword",
+      "notes": "Armpit junction re-lit on 70 px, zero RGB decreased, plus the authored apex descent frame."
+    },
+    {
+      "direction": "front_r",
+      "action": "Axe",
+      "cellId": "front_r/Axe",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v7/frontal/front_r-Axe-full/clip.json",
+      "clipSha256": "e4775101e34fd569d5a57b262e8de03bc61ed0269aa234ce20210da199861e30",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "provenance": "combat-recovery-v7/frontal/front_r-Axe-full",
+      "notes": "Protected V7 frontal carried forward unchanged."
+    },
+    {
+      "direction": "front_l",
+      "action": "Axe",
+      "cellId": "front_l/Axe",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v7/frontal/front_l-Axe-full/clip.json",
+      "clipSha256": "865cf0bf7af862b1d7243aa785cd485e2d07aaf03c59ee7dd49decef0cbee04b",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "provenance": "combat-recovery-v7/frontal/front_l-Axe-full",
+      "notes": "Protected V7 frontal carried forward unchanged."
+    },
+    {
+      "direction": "back_r",
+      "action": "Sword",
+      "cellId": "back_r/Sword",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_r-sword/clip.json",
+      "clipSha256": "25f40ef43d276cb93900c4625c92d5c19303700dfb9b8eb6c819ee0fe9723fe4",
+      "frameCount": 14,
+      "totalDurationMs": 730,
+      "visibleInterval": [
+        2,
+        11
+      ],
+      "provenance": "combat-recovery-v8/rear-arc/back_r-sword",
+      "notes": "Rebuilt without duplicated armed frames, then given the same authored apex descent frame so all four Sword directions share one cadence and one arc."
+    },
+    {
+      "direction": "back_r",
+      "action": "Axe",
+      "cellId": "back_r/Axe",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/rear/back_r-axe/clip.json",
+      "clipSha256": "cf746d6d48009d4b685b314d9213921df93e69d77c5bc1635e997095d955a04b",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "provenance": "combat-recovery-v8/rear/back_r-axe",
+      "notes": "Rebased on the frontal timing grid; corrected glove grip preserved."
+    },
+    {
+      "direction": "back_l",
+      "action": "Sword",
+      "cellId": "back_l/Sword",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/rear-arc/back_l-sword/clip.json",
+      "clipSha256": "94958fcc798b5d03ec720dc6c217dc2ab34afc83c36c9726cfc1cbe292420ac0",
+      "frameCount": 14,
+      "totalDurationMs": 730,
+      "visibleInterval": [
+        2,
+        11
+      ],
+      "provenance": "combat-recovery-v8/rear-arc/back_l-sword",
+      "notes": "Manual reconstruction rebased on the shared grid, with the authored apex descent frame."
+    },
+    {
+      "direction": "back_l",
+      "action": "Axe",
+      "cellId": "back_l/Axe",
+      "clipJson": "characters/orc-v1/source/combat-recovery-v8/rear/back_l-axe/clip.json",
+      "clipSha256": "daefe566ff11db6cc5d06fc8dd99db720b4dde81a4155e03f0448b441b111bce",
+      "frameCount": 12,
+      "totalDurationMs": 1005,
+      "visibleInterval": [
+        2,
+        8
+      ],
+      "provenance": "combat-recovery-v8/rear/back_l-axe",
+      "notes": "Manual reconstruction rebased on the shared grid, with the authored apex descent frame."
+    }
+  ]
+}

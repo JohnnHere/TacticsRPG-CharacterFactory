@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "BODY_BACK_L_SWORD_FULL_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatusUnchanged": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Sword",
+  "scope": "Complete body-only sword slash cycle, empty-handed layers-off",
+  "clip": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/clip.json",
+    "sha256": "6da82bacaeb1b2ebea97adddc62ddc632f0bcf8eb099f11aa3232b6bdf25555f"
+  },
+  "master": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/body256.aseprite",
+    "sha256": "05e91689987f94197a6f3999a0bc25730cf6638a03f7ea7dd474b98aa1a70a09"
+  },
+  "nativeMaster": {
+    "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/native128.aseprite",
+    "sha256": "823cce35bbabaab67f0cb98ee074863cd70226effa81fe9ec109a793e6a02fdf"
+  },
+  "frameCount": 12,
+  "totalDurationMs": 730,
+  "acceptedKeyReuse": [
+    {
+      "frameIndex": 3,
+      "keyName": "01-hoist",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/01-native.png",
+        "sha256": "4d0063ba3ec21af78fb490ff4f80c48ec71f5663316c9afd6fa60c4689884096"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/native/03.png",
+        "sha256": "4d0063ba3ec21af78fb490ff4f80c48ec71f5663316c9afd6fa60c4689884096"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 4,
+      "keyName": "02-apex",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/02-native.png",
+        "sha256": "206a297a862278cc21649f8613199cc304d58ec1b771c97c652b09c57fb40f30"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/native/04.png",
+        "sha256": "206a297a862278cc21649f8613199cc304d58ec1b771c97c652b09c57fb40f30"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    },
+    {
+      "frameIndex": 7,
+      "keyName": "03-impact",
+      "source": {
+        "path": "experiments/main-orc-combat-rescue-v5/body-specialist/back_l-Sword-keys/03-native.png",
+        "sha256": "bc3f5c1102377ffeba631dfef93d843bf1c12d431f4b016286c1c2a7bad147f1"
+      },
+      "export": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/final-cycles/back_l-Sword-full/native/07.png",
+        "sha256": "bc3f5c1102377ffeba631dfef93d843bf1c12d431f4b016286c1c2a7bad147f1"
+      },
+      "pixelExact": true,
+      "byteExact": true
+    }
+  ],
+  "generationAccounting": {
+    "jobs": [
+      {
+        "tool": "animate_image",
+        "jobId": "3e835e9c-673f-4f9d-a412-bf91a5de7edd",
+        "segment": "entry",
+        "cost": 1.0,
+        "seed": 310201
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "e11da933-c68b-4fbb-9942-0270c16a564a",
+        "segment": "descent",
+        "cost": 1.0,
+        "seed": 310202
+      },
+      {
+        "tool": "animate_image",
+        "jobId": "e976e860-6873-4dec-a119-0268b15613cf",
+        "segment": "recovery",
+        "cost": 1.0,
+        "seed": 310203
+      }
+    ],
+    "generationsCharged": 3.0
+  }
+}

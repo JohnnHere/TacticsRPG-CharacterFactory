@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-recovery-v7-rear-alt",
+  "checkpoint": "V7_BACK_L_APEX_MANUAL_READY",
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_l",
+  "category": "Sword",
+  "pose": "impact",
+  "representativeOnly": true,
+  "frameCount": 1,
+  "durationMs": 80,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "rightGrip": [
+    173,
+    145
+  ],
+  "rotationDeg": 115,
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "weaponVisible": true,
+  "weaponScope": "Single attack pose only; not an Idle/Walk asset",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "creatorApproval": "PENDING_CREATOR",
+  "runtimeImplemented": false,
+  "measurements": {
+    "jointCentersNative": {
+      "shoulder": [
+        83,
+        48
+      ],
+      "elbow": [
+        104,
+        56
+      ],
+      "wrist": [
+        110,
+        75
+      ],
+      "palm": [
+        109,
+        81
+      ],
+      "humerusPx": 22.472,
+      "forearmPx": 19.925,
+      "elbowInteriorDeg": 128.38
+    },
+    "jointCentersComposite": {
+      "shoulder": [
+        147,
+        112
+      ],
+      "elbow": [
+        168,
+        120
+      ],
+      "wrist": [
+        174,
+        139
+      ],
+      "palm": [
+        173,
+        145
+      ]
+    },
+    "skullTopYNative": 14,
+    "bladeTipComposite": [
+      227,
+      169
+    ],
+    "bladeTipNative": [
+      163,
+      105
+    ],
+    "tipAboveSkullPx": -91,
+    "wristAboveShoulderPx": -27,
+    "palmAboveShoulderPx": -33
+  },
+  "provenance": {
+    "method": "Same-view donor forearm/glove translated 1:1; humerus manually reauthored by Lua in Aseprite; inherited torso/legs. Not hand drawing on GUI and not generative production.",
+    "base": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png",
+    "baseSha256": "68c51303ce1f5a7af1b2a3fc9386a1ae001904371919e5f266f5670cdca90c7c",
+    "donor": "characters/orc-v1/source/artistic-reconstruction-v6/rear/back_l-sword/layers/body/07.png",
+    "donorSha256": "68c51303ce1f5a7af1b2a3fc9386a1ae001904371919e5f266f5670cdca90c7c",
+    "donorTranslation": [
+      15,
+      -8
+    ],
+    "script": "experiments/main-orc-combat-recovery-v7/rear-alt/author-impact.lua",
+    "scriptSha256": "b0181bab693bbed4ca4f6f04a80b43a420115b3a0df54d8456e134b86206b58a",
+    "pixelLabCalls": 0,
+    "jointUncertaintyNativePx": 1
+  },
+  "master": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/source/composite.aseprite",
+  "masterSha256": "89f5edaeb9a7e29c0f15f37a5551db3958d329edf77b0019744f5f2e85cfb0e5",
+  "nativeMaster": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/source/native.aseprite",
+  "nativeMasterSha256": "4e7bd506f2b0cafab3d4eca34ece494c12da975004af9ac03cb0134122c88dae",
+  "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/composite.png",
+  "pngSha256": "17a6d16458b8e980e36f369bd994d2c810524cccca153810b37d7864a2649fee",
+  "nativePng": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/native.png",
+  "nativePngSha256": "0a218dc5348b6345493d1fbe00be1cb66c4191d418f8b961905687270a564c03",
+  "layers": {
+    "weaponBack": {
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/layers/weaponBack.png",
+      "sha256": "b7dcb707829fc4fae877abeb609765ea65a44f8180b66c0219fa78bf91b20804"
+    },
+    "body": {
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/layers/body.png",
+      "sha256": "64a667e782240dc2749cd9eda0c1848c8b20ac467a5dec0046719605c9a26444"
+    },
+    "weaponFront": {
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/layers/weaponFront.png",
+      "sha256": "b0354ffd9c50cc7597e12287f3699bf426ce9b0e2c382a5ea9d1d005d2810591"
+    },
+    "handFront": {
+      "png": "characters/orc-v1/source/combat-recovery-v7/rear-alt/impact/layers/handFront.png",
+      "sha256": "b1b200802d328ad3c2749654b1c3e7fef508efd5fb424dfe6b54522e4177bdb9"
+    }
+  },
+  "verification": {
+    "alphaOverMismatchPixels": 0,
+    "nativeBodyMismatchPixels": 0,
+    "mastersSavedReopened": true,
+    "pixelsAndDurationsVerifiedInAseprite": true,
+    "connectedBodyComponents": 1,
+    "weaponPixelsBelowGround": 0,
+    "handOverHandlePixels": 68,
+    "preservedRegions": {
+      "legsTassetsBeltBelow95": true,
+      "oppositeArmAndTorsoLeftOf80": true
+    },
+    "changedBodyPixelCount": 1238,
+    "changedBodyBoundsNative": [
+      80,
+      46,
+      116,
+      93
+    ]
+  }
+}

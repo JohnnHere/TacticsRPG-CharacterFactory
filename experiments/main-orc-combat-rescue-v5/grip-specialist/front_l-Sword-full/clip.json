@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 1,
+  "revision": "main-orc-combat-rescue-v5-grip-specialist-front_l-Sword-full",
+  "id": "basic.sword-slash",
+  "character": "orc-v1",
+  "category": "Sword",
+  "state": "Attack",
+  "direction": "front_l",
+  "frameCount": 13,
+  "durationsMs": [
+    30,
+    65,
+    35,
+    50,
+    45,
+    65,
+    35,
+    35,
+    100,
+    55,
+    80,
+    45,
+    90
+  ],
+  "totalDurationMs": 730,
+  "canvas": [
+    256,
+    256
+  ],
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "groundY": 190,
+  "nativeGroundY": 126,
+  "ppu": 100,
+  "loop": false,
+  "oneShot": true,
+  "terminal": false,
+  "master": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/source/composite.aseprite",
+  "masterSha256": "3efc83c1a17fa45e7f34ea3af985255b2820c924fcfcf76be15095d9dec1e085",
+  "bodyMaster": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/source/body.aseprite",
+  "bodyMasterSha256": "37e4ed5c76e06fb22cc840ce80ad2c531b71ff28141e80fbea4c44de0fba36c2",
+  "nativeMaster": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/source/native.aseprite",
+  "nativeMasterSha256": "38a9865dc23f909bd971b2cadc58c4ad1b9ad6d48b7cfc8533b5d0b41f40789f",
+  "handMaster": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/source/hand.aseprite",
+  "handMasterSha256": "ef3b39734317c7e60fea6be473486efbb366f613061af8f8c4039d20c71815df",
+  "strip": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native-strip.png",
+  "stripSha256": "0e693e1ed2cf3806d37e37f45557d20326fcdff64f88d90edb37b76c82dd63bf",
+  "nativeStrip": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native-strip.png",
+  "nativeStripSha256": "0e693e1ed2cf3806d37e37f45557d20326fcdff64f88d90edb37b76c82dd63bf",
+  "compositeStrip": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/composite-strip.png",
+  "compositeStripSha256": "7c3fb74fbee6f12c70ce0a2ebfff0b2223c96f5a896449a1a9cdf7b4b1929428",
+  "layerOrder": [
+    "weaponBack",
+    "body",
+    "weaponFront",
+    "handFront"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "rest",
+      "durationMs": 30,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/00.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/00.png",
+      "nativeSha256": "4a50582c2987504d1a9b1d5ddc62ed487773b0df8af92a075c163a6bec59fa4f",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/00.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/00.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "phase": "body-preparation",
+      "durationMs": 65,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/01.png",
+      "sha256": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/01.png",
+      "nativeSha256": "60f7f44ac1d2c3b8e91d554b3416b46af44e3f0cfb2af9b22681a81ad1706b3a",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/01.png",
+          "sha256": "e5c0892311d11cf5ef4067fc1ccaa8a4f687b969dd92a27c98e28d828c389e56"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/01.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "phase": "establish-grip",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        152,
+        130
+      ],
+      "rotationDeg": 40,
+      "unwrappedAngleDeg": -320,
+      "handFrontPixels": 21,
+      "weaponBbox": [
+        143,
+        85,
+        191,
+        141
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/02.png",
+      "sha256": "bc4809a8da023316d43e53e9cc5e2474658ad3998d7a9a8a0f89fe9dbb04c6ed",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/02.png",
+      "nativeSha256": "1670a6f777eed6f93cc7cf3840aab053946294ed8728dcd8a508656e552206d7",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/02.png",
+          "sha256": "01ed1d264bc4bc8d3c482a54a42bff0c97ef85257de386c1ac6dfc792d23aa6c"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/02.png",
+          "sha256": "3b87642b53627eae5c4bfe4455ed8df12ff71c609fedde66399bf53e9e2fa566"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/02.png",
+          "sha256": "571afa8fda7a04a2a532d5bdaa868cb057c2ba724d6ea6cc5ea8b527dd00ddaf"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/02.png",
+          "sha256": "a54fddf7739a04c1c267e08933d1b532fa8c07f974bc555949e88a0ab2db9992"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "phase": "anticipation",
+      "durationMs": 50,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        165,
+        119
+      ],
+      "rotationDeg": 20,
+      "unwrappedAngleDeg": -340,
+      "handFrontPixels": 35,
+      "weaponBbox": [
+        158,
+        63,
+        187,
+        131
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/03.png",
+      "sha256": "e2fb62775e2e6d94e468cb9a7d679cc300e79bef13436925d0c0165c3f207024",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/03.png",
+      "nativeSha256": "b0927ba35447a31dbfcf335fc78a048ea3df56fc8d1bb9084ae2678a86044b6a",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/03.png",
+          "sha256": "c24bee333c741ee9324a053b62d66bca0df84cd1f75d104adde106bcb8175bf9"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/03.png",
+          "sha256": "c33f3eb5768b7735615acbb27f184ca355f42ad8f8f59663bcf24efe0149d061"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/03.png",
+          "sha256": "b3f495d8b10878aa4d3f18bd178ab4212fdf8168dca7a558bde852356d62483f"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/03.png",
+          "sha256": "a157a882cc66291c0bd5f93e492d627bcd6810c904316d17a66ce407813d6499"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "phase": "coil-behind",
+      "durationMs": 45,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        157,
+        100
+      ],
+      "rotationDeg": 10,
+      "unwrappedAngleDeg": -350,
+      "handFrontPixels": 43,
+      "weaponBbox": [
+        147,
+        42,
+        172,
+        112
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/04.png",
+      "sha256": "f3b92e5d7dd7bb31f97967d52cfbe215d2de0f813954ea54fadcd07d05d01440",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/04.png",
+      "nativeSha256": "88d344641d14be138d66c2e1c38eab51271d6bc99a83ad470f04e1236e629bd2",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/04.png",
+          "sha256": "729d66711364736a7cdeedaafb6dfd6415c4f4cff8db4d76d9d5c4e9a816697b"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/04.png",
+          "sha256": "41c1da157633087d7155354170ae3eb401cb6b5d96af9eacafcb3bc9024fd3bb"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/04.png",
+          "sha256": "6ebe4abf900a39679cdfe7a028e33b53031e1cd74c706c8db9afa24717cfd5b7"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/04.png",
+          "sha256": "ef3307e2e6a8c40bb6c1062b43ccad58b9bbb9ce73a1452eca1d18644b609196"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "phase": "apex-hold",
+      "durationMs": 65,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        157,
+        89
+      ],
+      "rotationDeg": 0,
+      "unwrappedAngleDeg": -360,
+      "handFrontPixels": 41,
+      "weaponBbox": [
+        145,
+        30,
+        170,
+        101
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/05.png",
+      "sha256": "0458abcd420f98e59edd53992ec7ce12cb19a14e9ec4592e9390630045828552",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/05.png",
+      "nativeSha256": "de237a51e74632a64922530fa79862e035988520a37ff044ea516381fc7631fd",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/05.png",
+          "sha256": "97344acdad49caa3898c4c011d0249637fcc7795d2eb53e1fa2707e8134409f9"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/05.png",
+          "sha256": "5d123f03de09c36f558cf5c3f154cd5bc4ea07f882a11b7eff92f10b1e81fbf7"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/05.png",
+          "sha256": "f35d889d8fbcec0b6c13454f64b9dee518790d3f08a2188823271c74e47d3f6b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/05.png",
+          "sha256": "57e7c449e6f7dabd58b689dbb176eabacd25557794387677abba0afaf6ccec20"
+        }
+      }
+    },
+    {
+      "index": 6,
+      "phase": "slash-release",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        100,
+        114
+      ],
+      "rotationDeg": 328,
+      "unwrappedAngleDeg": -392,
+      "handFrontPixels": 33,
+      "weaponBbox": [
+        69,
+        64,
+        109,
+        125
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/06.png",
+      "sha256": "b7d4ce5373c5d11bdadfe24de7a5ab6c0742899a19e4fde2e65a53923a42a9a2",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/06.png",
+      "nativeSha256": "44fec8d0d7f5da14ed65e166cb147d0e6b41ca449651ba93802aaba6d8f6620f",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/06.png",
+          "sha256": "e067d89826ee6f45df238623a3ab7ff64ff72559d869e32d7717e791f947f445"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/06.png",
+          "sha256": "8ae561e2170b7faa55a6dbe4adcec81ceb926fc876417c1400cbfbe8f852ab2e"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/06.png",
+          "sha256": "29e7c8dd6367b07be24b11a394e240d754d3e3962b6da08ae19b597552347654"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/06.png",
+          "sha256": "6507ea8a8cf05c9307275dc6516588d012c6ca022387b4a4d082939874d004bd"
+        }
+      }
+    },
+    {
+      "index": 7,
+      "phase": "contact",
+      "durationMs": 35,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        97,
+        132
+      ],
+      "rotationDeg": 280,
+      "unwrappedAngleDeg": -440,
+      "handFrontPixels": 26,
+      "weaponBbox": [
+        39,
+        117,
+        109,
+        142
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/07.png",
+      "sha256": "b61616f661d838940797603981e0548820cd1968e2c38e5e8c4720fb115f0d42",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/07.png",
+      "nativeSha256": "6afd1075fb340bd6c1395e9f44aa56876d7bd5af57eec4b6c056a5be58f4d5d3",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/07.png",
+          "sha256": "1aeaf2563f0db0f6669f4b702b92e59c593daf2448849bb532eef3fc38ecbbd5"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/07.png",
+          "sha256": "8e356524ccaea706f7fa33f5a8a0cfdc90ee5b1bd943ba6c636dd30ba7ce25df"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/07.png",
+          "sha256": "bf385095b5716ff98287694be1e954d634f8e038d68329dd9634f2469b4f6ca4"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/07.png",
+          "sha256": "ae528d3c899819067978d785fb54e115c6bc938b96273a66e364e46372c7856c"
+        }
+      }
+    },
+    {
+      "index": 8,
+      "phase": "follow-through",
+      "durationMs": 100,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        96,
+        148
+      ],
+      "rotationDeg": 232,
+      "unwrappedAngleDeg": -488,
+      "handFrontPixels": 23,
+      "weaponBbox": [
+        49,
+        139,
+        106,
+        185
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/08.png",
+      "sha256": "1887a43434a178a654a00840d464c7944319a02ce9d03c1c11cc598ac782cdad",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/08.png",
+      "nativeSha256": "8572ad452072c78e536e8c7196b1ebae8948fd758d4bd13813d4134b3568bd23",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/08.png",
+          "sha256": "aafdb782359df736582c566230212e071e260b2618fd17c558a4f88ab7f91c52"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/08.png",
+          "sha256": "82d100e47721770970acc45fa92b2d575815e35f9f3fa5f84c776a4e0283b4df"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/08.png",
+          "sha256": "559b0663c8efc2ab124a3b8279a3d87f38565ded9ccdc462a2459ca63937258b"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/08.png",
+          "sha256": "64c8994ea7005ce8c659fa4d80f1b0f0f2dcfaa0adca3d79c9f22868ef04c1f1"
+        }
+      }
+    },
+    {
+      "index": 9,
+      "phase": "recoil",
+      "durationMs": 55,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        121,
+        147
+      ],
+      "rotationDeg": 242,
+      "unwrappedAngleDeg": -478,
+      "handFrontPixels": 32,
+      "weaponBbox": [
+        68,
+        139,
+        132,
+        175
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/09.png",
+      "sha256": "e3f5fa695dcd43741e58bf35cc921c35eeeb707eacf33cb8eb01cd186876b55f",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/09.png",
+      "nativeSha256": "6fee6cc5721e6c855a19222340c9f6357d513fa675f1d512d9392b8d45a452d0",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/09.png",
+          "sha256": "8bcdfa50380a69bfb49d55433852be057d67bd636002f8477b9ab1987ac30a32"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/09.png",
+          "sha256": "92f16071c2f4f64e2ebeadf49e8c2a500053acceaabcab17a25ef3b8e23e40ae"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/09.png",
+          "sha256": "5869b943ef45938842f83e7ada45c39ac848629016aad62d1f542dc2b4f7c027"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/09.png",
+          "sha256": "8f99cd91ca09a9bba0049954139d17bd67b5e7fd4736b8d50a206530d6317fde"
+        }
+      }
+    },
+    {
+      "index": 10,
+      "phase": "settle-grip",
+      "durationMs": 80,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": true,
+      "grip": [
+        145,
+        150
+      ],
+      "rotationDeg": 260,
+      "unwrappedAngleDeg": -460,
+      "handFrontPixels": 30,
+      "weaponBbox": [
+        87,
+        139,
+        157,
+        164
+      ],
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/10.png",
+      "sha256": "8f469103aada61fd468fc11338436ad4cffda1b6738ca4877fbab2ac05215f3f",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/10.png",
+      "nativeSha256": "c936bdb9c89dbbe76205cf500964076bfb69a905f995bba1c7b059687bfb0703",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "Individually traced genuine source-glove pixels; zero body modification; handle-enclosing natural grip",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/10.png",
+          "sha256": "4388d55e303a46d0cb7b8ff4ea28c583b5cef28ce8c9986b0f41908710c549d6"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/10.png",
+          "sha256": "17c286d95d8eeaa385f1b1f0344da82991cc00e7cb4a7db2aff2e4c27ca14ce0"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/10.png",
+          "sha256": "f12d878cb56d8098973813af50c29cbe93373e7033026510333fc83d7c3b6c16"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/10.png",
+          "sha256": "dbaa04bb97e53cca59444015a21e2c5bb0b2a6474bfebd3cfb3c1608f3828461"
+        }
+      }
+    },
+    {
+      "index": 11,
+      "phase": "release-grip",
+      "durationMs": 45,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/11.png",
+      "sha256": "deb5a6c55af024de11e11a59ddd75593c86bfb83347c32f6db5467c91eade2a7",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/11.png",
+      "nativeSha256": "5fdaec1af028989412fc4caa366567c83a823f0a00306d8e1707ee44187d11db",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/11.png",
+          "sha256": "deb5a6c55af024de11e11a59ddd75593c86bfb83347c32f6db5467c91eade2a7"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/11.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    },
+    {
+      "index": 12,
+      "phase": "return-to-guard",
+      "durationMs": 90,
+      "bodyRgbaDelta": 0,
+      "weaponVisible": false,
+      "grip": null,
+      "rotationDeg": null,
+      "unwrappedAngleDeg": null,
+      "handFrontPixels": 0,
+      "weaponBbox": null,
+      "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/12.png",
+      "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1",
+      "nativePng": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/native/12.png",
+      "nativeSha256": "4a50582c2987504d1a9b1d5ddc62ed487773b0df8af92a075c163a6bec59fa4f",
+      "scale": 1,
+      "flipBit": false,
+      "handSource": "No overlay outsideAttack",
+      "layers": {
+        "weaponBack": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponBack/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "body": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/body/12.png",
+          "sha256": "ff130f2072bf1d81398e3cd7c9c0ee1a84e4381f69dbc0ecea664d84691f1dc1"
+        },
+        "weaponFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/weaponFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        },
+        "handFront": {
+          "png": "characters/orc-v1/source/combat-rescue-v5/grip-specialist/front_l-Sword-full/layers/handFront/12.png",
+          "sha256": "3c6c50f94ab35e9f96c772731fe6b7950048179bc81b8ab0396cc1edbde89163"
+        }
+      }
+    }
+  ],
+  "weapon": {
+    "id": "recruit-sword",
+    "name": "Espada do Recruta",
+    "grip": [
+      48,
+      66
+    ],
+    "canvas": [
+      96,
+      96
+    ],
+    "sprite": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.png",
+    "master": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "spriteSha256": "2ea4c436793d7ad004e6aedbd396a4d2690c514561b8250a58ccf77945bae1ae",
+    "masterSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "definition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+    "source": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/recruit-sword.aseprite",
+    "sourceSha256": "e0e4179d9c5717a5dbfe3af183cc30adc71675353a43465a6ca14a300d5d17a2",
+    "scale": 1
+  },
+  "weaponDefinition": "characters/orc-v1/source/combat-rescue-v5/combat/weapons/Sword/weapon.json",
+  "visibilityPolicy": "attack-only-v1",
+  "visibleInterval": [
+    2,
+    10
+  ],
+  "hideAfterAction": true,
+  "weaponDepthPolicy": "Grip leather v60..70 behind body; blade/guard/pommel front; per-frame original glove in handFront",
+  "contactEvent": {
+    "frame": 7,
+    "timeMs": 325,
+    "status": "CANDIDATE_VISUAL_ONLY",
+    "appliesDamage": false
+  },
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "artisticApproval": "PENDING_CREATOR",
+  "eligibleForIntegration": false,
+  "checkpoint": "GRIP_FRONT_L_SWORD_FULL_READY",
+  "fullClipIndependentQA": "PENDING_ROOT_NO_COPILOT",
+  "sourceParentClip": "C:/Users/João Orlando/Documents/Projetos Unity/TacticsRPG-CharacterFactory/characters/orc-v1/source/combat-rescue-v5/combat/front_l/Sword/clip.json",
+  "sourceParentClipSha256": "f50e7a4dd1617cfdb2d61ef2b6b79b20d63c384cd6fba251448910fc35b4bed8",
+  "provenance": {
+    "authoring": "Aseprite Lua only. Exact frontal body poses and timings 100% preserved (0 RGBA delta); weapon rendered with exact trigonometric transforms; genuine glove pixels traced per-frame into handFront; handle leather in weaponBack; attack-only visibility strictly enforced.",
+    "script": "experiments/main-orc-combat-rescue-v5/grip-specialist/front-three/author.lua",
+    "scriptSha256": "f10601e5475a286266b2ddd19ade3c0ed286730e1e64520c636cc33feb214363",
+    "anatomy": "experiments/main-orc-combat-rescue-v5/grip-specialist/front-three/anatomy-plan.json",
+    "bodyRgbaChanged": false,
+    "timingChanged": false,
+    "newPixelLabCalls": 0,
+    "costUsd": 0.0,
+    "runtimeImplemented": false
+  },
+  "reuseAssessment": {
+    "body": "REUSE_DIRECT exact 13 body poses and timings from approved frontal baseline",
+    "item": "REUSE_DIRECT exact independent Sword (recruit-sword)",
+    "remainingBindings": "REUSE_ADAPTED per-pose observed genuine glove and wrist orientation",
+    "risk": "Perceptual observation at native/game scale and normal playback speed required by independent QA before creator review."
+  }
+}

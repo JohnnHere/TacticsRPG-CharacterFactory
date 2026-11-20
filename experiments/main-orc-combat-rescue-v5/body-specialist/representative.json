@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "character": "orc-v1",
+  "identity": "Verde Warcraft",
+  "direction": "back_r",
+  "category": "Axe",
+  "scope": "three structural body keys only, empty-handed layers-off",
+  "status": "BODY_AXE_KEYS_READY",
+  "technicalStatus": "TECHNICALLY_COMPLETE",
+  "artisticStatus": "VISUAL_REVIEW_REQUIRED",
+  "globalArtisticStatus": "ARTISTIC_REVISION_REQUIRED",
+  "creatorStatus": "PENDING_CREATOR",
+  "propagationAllowed": false,
+  "qaOwner": "Root: existing independent Grok QA",
+  "nativeCanvas": [
+    128,
+    128
+  ],
+  "canvas": [
+    256,
+    256
+  ],
+  "bodyOffset": [
+    64,
+    64
+  ],
+  "nativeGroundY": 126,
+  "groundY": 190,
+  "keys": [
+    {
+      "key": "01-hoist",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.aseprite",
+        "sha256": "224a4fb2b05d388613eb6928d3f05e5e4cadb1098000bb966959cdf7f6ec4f97"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.aseprite",
+        "sha256": "0ff2da67d869c099f49f37903da130aecebf9fccc4ca9d715975b6254cac11f4"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-native.png",
+        "sha256": "d8378297cbba9a41ee7c47262d266acf92477b53ab1c02bc6b62d9e8f9cf1490"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/01-hoist-composite.png",
+        "sha256": "f087da033136cf4fae6276ee3901fcbc44bc82c75b3eddd182f4236af5e50c99"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          35
+        ],
+        "rightElbow": [
+          104,
+          25
+        ],
+        "rightWrist": [
+          89,
+          14
+        ],
+        "rightPalm": [
+          83,
+          10
+        ],
+        "leftShoulder": [
+          43,
+          36
+        ],
+        "leftElbow": [
+          32,
+          57
+        ],
+        "leftWrist": [
+          32,
+          72
+        ],
+        "pelvis": [
+          66,
+          80
+        ],
+        "rightKnee": [
+          85,
+          101
+        ],
+        "leftKnee": [
+          47,
+          101
+        ],
+        "rightSupport": [
+          94,
+          126
+        ],
+        "leftSupport": [
+          43,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Right elbow is flexed above the shoulder, the forearm folds back over the occipital skull and the empty fist clears the crown. Left arm remains low as a counterweight. Pelvis is loaded between planted boots."
+    },
+    {
+      "key": "02-apex",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.aseprite",
+        "sha256": "b9a8baa117943a809008be5575c6097f3266dcbe2c530ca619acaaca10c4e2c9"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.aseprite",
+        "sha256": "625f1cd281ed500d331d922c9e93c5f686f1dd56763ddd0f1eab982c72e79bc6"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-native.png",
+        "sha256": "3cbfe50f246621f6d7222fd80fb4b4567c11bc2f22fe72968e7b027f4c76e3ba"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/02-apex-composite.png",
+        "sha256": "ba579ee42f0d6e0b5ea87c89626f547691236fdf5a5e028edb46cdc60d24c87d"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          38
+        ],
+        "rightElbow": [
+          99,
+          22
+        ],
+        "rightWrist": [
+          83,
+          13
+        ],
+        "rightPalm": [
+          77,
+          8
+        ],
+        "leftShoulder": [
+          42,
+          40
+        ],
+        "leftElbow": [
+          26,
+          60
+        ],
+        "leftWrist": [
+          24,
+          73
+        ],
+        "pelvis": [
+          66,
+          82
+        ],
+        "rightKnee": [
+          83,
+          103
+        ],
+        "leftKnee": [
+          45,
+          102
+        ],
+        "rightSupport": [
+          92,
+          126
+        ],
+        "leftSupport": [
+          39,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Right humerus rises beside the head; elbow-to-wrist returns inward over the crown rather than extending sideways. Closed fist is fully enclosed by its contour. Left elbow and fist open away from the hoist pose; knees remain flexed."
+    },
+    {
+      "key": "03-impact",
+      "nativeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-native.aseprite",
+        "sha256": "6ec714e1e0d7a8777e3ce4577079063c6ef938d06c8cc254d358ce939a371dd7"
+      },
+      "compositeMaster": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-composite.aseprite",
+        "sha256": "72da43d8441da990724a0413ca8f0655acd63ffd1d1b70194ac244f5da193372"
+      },
+      "nativeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-native.png",
+        "sha256": "a6317e94aa2e50aaaa23bdc8bd2e0483f27bd59201d1d2ec91e3aadb2197c5c5"
+      },
+      "compositeExport": {
+        "path": "characters/orc-v1/source/combat-rescue-v5/body-specialist/03-impact-composite.png",
+        "sha256": "aecd9d4580a9d476fba3ce4f688c11835106bd80536201c20cd8f9a16f0886d3"
+      },
+      "durationMs": 160,
+      "anatomyNative128": {
+        "rightShoulder": [
+          83,
+          51
+        ],
+        "rightElbow": [
+          96,
+          64
+        ],
+        "rightWrist": [
+          95,
+          77
+        ],
+        "rightPalm": [
+          94,
+          82
+        ],
+        "leftShoulder": [
+          41,
+          51
+        ],
+        "leftElbow": [
+          26,
+          69
+        ],
+        "leftWrist": [
+          25,
+          81
+        ],
+        "pelvis": [
+          65,
+          86
+        ],
+        "rightKnee": [
+          86,
+          104
+        ],
+        "leftKnee": [
+          44,
+          105
+        ],
+        "rightSupport": [
+          95,
+          126
+        ],
+        "leftSupport": [
+          35,
+          126
+        ]
+      },
+      "annotationMethod": "Manual visual centers on final exported pixels, approximate +/- 2px; not skeleton targets or a motion quality score.",
+      "visualObservation": "Dorsal plate tilts forward, occipital skull follows the shoulder girdle down and forward, right shoulder falls into the blow. Elbow and fist descend beside/in front of the torso instead of sweeping sideways at head height. Pelvis sinks, knees bend and feet widen; left fist drops as counterbalance."
+    }
+  ],
+  "weaponOverlays": false,
+  "gripStatus": "Not judged or implemented here; closed empty fists for grip specialist",
+  "authoring": {
+    "generator": "PixelLab MCP animate_with_skeleton_v3 then edit_image on hoist/apex",
+    "master": "Aseprite batch Lua import and local finishing",
+    "pixelLabModel": "server-selected, no exposed model selector",
+    "profile": "tmp/aseprite-body-specialist-profile",
+    "externalRasterEdits": false,
+    "diagnosticZooms": "Pillow nearest-neighbor enlargement for inspection only; never imported as production art",
+    "localEdits": [
+      "Whole sprite registration +2px Y on hoist/apex; impact unchanged; no scaling, rotation, limb transforms or collage",
+      "Apex: four outline pixels x77..80,y1 restored in Aseprite after registration",
+      "Hoist: isolated white pixel x26,y61 replaced with dark armor color in Aseprite"
+    ]
+  },
+  "sourceInput": {
+    "path": "experiments/main-orc-combat-rescue-v5/body-specialist/canonical-input.png",
+    "sha256": "df115d981fd914fae0102b91ecd1a312d255b58e62cb418ac827898ae257866d"
+  },
+  "sourceInputOrigin": "Decoded byte-for-byte first_frame_base64 from the previous Argon request; this is the unchanged V1 base, not the rejected generated poses.",
+  "sourceRequest": {
+    "path": "experiments/main-orc-combat-rescue-v5/combat/qa5-repair1/requests/req_back_r_axe_qa5_v1.json",
+    "sha256": "544fcce1ebb14444affeee6b342e8af036af617af98d96e8596b65132224497f"
+  },
+  "generationAccounting": {
+    "jobs": [
+      {
+        "id": "e1b57e4c-e707-4e12-ace7-0745bd9bbb44",
+        "tool": "animate_with_skeleton_v3",
+        "charged": 2,
+        "outputs": 3,
+        "used": "impact; hoist/apex refined because top edge clipped"
+      },
+      {
+        "id": "74f03969-32ca-4150-9778-628df917f790",
+        "tool": "edit_image",
+        "charged": 10,
+        "outputs": 2,
+        "used": "hoist and apex"
+      }
+    ],
+    "totalCharged": 12,
+    "balanceBefore": 1382.7,
+    "balanceAfterMeasured": 1370.7,
+    "receipts": [
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\poll-edit-02.json",
+      "experiments\\main-orc-combat-rescue-v5\\body-specialist\\balance-final.json"
+    ],
+    "validationRejectedBeforeQueue": "First skeleton request action exceeded 100 chars; validation error, no job ID or charge reported."
+  },
+  "limits": [
+    "These are separated keys, not an interpolated clip. Timing is a 160ms inspection hold per key, not final choreography.",
+    "Near-top apex has 1 transparent pixel above restored fist outline; inspect silhouette at native size.",
+    "No weapon trajectory or final grip is claimed. Empty hand and arm chain remain visible.",
+    "Only producer inspection performed here; independent verdict belongs to existing Grok QA under Root."
+  ]
+}

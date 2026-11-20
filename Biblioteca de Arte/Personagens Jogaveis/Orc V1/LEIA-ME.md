@@ -1,137 +1,306 @@
-# Orc principal — resgate dos ataques de uma mão
+# Biblioteca completa de animações do Orc principal — revisão atual
 
-Pedido vigente do criador, 2026-10-25. **Candidatas locais entregues para revisão artística.** Este documento substitui a política de armas permanentemente visíveis dos lotes v1/v2. Não confundir a versão do experimento de ataque com o antigo Orc V4: o personagem atual é `characters/orc-v1`, pele Verde Warcraft, identidade selecionada pelo criador para futura integração. V4 está descartada. Pedido original preservado em `experiments/main-orc-weapon-rescue-v3/creator-task.md`.
+2026-10-25 · `main-orc-complete-v1` · **candidato local completo (4 direções × 7 ações), aprovação artística do criador pendente (`PENDING_CREATOR`)**.
 
-## A. Produção atual, fontes e auditoria
+Expande o Orc principal selecionado (**`orc-v1` / Verde Warcraft**, derivado de `orc-pixellab-05` com `green-skin-v3`) para a biblioteca completa de 4 direções (`front_r`, `front_l`, `back_r`, `back_l`) e 7 ações (`Idle`, `Walk`, `Unarmed`, `Sword Attack`, `Axe Attack`, `Hit`, `Defeat`), preservando integralmente o candidato de entrada `main-orc-onehanded-entry-v1` e a seleção ativa `main-orc-onehanded-v3` (`characters/orc-v1/source/equipment-current.json`). O antigo Orc V4 (`orc-01`) permanece descartado.
 
-Conceito atual: `characters/orc-v1/concepts/concept-selected.png`; mestre `source/aseprite/concept-selected.aseprite`. Idle e Walk: `source/studies/<Idle|Walk>/clip.json`, com mestres `source/aseprite/idle-study.aseprite` e `walk-study.aseprite`. Idle5/2,2s é o padrão fixo aprovado; Walk16/1,28s é a locomoção atual. Não foram refeitos para esta tarefa.
+- **Mestres `.aseprite` verificados via `exportAseprite` (`75 jobs / 599 frames PASS`):**
+  - Nativo `128×128` (`groundY: 126`, sem armas): `characters/orc-v1/source/aseprite/complete-v1/native/` → exportados em `characters/orc-v1/sprites/` (`749 PASS, 0 FAIL` em `characters/orc-v1/reports/validation.json`) e suplemento de ação desarmada em `characters/orc-v1/source/actions/basic-unarmed/v1/`.
+  - Composto `256×256` (`bodyOffset: [64, 64]`, `groundY: 190`): `characters/orc-v1/source/aseprite/complete-v1/composite/<dir>/` → exportados com camadas (`weaponBack -> body -> weaponFront -> handFront`), tiras horizontais (`native-strip.png`), `clip.json` e `profile.json` em `characters/orc-v1/source/complete-v1/<dir>/`.
+- **Matriz de cobertura legível por máquina:** `reports/orc-v1-animation-coverage-v1.json` (`28/28` células `COMPLETE_VERIFIED`, `0` faltantes).
+- **Pacote Unity-ready reprodutível (staging local):** `dist/orc-v1/complete-v1/` contendo `Assets/Resources/Characters/orc-v1/unity-handoff-contract.json`, sprites nativos `128×128`, compostos `256×256`, suplemento `Actions/basic-unarmed/v1/` e assets independentes de armas (`Weapons/recruit-sword/`, `Weapons/militia-axe/`). Nenhuma modificação foi realizada em `../TacticsRPG`.
+- **Estúdios interativos atualizados:** `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html` e `Biblioteca de Arte/Estudos Comparativos/Orc principal - Biblioteca completa/index.html` (seleção de direção e ação, passo quadro a quadro, loop, velocidade, zoom e transições `Idle → Attack → Idle`, `Walk → Idle`, `Hit → Idle`, `Defeat → Pose Terminal`).
 
-Na abertura desta tarefa, o ponteiro equipment-current e a configuração apontavam para `source/equipment-v2/`, mas `character.json.equipmentPreview` ainda apontava para v1. As armas eram `assets/weapons/<recruit-sword|militia-axe>/source/v2/`, PNGs em sprites/v2 e weapon.json correspondente. Essas fontes e o preview foram auditados antes das novas edições. O `reviews.json` desta ficha está vazio: a seleção de identidade pelo criador não concede gates de quatro vistas ou runtime. Os ataques v1 e v2 estão rejeitados artisticamente.
+## Recuperação artística do conjunto completo
 
-Evidência da auditoria: `experiments/main-orc-weapon-rescue-v3/audit.json`; Git inicial no mesmo diretório; proteção SHA256 de 9669 PNGs/mestres anteriores em protected-art.json. Cópia portátil do preview anterior em previous-review/ e metadados anteriores em before-metadata/. Nenhum reset, limpeza destrutiva ou commit foi feito.
+2026-10-25 · mesma revisão `main-orc-complete-v1` · **conjunto em `VISUAL_REVIEW_REQUIRED`; `Hit` em `ARTISTIC_REVISION_REQUIRED`; aprovação do criador `PENDING_CREATOR`**.
 
-## B. Causas confirmadas
+Completude técnica não era o problema: a matriz já fechava 28/28 células `COMPLETE_VERIFIED`, a validação estava em 749 `PASS` / 0 `FAIL` e a QA independente aprovou o pacote em critérios técnicos. O problema era outro, e não aparecia em hash nenhum: **as vistas traseiras eram frontais repintadas, o `Hit` tinha amplitude de respiração e o `Defeat` achatava o corpo em uma tira.** Este passe corrige os três sem promover nada.
 
-| Área | Constatação e consequência |
-|---|---|
-| Arma | Machado v2:45×75px de conteúdo para corpo de cerca de121px; cabeça longa/larga e cabo longo prejudicam leitura de uma mão. Espada:26×82px; guarda/cabo merecem proporção de equipamento inicial. |
-| Corpo | O pedido de esqueleto v2 move apenas o braço direito e mantém tronco, ombros, quadril e pernas fixos. Isso impede que o corpo conduza o golpe. A estabilização de roupa/pernas também não cria mecânica corporal. |
-| Composição | Ângulos pré-escolhidos250→610° completam uma volta. Palma/dedos genéricos rodam com a arma, sem corresponder à anatomia específica de cada pose. Todo o item é rigidamente rotacionado de uma imagem plana; profundidade constante. |
-| Movimento | Espada e machado usam o mesmo corpo e relógio1315ms; não distinguem corte rápido de golpe com peso na cabeça do machado. |
-| Preview | Os testes anteriores demonstraram igualdade entre PNG e canvas. O navegador não explica os defeitos; a correção precisa ocorrer nas fontes, não por transformações no preview. |
-| Continuidade | Handoffs e documentos antigos ainda dizem V4 ativa/896 ativos ou nenhuma seleção. São históricos superados pelo Orc principal atual. Referências a pele cinza/previewv1 na ficha estavam desatualizadas. |
+### Diagnóstico confirmado
 
-## C. Correções e regra canônica de visibilidade
+| Ação/área | Defeito | Evidência |
+|---|---|---|
+| `back_r`, `back_l` | construção frontal com o rosto coberto: faltavam crânio occipital, nuca, gola traseira, canal vertebral, escapulares, cinto traseiro, tassets, tiras poplíteas e calcanhares | inspeção dos quadros; documentado no gate de vista direcional |
+| `Sword`/`Axe` frontais | halo cinza-claro/branco anti-aliased junto à coroa, sem contorno `INK` limpo | 8 pixels quase brancos por job em `front_l` |
+| `Hit` | reação de dano com 3 px de topo de cabeça e 2 px de centróide — indistinguível de respiração | energia de movimento ≈ 1,0× a do `Idle` |
+| `Defeat` | rotação 2D global + achatamento vertical (`vScale = 0.52`) do sprite em pé | altura terminal 112 → **21 px**, largura 82 → 109 |
 
-| Estado | Espada/machado visível |
-|---|---|
-| Idle, Walk, repouso e inspeção livre | Não |
-| Attack | Somente intervalo declarado do golpe |
-| Após Attack | Não; retorno ao Idle sem arma |
-| Hit e Defeat | Não por padrão |
+### O que foi feito
 
-Sem Idle/Walk armados, animações de sacar/embainhar ou inventário visual. A aparição/desaparição nos limites da ação é intencional; enquanto visível, o item acompanha a mesma mão, sem saltos de grip ou escala. Os lotes antigos armados ficam apenas em histórico claramente identificado.
+**Vistas traseiras — reconstrução anatômica completa (`back_r` e `back_l`).** Não é retoque de superfície: crânio occipital verde sem rosto nem presas, nuca e trapézio entre crânio e gola, gola alta traseira aberta para as costas, placa dorsal com canal vertebral articulado e placas escapulares no lugar das peitorais, fecho de cinto/faixa atrás sem o pico esternal frontal e sem ponta abdominal, tassets divididos na traseira com cota de malha caindo atrás, tiras poplíteas e grevas de panturrilha sem poleyn frontal de joelho, calcanhares e bicos das botas angulados para longe. `back_r` (Nordeste) e `back_l` (Noroeste) permanecem vistas distintas em perspectiva de três quartos, oclusão de ombro e luz de cima-esquerda. `front_l` recebeu o mesmo tratamento onde a construção traseira aparecia no contorno. No Aseprite, a autorreparação da coroa e do contorno está em `tools/aseprite/author-main-orc-complete.lua`, com `INK = rgba(12, 15, 18, 255)`.
 
-## Direção da correção
+**Ataques frontais — limpeza de halo e estabilidade da cabeça.** Contorno escuro `INK` `rgb(12, 15, 18)` e borda de pele verde da própria paleta ao redor da coroa; **zero** pixels quase brancos (`min(R,G,B) ≥ 235`) na faixa da cabeça em todas as 8 combinações ataque × direção, contra 8 em cada job `front_l` no build anterior. A trajetória do topo da cabeça não tem reversão isolada acima de 5 px em nenhuma direção.
 
-Preservar face, pele, materiais, armadura e identidade atuais. Poses defeituosas não são intocáveis. Preparação, participação de quadril/tronco/ombro, aceleração, contato legível, seguimento e recuperação são obrigatórios. A mão realmente envolve o cabo com polegar/dedos e ligação plausível ao punho; não basta sobrepor âncoras.
+**`Hit` — reação de impacto blindado.** Os quadros foram redesenhados em todas as direções (6% do canvas alterado por job, com reconstrução de nuca/ombro/placa dorsal), com as cinco fases `impact-onset` 45 ms, `peak-recoil` 95 ms, `stagger-brace` 115 ms, `recovery-rise` 95 ms, `recovery-settle` 100 ms, joelho comprimido e base presa em `groundY`. **Ressalva medida, registrada de propósito:** a silhueta não ganhou amplitude — topo da cabeça continua em 3 px de excursão e o centróide em 2,0 px, contra os pisos de 6 px e 4 px do gate de coreografia. O repaint melhorou o desenho do impacto, não o movimento. Por isso `Hit` fica em `ARTISTIC_REVISION_REQUIRED`, e não em revisão visual: quem decidir o contrário é o criador, com o estúdio aberto.
 
-Dois perfis pequenos de front_r: **sword-slash** e **axe-chop**. O primeiro privilegia corte controlado rápido; o segundo, preparação e recuperação mais deliberadas com peso na cabeça. Nenhuma rotação360°, IK genérica, rig universal ou corpo novo por item. Outra espada compatível reutiliza sword-slash; outro machado compatível reutiliza axe-chop. Cada item registra ponto local de pegada; cada quadro registra pose, grip, orientação, profundidade e visibilidade.
+**`Defeat` — colapso volumétrico em múltiplos estágios.** Cinco estágios nomeados: `fatal-stagger` 70 ms, `knees-buckle` 95 ms, `drop-to-knees` 115 ms, `collapse-impact` 130 ms, `terminal-defeated` 290 ms (700 ms, quadro terminal 4). A rotação global com `vScale = 0.52` está proibida. Medição em `back_r`: altura 115 → 60 px com estágios 115/104/88/72/60 e largura 81 → 98, contra 112 → 21 px e 82 → 109 antes; base presa em `groundY` em todos os quadros, cabeça, pauldron e peito ainda legíveis no chão.
 
-Armas compartilham a linguagem visual do jogo, sem obrigação de copiar paleta ou ornamentação Orc. Mestres independentes e composições em camadas preservam a possibilidade de troca. Qualquer item incompatível com anatomia, cabo, guarda ou silhueta precisa de adaptação e revisão próprias.
+**Preservação do que já funcionava.** `front_r` `Idle`, `Walk`, `Sword Attack` e `Axe Attack` permanecem **byte-idênticos** ao build anterior, assim como a base direcional e as mãos. A revisão não redesenhou a arte frontal aprovada para consertar as costas.
 
-## Revisões seguras de armas
+### Evidência
 
-Mestres novos em `assets/weapons/<id>/source/rescue-v3/`, PNGs em sprites/rescue-v3/. Autoria de retoque por Lua **no Aseprite** sobre fontes v2 preservadas, com peças separadas. Na espada, seis linhas centrais da lâmina e quatro do cabo foram retiradas; guarda estreitada independentemente, sem reduzir a largura da empunhadura. No machado, cabeça/barba e comprimento do cabo foram ajustados separadamente, mantendo largura, curva, textura de madeira/couro e tratamento do ferro. Não foi uma redução global do compósito.
+Build de referência `dist/editor/orc-v1-complete-v1/b178422e1f7fc19f068c`; anterior `…/2595e12a39cc29670933`. 52 dos 75 jobs mudaram; 23 permaneceram idênticos — exatamente as células frontais citadas acima.
 
-Preparação: `tools/prepare-main-orc-rescue.mjs` e `tools/aseprite/prepare-main-orc-rescue.lua`. Referências editáveis de corpo+arma em experiments/main-orc-weapon-rescue-v3/references/. Essas imagens servem para estudar o golpe; não são novos estados de Idle armado.
+| Verificação | Antes | Depois |
+|---|---|---|
+| `Defeat` terminal `back_r` (altura / largura) | 21 px / 109 px | 60 px / 98 px |
+| `Defeat` progressão de altura | 112, 88, 61, 35, 21 | 115, 104, 88, 72, 60 |
+| `Hit` topo da cabeça / centróide | 3 px / 2,0 px | 3 px / 2,0 px |
+| Pixels quase brancos na coroa (8 jobs de ataque) | 8 + 8 em `front_l` | 0 em todos |
+| Vistas traseiras (canvas alterado por job) | — | 5-6% |
+| `front_r` Idle / Walk / Sword / Axe | — | byte-idênticos |
 
-## Gates e escopo
+Duas notas de honestidade, porque ambas já causaram confusão:
 
-Somente dois ataques em front_r, sem propagação a outras vistas, Jobs, roupas ou raças. Nenhuma alteração no projeto Unity, `.meta`, Core, stats, inventário ou sistemas de equipamento. Modelo generativo auxilia poses, mas fontes salvas/edição/exportação são Aseprite. Procedência e chamadas reais estão registradas abaixo com os resultados selecionados. Testes técnicos não comprovam naturalidade; aprovação artística final pertence ao criador.
+1. Os recortes "*before*" em `experiments/main-orc-complete-v1/rejected-before/` são **capturados do build substituído 2595e12a39cc29670933 e distintos da saída atual (b178422e1f7fc19f068c)** — a captura ocorreu depois da reescrita e não serve como antes/depois. O estado anterior real é o build substituído `2595e12a39cc29670933`.
+2. `back_r` e `back_l` têm ~95% de concordância com o espelho uma da outra, e o brilho, embora sempre acima do centro do corpo, varia de -3,3 px a +1,0 px no eixo horizontal entre as vistas. Isso não invalida a reconstrução, mas é justamente o que a inspeção visual do criador precisa confirmar.
 
-## E. Evidências, exports e mestres atuais
+### Status e próximo marco
 
-| Perfil | Quadros / duração | Arma visível | Mecânica proposta |
-|---|---|---|---|
-| `basic.sword-slash` | 8 / 775ms | 1..6, índices começando em0 | Preparação baixa, guarda elevada, tronco/ombro avançam, corte rápido, seguimento e retorno |
-| `basic.axe-chop` | 10 / 1130ms | 1..7 | Preparação mais deliberada, cotovelo/ombro armados, descida com peso, seguimento e assentamento |
+- **Implementado:** reconstrução traseira, limpeza de halo frontal, nova reação `Hit`, colapso `Defeat` em estágios.
+- **Validado tecnicamente:** 28/28 células, 75 jobs / 599 quadros, 749 `PASS` / 0 `FAIL`, 894/894 hashes de `dist`, 525/525 arquivos canônicos preservados, `../TacticsRPG` intocado.
+- **Revisão visual:** pendente; estúdio único com as 28 células e transições.
+- **Revisão artística pendente:** `Hit` (amplitude de 3 px). **Aprovação do criador:** `PENDING_CREATOR`.
 
-O machado ocupa47px de altura em vez de75, com cabeça e cabo reduzidos separadamente. A espada ocupa72px em vez de82, com cabo de uma mão, lâmina/canal e pomo preservados. Não há escala por quadro: os dois assets permanecem nativos, scale1, PPU100. O canvas96×96 inclui margem transparente; não é o tamanho aparente da arma.
+Contrato e lições aplicadas: [`docs/ARTISTIC_QUALITY_GATES.md`](ARTISTIC_QUALITY_GATES.md). Nada aqui autoriza promoção do ponteiro, integração Unity ou reutilização do antigo Orc V4.
 
-Mestres em `characters/orc-v1/source/aseprite/onehanded-rescue-v3/`:
 
-- `sword-attack.aseprite`, `sword-body.aseprite`, `sword-hand-front.aseprite`;
-- `axe-attack.aseprite`, `axe-body.aseprite`, `axe-hand-front.aseprite`;
-- `idle-unarmed.aseprite` e `walk-unarmed.aseprite`, cópias de apresentação registradas, sem alterar os mestres corporais128×128.
+---
 
-PNGs, camadas, folhas, clip.json e profile.json: `characters/orc-v1/source/onehanded-rescue-v3/<Sword|Axe>/Attack/`. Idle/Walk sem arma no mesmo diretório-base. Manifesto: `manifest.json`; ponteiro: `source/equipment-current.json`. Cada perfil tem corpo, dedos, tempos, ângulos, profundidade e visibilidade próprios. A sequência inicia e termina na **pose0 do Idle atual**, exatamente, evitando uma troca para outra pose neutra.
+# Entrada natural de combate — revisão incremental atual
 
-Todos os compósitos usam256×256, corpo nativo128×128 registrado em(64,64), chão de referência190 e PPU100. Sem flip, trim, aumento do corpo ou rotação no navegador. A margem acomoda as armas em arco. A nova roupa não foi congelada sobre um corpo parado; as poses mudam tronco, ombros, quadril e apoio. Solas do pé próximo que atingiram a borda do bruto gerado foram retocadas no Aseprite com o próprio pé aprovado, sem congelar tronco/pernas. Duas limpezas Pro e a limpeza final da guarda/pomo removem armas geradas indevidas da camada corporal.
+2026-10-25 · `main-orc-onehanded-entry-v1` · **candidato local, aprovação artística do criador pendente**.
 
-Os dedos/polegar à frente da empunhadura foram extraídos por contornos da **luva real de cada pose**, sem palma genérica girando com a arma. Camadas: weaponBack → body → weaponFront → handFront. Na preparação há profundidade própria para lâmina/cabeça atrás do corpo, com a região do cabo em primeiro plano. Matching de âncoras não é a avaliação artística; a página mostra os recortes de todas as pegadas.
+Esta revisão parte do último polimento `onehanded-polish-v1`, preservado integralmente. O Orc é **orc-v1 / Verde Warcraft**; o equipamento ativo continua apontando para v3 até decisão explícita de seleção. Não restaurar o antigo Orc V4. O relatório do passe anterior permanece abaixo como histórico de continuidade.
 
-## Preview e comparação
+## Diagnóstico confirmado
 
-Abrir `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`. Contém conceito atual, armas separadas, Idle/Walk sem arma, antes/depois por categoria, poses-chave e closes8× da mão. Controles: pausa, reinício, passo por quadro, repetir, velocidade1×/0,5×/0,25×, zoom nativo1×/2×/3× e fundos de contraste.
+A espada começava com dois quadros baixos quase horizontais (270°), sem preparação corporal antes da aparição. Em seguida a mão saltava de world93,130 para98,89 (cerca de41,30px), com mudança de75° na lâmina. A sobreposição correta da luva não resolvia essa progressão anatômica. No machado, a carga projetada aparecia antes de um gesto claro de preparação do braço. São causas verificadas nos PNGs/perfis; os timestamps do vídeo citados no pedido são relato fornecido pelo criador, não uma nova gravação anexada e inspecionada nesta execução.
 
-O modo inicial mostra Idle → Attack → Idle na candidata. “Comparar somente golpes” inicia os ataques antes/depois juntos, mantendo os tempos reais diferentes. Antes é o golpe v2 intacto, claramente rejeitado; não é fonte atual nem parâmetro de qualidade. A v2 portátil completa, incluindo os antigos estados armados, fica em `Biblioteca de Arte/Historico de Entregas/Orc V1 - Armas v2/`, com aviso de superação. Cópias antigas foram movidas de forma reversível para fora das pastas atuais; não houve limpeza recursiva destrutiva.
+A auditoria do DEV está em `experiments/main-orc-entry-v1/dev-audit.md`. Classificação principal: repouso KEEP; início/entrada TRANSITION_FIX; preparação elevada TIMING_ONLY ou reutilização adaptada; extensão, passagem limpa, impacto e recuperação KEEP. Nenhum ataque inteiro foi regenerado.
 
-## D. Reutilização demonstrada
+## Correção proposta e fontes
 
-`tools/compose-main-orc-item.mjs` aceita categoria, weapon.json compatível e saída de revisão. Ele lê **os PNGs corporais/dedos já exportados e vinculados aos mestres**, substitui somente o item e seu grip local e compõe no Aseprite. Não gera poses, não acessa PixelLab, não muda seleção de produção e não redesenha o corpo. Valida categoria, mão, PPU e hashes de mestres/exports; arquivos editados exigem nova revisão/exportação.
+Uma única pose de preparação foi produzida por **PixelLab Pro Flash inpaint** sobre o próprio neutro atual. Apenas braço direito (à esquerda da imagem), cotovelo, antebraço e mão fechada foram retocados. Rosto, pescoço, centro do peito, outro braço, quadril e pernas permanecem nos pixels próprios. No resultado real, o grip ficou em nativo37,67 / world101,131, em vez da coordenada aproximada solicitada ao gerador. A ligação usa a luva real, inspecionada, e não uma coordenada presumida.
 
-Exemplo local com um item compatível já cadastrado:
+A montagem e todos os retoques/tempos/exportações são no **Aseprite**, por Lua em batch oculto, perfil isolado e `--noinapp`. O resultado em nuvem não é desenho manual. Mestre da preparação: `experiments/main-orc-entry-v1/inputs/prepare-arm.aseprite`; corpo e dedos exportados no mesmo diretório. Fora da máscara foram removidos apenas dois pixels herdados abaixo da mão deslocada (world97,151 e98,151); todo o restante não mascarado foi preservado. Proveniência verificável em `prep-provenance.json`, máscara e scripts no experimento.
 
-```powershell
-node tools/compose-main-orc-item.mjs Sword assets/weapons/recruit-sword/weapon.json reports/minha-revisao-espada
-node tools/compose-main-orc-item.mjs Axe assets/weapons/militia-axe/weapon.json reports/minha-revisao-machado
+A entrada agora é **neutro sem arma → preparação corporal sem arma → mesma pose com pegada estabelecida → elevação do cotovelo/ombro → golpe**. Não é uma animação de sacar de bainha: não há bainha, arma carregada, magia ou sistema novo. A arma aparece somente depois da preparação, no mesmo corpo e grip, dentro do Attack. O primeiro quadro armado dura35ms; o preparo anterior,65ms.
+
+Na espada, duas poses intermediárias deste mesmo Orc (Axe3/Axe4 do polimento, corpo/dedos exatos) ligam a nova preparação à guarda existente. A orientação progride315°→330°→340°→345°. O caminho de preparação da mão passa por distâncias aproximadas17,26px (neutro→preparo),18,38px,20,59px e11px. Isto descreve o espaçamento, sem provar por números que o movimento é natural. O golpe e a recuperação anteriores são mantidos, incluindo a limpeza do resíduo de lâmina.
+
+No machado, a entrada usa300°→325°→350°, com as próprias poses de elevação/preparação. A antiga carga projetada foi removida da sequência, não redesenhada nem apagada do acervo. As poses, impacto e recuperação do machado continuam distintos da espada. Compartilhar uma preparação curta de braço deste indivíduo não cria um movimento de ataque universal.
+
+| Clip | Antes (polimento) | Entrada candidata | Impacto artístico local |
+|---|---:|---:|---|
+| Espada |11 quadros /690ms|13 quadros /730ms|novo8, aos360ms (antes320ms)|
+| Machado |12 quadros /1055ms|12 quadros /1005ms|novo6, aos410ms (antes460ms)|
+
+Os holds de impacto continuam100/115ms. `appliesDamage:false`: nenhuma mudança de dano/eventos/turnos Unity. A espada acrescenta40ms para estabelecer a preparação; o machado reduz50ms ao retirar a carga redundante. A recuperação preserva o corpo idêntico na ocultação da arma e o retorno ao neutro sem overlay. Idle5/2200ms e Walk16/1280ms ficam exatos e sem arma.
+
+Plano explícito e mapeamento de cada quadro: `experiments/main-orc-entry-v1/entry-plan.json`. Fontes candidatas: `characters/orc-v1/source/aseprite/onehanded-entry-v1/`; PNGs/camadas/perfis/clips: `characters/orc-v1/source/onehanded-entry-v1/`. Fork recuperável dos mestres anteriores: `characters/orc-v1/source/aseprite/main-orc-entry-v1/`. Não alterar o ponteiro ativo automaticamente.
+
+## Reutilização, revisão e limites
+
+Armas independentes, dimensões, grip local, PPU100, escala1 e ordem de oclusão permanecem. A própria categoria define o perfil; não se produz um corpo novo para cada espada/machado. Canvas256, corpo128 em64,64 e chão190, sem espelhamento, trim, suavização ou interpolação de preview. A inspeção de armas diferentes continua necessária para cabos/guardas incompatíveis; composição offline não implementa equipar no runtime.
+
+Página isolada: `Biblioteca de Arte/Estudos Comparativos/Orc principal - Entrada de combate/index.html`. Compara **polimento anterior × entrada nova**, com PNGs/tempos reais, controles existentes, quadro a quadro, normal/lento, zoom, pegadas, impacto e sequência Idle→Attack→Idle. As páginas anteriores continuam preservadas.
+
+A revisão integrada pelo QA Paseo é registrada separadamente em `experiments/main-orc-entry-v1/qa-final.md`; o pacote integrado e os resultados abaixo são congelados antes dessa revisão; o parecer final registra a versão exata revisada. O criador continua como autoridade artística. Somente front_r, sem teste no jogo, outras vistas ou propagação. A transferência de peso ampla continua limitada; o foco é a continuidade da entrada, não reconstruir a biomecânica.
+
+### Resultado integrado e verificações deste passe
+
+- Build `dist/editor/main-orc-onehanded-entry-v1/f600aa0675d5e5d3d093/`: **10 jobs,98 quadros exportados e comparados**. Reexportação dos mesmos mestres reutilizou o mesmo build.
+- `root-safety-and-artifacts.json`: **9.923 arquivos de arte anteriores e9 metadados ativos preservados**, todos os corpos/dedos mapeados exatos, armas inalteradas, Idle/Walk exatos e visibilidade contígua.
+- `entry-check.json`: verificação focada do DEV sem falhas. Passos de grip e ângulo são diagnósticos, nunca regras universais de arte ou aprovação.
+- `preview-qa.json`: **69 quadros e recortes de grip comparados pixel a pixel**, zero divergências, nenhuma exceção JavaScript, abertura file:// e mobile390px sem overflow.
+- `playback-capture.json`: todos os13 quadros da espada e12 do machado observados em reprodução real1× e0,25×, com capturas de canvas. `sequence-playback.json`: ambas as sequências Idle→Attack→Idle completadas no tempo real e terminando sem arma. A revisão usa essas capturas/poses; não é uma observação humana de jogo ou de vídeo contínuo.
+- `test-suite.json`: `node --test --test-concurrency=1`, **14/14 PASS**. Doctor e editor-check disponíveis, Aseprite1.3.18.6. Nenhuma alteração em Unity.
+- Fixtures de troca de arma: `reports/main-orc-entry-v1/reuse/{Sword|Axe}/reuse.json`,13/12 quadros recompostos com assets existentes menores, sem geração ou redesenho de corpo. São testes técnicos de reutilização, não novos itens aprovados.
+
+Inspeção visual primária: a mão e o antebraço se preparam antes da aparição; a subida da espada possui caminho legível e direções progressivas, sem o salto baixo→guarda anterior. Os dedos próprios permanecem por cima do cabo. As boas poses de golpe/impacto/recuperação foram preservadas. Permanece uma troca discreta de visibilidade no limite da ação, por decisão de produto; não há efeito ou interpolação para escondê-la. A transferência ampla de peso e o apoio estático dos pés não foram refeitos.
+
+Arquivos alterados neste passe: dois novos assemblers `tools/entry-main-orc.mjs` e `tools/aseprite/entry-main-orc.lua`, wrapper `experiments/main-orc-entry-v1/check-entry.py`, modo `--entry` no construtor existente, fontes/derivados isolados e ponteiro **somente candidato** `characters/orc-v1/source/equipment-entry-candidate.json`; notas curtas em AGENTS/handoff/roadmap, este capítulo e navegação da biblioteca. Estado inicial já sujo em `initial-git-status.txt`. O construtor já era não rastreado no Git: não há diff Git exato anterior dele; a revisão considera seu código final completo e os ramos legados. Nenhum commit/reset/clean.
+
+Reprodução local sem nova cobrança:
+
+```text
+node tools/entry-main-orc.mjs build
+node tools/entry-main-orc.mjs verify
+node src/cli.mjs editor-export --manifest characters/orc-v1/source/aseprite/onehanded-entry-v1/editor.json
 ```
 
-Para outra espada/machado compatível, passar seu próprio weapon.json com sprite/master, categoria, hands1, PPU100 e grip inteiro. A anatomia/vista permanece este Orc/front_r. Comprimento, cabeça, guarda e diâmetro do cabo precisam de revisão visual: o contrato não promete encaixe universal.
+Com Python local: `experiments/main-orc-entry-v1/check-entry.py`, `tools/build-main-orc-rescue-review.py --entry` e `tools/build-art-library.py`. O plano e os PNGs de preparação são inputs congelados; estes comandos não chamam PixelLab. Auditoria de reaproveitamento em `reuse-assessment.json`; o runtime dinâmico continua como extensão futura fora do escopo.
 
-O teste usa fontes menores **já existentes do lote histórico v1**, de mesma categoria, apenas como substitutos técnicos. Nenhuma arma de produção adicional foi criada. Saídas e metadados em `reports/main-orc-weapon-rescue-v3/reuse/<Sword|Axe>/`. Dezoito quadros recompostos mantêm corpo, dedos e tempos idênticos por SHA256, com novo asset/grip, zero redesenho corporal e zero chamada em nuvem. Os substitutos históricos não são novas aprovações de arte nem direção selecionada.
+Correção pós-QA (2026-10-25): apontada pela QA independente, a montagem do modo `--entry` não depende mais de o diretório histórico `Historico de Entregas/Orc V1 - Armas v2` já existir (a fonte `previous-review` só existe no workspace do resgate v3). A página recriada com o construtor corrigido ficou byte a byte idêntica à revisada; regressão executável em `test/preview-entry.test.mjs` e registro/evidência em `experiments/main-orc-entry-v1/preview-builder-fix.json`.
 
-## Procedência real e custos desta tarefa
+Orquestração: DEV gratuito DeepSeek V4.1 Flash via `opencode-free` no Paseo; integração/artes controladas pelo orquestrador; QA independente final GLM5.3 via `cline-glm-api`. Catálogo, IDs, resultados e uso verificável serão registrados no experimento. Só o fluxo de orquestração organiza QA, sem agentes adicionais solicitados pelo DEV.
 
-Conta Pro confirmada pelo criador; método/modelo não são sinônimos do plano. Registro completo: `experiments/main-orc-weapon-rescue-v3/production-record.json`.
+Custo artístico: uma chamada Pro Flash, **6 gerações cobradas**, sem retentativa paga ou nova arma. Pedido e resultado em `prep-request.json` e `cloud-record.json`; job591a50b5-227a-4808-92c9-a86b0ec13e96. Não afirmar preço monetário ou tokens que o provedor não reportou. Nenhum commit, limpeza destrutiva ou escrita em `../TacticsRPG`.
 
-| Operação | Job | Gerações | Destino |
-|---|---|---:|---|
-| animate_image, servidor sem seletor de modelo | ee7824a2-5107-4eee-8f6b-17766f683b83 | 8 | Rejeitada: estocada e lâmina variável |
-| Skeleton V3, corpo inteiro / espada | a24e803e-5fb7-44e6-b357-82455d0bc6fa | 3 | Poses0/1/3/4/5/6, com acabamento; poses2/7 não selecionadas |
-| Pro Flash inpaint / recuperação | 9150a6bb-758c-4a8a-9be2-fd34b38c361f | 6 | Remove lâmina sobre roupa/quadril |
-| Pro Flash inpaint / passagem | 5916387f-266d-4bf6-b628-e31fb1857972 | 6 | Remove lâmina/guarda/pomo protegendo mão |
-| Skeleton V3, corpo inteiro / golpe pesado | 508388e5-5ef9-4830-b11a-46aec2c6bdff | 3 | Oito poses usadas; base final substituída pelo Idle aprovado |
+---
 
-**Total cobrado:26 gerações**, incluindo8 do estudo rejeitado. Não houve nova geração das armas nem nova estimativa de esqueleto: a estimativa anterior do mesmo Orc foi reutilizada após verificar igualdade SHA256 da imagem. Um pedido inicial de texto acima do limite1000 caracteres foi recusado antes de criar job, sem cobrança reportada. A solicitação livre de animação de machado foi preparada, mas não enviada.
+# Orc principal — polimento dos ataques de uma mão
 
-O guia de articulações é dado de autoria para PixelLab, não rig/IK implementado no runtime. Nenhum pixel de outro Orc ou V4 condiciona o personagem. Produção generativa em nuvem e acabamento por Lua no Aseprite estão identificados; não chamar isso de desenho manual ou geração inteligente interna do Aseprite. Python/Node apenas organizam, verificam e apresentam os resultados. As chamadas/rasters brutos e máscaras permanecem no experimento, sem credenciais.
+2026-10-25 · `main-orc-onehanded-polish-v1` · **candidato isolado, aprovação artística do criador pendente**.
 
-## F. Validação executada e avaliação artística
+O Orc principal é **orc-v1 / Verde Warcraft**. A correção anterior `main-orc-onehanded-v3` foi uma melhoria substancial e continua ativa; não é uma versão rejeitada. O antigo Orc V4 permanece descartado. Esta tarefa não altera o jogo, a seleção de produção, o Idle/Walk aprovado, a arte das armas ou outras direções.
 
-`reports/main-orc-weapon-rescue-v3/check.json` documenta:
+## A. Antes e depois
 
-- 77 quadros comparados contra10 mestres: corpo independente, dedos, compósitos, bases e itens;
-- 18 reconstruções exatas de camadas, visibilidade contínua dos equipamentos somente nos intervalos, grips sobre cabo/mão, dedos da própria pose e nenhum corte nas bordas do canvas;
-- 21 quadros de Idle/Walk iguais aos originais nativos, com arma ausente; início/fim dos ataques iguais à pose neutra do Idle;
-- 18 substituições de item com corpo/dedos/tempo preservados;
-- 9669 PNGs/mestres anteriores protegidos por hash, sem alterações;
-- duas limpezas Pro preservando os pixels visíveis não mascarados;
-- 63 comparações RGBA dos players, abertura file://, layout móvel, zero erro JavaScript, reprodução1× e0,25× amostrada em capturas temporais, retorno ao Idle sem arma.
+A inspeção usou os mestres salvos e PNGs atuais, suas durações e capturas de reprodução. Nenhum vídeo novo foi anexado ao pedido de polimento; não atribuímos a ele observações de uma gravação indisponível. Auditoria por quadro, motivo, pegada e deslocamento: `experiments/main-orc-polish-v1/artistic-audit.json`. Índices neste relatório começam em **zero**.
 
-A revisão visual do agente incluiu poses nativas, apresentação2×, pegadas ampliadas e capturas da reprodução normal/lenta. Um resíduo de guarda/pomo na recuperação foi encontrado **depois do primeiro PASS técnico** e removido no Aseprite, demonstrando por que os testes não bastam. Não foi realizada revisão artística independente. O criador continua sendo a autoridade final; nenhuma aprovação/Gate foi registrada.
+| Arma | Problema principal | Alteração mínima aplicada | Preservação e limite |
+|---|---|---|---|
+| Espada | Recuperação retraía a mão cerca de49,25px em uma única troca; cadência mantinha poses de aceleração por tempo demais. | Tempos assimétricos; ponte entre o antigo5 e6 reutilizando o antigo Axe7 deste mesmo Orc. Retração passa por cerca de30,59px e19,03px; a arma continua separada, escala1. Um retoque mascarado no corpo do impacto. | Guarda, extensão, pose de recuperação e identidade mantidas. Na passagem do corte foi apagado um resíduo fino de lâmina herdado no corpo, após QA independente. Mudança de apoio corporal discreta; não se apresenta como uma nova animação corporal completa. |
+| Machado | Release70ms e impacto70ms tinham ênfase semelhante; arma sumia durante o retorno do braço. | Release35ms, impacto115ms e antecipação deliberada. Retoque limitado em tronco/quadril/joelho no impacto. Ocultação em uma repetição do mesmo corpo antes do assentamento. | Machado, proporção, poses de elevação, preparação, extensão e seguimento preservados. Peso vem sobretudo da cadência e do compromisso existente da pose. |
+| Ambas | Arma aparecia quando a mão já havia saído do repouso; desaparecimento coincidia com troca de corpo. | Breve quadro de pegada inicial no próprio corpo neutro; conclusão repete a recuperação sem overlay antes do retorno. | A entrada/saída continua sendo uma troca discreta, por decisão de armas somente no ataque. Não há sistema de sacar/embainhar ou transição invisível simulada. |
 
-Suíte geral: `node --test --test-concurrency=1`, **14/14 PASS**. A execução paralela inicial teve13/14 e um EPERM do Windows ao renomear um build temporário do teste Aseprite, com evidência em `tmp/aseprite/test-editor-d70e8f508a-normal-0w4onG/failure.json`. A repetição sequencial passou sem alterar o bridge/exportador; a causa específica da contenção não foi confirmada. As exportações reais das candidatas passaram. Biblioteca geral: nove Orcs,18 clipes,162 comparações RGBA,431 links locais e ideias únicas separadas, PASS.
+### Classificação de todos os quadros anteriores
 
-Limites: uma vista, poses discretas de pixel art e estudo local. Qualidade do peso, pegada, transição e leitura tática ainda requer avaliação do criador. Nenhum teste prova naturalidade, nenhuma arma compatível desconhecida foi automaticamente aprovada, e o jogo ainda não consome estes overlays/tempos. Próximo passo: revisão dos dois golpes nesta página antes de propagar ou solicitar integração.
+| Quadro v3 | Sword | Axe |
+|---:|---|---|
+|0|KEEP|KEEP|
+|1|TRANSITION_FIX|TRANSITION_FIX|
+|2|TIMING_ONLY|TIMING_ONLY|
+|3|TIMING_ONLY|TIMING_ONLY|
+|4|MINOR_POLISH|TIMING_ONLY|
+|5|MINOR_POLISH|MINOR_POLISH|
+|6|TRANSITION_FIX|TIMING_ONLY|
+|7|TRANSITION_FIX|MINOR_POLISH|
+|8|—|TRANSITION_FIX|
+|9|—|KEEP|
 
-## G. Documentação, reconstrução, segurança e Git
+Não foi necessário classificar nenhuma pose como REWORK_POSE. A observação de MINOR_POLISH não obriga redesenhar: a recuperação Axe7 foi mantida; na passagem Sword4, a inspeção independente identificou e levou à remoção local de um resíduo de lâmina, sem alterar a pose. O teste inicial alterou **somente tempos**, com pixels idênticos, antes dos retoques. Seus mestres, exportação e captura estão em `experiments/main-orc-polish-v1/timing-only/`. Ele melhora o ritmo, mas não resolve a distância entre as poses da recuperação nem produz esforço corporal novo.
 
-Reexportação dos mestres salvos: `node src/cli.mjs editor-export --manifest experiments/main-orc-weapon-rescue-v3/editor.json`. Arte editada precisa de fork/revisão e manifesto atualizado; não ignorar hashes ou reaplicar receitas sobre trabalho manual. O bloqueio authored-master-lock.json impede que o compositor sobrescreva mestres alterados desde a última autoria. `editor-fork` continua sendo a rota para preservar a fonte antes de retoques.
+### Tempos e mapeamento finais
 
-A receita de autoria, quando as fontes permanecem intactas, usa `tools/prepare-main-orc-profiles.mjs`, `tools/compose-main-orc-rescue.mjs` e `tools/finalize-main-orc-rescue.mjs`. Não faz chamadas PixelLab: usa os brutos já baixados e as decisões/máscaras preservadas. `tools/build-main-orc-rescue-review.py` atualiza a biblioteca; `tools/check-main-orc-rescue.py` verifica a entrega. `tools/build-art-library.py` mantém a entrada geral de todos os Orcs.
+Espada anterior: 8 quadros / 775ms → candidato: 11 quadros / 690ms:
 
-Alterações relevantes: guia atual, padrão de armas, AGENTS/handoff, identidade/workflow/roadmap, política de equipamento, ponteiros/manifests e ferramentas locais de autoria/composição/revisão. Exportadores históricos v1/v2 foram bloqueados para não reativar a apresentação armada ou sobrescrever a revisão atual. O prepare carrega também este guia. Fontes antigas e outras roupas/raças/ideias permanecem preservadas.
+| Novo | Fonte do corpo | Fase | ms |
+|---:|---|---|---:|
+|0|Sword0|Repouso sem arma|40|
+|1|Sword0, dedos traçados da própria luva|Estabelecer pegada|45|
+|2|Sword1|Preparação|65|
+|3|Sword2|Guarda elevada|100|
+|4|Sword3|Avanço|35|
+|5|Sword4, limpeza pontual de resíduo|Passagem do corte|35|
+|6|Sword5 + retoque mascarado|Impacto/seguimento|100|
+|7|Axe7, mesmo indivíduo atual|Ponte de recuperação|55|
+|8|Sword6|Recuperação|80|
+|9|Sword6, sem overlays|Conclusão|45|
+|10|Sword7|Neutro exato|90|
 
-Git inicial e resumo em `experiments/main-orc-weapon-rescue-v3/initial-git-status.txt` e `git-summary.json`. A árvore já estava suja; diff contraHEAD inclui trabalho anterior e não é apresentado como se fosse todo desta tarefa. Nenhum commit, reset ou stash foi feito. Nenhum arquivo do projeto Unity irmão foi alterado.
+Machado anterior: 10 quadros / 1130ms → candidato: 12 quadros / 1055ms:
+
+| Novo | Fonte do corpo | Fase | ms |
+|---:|---|---|---:|
+|0|Axe0|Repouso sem arma|40|
+|1|Axe0, dedos traçados da própria luva|Estabelecer pegada|50|
+|2|Axe1|Preparação|100|
+|3|Axe2|Elevação|80|
+|4|Axe3|Ombro armado|155|
+|5|Axe4|Descida|35|
+|6|Axe5 + retoque mascarado|Impacto|115|
+|7|Axe6|Seguimento|110|
+|8|Axe7|Recuperação|130|
+|9|Axe7, sem overlays|Conclusão|50|
+|10|Axe8|Assentamento|90|
+|11|Axe9|Neutro exato|100|
+
+As três adições da espada são pegada inicial, ponte reutilizada e corpo repetido na conclusão. As duas do machado são pegada inicial e conclusão. Nenhum novo lote de animação foi gerado. Impacto artístico passa de430→320ms na espada e550→460ms no machado; ambos no novo quadro6. Isso é **proposta visual local**, `appliesDamage:false`, sem alteração em dano, turnos ou eventos Unity.
+
+## B. Alterações técnicas e fontes
+
+- Forks recuperáveis: `characters/orc-v1/source/aseprite/main-orc-polish-v1/`, feitos por `editor-fork` a partir dos dois mestres atuais.
+- Mestres candidatos: `characters/orc-v1/source/aseprite/onehanded-polish-v1/`, com `sword-attack`, `sword-body`, `sword-hand-front` e equivalentes `axe`, todos `.aseprite`. Manifesto de exportação `editor.json` nesse diretório.
+- PNGs, camadas, folhas, `clip.json` e `profile.json`: `characters/orc-v1/source/onehanded-polish-v1/{Sword|Axe}/Attack/`.
+- Pacote de revisão: `characters/orc-v1/source/onehanded-polish-v1/manifest.json`; ponteiro **somente candidato** `characters/orc-v1/source/equipment-polish-candidate.json`.
+- Build imutável: `dist/editor/main-orc-onehanded-polish-v1/3b6384933314a2bb64f9/`. Nova exportação dos mesmos mestres retornou o mesmo build, `reused:true`.
+- Implementação incremental: `tools/polish-main-orc.mjs` e `tools/aseprite/polish-main-orc.lua`; compositor Lua e exportador já existentes reutilizados. `tools/compose-main-orc-item.mjs` ganhou um argumento opcional de perfil para testar candidatos; o padrão continua v3.
+- O construtor existente `tools/build-main-orc-rescue-review.py` ganhou `--polish`, sem substituir o modo anterior ou criar outro aplicativo de preview.
+
+Canvas256×256, corpo128×128 em64,64, chão190, PPU100, sem escala/espelhamento/trim/interpolação. Fontes corporais de início/fim são o **Idle0 atual**, não o conceito estático. Idle5 fases400/450/500/450/400ms e Walk16×80ms permanecem exatos.
+
+A arte de Espada do Recruta e Machado de Milícia foi preservada integralmente. Pegadas locais do item continuam48,66 e36,55; escala1. A nova pegada inicial do corpo é98,148 no canvas256 (34,84 nativo). A ponte Sword7 usa grip129,148 e102°. Os demais encaixes e orientações herdados permanecem. A própria luva atual fornece a máscara de dedos; não há mão genérica girada ou transplante de outro personagem. Ordem `weaponBack → body → weaponFront → handFront`. Não se estende o machado sobre a perna neutra nem se inventa troca de profundidade para escondê-lo.
+
+Arma visível somente em Attack1..8, intervalo único em ambas. Corpo idêntico antes/depois da aparição e ocultação. Repouso, Walk, inspeção, fim da ação e demais estados continuam sem overlay persistente. Nenhum novo clip Hit/Defeat foi produzido ou declarado validado nesta tarefa.
+
+### Autoria e proveniência
+
+Duas operações localizadas de **PixelLab Pro Flash inpaint**, fonte128×128 e máscara explícita, sem gerar personagens novos. Prompts/resultados completos e máscaras em `experiments/main-orc-polish-v1/`. Modelos, jobs e cobrança registrados nos arquivos `sword-cloud-record.json` e `axe-cloud-record.json`.
+
+Além dos impactos, uma linha diagonal residual em fundo transparente no corpo do antigo Sword4/novo5 foi apagada via Lua no Aseprite (world x160..184,y99..121 e pixel isolado[181,93], total31 posições RGBA). Corpo, luva e arma real foram inspecionados separadamente. Essa correção não gerou custo e mantém o master v3 intacto. Evidências antes/depois: `crossing-residue-inspection.png` e `crossing-cleaned-inspection.png`.
+
+Os resultados alteram 1411 posições RGBA no Sword5 e 1879 no Axe5, dentro da máscara. Cabeça, botas, mão e região ao redor do grip são protegidas e verificadas exatamente. O pedido buscou pequena compressão/participação de quadril, joelho e ombro; não se afirma uma translação rígida exata de2/3px. A alteração é sutil e inclui tratamento de clusters, não uma reconstrução anatômica. Os pixels aprovados fora da máscara são reaplicados por regra no próprio Aseprite, mesmo com a garantia do serviço.
+
+Toda montagem, retoque, trace de dedos, alteração de duração, gravação de mestres e exportação ocorreu dentro do **Aseprite 1.3.18.6**, por Lua em batch oculto com perfil isolado e `--noinapp`. Não é desenho manual. Python/PIL foi usado somente para organização, hashes e folhas/capturas de QA, sem autoria raster externa. Nenhuma janela aberta ou trabalho não salvo do criador foi controlado.
+
+## C. Revisão artística
+
+Inspeção primária: poses reais, máscara/resultados de impacto, pegadas8× e capturas do preview1× e0,25×. A recuperação da espada distribui melhor a retração; a antecipação e o impacto do machado têm acentos diferentes. A alteração corporal é deliberadamente limitada, preservando as poses boas e o desenho atual. A ausência de deslocamento dos pés evita deslizamento novo; não comprova por si só transferência de peso convincente.
+
+Revisão independente concluída por outro agente conforme autorização expressa do criador: `experiments/main-orc-polish-v1/independent-artistic-qa.md`. Confirmou melhora de ritmo, recuperação e transições; pegadas e identidade preservadas. Detectou o resíduo da espada e um pixel isolado em world[181,93], ambos removidos no Aseprite e reinspecionados. Não identificou bloqueio artístico significativo remanescente. Transferência de peso ainda é discreta: oportunidade subjetiva futura, sem alegar biomecânica totalmente resolvida. Playback independente 1×/0,25× e sequência completa foram vistos antes da limpeza; a reinspeção final foi localizada nos body/arma/composite sem cache. Aprovação técnica ou parecer do agente nunca equivale à aceitação artística do criador.
+
+Limites de avaliação: somente front_r, fundo de inspeção, sem alvo ou contato em jogo. A rotação nearest-neighbor da arma e a ocultação discreta ainda podem ser perceptíveis em câmera lenta. Compatibilidade de itens precisa respeitar largura de cabo/guarda, proporção, câmera e mãos; o teste de substituição não aprova visualmente qualquer arma. Não se declara o conjunto final para todas as raças/classes ou pronto no runtime.
+
+## D. Validação e custos
+
+| Verificação | Resultado |
+|---|---|
+| Exportador Aseprite existente |10 jobs / 92 quadros comparados, PASS|
+| Reexportação dos mestres salvos |Mesmo build imutável, PASS|
+| Verificação focada de arte/metadados |105 verificações, PASS; `technical-qa.json`|
+| Fontes anteriores |9.796 PNGs/mestres preservados por SHA256|
+| Metadados ativos de corpo/armas |Exatos; candidato não substitui `equipment-current.json`|
+| Preview real |62 quadros/canvas e recortes de grip comparados, zero diferenças|
+| Sequência/completar sem loop |Antes/depois retornam ao Idle sem overlay, PASS|
+| Abertura local e responsividade |file:// carrega; mobile390px sem overflow|
+| Biblioteca |202 cópias por hash, 179 links locais, página v3 anterior intacta|
+| Suite do projeto |`node --test --test-concurrency=1`:14/14 PASS|
+| Substituição de itens existentes |Sword11 eAxe12 recompostos, zero redesenhos/gerações|
+| Unity e outras direções |NOT_RUN, fora do escopo|
+
+O teste de reutilização usa os assets menores v1 já existentes apenas como **fixtures técnicas**, não como proposta artística ou novas armas de produção. Evidências: `reports/main-orc-polish-v1/reuse/{Sword|Axe}/reuse.json`. O mesmo corpo, dedos e duração são reaproveitados ao trocar o item compatível da categoria.
+
+Custos externos: **2 chamadas, 6 gerações efetivamente cobradas cada, total 12 gerações PixelLab**, sem novo lote ou retentativas pagas. Jobs `f077ce3b-656d-4a98-badf-4eff1045fe3b` e `5c4b8882-c612-4ddb-bc2c-2eb7ad646481`. Não foi obtido preço monetário por geração; não estimamos reais/dólares ou consumo de tokens não medido. Reaproveitamento e testes locais não chamam geração.
+
+Evidências: `experiments/main-orc-polish-v1/{technical-qa,preview-qa,library-qa}.json`, `build.json`, capturas normal/lenta, fontes do estudo de tempo e pedido original `creator-task.md`.
+
+## E. Materiais de revisão
+
+Abra **`Biblioteca de Arte/Estudos Comparativos/Orc principal - Polimento de combate/index.html`**. A biblioteca principal também lista o candidato, preservando o link da base v3.
+
+Na mesma página: Espada antes/depois, Machado antes/depois, modo somente ataques ou Idle→Attack→Idle, velocidades1×/0,5×/0,25×, pausar, avançar quadro, repetir/desligar loop, zoom nativo/2×/3×, pegada8× e galeria de poses/tempos. O contorno dourado identifica o impacto no canvas de revisão; não faz parte do PNG ou de um evento de dano. Não há suavização ou frames inventados no preview.
+
+Fontes portáteis em `Ataques/{Espada|Machado}/`, comparação com a base em `Comparacao/Antes - {Espada|Machado}/`, armas independentes em `Armas/`. Cada ataque tem mestre composto, corpo, dedos, folha, clip e perfil. O original v3 continua em `Biblioteca de Arte/Personagens Jogaveis/Orc V1/index.html`.
+
+## F. Segurança, Git e continuidade
+
+Estado inicial já continha numerosas mudanças locais. Registro: `experiments/main-orc-polish-v1/initial-git-status.txt`; arte protegida e cópia portátil completa da base em `protected-art.json` e `baseline-review/`; metadados ativos em `baseline-metadata/`. Não houve reset, limpeza destrutiva, commit, push ou escrita em `../TacticsRPG`.
+
+Escopo desta tarefa: novos mestres/exports isolados, estudo/QA local, ponteiro de candidato, extensão pequena do preview/compositor, este documento e notas em AGENTS, handoff, roadmap e registro da biblioteca. Mudanças anteriores em runtime/configuração/fábrica não foram revertidas nem atribuídas a este passe. O diff do repositório inteiro inclui trabalho anterior; não representa apenas esta tarefa.
+
+Orc V1 mantém autoridade. Armas continuam independentes e a política é somente no ataque. Nenhum gate, receita de produção, seleção de equipamento, registro de personagem ou GUID Unity foi autoaprovado/substituído. Infante de Ferro permanece atual; Vigia/Matriarca seguem na categoria separada de ideias futuras para únicos jogáveis e/ou NPCs.
+
+## G. Aceitação e próximo marco
+
+- **Implementado:** polimento incremental dos dois ataques e preview comparativo.
+- **Validado tecnicamente:** exportações, referências, duração, visibilidade, reutilização e preservação descritas acima.
+- **Revisado visualmente:** evidências primárias e parecer independente concluído; resíduo corrigido e reinspecionado.
+- **Aprovação artística do criador: PENDENTE.** Nenhuma promoção ou propagação automática.
+
+Depois da avaliação do criador, registrar decisão explícita e só então considerar selecionar este candidato. Outras vistas e futura integração no jogo são tarefas separadas. Não recriar o sistema de equipamentos para resolver problemas locais de animação.
+
+### Reproduzir sem gastar gerações
+
+```text
+node tools/polish-main-orc.mjs build
+node src/cli.mjs editor-export --manifest characters/orc-v1/source/aseprite/onehanded-polish-v1/editor.json
+node tools/compose-main-orc-item.mjs Sword experiments/orc-v1-weapons-v2/preserved-v1/weapons/recruit-sword/weapon.json reports/main-orc-polish-v1/reuse/Sword characters/orc-v1/source/onehanded-polish-v1/Sword/Attack/profile.json
+node tools/compose-main-orc-item.mjs Axe experiments/orc-v1-weapons-v2/preserved-v1/weapons/militia-axe/weapon.json reports/main-orc-polish-v1/reuse/Axe characters/orc-v1/source/onehanded-polish-v1/Axe/Attack/profile.json
+node --test --test-concurrency=1
+```
+
+Com Python local disponível: `experiments/main-orc-polish-v1/check-polish.py` valida os contratos; `tools/build-main-orc-rescue-review.py --polish` reconstrói a página a partir dos PNGs reais. `tools/build-art-library.py` atualiza a navegação. O modo `prepare` recria o estudo/inputs/solicitações, **não envia** chamadas pagas. As duas imagens de retoque já baixadas são os inputs congelados do modo build. Não rodar scripts antigos de promoção de V4/v1/v2.

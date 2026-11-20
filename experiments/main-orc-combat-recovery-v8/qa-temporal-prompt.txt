@@ -1,0 +1,30 @@
+Voce e QA TEMPORAL independente do candidato V8 do Orc V1. Voce nao produziu nenhuma arte deste candidato e nao deve editar arte. Sua funcao e verificar ou refutar, com medicao propria, as afirmacoes abaixo. Se algo estiver errado, diga com numero.
+
+Candidato: characters/orc-v1/source/combat-recovery-v8/candidate28manifest.json
+Pagina: Biblioteca de Arte/Estudos Comparativos/Orc principal - Recuperacao de combate V8/index.html
+Auditoria do orquestrador: experiments/main-orc-combat-recovery-v8/uniformity-audit.json
+Pericia frontal: experiments/main-orc-combat-recovery-v8/frontal/forensics.md
+Relatorio do produtor das traseiras: experiments/main-orc-combat-recovery-v8/rear/report.md
+
+CONTEXTO. O criador reprovou o V7 com estas palavras: o ataque de costas ficou menos uniforme que antes, os problemas de frame pioraram, e o flash no golpe da espada frontal continua. A rodada V8 tinha dois objetivos: alinhar as quatro direcoes a uma unica grade temporal, e corrigir o flash frontal. As celulas frontais NAO foram alteradas nesta rodada; as quatro traseiras foram reconstruidas ou retimadas.
+
+O QUE O ORQUESTRADOR AFIRMA, E QUE VOCE DEVE CONFERIR POR MEDICAO PROPRIA
+
+1. Sword tem 13 quadros e 730 ms nas quatro direcoes, com duracoes por quadro identicas, nao apenas o mesmo total.
+2. Axe tem 12 quadros e 1005 ms nas quatro direcoes, com duracoes por quadro identicas.
+3. O instante de impacto e o mesmo nas quatro direcoes de cada familia: Sword em 290 ms (39,73 por cento), Axe em 375 ms (37,31 por cento).
+4. A arma esta oculta no primeiro e no ultimo quadro de todos os oito clipes.
+5. O maior passo do centroide da lamina ocorre na mesma fase em todas as direcoes de cada familia, e as magnitudes ficaram comparaveis entre direcoes.
+6. Os bookends das traseiras nao tem pico de brilho; a serie de pixels claros da lamina tem a mesma forma nas quatro direcoes.
+7. O flash frontal e um teleporte de 76 px entre F05 e F06 do frontal, nao um pico de luminancia; a lamina tem 55 a 62 px claros em todos os quadros armados do frontal.
+
+COMO VERIFICAR. Calcule voce mesmo, lendo os PNGs, sem reaproveitar os numeros acima. Sugestao de metricas: duracao por quadro lida do clip.json; instante acumulado do quadro de impacto; area e centroide da camada weaponFront por quadro; pixels claros com limiar 160; deslocamento entre quadros consecutivos. Nao use apenas o topo de brilho para julgar movimento, porque limiar de brilho nao detecta salto de posicao.
+
+JULGAMENTO QUE PRECISO. Responda de forma direta a quatro perguntas.
+
+A. A uniformidade temporal entre as quatro direcoes foi realmente alcancada? Sim ou nao, com a tabela que sustenta.
+B. Restou na arte algum artefato de salto, pop-in ou apagao que um jogador veria? Aponte quadro, direcao e celula.
+C. O flash frontal foi resolvido, atenuado ou continua? Se continua, ele agora e um desvio em relacao as outras direcoes, ou e caracteristica compartilhada pelas quatro?
+D. Veredito: TEMPORAL_PASS, TEMPORAL_PASS_WITH_RESERVATIONS, ou TEMPORAL_FAIL. Nunca emita PASS se a evidencia nao sustentar.
+
+Nao me de conselho generico. Quero numero, quadro e direcao. Escreva seu laudo em experiments/main-orc-combat-recovery-v8/qa-temporal-v8/report.md e grave as metricas que voce calculou em experiments/main-orc-combat-recovery-v8/qa-temporal-v8/metrics.json. Nao edite nada em characters/, nao toque em Unity, nao faca commit.
